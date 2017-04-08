@@ -1,0 +1,3 @@
+text = "Close";
+hudState = "null";
+

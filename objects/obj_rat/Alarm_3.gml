@@ -1,0 +1,2 @@
+can_punch = true;
+

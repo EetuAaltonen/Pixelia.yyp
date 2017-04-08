@@ -1,0 +1,3 @@
+///Stamina usage
+staminaUsage = false;
+

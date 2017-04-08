@@ -1,0 +1,3 @@
+//Collecting
+collecting = false;
+

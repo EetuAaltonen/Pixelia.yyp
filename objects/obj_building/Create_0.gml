@@ -1,0 +1,2 @@
+global.building = 0;
+

@@ -1,0 +1,3 @@
+text = "Equipments";
+hudState = "inventoryEquipments";
+

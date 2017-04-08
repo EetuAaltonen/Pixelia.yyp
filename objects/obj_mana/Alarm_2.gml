@@ -1,0 +1,3 @@
+///Mana usage
+manaUsage = false;
+

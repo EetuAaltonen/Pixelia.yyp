@@ -1,0 +1,534 @@
+Converting GML script : ${project_dir}\scripts\scr_dialog_blacksmith\scr_dialog_blacksmith.gml
+Converted string : line 1 : "Hello my friend! It's beautiful day!" -> "Hello my friend! It\'s beautiful day!"
+
+Converting GML script : ${project_dir}\scripts\scr_enemy_draw_stats\scr_enemy_draw_stats.gml
+Converted builtin : line 35 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 40 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 43 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 53 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 55 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 64 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 66 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 75 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 77 : view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script : ${project_dir}\scripts\scr_inventory_item_info\scr_inventory_item_info.gml
+Converted string : line 55 : "Sheep's sorrel" -> "Sheep\'s sorrel"
+
+Converting GML script : ${project_dir}\scripts\scr_inventory_item_info_text\scr_inventory_item_info_text.gml
+Converted string : line 25 : "Sheep's sorrel" -> "Sheep\'s sorrel"
+
+Converting GML script : ${project_dir}\scripts\scr_inventory_item_name\scr_inventory_item_name.gml
+Converted string : line 2 : '' -> ""
+
+Converting GML script : ${project_dir}\scripts\scr_inventory_item_type\scr_inventory_item_type.gml
+Converted string : line 2 : '' -> ""
+
+Converting GML script : ${project_dir}\scripts\scr_st_create_skills\scr_st_create_skills.gml
+Converted builtin : line 15 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 16 : (instance_nearest(view_xview+x_pos+(margin_right*(i-1)), view_yview+y_pos+(margin_bottom*a), obj_skill_tree_skill)).id_x = i -> __view_set( e__VW.XView, 0, i )
+Converted builtin : line 17 : (instance_nearest(view_xview+x_pos+(margin_right*(i-1)), view_yview+y_pos+(margin_bottom*a), obj_skill_tree_skill)).id_y = a -> __view_set( e__VW.XView, 0, a )
+Converted builtin : line 18 : (instance_nearest(view_xview+x_pos+(margin_right*(i-1)), view_yview+y_pos+(margin_bottom*a), obj_skill_tree_skill)).get_attributes = true -> __view_set( e__VW.XView, 0, true )
+Converted builtin : line 15 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\scripts\scr_st_draw_info\scr_st_draw_info.gml
+Converted builtin : line 2 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 3 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 5 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 6 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 7 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 8 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 3 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 4 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 5 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 6 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 7 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 8 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\scripts\scr_list_items\scr_list_items.gml
+Converted builtin : line 11 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 24 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 40 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 46 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 48 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 50 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 61 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 63 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 70 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 72 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 79 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 82 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 94 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 100 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 102 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 104 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 106 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 25 : (instance_nearest(view_xview+30, view_yview+Ypos, obj_listed_item)).sprite_index = asset_get_index(string(ds_list_find_value(info, 0 -> __view_set( e__VW.XView, 0, asset_get_index(string(ds_list_find_value(info, 0 )
+Converted builtin : line 26 : (instance_nearest(view_xview+30, view_yview+Ypos, obj_listed_item)).itemCount = ds_list_find_value(info, 2 -> __view_set( e__VW.XView, 0, ds_list_find_value(info, 2 )
+Converted builtin : line 11 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 24 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 40 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 46 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 48 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 50 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 61 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 63 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 70 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 72 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 79 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 82 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 94 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 100 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 102 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 104 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 106 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\scripts\scr_listed_item_right_mouse_pressed\scr_listed_item_right_mouse_pressed.gml
+Converted builtin : line 9 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 10 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 11 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 9 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 10 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 11 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\scripts\scr_menu_load_create_save\scr_menu_load_create_save.gml
+Converted string : line 26 : "Save doesn't exist, create " -> "Save doesn\'t exist, create "
+
+Converting GML script : ${project_dir}\scripts\scr_alch_list_items\scr_alch_list_items.gml
+Converted builtin : line 59 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 71 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 73 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 75 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 77 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 79 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 84 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 92 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 97 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 60 : (instance_nearest(view_xview+30, view_yview+y_pos, obj_listed_item)).sprite_index = asset_get_index(string(item_sprite_draw[i] -> __view_set( e__VW.XView, 0, asset_get_index(string(item_sprite_draw[i] )
+Converted builtin : line 61 : (instance_nearest(view_xview+30, view_yview+y_pos, obj_listed_item)).typeId = item_typeId_draw[i] -> __view_set( e__VW.XView, 0, item_typeId_draw[i] )
+Converted builtin : line 62 : (instance_nearest(view_xview+30, view_yview+y_pos, obj_listed_item)).fill_info = true -> __view_set( e__VW.XView, 0, true )
+Converted builtin : line 59 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 71 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 73 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 75 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 77 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 79 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 84 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 92 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 97 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted string : line 97 : "You don't have ingredients..." -> "You don\'t have ingredients..."
+
+Font fnt_armor_text has been converted to font family Arial (Regular). Font has been regenerated, small inconsistencies may occur.
+!!! Font fnt_collected_item_info_text uses a font (Lithos Pro Regular) not installed on this system. Font has NOT been regenerated.
+Font fnt_dialog has been converted to font family Arial (Bold). Font has been regenerated, small inconsistencies may occur.
+!!! Font fnt_enemies_stats font family Century is installed but couldn't match style and has NOT been regenerated.
+Font fnt_hotbar_text has been converted to font family Arial (Bold). Font has been regenerated, small inconsistencies may occur.
+Font fnt_inventory_text has been converted to font family Arial (Bold). Font has been regenerated, small inconsistencies may occur.
+Font fnt_loading has been converted to font family Arial (Bold Italic). Font has been regenerated, small inconsistencies may occur.
+!!! Font fnt_menu_buttons uses a font (Biondi Light) not installed on this system. Font has NOT been regenerated.
+!!! Font fnt_sign font family Nirmala UI is installed but couldn't match style and has NOT been regenerated.
+Font fnt_toaster has been converted to font family Arial (Bold). Font has been regenerated, small inconsistencies may occur.
+Converting GML script : ${project_dir}\objects\obj_fishing_bobber\Create_0.gml
+Converted builtin : line 17 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 18 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 17 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 18 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_anvil\Step_0.gml
+Converted builtin : line 14 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 15 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 16 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 17 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 19 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 20 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 14 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 15 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 16 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 17 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 19 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 20 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted string : line 28 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\objects\obj_crafting_station_parent\Step_2.gml
+Converted builtin : line 12 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 13 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 14 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 15 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 18 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 12 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 13 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 14 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 15 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 18 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_crafting_station_parent\Step_0.gml
+Converted string : line 2 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\objects\obj_stove\Step_0.gml
+Converted builtin : line 14 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 15 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 16 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 17 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 19 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 20 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 14 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 15 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 16 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 17 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 19 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 20 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted string : line 28 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\objects\obj_rat\Draw_0.gml
+Converted builtin : line 33 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 38 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 47 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 49 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 54 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 56 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 65 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 67 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 72 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 74 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 83 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 85 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 90 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 92 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 99 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 104 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 113 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 115 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 120 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 122 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 131 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 133 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 138 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 140 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 149 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 151 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 156 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 158 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 165 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 170 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 179 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 181 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 186 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 188 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 197 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 199 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 204 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 206 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 215 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 217 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 222 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 224 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 34 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 39 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 47 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 49 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 54 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 56 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 65 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 67 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 72 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 74 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 83 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 85 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 90 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 92 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 100 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 105 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 113 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 115 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 120 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 122 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 131 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 133 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 138 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 140 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 149 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 151 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 156 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 158 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 166 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 171 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 179 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 181 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 186 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 188 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 197 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 199 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 204 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 206 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 215 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 217 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 222 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 224 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_home_farmland\Step_0.gml
+Converted string : line 56 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\objects\obj_home_purchasable\Alarm_2.gml
+Converted string : line 2 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\objects\obj_home_purchasable\Draw_0.gml
+Converted string : line 6 : "Hold 'E' to confirm..." -> "Hold \'E\' to confirm..."
+
+Converting GML script : ${project_dir}\objects\obj_crafting_controller\Draw_0.gml
+Converted builtin : line 15 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 15 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_dialog_controller\Draw_0.gml
+ERROR : F:\Tiedostot\GameMakerStudio2\Projects\objects\obj_dialog_controller\Draw_0.gml : 31 : malformed variable reference got (
+ERROR : F:\Tiedostot\GameMakerStudio2\Projects\objects\obj_dialog_controller\Draw_0.gml : 33 : unexpected syntax error
+ERROR : F:\Tiedostot\GameMakerStudio2\Projects\objects\obj_dialog_controller\Draw_0.gml : 44 : unexpected syntax error
+ERROR : F:\Tiedostot\GameMakerStudio2\Projects\objects\obj_dialog_controller\Draw_0.gml : 53 : nested function calls are not allowed
+ERROR : F:\Tiedostot\GameMakerStudio2\Projects\objects\obj_dialog_controller\Draw_0.gml : 54 : unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\objects\obj_dialog_controller\Draw_0.gml
+
+Converting GML script : ${project_dir}\objects\obj_building\Draw_0.gml
+Converted builtin : line 3 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_skill_A\Draw_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_skill_Q\Draw_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_skill_W\Draw_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_inventory_controller\Step_1.gml
+Converted builtin : line 39 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 39 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_inventory_controller\Draw_0.gml
+Converted builtin : line 19 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 26 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 28 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 30 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 33 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 35 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 39 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 41 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 44 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 46 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 49 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 51 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 54 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 56 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 84 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 87 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 93 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 104 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 106 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 109 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 111 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 115 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 118 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 19 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 26 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 28 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 30 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 33 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 35 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 39 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 41 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 44 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 46 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 49 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 51 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 54 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 56 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 85 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 87 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 93 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 104 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 106 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 109 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 112 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 115 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 119 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_menu_play\Draw_0.gml
+Converted builtin : line 11 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 13 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 11 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 13 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 11 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 13 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_menu_load_game\Draw_0.gml
+Converted builtin : line 12 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 14 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 12 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 14 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 12 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 14 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_button_confirm\Draw_0.gml
+Converted builtin : line 7 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 7 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_button_decrease\Draw_0.gml
+Converted builtin : line 2 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_first_loading\Draw_0.gml
+Converted builtin : line 7 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 7 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_money_target\Create_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_money_target\Step_2.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_potion_target\Create_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_potion_target\Step_2.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_quest_controller\Draw_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 10 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 1 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 10 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_shop_bg_controller\Draw_0.gml
+Converted builtin : line 4 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_screen_controller\Create_0.gml
+Converted builtin : line 20 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 20 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_screen_controller\Step_0.gml
+Converted builtin : line 32 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 33 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 34 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 35 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 39 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 40 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 41 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 42 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 76 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 93 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 77 : (instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).load_file = string_replace(file, ".sav", "" -> __view_set( e__VW.XView, 0, string_replace(file, ".sav", "" )
+Converted builtin : line 81 : (instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).Datetime = ini_read_string(file,"last_played","" -> __view_set( e__VW.XView, 0, ini_read_string(file,"last_played","" )
+Converted builtin : line 94 : (instance_nearest(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game)).load_file = string_replace(file, ".sav", "" -> __view_set( e__VW.XView, 0, string_replace(file, ".sav", "" )
+Converted builtin : line 99 : (instance_nearest(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game)).Datetime = ini_read_string(file,"last_played","" -> __view_set( e__VW.XView, 0, ini_read_string(file,"last_played","" )
+Converted builtin : line 32 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 33 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 34 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 35 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 39 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 40 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 41 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 42 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 76 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 93 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_screen_controller\Draw_0.gml
+Converted builtin : line 9 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 32 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 9 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 32 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 5 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 32 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 5 : view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 32 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_lives\Draw_0.gml
+Converted builtin : line 4 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 5 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 20 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 5 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 20 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_mana\Draw_0.gml
+Converted builtin : line 4 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_stamina\Draw_0.gml
+Converted builtin : line 4 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_map_cargo_cart\Create_0.gml
+Converted builtin : line 2 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 3 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_world_map_controller\Draw_0.gml
+Converted builtin : line 4 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_world_map_controller\KeyPress_77.gml
+Converted builtin : line 10 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 11 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 12 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 13 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 14 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 15 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 16 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 17 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 18 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 19 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 10 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 11 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 12 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 13 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 14 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 15 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 16 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 17 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 18 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 19 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_map_grid\Create_0.gml
+Converted builtin : line 7 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 7 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 4 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 5 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_merchant\Step_2.gml
+Converted builtin : line 24 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 24 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_merchant\Step_0.gml
+Converted string : line 2 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\objects\obj_compass\Create_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\obj_compass\Step_0.gml
+Converted builtin : line 1 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 2 : view_yview -> __view_get( e__VW.YView, 0 )
+
+game speed set to 60
+added compatibility script action/action_create_object.gml
+added compatibility script action/action_kill_object.gml
+added compatibility script action/action_move_to.gml
+added compatibility script action/action_set_relative.gml
+added compatibility script draw/draw_set_blend_mode.gml
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script view/__view_get.gml
+added compatibility script view/__view_set.gml
+added compatibility script view/__view_set_internal.gml
+added compatibility script action/__init_action.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
+added compatibility script __global_object_depths.gml
