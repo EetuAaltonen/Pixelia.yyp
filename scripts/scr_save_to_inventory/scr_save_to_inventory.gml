@@ -14,8 +14,12 @@ for (i = 0; i < listSize; i++) {
     if (string(ds_list_find_value(value, 0)) == spriteName) {
         count = ds_list_find_value(value, 2);
         count += addedAmount;
-        if (count <= 0) { 
+        if (count <= 0) {
             ds_list_delete(global.inventory, i);
+			var idx = ds_list_find_index(global.equipments, spriteName);
+			if (idx != 1) {
+				ds_list_delete(global.equipments, idx);
+			}
         } else {
             ds_list_replace(value, 2, count);
             ds_list_replace(global.inventory, i, value);

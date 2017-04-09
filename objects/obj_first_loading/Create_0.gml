@@ -83,19 +83,16 @@ load = false;
     global.work_slot_3 = false;
     global.work_slot_4 = false;
 
-/* */
 ///Global variables - Quest / Dialogs
 global.quest = "Beginning";
 global.dialogId = 0;
 
-/* */
 ///Global variables - Pause
 global.pause = 0;
 global.pause_draw = 0;
 
-/* */
 ///Global variables - Inventory
 global.inventory = ds_list_create();
 
-/* */
-/*  */
+///Global variables - Equipments list
+global.equipments = ds_list_create();

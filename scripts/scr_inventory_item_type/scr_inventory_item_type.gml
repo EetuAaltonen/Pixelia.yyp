@@ -13,6 +13,11 @@ switch(spriteIndex) {
     case "spr_tool_saw": {type = "[inventory1,shop,tool,workbench]";break;}
     case "spr_tool_knife": {type = "[inventory1,shop,tool,workbench]";break;}
     //Equipments
-    case "spr_broken_helmet": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		//Helmets
+		case "spr_broken_helmet": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_knight_helmet": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		//Shields
+		case "spr_wooden_shield": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_knight_shield": {type = "[inventory1,inventoryEquipments,shop]";break;}
 };
 return type;

@@ -1,5 +1,5 @@
 ///Start dropping items
-if (global.hudState == "inventory1" || global.hudState == "inventoryEquipments")
+if (global.hudState == "inventory1")
 {
     if (droppingItem == false)
     {
@@ -14,4 +14,40 @@ if (global.hudState == "inventory1" || global.hudState == "inventoryEquipments")
         }
         droppingItem = true;
     }
+}
+
+///Toggle equipped
+else if (global.hudState == "inventoryEquipments") {
+	var equippedItem;
+	var idx;
+	var listSize = ds_list_size(global.equipments);
+	if (!equipped) {
+		var typeName = "";
+		if (string_pos("helmet", spriteName)) {
+			typeName = "helmet";
+		} else if (string_pos("shield", spriteName)) {
+			typeName = "shield";
+		}
+		if (listSize == 0) {
+			ds_list_add(global.equipments, spriteName);
+		} else {
+			var sameType = false;
+			for (i = 0; i < listSize; i++) {
+				equippedItem = ds_list_find_value(global.equipments, i);
+				if	(string_pos(typeName, equippedItem)) {
+					ds_list_replace(global.equipments, i, spriteName);
+					break;
+				}
+			}
+			idx = ds_list_find_index(global.equipments, spriteName)
+			if (idx == -1) {
+				ds_list_add(global.equipments, spriteName);
+			}
+		}
+	} else {
+		idx = ds_list_find_index(global.equipments, spriteName)
+		if (idx != -1) {
+			ds_list_delete(global.equipments, idx);
+		}
+	}
 }

@@ -26,6 +26,7 @@ if (pageUpdate == true)
                 instance_create(viewX+30, viewY+Ypos, obj_listed_item);
                 (instance_nearest(viewX+30, viewY+Ypos, obj_listed_item)).sprite_index = asset_get_index(string(ds_list_find_value(info, 0)));
                 (instance_nearest(viewX+30, viewY+Ypos, obj_listed_item)).itemCount = ds_list_find_value(info, 2);
+				(instance_nearest(viewX+30, viewY+Ypos, obj_listed_item)).checkEquipped = ds_list_find_value(info, 2);
                 Name[item_count] = ds_list_find_value(info, 1);
                 Count[item_count] = ds_list_find_value(info, 2);
                 Weight[item_count] = string_format((ds_list_find_value(info, 2) * ds_list_find_value(info, 3)), 0, 2);

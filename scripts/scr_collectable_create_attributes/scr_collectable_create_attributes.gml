@@ -7,3 +7,4 @@ depth_ = depth;
 moveToPlayer = false;
 name = scr_inventory_item_name(spriteName);
 weight = scr_inventory_item_weight(spriteName);
+type = scr_inventory_item_type(spriteName);

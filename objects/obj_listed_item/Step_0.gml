@@ -1,18 +1,11 @@
-///Fill info
-/*if (get_attributes == true)
-{
-    sprite_index_ = sprite_index; //Sprite_index
-    //Get id
-    scr_item_get_id();
-    //Get attributes
-    scr_item_get_attributes();
-    if (typeId == 5)
-    {
-        //Check if equipped
-        scr_check_if_equipped();
-    }
-    get_attributes = false;
-}*/
+//Check if equipped
+if (checkEquipped) {
+	sprite_index_ = sprite_index;
+	spriteName = sprite_get_name(sprite_index_);
+	type = scr_inventory_item_type(spriteName);
+	equipped = scr_check_if_equipped(type);
+	checkEquipped = false;
+}
 
 ///Destroy function
 if (global.hudState == "inventory1" || global.hudState == "inventoryEquipments")

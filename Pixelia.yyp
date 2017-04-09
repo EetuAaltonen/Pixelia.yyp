@@ -1223,6 +1223,14 @@
             }
         },
         {
+            "Key": "2c47f0ab-778e-42ec-89f2-9128fd2f8720",
+            "Value": {
+                "id": "e1be556f-afc1-4cba-b054-2a8b58a77e0f",
+                "resourcePath": "objects\\obj_knight_helmet\\obj_knight_helmet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2c5e95c3-3142-4c41-9bde-c821a939bfcc",
             "Value": {
                 "id": "9be22b96-a20f-4b36-8aa9-dc49bde6c150",
@@ -1627,6 +1635,14 @@
             "Value": {
                 "id": "b24df0b4-964f-4ba1-8224-bee306391272",
                 "resourcePath": "sprites\\spr_wooden_handle\\spr_wooden_handle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "39ebe4cc-5ecb-4bb6-b32d-743f9b200533",
+            "Value": {
+                "id": "fbbe787f-2d29-4311-bc15-f49c13760c67",
+                "resourcePath": "sprites\\spr_knight_shield\\spr_knight_shield.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2250,7 +2266,7 @@
             "Key": "54fc9673-7aa0-4bb6-ad4a-a986cf3c71b0",
             "Value": {
                 "id": "67e75c38-565b-4419-9475-1ab73681ff36",
-                "resourcePath": "sprites\\spr_broken_helmet_1\\spr_broken_helmet_1.yy",
+                "resourcePath": "sprites\\spr_wooden_shield\\spr_wooden_shield.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2284,6 +2300,14 @@
                 "id": "e53de858-f1c7-433a-aad9-fd5285caef3f",
                 "resourcePath": "views\\55dc2eb0-b5d1-47d4-b871-52094f891788.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "56aee95e-17f1-4f24-99dc-9c554e964c49",
+            "Value": {
+                "id": "f6b97f8f-670b-4298-99a7-cc30dae8105c",
+                "resourcePath": "objects\\obj_wooden_shield\\obj_wooden_shield.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4263,6 +4287,14 @@
             }
         },
         {
+            "Key": "9e2f0bf8-4025-475a-8a75-f213f203df60",
+            "Value": {
+                "id": "24b6d677-7b7c-4fc3-a030-2831b9224772",
+                "resourcePath": "views\\9e2f0bf8-4025-475a-8a75-f213f203df60.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9edc0b2c-aa6c-43c2-94db-047abca36dd7",
             "Value": {
                 "id": "7633dc9e-821d-4093-befc-544554041858",
@@ -4399,6 +4431,14 @@
             }
         },
         {
+            "Key": "a40a03a4-edfa-4a1b-9ead-1b30195f669d",
+            "Value": {
+                "id": "62044882-433b-461d-8ff9-0933beb37e67",
+                "resourcePath": "sprites\\spr_knight_helmet\\spr_knight_helmet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4c19e72-02ae-4608-89d7-bc7f71cce69b",
             "Value": {
                 "id": "f332c6a7-053c-4ac9-94c1-d1c3e8f3ebc6",
@@ -4524,6 +4564,14 @@
                 "id": "d7fd84a3-227b-4e0c-9c7b-be4fa6004290",
                 "resourcePath": "objects\\obj_world_map_controller\\obj_world_map_controller.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "abc3a0f0-4fd4-48af-9238-b921e336b57c",
+            "Value": {
+                "id": "10769d2a-de14-4080-8c4e-38ad052ecd50",
+                "resourcePath": "sprites\\sprite_318\\sprite_318.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5988,6 +6036,14 @@
                 "id": "4fbac5bc-8beb-4d3e-bdc3-b1b830daa2b7",
                 "resourcePath": "views\\e79c341b-b08d-458d-a31d-ac78c190c65d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e7c84487-03ab-4508-8971-ac0065abb3a9",
+            "Value": {
+                "id": "b99ca5ab-0592-49d2-911d-6533d5c300d3",
+                "resourcePath": "objects\\obj_knight_shield\\obj_knight_shield.yy",
+                "resourceType": "GMObject"
             }
         },
         {

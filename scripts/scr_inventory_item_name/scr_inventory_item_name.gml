@@ -13,6 +13,11 @@ switch(spriteName) {
     case "spr_tool_saw": {name = "Saw";break;}
     case "spr_tool_knife": {name = "Knife";break;}
     //Equipments
-    case "spr_broken_helmet": {name = "Broken helmet";break;}
+		//Helmets
+		case "spr_broken_helmet": {name = "Broken helmet";break;}
+		case "spr_knight_helmet": {name = "Knight helmet";break;}
+		//Shields
+		case "spr_wooden_shield": {name = "Wooden shield";break;}
+		case "spr_knight_shield": {name = "Knight shield";break;}
 };
 return name;

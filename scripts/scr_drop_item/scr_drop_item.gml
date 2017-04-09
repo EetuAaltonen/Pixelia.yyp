@@ -1,6 +1,5 @@
 ///scr_drop_item(argument0)
 var spriteName = sprite_get_name(argument0);
-show_message(sprite_get_name(argument0));
 var randomX, randomY, i;
 for (i = 1; i <= droppedCount; i++)
 {
