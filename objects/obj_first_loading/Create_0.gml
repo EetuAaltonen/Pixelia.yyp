@@ -10,7 +10,6 @@ load = false;
     global.enemy_stats2 = 0;
     global.enemy_stats3 = 0;
 
-/* */
 ///Global variables - Player
 
 /*[Player]*/
@@ -61,7 +60,6 @@ load = false;
     global.max_item_weight = 10;
     global.total_item_weight = 0;
 
-/* */
 ///Global variables - Crafting
 
 /*[Forge]*/

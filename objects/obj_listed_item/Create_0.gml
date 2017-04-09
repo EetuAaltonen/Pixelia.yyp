@@ -5,6 +5,5 @@ droppingItem = false;
 createOnce = true;
 droppedCount = 0;
 selected = false;
-show_message(sprite_index);
 //scr_check_if_equipped();
 
