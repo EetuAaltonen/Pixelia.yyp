@@ -16,13 +16,13 @@ load = false;
     //Can get damage
     global.damage = 1;
     //Health
-    global.maxArmor = 10;
+    global.maxHealth = 10;
     global.healthPlus = 0;
     global.health = 10;
     //Armor
-    global.maxArmor = 2;
+    global.maxArmor = 129;
     global.armorPlus = 0;
-    global.armor = (0 + global.armorPlus);
+    global.armor = 0;
     global.armorRegenAmount = 1;
     global.armorRegenSpeed = 50;
     global.armorRegenPlus = 0; //skill NEEDED???

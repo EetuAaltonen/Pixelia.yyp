@@ -2,8 +2,26 @@
 if (checkEquipped) {
 	sprite_index_ = sprite_index;
 	spriteName = sprite_get_name(sprite_index_);
+	name = scr_inventory_item_name(spriteName);
+	weight = scr_inventory_item_weight(spriteName);
+	armor = scr_inventory_item_armor(spriteName);
 	type = scr_inventory_item_type(spriteName);
-	equipped = scr_check_if_equipped(type);
+	if (string_pos("inventoryEquipments", type)) {
+		buffs = ds_list_create();
+		buffs = scr_inventory_item_buffs(spriteName);
+	}
+	infoText =	name + "\n" +
+				"Weight: " + string(weight) + " Pw\n" + 
+				"Armor: " + string(armor) + "\n";
+	if (buffs) {
+		var listLength = ds_list_size(buffs);
+		for(i = 0; i < listLength; i++) {
+			var buffName = ds_list_find_value(buffs, i);
+			var buffAmount = ds_list_find_value(buffs, i+1);
+			infoText += buffName + ": " + string(buffAmount) + "\n";
+			i++
+		}
+	}
 	checkEquipped = false;
 }
 

@@ -8,14 +8,14 @@ if (selected == false && txt == "")
 if (room != Menu)
 {
     //Destroy function
-    if (global.hudState == "inventory1")
+    if (global.hudState == "inventory1" || string_pos("Equipments", string(global.hudState)))
     {
         if (obj_inventory_controller.pageUpdate == true)
         {
             instance_destroy();
         }
     }
-    else if (global.hudState != "inventory1")
+    else if (global.hudState != "inventory1" || !string_pos("Equipments", string(global.hudState)))
     {
         instance_destroy();
     }

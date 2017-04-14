@@ -35,6 +35,7 @@ else if (global.hudState == "inventoryEquipments") {
 			for (i = 0; i < listSize; i++) {
 				equippedItem = ds_list_find_value(global.equipments, i);
 				if	(string_pos(typeName, equippedItem)) {
+					scr_equip_remove_buffs(equippedItem);
 					ds_list_replace(global.equipments, i, spriteName);
 					break;
 				}
@@ -44,10 +45,16 @@ else if (global.hudState == "inventoryEquipments") {
 				ds_list_add(global.equipments, spriteName);
 			}
 		}
+		global.armorPlus += armor;
+		global.armor += armor;
 	} else {
 		idx = ds_list_find_index(global.equipments, spriteName)
 		if (idx != -1) {
 			ds_list_delete(global.equipments, idx);
 		}
+		scr_equip_remove_buffs(spriteName);
+	}
+	if (global.armor > (global.maxArmor + global.armorPlus)) {
+		global.armor = (global.maxArmor + global.armorPlus);
 	}
 }

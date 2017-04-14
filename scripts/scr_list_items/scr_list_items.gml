@@ -8,7 +8,7 @@ if (pageUpdate == true)
     //Clear item info
     item_info_text = "Item info...";
     //Create search text box in inventory
-    if (global.hudState == "inventory1")
+    if (global.hudState == "inventory1" || string_pos("Equipments", string(global.hudState)))
     {
         instance_create(viewX+412, viewY+230, obj_menu_text_box);
     }
@@ -50,7 +50,7 @@ if (item_count > 0)
         //Item description background
         draw_sprite(spr_inv_item_description_bg, 0,viewX+120, viewY+Ypos);
         //Item description
-        draw_text(viewX+56,viewY+Ypos, string_hash_to_newline(Name[i]));
+        draw_text(viewX+56,viewY+Ypos, Name[i]);
         if (global.hudState == "shop")
         {
             /*//Item price background
@@ -60,10 +60,12 @@ if (item_count > 0)
         }
         else
         {
-            //Item amount background
-            draw_sprite(spr_inv_item_amount_bg, 0,viewX+228, viewY+Ypos);
-            //Item amount
-            draw_text(viewX+207,viewY+Ypos, string_hash_to_newline(string(Count[i]) + "  x"));
+			if (!string_pos("Equipments", string(global.hudState))) {
+	            //Item amount background
+	            draw_sprite(spr_inv_item_amount_bg, 0,viewX+228, viewY+Ypos);
+	            //Item amount
+	            draw_text(viewX+207,viewY+Ypos, string(Count[i]) + "  x");
+			}
         }
         if (string_pos("inventory", string(global.hudState)) &&
             !string_pos("Equipments", string(global.hudState)) ||
@@ -72,14 +74,14 @@ if (item_count > 0)
             //Item weight background
             draw_sprite(spr_inv_item_amount_bg, 0,viewX+295, viewY+Ypos);
             //Item weight
-            draw_text(viewX+274,viewY+Ypos, string_hash_to_newline(Weight[i] + "  Pw"));
+            draw_text(viewX+274,viewY+Ypos, Weight[i] + "  Pw");
         }
         Ypos += 19;
     }
     createOnce = false;
 } else {
     //If empty
-    draw_text(viewX+30, viewY+120, string_hash_to_newline("Inventory is empty..."));
+    draw_text(viewX+30, viewY+120, "Inventory is empty...");
 }
 //Page number background
 draw_sprite(spr_inv_item_description_bg, 0,viewX+87, viewY+95);
@@ -94,17 +96,19 @@ if (page_max == 0)
 {
     page_max = 1;
 }
-draw_text(viewX+22,viewY+95, string_hash_to_newline(string("PAGE:    " + string(current_page + 1) + "  /  " + string(page_max))));
+draw_text(viewX+22,viewY+95, string("PAGE:    " + string(current_page + 1) + "  /  " + string(page_max)));
 if (string_pos("inventory", string(global.hudState)) &&
     !string_pos("Equipments", string(global.hudState)) ||
     global.hudState = "shop")
 {
-    //Item info background
-    draw_sprite(spr_inv_item_info_bg, 0,viewX+334, viewY+85);
-    //Item info text
-    draw_text(viewX+349, viewY+100, string_hash_to_newline(item_info_text));
     //Total and weight background
     draw_sprite(spr_inv_item_description_bg, 0,viewX+255, viewY+95);
     //Total and weight
-    draw_text(viewX+190,viewY+95, string_hash_to_newline("Capacity:  " + string_format(global.total_item_weight, 0, 2) + "  /  " + string(global.max_item_weight) + "  Pw"));
+    draw_text(viewX+190,viewY+95, "Capacity:  " + string_format(global.total_item_weight, 0, 2) + "  /  " + string(global.max_item_weight) + "  Pw");
 }
+//Item info background
+draw_sprite(spr_inv_item_info_bg, 0,viewX+334, viewY+85);
+//Vertical align
+draw_set_valign(fa_top);
+//Item info text
+draw_text(viewX+349, viewY+95, item_info_text);
