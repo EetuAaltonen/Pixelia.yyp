@@ -15,25 +15,25 @@ else if (keyboard_check(vk_right))
     {
         //Run
         image_speed = 0.5;
-        if (hspeed < max_run_speed)
+        if (hspeed < (global.maxRunningSpeed + global.maxRunningSpeedPlus))
         {
             hspeed += acceleration;
         }
         else
         {
-            hspeed = max_run_speed;
+            hspeed = (global.maxRunningSpeed + global.maxRunningSpeedPlus);
         }
     }
     else
     {
         //Walk
-        if (hspeed < max_walk_speed)
+        if (hspeed < (global.maxWalkingSpeed + global.maxWalkingSpeedPlus))
         {
             hspeed += acceleration;
         }
         else
         {
-            hspeed = max_walk_speed;
+            hspeed = (global.maxWalkingSpeed + global.maxWalkingSpeedPlus);
         }
     }
 }
@@ -50,25 +50,25 @@ else if (keyboard_check(vk_left))
     {
         //Run
         image_speed = 0.5;
-        if (hspeed > -max_run_speed)
+        if (hspeed > -(global.maxRunningSpeed + global.maxRunningSpeedPlus))
         {
             hspeed -= acceleration;
         }
         else
         {
-            hspeed = -max_run_speed;
+            hspeed = -(global.maxRunningSpeed + global.maxRunningSpeedPlus);
         }
     }
     else
     {
         //Walk
-        if (hspeed > -max_walk_speed)
+        if (hspeed > -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus))
         {
             hspeed -= acceleration;
         }
         else
         {
-            hspeed = -max_walk_speed;
+            hspeed = -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus);
         }
     }
 }

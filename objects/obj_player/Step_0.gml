@@ -240,6 +240,3 @@ if (global.damage == 0)
 }
 //Dead
 scr_plr_dead();
-
-/* */
-/*  */

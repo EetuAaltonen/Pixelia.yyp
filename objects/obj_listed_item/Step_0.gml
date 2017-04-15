@@ -11,14 +11,21 @@ if (checkEquipped) {
 		buffs = scr_inventory_item_buffs(spriteName);
 	}
 	infoText =	name + "\n" +
-				"Weight: " + string(weight) + " Pw\n" + 
-				"Armor: " + string(armor) + "\n";
+				"Weight: " + string(weight) + " Pw\n" 
+	if (armor > 0) {
+		infoText += "Armor: " + string(armor) + "\n";
+	}
 	if (buffs) {
 		var listLength = ds_list_size(buffs);
 		for(i = 0; i < listLength; i++) {
 			var buffName = ds_list_find_value(buffs, i);
 			var buffAmount = ds_list_find_value(buffs, i+1);
-			infoText += buffName + ": " + string(buffAmount) + "\n";
+			var mark1 = "";
+			if (buffAmount >= 0) {
+				mark1 = "+";
+			}
+			var mark2 = scr_buff_punctuation_mark(buffName);
+			infoText += buffName + ": " + mark1 + string(buffAmount) + mark2 + "\n";
 			i++
 		}
 	}

@@ -1,6 +1,9 @@
 ///Global variables
 load = false;
 
+/*[Camera]*/
+	view_camera[0] = camera_create();
+
 /*[Hud state & Room change]*/
     global.hudState = "null";
     global.room_change = 0;
@@ -39,8 +42,14 @@ load = false;
     global.manaRegenSpeed = 100;
     global.manaRegenPlus = 0; //skill NEEDED???
     //Movement
-    global.movementSpeed = 0; //Carrying - slow your movement
-    global.load = 0;
+		//Walking
+		global.maxWalkingSpeed = 1.5;
+		global.maxWalkingSpeedPlus = 0;
+		global.slowingWalkingSpeed = 0; //Carrying - slow your walking
+		//Running
+		global.maxRunningSpeed = 2.5;
+		global.maxRunningSpeedPlus = 0;
+		global.slowingRunningSpeed = 0;	//Carrying - slow your running
     //Level
     global.level = 1;
     global.xp = 0;
@@ -58,6 +67,7 @@ load = false;
     global.auto_healing = 1;
     //Max & Total item weight
     global.max_item_weight = 10;
+	global.carryingCapacityPlus = 0;
     global.total_item_weight = 0;
 
 ///Global variables - Crafting

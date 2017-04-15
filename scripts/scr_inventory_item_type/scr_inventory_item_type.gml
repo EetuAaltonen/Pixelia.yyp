@@ -19,5 +19,14 @@ switch(spriteIndex) {
 		//Shields
 		case "spr_wooden_shield": {type = "[inventory1,inventoryEquipments,shop]";break;}
 		case "spr_knight_shield": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		//Boots
+		case "spr_leather_boots": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		//Rings
+		case "spr_silver_ring": {type = "[inventory1,inventoryEquipments,shop]";break;}
+	//Weapons
+		//Bow
+		case "spr_bow": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		//Arrow
+		case "spr_arrow_pouch": {type = "[inventory1,inventoryEquipments,shop]";break;}
 };
 return type;

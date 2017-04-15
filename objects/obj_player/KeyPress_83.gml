@@ -3,48 +3,38 @@ if (global.hudState == "null")
 {
     if (action_state != "bow")
     {
-        if (file_exists("Inventory.sav"))
-        {
-            ini_open("Inventory.sav");
-            //Check bow is equipped
-            var key = "Equipment[" + string(5) + "," + string(2) + "]";
-            var equppedState = ini_read_string(global.save_file,key,"false");
-            if (equppedState == "true")
-            {
-                //Check arrows are equipped
-                key = "Equipment[" + string(5) + "," + string(1) + "]";
-                equppedState = ini_read_string(global.save_file,key,"false");
-                if (equppedState == "true")
-                {
-                    equppedState = true;
-                }
-                else
-                {
-                    //name = "No equipped arrows!";
-                    //scr_add_new_toast();
-                }
-            }
-            else
-            {
-                //name = "No equipped bow!";
-                //scr_add_new_toast();
-            }
-            if (equppedState)
-            {
-                //Check arrow count > 0
-                key = "Amount[" + string(5) + "," + string(1) + "]";
-                var arrowCount = ini_read_real(global.save_file, key, 0);
-                if (arrowCount > 0)
-                {
-                    action_state = "bow";
-                    instance_create(x, y, obj_plr_aim);
-                    instance_create(x, y, obj_plr_bow);
-                    obj_plr_bow.arrowCount = arrowCount;
-                    hspeed = 0;
-                }
-            }
-            ini_close();
-        }
+        var bowFound = false;
+		var arrowFound = false;
+		var listSize = ds_list_size(global.equipments);
+		for (var i = 0; i < listSize; i++) {
+			equippedItem = ds_list_find_value(global.equipments, i);
+			if	(string_pos("bow", equippedItem)) {
+				bowFound = true;
+			}
+			else if	(string_pos("arrow", equippedItem)) {
+				arrowFound = true;
+			}
+			if (bowFound && arrowFound) {
+				break;
+			}
+		}
+		if (bowFound && arrowFound) {
+			action_state = "bow";
+            instance_create(x, y, obj_plr_aim);
+            instance_create(x, y, obj_plr_bow);
+            obj_plr_bow.arrowCount = 10;//arrowCount;
+            hspeed = 0;
+		} else {
+			if (!bowFound && !arrowFound) {
+                scr_add_new_toast("Bow and arrows not equipped!");
+			}
+			else if (!bowFound) {
+                scr_add_new_toast("Bow not equipped!");
+			}
+			else if (!arrowFound) {
+                scr_add_new_toast("Arrows not equipped!");
+			}
+		}
     }
     else if (action_state == "bow")
     {

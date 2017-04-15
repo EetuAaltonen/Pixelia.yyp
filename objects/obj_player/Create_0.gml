@@ -5,8 +5,6 @@ x = obj_spawner.x;
 y = obj_spawner.y;
 
 //Movement
-max_run_speed = 2.5;
-max_walk_speed = 1.5;
 acceleration = 0.2;
 
 //Drop coins after death

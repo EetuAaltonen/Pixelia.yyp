@@ -19,5 +19,14 @@ switch(spriteName) {
 		//Shields
 		case "spr_wooden_shield": {name = "Wooden shield";break;}
 		case "spr_knight_shield": {name = "Knight shield";break;}
+		//Boots
+		case "spr_leather_boots": {name = "Leather boots";break;}
+		//Rings
+		case "spr_silver_ring": {name = "Silver ring";break;}
+	//Weapons
+		//Bow
+		case "spr_bow": {name = "Bow";break;}
+		//Arrow
+		case "spr_arrow_pouch": {name = "Arrow";break;}
 };
 return name;

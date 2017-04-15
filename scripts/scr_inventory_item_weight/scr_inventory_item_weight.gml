@@ -19,5 +19,14 @@ switch(spriteIndex) {
 		//Shields
 		case "spr_wooden_shield": {weight = 1.0;break;}
 		case "spr_knight_shield": {weight = 1.5;break;}
+		//Boots
+		case "spr_leather_boots": {weight = 0.2;break;}
+		//Rings
+		case "spr_silver_ring": {weight = 0.1;break;}
+	//Weapons
+		//Bow
+		case "spr_bow": {weight = 1.5;break;}
+		//Arrow
+		case "spr_arrow_pouch": {weight = 2.0;break;}
 };
 return weight;

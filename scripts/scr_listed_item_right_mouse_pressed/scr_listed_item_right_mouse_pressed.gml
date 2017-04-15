@@ -1,4 +1,6 @@
 ///Start dropping items
+var viewX = camera_get_view_x(view_camera[0]);
+var viewY = camera_get_view_y(view_camera[0]);
 if (global.hudState == "inventory1")
 {
     if (droppingItem == false)
@@ -6,9 +8,9 @@ if (global.hudState == "inventory1")
         //Create buttons to drop items
         if (createOnce == true)
         {
-            instance_create(__view_get( e__VW.XView, 0 )+330, __view_get( e__VW.YView, 0 )+150,obj_button_increase);
-            instance_create(__view_get( e__VW.XView, 0 )+170, __view_get( e__VW.YView, 0 )+150,obj_button_decrease);
-            instance_create(__view_get( e__VW.XView, 0 )+250, __view_get( e__VW.YView, 0 )+190,obj_button_confirm);
+            instance_create(viewX+330, viewY+150,obj_button_increase);
+            instance_create(viewX+170, viewY+150,obj_button_decrease);
+            instance_create(viewX+250, viewY+190,obj_button_confirm);
             obj_button_confirm.item_count = itemCount;
             createOnce = false;
         }
@@ -22,31 +24,27 @@ else if (global.hudState == "inventoryEquipments") {
 	var idx;
 	var listSize = ds_list_size(global.equipments);
 	if (!equipped) {
-		var typeName = "";
-		if (string_pos("helmet", spriteName)) {
-			typeName = "helmet";
-		} else if (string_pos("shield", spriteName)) {
-			typeName = "shield";
-		}
+		var typeName = scr_unequip_type_name(spriteName);
 		if (listSize == 0) {
 			ds_list_add(global.equipments, spriteName);
+			scr_equip_add_buffs(spriteName);
 		} else {
 			var sameType = false;
-			for (i = 0; i < listSize; i++) {
+			for (var i = 0; i < listSize; i++) {
 				equippedItem = ds_list_find_value(global.equipments, i);
 				if	(string_pos(typeName, equippedItem)) {
 					scr_equip_remove_buffs(equippedItem);
 					ds_list_replace(global.equipments, i, spriteName);
+					scr_equip_add_buffs(spriteName);
 					break;
 				}
 			}
-			idx = ds_list_find_index(global.equipments, spriteName)
+			idx = ds_list_find_index(global.equipments, spriteName);
 			if (idx == -1) {
 				ds_list_add(global.equipments, spriteName);
+				scr_equip_add_buffs(spriteName);
 			}
 		}
-		global.armorPlus += armor;
-		global.armor += armor;
 	} else {
 		idx = ds_list_find_index(global.equipments, spriteName)
 		if (idx != -1) {
