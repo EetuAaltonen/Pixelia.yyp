@@ -14,30 +14,30 @@ if (instance_exists(obj_crafting_slot_1) &&
     {
         if (slot1.spriteIndex == false)
         {
-            prev_x = x;
+            /*prev_x = x;
             prev_y = y;
             x = slot1.x;
-            y = slot1.y;
+            y = slot1.y;*/
             slot1.spriteIndex = spriteIndex;
             selected = true;
             obj_crafted_item.checkRecipe = true;
         }
         else if (slot2.spriteIndex == false)
         {
-            prev_x = x;
+            /*prev_x = x;
             prev_y = y;
             x = slot2.x;
-            y = slot2.y;
+            y = slot2.y;*/
             slot2.spriteIndex = spriteIndex;
             selected = true;
             obj_crafted_item.checkRecipe = true;
         }
         else if (slot3.spriteIndex == false)
         {
-            prev_x = x;
+            /*prev_x = x;
             prev_y = y;
             x = slot3.x;
-            y = slot3.y;
+            y = slot3.y;*/
             slot3.spriteIndex = spriteIndex;
             selected = true;
             obj_crafted_item.checkRecipe = true;
@@ -47,24 +47,24 @@ if (instance_exists(obj_crafting_slot_1) &&
     {
         if (slot1.spriteIndex == spriteIndex)
         {
-            x = prev_x;
-            y = prev_y;
+            /*x = prev_x;
+            y = prev_y;*/
             slot1.spriteIndex = false;
             selected = false;
             obj_crafted_item.checkRecipe = true;
         }
         else if (slot2.spriteIndex == spriteIndex)
         {
-            x = prev_x;
-            y = prev_y;
+            /*x = prev_x;
+            y = prev_y;*/
             slot2.spriteIndex = false;
             selected = false;
             obj_crafted_item.checkRecipe = true;
         }
         else if (slot3.spriteIndex == spriteIndex)
         {
-            x = prev_x;
-            y = prev_y;
+            /*x = prev_x;
+            y = prev_y;*/
             slot3.spriteIndex = false;
             selected = false;
             obj_crafted_item.checkRecipe = true;
