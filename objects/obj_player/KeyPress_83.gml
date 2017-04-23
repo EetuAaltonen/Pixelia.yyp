@@ -1,3 +1,4 @@
+///@description Bow
 ///Bow
 if (global.hudState == "null")
 {

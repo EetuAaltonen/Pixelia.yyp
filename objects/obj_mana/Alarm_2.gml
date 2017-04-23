@@ -1,3 +1,0 @@
-///Mana usage
-manaUsage = false;
-

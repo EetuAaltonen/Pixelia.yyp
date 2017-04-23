@@ -1,18 +1,20 @@
 //Delete created objects
 global.hudState = "null";
-scr_first_loading_screen_objects();
-var i, object;
-var arrayLength = array_length_1d(Object);
-for(i = 1; i < arrayLength; i++)
-{
-    object = Object[i];
-    with(object) 
-    {
+var destroyObjects = ds_list_create();
+destroyObjects = scr_first_loading_screen_objects();
+var listSize = ds_list_size(destroyObjects);
+for(var i = 0; i < listSize; i++) {
+    object = ds_list_find_value(destroyObjects, i);
+    with(object) {
         instance_destroy();
     }
 }
+ds_list_destroy(destroyObjects);
 scr_savegame();
 ds_list_destroy(global.inventory);
+with(obj_first_loading) {
+    instance_destroy();
+}
 obj_screen_controller.menu_state = "main_menu";
 obj_screen_controller.create_buttons = true;
 room_goto(Menu);

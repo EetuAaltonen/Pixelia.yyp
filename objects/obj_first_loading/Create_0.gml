@@ -19,28 +19,30 @@ load = false;
     //Can get damage
     global.damage = 1;
     //Health
-    global.maxHealth = 10;
+    global.maxHealth = 3;
     global.healthPlus = 0;
-    global.health = 10;
+    global.health = global.maxHealth;
     //Armor
     global.maxArmor = 129;
     global.armorPlus = 0;
     global.armor = 0;
     global.armorRegenAmount = 1;
+	global.armorRegenPlus = 0; //skill NEEDED???
     global.armorRegenSpeed = 50;
-    global.armorRegenPlus = 0; //skill NEEDED???
     //Stamina
-    global.staminaPlus = 0; //Max = 10
-    global.stamina = (10 + global.staminaPlus);
+    global.maxStamina = 10;
+	global.staminaPlus = 0;
+    global.stamina = 0;//global.maxStamina;
     global.staminaRegenAmount = 1;
+	global.staminaRegenPlus = 0; //skill NEEDED???
     global.staminaRegenSpeed = 50;
-    global.staminaRegenPlus = 0; //skill NEEDED???
     //Mana
-    global.manaPlus = 0; //Max = 10
-    global.mana = (10 + global.staminaPlus);
+    global.maxMana = 10;
+	global.manaPlus = 0;
+    global.mana = 0;//global.maxMana;
     global.manaRegenAmount = 1;
+	global.manaRegenPlus = 0; //skill NEEDED???
     global.manaRegenSpeed = 100;
-    global.manaRegenPlus = 0; //skill NEEDED???
     //Movement
 		//Walking
 		global.maxWalkingSpeed = 1.5;
@@ -69,29 +71,6 @@ load = false;
     global.max_item_weight = 10;
 	global.carryingCapacityPlus = 0;
     global.total_item_weight = 0;
-
-///Global variables - Crafting
-
-/*[Forge]*/
-    //Highlights off
-    global.forg_slot_1 = false;
-    global.forg_slot_2 = false;
-    global.forg_slot_3 = false;
-    global.forg_slot_4 = false;
-    
-/*[Alchemy]*/
-    //Highlights off
-    global.alch_slot_1 = false;
-    global.alch_slot_2 = false;
-    global.alch_slot_3 = false;
-    global.alch_slot_4 = false;
-
-/*[Workbench]*/
-    //Highlights off
-    global.work_slot_1 = false;
-    global.work_slot_2 = false;
-    global.work_slot_3 = false;
-    global.work_slot_4 = false;
 
 ///Global variables - Quest / Dialogs
 global.quest = "Beginning";

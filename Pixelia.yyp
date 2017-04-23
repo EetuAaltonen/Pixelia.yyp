@@ -599,14 +599,6 @@
             }
         },
         {
-            "Key": "1632aed0-df36-4860-a641-6aae4050c59c",
-            "Value": {
-                "id": "5df67509-d190-4e99-b12c-3ae366038bdd",
-                "resourcePath": "objects\\obj_stamina\\obj_stamina.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1633e900-91ea-4134-aee9-e99b98703563",
             "Value": {
                 "id": "a2295df9-4a41-4a1e-bdac-d92ffc3956f3",
@@ -1631,14 +1623,6 @@
             }
         },
         {
-            "Key": "38ff2590-de04-4987-9384-4aeea2a9f2c5",
-            "Value": {
-                "id": "d04db901-63d9-4868-a047-3dfe809b24c5",
-                "resourcePath": "objects\\obj_shop_controller\\obj_shop_controller.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "3969b101-eb89-4a28-80b5-7223a2ae25dd",
             "Value": {
                 "id": "b24df0b4-964f-4ba1-8224-bee306391272",
@@ -1983,10 +1967,10 @@
             }
         },
         {
-            "Key": "46d125f5-b328-45fc-ad9d-0dc925d2bd70",
+            "Key": "46fd9f31-51ce-4729-8d3b-8f31600cc4f2",
             "Value": {
-                "id": "e5179b91-69ff-4625-a09c-946e45539952",
-                "resourcePath": "sprites\\spr_stamina\\spr_stamina.yy",
+                "id": "ef7c1ca4-edc4-4379-8e1f-80bbd8d42260",
+                "resourcePath": "sprites\\spr_life_point\\spr_life_point.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2180,6 +2164,14 @@
                 "id": "d974d644-6d54-41d0-8d6f-9d37ad400baa",
                 "resourcePath": "objects\\obj_mount_horse\\obj_mount_horse.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "505a8279-d1f4-4f3e-9ce6-976a61d0d3a6",
+            "Value": {
+                "id": "529c4d06-94c9-42a4-aae1-ff9aa923a925",
+                "resourcePath": "scripts\\scr_decrease_stamina_n_mana\\scr_decrease_stamina_n_mana.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3527,14 +3519,6 @@
             }
         },
         {
-            "Key": "80aec661-90d2-4d0a-9182-981421a1e44f",
-            "Value": {
-                "id": "31b3cb5e-c56e-4ef0-b0d0-835522961929",
-                "resourcePath": "objects\\obj_dialog_bg_controller\\obj_dialog_bg_controller.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "80e95d8c-37f2-40ae-a6cb-757d37484614",
             "Value": {
                 "id": "a848ca65-63a9-4529-bdf1-1d023ac9345c",
@@ -3615,14 +3599,6 @@
             }
         },
         {
-            "Key": "8441bdfb-c57a-40a0-9ad6-29e46d28fcc0",
-            "Value": {
-                "id": "1968fd5c-8783-4e68-9e47-2e6c38a50149",
-                "resourcePath": "sprites\\spr_mana\\spr_mana.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8445c58b-9d16-4bed-83c1-269086e75074",
             "Value": {
                 "id": "b7fbaefa-8cb6-40fe-8fb6-8b957498499e",
@@ -3683,14 +3659,6 @@
             "Value": {
                 "id": "83fb4ffc-fff2-4455-9d49-0c652ce4ed4f",
                 "resourcePath": "objects\\obj_quest_controller\\obj_quest_controller.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "8655a635-d5a9-46f4-b304-63c7252fad27",
-            "Value": {
-                "id": "8f9cbdc4-02d2-43f5-b37e-e36615e40629",
-                "resourcePath": "objects\\obj_exp_counter\\obj_exp_counter.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3804,14 +3772,6 @@
                 "id": "b02e2fc5-fa2a-4572-865a-876507368aa2",
                 "resourcePath": "sprites\\spr_player\\spr_player.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "891228ee-4aad-4570-bdcf-5f6fd8679daf",
-            "Value": {
-                "id": "fdb20bb2-bb3c-42e8-93e2-ff63c9138f4b",
-                "resourcePath": "objects\\obj_crafting_bg_controller\\obj_crafting_bg_controller.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -4114,7 +4074,7 @@
             "Key": "97736f65-6c9b-4a33-856c-5ecdcc87a887",
             "Value": {
                 "id": "6fc2783d-c908-446f-b7ce-a3ebea91f065",
-                "resourcePath": "objects\\obj_lives\\obj_lives.yy",
+                "resourcePath": "objects\\obj_stats_meter\\obj_stats_meter.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4316,14 +4276,6 @@
                 "id": "24b6d677-7b7c-4fc3-a030-2831b9224772",
                 "resourcePath": "views\\9e2f0bf8-4025-475a-8a75-f213f203df60.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "9edc0b2c-aa6c-43c2-94db-047abca36dd7",
-            "Value": {
-                "id": "7633dc9e-821d-4093-befc-544554041858",
-                "resourcePath": "objects\\obj_mana\\obj_mana.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -4891,14 +4843,6 @@
             "Value": {
                 "id": "18f1e733-f3ee-48f3-92fa-ff460f69e4e4",
                 "resourcePath": "objects\\obj_home_blacksmith\\obj_home_blacksmith.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "b584302a-4da6-4ace-9000-c960a1bbc45f",
-            "Value": {
-                "id": "34be1325-1edf-4674-ada0-089d60d449f3",
-                "resourcePath": "objects\\obj_shop_bg_controller\\obj_shop_bg_controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -6431,6 +6375,14 @@
             }
         },
         {
+            "Key": "f434e211-0835-446a-9e13-b15534d8cb4e",
+            "Value": {
+                "id": "633ba89d-b3c9-4d4a-bc1f-9246eeaf8b5d",
+                "resourcePath": "sprites\\spr_stamina_n_mana\\spr_stamina_n_mana.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f4f0796b-0dcb-4d91-bfb2-e4e05d475776",
             "Value": {
                 "id": "83f298c9-7cdd-4f76-8aee-5235437aa126",
@@ -6712,9 +6664,9 @@
         "2facfb8b-c633-449c-b5c4-b070bd69bce3",
         "3f0f145f-2698-4362-b252-ff92f5fa0708",
         "617c29e9-7e85-4b22-bb00-90f71a890f0b",
+        "5e9a8551-f878-4b78-92d0-d264b0fdf70f",
         "78bee444-d561-4e65-a98b-3fe71aed6309",
         "1ae417cc-d174-4eb6-8ded-2480f974f9ba",
-        "5e9a8551-f878-4b78-92d0-d264b0fdf70f",
         "8bfcd086-6300-45ef-a31d-19e57e8d1eaf",
         "d59efc45-9d1a-404e-8c96-6fe88d100085",
         "3ca66e6f-aa8a-4274-bc8a-1640f0e40c08",
@@ -6777,7 +6729,8 @@
         "cea04ad0-2f73-4c1a-8e27-1d472ba3413c",
         "e3344eb1-b9c7-4df2-a15c-9583b713ece8",
         "be298050-ba2e-4de8-8011-f6feaa6567dc",
-        "a4315600-0fe4-4e6a-8749-ef90da0e6053"
+        "a4315600-0fe4-4e6a-8749-ef90da0e6053",
+        "505a8279-d1f4-4f3e-9ce6-976a61d0d3a6"
     ],
     "tutorial": ""
 }

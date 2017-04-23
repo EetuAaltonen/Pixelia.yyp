@@ -39,9 +39,9 @@ ini_write_string(global.save_file,"quest",global.quest);
 ini_write_real(global.save_file,"coins",global.coins);
 ini_write_real(global.save_file,"potions",global.potions);
 
-ini_write_real(global.save_file,"home_happiness",global.home_happiness);
+/*ini_write_real(global.save_file,"home_happiness",global.home_happiness);
 ini_write_real(global.save_file,"home_defence",global.home_defence);
 ini_write_real(global.save_file,"home_hunger",global.home_hunger);
-ini_write_real(global.save_file,"home_thirst",global.home_thirst);
+ini_write_real(global.save_file,"home_thirst",global.home_thirst);*/
 
 ini_close();

@@ -4,7 +4,9 @@ if (pageUpdate == true)
     pageUpdate = false;
     if (createOnce == true)
     {
-        var x_pos = 10;
+        var viewX = camera_get_view_x(view_camera[0]);
+		var viewY = camera_get_view_y(view_camera[0]);
+		var x_pos = 10;
         var margin_right = 32;
         var y_pos = 90;
         var margin_bottom = 35;
@@ -12,10 +14,10 @@ if (pageUpdate == true)
         {
             for (a = 1; a <= 4; a++)
             {
-                instance_create(__view_get( e__VW.XView, 0 )+x_pos+(margin_right*(i-1)), __view_get( e__VW.YView, 0 )+y_pos+(margin_bottom*a), obj_skill_tree_skill);
-                __view_set( e__VW.XView, 0, i );
-                __view_set( e__VW.XView, 0, a );
-                __view_set( e__VW.XView, 0, true );
+                instance_create(viewX+x_pos+(margin_right*(i-1)), viewY+y_pos+(margin_bottom*a), obj_skill_tree_skill);
+                (instance_nearest(viewX+x_pos+(margin_right*(i-1)),viewY+y_pos+(margin_bottom*a), obj_skill_tree_skill)).id_x = i;
+				(instance_nearest(viewX+x_pos+(margin_right*(i-1)),viewY+y_pos+(margin_bottom*a), obj_skill_tree_skill)).id_y = a;
+				(instance_nearest(viewX+x_pos+(margin_right*(i-1)),viewY+y_pos+(margin_bottom*a), obj_skill_tree_skill)).get_attributes = true;
             }
         }
         createOnce = false;

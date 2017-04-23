@@ -1,7 +1,0 @@
-/*if (global.dialog == true)
-{
-    
-}
-
-/* */
-/*  */

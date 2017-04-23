@@ -1,3 +1,4 @@
+///@description Shield
 ///Shield
 if (global.hudState == "null")
 {
@@ -5,7 +6,8 @@ if (global.hudState == "null")
     {
         if (cooldown_shield == 1)
         {
-            global.mana -= 5;
+            //Decrease stamina
+			scr_decrease_stamina_n_mana("mana", 5);
             cooldown_shield = 0;
             
             if (image_xscale == 1)

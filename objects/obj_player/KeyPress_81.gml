@@ -1,3 +1,4 @@
+///@description Slice
 ///Slice
 if (global.hudState == "null")
 {
@@ -8,7 +9,8 @@ if (global.hudState == "null")
             if (cooldown_slice == 1)
             {
                 action_state = "slice";
-                global.stamina -= 2;
+                //Decrease stamina
+				scr_decrease_stamina_n_mana("stamina", 2);
                 slice = 1;
                 instance_create(x + (10 * image_xscale), y, obj_plr_slice);
                 cooldown_slice = 0;

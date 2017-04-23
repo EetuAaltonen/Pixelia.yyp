@@ -3,6 +3,7 @@ var YposPlus = 19;
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 var createOnce = false;
+var setEquipmentsOnce = false;
 var createItems;
 var info = "";
 if (pageUpdate == true)
@@ -57,6 +58,7 @@ if (item_count > 0)
 			Ypos_ += YposPlus;
 		}
 		createOnce = false;
+		setEquipmentsOnce = true;
 	}
     for (var i = start_count; i != end_count; i++) {
         //Item background
@@ -115,7 +117,7 @@ if (global.hudState == "inventory1" ||
 	string_pos("Equipments", string(global.hudState)) ||
     global.hudState = "shop")
 {
-    //Total and weight background
+	//Total and weight background
     draw_sprite(spr_inv_item_description_bg, 0,viewX+255, viewY+95);
     //Total and weight
     

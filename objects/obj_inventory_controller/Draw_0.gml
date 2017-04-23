@@ -38,25 +38,25 @@ else if(global.hudState == "inventory3")
     draw_text(viewX+50,viewY+143, string_hash_to_newline(string(global.kill_counter)));
     
     //Home village stats
-    //Icon
+    /*//Icon
     draw_sprite(spr_home_happiness, 0, viewX+230, viewY+120);
     //Happiness
-    draw_text(viewX+250,viewY+112, string_hash_to_newline(string(global.home_happiness)));
+    draw_text(viewX+250,viewY+112, string(global.home_happiness));
             
     //Icon
     draw_sprite(spr_home_defence, 0, viewX+230, viewY+150);
     //Defence
-    draw_text(viewX+250,viewY+143, string_hash_to_newline(string(global.home_defence)));
+    draw_text(viewX+250,viewY+143, string(global.home_defence));
     
     //Icon
     draw_sprite(spr_home_hunger, 0, viewX+230, viewY+180);
     //Hunger
-    draw_text(viewX+250,viewY+174, string_hash_to_newline(string(global.home_hunger)));
+    draw_text(viewX+250,viewY+174, string(global.home_hunger));
     
     //Icon
     draw_sprite(spr_home_thirst, 0, viewX+230, viewY+210);
     //Thirst
-    draw_text(viewX+250,viewY+205, string_hash_to_newline(string(global.home_thirst)));
+    draw_text(viewX+250,viewY+205, string(global.home_thirst));*/
 }
 
 ///Shop
