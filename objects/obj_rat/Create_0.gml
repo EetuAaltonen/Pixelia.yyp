@@ -1,5 +1,13 @@
 image_speed = 0;
+image_xscale = 1;
+walkingSpeed = 1.5;
+text = "";
+attack = false;
+attackSpeed = 50;
+jump = false;
+jumpSpeed = -3;
 
+/*
 //Attack
 attack = false;
 can_punch = true;

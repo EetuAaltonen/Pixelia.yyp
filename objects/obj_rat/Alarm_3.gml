@@ -1,2 +1,2 @@
-can_punch = true;
-
+text = "";
+/*can_punch = true;

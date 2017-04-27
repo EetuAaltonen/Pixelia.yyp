@@ -145,7 +145,7 @@ else if (action_state == "null" ||
             }
         }       
     }
-    else if (action_state = "jump" && !place_free(x, y+1))
+    else if (action_state == "jump" && !place_free(x, y+1))
     {
         action_state = "null";
     }

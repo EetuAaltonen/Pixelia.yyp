@@ -1,2 +1,2 @@
-get_damage = 1;
-
+attack = false;
+/*get_damage = 1;

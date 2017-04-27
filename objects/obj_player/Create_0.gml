@@ -1,3 +1,5 @@
+//Depth
+depth = -200;
 cooldown = 1;
 ///Spawn and Create
 image_speed = 0;

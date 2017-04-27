@@ -1,36 +1,4 @@
-//Gravity
-if (place_free(x, y+2) || place_meeting(x, y+2, obj_player))
-{
-    gravity = 0.5;
-}
-else
-{
-    gravity = 0;
-}
-
-//Turn image_xscale
-if (hspeed > 0)
-{
-    sprite_index = spr_rat;
-    image_speed = 0.2;
-}
-else if (hspeed < 0)
-{
-    sprite_index = spr_rat_1;
-    image_speed = 0.2;
-}
-else if (hspeed == 0 and obj_player.x > x)
-{
-    sprite_index = spr_rat;
-    image_speed = 0;
-}
-else if (hspeed == 0 and obj_player.x < x)
-{
-    sprite_index = spr_rat_1;
-    image_speed = 0;
-}
-
-//Attack
+/*//Attack
 if (distance_to_object(obj_player) < 100 and obj_player.x > x)
 {
     //Jump
