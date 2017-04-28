@@ -5,6 +5,31 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
+if (global.hudState == "dialog") {
+	var Ypos = 265;
+	var YposPlus = 18;
+	var viewX = camera_get_view_x(view_camera[0]);
+	var viewY = camera_get_view_y(view_camera[0]);
+	var arrayLength = array_length_1d(dialogs);
+	//Background
+	draw_sprite_ext(spr_dialog_background, 0, viewX, viewY+Ypos, 1, -1*(20*arrayLength), 0, 0, 0.8);
+	//Options
+	if (dialogs != false) {
+		draw_text(viewX+5, viewY+Ypos-(YposPlus*(arrayLength-1)+20), dialogs[0]);
+		var a = arrayLength-1;
+		for (var i = 1; i < arrayLength; i++) {
+			if (createOptions) {
+				instance_create(viewX+5, viewY+Ypos-(YposPlus*(i-1)+10), obj_dialog_option);
+				(instance_nearest(viewX+5, viewY+Ypos-(YposPlus*(i-1)+10), obj_dialog_option)).optionText = dialogs[a];
+			}
+			a -= 1;
+		}
+		if (createOptions) {
+			createOptions = false;
+		}
+	}
+}
+
 /*scr_dialog_blacksmith();
 
 if (global.hudState == "dialog")

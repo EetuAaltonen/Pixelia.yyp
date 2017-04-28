@@ -1,2 +1,1 @@
 optionColor = c_yellow;
-

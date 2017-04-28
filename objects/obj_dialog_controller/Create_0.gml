@@ -6,9 +6,9 @@ global.dialog_check1 = 1;
 global.dialog_check2 = 2;*/
 dialogText = "";
 dialogOptions = "null";
+dialogs = false;
 t = 0;
 bgHeightOriginal = -20;
 bgHeight = bgHeightOriginal;
 
-/* */
-/*  */
+createOptions = false;

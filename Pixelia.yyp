@@ -2175,6 +2175,14 @@
             }
         },
         {
+            "Key": "4effcc84-e2b7-49ba-a8e3-fcb6a2264811",
+            "Value": {
+                "id": "22db8b10-3508-4cd5-b923-9c0da6f52cc3",
+                "resourcePath": "objects\\obj_well\\obj_well.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5006b04b-511f-496b-92bb-082d6b7c972d",
             "Value": {
                 "id": "d974d644-6d54-41d0-8d6f-9d37ad400baa",
@@ -2532,6 +2540,14 @@
                 "id": "31e09207-5698-4623-8a71-64017423a807",
                 "resourcePath": "scripts\\scr_check_if_selected_true\\scr_check_if_selected_true.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5df72f86-9d18-4a02-8bab-0d6c17fa15e0",
+            "Value": {
+                "id": "4aa8b7e0-ddea-4288-8a14-c26e6779d030",
+                "resourcePath": "sprites\\spr_well\\spr_well.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4599,14 +4615,6 @@
             }
         },
         {
-            "Key": "ac443dad-9855-48ea-8ce5-6107eb7386bc",
-            "Value": {
-                "id": "2ca02f38-eef3-4ca2-aeb3-69940f4c31c0",
-                "resourcePath": "sprites\\spr_dialog_bg\\spr_dialog_bg.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "ac79d62a-6f4e-4982-892e-317c4872bf1d",
             "Value": {
                 "id": "1e281d73-c86f-45b5-9772-1d12c3770caf",
@@ -4991,19 +4999,19 @@
             }
         },
         {
-            "Key": "bd410a7e-5d9b-4d97-bf5d-d8b50f8ae36f",
-            "Value": {
-                "id": "6161fc0f-1e22-4599-a4b3-51dc92ec92cd",
-                "resourcePath": "sprites\\spr_dialog\\spr_dialog.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bd9395fb-0ab2-41b1-b83e-8d7a50b86987",
             "Value": {
                 "id": "ed4a063a-abf9-4658-9bc6-20b8458a9384",
                 "resourcePath": "objects\\obj_dec_cup\\obj_dec_cup.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bdc70df1-07eb-4c8b-b641-bd62f21de544",
+            "Value": {
+                "id": "1bcb28bd-b866-4f6e-ba23-f9d2935a8fb2",
+                "resourcePath": "views\\bdc70df1-07eb-4c8b-b641-bd62f21de544.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
