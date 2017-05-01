@@ -36,6 +36,7 @@ if (pageUpdate == true)
             }
         }
 		createOnce = true;
+		buffsUpdate = true;
     }
     //Calculate number of pages
     scr_page_calculate();
@@ -59,6 +60,13 @@ if (item_count > 0)
 		}
 		createOnce = false;
 		setEquipmentsOnce = true;
+	}
+	if (buffsUpdate) {
+		//List of buffs
+		if (string_pos("Equipments", string(global.hudState))) {
+			listOfBuffs = scr_inventory_get_list_of_buffs();
+		}
+		buffsUpdate = false;
 	}
     for (var i = start_count; i != end_count; i++) {
         //Item background
@@ -94,7 +102,6 @@ if (item_count > 0)
         }
         Ypos += YposPlus;
     }
-    createOnce = false;
 } else {
     //If empty
     draw_text(viewX+30, viewY+120, "Inventory is empty...");
@@ -130,4 +137,17 @@ if (global.hudState == "inventory1" ||
 	draw_text(viewX+344, viewY+90, item_info_text);
 	//Restore vertical align
 	draw_set_valign(fa_middle);
+	
+	//List of buffs
+	if (string_pos("Equipments", string(global.hudState))) {
+		Ypos = 120;
+		var listMargin = 10;
+		var listOfBuffsSize = array_length_1d(listOfBuffs);
+		for (var e = 0; e < listOfBuffsSize; e++) {
+			var buff = listOfBuffs[e];
+			var mark2 = scr_buff_punctuation_mark(buff[0]);
+			draw_text(viewX+200,viewY+Ypos, buff[0] + " + " + string(buff[1]) + " " + mark2);
+			Ypos += listMargin;
+		}
+	}
 }

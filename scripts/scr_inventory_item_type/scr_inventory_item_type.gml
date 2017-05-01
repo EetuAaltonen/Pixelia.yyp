@@ -9,6 +9,9 @@ switch(spriteIndex) {
     case "spr_iron_bar": {type = "[inventory1,shop,forge,workbench]";break;}
     case "spr_wood_billet": {type = "[inventory1,shop,workbench]";break;}
     case "spr_wooden_handle": {type = "[inventory1,shop,workbench]";break;}
+	//Ingredients
+	case "spr_water_flask": {type = "[inventory1,shop,alchemy]";break;}
+	case "spr_empty_flask": {type = "[inventory1,shop,alchemy]";break;}
     //Tools
     case "spr_tool_saw": {type = "[inventory1,shop,tool,workbench]";break;}
     case "spr_tool_knife": {type = "[inventory1,shop,tool,workbench]";break;}

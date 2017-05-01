@@ -1,3 +1,23 @@
+var viewX = camera_get_view_x(view_camera[0]);
+var viewY = camera_get_view_y(view_camera[0]);
+///Draw toast
+//Font
+draw_set_font(fnt_toaster);
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+if (draw_toast)
+{
+    var margin = ((string_width(string_hash_to_newline(toast))/2)*(-1));
+    var bgWidth = (string_width(string_hash_to_newline(toast)) + 10);
+    draw_sprite_ext(spr_toaster_bg,0,viewX+480+margin-(bgWidth/2),
+                    viewY+260+toast_y_pos,
+                    bgWidth,1,image_angle,c_black,toast_alpha/1.5);
+    draw_text_colour(viewX+480+margin, viewY+260+toast_y_pos, string_hash_to_newline(toast),
+                    c_white, c_white, c_white, c_white, toast_alpha);
+}
+
 ///Inventory
 //Font
 draw_set_font(fnt_inventory_text);
@@ -5,8 +25,6 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
 
 if (global.hudState == "inventory1")
 {
@@ -69,27 +87,6 @@ draw_set_valign(fa_middle);
 if (global.hudState == "shop")
 {
     scr_list_items();
-}
-
-///Draw toast
-//Font
-draw_set_font(fnt_toaster);
-draw_set_color(c_white);
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
-if (draw_toast)
-{
-    if (global.hudState == "null")
-    {
-        var margin = ((string_width(string_hash_to_newline(toast))/2)*(-1));
-        var bgWidth = (string_width(string_hash_to_newline(toast)) + 10);
-        draw_sprite_ext(spr_toaster_bg,0,viewX+480+margin-(bgWidth/2),
-                        viewY+260+toast_y_pos,
-                        bgWidth,1,image_angle,c_black,toast_alpha/1.5);
-        draw_text_colour(viewX+480+margin, viewY+260+toast_y_pos, string_hash_to_newline(toast),
-                        c_white, c_white, c_white, c_white, toast_alpha);
-    }
 }
 
 ///Hotbar background

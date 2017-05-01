@@ -5,6 +5,8 @@ typeId = "";
 
 pageUpdate = true;
 createOnce = true; //Create objects once on the list
+buffsUpdate = true;
+listOfBuffs = false;
 
 item_info_text = "Item info...";
 //Filter

@@ -1,6 +1,6 @@
 ///scr_inventory_item_name(argument0);
-var name = "";
 var spriteName = string(argument0);
+var name = "";
 switch(spriteName) {
     //Materials
     case "spr_oak_log": {name = "Oak log";break;}
@@ -9,6 +9,9 @@ switch(spriteName) {
     case "spr_iron_bar": {name = "Iron bar";break;}
     case "spr_wood_billet": {name = "Wood billet";break;}
     case "spr_wooden_handle": {name = "Wooden handle";break;}
+	//Ingredients
+	case "spr_water_flask": {name = "Water flask";break;}
+	case "spr_empty_flask": {name = "Empty flask";break;}
     //Tools
     case "spr_tool_saw": {name = "Saw";break;}
     case "spr_tool_knife": {name = "Knife";break;}

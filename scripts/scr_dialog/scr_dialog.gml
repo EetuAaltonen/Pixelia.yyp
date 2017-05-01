@@ -2,6 +2,7 @@
 var dialogs = argument0;
 if (global.hudState == "null") {
     global.hudState = "dialog";
+	obj_player.action_state = "dialog";
 }
 
 if (obj_dialog_controller) {

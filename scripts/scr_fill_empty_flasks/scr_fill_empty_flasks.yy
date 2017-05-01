@@ -1,8 +1,8 @@
 {
-    "id": "6f283e56-0784-47d5-9078-4ffa89e254f6",
+    "id": "4baa86b4-4fcb-42af-8c69-bfee04853d6d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_food_create_variables",
+    "name": "scr_fill_empty_flasks",
     "IsCompatibility": false,
     "IsDnD": false
 }

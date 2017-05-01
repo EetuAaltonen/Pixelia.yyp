@@ -55,4 +55,5 @@ else if (global.hudState == "inventoryEquipments") {
 	if (global.armor > (global.maxArmor + global.armorPlus)) {
 		global.armor = (global.maxArmor + global.armorPlus);
 	}
+	obj_inventory_controller.buffsUpdate = true;
 }

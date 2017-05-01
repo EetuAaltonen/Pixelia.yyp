@@ -1,4 +1,4 @@
-///Global variables
+//Global variables
 load = false;
 
 /*[Camera]*/
@@ -13,8 +13,9 @@ load = false;
     global.enemy_stats2 = 0;
     global.enemy_stats3 = 0;
 
-///Global variables - Player
+//Global variables - Player
 
+//REMEMBER TO ADD BUFFS (like global.armorRegenPlus) to scr_inventory_get_list_of_buffs!!
 /*[Player]*/
     //Can get damage
     global.damage = 1;
@@ -72,16 +73,16 @@ load = false;
 	global.carryingCapacityPlus = 0;
     global.total_item_weight = 0;
 
-///Global variables - Quest / Dialogs
+//Global variables - Quest / Dialogs
 global.quest = "Beginning";
 global.dialogId = 0;
 
-///Global variables - Pause
+//Global variables - Pause
 global.pause = 0;
 global.pause_draw = 0;
 
-///Global variables - Inventory
+//Global variables - Inventory
 global.inventory = ds_list_create();
 
-///Global variables - Equipments list
+//Global variables - Equipments list
 global.equipments = ds_list_create();

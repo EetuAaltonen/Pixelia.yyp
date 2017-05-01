@@ -8,7 +8,7 @@ global.armor -= decreaseArmor;
 var buffs = scr_inventory_item_buffs(spriteName);
 if (buffs) {
 	var listLength = ds_list_size(buffs);
-	for(i = 0; i < listLength; i++) {
+	for(var i = 0; i < listLength; i++) {
 		var buffName = ds_list_find_value(buffs, i);
 		var buffAmount = ds_list_find_value(buffs, i+1);
 		switch (buffName) {

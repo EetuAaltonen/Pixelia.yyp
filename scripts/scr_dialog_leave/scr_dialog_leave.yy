@@ -1,8 +1,8 @@
 {
-    "id": "d85cd598-0490-41cd-aa4a-24a4b35cbae9",
+    "id": "035ba3fa-28b5-4553-b310-c898b386fcd6",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_poti_create_variables",
+    "name": "scr_dialog_leave",
     "IsCompatibility": false,
     "IsDnD": false
 }

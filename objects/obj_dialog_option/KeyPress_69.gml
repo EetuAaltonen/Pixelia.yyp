@@ -1,0 +1,1 @@
+scr_dialog_leave();

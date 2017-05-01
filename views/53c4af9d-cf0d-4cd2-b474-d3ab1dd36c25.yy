@@ -4,8 +4,9 @@
     "mvc": "1.1",
     "name": "53c4af9d-cf0d-4cd2-b474-d3ab1dd36c25",
     "children": [
+        "dd860ec7-14b5-4516-9e8a-df1bf1bcc057",
+        "0167d6b9-6171-4ed6-a946-a029e1130a27",
         "5e9a8551-f878-4b78-92d0-d264b0fdf70f",
-        "6e113a8b-64e7-49f1-a3aa-a3561f185eec",
         "78bee444-d561-4e65-a98b-3fe71aed6309",
         "1ae417cc-d174-4eb6-8ded-2480f974f9ba",
         "8bfcd086-6300-45ef-a31d-19e57e8d1eaf",
@@ -18,7 +19,8 @@
         "0c7766f1-3ffd-47e4-a168-4b050145032a",
         "73f8e6f4-b276-4602-9b04-0d721cfa60ca",
         "2f10b62d-e3b0-4986-abcf-4aad96f8719f",
-        "e4500de0-7608-4c60-9c97-f9bd3eb09dda"
+        "e4500de0-7608-4c60-9c97-f9bd3eb09dda",
+        "3dc4d30b-428d-4db4-94c0-dcdc9aee1b76"
     ],
     "filterType": "GMScript",
     "folderName": "Inventory",

@@ -9,6 +9,9 @@ switch(spriteIndex) {
     case "spr_iron_bar": {weight = 0.3;break;}
     case "spr_wood_billet": {weight = 0.1;break;}
     case "spr_wooden_handle": {weight = 0.02;break;}
+	//Ingredients
+	case "spr_water_flask": {weight = 0.1;break;}
+	case "spr_empty_flask": {weight = 0.01;break;}
     //Tools
     case "spr_tool_saw": {weight = 0.5;break;}
     case "spr_tool_knife": {weight = 0.3;break;}

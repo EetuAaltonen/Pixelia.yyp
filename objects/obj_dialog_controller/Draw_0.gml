@@ -12,17 +12,22 @@ if (global.hudState == "dialog") {
 	var viewY = camera_get_view_y(view_camera[0]);
 	var arrayLength = array_length_1d(dialogs);
 	//Background
-	draw_sprite_ext(spr_dialog_background, 0, viewX, viewY+Ypos, 1, -1*(20*arrayLength), 0, 0, 0.8);
+	draw_sprite_ext(spr_dialog_background, 0, viewX, viewY+Ypos+4, 1, -(YposPlus*(arrayLength/2)+20), 0, 0, 0.8); //arrayLength/2 because actions are included to array for execute
 	//Options
 	if (dialogs != false) {
-		draw_text(viewX+5, viewY+Ypos-(YposPlus*(arrayLength-1)+20), dialogs[0]);
-		var a = arrayLength-1;
+		draw_text(viewX+5, viewY+Ypos-(YposPlus*(arrayLength/2-1)+20), dialogs[0]);
+		var index = arrayLength-1;
+		var margin = 1;
 		for (var i = 1; i < arrayLength; i++) {
 			if (createOptions) {
-				instance_create(viewX+5, viewY+Ypos-(YposPlus*(i-1)+10), obj_dialog_option);
-				(instance_nearest(viewX+5, viewY+Ypos-(YposPlus*(i-1)+10), obj_dialog_option)).optionText = dialogs[a];
+				if (is_string(dialogs[index])) {
+					instance_create(viewX+5, viewY+Ypos-(YposPlus*(margin-1)+10), obj_dialog_option);
+					(instance_nearest(viewX+5, viewY+Ypos-(YposPlus*(margin-1)+10), obj_dialog_option)).optionText = dialogs[index];
+					(instance_nearest(viewX+5, viewY+Ypos-(YposPlus*(margin-1)+10), obj_dialog_option)).optionAction = dialogs[index+1];
+					margin += 1;
+				}
 			}
-			a -= 1;
+			index -= 1;
 		}
 		if (createOptions) {
 			createOptions = false;

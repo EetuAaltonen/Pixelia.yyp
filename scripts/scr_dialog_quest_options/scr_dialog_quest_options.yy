@@ -1,8 +1,8 @@
 {
-    "id": "b4176de2-0189-4921-83b8-8ee74b14f6a3",
+    "id": "1a84e652-869b-4c76-90b7-8eccc810a9ba",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_ingr_create_attributes",
+    "name": "scr_dialog_quest_options",
     "IsCompatibility": false,
     "IsDnD": false
 }
