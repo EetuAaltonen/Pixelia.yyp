@@ -2,7 +2,7 @@
     "id": "8792ef74-051b-4642-9bf1-47e8807f9485",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_merchant",
+    "name": "spr_NPC_merchant",
     "For3D": false,
     "HTile": false,
     "VTile": false,

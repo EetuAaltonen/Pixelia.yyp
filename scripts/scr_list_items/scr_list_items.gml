@@ -127,10 +127,12 @@ if (global.hudState == "inventory1" ||
 	//Total and weight background
     draw_sprite(spr_inv_item_description_bg, 0,viewX+255, viewY+95);
     //Total and weight
-    
-	draw_text(viewX+190,viewY+95, "Capacity:  " + string_format(global.total_item_weight, 0, 2) + "  /  " + string(global.max_item_weight + global.carryingCapacityPlus) + "  Pw");
+    draw_text(viewX+190,viewY+95, "Capacity:  " + string_format(global.total_item_weight, 0, 2) + "  /  " + string(global.max_item_weight + global.carryingCapacityPlus) + "  Pw");
+	
 	//Vertical align
 	draw_set_valign(fa_top);
+	//Font
+	draw_set_font(fnt_inventory_item_info_text);
 	//Item info background
 	draw_sprite(spr_inv_item_info_bg, 0,viewX+334, viewY+85);
 	//Item info text
@@ -140,7 +142,7 @@ if (global.hudState == "inventory1" ||
 	
 	//List of buffs
 	if (string_pos("Equipments", string(global.hudState))) {
-		Ypos = 120;
+		Ypos = 115;
 		var listMargin = 10;
 		var listOfBuffsSize = array_length_1d(listOfBuffs);
 		for (var e = 0; e < listOfBuffsSize; e++) {
@@ -150,4 +152,6 @@ if (global.hudState == "inventory1" ||
 			Ypos += listMargin;
 		}
 	}
+	//Restore font
+	draw_set_font(fnt_inventory_text);
 }

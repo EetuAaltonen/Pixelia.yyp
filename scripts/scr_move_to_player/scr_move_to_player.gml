@@ -6,7 +6,7 @@ if (moveToPlayer == true)
     if (distance_to_object(obj_player) <= 1)
     {
         //Info text
-        show_message(name);
+        //show_message(name);
         scr_add_new_toast(name);
         //Save to inventory
         scr_save_to_inventory(spriteName, addedCount);

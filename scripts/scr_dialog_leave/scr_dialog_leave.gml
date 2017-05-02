@@ -1,4 +1,6 @@
-global.hudState = "null";
+if (global.hudState == "dialog") {	
+	global.hudState = "null";
+}
 //global.dialogId = 0;
 obj_dialog_controller.dialogOptions = "null";
 obj_dialog_controller.bgHeight = obj_dialog_controller.bgHeightOriginal;

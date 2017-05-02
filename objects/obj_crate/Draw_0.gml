@@ -1,7 +1,7 @@
 draw_self();
 scr_highlight_self();
 
-//Draw aim
+/*//Draw aim
 //Left
 draw_sprite(spr_aim, 0, x-(sprite_width/3), y+2+(sprite_height/2));
 //Left Corner

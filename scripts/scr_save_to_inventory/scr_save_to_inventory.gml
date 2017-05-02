@@ -1,8 +1,8 @@
 ///scr_save_to_inventory(argument0, argument1)
 var spriteName = argument0;
 var addedAmount = argument1;
-show_message(spriteName);
-show_message(addedAmount);
+//show_message(spriteName);
+//show_message(addedAmount);
 //Save inventory
 var itemInfo = ds_list_create();
 var inInventory = false;
@@ -46,7 +46,7 @@ if (!inInventory) {
         ds_list_add(itemInfo, itemName);
         ds_list_add(itemInfo, addedAmount);
         itemWeight = scr_inventory_item_weight(spriteName);
-        show_message(spriteName + ": " + itemName + " | " + string(itemWeight) + "PoW");
+        //show_message(spriteName + ": " + itemName + " | " + string(itemWeight) + "PoW");
         ds_list_add(itemInfo, itemWeight);
         itemType = scr_inventory_item_type(spriteName);
         ds_list_add(itemInfo, itemType);

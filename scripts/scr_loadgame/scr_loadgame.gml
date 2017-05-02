@@ -19,7 +19,7 @@ if (file_exists(global.save_file))
     }
     ini_open(global.save_file);
     global.current_room = ini_read_real(global.save_file,"room",Test_improved);
-    global.health = ini_read_real(global.save_file,"health",20);
+    global.health = ini_read_real(global.save_file,"health",global.maxHealth);
     
     global.level = ini_read_real(global.save_file,"level",0);
     global.xp = ini_read_real(global.save_file,"xp",0);

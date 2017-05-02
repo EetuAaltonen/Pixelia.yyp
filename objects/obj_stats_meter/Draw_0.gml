@@ -27,17 +27,26 @@ if (instance_exists(obj_player))
     draw_set_valign(fa_middle);
     draw_text(viewX+16, viewY+14, string(global.armor));
 	
-	//Draw health
-	for (var i = 0; i < global.health; i++) {
-		draw_sprite(spr_life_point, 0, viewX+30+(i*19), viewY+6);
+	//Draw health && background
+	for (var i = 0; i < global.maxHealth; i++) {
+		draw_sprite(spr_life_point, 1, viewX+30+(i*19), viewY+6);
+		if (i < global.health) {
+			draw_sprite(spr_life_point, 0, viewX+30+(i*19), viewY+6);
+		}
 	}
-	//Draw stamina
-	for (var i = 0; i < global.stamina; i++) {
-		draw_sprite(spr_stamina_n_mana, 0, viewX+4+(i*8), viewY+28);
+	//Draw stamina && background
+	for (var i = 0; i < global.maxStamina; i++) {
+		draw_sprite(spr_stamina_n_mana, 2, viewX+4+(i*8), viewY+28);
+		if (i < global.stamina) {
+			draw_sprite(spr_stamina_n_mana, 0, viewX+4+(i*8), viewY+28);
+		}
 	}
-	//Draw mana
-	for (var i = 0; i < global.mana; i++) {
-		draw_sprite(spr_stamina_n_mana, 1, viewX+4+(i*8), viewY+38);
+	//Draw mana && background
+	for (var i = 0; i < global.maxMana; i++) {
+		draw_sprite(spr_stamina_n_mana, 2, viewX+4+(i*8), viewY+38);
+		if (i < global.mana) {
+			draw_sprite(spr_stamina_n_mana, 1, viewX+4+(i*8), viewY+38);
+		}
 	}
 }
 

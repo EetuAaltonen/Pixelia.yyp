@@ -28,5 +28,5 @@ if (global.health <= 0)
         
         x = obj_spawner.x;
         y = obj_spawner.y;
-        global.health = 10;
+        global.health = global.maxHealth;
 }
