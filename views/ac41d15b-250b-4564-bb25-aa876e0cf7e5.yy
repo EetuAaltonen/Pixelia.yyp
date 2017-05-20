@@ -10,7 +10,9 @@
         "9be22b87-cf78-4909-b41a-66c353b10086",
         "7349cec9-eb83-4a4c-b4e9-818fc278f376",
         "2a2d9287-42b2-47fc-a8c6-def63309d044",
-        "4baa86b4-4fcb-42af-8c69-bfee04853d6d"
+        "4baa86b4-4fcb-42af-8c69-bfee04853d6d",
+        "8c747a0d-41aa-439e-adf1-709caef96539",
+        "f9ed3150-1da2-47b8-94bb-3256620a0d38"
     ],
     "filterType": "GMScript",
     "folderName": "Collectable items",

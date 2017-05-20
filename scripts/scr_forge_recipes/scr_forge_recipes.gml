@@ -5,7 +5,7 @@ switch(spriteIndex) {
     //Materials
     case "spr_oak_log,0,0": {sprite = spr_coal;break;}
     case "spr_spruce_log,0,0": {sprite = spr_coal;break;}
-    case "spr_coal,spr_iron_ore,0": {sprite = spr_iron_bar;break;}
+    case "spr_coal,spr_iron_ore,0": {sprite = spr_iron_ingot;break;}
     //Tools
     case "spr_tool_saw": {sprite = "Saw";break;}
     case "spr_tool_knife": {sprite = "Knife";break;}

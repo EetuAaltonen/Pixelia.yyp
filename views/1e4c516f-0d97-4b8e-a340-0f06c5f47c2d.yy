@@ -9,13 +9,14 @@
         "a0f48592-e46c-40c5-95ca-6569ad0ba107",
         "18b02efe-ebba-4991-a751-9c3869bc44d0",
         "78a492a7-5504-4ffb-b53f-146f567b23fe",
-        "6acd406a-2db6-4d24-84bd-4189a17ac634",
         "8b219222-256f-4c27-9ea7-489a0eee04e8",
         "7807f829-a970-4e52-a455-a0df7392e836",
         "b7187c54-097b-4eca-b6cc-21df16446e68",
         "2f20d2a5-f29e-4111-8ce5-757381872afe",
         "38078866-bb16-450b-bc8f-9da73427b717",
-        "3969b101-eb89-4a28-80b5-7223a2ae25dd"
+        "3969b101-eb89-4a28-80b5-7223a2ae25dd",
+        "0ad1af98-9874-4ea6-a934-34a04dd5710a",
+        "e4b1ab0b-9c71-4293-b2d4-f129c400006c"
     ],
     "filterType": "GMSprite",
     "folderName": "Materials",

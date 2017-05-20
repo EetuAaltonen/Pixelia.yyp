@@ -2,7 +2,7 @@ if (distance_to_object(obj_hitbox) == 0 and instance_exists(obj_player))
 {
     if (global.damage == 1)
     {
-        global.health -= str;
+        global.healthPoints -= str;
         scr_got_damage();
     }
     else

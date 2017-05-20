@@ -1,6 +1,6 @@
 if (global.damage == 1)
 {
-    global.health -= str;
+    global.healthPoints -= str;
     scr_got_damage();
 }
 else

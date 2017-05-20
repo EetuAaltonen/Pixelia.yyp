@@ -22,7 +22,7 @@ load = false;
     //Health
     global.maxHealth = 3;
     global.healthPlus = 0;
-    global.health = global.maxHealth;
+    global.healthPoints = global.maxHealth;
     //Armor
     global.maxArmor = 129;
     global.armorPlus = 0;

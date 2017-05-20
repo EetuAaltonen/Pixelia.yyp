@@ -1,5 +1,5 @@
 //Lives
-if (global.health <= 0)
+if (global.healthPoints <= 0)
 {
         //alarm[7] = 120;
         //global.pause = 1;
@@ -28,5 +28,5 @@ if (global.health <= 0)
         
         x = obj_spawner.x;
         y = obj_spawner.y;
-        global.health = global.maxHealth;
+        global.healthPoints = global.maxHealth;
 }

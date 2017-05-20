@@ -27,10 +27,10 @@ if (instance_exists(obj_player))
     draw_set_valign(fa_middle);
     draw_text(viewX+16, viewY+14, string(global.armor));
 	
-	//Draw health && background
+	//Draw healthPoints && background
 	for (var i = 0; i < global.maxHealth; i++) {
 		draw_sprite(spr_life_point, 1, viewX+30+(i*19), viewY+6);
-		if (i < global.health) {
+		if (i < global.healthPoints) {
 			draw_sprite(spr_life_point, 0, viewX+30+(i*19), viewY+6);
 		}
 	}

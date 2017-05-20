@@ -7,10 +7,10 @@ if (global.coins < 0)
 //Auto-healing
 if (global.auto_healing == 1
     and global.potions > 0
-    and global.health < 5)
+    and global.healthPoints < 5)
 {
     global.potions -= 1;
-    global.health += 10;
+    global.healthPoints += 10;
 }
 
 var viewX = camera_get_view_x(view_camera[0]);

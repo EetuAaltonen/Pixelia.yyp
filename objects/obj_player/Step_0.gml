@@ -2,8 +2,9 @@ with (obj_player) {
 ///Action states
 //If some menu is open || Room change || Dialog
 if (global.hudState != "null" ||
-         action_state = "room_change" ||
-         action_state = "dialog")
+    action_state = "room_change" ||
+    action_state = "dialog" ||
+	action_state = "looting")
 {
     //Gravity
     scr_custom_gravity();

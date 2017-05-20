@@ -6,7 +6,7 @@ switch(spriteName) {
     case "spr_oak_log": {name = "Oak log";break;}
     case "spr_coal": {name = "Coal";break;}
     case "spr_iron_ore": {name = "Iron ore";break;}
-    case "spr_iron_bar": {name = "Iron bar";break;}
+    case "spr_iron_ingot": {name = "Iron ingot";break;}
     case "spr_wood_billet": {name = "Wood billet";break;}
     case "spr_wooden_handle": {name = "Wooden handle";break;}
 	//Ingredients

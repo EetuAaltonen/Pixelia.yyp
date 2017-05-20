@@ -1,4 +1,4 @@
-//Item info
+/*//Item info
 scr_inventory_item_info_text();
 
 //Add info to scr_item_get_id too...

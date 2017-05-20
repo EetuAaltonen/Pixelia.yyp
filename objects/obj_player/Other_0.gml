@@ -1,4 +1,4 @@
 ///Instant death
-global.health = 0;
+global.healthPoints = 0;
 scr_plr_dead();
 
