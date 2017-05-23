@@ -16,7 +16,7 @@ if (instance_exists(obj_player))
                     if (obj_player.highlight == false)
                     {
                         image_blend = make_colour_hsv(0, 0, 150);
-                        //depth = obj_player.depth;
+                        //depth = obj_player.depth - 1;
                         obj_player.highlight = true;
                     }
                     else if (obj_player.highlight == true &&

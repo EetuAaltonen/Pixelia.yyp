@@ -4,9 +4,24 @@ var spriteIndex = string(argument0);
 switch(spriteIndex) {
     //Materials
     case "spr_oak_log": {weight = 1.0;break;}
-    case "spr_coal": {weight = 0.01;break;}
-    case "spr_iron_ore": {weight = 0.3;break;}
-    case "spr_iron_ingot": {weight = 0.3;break;}
+		//Ores
+	    case "spr_coal": {weight = 0.01;break;}
+	    case "spr_iron_ore": {weight = 0.3;break;}
+		//Ingots
+		case "spr_iron_ingot": {weight = 0.3;break;}
+		case "spr_steel_ingot": {weight = 0.3;break;}
+		case "spr_silver_ingot": {weight = 0.3;break;}
+		case "spr_gold_ingot": {weight = 0.3;break;}
+		case "spr_bronze_ingot": {weight = 0.3;break;}
+		case "spr_ebony_ingot": {weight = 0.3;break;}
+		case "spr_crimson_ingot": {weight = 0.3;break;}
+		case "spr_adamite_ingot": {weight = 0.3;break;}
+		case "spr_fluellite_ingot": {weight = 0.3;break;}
+		case "spr_pinalite_ingot": {weight = 0.3;break;}
+		case "spr_troilite_ingot": {weight = 0.3;break;}
+		case "spr_pyrrhotite_ingot": {weight = 0.3;break;}
+		case "spr_zincite_ingot": {weight = 0.3;break;}
+		case "spr_cavansite_ingot": {weight = 0.3;break;}
     case "spr_wood_billet": {weight = 0.1;break;}
     case "spr_wooden_handle": {weight = 0.02;break;}
 	//Ingredients

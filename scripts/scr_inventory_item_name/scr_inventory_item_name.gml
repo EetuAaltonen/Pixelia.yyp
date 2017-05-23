@@ -5,8 +5,23 @@ switch(spriteName) {
     //Materials
     case "spr_oak_log": {name = "Oak log";break;}
     case "spr_coal": {name = "Coal";break;}
-    case "spr_iron_ore": {name = "Iron ore";break;}
-    case "spr_iron_ingot": {name = "Iron ingot";break;}
+		//Ores
+		case "spr_iron_ore": {name = "Iron ore";break;}
+		//Ingots
+		case "spr_iron_ingot": {name = "Iron ingot";break;}
+		case "spr_steel_ingot": {name = "Steel ingot";break;}
+		case "spr_silver_ingot": {name = "Silver ingot";break;}
+		case "spr_gold_ingot": {name = "Gold ingot";break;}
+		case "spr_bronze_ingot": {name = "Bronze ingot";break;}
+		case "spr_ebony_ingot": {name = "Ebony ingot";break;}
+		case "spr_crimson_ingot": {name = "Crimson ingot";break;}
+		case "spr_adamite_ingot": {name = "Adamite ingot";break;}
+		case "spr_fluellite_ingot": {name = "Fluellite ingot";break;}
+		case "spr_pinalite_ingot": {name = "Pinalite ingot";break;}
+		case "spr_troilite_ingot": {name = "Troilite ingot";break;}
+		case "spr_pyrrhotite_ingot": {name = "Pyrrhotite ingot";break;}
+		case "spr_zincite_ingot": {name = "Zincite ingot";break;}
+		case "spr_cavansite_ingot": {name = "Cavansite ingot";break;}
     case "spr_wood_billet": {name = "Wood billet";break;}
     case "spr_wooden_handle": {name = "Wooden handle";break;}
 	//Ingredients

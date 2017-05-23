@@ -4,9 +4,24 @@ var spriteIndex = string(argument0);
 switch(spriteIndex) {
     //Materials
     case "spr_oak_log": {type = "[inventory1,shop,forge,workbench]";break;}
-    case "spr_coal": {type = "[inventory1,shop,forge]";break;}
-    case "spr_iron_ore": {type = "[inventory1,shop,forge]";break;}
-    case "spr_iron_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		//Ores
+	    case "spr_coal": {type = "[inventory1,shop,forge]";break;}
+	    case "spr_iron_ore": {type = "[inventory1,shop,forge]";break;}
+		//Ingots
+		case "spr_iron_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_steel_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_silver_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_gold_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_bronze_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_ebony_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_crimson_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_adamite_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_fluellite_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_pinalite_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_troilite_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_pyrrhotite_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_zincite_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
+		case "spr_cavansite_ingot": {type = "[inventory1,shop,forge,workbench]";break;}
     case "spr_wood_billet": {type = "[inventory1,shop,workbench]";break;}
     case "spr_wooden_handle": {type = "[inventory1,shop,workbench]";break;}
 	//Ingredients

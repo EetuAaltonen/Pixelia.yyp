@@ -4,6 +4,7 @@
     "mvc": "1.1",
     "name": "8f6672d6-76eb-4417-ab0d-5a3f76506f8a",
     "children": [
+        "daaa551e-3931-4ae7-b84d-d6f7d56d0dd7",
         "e78c4249-30d1-48cc-a0a8-63fabcdb889e",
         "0ea342ee-9809-423a-af36-f7b16af62b1b",
         "37a6ab4e-b116-46fb-aa0a-1df9acfba723",
@@ -16,7 +17,8 @@
         "b2d1712e-4efe-41fb-a2c4-2f3dac954565",
         "71967063-98dc-40f6-8253-2a0a3ad5ce7e",
         "e436cb5c-2f15-4f4c-b643-a81668bb4348",
-        "6c5db7a4-4d93-4f64-9ef5-afe33330ba4c"
+        "6c5db7a4-4d93-4f64-9ef5-afe33330ba4c",
+        "b5dbfbe3-b8bd-4eeb-8352-329b6f5be17a"
     ],
     "filterType": "GMObject",
     "folderName": "Collectable",

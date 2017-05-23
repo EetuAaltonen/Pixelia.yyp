@@ -3,7 +3,9 @@ load = false;
 
 /*[Camera]*/
 	view_camera[0] = camera_create();
-
+/*[Layers / Depths]*/
+	//layer_create(-100, "Collectable");
+	
 /*[Hud state & Room change]*/
     global.hudState = "null";
     global.room_change = 0;
@@ -86,3 +88,6 @@ global.inventory = ds_list_create();
 
 //Global variables - Equipments list
 global.equipments = ds_list_create();
+
+//Global variables - Temp loot
+global.tempLoot = ds_list_create();

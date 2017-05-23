@@ -58,7 +58,9 @@ else if (global.hudState == "shop")
 }
 else
 {
-    instance_destroy();
+    if (global.hudState != "looting") {
+		instance_destroy();	
+	}
 }
 //scr_check_if_instance_destroy();
 //scr_check_if_selected_true();

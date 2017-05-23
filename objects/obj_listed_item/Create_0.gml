@@ -16,3 +16,5 @@ selected = false;
 checkEquipped = false;
 type = "";
 equipped = false;
+
+moveToPlayer = false;
