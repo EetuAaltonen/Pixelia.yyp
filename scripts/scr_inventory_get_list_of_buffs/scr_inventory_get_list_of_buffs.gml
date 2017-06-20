@@ -1,7 +1,7 @@
 var listOfBuffs = false;
 var globalBuffs = [
 	"Additional health", global.healthPlus,
-	//Health doen't have regeneration!!
+	//Health doesn't have regeneration!!
 	"Additional armor", global.armorPlus,
 	"Armor regeration", global.armorRegenPlus,
 	"Additional stamina", global.staminaPlus,

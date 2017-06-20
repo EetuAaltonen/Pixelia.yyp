@@ -23,9 +23,11 @@ if (file_exists(global.save_file))
     
     global.level = ini_read_real(global.save_file,"level",0);
     global.xp = ini_read_real(global.save_file,"xp",0);
-    global.xp_limit = ini_read_real(global.save_file,"xplimit",0);
+    global.xpLimit = ini_read_real(global.save_file,"xpLimit",0);
+	global.enchantigXp = ini_read_real(global.save_file,"enchantigXp",0);
+    global.enchantigXpLimit = ini_read_real(global.save_file,"enchantigXpLimit",0);
     
-    global.skill_points = ini_read_real(global.save_file,"skill_points",0);
+    global.skillPoints = ini_read_real(global.save_file,"skillPoints",0);
     global.death_counter = ini_read_real(global.save_file,"deaths",0);
     global.kill_counter = ini_read_real(global.save_file,"kills",0);
 

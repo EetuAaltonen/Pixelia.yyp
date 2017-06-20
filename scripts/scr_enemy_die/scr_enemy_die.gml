@@ -1,4 +1,8 @@
-if (def <= 0)
+if (healthPoints <= 0) {
+	show_message("Dead");
+	healthPoints = maxHealth;
+}
+/*if (def <= 0)
 {
     //Enemy clear draw stats
     scr_reset_draw_state();

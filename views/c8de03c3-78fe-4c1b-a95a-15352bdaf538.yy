@@ -20,7 +20,8 @@
         "6a6a3145-d9bc-43e1-83e2-70fc0694c7ba",
         "cc211ecc-b52a-447f-9e49-5764c935ceb7",
         "587661dc-557a-4cab-9fb2-3b973dd9dc30",
-        "129ad8ad-83f4-4c9e-8518-278709ed1580"
+        "129ad8ad-83f4-4c9e-8518-278709ed1580",
+        "59f84fd7-f1e1-4ce2-add9-138627f4bc0d"
     ],
     "filterType": "GMObject",
     "folderName": "Misc",

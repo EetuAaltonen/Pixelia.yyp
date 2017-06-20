@@ -28,9 +28,11 @@ ini_write_real(global.save_file,"health",global.healthPoints);
 
 ini_write_real(global.save_file,"level",global.level);
 ini_write_real(global.save_file,"xp",global.xp);
-ini_write_real(global.save_file,"xplimit",global.xp_limit);
+ini_write_real(global.save_file,"xpLimit",global.xpLimit);
+ini_write_real(global.save_file,"enchantigXp",global.xp);
+ini_write_real(global.save_file,"enchantigXpLimit",global.xpLimit);
 
-ini_write_real(global.save_file,"skill_points",global.skill_points);
+ini_write_real(global.save_file,"skillPoints",global.skillPoints);
 ini_write_real(global.save_file,"deaths",global.death_counter);
 ini_write_real(global.save_file,"kills",global.kill_counter);
 

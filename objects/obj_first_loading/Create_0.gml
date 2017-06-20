@@ -21,6 +21,12 @@ load = false;
 /*[Player]*/
     //Can get damage
     global.damage = 1;
+	//Total damage
+	global.minDamage = 1;
+	global.maxDamage = 10;
+	//Critical damage (percent)
+	global.criticalDamage = 0.1;
+	global.criticalChance = 0.25;
     //Health
     global.maxHealth = 3;
     global.healthPlus = 0;
@@ -58,9 +64,12 @@ load = false;
     //Level
     global.level = 1;
     global.xp = 0;
-    global.xp_limit = 100;
+    global.xpLimit = 100;
+	global.enchantingXp = 0;
+    global.enchantingXpLimit = 100;
     //Skillpoint
-    global.skill_points = 0;
+    global.skillPoints = 0;
+	global.enchantingPoints = 0;
     //Death counter
     global.death_counter = 0;
     //Kill counter

@@ -12,9 +12,9 @@ item_info_text = "Item info...";
 //Filter
 filter = "null";
 //Coins
-image_scale_coin = 1;
+image_scale_coin = 0.70;
 //Potion
-image_scale_potion = 1;
+image_scale_potion = 0.70;
 
 //Toaster
 draw_toast = false;

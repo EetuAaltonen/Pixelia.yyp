@@ -1,9 +1,9 @@
 ///Unlock skill
 if (unlocked == false)
 {
-    //if (global.skill_points >= price)
+    //if (global.skillPoints >= price)
     //{    
-        global.skill_points -= price;
+        global.skillPoints -= price;
         var key = "Skill[" + string(id_x) + "," + string(id_y) + "]";
         ini_open("SkillTree.sav");
         ini_write_string(global.save_file,key,"true");
