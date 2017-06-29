@@ -1,0 +1,1 @@
+depth = (obj_recipe_book.depth)-2;

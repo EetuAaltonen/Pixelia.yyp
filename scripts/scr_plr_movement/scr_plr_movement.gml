@@ -1,9 +1,7 @@
-if (keyboard_check(vk_right) && keyboard_check(vk_left))
-{
+if (keyboard_check(vk_right) && keyboard_check(vk_left)) {
     scr_plr_stop_movement();
 }
-else if (keyboard_check(vk_right))
-{
+else if (keyboard_check(vk_right)) {
     if (image_index == 0 && image_speed == 0) {
         image_index += 1;
     }
@@ -31,10 +29,8 @@ else if (keyboard_check(vk_right))
         }
     }
 }
-else if (keyboard_check(vk_left))
-{
-    if (image_index == 0 && image_speed == 0)
-    {
+else if (keyboard_check(vk_left)) {
+    if (image_index == 0 && image_speed == 0){
         image_index += 1;
     }
     if (keyboard_check(vk_shift) &&
@@ -60,17 +56,12 @@ else if (keyboard_check(vk_left))
             hspeed = -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus);
         }
     }
-}
-else
-{
+} else {
     scr_plr_stop_movement();
 }
-if (hspeed == 0)
-{
+if (hspeed == 0) {
     image_speed = 0;
     image_index = 0;   
-}
-else
-{
+} else {
     image_speed = 0.2;
 }

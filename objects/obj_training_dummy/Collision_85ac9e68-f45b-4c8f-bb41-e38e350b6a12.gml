@@ -4,17 +4,7 @@ if (invulnerable == false) {
     {
         with (obj_plr_attack_parent) instance_destroy();
     }
-	var critical = random_range(0,1);
-	var damage;
-	if (critical <= global.criticalChance) {
-		damage = global.maxDamage + (global.maxDamage*global.criticalDamage);
-		critical = true;
-	} else {
-		damage = round(random_range(global.minDamage, global.maxDamage));
-		critical = false;
-	}
-	healthPoints -= damage;
-	scr_enemy_get_hit(damage, critical);
+	scr_enemy_get_hit();
     invulnerable = true;
     alarm[1] = 20;
     scr_enemy_die();

@@ -11,7 +11,8 @@
         "6f75cd5f-1130-40fd-b7cc-b1054ce04d28",
         "97afa2c6-de96-4534-9de4-64ada7620f67",
         "1bd497e6-df0a-4ac0-b4b1-34ce0b0450e5",
-        "e9c7746a-62fa-41c9-81b0-5ef1e471138f"
+        "e9c7746a-62fa-41c9-81b0-5ef1e471138f",
+        "622eb472-d488-4ef4-b370-15ab32dcfb4c"
     ],
     "filterType": "GMObject",
     "folderName": "Crafting",

@@ -1,4 +1,3 @@
-image_speed = 0.2;
-can_open_or_close = true;
-depth_ = depth;
-
+///Create variables
+hudState = "anvil";
+scr_crating_create_variables();

@@ -1,6 +1,14 @@
-if (healthPoints <= 0) {
-	show_message("Dead");
+if (healthPoints == 0) {
+	//Enemy clear draw stats
+    //scr_reset_draw_state();
+	//Level xp
+	global.xp += xpReward;
+	//Enchanting xp
+	global.enchantingXp += enchantingXpReward;
+	//Kill counter
+    global.kill_counter += 1;
 	healthPoints = maxHealth;
+	armor = maxArmor;
 }
 /*if (def <= 0)
 {

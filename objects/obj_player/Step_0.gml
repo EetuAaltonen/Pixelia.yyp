@@ -1,12 +1,11 @@
-with (obj_player) {
 ///Action states
 //If some menu is open || Room change || Dialog
 if (global.hudState != "null" ||
-    action_state = "room_change" ||
-    action_state = "dialog" ||
-	action_state = "looting")
-{
-    //Gravity
+    action_state == "room_change" ||
+    action_state == "dialog" ||
+	action_state == "looting" ||
+	action_state == "crafting") {
+	//Gravity
     scr_custom_gravity();
     hspeed = 0;
     image_speed = 0;
@@ -14,14 +13,12 @@ if (global.hudState != "null" ||
     
 }
 //Confirm
-else if (action_state == "confirm")
-{
+else if (action_state == "confirm") {
     hspeed = 0;
     vspeed = 0;
 }
 //Slice
-else if (action_state == "slice")
-{
+else if (action_state == "slice") {
     //Gravity
     scr_custom_gravity();
     image_speed = 0.2;
@@ -39,80 +36,66 @@ else if (action_state == "slice")
     }
 }
 //Sitting
-else if (action_state == "sitting")
-{
+else if (action_state == "sitting") {
     hspeed = 0;
     vspeed = 0;
     sprite_index = spr_plr_sit;
 }
 //Ladder
-else if (action_state == "ladder")
-{
-    if (distance_to_object(obj_ladder) == 0)
-    {
+else if (action_state == "ladder") {
+    if (distance_to_object(obj_ladder) == 0) {
         scr_plr_ladder();
-    }
-    else
-    {
+    } else {
         action_state = "null";
         speed = 0;
     }
 }
 //Bow
-else if (action_state == "bow")
-{
+else if (action_state == "bow") {
     scr_plr_bow();
     //Gravity
     scr_custom_gravity();
 }
 //Mining
-else if (action_state == "mining")
-{
+else if (action_state == "mining") {
     scr_plr_mining();
 }
 //Woodcutting
-else if (action_state == "woodcutting")
-{
+else if (action_state == "woodcutting") {
     scr_plr_woodcutting();
 }
 //Fishing
-else if (action_state == "fishing")
-{
+else if (action_state == "fishing") {
     scr_plr_fishing();
 }
 //Planting seeds
-else if (action_state == "planting")
-{
+else if (action_state == "planting") {
     hspeed = 0;
     vspeed = 0;
 }
 
 //Default movements
-else if (action_state == "null" ||
-         action_state == "jump" ||
-         action_state == "crouch" ||
-         action_state == "carry_goods")
-{
+else if (global.hudState == "null" ||
+	action_state == "null" ||
+    action_state == "jump" ||
+    action_state == "crouch" ||
+    action_state == "carry_goods") {
     //Gravity
-    if (action_state != "ladder")
-    {
+    if (action_state != "ladder") {
         scr_custom_gravity();
     }
     
     //Too fast falling
-    if (vspeed < -4)
-    {
+    if (vspeed < -4) {
         vspeed = -4;
     }
 
     //X_Scale
-    if (hspeed > 0) 
-    {
+    if (hspeed > 0) {
         image_xscale = 1;
     }
 
-    else if (hspeed < 0) 
-    {
+    else if (hspeed < 0) {
         image_xscale = -1;
     }
     //Movement
@@ -131,30 +114,23 @@ else if (action_state == "null" ||
         image_index = 0;
     }*/
     //Jump
-    if (keyboard_check_pressed(vk_up) && !place_free(x, y+1))
-    {
-        if (action_state == "null" || action_state == "carry_goods")
-        {
-            if (action_state == "carry_goods")
-            {
+    if (keyboard_check_pressed(vk_up) && !place_free(x, y+1)) {
+        if (action_state == "null" || action_state == "carry_goods") {
+            if (action_state == "carry_goods") {
                 vspeed = -2.5;
-            }
-            else
-            {
+            } else {
                 vspeed = -3;
                 action_state = "jump";
             }
         }       
     }
-    else if (action_state == "jump" && !place_free(x, y+1))
-    {
+    else if (action_state == "jump" && !place_free(x, y+1)) {
         action_state = "null";
     }
     
     //Roll
     if (roll == 1 &&  hspeed > 0 && not keyboard_check(vk_shift)
-        && !place_free(x, y+3))
-    {
+        && !place_free(x, y+3)) {
         global.damage = 0;
         sprite_index = spr_plr_roll;
         hspeed = 5;
@@ -164,8 +140,7 @@ else if (action_state == "null" ||
         image_alpha = 0.5;
     }
     else if (roll == 1 && hspeed < 0 && not keyboard_check(vk_shift)
-             && !place_free(x, y+3))
-    {
+             && !place_free(x, y+3)) {
         global.damage = 0;
         sprite_index = spr_plr_roll;
         hspeed = -5;
@@ -176,37 +151,31 @@ else if (action_state == "null" ||
     }
     
     //Crouch
-    if (keyboard_check(vk_control))
-    {
+    if (keyboard_check(vk_control)) {
         action_state = "crouch";
-        if (hspeed == 0)
-        {
+        if (hspeed == 0) {
             action_state = "";
             image_speed = 0;
             sprite_index = spr_plr_down;
         }
-        else if (keyboard_check(vk_left))
-        {
+        else if (keyboard_check(vk_left)) {
             image_speed = 0.2;
             hspeed = -1;
             sprite_index = spr_plr_down;
         }
-        else if (keyboard_check(vk_right))
-        {
+        else if (keyboard_check(vk_right)) {
             image_speed = 0.2;
             hspeed = 1;
             sprite_index = spr_plr_down;
         }
-        else if (keyboard_check_released(vk_control))
-        {
+        else if (keyboard_check_released(vk_control)) {
             action_state = "null";
             image_speed = 0;
             sprite_index = spr_player; 
         }
     }
     //Stairs
-    if (distance_to_object(obj_dec_stairs) == 0)
-    {
+    if (distance_to_object(obj_dec_stairs) == 0) {
         scr_plr_stairs();
         /*if (keyboard_check(vk_right))
         {
@@ -231,12 +200,8 @@ else if (action_state == "null" ||
         alarm[7] = 10; //Fix animation stuck
     }*/
 }
-
-/* */
-}
 ///Damage
-if (global.damage == 0)
-{
+if (global.damage == 0) {
     image_alpha = 0.7;
 }
 //Dead

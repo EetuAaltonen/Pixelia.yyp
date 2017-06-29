@@ -84,6 +84,22 @@ load = false;
 	global.carryingCapacityPlus = 0;
     global.total_item_weight = 0;
 
+/*[Crafting]*/
+global.knownAlchemyRecipes = ds_list_create();
+ds_list_add(global.knownAlchemyRecipes, ["Potion1", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion2", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion3", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion4", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion5", ["Ing1", "Ing2", "Ing3"]]);
+/*ds_list_add(global.knownAlchemyRecipes, ["Potion6", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion7", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion8", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion9", ["Ing1", "Ing2", "Ing3"]]);
+ds_list_add(global.knownAlchemyRecipes, ["Potion10", ["Ing1", "Ing2", "Ing3"]]);*/
+
+global.knownForgeRecipes = ds_list_create();
+global.knownWorkbenchRecipes = ds_list_create();
+
 //Global variables - Quest / Dialogs
 global.quest = "Beginning";
 global.dialogId = 0;

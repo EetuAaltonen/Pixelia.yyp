@@ -1,5 +1,6 @@
 startY = y;
-vspeed = -2;
-damage = 0;
+vspeed = -1;
+damageToHealth = 0;
+damageToArmor = 0;
 critical = false;
 textAlpha = 1;

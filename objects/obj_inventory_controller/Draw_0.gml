@@ -112,12 +112,12 @@ draw_set_halign(fa_left);
 draw_text(viewX+298,viewY+279, "Ench. XP  " + string(global.enchantingXp) + " / " + string(global.enchantingXpLimit));
 
 var barScale = global.xp / global.xpLimit;
-draw_sprite_ext(spr_xp_bg, 0, viewX+10, viewY+285, (48*10)*0.75, 1, 0, -1, 1);
+draw_sprite_ext(spr_xp_bg, 0, viewX+10, viewY+285, (48*10)*barScale, 1, 0, -1, 1);
 for (var i = 0; i < 10; i++) {
 	draw_sprite_ext(spr_xp_bar, 0, viewX+10+(i*48), viewY+285, 1, 1, 0, -1, 1);
 }
 barScale = global.enchantingXp / global.enchantingXpLimit;
-draw_sprite_ext(spr_xp_bg, 1, viewX+10, viewY+292, (48*10)*0.75, 1, 0, -1, 1);
+draw_sprite_ext(spr_xp_bg, 1, viewX+10, viewY+292, (48*10)*barScale, 1, 0, -1, 1);
 for (var i = 0; i < 10; i++) {
 	draw_sprite_ext(spr_xp_bar, 0, viewX+10+(i*48), viewY+292, 1, 1, 0, -1, 1);
 }

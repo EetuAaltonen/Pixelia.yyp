@@ -1,7 +1,9 @@
 image_speed = 0;
 image_index = 0;
-armor = 10;
-xp = 100;
+maxArmor = 100;
+armor = maxArmor;
+xpReward = 20;
+enchantingXpReward = 20;
 invulnerable = false;
-maxHealth = 100;
+maxHealth = 200;
 healthPoints = maxHealth;
