@@ -9,6 +9,6 @@ switch(spriteIndex) {
     //Tools
     case "spr_tool_saw": {sprite = "Saw";break;}
     case "spr_tool_knife": {sprite = "Knife";break;}
-    case "spr_iron_bar,spr_wooden_handle,0": {sprite = spr_tool_knife;break;}
+    case "spr_iron_ingot,spr_wooden_handle,0": {sprite = spr_tool_knife;break;}
 };
 return sprite;

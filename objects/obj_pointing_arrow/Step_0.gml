@@ -14,17 +14,17 @@ if (instance_exists(obj_recipe_book)) {
 	}
 	switch (pointing) {
 		case "right": {
-			if ((recipeBook.maxPage - recipeBook.currentPage) <= 2) {
-				image_alpha = 0.7;
-			} else {
+			if (scr_can_change_next_page(recipeBook.currentPage, recipeBook.recipeCount, recipeBook.recipesPerPage)) {
 				image_alpha = 1;
+			} else {
+				image_alpha = 0.7;
 			}
 		}break;
 		case "left": {
-			if (recipeBook.currentPage == 0) {
-				image_alpha = 0.7;
-			} else {
+			if (recipeBook.currentPage > 0) {
 				image_alpha = 1;
+			} else {
+				image_alpha = 0.7;
 			}
 		}break;
 	}

@@ -18,7 +18,7 @@ for (i = 0; i >= 0; i++) {
     }
     switch(global.hudState) {
         case "forge": {spriteIndex = scr_forge_recipes(key);} break;
-        case "alchemy": {spriteIndex = scr_alchemy_recipes(key);} break;
+        //case "alchemy": {spriteIndex = scr_alchemy_recipes(key);} break;
         case "workbench": {spriteIndex = scr_workbench_recipes(key);} break;
     }
     if (spriteIndex) {

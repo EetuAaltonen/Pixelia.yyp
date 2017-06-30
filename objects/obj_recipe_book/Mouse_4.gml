@@ -32,6 +32,13 @@ if (!showRecipeBook) {
 		knownRecipes[i] = recipe;
 	}
 	recipeCount = i;
+	
+	if (recipeCount < recipesPerPage) {
+		maxPage = 1;
+	} else {
+		maxPage = round (recipeCount / recipesPerPage);
+	}
+	createOnce = true;
 } else {
 	showRecipeBook = false;
 }

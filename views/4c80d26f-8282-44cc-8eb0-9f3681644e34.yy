@@ -12,7 +12,8 @@
         "30778700-641c-490c-b651-37ab86caf5ef",
         "09ad8a7b-79bf-446e-ad3e-d96bfb4eb8e0",
         "d3ecd526-2389-4bc4-b77a-7104235ad8da",
-        "f9f7655b-abd4-4463-9a14-3a83b17f0882"
+        "f9f7655b-abd4-4463-9a14-3a83b17f0882",
+        "917e94e2-5984-494c-aa38-e1a460d8be70"
     ],
     "filterType": "GMSprite",
     "folderName": "Collectable",

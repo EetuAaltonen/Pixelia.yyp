@@ -1,27 +1,19 @@
 size_of_list = 8; //Limit of list
 start_count = 0; //First item
-if (item_count > 8)
-{                       //This have to be set!
-    if ((item_count - ((current_page+1)*8)) > 0 and current_page == 0)
-    {
+if (item_count > size_of_list) {                       //This have to be set!
+    if (scr_can_change_next_page(current_page, item_count, size_of_list) and current_page == 0) {
         start_count = 0;
-        end_count = 8;
+        end_count = size_of_list;
         
-    }
-    else if ((item_count - ((current_page+1)*8)) > 0 and
-            current_page > 0)
-    {
-        start_count = (current_page*8);
-        end_count = ((current_page*8)*2);
-    }
-    else
-    {
-        start_count = (current_page*8);
+    } else if (scr_can_change_next_page(current_page, item_count, size_of_list) and
+            current_page > 0) {
+        start_count = (current_page*size_of_list);
+        end_count = ((current_page*size_of_list)*2);
+    } else {
+        start_count = (current_page*size_of_list);
         end_count = item_count;
     }
-}
-else
-{
+} else {
     end_count = item_count;
     start_count = 0;
 }

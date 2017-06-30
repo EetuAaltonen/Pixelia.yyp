@@ -18,7 +18,8 @@
         "71967063-98dc-40f6-8253-2a0a3ad5ce7e",
         "e436cb5c-2f15-4f4c-b643-a81668bb4348",
         "6c5db7a4-4d93-4f64-9ef5-afe33330ba4c",
-        "b5dbfbe3-b8bd-4eeb-8352-329b6f5be17a"
+        "b5dbfbe3-b8bd-4eeb-8352-329b6f5be17a",
+        "f5d3a351-e64d-465d-ba48-45b5f4db0950"
     ],
     "filterType": "GMObject",
     "folderName": "Collectable",
