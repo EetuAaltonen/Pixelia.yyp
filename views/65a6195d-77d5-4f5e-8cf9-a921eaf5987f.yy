@@ -39,7 +39,8 @@
         "3fc977a0-ae4b-485c-802e-440a94e6c79f",
         "99dad6cb-3a1c-48e0-a1ba-ef09b72d5b54",
         "f9bf7cd5-1452-4faf-941c-90f8929b2513",
-        "7af337a0-a2cc-45b7-84ac-9cb1501d02d8"
+        "7af337a0-a2cc-45b7-84ac-9cb1501d02d8",
+        "0f462216-72df-4c4c-a9f3-280e67c9dd00"
     ],
     "filterType": "GMSprite",
     "folderName": "Skilltree",

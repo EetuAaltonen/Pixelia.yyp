@@ -22,7 +22,7 @@ if (keyboard_check_pressed(vk_tab)) {
 	if (global.hudState == "null") {
 	    if (instance_exists(obj_player)) {
 	        if (obj_player.action_state == "null") {
-				global.hudState = "inventory1";
+				global.hudState = "inventoryBackpack";
 	            controller.pageUpdate = true;
 	            controller.current_page = 0;
 	            controller.filter = "null";
@@ -41,8 +41,7 @@ if (keyboard_check_pressed(vk_tab)) {
 	            }
 	        }
 	    }
-	}
-	else if (string_pos("inventory", string(global.hudState))) {    
+	} else if (string_pos("inventory", string(global.hudState))) {    
 	    global.hudState = "null";
 	    controller.pageUpdate = true;
 	    scr_savegame();

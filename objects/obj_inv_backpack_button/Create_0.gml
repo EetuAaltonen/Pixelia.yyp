@@ -1,3 +1,3 @@
 text = "Inventory";
-hudState = "inventory1";
+hudState = "inventoryBackpack";
 

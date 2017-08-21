@@ -1,3 +1,3 @@
 text = "Skill tree"
-hudState = "inventory2";
+hudState = "inventorySkills";
 

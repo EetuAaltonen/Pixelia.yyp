@@ -5,6 +5,6 @@ if (instance_exists(obj_player))
 }
 
 //Blood
-global.ps = part_system_create();
+/*global.ps = part_system_create();
 scr_blood_particle();
 

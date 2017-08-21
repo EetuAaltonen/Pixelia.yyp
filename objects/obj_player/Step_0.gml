@@ -98,8 +98,14 @@ else if (global.hudState == "null" ||
     else if (hspeed < 0) {
         image_xscale = -1;
     }
-    //Movement
-    scr_plr_movement();
+	
+	if (elementalEffect == "frost") {
+		hspeed = 0;
+		image_speed = 0;
+	} else {
+		//Movement
+		scr_plr_movement();
+	}
     /*else if (action_state == "jump" && vspeed < 0)
     {
         sprite_index = spr_plr_jump;

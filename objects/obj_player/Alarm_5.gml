@@ -11,4 +11,3 @@ image_speed = 0;
 image_alpha = 1;
 sprite_index = spr_plr_down;
 sprite_index = spr_player;
-

@@ -48,4 +48,4 @@ if (instance_exists(obj_screen_controller))
     obj_screen_controller.start = true;
 }
 
-
+elementalEffect = "null";

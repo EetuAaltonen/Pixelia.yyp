@@ -1,3 +1,3 @@
 text = "Stats"
-hudState = "inventory3";
+hudState = "inventoryStats";
 

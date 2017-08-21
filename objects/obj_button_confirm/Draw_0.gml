@@ -1,5 +1,14 @@
 draw_self();
-//Font
+
+//Visibility
+/*if (global.hudState == "inventorySkills") {
+	if (obj_inventory_controller.globalPrimaryAttributesValues == global.skillPrimaryAttributesValues) {
+		visible = false;
+	} else {
+		visible = true;
+	}
+}*/
+/*//Font
 draw_set_font(fnt_inventory_text);
 draw_set_color(c_black);
 draw_set_halign(fa_middle);

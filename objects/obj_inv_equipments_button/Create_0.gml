@@ -1,3 +1,2 @@
 text = "Equipments";
 hudState = "inventoryEquipments";
-

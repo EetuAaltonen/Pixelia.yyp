@@ -28,30 +28,24 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
 
-if (global.hudState == "inventory1")
-{
+if (global.hudState == "inventoryBackpack") {
     scr_list_items();
-}
-else if (global.hudState == "inventoryEquipments")
-{
+} else if (global.hudState == "inventoryEquipments") {
     scr_list_items();
-}
-else if (global.hudState == "inventory2")
-{
+} else if (global.hudState == "inventorySkills") {
     //Background
     draw_sprite(spr_inventory_background, 0, viewX, viewY);
+	//Background
+	draw_sprite(spr_st_primary_attributes_bg, 0, viewX+4, viewY+90);
     scr_st_draw_info();
     scr_st_create_skills();
-}
-else if(global.hudState == "inventory3")
-{
+} else if(global.hudState == "inventoryStats") {
     //Background
     draw_sprite(spr_inventory_background, 0, viewX, viewY);
     //Icon
     draw_sprite(spr_death_counter, 0, viewX+30, viewY+120);
     //Death counter
     draw_text(viewX+50,viewY+112, string_hash_to_newline(string(global.death_counter)));
-    
     //Icon
     draw_sprite(spr_kill_counter, 0, viewX+30, viewY+150);
     //Kill counter
@@ -86,8 +80,7 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-if (global.hudState == "shop")
-{
+if (global.hudState == "shop") {
     scr_list_items();
 }
 

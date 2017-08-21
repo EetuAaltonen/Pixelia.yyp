@@ -1,5 +1,5 @@
 //Particle System
-part_system_depth(global.ps, -300);
+/*part_system_depth(global.ps, -300);
 global.pt_Blood = part_type_create();
 var partBlood = global.ps;
 

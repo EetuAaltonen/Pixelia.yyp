@@ -13,7 +13,7 @@ if (pageUpdate == true)
     //Clear item info
     item_info_text = "Item info...";
     //Create search text box in inventory
-    if (global.hudState == "inventory1" || string_pos("Equipments", string(global.hudState)))
+    if (global.hudState == "inventoryBackpack" || global.hudState == "inventoryEquipments")
     {
         instance_create(viewX+412, viewY+230, obj_menu_text_box);
     }
@@ -63,7 +63,7 @@ if (item_count > 0)
 	}
 	if (buffsUpdate) {
 		//List of buffs
-		if (string_pos("Equipments", string(global.hudState))) {
+		if (global.hudState == "inventoryEquipments") {
 			listOfBuffs = scr_inventory_get_list_of_buffs();
 		}
 		buffsUpdate = false;
@@ -84,7 +84,7 @@ if (item_count > 0)
         }
         else
         {
-			if (!string_pos("Equipments", string(global.hudState))) {
+			if (!global.hudState == "inventoryEquipments") {
 	            //Item amount background
 	            draw_sprite(spr_inv_item_amount_bg, 0,viewX+228, viewY+Ypos);
 	            //Item amount
@@ -92,7 +92,7 @@ if (item_count > 0)
 			}
         }
         if (string_pos("inventory", string(global.hudState)) &&
-            !string_pos("Equipments", string(global.hudState)) ||
+            !global.hudState == "inventoryEquipments" ||
             global.hudState == "shop")
         {
             //Item weight background
@@ -120,8 +120,8 @@ if (page_max == 0)
     page_max = 1;
 }
 draw_text(viewX+22,viewY+95, string("PAGE:    " + string(current_page + 1) + "  /  " + string(page_max)));
-if (global.hudState == "inventory1" ||
-	string_pos("Equipments", string(global.hudState)) ||
+if (global.hudState == "inventoryBackpack" ||
+	global.hudState == "inventoryEquipments" ||
     global.hudState = "shop")
 {
 	//Total and weight background
@@ -141,7 +141,7 @@ if (global.hudState == "inventory1" ||
 	draw_set_valign(fa_middle);
 	
 	//List of buffs
-	if (string_pos("Equipments", string(global.hudState))) {
+	if (global.hudState == "inventoryEquipments") {
 		Ypos = 115;
 		var listMargin = 10;
 		var listOfBuffsSize = array_length_1d(listOfBuffs);
