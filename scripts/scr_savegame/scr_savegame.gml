@@ -22,7 +22,11 @@ else
 }
 Datetime += (":" + minutes + ":" + seconds);
 ini_write_string(global.save_file,"last_played", Datetime);
-                
+   
+ini_write_real(global.save_file,"timerSeconds",global.timerSeconds);
+ini_write_real(global.save_file,"timerMinutes",global.timerMinutes);
+ini_write_real(global.save_file,"timerHours",global.timerHours);
+            
 ini_write_real(global.save_file,"room",global.current_room);
 ini_write_real(global.save_file,"health",global.healthPoints);
 

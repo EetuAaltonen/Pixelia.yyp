@@ -18,7 +18,11 @@ if (file_exists(global.save_file))
         ini_close();
     }
     ini_open(global.save_file);
-    global.current_room = ini_read_real(global.save_file,"room",Test_improved);
+	global.timerSeconds = ini_read_real(global.save_file,"timerSeconds",0);
+	global.timerMinutes = ini_read_real(global.save_file,"timerMinutes",0);
+	global.timerHours = ini_read_real(global.save_file,"timerHours",0);
+	
+    global.current_room = ini_read_real(global.save_file,"room",Salmon_Lake/*Test_improved*/);
     global.healthPoints = ini_read_real(global.save_file,"health",global.maxHealth);
     
     global.level = ini_read_real(global.save_file,"level",0);
@@ -40,13 +44,11 @@ if (file_exists(global.save_file))
     //= real(base64_decode(LoadedCoins));
     
     ini_close();
-    room_goto(Test_improved);//Pixelia_Castle_1);//global.current_room);
-}
-else
-{
+    room_goto(global.current_room/*Test_improved*/);
+} else {
     ini_open(global.save_file);
-    ini_write_real(global.save_file,"room",Test_improved);
+    ini_write_real(global.save_file,"room",Salmon_Lake);
     ini_close();
-    global.current_room = Test_improved//Test;
+    global.current_room = Salmon_Lake//Test;
     room_goto(global.current_room);
 }

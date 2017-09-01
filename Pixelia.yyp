@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "1b9e2c8d-5742-42a9-a87a-935616b322ea",
+            "Value": {
+                "id": "b4efa53f-3394-419f-ba32-70070258983e",
+                "resourcePath": "sprites\\spr_popup_bg\\spr_popup_bg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1bb4e614-6912-4ab9-b873-89e0bf9a593e",
             "Value": {
                 "id": "f70bbc13-6d47-4a73-a0ab-2ba230a3460c",
@@ -3527,6 +3535,14 @@
             }
         },
         {
+            "Key": "73e5b545-5669-4885-9832-b0dacc4fbefc",
+            "Value": {
+                "id": "b0f6ae1e-b418-4a3b-8b33-95d82bf8b482",
+                "resourcePath": "scripts\\scr_pop_up\\scr_pop_up.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "73ec3089-93cf-4cfb-abff-14f2c8b5b6c9",
             "Value": {
                 "id": "00829ab6-d725-48a2-baf4-874ca9544268",
@@ -5911,6 +5927,14 @@
             }
         },
         {
+            "Key": "c92aa9a9-a9f0-48ab-9042-d34827c61ae6",
+            "Value": {
+                "id": "be0f7b37-3d0e-40d8-a8be-ace42ed5fc33",
+                "resourcePath": "views\\c92aa9a9-a9f0-48ab-9042-d34827c61ae6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cb0392ab-413b-4ee7-b3b2-0f136ca6f8af",
             "Value": {
                 "id": "7f74d9de-3fdf-4fb5-84c9-e6652e02c229",
@@ -6783,6 +6807,14 @@
             }
         },
         {
+            "Key": "e913c4ee-778d-4614-9e8c-7468237c6b78",
+            "Value": {
+                "id": "9e3f3cdb-21f5-4458-afe6-882cb3e45c60",
+                "resourcePath": "rooms\\Salmon_Lake\\Salmon_Lake.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e99f10e5-25f2-49bd-98fb-bd6c1c0aa99a",
             "Value": {
                 "id": "5582c280-674c-40d7-9a5f-4fe2a43cc762",
@@ -7523,6 +7555,7 @@
         "3f0f145f-2698-4362-b252-ff92f5fa0708",
         "617c29e9-7e85-4b22-bb00-90f71a890f0b",
         "a83d9836-d633-4423-a97b-93ecca7b36bb",
+        "73e5b545-5669-4885-9832-b0dacc4fbefc",
         "0c7766f1-3ffd-47e4-a168-4b050145032a",
         "dd860ec7-14b5-4516-9e8a-df1bf1bcc057",
         "0167d6b9-6171-4ed6-a946-a029e1130a27",

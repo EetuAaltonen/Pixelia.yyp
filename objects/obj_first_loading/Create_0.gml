@@ -3,12 +3,21 @@ load = false;
 
 /*[Camera]*/
 	view_camera[0] = camera_create();
+
+/*[Delta timer]*/
+	global.delta = 60/1000000*delta_time;
+
+/*[Timer]*/
+	global.timerSeconds = 0;
+	global.timerMinutes = 0;
+	global.timerHours = 0;
 /*[Layers / Depths]*/
 	//layer_create(-100, "Collectable");
 	
-/*[Hud state & Room change]*/
+/*[Hud state & Room change & Pop up]*/
     global.hudState = "null";
     global.room_change = 0;
+	global.popUp = "null";
 
 /*[Enemies' stats]*/
     global.enemy_stats1 = 0;

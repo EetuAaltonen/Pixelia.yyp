@@ -1,26 +1,18 @@
 ///Draw armor info
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
-if (instance_exists(obj_player))
-{
+if (instance_exists(obj_player)) {
 	//Draw armor
     draw_sprite(spr_armor, image_index, viewX+4, viewY+3); 
     //Font
     draw_set_font(fnt_armor_text);
-	if (global.armor > ((global.maxArmor + global.armorPlus)*0.75))
-    {
+	if (global.armor > ((global.maxArmor + global.armorPlus)*0.75)) {
         draw_set_color(c_white);
-    }
-    else if (global.armor > ((global.maxArmor + global.armorPlus)*0.5))
-    {
+    } else if (global.armor > ((global.maxArmor + global.armorPlus)*0.5)) {
         draw_set_color(c_yellow);
-    }
-	else if (global.armor > ((global.maxArmor + global.armorPlus)*0.25))
-    {
+    } else if (global.armor > ((global.maxArmor + global.armorPlus)*0.25)) {
         draw_set_color(c_orange);
-    }
-    else
-    {
+    } else {
         draw_set_color(c_red);
     }
     draw_set_halign(fa_center);
@@ -49,5 +41,37 @@ if (instance_exists(obj_player))
 		}
 	}
 }
+//Font
+draw_set_font(fnt_inventory_text);
+draw_set_color(c_black);
+draw_set_halign(fa_left);
+draw_set_valign(fa_middle);
 
+var drawHours = 0;
+if (global.timerHours < 10) {
+	drawHours = "0" + string(global.timerHours);
+} else {
+	drawHours = string(global.timerHours);
+}
 
+var drawMinutes = 0;
+if (global.timerMinutes < 10) {
+	drawMinutes = "0" + string(global.timerMinutes);
+} else {
+	drawMinutes = string(global.timerMinutes);
+}
+
+var drawSeconds = 0;
+var tempSeconds = global.timerSeconds;
+tempSeconds = floor(tempSeconds/100);
+if (tempSeconds < 10) {
+	drawSeconds = "0" + string(tempSeconds);
+} else {
+	drawSeconds = string(tempSeconds);
+}
+
+draw_text(viewX+5, viewY+50, drawHours + ":" +
+							  drawMinutes + ":" +
+							  drawSeconds);
+draw_text(viewX+5, viewY+60, "fps: " + string(fps));
+draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));

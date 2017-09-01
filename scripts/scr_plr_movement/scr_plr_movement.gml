@@ -10,22 +10,22 @@ else if (keyboard_check(vk_right)) {
 		global.stamina > 0) {
         //Run
         image_speed = 0.5;
-        if (hspeed < (global.maxRunningSpeed + global.maxRunningSpeedPlus)) {
-            hspeed += acceleration;
+        if (hspeed < (global.maxRunningSpeed + global.maxRunningSpeedPlus)*global.delta) {
+            hspeed += acceleration*global.delta;
         } else {
-            hspeed = (global.maxRunningSpeed + global.maxRunningSpeedPlus);
+            hspeed = (global.maxRunningSpeed + global.maxRunningSpeedPlus)*global.delta;
         }
 		//Decrease stamina
-		if (hspeed > (global.maxWalkingSpeed + global.maxWalkingSpeedPlus) &&
+		if (hspeed > (global.maxWalkingSpeed + global.maxWalkingSpeedPlus)*global.delta &&
 			!place_free(x, y+1)) {
 			scr_decrease_stamina_n_mana("stamina", 0.5);
 		}
     } else {
         //Walk
-        if (hspeed < (global.maxWalkingSpeed + global.maxWalkingSpeedPlus)) {
-            hspeed += acceleration;
+        if (hspeed < (global.maxWalkingSpeed + global.maxWalkingSpeedPlus)*global.delta) {
+            hspeed += acceleration*global.delta;
         } else {
-            hspeed = (global.maxWalkingSpeed + global.maxWalkingSpeedPlus);
+            hspeed = (global.maxWalkingSpeed + global.maxWalkingSpeedPlus)*global.delta;
         }
     }
 }
@@ -38,22 +38,22 @@ else if (keyboard_check(vk_left)) {
 		global.stamina > 0) {
         //Run
         image_speed = 0.5;
-        if (hspeed > -(global.maxRunningSpeed + global.maxRunningSpeedPlus)) {
-            hspeed -= acceleration;
+        if (hspeed > -(global.maxRunningSpeed + global.maxRunningSpeedPlus)*global.delta) {
+            hspeed -= acceleration*global.delta;
         } else {
-            hspeed = -(global.maxRunningSpeed + global.maxRunningSpeedPlus);
+            hspeed = -(global.maxRunningSpeed + global.maxRunningSpeedPlus)*global.delta;
         }
 		//Decrease stamina
-		if (hspeed < -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus) &&
+		if (hspeed < -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus)*global.delta &&
 			!place_free(x, y+1)) {
 			scr_decrease_stamina_n_mana("stamina", 0.5);
 		}
     } else {
         //Walk
-        if (hspeed > -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus)) {
-            hspeed -= acceleration;
+        if (hspeed > -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus)*global.delta) {
+            hspeed -= acceleration*global.delta;
         } else {
-            hspeed = -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus);
+            hspeed = -(global.maxWalkingSpeed + global.maxWalkingSpeedPlus)*global.delta;
         }
     }
 } else {

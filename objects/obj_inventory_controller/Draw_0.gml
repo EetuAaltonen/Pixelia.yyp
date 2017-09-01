@@ -9,8 +9,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 ///Draw toast
-if (draw_toast)
-{
+if (draw_toast) {
     var margin = ((string_width(string_hash_to_newline(toast))/2)*(-1));
     var bgWidth = (string_width(string_hash_to_newline(toast)) + 10);
     draw_sprite_ext(spr_toaster_bg,0,viewX+480+margin-(bgWidth/2),
