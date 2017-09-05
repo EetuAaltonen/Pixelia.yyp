@@ -25,8 +25,8 @@ if (toPlayer == true) {
         //show_message(string(rndNumber) + "<" + string(catchChange));
         if (rndNumber < catchChange) {
             //Instance create dropped item
-            sprite_index_item = spr_icon_salmon;
-            /*instance_create(x, y, obj_dropped_item);
+            /*sprite_index_item = spr_icon_salmon;
+            instance_create(x, y, obj_dropped_item);
             (instance_nearest(x, y, obj_dropped_item)).sprite_index = sprite_index_item;
             (instance_nearest(x, y, obj_dropped_item)).typeId = typeId;
             (instance_nearest(x, y, obj_dropped_item)).get_attributes = true;*/

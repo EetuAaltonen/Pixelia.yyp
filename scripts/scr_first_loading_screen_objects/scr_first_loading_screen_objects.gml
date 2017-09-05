@@ -10,6 +10,8 @@ ds_list_add(Objects, obj_quest_controller);
 ds_list_add(Objects, obj_world_map_controller);
 //Dialogs
 ds_list_add(Objects, obj_dialog_controller);
+//Toaster
+//ds_list_add(Objects, obj_toaster_controller);
 //Stats
 ds_list_add(Objects, obj_stats_meter);
 //Collectable objects target

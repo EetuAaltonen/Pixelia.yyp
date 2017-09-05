@@ -14,10 +14,9 @@ load = false;
 /*[Layers / Depths]*/
 	//layer_create(-100, "Collectable");
 	
-/*[Hud state & Room change & Pop up]*/
+/*[Hud state & Room change]*/
     global.hudState = "null";
     global.room_change = 0;
-	global.popUp = "null";
 
 /*[Enemies' stats]*/
     global.enemy_stats1 = 0;

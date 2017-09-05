@@ -1,0 +1,9 @@
+var acceptKey = argument0;
+var cancelKey = argument1;
+var message = argument2;
+var executeScript = argument3;
+global.popUp = true;
+obj_popup_controller.acceptKey = acceptKey;
+obj_popup_controller.cancelKey = cancelKey;
+obj_popup_controller.message = message;
+obj_popup_controller.executeScript = executeScript;

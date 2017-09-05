@@ -1,9 +1,5 @@
 if (instance_exists(obj_player)) {
-	if (global.popUp == "ready alert" && catchFish) {
-		global.popUp = "null";
-		alarm[4] = bobberSpeed;
-		alarm[6] = bobberRotateSpeed;
-	} else {
+	if (/*global.popUp != "fishingBeReady" &&*/catchFish) {
 		///Stop bobber
 		bobberSpeed = 0;
 		if ((viewXCenter + bobberX) < viewXCenter + (area1Xscale/2) &&
