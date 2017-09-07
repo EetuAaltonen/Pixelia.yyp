@@ -10,13 +10,9 @@ if (global.popUp) {
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 
-		var stringWidth = string_width(message);
-		var stringHeight = string_height(message);
-		draw_sprite_ext(spr_popup_bg,0,viewX+((viewWidth/2)-((stringWidth/2)+10)),
-						viewY+((viewHeight/2)-((stringHeight/2)+10)),
-						1*(stringWidth+20),1*(stringHeight+50),0,c_white,0.8);
-		draw_text(viewX+(viewWidth/2),viewY+(viewHeight/2),message);
-		
+		var stringWidth;
+		var tempWidth;
+		var keyInfo;
 		if (drawAcceptKey == "null" && drawCancelKey == "null") {
 			if (acceptKey != "null") {
 				drawAcceptKey = scr_controls_info(acceptKey,"name");
@@ -25,13 +21,32 @@ if (global.popUp) {
 				drawCancelKey = scr_controls_info(cancelKey,"name");
 			}
 		}
+		
 		if (cancelKey == "null") {
-			draw_text(viewX+(viewWidth/2),viewY+((viewHeight/2)+stringHeight+10),
-					  "OK [ " + string(drawAcceptKey) + " ]");
+			keyInfo = "OK [ " + string(drawAcceptKey) + " ]";
 		} else {
-			draw_text(viewX+(viewWidth/2),viewY+((viewHeight/2)+stringHeight+10),
-					  "Accept [ " + string(drawAcceptKey) + " ] " +
-					  "Cancle [ " + string(drawCancelKey) + " ]");
+			keyInfo = "Accept [ " + string(drawAcceptKey) + " ]    " +
+					  "Cancle [ " + string(drawCancelKey) + " ]"
 		}
+		stringWidth = string_width(keyInfo);
+		if (string_width(message) >= string_width(keyInfo)) {
+			stringWidth = string_width(message);
+		} else {
+			stringWidth = string_width(keyInfo);
+		}
+		var stringHeight = string_height(message);
+		var padding = 4;
+		//Draw background
+		draw_sprite_ext(spr_popup_bg,0,viewX+((viewWidth/2)-((stringWidth/2)+10+(padding/2))),
+						viewY+((viewHeight/2)-((stringHeight/2)+10+(padding/2))),
+						1*(stringWidth+20+padding),1*(stringHeight+50+padding),0,c_white,1);
+		
+		draw_sprite_ext(spr_popup_bg,1,viewX+((viewWidth/2)-((stringWidth/2)+10)),
+						viewY+((viewHeight/2)-((stringHeight/2)+10)),
+						1*(stringWidth+20),1*(stringHeight+50),0,c_white,1);
+						
+		draw_text(viewX+(viewWidth/2),viewY+(viewHeight/2),message);
+		
+		draw_text(viewX+(viewWidth/2),viewY+((viewHeight/2)+stringHeight+10),keyInfo);
 	}	
 }

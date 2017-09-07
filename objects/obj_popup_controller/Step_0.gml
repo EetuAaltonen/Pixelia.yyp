@@ -1,5 +1,5 @@
 if (global.popUp) {
-	if (keyboard_check_released(acceptKey)) {
+	if (keyboard_check_pressed(acceptKey)) {
 		acceptKey = "null";
 		drawAcceptKey = "null";
 		cancelKey = "null";
@@ -7,7 +7,7 @@ if (global.popUp) {
 		message = "";
 		global.popUp = false;
 		script_execute(executeScript);
-	} else if (keyboard_check_released(cancelKey)) {
+	} else if (keyboard_check_pressed(cancelKey)) {
 		acceptKey = "null";
 		drawAcceptKey = "null";
 		cancelKey = "null";

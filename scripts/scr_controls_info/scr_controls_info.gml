@@ -7,7 +7,7 @@ var controlList = [
 ]
 var listLength = array_length_1d(controlList);
 if (type == "name") {
-	for (var i=1;i<(listLength-1);i++) {
+	for (var i=1;i<listLength;i++) {
 		if (string(control) == string(controlList[i])) {
 			control = controlList[i-1];
 			break;
@@ -15,7 +15,7 @@ if (type == "name") {
 		i++;
 	}
 } else {
-	for (var i=0;i<listLength;i++) {
+	for (var i=0;i<(listLength-1);i++) {
 		if (string(control) == string(controlList[i])) {
 			control = controlList[i+1];
 			break;
