@@ -2423,6 +2423,14 @@
             }
         },
         {
+            "Key": "4eb6f936-237e-4579-9c7d-aabe0b79af5c",
+            "Value": {
+                "id": "5b96f85e-25b1-4110-aa03-46f88e739fe4",
+                "resourcePath": "objects\\obj_global_clock\\obj_global_clock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ec33665-103d-4bb9-84c7-d8084b537270",
             "Value": {
                 "id": "36cd2818-bf79-4a9d-a53b-38463e926f70",
@@ -2959,11 +2967,11 @@
             }
         },
         {
-            "Key": "61369d73-5735-429a-a641-1dfe29035fdf",
+            "Key": "60bcbc61-4078-4ceb-9409-7557a1ec2b28",
             "Value": {
-                "id": "431feae1-abae-4322-abb7-df5d03babbd7",
-                "resourcePath": "objects\\obj_darkness\\obj_darkness.yy",
-                "resourceType": "GMObject"
+                "id": "ad6f7d6c-69d9-4387-8c6f-cefee0e54cab",
+                "resourcePath": "scripts\\scr_set_darkness\\scr_set_darkness.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -7621,6 +7629,7 @@
         "617c29e9-7e85-4b22-bb00-90f71a890f0b",
         "a83d9836-d633-4423-a97b-93ecca7b36bb",
         "98dfef00-313c-4a3b-9d48-aee9414cd90c",
+        "60bcbc61-4078-4ceb-9409-7557a1ec2b28",
         "0c7766f1-3ffd-47e4-a168-4b050145032a",
         "dd860ec7-14b5-4516-9e8a-df1bf1bcc057",
         "0167d6b9-6171-4ed6-a946-a029e1130a27",

@@ -1,5 +1,7 @@
 //First loading screen objects
 var Objects = ds_list_create();
+//Clock
+ds_list_add(Objects, obj_global_clock);
 //Inventory
 ds_list_add(Objects, obj_inventory_controller);
 //Crafting

@@ -47,7 +47,10 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-var drawHours = 0;
+draw_text(viewX+5, viewY+50, "global.hours:" + string(global.hours));
+draw_text(viewX+5, viewY+60, "fps: " + string(fps));
+draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));
+/*var drawHours = 0;
 if (global.timerHours < 10) {
 	drawHours = "0" + string(global.timerHours);
 } else {
@@ -74,4 +77,4 @@ draw_text(viewX+5, viewY+50, drawHours + ":" +
 							  drawMinutes + ":" +
 							  drawSeconds);
 draw_text(viewX+5, viewY+60, "fps: " + string(fps));
-draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));
+draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));*/

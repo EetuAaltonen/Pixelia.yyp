@@ -20,11 +20,6 @@ if (instance_exists(obj_player)) {
     alpha = 0;
 }
 
-var darkness = scr_get_dargness();
-if (room != Menu) {
-	draw_sprite_ext(spr_darkness,0,viewX,viewY,viewWidth,viewHeight,0,c_white,darkness);
-}
-
 //Font
 draw_set_font(fnt_menu_buttons);
 draw_set_color(c_black);

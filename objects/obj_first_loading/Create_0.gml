@@ -6,7 +6,10 @@ load = false;
 
 /*[Delta timer]*/
 	global.delta = 60/1000000*delta_time;
-
+/*[Clock]*/
+	global.hours = -1;
+/*[Darkness]*/
+	global.darkness = 0;
 /*[Timer]*/
 	global.timerSeconds = 0;
 	global.timerMinutes = 0;
