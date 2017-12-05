@@ -31,6 +31,7 @@ cooldown_shield = 1;
 
 //Action state
 action_state = "null";
+actionState = "null";
 
 //Jump
 can_jump = 1;

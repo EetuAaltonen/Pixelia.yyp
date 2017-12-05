@@ -19,3 +19,8 @@ if (vspeed < max_vspeed) {
         }
     }
 }
+
+//Too fast falling
+if (vspeed < -4) {
+    vspeed = -4;
+}
