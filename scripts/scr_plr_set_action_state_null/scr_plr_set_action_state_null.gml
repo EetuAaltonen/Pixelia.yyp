@@ -1,5 +1,4 @@
-if (instance_exists(obj_player))
-{    
+if (instance_exists(obj_player)) {    
     obj_player.hspeed = 0;
     obj_player.sprite_index = spr_player;
     obj_player.solid = true;

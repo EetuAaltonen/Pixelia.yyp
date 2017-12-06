@@ -5,7 +5,7 @@ depth = -6000;
 alarm[1] = global.armorRegenSpeed;
 //Stamina
 alarm[2] = global.staminaRegenSpeed;
-staminaUsage = true;
+drainStamina = false;
 //Mana
 alarm[3] = global.manaRegenSpeed;
-manaUsage = true;
+drainMana = false;

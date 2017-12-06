@@ -6,4 +6,4 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-draw_text(x, y-30, string_hash_to_newline(string(action_state)));
+draw_text(x, y-30, string_hash_to_newline(string(actionState)));

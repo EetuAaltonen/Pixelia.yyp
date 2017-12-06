@@ -2,7 +2,7 @@
     "id": "45e89787-d14d-43ee-951c-5d5769b2295d",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_plr_down",
+    "name": "spr_plr_crouch",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -13,6 +13,7 @@
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
+    "edgeFiltering": false,
     "frames": [
         {
             "id": "b1cdeed9-3ce8-4c07-811a-6e4b4b823f88",
@@ -120,8 +121,10 @@
         }
     ],
     "origin": 0,
+    "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,
+    "premultiplyAlpha": false,
     "sepmasks": false,
     "swatchColours": null,
     "swfPrecision": 2.525,

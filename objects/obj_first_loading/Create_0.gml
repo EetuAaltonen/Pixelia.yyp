@@ -38,8 +38,11 @@ load = false;
 	//Critical damage (percent)
 	global.criticalDamage = 0.1;
 	global.criticalChance = 0.25;
+	//Regeneration Cooldown
+	global.regenCooldown = 50;
+	global.drainCooldown = 5;
     //Health
-    global.maxHealth = 3;
+    global.maxHealth = 100;
     global.healthPlus = 0;
     global.healthPoints = global.maxHealth;
     //Armor
@@ -50,19 +53,19 @@ load = false;
 	global.armorRegenPlus = 0; //skill NEEDED???
     global.armorRegenSpeed = 50;
     //Stamina
-    global.maxStamina = 10;
+    global.maxStamina = 120;//10;
 	global.staminaPlus = 0;
-    global.stamina = 0;//global.maxStamina;
+    global.stamina = global.maxStamina;
     global.staminaRegenAmount = 1;
 	global.staminaRegenPlus = 0; //skill NEEDED???
-    global.staminaRegenSpeed = 50;
+    global.staminaRegenSpeed = 10;//50;
     //Mana
-    global.maxMana = 10;
+    global.maxMana = 100;//10;
 	global.manaPlus = 0;
-    global.mana = 0;//global.maxMana;
+    global.mana = global.maxMana;
     global.manaRegenAmount = 1;
 	global.manaRegenPlus = 0; //skill NEEDED???
-    global.manaRegenSpeed = 100;
+    global.manaRegenSpeed = 10;//100;
     //Movement
 		//Walking
 		global.maxWalkingSpeed = 1.5;

@@ -146,17 +146,17 @@ else if (global.hudState == "null" ||
         if (hspeed == 0) {
             action_state = "";
             image_speed = 0;
-            sprite_index = spr_plr_down;
+            sprite_index = spr_plr_crouch;
         }
         else if (keyboard_check(vk_left)) {
             image_speed = 0.2;
             hspeed = -1;
-            sprite_index = spr_plr_down;
+            sprite_index = spr_plr_crouch;
         }
         else if (keyboard_check(vk_right)) {
             image_speed = 0.2;
             hspeed = 1;
-            sprite_index = spr_plr_down;
+            sprite_index = spr_plr_crouch;
         }
         else if (keyboard_check_released(vk_control)) {
             action_state = "null";
@@ -186,7 +186,7 @@ else if (global.hudState == "null" ||
     /*if (!place_free(x,y-3))
     {
         image_speed = 0;
-        sprite_index = spr_plr_down;
+        sprite_index = spr_plr_crouch;
         alarm[7] = 10; //Fix animation stuck
     }*/
 }

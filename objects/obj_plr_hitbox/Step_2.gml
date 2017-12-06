@@ -1,9 +1,8 @@
-if (instance_exists(obj_player))
-{  
+if (instance_exists(obj_player)) {  
     vspeed = obj_player.vspeed;
     hspeed = obj_player.hspeed;
     y = obj_player.y;
-    if (obj_player.sprite_index == spr_plr_down)
+    if (obj_player.sprite_index == spr_plr_crouch)
     {
         sprite_index = spr_hitbox_small;
     }

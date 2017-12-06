@@ -1,3 +1,2 @@
-/// @description mana usage
-///Mana usage
-manaUsage = true;
+/// @description Drain Mana
+drainMana = false;

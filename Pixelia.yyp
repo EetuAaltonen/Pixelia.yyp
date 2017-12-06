@@ -2119,6 +2119,14 @@
             }
         },
         {
+            "Key": "415ea3c7-1e2a-440f-8cff-43cf6ba7a729",
+            "Value": {
+                "id": "91cfe1da-9845-42d8-96c7-30b2452c42c8",
+                "resourcePath": "sprites\\spr_stamina_n_mana_old\\spr_stamina_n_mana_old.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "418d7ff6-bc3c-49a2-9aa2-2f89b5ccf4d8",
             "Value": {
                 "id": "40f60e90-40d6-49a7-b334-30ba73dc38f7",
@@ -2234,7 +2242,7 @@
             "Key": "45e89787-d14d-43ee-951c-5d5769b2295d",
             "Value": {
                 "id": "dc8e4195-4ff0-41eb-9c65-da3f40b3a03e",
-                "resourcePath": "sprites\\spr_plr_down\\spr_plr_down.yy",
+                "resourcePath": "sprites\\spr_plr_crouch\\spr_plr_crouch.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5919,6 +5927,14 @@
             }
         },
         {
+            "Key": "c71127f1-929d-4779-a4f1-9af258eb0f86",
+            "Value": {
+                "id": "624d40bf-e82b-4663-b688-702224f8935c",
+                "resourcePath": "scripts\\scr_plr_move\\scr_plr_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c72582b1-137f-49df-aedb-9756065ee8d3",
             "Value": {
                 "id": "c7a1e859-f4e6-4685-a8ff-1d47ceae1fad",
@@ -6927,14 +6943,6 @@
             }
         },
         {
-            "Key": "e8a453b9-dc5a-4e73-87a9-255305b6a4d1",
-            "Value": {
-                "id": "67e4c524-b2ac-4fc3-b53f-168412aa6f05",
-                "resourcePath": "scripts\\scr_plr_crouch\\scr_plr_crouch.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e913c4ee-778d-4614-9e8c-7468237c6b78",
             "Value": {
                 "id": "9e3f3cdb-21f5-4458-afe6-882cb3e45c60",
@@ -7742,7 +7750,7 @@
         "5c50fc1e-6555-4bd9-81ac-177f5b65e74a",
         "e3ca1fde-493d-4111-b7e6-5affd33783ae",
         "37aae49e-876e-4c89-817b-d4e8922a65c4",
-        "e8a453b9-dc5a-4e73-87a9-255305b6a4d1",
+        "c71127f1-929d-4779-a4f1-9af258eb0f86",
         "5214006e-5eda-4f75-91ab-d38d23236b22",
         "e81dfbe2-389c-4341-aac9-666e4c66e792",
         "0b3ec7ee-986a-4063-87f6-42e730357a28",

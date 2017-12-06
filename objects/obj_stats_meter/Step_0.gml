@@ -1,3 +1,4 @@
+/// @description Delta timer and global clock
 global.delta = 60/1000000*delta_time;
 
 global.timerSeconds += ((delta_time*0.000001)*room_speed)*global.delta;

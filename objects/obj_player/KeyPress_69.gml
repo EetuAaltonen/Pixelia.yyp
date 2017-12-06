@@ -1,7 +1,7 @@
 ///@description Use
 ///Use
 if (global.hudState == "null") {
-    if (action_state == "null" || action_state == "jump") {
+    if (actionState == "null" || actionState == "jump") {
         instance_create(x,y,obj_use);
     }
 }

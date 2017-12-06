@@ -16,14 +16,13 @@ var viewY = camera_get_view_y(view_camera[0]);
 
 ///Open inventory
 if (keyboard_check_pressed(vk_tab)) {
-    var controller = obj_inventory_controller;
 	if (global.hudState == "null") {
 	    if (instance_exists(obj_player)) {
-	        if (obj_player.action_state == "null") {
+	        if (obj_player.actionState == "null") {
 				global.hudState = "inventoryBackpack";
-	            controller.pageUpdate = true;
-	            controller.current_page = 0;
-	            controller.filter = "null";
+	            pageUpdate = true;
+	            current_page = 0;
+	            filter = "null";
 	            //Create buttons
 	            var buttons = [
 					obj_inv_backpack_button,
@@ -41,7 +40,7 @@ if (keyboard_check_pressed(vk_tab)) {
 	    }
 	} else if (string_pos("inventory", string(global.hudState))) {    
 	    global.hudState = "null";
-	    controller.pageUpdate = true;
+	    pageUpdate = true;
 	    scr_savegame();
 	}
 }

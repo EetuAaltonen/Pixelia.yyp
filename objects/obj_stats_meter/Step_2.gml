@@ -10,8 +10,8 @@ if (instance_exists(obj_player))
     }
 	
 	//Mana
-	if (global.mana > (10 + global.manaPlus)) {
-        global.mana = (10 + global.manaPlus);
+	if (global.mana > (global.maxMana + global.manaPlus)) {
+        global.mana = (global.maxMana + global.manaPlus);
     } else if (global.mana < 0) {
         global.mana = 0;
     }

@@ -3,7 +3,7 @@ var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 if (instance_exists(obj_player)) {
 	//Draw armor
-    draw_sprite(spr_armor, image_index, viewX+4, viewY+3); 
+    draw_sprite(spr_armor, image_index, viewX+4, viewY+14); 
     //Font
     draw_set_font(fnt_armor_text);
 	if (global.armor > ((global.maxArmor + global.armorPlus)*0.75)) {
@@ -17,29 +17,18 @@ if (instance_exists(obj_player)) {
     }
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text(viewX+16, viewY+14, string(global.armor));
+    draw_text(viewX+16, viewY+26, string(global.armor));
 	
+	draw_set_color(c_black);
 	//Draw healthPoints && background
-	for (var i = 0; i < global.maxHealth; i++) {
-		draw_sprite(spr_life_point, 1, viewX+30+(i*19), viewY+6);
-		if (i < global.healthPoints) {
-			draw_sprite(spr_life_point, 0, viewX+30+(i*19), viewY+6);
-		}
-	}
+	draw_sprite_ext(spr_stamina_n_mana, 0, viewX+4, viewY+4, 126*(global.healthPoints/global.maxHealth), 1, 0, c_white, 1);
+	draw_text(viewX+65, viewY+9, string(global.healthPoints) + " / " + string(global.maxHealth));
 	//Draw stamina && background
-	for (var i = 0; i < global.maxStamina; i++) {
-		draw_sprite(spr_stamina_n_mana, 2, viewX+4+(i*8), viewY+28);
-		if (i < global.stamina) {
-			draw_sprite(spr_stamina_n_mana, 0, viewX+4+(i*8), viewY+28);
-		}
-	}
+	draw_sprite_ext(spr_stamina_n_mana, 1, viewX+30, viewY+14, 100*(global.stamina/global.maxStamina), 1, 0, c_white, 1);
+	draw_text(viewX+80, viewY+19, string(global.stamina) + " / " + string(global.maxStamina));
 	//Draw mana && background
-	for (var i = 0; i < global.maxMana; i++) {
-		draw_sprite(spr_stamina_n_mana, 2, viewX+4+(i*8), viewY+38);
-		if (i < global.mana) {
-			draw_sprite(spr_stamina_n_mana, 1, viewX+4+(i*8), viewY+38);
-		}
-	}
+	draw_sprite_ext(spr_stamina_n_mana, 2, viewX+30, viewY+24, 100*(global.mana/global.maxMana), 1, 0, c_white, 1);
+	draw_text(viewX+80, viewY+29, string(global.mana) + " / " + string(global.maxMana));
 }
 //Font
 draw_set_font(fnt_inventory_text);

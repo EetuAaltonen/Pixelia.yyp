@@ -1,3 +1,2 @@
-/// @description stamina usage
-///Stamina usage
-staminaUsage = true;
+/// @description Drain Stamina
+drainStamina = false;

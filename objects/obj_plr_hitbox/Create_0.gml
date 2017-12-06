@@ -1,5 +1,4 @@
-if (instance_exists(obj_player))
-{  
+if (instance_exists(obj_player)) {  
     x = obj_player.x-4;
     y = obj_player.y;
 }
