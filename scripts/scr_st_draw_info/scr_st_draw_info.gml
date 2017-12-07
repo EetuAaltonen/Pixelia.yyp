@@ -7,7 +7,7 @@ draw_set_font(fnt_small_text);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 //Skilltree
-var arrayLength = array_length_1d(global.skillPrimaryAttributes);
+/*var arrayLength = array_length_1d(global.skillPrimaryAttributes);
 for (var i = 0; i < arrayLength; i++) {
 	draw_set_color(c_black);
 	draw_set_halign(fa_right);
@@ -17,7 +17,7 @@ for (var i = 0; i < arrayLength; i++) {
 	}
 	draw_set_halign(fa_left);
 	draw_text(viewX+70, viewY+120+(hMargin*i), string(globalPrimaryAttributesValues[i]));
-}
+}*/
 draw_set_color(c_black);
 draw_set_halign(fa_right);
 draw_text(viewX+65, viewY+105, "Skill points:");

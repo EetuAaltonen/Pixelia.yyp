@@ -8,17 +8,15 @@ scr_check_set_hud_state(setHudState);
 
 //Visibility
 var invController = obj_inventory_controller;
-if (action == "increase") {
-	if (global.hudState == "inventorySkills") {
+if (global.hudState == "inventorySkills") {
+	if (action == "increase") {
 		if (invController.globalSkillPoints > 0) {
 			visible = true;
 		} else {
 			visible = false;
 		}
-	}
-} else {
-	if (global.hudState == "inventorySkills") {
-		if (invController.globalPrimaryAttributesValues[index] > global.skillPrimaryAttributesValues[index]) {
+	} else {
+		if (invController.globalPrimaryAttributesValues[index] != global.attributes[index]) {
 			visible = true;
 		} else {
 			visible = false;

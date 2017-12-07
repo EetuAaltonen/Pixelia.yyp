@@ -1,24 +1,27 @@
 var invController = obj_inventory_controller;
+var attribute;
 if (visible == true) {
-	if (action == "increase") {
-		if (global.hudState == "inventorySkills") {
-			invController.globalPrimaryAttributesValues[index] += 1;
+	if (global.hudState == "inventorySkills") {
+		attribute = invController.globalPrimaryAttributesValues[index];
+		if (action == "increase") {
+			attribute[1] += 1;
+			invController.globalPrimaryAttributesValues[index] = attribute;
 			invController.globalSkillPoints -= 1;
-		}
-		/*if (obj_button_confirm.value < obj_button_confirm.item_count) {
-		    obj_button_confirm.value += 1;
-		    alarm[1] = 40;
-		}*/
-	} else {
-		if (global.hudState == "inventorySkills") {
-			if (invController.globalPrimaryAttributesValues[index] > global.skillPrimaryAttributesValues[index]) {
-				invController.globalPrimaryAttributesValues[index] -= 1;
+		} else {
+			if (attribute > global.skillPrimaryAttributesValues[index]) {
+				attribute[1] -= 1;
+				invController.globalPrimaryAttributesValues[index] = attribute;
 				invController.globalSkillPoints += 1;
 			}
 		}
-		/*if (obj_button_confirm.value > 0) {
-		    obj_button_confirm.value -= 1;
-		    alarm[1] = 40;
-		}*/
 	}
+	/*if (obj_button_confirm.value < obj_button_confirm.item_count) {
+		obj_button_confirm.value += 1;
+		alarm[1] = 40;
+	}*/
+
+	/*if (obj_button_confirm.value > 0) {
+		obj_button_confirm.value -= 1;
+		alarm[1] = 40;
+	}*/
 }

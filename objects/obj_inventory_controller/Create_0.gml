@@ -30,4 +30,4 @@ skill_name = "";
 skill_bonus = "";
 skill_price = "";
 globalSkillPoints = global.skillPoints;
-globalPrimaryAttributesValues = global.skillPrimaryAttributesValues;
+globalPrimaryAttributesValues = global.attributes;

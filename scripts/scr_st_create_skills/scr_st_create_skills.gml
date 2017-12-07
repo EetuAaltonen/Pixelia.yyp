@@ -1,6 +1,7 @@
 //Create skills
 if (pageUpdate == true) {
-	globalPrimaryAttributesValues = global.skillPrimaryAttributesValues;
+	var player = obj_player;
+	globalPrimaryAttributesValues = global.attributes;
 	global.skillPoints = 4;
 	globalSkillPoints = global.skillPoints;
     if (createOnce == true) {		
@@ -21,7 +22,7 @@ if (pageUpdate == true) {
 				(instance_nearest(viewX+x_pos+(margin_right*(i-1)),viewY+y_pos+(margin_bottom*a), obj_skill_tree_skill)).get_attributes = true;
             }
         }*/
-		var arrayLength = array_length_1d(global.skillPrimaryAttributes);
+		var arrayLength = array_length_1d(globalPrimaryAttributesValues);
 		var index = 0;
 		for (var i = 0; i < arrayLength; i++) {
 			instance_create(viewX+90,viewY+119+(hMargin*i),obj_button_count);

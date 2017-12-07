@@ -6,7 +6,8 @@
     "children": [
         "a83d9836-d633-4423-a97b-93ecca7b36bb",
         "98dfef00-313c-4a3b-9d48-aee9414cd90c",
-        "60bcbc61-4078-4ceb-9409-7557a1ec2b28"
+        "60bcbc61-4078-4ceb-9409-7557a1ec2b28",
+        "44056e36-a9a3-4755-800f-889f785a2cb2"
     ],
     "filterType": "GMScript",
     "folderName": "HUD",

@@ -1,6 +1,5 @@
 ///Draw price
-if (sprite_index)
-{
+if (sprite_index) {
     draw_self();
 }
 //Font
@@ -13,4 +12,3 @@ draw_text(x+(sprite_width/2)-1, y+(sprite_height)+5, string_hash_to_newline(stri
 
 ///Unlocked
 image_blend = make_colour_hsv(0, 0, image_blend_);
-

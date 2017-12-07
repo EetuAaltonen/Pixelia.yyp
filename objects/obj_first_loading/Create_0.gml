@@ -84,8 +84,8 @@ load = false;
     //Skillpoint
     global.skillPoints = 0;
 	global.enchantingPoints = 0;
-	global.skillPrimaryAttributes = ["Strength", "Agility", "Constitution", "Intelligence", "Survival", "Speed"];
-	global.skillPrimaryAttributesValues = [1, 1, 1, 1, 1, 1];
+	global.attributes = scr_glob_attributes();
+	global.skills = scr_glob_skills();
     //Death counter
     global.death_counter = 0;
     //Kill counter
