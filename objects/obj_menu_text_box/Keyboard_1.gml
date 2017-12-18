@@ -21,17 +21,19 @@ if (selected == true) {
 	        keyboard_string = "";
 	        blink_icon = "";
 	        selected = false;
-	        if (global.hudState == "inventory1") {
-	            if (txt == "") {
-	                txt = place_holder;
-	            }
-	            if (txt != place_holder) {
-	                obj_inventory_controller.filter = txt;
-	            } else {
-	                obj_inventory_controller.filter = "null";
-	            }
-	            obj_inventory_controller.pageUpdate = true;
-	            obj_inventory_controller.createOnce = true;
+	        if (global.hudState == "inventoryBackpack") {
+				if (txt != obj_inventory_controller.filter) {
+		            if (txt != "") {
+		                obj_inventory_controller.filter = txt;
+		            } else {
+						txt = place_holder;
+		                obj_inventory_controller.filter = "";
+		            }
+					obj_inventory_controller.currentPage = 1;
+					obj_inventory_controller.updateValues = true;
+				}
+	            //obj_inventory_controller.pageUpdate = true;
+	            //obj_inventory_controller.createOnce = true;
 	        }
 		}
     }

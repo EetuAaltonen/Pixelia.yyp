@@ -15,8 +15,8 @@ if (keyboard_check_pressed(vk_control) && !place_free(x, y+1)) {
 //Jump
 scr_plr_jump();
 
-//Movement
-scr_plr_movement();
-
 //Image xscale n speed
 scr_plr_image_xscale_n_speed();
+
+//Movement
+scr_plr_movement();

@@ -1,17 +1,16 @@
 //Change page
-if (global.hudState == "inventory1" || global.hudState == "inventoryEquipments") {
+if (global.hudState == "inventoryBackpack" || global.hudState == "inventoryEquipments") {
 	if (!instance_exists(obj_button_confirm)) {
-	    if (keyboard_check_pressed(vk_right) and
-			scr_can_change_next_page(current_page, item_count, itemsPerPage)) {
-	        current_page += 1;
-	        pageUpdate = true;
-	        createOnce = true;
-	        loop_stop = false;
-	    } else if (keyboard_check_pressed(vk_left) and current_page > 0) {
-	        current_page -= 1;
-	        pageUpdate = true;
-	        createOnce = true;
-	        loop_stop = false;
-	    }
+		var itemCount = ds_list_size(listOfItems);
+		if (itemCount > 0) {
+		    if (keyboard_check_pressed(vk_right) and
+				scr_can_change_next_page(currentPage, itemCount, itemsPerPage)) {
+		        currentPage += 1;
+		        updateValues = true;
+		    } else if (keyboard_check_pressed(vk_left) and currentPage > 1) {
+		        currentPage -= 1;
+		        updateValues = true;
+		    }
+		}
 	}
 }

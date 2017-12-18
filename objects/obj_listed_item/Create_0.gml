@@ -1,7 +1,11 @@
-///Create attributes
+//Create Attributes
+data = "null";
+
+
 itemCount = 0;
 sprite_index_ = "";
 spriteName = "";
+
 //Info text
 infoText = "";
 name = "";

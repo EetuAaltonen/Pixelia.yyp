@@ -1,11 +1,7 @@
-if (room != Menu)
-{
-    if window_get_fullscreen()
-    {
+if (room != Menu) {
+    if window_get_fullscreen() {
         window_set_fullscreen(false);
-    }
-    else
-    {
+    } else {
         window_set_fullscreen(true);
     }
 }

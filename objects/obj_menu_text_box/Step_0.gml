@@ -5,17 +5,17 @@ if (selected == false && txt == "")
 }
 
 ///Instance destroy
-if (room != Menu)
+/*if (room != Menu)
 {
     //Destroy function
-    if (global.hudState == "inventory1" || string_pos("Equipments", string(global.hudState)))
+    if (global.hudState == "inventoryBackpack" || string_pos("Equipments", string(global.hudState)))
     {
         if (obj_inventory_controller.pageUpdate == true)
         {
             instance_destroy();
         }
     }
-    else if (global.hudState != "inventory1" || !string_pos("Equipments", string(global.hudState)))
+    else if (global.hudState != "inventoryBackpack" || !string_pos("Equipments", string(global.hudState)))
     {
         instance_destroy();
     }

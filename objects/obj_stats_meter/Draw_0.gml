@@ -30,15 +30,18 @@ if (instance_exists(obj_player)) {
 	draw_sprite_ext(spr_stamina_n_mana, 2, viewX+30, viewY+24, 100*(global.mana/global.maxMana), 1, 0, c_white, 1);
 	draw_text(viewX+80, viewY+29, string(global.mana) + " / " + string(global.maxMana));
 }
-//Font
-draw_set_font(fnt_inventory_text);
-draw_set_color(c_black);
-draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
+if (global.hudState == "null") {
+	//Font
+	draw_set_font(fnt_inventory_text);
+	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_middle);
 
-draw_text(viewX+5, viewY+50, "global.hours:" + string(global.hours));
-draw_text(viewX+5, viewY+60, "fps: " + string(fps));
-draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));
+	//Statics
+	draw_text(viewX+5, viewY+50, "global.hours:" + string(global.hours));
+	draw_text(viewX+5, viewY+60, "fps: " + string(fps));
+	draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));
+}
 /*var drawHours = 0;
 if (global.timerHours < 10) {
 	drawHours = "0" + string(global.timerHours);

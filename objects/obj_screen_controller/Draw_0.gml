@@ -26,7 +26,7 @@ draw_set_color(c_black);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-if (pause == true) {
-    draw_text(viewX + (viewWidth/2), __view_get( e__VW.YView, 0 )/2 + (__view_get( e__VW.HView, 0 )/2), string_hash_to_newline("Pause"));
+if (pause || unfocus) {
+    draw_text(viewX + (viewWidth/2), viewY + (viewHeight/2), string_hash_to_newline("Pause"));
 }
 

@@ -1,14 +1,10 @@
-if (room != Menu)
-{
-    if (pause == false)
-    {
-        instance_deactivate_all(true);
+if (room != Menu) {
+    if (!pause) {
         pause = true;
-    }
-    else
-    {
-        instance_activate_all();
+		instance_deactivate_all(true);
+    } else {
         pause = false;
+		instance_activate_all();
     }
 }
 

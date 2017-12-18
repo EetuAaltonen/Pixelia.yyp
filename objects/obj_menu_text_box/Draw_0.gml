@@ -7,17 +7,12 @@ draw_set_valign(fa_middle);
 
 //draw_sprite(sprite_index, image_index, x, y);
 
-if (selected == false)
-{
-    if (txt == "")
-    {
+if (selected == false) {
+    if (txt == "") {
         txt = place_holder;
     }
-}
-else
-{
-    if (txt == place_holder)
-    {
+} else {
+    if (txt == place_holder) {
         txt = "";
     }
 }

@@ -1,5 +1,4 @@
 ///Clear inventory info text
-if (obj_inventory_controller.item_info_text == infoText)
-{
-    obj_inventory_controller.item_info_text = "Item info...";
+if (obj_inventory_controller.itemInfoText == infoText) {
+    obj_inventory_controller.itemInfoText = obj_inventory_controller.defaultInfoText;
 }

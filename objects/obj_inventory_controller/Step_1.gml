@@ -20,8 +20,8 @@ if (keyboard_check_pressed(vk_tab)) {
 	    if (instance_exists(obj_player)) {
 	        if (obj_player.actionState == "null") {
 				global.hudState = "inventoryBackpack";
-	            pageUpdate = true;
-	            current_page = 0;
+	            updateValues = true;
+	            pageIndex = 1;
 	            filter = "null";
 	            //Create buttons
 	            var buttons = [
@@ -32,15 +32,24 @@ if (keyboard_check_pressed(vk_tab)) {
 					obj_inv_save_exit_button,
 					obj_inv_close_button
 				];
+				var margin = 5;
 	            var arrayLength = array_length_1d(buttons);
 	            for (var i = 0; i < arrayLength; i++) {
-	                instance_create(viewX+4+(i*(85+5)), viewY+54, buttons[i]);
+	                instance_create(viewX+4+(i*(85+margin)), viewY+40, buttons[i]);
 	            }
 	        }
 	    }
 	} else if (string_pos("inventory", string(global.hudState))) {    
 	    global.hudState = "null";
-	    pageUpdate = true;
+		//Destroy Listed Items
+		if (instance_exists(obj_listed_item)) {
+			with (obj_listed_item) instance_destroy();
+		}
+		//Destroy Search Box
+		if (instance_exists(obj_menu_text_box)) {
+			with (obj_menu_text_box) instance_destroy();
+		}
+	    updateValues = true;
 	    scr_savegame();
 	}
 }

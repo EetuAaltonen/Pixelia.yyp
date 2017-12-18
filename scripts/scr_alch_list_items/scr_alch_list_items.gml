@@ -74,7 +74,7 @@ if (item_count > 0)
         //Item description
         draw_text(__view_get( e__VW.XView, 0 )+56,__view_get( e__VW.YView, 0 )+y_pos, string_hash_to_newline(string(item_name_draw[i])));
         //Item amount background
-        draw_sprite(spr_inv_item_amount_bg, 0,__view_get( e__VW.XView, 0 )+228, __view_get( e__VW.YView, 0 )+y_pos);
+        draw_sprite(spr_inv_item_count_bg, 0,__view_get( e__VW.XView, 0 )+228, __view_get( e__VW.YView, 0 )+y_pos);
         //Item amount
         draw_text(__view_get( e__VW.XView, 0 )+207,__view_get( e__VW.YView, 0 )+y_pos, string_hash_to_newline(string(item_amount_draw[i]) + "  x"));
         

@@ -13,6 +13,8 @@ Saves[0] = "no_saves";
 //Pause
 background_temp = "";
 pause = false;
+unfocus = false;
+
 //Room change
 current_room = false;
 target_room = false;

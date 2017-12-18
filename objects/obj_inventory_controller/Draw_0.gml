@@ -2,6 +2,7 @@ var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 var viewWidth = camera_get_view_width(view_camera[0]);
 var viewHeight = camera_get_view_height(view_camera[0]);
+
 //Font
 draw_set_font(fnt_toaster);
 draw_set_color(c_white);
@@ -18,11 +19,36 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
+if (listOfItems == "null") {
+	listOfItems = global.inventory;
+}
 
 if (global.hudState == "inventoryBackpack") {
-    scr_list_items();
+	//Background
+	draw_sprite(spr_inventory_background, 0, viewX, viewY);
+	
+	//Create Search Box
+	if (!instance_exists(obj_menu_text_box)) {
+		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+		filter = "";
+		currentPage = 1;
+	}
+	if (updateValues) {
+		if (filter != "") {
+			//Filter
+			listOfItems = scr_item_filter(global.inventory, filter);
+			listSize = ds_list_size(listOfItems);
+			show_message("Filter: " + filter);
+		} else {
+			show_message("Set default!");
+			listOfItems = global.inventory;
+		}
+	}
+	scr_list_items(listOfItems);
 } else if (global.hudState == "inventoryEquipments") {
-    scr_list_items();
+	//Background
+	draw_sprite(spr_inventory_background, 0, viewX, viewY);
+    scr_list_items(global.inventory);
 } else if (global.hudState == "inventorySkills") {
     //Background
     draw_sprite(spr_inventory_background, 0, viewX, viewY);
@@ -71,9 +97,9 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-if (global.hudState == "shop") {
+/*if (global.hudState == "shop") {
     scr_list_items();
-}
+}*/
 
 ///Hotbar background
 draw_sprite_ext(spr_hotbar_bg, image_index, viewX+0, viewY+270,

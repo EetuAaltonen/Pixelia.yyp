@@ -2,7 +2,7 @@
     "id": "d9afb8ae-a6c0-478e-af85-e3cc58b7da6a",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_inv_item_amount_bg",
+    "name": "spr_inv_item_count_bg",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -13,6 +13,7 @@
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
+    "edgeFiltering": false,
     "frames": [
         {
             "id": "49cf4f42-e5f6-4359-94a2-bbbbc8d99294",
@@ -54,8 +55,10 @@
         }
     ],
     "origin": 0,
+    "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,
+    "premultiplyAlpha": false,
     "sepmasks": false,
     "swatchColours": null,
     "swfPrecision": 2.525,

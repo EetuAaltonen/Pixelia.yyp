@@ -3,14 +3,30 @@
 key = "";
 typeId = "";
 
+//Inventory
+updateValues = true;
+listOfItems = "null";
+names = [];
+count = [];
+weight = [];
+pageIndex = 1;
+maxPageIndex = 1;
+itemsPerPage = 8;
+currentPage = 1;
+startIndex = 0;
+lastItem = 0;
+
 pageUpdate = true;
 createOnce = true; //Create objects once on the list
 buffsUpdate = true;
 listOfBuffs = false;
 
-item_info_text = "Item info...";
+defaultInfoText = "Item info..."; 
+item_info_text = defaultInfoText;
+itemInfoText = defaultInfoText;
 //Filter
-filter = "null";
+filter = "";
+
 //Coins
 image_scale_coin = 0.70;
 //Potion

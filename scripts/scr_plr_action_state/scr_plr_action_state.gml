@@ -13,6 +13,9 @@ switch (actionState) {
 		image_index = 0;
 	    sprite_index = spr_player;
 	}break;
+	case "slice": {
+		scr_plr_abi_slice();
+	}break;
 	case "ladder": {
 		//Do something
 	}break;

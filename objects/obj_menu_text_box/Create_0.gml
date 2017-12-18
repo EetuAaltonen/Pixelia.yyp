@@ -6,10 +6,8 @@ txt_temp = "";
 blink_icon = "";
 blink_speed = 30;
 place_holder = "File name...";
-if (room != Menu)
-{
-    if (global.hudState == "inventory1" || string_pos("Equipments", string(global.hudState)))
-    {
+if (room != Menu) {
+    if (global.hudState == "inventoryBackpack" || string_pos("Equipments", string(global.hudState))) {
         place_holder = "Item name...";
     }
 }

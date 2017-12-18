@@ -22,9 +22,19 @@ instance_create(x, y, obj_plr_pointer);
 //Highlight
 highlight = false;
 
+//Target
+enemy = false;
+
+//TempMask
+tempMask = spr_player;
+
 //Slice
-cooldown_slice = 1;
+sliceCooldown = false;
 slice = 0;
+sliceStreak = 0;
+tempHSpeed = 0;
+sliceCost = 5;
+sliceRam = false;
 
 //Shield
 cooldown_shield = 1;
@@ -44,8 +54,7 @@ cooldown = 1;
 
 scr_current_room();
 
-if (instance_exists(obj_screen_controller))
-{
+if (instance_exists(obj_screen_controller)) {
     obj_screen_controller.start = true;
 }
 

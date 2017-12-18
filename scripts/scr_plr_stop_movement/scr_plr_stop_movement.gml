@@ -1,4 +1,6 @@
-image_index = 0;
+if (actionState == "null") {
+	image_index = 0;
+}
 
 if (hspeed > acceleration*global.delta) {
     hspeed -= acceleration*global.delta;

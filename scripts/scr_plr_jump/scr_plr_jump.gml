@@ -4,6 +4,9 @@ if (!place_free(x, y+1)) {
 			case "carryGoods": {
 				vspeed = -2.5;
 			}break;
+			case "slice": {
+				vspeed = -3;
+			}break;
 			default: {
 				vspeed = -3;
 				actionState = "jump";
