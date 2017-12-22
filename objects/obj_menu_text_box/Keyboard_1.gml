@@ -21,7 +21,8 @@ if (selected == true) {
 	        keyboard_string = "";
 	        blink_icon = "";
 	        selected = false;
-	        if (global.hudState == "inventoryBackpack") {
+	        if (global.hudState == "inventoryBackpack" || global.hudState == "inventoryEquipments" ||
+				global.hudState == "shop") {
 				if (txt != obj_inventory_controller.filter) {
 		            if (txt != "") {
 		                obj_inventory_controller.filter = txt;

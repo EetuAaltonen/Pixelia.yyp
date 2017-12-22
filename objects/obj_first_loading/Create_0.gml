@@ -25,7 +25,7 @@ load = false;
     global.enemy_stats1 = 0;
     global.enemy_stats2 = 0;
     global.enemy_stats3 = 0;
-
+	
 //Global variables - Player
 
 //REMEMBER TO ADD BUFFS (like global.armorRegenPlus) to scr_inventory_get_list_of_buffs!!
@@ -86,6 +86,10 @@ load = false;
 	global.enchantingPoints = 0;
 	global.attributes = scr_glob_attributes();
 	global.skills = scr_glob_skills();
+	
+	//Sell Rate
+	global.sellRate = 0.1;
+	
     //Death counter
     global.death_counter = 0;
     //Kill counter

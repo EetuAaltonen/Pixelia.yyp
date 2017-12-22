@@ -19,10 +19,6 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-if (listOfItems == "null") {
-	listOfItems = global.inventory;
-}
-
 if (global.hudState == "inventoryBackpack") {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);
@@ -33,18 +29,7 @@ if (global.hudState == "inventoryBackpack") {
 		filter = "";
 		currentPage = 1;
 	}
-	if (updateValues) {
-		if (filter != "") {
-			//Filter
-			listOfItems = scr_item_filter(global.inventory, filter);
-			listSize = ds_list_size(listOfItems);
-			show_message("Filter: " + filter);
-		} else {
-			show_message("Set default!");
-			listOfItems = global.inventory;
-		}
-	}
-	scr_list_items(listOfItems);
+	scr_inventory_list_backpack();
 } else if (global.hudState == "inventoryEquipments") {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);
@@ -88,18 +73,61 @@ if (global.hudState == "inventoryBackpack") {
     draw_sprite(spr_home_thirst, 0, viewX+230, viewY+210);
     //Thirst
     draw_text(viewX+250,viewY+205, string(global.home_thirst));*/
+} else if (global.hudState == "shopBuy") {
+	//Background
+	draw_sprite(spr_inventory_background, 0, viewX, viewY);
+	
+	//Create Search Box
+	if (!instance_exists(obj_menu_text_box)) {
+		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+		filter = "";
+		currentPage = 1;
+	}
+	
+	scr_shop_list_goods();
+} else if (global.hudState == "shopSell") {
+	//Background
+	draw_sprite(spr_inventory_background, 0, viewX, viewY);
+	
+	//Create Search Box
+	if (!instance_exists(obj_menu_text_box)) {
+		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+		filter = "";
+		currentPage = 1;
+	}
+	
+	scr_inventory_list_backpack();
+} else if (global.hudState == "shopRepair") {
+	//Background
+	draw_sprite(spr_inventory_background, 0, viewX, viewY);
+	
+	//Create Search Box
+	if (!instance_exists(obj_menu_text_box)) {
+		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+		filter = "";
+		currentPage = 1;
+	}
+	
+	scr_inventory_list_backpack();
+} else if (global.hudState == "shopBuyBack") {
+	//Background
+	draw_sprite(spr_inventory_background, 0, viewX, viewY);
+	
+	//Create Search Box
+	if (!instance_exists(obj_menu_text_box)) {
+		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+		filter = "";
+		currentPage = 1;
+	}
+	
+	scr_inventory_list_backpack();
 }
 
-///Shop
 //Font
 draw_set_font(fnt_inventory_text);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-
-/*if (global.hudState == "shop") {
-    scr_list_items();
-}*/
 
 ///Hotbar background
 draw_sprite_ext(spr_hotbar_bg, image_index, viewX+0, viewY+270,

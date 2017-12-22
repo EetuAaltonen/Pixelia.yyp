@@ -1,0 +1,2 @@
+text = "Buy"
+hudState = "shopBuy";

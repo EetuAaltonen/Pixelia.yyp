@@ -1,5 +1,6 @@
 //Change page
-if (global.hudState == "inventoryBackpack" || global.hudState == "inventoryEquipments") {
+if (global.hudState == "inventoryBackpack" || global.hudState == "inventoryEquipments" ||
+	string_pos("shop", string(global.hudState))) {
 	if (!instance_exists(obj_button_confirm)) {
 		var itemCount = ds_list_size(listOfItems);
 		if (itemCount > 0) {

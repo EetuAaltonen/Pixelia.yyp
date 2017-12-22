@@ -6,9 +6,15 @@ typeId = "";
 //Inventory
 updateValues = true;
 listOfItems = "null";
+
+//Shop
+listOfshop = "null";
+
 names = [];
 count = [];
 weight = [];
+price = [];
+
 pageIndex = 1;
 maxPageIndex = 1;
 itemsPerPage = 8;

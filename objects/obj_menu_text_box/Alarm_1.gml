@@ -1,17 +1,12 @@
-if (selected == true)
-{
-    if (blink_icon == "")
-    {
+///@description Blink Icon
+if (selected == true) {
+    if (blink_icon == "") {
         blink_icon = "|";
-    }
-    else
-    {
+    } else {
         blink_icon = "";
     }
     alarm[1] = blink_speed;
-}
-else
-{
+} else {
     blink_icon = "";
 }
 

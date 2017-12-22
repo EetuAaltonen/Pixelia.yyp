@@ -1,4 +1,4 @@
-//Buy item
+/*//Buy item
 if (global.coins >= price)
 {
     //Cost

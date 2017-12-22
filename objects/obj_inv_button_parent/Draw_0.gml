@@ -9,13 +9,10 @@ draw_set_valign(fa_middle);
 draw_text(x + (sprite_width/2), y + (sprite_height/2), string_hash_to_newline(text));
 
 ///Selected
-if (hudState == global.hudState)
-{
+if (hudState == global.hudState) {
     var imageBlend = 100;
     image_blend = make_colour_hsv(0, 0, imageBlend);
-}
-else
-{
+} else {
     image_blend = make_colour_hsv(0, 0, -1);
 }
 

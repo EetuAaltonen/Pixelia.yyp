@@ -1,10 +1,13 @@
 ///Change hudState
-if (global.hudState != hudState)
-{
-    global.hudState = hudState;
-	obj_inventory_controller.start_count = 0;
-    obj_inventory_controller.current_page = 0;
-	obj_inventory_controller.createOnce = true;
-    obj_inventory_controller.pageUpdate = true;
+if (hudState == "null") {
+	if (string_pos("inventory", string(global.hudState))) {
+		scr_inventory_close();
+	} else if (string_pos("shop", string(global.hudState))) {
+		scr_shop_close();
+	}
+} else {
+	if (global.hudState != hudState) {
+	    global.hudState = hudState;
+		obj_inventory_controller.updateValues = true;
+	}
 }
-

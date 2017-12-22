@@ -53,16 +53,19 @@ if (listSize > 0) {
 			(instance_nearest(viewX+30, viewY+yPos+tempMargin, obj_listed_item)).data = data;
 			names[j] = data[1];
 			count[j] = data[3]
-			weight[j++] = data[5];
+			weight[j] = data[5];
+			if (global.hudState == "shopSell") {
+				price[j++] = (data[6]*global.sellRate);
+			} else {
+				price[j++] = data[6];
+			}
 		}
-		
-		show_message("Values Updated!");
 	} else {
 		yPos = 120;
 		j = 0;
 		for (i = startIndex; j < lastItem; i++) {
 			data = ds_list_find_value(global.inventory, i);
-			tempMargin = (i*margin);
+			tempMargin = (j*margin);
 			//Item Icon Background
 	        draw_sprite(spr_inv_item_bg, 0,viewX+30, viewY+yPos+tempMargin);        
 	        //Item Description Background
@@ -73,13 +76,18 @@ if (listSize > 0) {
 	        draw_sprite(spr_inv_item_count_bg, 0,viewX+228, viewY+yPos+tempMargin);
 			//Item Count
 			draw_text(viewX+207,viewY+yPos+tempMargin, string(count[j]) + "  x");
-			//Item Weight Background
-            draw_sprite(spr_inv_item_count_bg, 0,viewX+295, viewY+yPos+tempMargin);
-			//Item Weight
-			draw_text(viewX+274,viewY+yPos+tempMargin, string(weight[j++]) + "  Pw");
+			if (string_pos("inventory", global.hudState)) {
+				//Item Weight Background
+	            draw_sprite(spr_inv_item_count_bg, 0,viewX+295, viewY+yPos+tempMargin);
+				//Item Weight
+				draw_text(viewX+274,viewY+yPos+tempMargin, string(weight[j++]) + "  Pw");
+			} else if (string_pos("shop", global.hudState)) {
+				//Item Price Background
+	            draw_sprite(spr_inv_item_count_bg, 0,viewX+295, viewY+yPos+tempMargin);
+				//Item Price
+				draw_text(viewX+274,viewY+yPos+tempMargin, string(price[j++]) + "  G");
+			}
 		}
-		//Draw Info
-		scr_draw_info();
 	}	
 } else {
 	if (updateValues) {
@@ -92,3 +100,6 @@ if (listSize > 0) {
 	//If empty
 	draw_text(viewX+30, viewY+120, "Inventory is empty...");
 }
+
+//Draw Info
+scr_draw_info();

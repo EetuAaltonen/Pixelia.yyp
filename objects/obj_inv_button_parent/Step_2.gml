@@ -1,4 +1,5 @@
-///Instance destroy
-if (global.hudState == "null"/*!string_pos("inventory", string(global.hudState))*/) {
+///@description Instance destroy
+/*
+if (global.hudState == "null") {
     instance_destroy();
 }

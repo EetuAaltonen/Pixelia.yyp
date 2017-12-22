@@ -1,4 +1,4 @@
-//scr_inventory_check_capacity(argument0)
+/*//scr_inventory_check_capacity(argument0)
 var itemsWeight = argument0;
 var freeSpace = false;
 if (itemsWeight > 0) {
