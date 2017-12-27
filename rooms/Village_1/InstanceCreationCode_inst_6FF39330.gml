@@ -1,0 +1,1 @@
+spawnPoints = [Forest_1];

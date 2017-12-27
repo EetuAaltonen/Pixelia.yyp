@@ -6,7 +6,8 @@
     "children": [
         "8d4f632d-37e9-49e6-8253-d8abb0ecf23d",
         "161a2537-09a0-47de-86a6-ab22e324deb4",
-        "f6f5bb60-b7d3-487c-9782-35e671211baa"
+        "f6f5bb60-b7d3-487c-9782-35e671211baa",
+        "587661dc-557a-4cab-9fb2-3b973dd9dc30"
     ],
     "filterType": "GMObject",
     "folderName": "Front",

@@ -14,7 +14,7 @@ if (keyboard_check(vk_shift) &&
 	//Decrease stamina
 	if (abs(hspeed) > (global.maxWalkingSpeed + global.maxWalkingSpeedPlus)*global.delta &&
 		!place_free(x, y+1)) {
-		scr_decrease_stamina_n_mana("stamina", 4);
+		//scr_decrease_stamina_n_mana("stamina", 4);
 	}
 } else {
     //Walk

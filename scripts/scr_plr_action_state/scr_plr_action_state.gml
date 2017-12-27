@@ -9,9 +9,10 @@ switch (actionState) {
 		//Gravity
 		scr_custom_gravity();
 		hspeed = 0;
-	    image_speed = 0;
+	    image_speed = 0.2;
 		image_index = 0;
 	    sprite_index = spr_player;
+		//sprite_index = spr_player_idle;
 	}break;
 	case "slice": {
 		scr_plr_abi_slice();

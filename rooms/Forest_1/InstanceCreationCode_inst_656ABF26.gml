@@ -1,0 +1,1 @@
+spawnPoints = ["default"];

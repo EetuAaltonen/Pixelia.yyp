@@ -8,11 +8,10 @@
         "8f533dbd-5f09-4e07-b204-c42833c71a1a",
         "2088b571-2e25-4d1a-903f-87e874f54eba",
         "8bfaf312-1af9-4995-9250-f80a43bd58e9",
-        "e747b72f-e18f-4ab5-9ccc-77b29d799b96",
-        "ae7468a2-feae-4e5a-b8b8-fd140a5be62a"
+        "e747b72f-e18f-4ab5-9ccc-77b29d799b96"
     ],
     "filterType": "GMScript",
-    "folderName": "Load game",
+    "folderName": "Load Game",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

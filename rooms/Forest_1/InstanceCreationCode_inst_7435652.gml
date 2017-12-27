@@ -1,0 +1,1 @@
+targetRoom = Village_1;

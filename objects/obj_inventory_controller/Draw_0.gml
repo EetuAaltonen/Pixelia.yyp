@@ -19,6 +19,25 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
+if (string_pos("shop", string(global.hudState))) {
+	if (!instance_exists(obj_shop_buy_button)) {
+		//Create Buttons
+		var buttons = [
+			obj_shop_buy_button,
+			obj_shop_sell_button,
+			obj_shop_repair_button,
+			obj_shop_buy_back_button,
+			obj_inv_close_button
+		];
+		var margin = 5;
+		var arrayLength = array_length_1d(buttons);
+		for (var i = 0; i < arrayLength; i++) {
+			instance_create(viewX+4+(i*(85+margin)), viewY+40, buttons[i]);
+			buttons[i].depth = (depth-1);
+		}
+	}
+}
+
 if (global.hudState == "inventoryBackpack") {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);
@@ -29,10 +48,19 @@ if (global.hudState == "inventoryBackpack") {
 		filter = "";
 		currentPage = 1;
 	}
+	
 	scr_inventory_list_backpack();
 } else if (global.hudState == "inventoryEquipments") {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);
+	
+	//Create Search Box
+	if (!instance_exists(obj_menu_text_box)) {
+		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+		filter = "";
+		currentPage = 1;
+	}
+	
     scr_list_items(global.inventory);
 } else if (global.hudState == "inventorySkills") {
     //Background
@@ -96,7 +124,7 @@ if (global.hudState == "inventoryBackpack") {
 		currentPage = 1;
 	}
 	
-	scr_inventory_list_backpack();
+	scr_inventory_list_backpack();	
 } else if (global.hudState == "shopRepair") {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);
@@ -108,7 +136,8 @@ if (global.hudState == "inventoryBackpack") {
 		currentPage = 1;
 	}
 	
-	scr_inventory_list_backpack();
+	draw_text(viewX+30, viewY+120, "Coming Soon!");
+	//scr_inventory_list_backpack();
 } else if (global.hudState == "shopBuyBack") {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);
@@ -120,7 +149,8 @@ if (global.hudState == "inventoryBackpack") {
 		currentPage = 1;
 	}
 	
-	scr_inventory_list_backpack();
+	draw_text(viewX+30, viewY+120, "Coming Soon!");
+	//scr_inventory_list_backpack();
 }
 
 //Font
@@ -165,7 +195,7 @@ draw_sprite_ext(spr_money_icon, image_index, viewX+106,
                 viewY+280, image_scale_coin, image_scale_coin, 
                 image_angle, c_white, image_alpha);  
 //Coins
-draw_text(viewX+116,viewY+279, string_hash_to_newline(string(global.coins)));
+draw_text(viewX+116,viewY+279, string(global.coins));
 
 //Potion logo
 draw_sprite_ext(spr_potion_icon, image_index, viewX+202, 
@@ -173,6 +203,6 @@ draw_sprite_ext(spr_potion_icon, image_index, viewX+202,
                 image_angle, c_white, image_alpha);      
 	          
 //Potions
-draw_text(viewX+212,viewY+279, string_hash_to_newline(string(global.potions)));
+draw_text(viewX+212,viewY+279, string(global.potions));
                 
 

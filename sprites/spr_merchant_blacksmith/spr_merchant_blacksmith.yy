@@ -2,7 +2,7 @@
     "id": "076dd354-4280-4f22-9aaa-f49abeafa19a",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_blacksmith_shoper",
+    "name": "spr_merchant_blacksmith",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -13,6 +13,7 @@
     "bboxmode": 0,
     "colkind": 0,
     "coltolerance": 0,
+    "edgeFiltering": false,
     "frames": [
         {
             "id": "60dc5c22-fd88-47f2-9ab4-db8b88d7a5b9",
@@ -384,8 +385,10 @@
         }
     ],
     "origin": 0,
+    "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,
+    "premultiplyAlpha": false,
     "sepmasks": true,
     "swatchColours": null,
     "swfPrecision": 2.525,

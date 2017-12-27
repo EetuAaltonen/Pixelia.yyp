@@ -5,10 +5,11 @@ typeId = "";
 
 //Inventory
 updateValues = true;
-listOfItems = "null";
+listOfItems = ds_list_create();
 
 //Shop
 listOfshop = "null";
+merchant = "null";
 
 names = [];
 count = [];

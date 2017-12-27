@@ -38,35 +38,5 @@ if (global.hudState == "null") {
 	draw_set_valign(fa_middle);
 
 	//Statics
-	draw_text(viewX+5, viewY+50, "global.hours:" + string(global.hours));
 	draw_text(viewX+5, viewY+60, "fps: " + string(fps));
-	draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));
 }
-/*var drawHours = 0;
-if (global.timerHours < 10) {
-	drawHours = "0" + string(global.timerHours);
-} else {
-	drawHours = string(global.timerHours);
-}
-
-var drawMinutes = 0;
-if (global.timerMinutes < 10) {
-	drawMinutes = "0" + string(global.timerMinutes);
-} else {
-	drawMinutes = string(global.timerMinutes);
-}
-
-var drawSeconds = 0;
-var tempSeconds = global.timerSeconds;
-tempSeconds = floor(tempSeconds/100);
-if (tempSeconds < 10) {
-	drawSeconds = "0" + string(tempSeconds);
-} else {
-	drawSeconds = string(tempSeconds);
-}
-
-draw_text(viewX+5, viewY+50, drawHours + ":" +
-							  drawMinutes + ":" +
-							  drawSeconds);
-draw_text(viewX+5, viewY+60, "fps: " + string(fps));
-draw_text(viewX+5, viewY+70, "global.delta: " + string(global.delta));*/

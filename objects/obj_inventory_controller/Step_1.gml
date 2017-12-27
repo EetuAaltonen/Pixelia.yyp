@@ -24,21 +24,6 @@ if (keyboard_check_pressed(vk_tab)) {
 	}
 }
 
-
-///Open Shop
-if (keyboard_check_pressed(ord("N"))) {
-	if (global.hudState == "null") {
-	    if (instance_exists(obj_player)) {
-	        if (obj_player.actionState == "null") {
-				scr_shop_open();
-	        }
-	    }
-	} else if (string_pos("shop", string(global.hudState))) {
-		scr_shop_close();
-	}
-}
-
-
 ///Page change
 scr_page_change();
 

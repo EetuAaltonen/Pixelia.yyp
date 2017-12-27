@@ -8,6 +8,17 @@ if (hudState == "null") {
 } else {
 	if (global.hudState != hudState) {
 	    global.hudState = hudState;
+		
+		//Destroy Search Box
+		if (instance_exists(obj_menu_text_box)) {
+			with (obj_menu_text_box) instance_destroy();
+		}
+		
+		//Destroy Listed Items
+		if (instance_exists(obj_listed_item)) {
+			with (obj_listed_item) instance_destroy();
+		}
+		
 		obj_inventory_controller.updateValues = true;
 	}
 }

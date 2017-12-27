@@ -9,34 +9,6 @@
 	effect; 7
 	effectAmount; 8
 }*/
-/*
-var item = argument0;
-var count = argument1;
-var controller = obj_inventory_controller;
-
-var index = ds_list_find_index(controller.listOfshop, item);
-var data = ds_list_find_value(controller.listOfshop, index);
-
-count += data[3];
-if (count > 0) {
-	data[3] = count;
-	ds_list_replace(controller.listOfshop, index, data);
-} else {
-	ds_list_delete(controller.listOfshop, index);
-}
-controller.updateValues = true;*/
-
-/*Item {
-	sprite; 0
-	name; 1
-	type; 2
-	count; 3
-	durability; 4
-	weight; 5
-	price; 6
-	effect; 7
-	effectAmount; 8
-}*/
 
 var item = argument0;
 var count = argument1;
@@ -72,5 +44,5 @@ if (alreadyExists) {
 } else {
 	ds_list_add(controller.listOfshop, item);
 }
-
+scr_copy_ds_list(controller.merchant.shop, controller.listOfshop, false);
 controller.updateValues = true;

@@ -1,10 +1,11 @@
 //Depth
 depth = -200;
 cooldown = 1;
-///Spawn and Create
+
 image_speed = 0;
-x = obj_spawner.x;
-y = obj_spawner.y;
+
+//Spawn
+spawning = true;
 
 //Movement
 acceleration = 0.2;

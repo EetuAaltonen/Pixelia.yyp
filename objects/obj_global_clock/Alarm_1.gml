@@ -1,4 +1,4 @@
-if (global.hours == -1) {
+/*if (global.hours == -1) {
 	global.hours = 6;
 } else {
 	if (global.hours == 24) {

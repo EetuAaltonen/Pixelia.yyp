@@ -11,6 +11,7 @@
 }*/
 
 var listOfItems = argument0;
+
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 
@@ -28,6 +29,7 @@ if (listSize > 0) {
 		if (instance_exists(obj_listed_item)) {
 			with (obj_listed_item) instance_destroy();
 		}
+		
 		//Clear item info
 		itemInfoText = defaultInfoText;
 		

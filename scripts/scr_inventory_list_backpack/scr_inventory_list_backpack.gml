@@ -2,9 +2,9 @@ if (updateValues) {
 	ds_list_clear(listOfItems);
 	if (filter != "") {
 		//Filter
-		ds_list_copy(listOfItems, scr_item_filter(global.inventory, filter));
+		scr_copy_ds_list(listOfItems, scr_item_filter(global.inventory, filter), false);
 	} else {
-		ds_list_copy(listOfItems, global.inventory);
+		scr_copy_ds_list(listOfItems, global.inventory, false);
 	}
 }
 

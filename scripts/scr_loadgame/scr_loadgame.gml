@@ -22,7 +22,7 @@ if (file_exists(global.save_file))
 	global.timerMinutes = ini_read_real(global.save_file,"timerMinutes",0);
 	global.timerHours = ini_read_real(global.save_file,"timerHours",0);
 	
-    global.current_room = ini_read_real(global.save_file,"room",Salmon_Lake/*Test_improved*/);
+    global.currentRoom = ini_read_real(global.save_file,"room",Village_1/*Test_improved*/);
     global.healthPoints = ini_read_real(global.save_file,"health",global.maxHealth);
     
     global.level = ini_read_real(global.save_file,"level",0);
@@ -44,11 +44,17 @@ if (file_exists(global.save_file))
     //= real(base64_decode(LoadedCoins));
     
     ini_close();
-    room_goto(global.current_room/*Test_improved*/);
+    room_goto(Village_1);
+	//room_goto(global.currentRoom/*Test_improved*/);
 } else {
     ini_open(global.save_file);
-    ini_write_real(global.save_file,"room",Salmon_Lake);
+    ini_write_real(global.save_file,"room",Village_1);
     ini_close();
-    global.current_room = Salmon_Lake//Test;
+    global.currenRoom = Village_1//Test;
+	
+	//Set Transition Animation To Default
+	obj_screen_controller.viewAlpha = 1;
+	
     room_goto(global.current_room);
+	//room_goto(global.current_room);
 }

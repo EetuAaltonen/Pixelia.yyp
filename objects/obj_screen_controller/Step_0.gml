@@ -1,20 +1,22 @@
-if (start == true) {
-    if (current_room == false) {
-        current_room = room;
-        target_room = current_room;
-    }
-    obj_player.action_state = "room_change";
-    if (current_room != target_room) {
-        alpha = 0;
-        current_room = target_room;
-        alarm[1] = transition_speed;
-    } else {
-        alpha = 1;
-        current_room = room;
-        target_room = current_room;
-        alarm[2] = transition_speed + 20;
-    }
-    start = false;
+var viewWidth = camera_get_view_width(view_camera[0]);
+var viewHeight = camera_get_view_height(view_camera[0]);
+
+if (room != Menu && room != First_loading) {
+	if (instance_exists(obj_player)) {
+		if (targetRoom != currenRoom && alarm[1] <= 0) {
+			obj_player.actionState = "idle";
+			global.hudState = "roomChange";
+			
+			drawViewAlpha = true;
+			alarm[1] = transitionSpeed;
+		} else if (targetRoom == currenRoom && alarm[1] <= 0 && viewAlpha == 1) {
+			obj_player.actionState = "idle";
+			global.hudState = "roomChange";
+	
+			drawViewAlpha = true;
+			alarm[1] = transitionSpeed;
+		}
+	}
 }
 
 ///Create menu buttons and change view

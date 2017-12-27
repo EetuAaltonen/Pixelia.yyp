@@ -16,10 +16,9 @@ pause = false;
 unfocus = false;
 
 //Room change
-current_room = false;
-target_room = false;
-alpha = 0;
-brightness = surface_create(__view_get( e__VW.WView, 0 ), __view_get( e__VW.HView, 0 ));
-start = false;
-transition_speed = 5;
-
+targetRoom = "null";
+currenRoom = "null";
+viewAlpha = 1;
+drawViewAlpha = false;
+transitionAmount = 0.1;
+transitionSpeed = 5;
