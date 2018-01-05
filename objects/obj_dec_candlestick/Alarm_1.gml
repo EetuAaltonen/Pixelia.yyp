@@ -1,10 +1,7 @@
-if (size < 150)
-{
+if (size < maxLightSize) {
     size += 5;
-    alarm[1] = 3;
-}
-else
-{
-    alarm[2] = 3;
+    alarm[1] = blinkingSpeed;
+} else {
+    alarm[2] = blinkingSpeed;
 }
 

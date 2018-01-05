@@ -4,7 +4,7 @@ data = scr_search_item_data(sprite_index, "sprite");
 /*Item {
 	sprite;
 	name;
-	type;
+	type/shop;
 	count;
 	durability;
 	weight;

@@ -1,7 +1,5 @@
 ///Highlight self
 draw_self();
-if (source > 0)
-{
+if (source > 0) {
     scr_highlight_self();
 }
-

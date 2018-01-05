@@ -12,9 +12,9 @@ draw_set_valign(fa_middle);
 
 if (instance_exists(obj_player)) {
 	if (obj_player.sliceStreak > 0) {
-		draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2), string(obj_player.sliceStreak));
+		//draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2), string(obj_player.sliceStreak));
 	}
-	draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2) + 10, string(round(obj_player.image_index)));
-	draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2) + 20, string(obj_player.sliceCooldown));
-	draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2) + 30, string(alarm[1]));
+	//draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2) + 10, string(round(obj_player.image_index)));
+	//draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2) + 20, string(obj_player.sliceCooldown));
+	//draw_text(viewX + viewWidth - 10, viewY + (viewHeight/2) + 30, string(alarm[1]));
 }

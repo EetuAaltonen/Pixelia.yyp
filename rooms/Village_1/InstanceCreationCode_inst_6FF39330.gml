@@ -1,1 +1,1 @@
-spawnPoints = [Forest_1];
+spawnPoints = ["default", Forest_1];

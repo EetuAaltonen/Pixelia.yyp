@@ -1,9 +1,5 @@
-if (distance_to_object(obj_mouse) == 0)
-{
+if (distance_to_object(obj_mouse) == 0) {
     image_index = 1;
-}
-else
-{
+} else {
     image_index = 0;
 }
-

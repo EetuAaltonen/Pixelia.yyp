@@ -16,8 +16,10 @@
         "9a3361df-e684-4212-840a-b59f6c4083c1",
         "0df33ccb-1e0c-45d9-b759-e3406eef22f5",
         "3aaf2360-0961-4483-b06e-c1ec2a2c2d2a",
+        "21617fe9-0ae6-4f90-bbfe-709113dcabf2",
+        "028343da-ceb6-4ab2-a08b-f1c3609cd97f",
         "fd11a5c7-34ca-4873-b848-c00a80732ecd",
-        "21617fe9-0ae6-4f90-bbfe-709113dcabf2"
+        "bfea9ec0-223f-42ca-97e9-27a35d5a56e0"
     ],
     "filterType": "GMObject",
     "folderName": "Buildings",

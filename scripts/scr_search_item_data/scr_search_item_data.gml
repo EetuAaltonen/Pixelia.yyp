@@ -1,7 +1,7 @@
 /*Item {
 	sprite;
 	name;
-	type;
+	type/shop;
 	count;
 	durability;
 	weight;

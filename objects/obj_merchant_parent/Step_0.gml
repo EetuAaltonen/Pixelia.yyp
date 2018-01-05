@@ -3,13 +3,6 @@ if (shop == "null") {
 	scr_merchant_initialize_shop();
 }
 
-//Close Shop
-if (keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_tab)) {
-	if (string_pos("shop", string(global.hudState))) {
-		scr_shop_close();
-	}
-}
-
 ///Start dialog / Open Shop
 if (distance_to_object(obj_use) == 0 && 
     image_blend != make_colour_hsv(0, 0, -1)) {
@@ -34,4 +27,11 @@ if (distance_to_object(obj_use) == 0 &&
 			scr_add_new_toast("Nothing");
 		}*/
     }
+}
+
+//Close Shop
+if (keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_tab)) {
+	if (string_pos("shop", string(global.hudState))) {
+		scr_shop_close();
+	}
 }

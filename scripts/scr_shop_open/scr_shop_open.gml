@@ -3,7 +3,8 @@ var viewY = camera_get_view_y(view_camera[0]);
 
 var controller = obj_inventory_controller;
 
-global.hudState = "shopBuy";
+scr_set_global_hudstate("shopBuy");
+
 controller.updateValues = true;
 controller.pageIndex = 1;
 controller.filter = "null";

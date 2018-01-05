@@ -1,3 +1,4 @@
+depth = -1000;
 //Resolution
 reso_width = 1024;
 reso_height = 768;
@@ -21,4 +22,10 @@ currenRoom = "null";
 viewAlpha = 1;
 drawViewAlpha = false;
 transitionAmount = 0.1;
-transitionSpeed = 5;
+transitionSpeed = 0.06;
+transitionWaitTime = 0.5;
+
+//Darkness Effect
+darknessEffect = false;
+darknessAlpha = 0;
+darknessMax = 0.85;

@@ -2,6 +2,7 @@
 depth = -200;
 cooldown = 1;
 
+sprite_index = spr_player;
 image_speed = 0;
 
 //Spawn
@@ -9,9 +10,6 @@ spawning = true;
 
 //Movement
 acceleration = 0.2;
-
-//Drop coins after death
-coin_drop = 0;
 
 //Hitbox
 instance_create(x, y, obj_plr_hitbox);

@@ -13,7 +13,8 @@
         "38078866-bb16-450b-bc8f-9da73427b717",
         "3969b101-eb89-4a28-80b5-7223a2ae25dd",
         "0ad1af98-9874-4ea6-a934-34a04dd5710a",
-        "e4b1ab0b-9c71-4293-b2d4-f129c400006c"
+        "e4b1ab0b-9c71-4293-b2d4-f129c400006c",
+        "08a518a6-5fee-4ee8-b1f7-117499085a0a"
     ],
     "filterType": "GMSprite",
     "folderName": "Materials",

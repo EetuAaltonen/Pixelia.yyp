@@ -2,7 +2,15 @@ image_speed = 0.2;
 hspeed = 1;
 vspeed = 0;
 alarm[1] = random_range(30, 150);
-//Damage
+
+maxArmor = 50;
+armor = maxArmor;
+xpReward = 20;
+enchantingXpReward = 20;
+invulnerable = false;
+maxHealth = 100;
+healthPoints = maxHealth;
+/*//Damage
 get_damage = 1;
 //Stats
 view_yview_stats = 0;

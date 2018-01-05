@@ -13,9 +13,18 @@ if (room == Menu) {
 		draw_set_valign(fa_middle);
 		draw_set_color(c_black);
 		
-		var mouseX = window_views_mouse_get_x();
-		var mouseY = window_views_mouse_get_y();
+		var viewX = camera_get_view_x(view_camera[0]);
+		var viewY = camera_get_view_y(view_camera[0]);
 		
-		draw_text(x+20, y, string(mouseX) + ", " + string(mouseY));
+		var mouseX = window_view_mouse_get_x(0);
+		var mouseY = window_view_mouse_get_y(0);
+		
+		var mouseViewX = (mouseX-viewX);
+		var mouseViewY = (mouseY-viewY);
+		
+		//var mouseX = window_view_mouse_get_x(view_camera[0]);
+		//var mouseY = window_view_mouse_get_y(view_camera[0]);
+		
+		draw_text(x+20, y, string(mouseViewX) + ", " + string(mouseViewY));
     }
 }

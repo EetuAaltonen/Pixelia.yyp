@@ -8,13 +8,13 @@ if (room != Menu && room != First_loading) {
 			global.hudState = "roomChange";
 			
 			drawViewAlpha = true;
-			alarm[1] = transitionSpeed;
+			alarm[1] = scr_to_sec(transitionSpeed);
 		} else if (targetRoom == currenRoom && alarm[1] <= 0 && viewAlpha == 1) {
 			obj_player.actionState = "idle";
 			global.hudState = "roomChange";
 	
 			drawViewAlpha = true;
-			alarm[1] = transitionSpeed;
+			alarm[1] = scr_to_sec(transitionWaitTime);
 		}
 	}
 }
@@ -85,4 +85,19 @@ if (read_saves == true) {
             }
         }
     }
+}
+
+//Darkness Effect
+if (darknessEffect) {
+	if (instance_exists(obj_area_darkness)) {
+		if (darknessAlpha < darknessMax && alarm[2] <= 0) {
+			alarm[2] = scr_to_sec(transitionSpeed);
+		}
+	} else {
+		darknessEffect = false;
+	}
+} else {
+	if (darknessAlpha > 0 && alarm[2] <= 0) {
+		alarm[2] = scr_to_sec(transitionSpeed);
+	}
 }

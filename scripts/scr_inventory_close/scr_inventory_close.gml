@@ -1,4 +1,5 @@
-global.hudState = "null";
+scr_close_global_hudstate();
+
 //Destroy Buttons
 if (instance_exists(obj_inv_button_parent)) {
 	with (obj_inv_button_parent) instance_destroy();
@@ -11,4 +12,5 @@ if (instance_exists(obj_listed_item)) {
 if (instance_exists(obj_menu_text_box)) {
 	with (obj_menu_text_box) instance_destroy();
 }
+
 scr_savegame();

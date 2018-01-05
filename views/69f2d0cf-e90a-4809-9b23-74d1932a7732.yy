@@ -7,10 +7,11 @@
         "a83d9836-d633-4423-a97b-93ecca7b36bb",
         "98dfef00-313c-4a3b-9d48-aee9414cd90c",
         "60bcbc61-4078-4ceb-9409-7557a1ec2b28",
-        "44056e36-a9a3-4755-800f-889f785a2cb2",
         "53c4af9d-cf0d-4cd2-b474-d3ab1dd36c25",
         "7dd5762f-36a8-465a-9a2f-e70554ca9a87",
-        "72b59382-c06c-4354-8888-86137ae81c5f"
+        "72b59382-c06c-4354-8888-86137ae81c5f",
+        "ed1c7c43-b539-4256-8713-86a7808a3387",
+        "fb5957aa-9085-46dc-800c-4ba8d33dfe4d"
     ],
     "filterType": "GMScript",
     "folderName": "HUD",

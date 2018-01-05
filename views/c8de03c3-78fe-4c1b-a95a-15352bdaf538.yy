@@ -21,7 +21,8 @@
         "cc211ecc-b52a-447f-9e49-5764c935ceb7",
         "129ad8ad-83f4-4c9e-8518-278709ed1580",
         "59f84fd7-f1e1-4ce2-add9-138627f4bc0d",
-        "45f62efe-de23-4b14-ae2e-af97e2a4b2be"
+        "8697bf14-6858-45cb-a512-4f1ff36fbcf3",
+        "b09b53b2-c057-4a01-8f53-b343926bed9c"
     ],
     "filterType": "GMObject",
     "folderName": "Misc",

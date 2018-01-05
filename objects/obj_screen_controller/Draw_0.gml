@@ -17,3 +17,10 @@ if (pause || unfocus) {
     draw_text(viewX + (viewWidth/2), viewY + (viewHeight/2), string_hash_to_newline("Pause"));
 }
 
+//Darkness Effect
+if (instance_exists(obj_area_darkness)) {
+	if (darknessAlpha > 0 && global.hudState == "null") {
+		draw_sprite_ext(spr_darkness, 0, viewX, viewY, viewWidth, viewHeight, 0, c_white, darknessAlpha);
+	}
+}
+

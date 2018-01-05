@@ -1,2 +1,0 @@
-depth_ = depth;
-

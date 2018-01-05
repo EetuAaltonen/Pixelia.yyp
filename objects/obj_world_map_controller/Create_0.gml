@@ -1,0 +1,1 @@
+depth = obj_screen_controller.depth-1;

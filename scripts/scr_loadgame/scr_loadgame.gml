@@ -1,5 +1,5 @@
-if (file_exists(global.save_file))
-{
+if (file_exists(global.save_file)) {
+	/*var i;
     var fileName = "Inventory.ini";
     if (file_exists(fileName)) {
         ini_open(fileName);
@@ -17,10 +17,25 @@ if (file_exists(global.save_file))
         }
         ini_close();
     }
+	
+	var fileName = "Stash.ini";
+    if (file_exists(fileName)) {
+        ini_open(fileName);
+        if (ini_section_exists(global.save_file)) {
+            for (i = 0; i >= 0; i++) {
+                var items = ds_list_create();
+                var values = ini_read_string(global.save_file, string(i), "");
+                if (values == "") {
+                    break;
+                }
+                ds_list_read(items, values);
+                ds_list_add(global.stash, items);
+            }
+        }
+        ini_close();
+    }*/
+	
     ini_open(global.save_file);
-	global.timerSeconds = ini_read_real(global.save_file,"timerSeconds",0);
-	global.timerMinutes = ini_read_real(global.save_file,"timerMinutes",0);
-	global.timerHours = ini_read_real(global.save_file,"timerHours",0);
 	
     global.currentRoom = ini_read_real(global.save_file,"room",Village_1/*Test_improved*/);
     global.healthPoints = ini_read_real(global.save_file,"health",global.maxHealth);
@@ -39,13 +54,21 @@ if (file_exists(global.save_file))
     
     global.coins = ini_read_real(global.save_file,"coins",0);
     global.potions = ini_read_real(global.save_file,"potions",0);
+	
+	var clock = obj_global_clock;
+	clock.milliseconds = ini_read_real(global.save_file, "clockMilliSec", 0);
+	clock.seconds = ini_read_real(global.save_file, "clockSeconds", 0);
+	clock.minutes = ini_read_real(global.save_file, "clockMinutes", 0);
+	clock.hours = ini_read_real(global.save_file, "clockHours", 8);
+	clock.days = ini_read_real(global.save_file, "clockDays", 1);
+	clock.months = ini_read_real(global.save_file, "clockMonths", 1);
+	clock.years = ini_read_real(global.save_file, "clockYears", 1);
     
     //= real(base64_decode(LoadedRoom));
     //= real(base64_decode(LoadedCoins));
     
     ini_close();
-    room_goto(Village_1);
-	//room_goto(global.currentRoom/*Test_improved*/);
+	room_goto(global.currentRoom/*Village_1*/);
 } else {
     ini_open(global.save_file);
     ini_write_real(global.save_file,"room",Village_1);

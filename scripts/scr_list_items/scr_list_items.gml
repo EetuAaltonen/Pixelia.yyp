@@ -1,7 +1,7 @@
 /*Item {
 	sprite; 0
 	name; 1
-	type; 2
+	type/shop; 2
 	count; 3
 	durability; 4
 	weight; 5
@@ -39,7 +39,7 @@ if (listSize > 0) {
 		} else if (listSize > currentPage*itemsPerPage) {
 			lastItem = currentPage*itemsPerPage;
 		} else {
-			lastItem = listSize % itemsPerPage;
+			lastItem = listSize;
 		}
 		startIndex = (currentPage-1)*itemsPerPage;
 		
@@ -48,7 +48,7 @@ if (listSize > 0) {
 		
 		//Create items
 		j = 0;
-		for (i = startIndex; j < lastItem; i++) {
+		for (i = startIndex; i < lastItem; i++) {
 			data = ds_list_find_value(listOfItems, i);
 			tempMargin = (j*margin);
 			instance_create(viewX+30, viewY+yPos+tempMargin, obj_listed_item);
@@ -65,7 +65,7 @@ if (listSize > 0) {
 	} else {
 		yPos = 120;
 		j = 0;
-		for (i = startIndex; j < lastItem; i++) {
+		for (i = startIndex; i < lastItem; i++) {
 			data = ds_list_find_value(global.inventory, i);
 			tempMargin = (j*margin);
 			//Item Icon Background

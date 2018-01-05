@@ -3,17 +3,12 @@ load = false;
 
 /*[Camera]*/
 	view_camera[0] = camera_create();
-
 /*[Delta timer]*/
 	global.delta = 60/1000000*delta_time;
 /*[Clock]*/
 	global.hours = -1;
 /*[Darkness]*/
 	global.darkness = 0;
-/*[Timer]*/
-	global.timerSeconds = 0;
-	global.timerMinutes = 0;
-	global.timerHours = 0;
 /*[Layers / Depths]*/
 	//layer_create(-100, "Collectable");
 	
@@ -74,7 +69,7 @@ load = false;
 		global.maxWalkingSpeedPlus = 0;
 		global.slowingWalkingSpeed = 0; //Carrying - slow your walking
 		//Running
-		global.maxRunningSpeed = 2.8;//2.5;
+		global.maxRunningSpeed = 3.2;//2.8;//2.5;
 		global.maxRunningSpeedPlus = 0;
 		global.slowingRunningSpeed = 0;	//Carrying - slow your running
     //Level
@@ -124,6 +119,9 @@ global.inventory = ds_list_create();
 
 //Global variables - Equipments list
 global.equipments = ds_list_create();
+
+//Global variables - Inventory
+global.stash = ds_list_create();
 
 //Global variables - Temp loot
 global.tempLoot = ds_list_create();

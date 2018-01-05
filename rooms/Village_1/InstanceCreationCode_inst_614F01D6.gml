@@ -1,1 +1,1 @@
-spawnPoints = ["default", Cave_1];
+spawnPoints = [Cave_1];

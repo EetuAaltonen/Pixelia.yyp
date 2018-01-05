@@ -15,11 +15,8 @@ if (string_length(string(current_second)) < 2) {
     seconds = string(current_second);
 }
 Datetime += (":" + minutes + ":" + seconds);
+
 ini_write_string(global.save_file,"last_played", Datetime);
-   
-ini_write_real(global.save_file,"timerSeconds",global.timerSeconds);
-ini_write_real(global.save_file,"timerMinutes",global.timerMinutes);
-ini_write_real(global.save_file,"timerHours",global.timerHours);
             
 ini_write_real(global.save_file,"room",global.current_room);
 ini_write_real(global.save_file,"health",global.healthPoints);
@@ -38,6 +35,15 @@ ini_write_string(global.save_file,"quest",global.quest);
 
 ini_write_real(global.save_file,"coins",global.coins);
 ini_write_real(global.save_file,"potions",global.potions);
+
+var clock = obj_global_clock;
+ini_write_real(global.save_file, "clockMilliSec", clock.milliseconds);
+ini_write_real(global.save_file, "clockSeconds", clock.seconds);
+ini_write_real(global.save_file, "clockMinutes", clock.minutes);
+ini_write_real(global.save_file, "clockHours", clock.hours);
+ini_write_real(global.save_file, "clockDays", clock.days);
+ini_write_real(global.save_file, "clockMonths", clock.months);
+ini_write_real(global.save_file, "clockYears", clock.years);
 
 /*ini_write_real(global.save_file,"home_happiness",global.home_happiness);
 ini_write_real(global.save_file,"home_defence",global.home_defence);

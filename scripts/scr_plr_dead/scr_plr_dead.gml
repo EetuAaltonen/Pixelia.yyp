@@ -1,12 +1,11 @@
 //Lives
-if (global.healthPoints <= 0)
-{
+if (global.healthPoints <= 0) {
         //alarm[7] = 120;
         //global.pause = 1;
         //global.damage = 0;
         
         //Drop coins after death
-        coin_drop = round(global.coins*0.5);
+        var coin_drop = round(global.coins/2);
         
         //Enemies' stats
         global.enemy_stats1 = 0;
@@ -14,8 +13,7 @@ if (global.healthPoints <= 0)
         global.enemy_stats3 = 0;
         
         //Drop coins
-        while coin_drop < global.coins
-        {
+        while (coin_drop < global.coins) {
             instance_create(x, y-5, obj_coin);
             global.coins -= 1;
         }

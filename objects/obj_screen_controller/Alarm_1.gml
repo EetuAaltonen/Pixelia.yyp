@@ -1,7 +1,7 @@
 if (targetRoom != currenRoom) {	
 	if (viewAlpha < 1) {
 		viewAlpha += transitionAmount;
-		alarm[1] = transitionSpeed;
+		alarm[1] = scr_to_sec(transitionSpeed);
 	} else {
 		currenRoom = targetRoom;
 		viewAlpha = 1;
@@ -12,13 +12,11 @@ if (targetRoom != currenRoom) {
 } else {
 	if (viewAlpha > 0) {
 		viewAlpha -= transitionAmount;
-		alarm[1] = transitionSpeed;
+		alarm[1] = scr_to_sec(transitionSpeed);
 	} else {
 		viewAlpha = 0;
 		drawViewAlpha = false;
 		global.hudState = "null";
-		if (instance_exists(obj_player)) {
-			obj_player.actionState = "null";
-		}
+		scr_plr_set_action_state_null();
 	}
 }

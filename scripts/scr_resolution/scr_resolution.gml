@@ -7,8 +7,7 @@ var base_height = 768;
 
 var aspect = reso_width/reso_height;
 
-if (reso_width >= reso_height)
-{
+if (reso_width >= reso_height) {
     reso_height = min(base_width, reso_height);
     reso_width = reso_height * aspect;
 }

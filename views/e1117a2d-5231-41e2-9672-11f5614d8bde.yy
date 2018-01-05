@@ -7,7 +7,6 @@
         "f5ebce98-9396-41a7-a0e0-1d053483d35c",
         "9bf577bb-8a6a-49b8-9296-dba2ae2c2bd9",
         "1b120371-ab91-430c-bacc-e98ca9527e42",
-        "0cee530f-28ce-4826-a4a3-fbaeaa1ce308",
         "b06d9e97-4217-4c2e-bc43-50690d10fcc1",
         "1b955bc6-f61c-4bf6-bc89-9923c70b392b",
         "8808b58e-6191-4fcb-bf8c-1525cd844b23",
@@ -26,7 +25,10 @@
         "06a69d04-cbba-4a6c-b91d-e0e139b7c449",
         "c178cdb3-4c00-40b2-a529-5f15ec4269ba",
         "4eb6f936-237e-4579-9c7d-aabe0b79af5c",
-        "be0e2c5b-a613-48b4-926f-fbb80308e895"
+        "be0e2c5b-a613-48b4-926f-fbb80308e895",
+        "a8db8537-27c0-4026-b244-a98bccea40d8",
+        "0cee530f-28ce-4826-a4a3-fbaeaa1ce308",
+        "58924536-7a2f-4504-afdb-e8b232ec841d"
     ],
     "filterType": "GMObject",
     "folderName": "HUD",

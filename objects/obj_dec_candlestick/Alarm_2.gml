@@ -1,10 +1,7 @@
-if (size > 140)
-{
+if (size > minLightSize) {
     size -= 5;
-    alarm[2] = 2;
-}
-else
-{
-    alarm[1] = 2;
+    alarm[2] = blinkingSpeed;
+} else {
+    alarm[1] = blinkingSpeed;
 }
 
