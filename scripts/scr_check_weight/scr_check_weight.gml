@@ -1,9 +1,9 @@
 if (!moveToPlayer) {
-    if ((global.total_item_weight + weight) > (global.max_item_weight + global.carryingCapacityPlus)) {
-        scr_add_new_toast("Inventory is full!");
-        alarm[1] = 50;
-    } else {
+    if (scr_inventory_check_capacity(weight)) {
         //Move To Player
         moveToPlayer = true;
+    } else {
+        scr_add_new_toast("Inventory is full!");
+        alarm[1] = 50;
     }
 }

@@ -1,6 +1,6 @@
 sprite_index_ = sprite_index;
 spriteName = sprite_get_name(sprite_index);
-data = scr_search_item_data(sprite_index, "sprite");
+data = scr_item_search_data(sprite_index, "sprite");
 /*Item {
 	sprite;
 	name;

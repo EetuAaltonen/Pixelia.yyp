@@ -2,7 +2,7 @@ if (global.coins >= data[6]) {
 	//Check Weight
 	if (scr_check_inventory_capacity(data[5])) {
         //Add To Inventory
-		scr_add_to_inventory(data, 1);
+		scr_inventory_add_item(data, 1);
 		//Toast
         //scr_add_new_toast(data[1] + " purchased");
 		//Remove From Shop

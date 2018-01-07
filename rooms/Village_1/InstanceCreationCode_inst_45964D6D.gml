@@ -1,0 +1,1 @@
+infoText = "Inventory/Menu: TAB#Change Page:#Left & Right Arrow Keys#To close hud/view#or stop activity (mining/woodcutting)#press TAB or Esc";

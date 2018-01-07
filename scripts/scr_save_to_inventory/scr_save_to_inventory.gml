@@ -51,7 +51,7 @@ if (!inInventory) {
     }
 }
 itemWeight = scr_inventory_item_weight(spriteName);
-global.total_item_weight += (addedAmount*itemWeight);
+global.totalInventoryCapacity += (addedAmount*itemWeight);
 
 //Write to file
 var fileName = "Inventory.ini";
@@ -66,5 +66,5 @@ for (i = 0; i < listSize; i++) {
     values = ds_list_write(values);
     ini_write_string(global.save_file, string(i), values);
 }
-ini_write_real(global.save_file, "weight_of_items", global.total_item_weight);
+ini_write_real(global.save_file, "weight_of_items", global.totalInventoryCapacity);
 ini_close();

@@ -7,21 +7,21 @@ typeId = "";
 updateValues = true;
 listOfItems = ds_list_create();
 
-//Shop
-listOfshop = "null";
-merchant = "null";
+pageIndex = 1;
+maxPageIndex = 1;
+itemsPerPage = 8;
+startIndex = 0;
+lastItem = 0;
 
+//List Item Info
 names = [];
 count = [];
 weight = [];
 price = [];
 
-pageIndex = 1;
-maxPageIndex = 1;
-itemsPerPage = 8;
-currentPage = 1;
-startIndex = 0;
-lastItem = 0;
+//Shop
+listOfshop = "null";
+merchant = "null";
 
 pageUpdate = true;
 createOnce = true; //Create objects once on the list

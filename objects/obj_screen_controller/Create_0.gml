@@ -9,7 +9,7 @@ scr_resolution();
 menu_state = "main_menu";
 create_buttons = true;
 //Saves
-read_saves = false;
+searchSaves = false;
 Saves[0] = "no_saves";
 //Pause
 background_temp = "";
@@ -28,4 +28,4 @@ transitionWaitTime = 0.5;
 //Darkness Effect
 darknessEffect = false;
 darknessAlpha = 0;
-darknessMax = 0.85;
+darknessMax = 0.7;

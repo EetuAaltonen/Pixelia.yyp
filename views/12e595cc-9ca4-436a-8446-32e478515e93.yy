@@ -13,12 +13,12 @@
         "9a93f8ca-9d5f-4896-acdc-b6c1c8c0fb4d",
         "2109126f-f698-47db-941b-abe3d1ca827f",
         "a8cb0780-c6f6-49da-b686-b8986f78532c",
-        "0f5fd6d6-3b30-4b36-a844-3c96a1aa7e9a",
         "98f8a259-2f48-4bf0-a443-776d9a397992",
         "9d54f6fe-208d-412d-9046-1682451bfda0",
         "b8ff020b-2cff-4749-aa3e-79acf6f94916",
         "c4fb2875-edad-45ac-a430-b1d771d76d8f",
-        "e13aa60f-7a4c-46d2-9b50-8048ae61b17c"
+        "e13aa60f-7a4c-46d2-9b50-8048ae61b17c",
+        "2873a420-89ca-42b5-ad35-aa5a8c61a9d9"
     ],
     "filterType": "GMFont",
     "folderName": "fonts",

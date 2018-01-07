@@ -7,16 +7,16 @@ keyboard_string = obj_menu_text_box.txt;
 if (instance_exists(obj_menu_saved_game)) {
     with (obj_menu_saved_game) instance_destroy();
 }
-obj_screen_controller.read_saves = true;
-if (file_exists("Inventory.sav")) {
-    ini_open("Inventory.sav");
+obj_screen_controller.searchSaves = true;
+if (file_exists("Inventory.ini")) {
+    ini_open("Inventory.ini");
     if (ini_section_exists(file)) {
         ini_section_delete(file);
     }
     ini_close();
 }
-if (file_exists("SkillTree.sav")) {
-    ini_open("SkillTree.sav");
+if (file_exists("SkillTree.ini")) {
+    ini_open("SkillTree.ini");
     if (ini_section_exists(file)) {
         ini_section_delete(file);
     }

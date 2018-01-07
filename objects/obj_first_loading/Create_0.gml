@@ -18,6 +18,9 @@ load = false;
 	global.previousRoom = "null";
 	global.playerHeading = 1;
 
+/*[Current Room]*/
+global.currentRoom = Village_1; //Prototype & Testing
+
 /*[Enemies' stats]*/
     global.enemy_stats1 = 0;
     global.enemy_stats2 = 0;
@@ -96,10 +99,6 @@ load = false;
     global.coins = 0;
     //NEEDED???
     global.auto_healing = 1;
-    //Max & Total item weight
-    global.max_item_weight = 10;
-	global.carryingCapacityPlus = 0;
-    global.total_item_weight = 0;
 
 /*[Crafting]*/
 global.knownAlchemyRecipes = ds_list_create();
@@ -107,7 +106,7 @@ global.knownForgeRecipes = ds_list_create();
 global.knownWorkbenchRecipes = ds_list_create();
 
 //Global variables - Quest / Dialogs
-global.quest = "Beginning";
+global.quest = "Prototype 0.0.0.1";
 global.dialogId = 0;
 
 //Global variables - Pause
@@ -116,12 +115,20 @@ global.pause_draw = 0;
 
 //Global variables - Inventory
 global.inventory = ds_list_create();
+//Max & Total Inventory Capacity
+global.maxInventoryCapacity = 100;
+global.totalInventoryCapacity = 0;
+global.carryingCapacityPlus = 0;
 
 //Global variables - Equipments list
 global.equipments = ds_list_create();
 
-//Global variables - Inventory
+//Global variables - Stash
 global.stash = ds_list_create();
+//Max & Total Stash Capacity
+global.maxStashCapacity = 100;
+global.totalStashCapacity = 0;
+global.stashCapacityPlus = 0;
 
 //Global variables - Temp loot
 global.tempLoot = ds_list_create();

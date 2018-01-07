@@ -1,10 +1,7 @@
-/*//scr_inventory_check_capacity(argument0)
-var itemsWeight = argument0;
-var freeSpace = false;
-if (itemsWeight > 0) {
-	if (((global.max_item_weight + global.carryingCapacityPlus) - global.total_item_weight) - itemsWeight > 0) {
-		freeSpace = true;
-	}
+//scr_inventory_check_capacity(argument0)
+var weight = argument0;
+if ((global.totalInventoryCapacity + weight) > (global.maxInventoryCapacity + global.carryingCapacityPlus)) {
+    scr_add_new_toast("Inventory is full!");
+    return false;
 }
-
-return freeSpace;
+return true;

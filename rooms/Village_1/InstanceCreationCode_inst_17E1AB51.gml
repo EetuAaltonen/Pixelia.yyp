@@ -1,0 +1,1 @@
+infoText = "Run: Shift#Crouch: Ctrl";

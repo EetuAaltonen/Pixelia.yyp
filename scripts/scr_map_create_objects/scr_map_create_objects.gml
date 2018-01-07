@@ -6,9 +6,9 @@ var viewHeight = camera_get_view_height(view_camera[0]);
 if (!instance_exists(obj_map_cargo_cart)) {
 	var objects = [
 		//[X, Y, Destination, Sprite Index, Info Text]
-		[50, 50, Forest_1, spr_map_castle, "Forest"],
+		[50, 50, Cave_1, spr_map_castle, "Cave"],
 		[250, 140, Village_1, spr_map_castle, "Village"],
-		[420, 250, Cave_1, spr_map_castle, "Cave"]
+		[420, 250, Forest_1, spr_map_castle, "Forest"]
 	]
 	var i;
 	var object;

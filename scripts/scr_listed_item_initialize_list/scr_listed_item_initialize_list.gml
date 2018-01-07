@@ -7,7 +7,7 @@ item_info[typeId,itemId] = string(Info[typeId,itemId]);
 //Item amount is top of for loop
 //Item weight
 item_weight[typeId,itemId] = string(Weight[typeId,itemId]);
-global.total_item_weight += (Weight[typeId,itemId] * item_amount[typeId,itemId]);
+global.totalInventoryCapacity += (Weight[typeId,itemId] * item_amount[typeId,itemId]);
 
 if (global.hudState == "shop")
 {

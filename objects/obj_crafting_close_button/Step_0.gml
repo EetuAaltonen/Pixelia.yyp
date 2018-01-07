@@ -1,6 +1,5 @@
 ///Instance destroy
-if (global.hudState == "null")
-{
+if (global.hudState == "null") {
     instance_destroy();
 }
 

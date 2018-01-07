@@ -1,8 +1,54 @@
-if (instance_exists(obj_crafting_slot_1) &&
+var count;
+var i;
+var slot;
+var item;
+
+var recipeBookOpen = false;
+if (instance_exists(obj_recipe_book)) {
+	if (obj_recipe_book.showRecipeBook) {
+		recipeBookOpen = true;
+	}
+}
+if (!recipeBookOpen) {
+	if (instance_exists(obj_crafting_slot)) {
+		if (!selected) {	
+			count = instance_number(obj_crafting_slot);
+			for (i = 0; i < count; i++) {
+				slot = instance_find(obj_crafting_slot, i);
+				if (slot.item == "null") {
+					//data[1] == name
+					slot.item = data;
+					slot.spriteIndex = data[0];
+					selected = true;
+					obj_crafting_product.checkRecipe = true;
+					obj_crafting_product.items[slot.index] = data[1];
+					break;
+				}
+			}
+		} else {
+			count = instance_number(obj_crafting_slot);
+			for (i = 0; i < count; i++) {
+				slot = instance_find(obj_crafting_slot, i);
+				if (slot.item != "null") {
+					if (scr_item_compare_items(slot.item, data)) {
+						//data[1] == name
+						slot.item = "null";
+						slot.spriteIndex = "null";
+						selected = false;
+						obj_crafting_product.checkRecipe = true;
+						obj_crafting_product.items[slot.index] = "";
+						break;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*if (instance_exists(obj_crafting_slot_1) &&
     instance_exists(obj_crafting_slot_2) &&
     instance_exists(obj_crafting_slot_3) &&
-    instance_exists(obj_crafting_slot_4))
-{
+    instance_exists(obj_crafting_slot_4)) {
     var slot1 = obj_crafting_slot_1;
     var slot2 = obj_crafting_slot_2;
     var slot3 = obj_crafting_slot_3;
@@ -17,7 +63,7 @@ if (instance_exists(obj_crafting_slot_1) &&
             /*prev_x = x;
             prev_y = y;
             x = slot1.x;
-            y = slot1.y;*/
+            y = slot1.y;*//*
             slot1.spriteIndex = spriteIndex;
             selected = true;
             obj_crafted_item.checkRecipe = true;
@@ -27,7 +73,7 @@ if (instance_exists(obj_crafting_slot_1) &&
             /*prev_x = x;
             prev_y = y;
             x = slot2.x;
-            y = slot2.y;*/
+            y = slot2.y;*//*
             slot2.spriteIndex = spriteIndex;
             selected = true;
             obj_crafted_item.checkRecipe = true;
@@ -37,7 +83,7 @@ if (instance_exists(obj_crafting_slot_1) &&
             /*prev_x = x;
             prev_y = y;
             x = slot3.x;
-            y = slot3.y;*/
+            y = slot3.y;*//*
             slot3.spriteIndex = spriteIndex;
             selected = true;
             obj_crafted_item.checkRecipe = true;
@@ -48,7 +94,7 @@ if (instance_exists(obj_crafting_slot_1) &&
         if (slot1.spriteIndex == spriteIndex)
         {
             /*x = prev_x;
-            y = prev_y;*/
+            y = prev_y;*//*
             slot1.spriteIndex = false;
             selected = false;
             obj_crafted_item.checkRecipe = true;
@@ -56,7 +102,7 @@ if (instance_exists(obj_crafting_slot_1) &&
         else if (slot2.spriteIndex == spriteIndex)
         {
             /*x = prev_x;
-            y = prev_y;*/
+            y = prev_y;*//*
             slot2.spriteIndex = false;
             selected = false;
             obj_crafted_item.checkRecipe = true;
@@ -64,7 +110,7 @@ if (instance_exists(obj_crafting_slot_1) &&
         else if (slot3.spriteIndex == spriteIndex)
         {
             /*x = prev_x;
-            y = prev_y;*/
+            y = prev_y;*//*
             slot3.spriteIndex = false;
             selected = false;
             obj_crafted_item.checkRecipe = true;

@@ -1,4 +1,8 @@
-/// @description Key Pressed / Spawning
+/// @description Key Pressed
+if (!spawning) {	
+	//Action states
+	scr_plr_action_state();
+}
 
 //Spawn
 if (spawning) {
@@ -10,24 +14,11 @@ if (spawning) {
 	//Use
 	if (keyboard_check_pressed(ord("E"))) {
 		if (global.hudState == "null") {
-		    if (scr_plr__action_states) {
+		    if (scr_plr_neutral_action_states()) {
 		        instance_create(x, y, obj_use);
 		    }
 		}
-
-		///Reset action state
-		if (!global.popUp) {
-			if (actionState == "mining" ||
-			    actionState == "woodcutting" ||
-			    actionState == "sitting" ||
-			    actionState == "fishing") {
-			    scr_plr_set_action_state_null();
-			}
-		}	
 	}
-	
-	//Action states
-	scr_plr_action_state();
 }
 
 //Slice

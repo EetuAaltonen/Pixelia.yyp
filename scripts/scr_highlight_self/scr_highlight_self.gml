@@ -1,8 +1,5 @@
 if (instance_exists(obj_player)) {
-    if(global.hudState == "null" ||
-       obj_player.actionState == "null" ||
-       obj_player.actionState == "jump" || 
-       obj_player.actionState == "crouch") {
+    if(global.hudState == "null" || scr_plr_neutral_action_states()) {
         if (distance_to_object(obj_player) <= 5) {
             if (y - obj_player.y <= 10 && y - obj_player.y >= -10 ||
                 distance_to_object(obj_player) < 1) {

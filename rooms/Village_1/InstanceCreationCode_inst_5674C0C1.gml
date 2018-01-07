@@ -1,0 +1,1 @@
+infoText = "Use: E";

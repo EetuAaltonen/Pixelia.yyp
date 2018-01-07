@@ -1,5 +1,5 @@
 //Remove From Inventory
-scr_add_to_inventory(data, -1);
+scr_inventory_add_item(data, -1);
 //Get Payment
 global.coins += (data[6]*global.sellRate);
 //Add To Shop

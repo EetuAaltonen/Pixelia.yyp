@@ -1,0 +1,1 @@
+infoText = "Crafting Center:#-Forge#-Anvil#-Workbench#-Alchemy Table";

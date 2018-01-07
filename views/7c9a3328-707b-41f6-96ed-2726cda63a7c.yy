@@ -15,8 +15,8 @@
         "79566698-297a-43e6-828a-1ffcd1c17879",
         "52f4ba55-6147-4fa4-996f-71ad9647b1ab",
         "ac9f1f3a-67da-4963-b5ad-528c415349e7",
-        "57acc80c-416d-4772-a20c-55d3391a821f",
         "ba0fc13d-13a1-4e91-80b0-10c35bd5538c",
+        "57acc80c-416d-4772-a20c-55d3391a821f",
         "f0fafe73-3a49-4cf4-af87-01cc4acea622",
         "658da85b-ce83-40c6-9fe7-b1f56842f8a6",
         "d04bd5fc-22df-49e8-8fa6-706d20e8f1fa",
@@ -34,7 +34,8 @@
         "79273b49-5f19-420d-8472-3a0ffaa77e33",
         "3a3e601b-b7e8-48a3-97c1-4c38778d0341",
         "6f35a825-3ed1-4f06-9459-f40047ef7534",
-        "3c31b2d1-5e63-4caa-94a0-7a5f184dec88"
+        "3c31b2d1-5e63-4caa-94a0-7a5f184dec88",
+        "b6ca42d4-1c85-4799-9e23-ef73c4ff8c5b"
     ],
     "filterType": "GMSprite",
     "folderName": "HUD",

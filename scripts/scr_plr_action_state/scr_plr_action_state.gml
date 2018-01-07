@@ -34,6 +34,19 @@ switch (actionState) {
 		scr_custom_gravity();
 		hspeed = 0;
 	}break;
+	case "mining": {
+		if (sprite_index != spr_plr_mining) {
+			sprite_index = spr_plr_mining;
+			image_speed = 0.1;
+		}
+		/*if (keyboard_check_pressed(ord("E"))) {
+			scr_plr_set_action_state_null();
+		}*/
+		
+		//Gravity
+		scr_custom_gravity();
+		hspeed = 0;
+	}break;
 	default: {
 		scr_plr_default_movement();
 	}break;

@@ -1,0 +1,1 @@
+infoText = "Here you can mine Iron Ores#<---";

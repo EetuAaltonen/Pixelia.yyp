@@ -1,0 +1,1 @@
+infoText = "Training Dummies:#HIT THEM!#Press Q";

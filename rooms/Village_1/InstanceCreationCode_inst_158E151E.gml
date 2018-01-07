@@ -1,0 +1,1 @@
+infoText = "Moving:#Arrow Keys";

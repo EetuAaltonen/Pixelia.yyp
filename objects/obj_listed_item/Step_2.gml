@@ -8,6 +8,13 @@ if (string_pos("inventoryEquipments", type)) {
 }
 
 //Check if selected
+if (selected && instance_exists(obj_crafting_slot)) {
+	image_alpha = 0.5;
+} else {
+	image_alpha = 1;
+	selected = false;	
+}
+/*
 if (instance_exists(obj_crafting_slot_1) &&
 	instance_exists(obj_crafting_slot_2) &&
 	instance_exists(obj_crafting_slot_3)) {

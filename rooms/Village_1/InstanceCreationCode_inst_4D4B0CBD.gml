@@ -1,0 +1,1 @@
+infoText = "Merchant:#Buy and Sell (Mouse Right)#Change Page:#Left & Right Arrow Keys";

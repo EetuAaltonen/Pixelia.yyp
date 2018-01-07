@@ -1,0 +1,1 @@
+infoText = "Here you can chop Oak Logs#--->";

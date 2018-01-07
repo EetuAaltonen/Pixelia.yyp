@@ -1,14 +1,10 @@
-///Set hud state null
+//Set Close Hud State
+var recipeBookOpen = false;
 if (instance_exists(obj_recipe_book)) {
-	if (!obj_recipe_book.showRecipeBook) {
-		global.hudState = "null";
-		if (instance_exists(obj_player)) {
-			obj_player.action_state = "null";
-		}
+	if (obj_recipe_book.showRecipeBook) {
+		recipeBookOpen = true;
 	}
-} else {
-	global.hudState = "null";
-	if (instance_exists(obj_player)) {
-		obj_player.action_state = "null";
-	}
+}
+if (!recipeBookOpen) {
+	scr_crafting_close();
 }

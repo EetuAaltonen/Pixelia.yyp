@@ -15,7 +15,11 @@ buffs = false;
 droppingItem = false;
 createOnce = true;
 droppedCount = 0;
+
+//Crafting - Selected
 selected = false;
+checkSelected = true;
+
 checkEquipped = false;
 type = "";
 equipped = false;

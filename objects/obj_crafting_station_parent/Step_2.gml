@@ -1,32 +1,38 @@
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 ///Open crafting
-if (distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, -1))
-{
+if (distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, -1)) {
 	canOpenClose = false;
 	if (instance_exists(obj_use)) {
         with (obj_use) instance_destroy();
     }
     if (global.hudState != hudState) {
-        //Create slots
-        instance_create(viewX+300, viewY+117, obj_crafting_slot_1);
-        instance_create(viewX+300, viewY+147, obj_crafting_slot_2);
-        instance_create(viewX+300, viewY+177, obj_crafting_slot_3);
-        instance_create(viewX+350, viewY+147, obj_crafting_slot_4);
-        //Created item slot
-        instance_create(obj_crafting_slot_4.x, obj_crafting_slot_4.y, obj_crafted_item);
+		var tempDepth = obj_inventory_controller.depth-1;
+        //Create Slots
+        instance_create(viewX+300, viewY+120, obj_crafting_slot);
+		(instance_nearest(viewX+300, viewY+120, obj_crafting_slot)).index = 0;
+		(instance_nearest(viewX+300, viewY+120, obj_crafting_slot)).depth = tempDepth;
+        instance_create(viewX+300, viewY+150, obj_crafting_slot);
+		(instance_nearest(viewX+300, viewY+150, obj_crafting_slot)).index = 1;
+		(instance_nearest(viewX+300, viewY+150, obj_crafting_slot)).depth = tempDepth;
+        instance_create(viewX+300, viewY+180, obj_crafting_slot);
+		(instance_nearest(viewX+300, viewY+180, obj_crafting_slot)).index = 2;
+		(instance_nearest(viewX+300, viewY+180, obj_crafting_slot)).depth = tempDepth;
+        //Created Product Slot
+        instance_create(viewX+350, viewY+150, obj_crafting_product);
+		(instance_nearest(viewX+350, viewY+150, obj_crafting_product)).depth = tempDepth;
+		//Close Button
         instance_create(viewX+400, viewY+54, obj_crafting_close_button);
-        
-        global.hudState = hudState;
+        //Recipe Book
+        instance_create(viewX+450, viewY+90, obj_recipe_book);
 		
-		if (instance_exists(obj_player)) {
-			obj_player.action_state = "crafting";
-		}
+		var controller = obj_inventory_controller;
+		controller.updateValues = true;
+		controller.pageIndex = 1;
 		
-		instance_create(viewX+450, viewY+90, obj_recipe_book);
-        
-        obj_crafting_controller.pageUpdate = true;
-        obj_crafting_controller.current_page = 0;
+		scr_set_global_hudstate(hudState);
     }
+} else if (global.hudState == hudState && scr_keys_to_close()) {
+	//Close crafting
+	scr_crafting_close();
 }
-

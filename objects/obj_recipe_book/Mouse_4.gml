@@ -5,15 +5,15 @@ var viewHeight = camera_get_view_height(view_camera[0]);
 
 if (!showRecipeBook) {
 	showRecipeBook = true;
-	instance_create(viewX+100, viewY+(viewHeight-75), obj_pointing_arrow);
+	/*instance_create(viewX+100, viewY+(viewHeight-75), obj_pointing_arrow);
 	(instance_nearest(viewX+100, viewY+(viewHeight-75), obj_pointing_arrow)).pointing = "left";
 	
 	instance_create(viewX+(viewWidth-100), viewY+(viewHeight-75), obj_pointing_arrow);
-	(instance_nearest(viewX+(viewWidth-100), viewY+(viewHeight-75), obj_pointing_arrow)).pointing = "right";
+	(instance_nearest(viewX+(viewWidth-100), viewY+(viewHeight-75), obj_pointing_arrow)).pointing = "right";*/
 	
 	instance_create(viewX+(viewWidth-90), viewY+75, obj_cross);
 	
-	recipeCount = 0;
+	/*recipeCount = 0;
 	var recipeList;
 	switch(global.hudState) {
 		case "forge": {
@@ -37,7 +37,7 @@ if (!showRecipeBook) {
 		maxPage = 1;
 	} else {
 		maxPage = round (recipeCount / recipesPerPage);
-	}
+	}*/
 	createOnce = true;
 } else {
 	showRecipeBook = false;

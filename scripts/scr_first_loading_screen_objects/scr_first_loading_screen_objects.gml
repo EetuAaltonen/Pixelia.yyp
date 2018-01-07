@@ -6,8 +6,6 @@ ds_list_add(Objects, obj_global_clock);
 ds_list_add(Objects, obj_plr_combat_alarms);
 //Inventory
 ds_list_add(Objects, obj_inventory_controller);
-//Crafting
-ds_list_add(Objects, obj_crafting_controller);
 //Quest
 ds_list_add(Objects, obj_quest_controller);
 //Map

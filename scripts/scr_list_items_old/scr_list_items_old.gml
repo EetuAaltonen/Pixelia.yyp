@@ -117,7 +117,7 @@ if (global.hudState == "inventoryBackpack" ||
 	//Total and weight background
     draw_sprite(spr_inv_item_description_bg, 0,viewX+255, viewY+95);
     //Total and weight
-    draw_text(viewX+190,viewY+95, "Capacity:  " + string_format(global.total_item_weight, 0, 2) + "  /  " + string(global.max_item_weight + global.carryingCapacityPlus) + "  Pw");
+    draw_text(viewX+190,viewY+95, "Capacity:  " + string_format(global.totalInventoryCapacity, 0, 2) + "  /  " + string(global.maxInventoryCapacity + global.carryingCapacityPlus) + "  Pw");
 	
 	//Vertical align
 	draw_set_valign(fa_top);

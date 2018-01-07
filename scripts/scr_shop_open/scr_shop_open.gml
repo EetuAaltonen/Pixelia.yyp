@@ -10,8 +10,6 @@ controller.pageIndex = 1;
 controller.filter = "null";
 controller.merchant = self;
 
-controller.listOfshop = "null";
-
 if (controller.listOfshop == "null") {
 	controller.listOfshop = ds_list_create();
 }

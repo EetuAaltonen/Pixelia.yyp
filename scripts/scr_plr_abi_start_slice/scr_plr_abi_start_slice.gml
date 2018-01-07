@@ -20,7 +20,7 @@ if (global.stamina >= sliceCost) {
 					
 		//Decrease stamina
 		//scr_decrease_stamina_n_mana("stamina", sliceCost);
-		if (instance_exists(obj_enemy_parent)) {
+		/*if (instance_exists(obj_enemy_parent)) {
 			enemy = instance_nearest(x + (20*image_xscale), y, obj_enemy_parent);
 			if (point_distance(enemy.x, enemy.y, x + (20*image_xscale), y) < 60) {
 				if (distance_to_point(enemy.x, enemy.y) > 20) {
@@ -31,7 +31,7 @@ if (global.stamina >= sliceCost) {
 					tempHSpeed = 0;
 				}
 			}
-		}
+		}*/
 					
 		actionState = "slice";
 		sprite_index = spr_plr_sword_swing;
@@ -39,17 +39,5 @@ if (global.stamina >= sliceCost) {
 				
 		alarms.alarm[1] = 20*global.delta; //Slice Cooldown
 		alarms.alarm[2] = 10*global.delta; //Stop Movement
-		/*if (cooldown_slice == 1) {
-			action_state = "slice";
-			//Decrease stamina
-			scr_decrease_stamina_n_mana("stamina", 1);
-			slice = 1;
-			instance_create(x + (10 * image_xscale), y, obj_plr_slice);
-			cooldown_slice = 0;
-			alarm[1] = 25;
-			alarm[2] = 20;
-			image_speed = 0;
-			image_index = 0;
-		}*/
 	}
 }

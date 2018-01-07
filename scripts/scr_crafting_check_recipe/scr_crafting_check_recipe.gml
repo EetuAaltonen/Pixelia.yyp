@@ -1,5 +1,37 @@
-///scr_crafting_check_recipe(argument0, argument1, argument2);
-id1 = argument0;
+var i, j;
+var item = "null";
+var correct = 0;
+var recipe;
+var checkValue = (items[0] + items[1] + items[2]);
+var recipeCorrect = false;
+var recipes = scr_crafting_recipes(global.hudState);
+
+var arraySize = array_length_1d(recipes);
+
+for (i = 0; i < arraySize; i++) {
+	recipe = recipes[i];
+	if (checkValue == (recipe[0] + recipe[1] + recipe[2]) ||
+		checkValue == (recipe[0] + recipe[2] + recipe[1]) ||
+		checkValue == (recipe[1] + recipe[0] + recipe[2]) ||
+		checkValue == (recipe[1] + recipe[2] + recipe[0]) ||
+		checkValue == (recipe[2] + recipe[0] + recipe[1]) ||
+		checkValue == (recipe[2] + recipe[1] + recipe[0])) {
+		recipeCorrect = true;	
+	}
+	
+	if (recipeCorrect) {
+		break;	
+	}
+}
+
+if (recipeCorrect) {
+	//show_message(recipe[3]);
+	return scr_item_search_data(recipe[3], "name");
+}
+
+return item;
+
+/*id1 = argument0;
 id2 = argument1;
 id3 = argument2;
 var slot4 = obj_crafting_slot_4;

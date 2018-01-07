@@ -1,0 +1,1 @@
+infoText = "Coins ahead!";

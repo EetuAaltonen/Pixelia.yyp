@@ -1,8 +1,22 @@
 draw_self();
-if (showtext == true)
-{
-    draw_set_font(fnt_sign);
-    draw_sprite(spr_sign_bg,1,x-63,y-83); 
-    draw_text(x-60,y-80,string_hash_to_newline("Testi!# Toimiiko?"));
-}
+scr_highlight_self();
 
+//Show Text
+if (global.hudState == "null" && image_blend != make_colour_hsv(0, 0, -1)) {
+	//Font
+	draw_set_font(fnt_sign_text);
+	draw_set_color(c_black);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_bottom);
+	
+	if (instance_exists(obj_player)) {
+		depth = obj_player.depth-1;
+	}
+	
+	var lineCount = string_count("#", infoText);
+    //draw_sprite(spr_sign_bg, lineCount, x, y-20);
+	draw_sprite_ext(spr_sign_bg, 0, x, y-20, 1, (lineCount+1), 0, c_white, 1);
+    draw_text(x, y-20, string_hash_to_newline(infoText));
+} else {
+	tempDepth = depth;
+}

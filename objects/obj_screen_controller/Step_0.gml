@@ -32,15 +32,17 @@ if (room == Menu) {
             instance_create(view_xview + 100, view_yview + 160, obj_menu_load_game);
             instance_create(view_xview + 100, view_yview + 208, obj_menu_delete);
             instance_create(view_xview + 100, view_yview + 256, obj_menu_back);
-            read_saves = true; 
+            searchSaves = true; 
         }
         create_buttons = false;
     }
 }
 
 ///Read saves
-if (read_saves == true) {
-    read_saves = false;
+if (searchSaves) {
+	var a;
+	var i;
+    searchSaves = false;
     //Clear temp saves
     for (a = 0; a < 8; a++) {
         Saves[a] = "no_saves"

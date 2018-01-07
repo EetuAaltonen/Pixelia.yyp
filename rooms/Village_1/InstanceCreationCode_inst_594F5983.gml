@@ -1,0 +1,1 @@
+infoText = "Abilities:#Q, W, S";

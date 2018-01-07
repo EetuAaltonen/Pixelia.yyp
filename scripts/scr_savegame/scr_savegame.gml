@@ -1,3 +1,15 @@
+ini_open("Inventory.ini");
+
+//Inventory
+var data = ds_list_write(global.inventory);
+ini_write_string(global.save_file, "Inventory", data);
+//Stash
+data = ds_list_write(global.stash);
+ini_write_string(global.save_file, "Stash", data);
+
+ini_close();
+
+
 ini_open(global.save_file);
 
 //Datetime
@@ -18,7 +30,7 @@ Datetime += (":" + minutes + ":" + seconds);
 
 ini_write_string(global.save_file,"last_played", Datetime);
             
-ini_write_real(global.save_file,"room",global.current_room);
+ini_write_real(global.save_file,"room",global.currentRoom);
 ini_write_real(global.save_file,"health",global.healthPoints);
 
 ini_write_real(global.save_file,"level",global.level);
@@ -36,6 +48,16 @@ ini_write_string(global.save_file,"quest",global.quest);
 ini_write_real(global.save_file,"coins",global.coins);
 ini_write_real(global.save_file,"potions",global.potions);
 
+//Inventory Capacity
+ini_write_real(global.save_file,"maxInventoryCapacity",global.maxInventoryCapacity);
+ini_write_real(global.save_file,"totalInventoryCapacity",global.totalInventoryCapacity);
+ini_write_real(global.save_file,"carryingCapacityPlus",global.carryingCapacityPlus);
+	
+//Stash Capacity
+ini_write_real(global.save_file,"maxStashCapacity",global.maxStashCapacity);
+ini_write_real(global.save_file,"totalStashCapacity",global.totalStashCapacity);
+ini_write_real(global.save_file,"stashCapacityPlus",global.stashCapacityPlus);
+
 var clock = obj_global_clock;
 ini_write_real(global.save_file, "clockMilliSec", clock.milliseconds);
 ini_write_real(global.save_file, "clockSeconds", clock.seconds);
@@ -44,10 +66,5 @@ ini_write_real(global.save_file, "clockHours", clock.hours);
 ini_write_real(global.save_file, "clockDays", clock.days);
 ini_write_real(global.save_file, "clockMonths", clock.months);
 ini_write_real(global.save_file, "clockYears", clock.years);
-
-/*ini_write_real(global.save_file,"home_happiness",global.home_happiness);
-ini_write_real(global.save_file,"home_defence",global.home_defence);
-ini_write_real(global.save_file,"home_hunger",global.home_hunger);
-ini_write_real(global.save_file,"home_thirst",global.home_thirst);*/
 
 ini_close();

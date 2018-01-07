@@ -1,0 +1,1 @@
+infoText = "Restart Room: Del";

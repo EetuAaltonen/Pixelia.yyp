@@ -1,3 +1,3 @@
 if (!room == Menu) {
-    global.current_room = room;
+    global.currentRoom = room;
 }

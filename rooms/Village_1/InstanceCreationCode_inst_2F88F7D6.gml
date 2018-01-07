@@ -1,0 +1,1 @@
+infoText = "Pause: P#(Also paused#when window is unfocused)#Full Screen: 9";

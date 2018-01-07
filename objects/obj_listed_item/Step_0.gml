@@ -11,33 +11,13 @@
 }*/
 
 if (name == "" && data != "null") {
-	var info = [
-		"Sprite: ",
-		"Name: ",
-		"Type: ",
-		"Count: ",
-		"Durability: ",
-		"Weight: ",
-		"Price: ",
-		"Effect: ",
-		"Effect Amount: "
-	]
-	var mark = [
-		"",
-		"",
-		"",
-		" x",
-		" / 100",
-		" Pw",
-		" G",
-		"",
-		""
-	]
 	sprite_index = data[0];
 	name = data[1];
 	count = data[3];
 	
 	var description;
+	var info = scr_item_info_struct();
+	var mark = scr_item_mark_struct();
 	var i;
 	var arraySize = array_length_1d(data);
 	for (i = 0; i < arraySize; i++) {
@@ -83,6 +63,27 @@ if (checkEquipped) {
 		}
 	}
 	checkEquipped = false;
+}
+
+if (checkSelected) {
+	checkSelected = false;
+	if (scr_hud_state_some_of_crafting()) {
+		selected = false;
+		if (instance_exists(obj_crafting_slot)) {
+			var slot;
+			var slotCount = instance_number(obj_crafting_slot);
+			var i;
+			for (i = 0; i < slotCount; i++) {
+				slot = instance_find(obj_crafting_slot, i);
+				if (slot.item != "null") {
+					if (scr_item_compare_items(slot.item, data)) {
+						selected = true;
+						break;
+					}
+				}
+			}
+		}
+	}
 }
 
 ///Destroy function
