@@ -37,8 +37,18 @@ var items = [
 		[spr_pyrrhotite_ingot,"Pyrrhotite Ingot","[forge,workbench,blacksmith]",1,"null",0.3,1100,"null","null"],
 		[spr_zincite_ingot,"Zincite Ingot","[forge,workbench,blacksmith]",1,"null",0.3,1200,"null","null"],
 		[spr_cavansite_ingot,"Cavansite Ingot","[forge,workbench,blacksmith]",1,"null",0.3,1300,"null","null"],
+		//Bow Model
+		[spr_bow_model,"Bow Model","[workbench,blacksmith]",1,"null",0.3,25,"null","null"],
+		//String
+		[spr_string,"String","[workbench,spinningWheel,blacksmith]",1,"null",0.01,5,"null","null"],
 	/*[Tools]*/
 	[spr_tool_saw,"Saw","[workbench,blacksmith]",1,"null",0.3,100,"null","null"],
-	[spr_tool_knife,"Knife","[workbench,blacksmith]",1,"null",0.3,100,"null","null"]
+	[spr_tool_knife,"Knife","[workbench,blacksmith]",1,"null",0.3,100,"null","null"],
+	/*[Bow]*/
+	[spr_bow,"Bow","[workbench,blacksmith]",1,"null",0.3,300,"null","null"],
+	/*[Arrow]*/
+	[spr_arrow_pouch,"Arrow","[workbench,blacksmith]",1,"null",0.01,3,"null","null"],
+	/*[Animals]*/
+	[spr_wool,"Wool","[workbench,blacksmith]",1,"null",0.1,10,"null","null"]
 ]
 return items;

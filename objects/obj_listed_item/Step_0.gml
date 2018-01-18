@@ -10,6 +10,10 @@
 	effectAmount; 8
 }*/
 
+if (mask_index != spr_inv_item_bg) {
+	mask_index = spr_inv_item_bg;	
+}
+
 if (name == "" && data != "null") {
 	sprite_index = data[0];
 	name = data[1];

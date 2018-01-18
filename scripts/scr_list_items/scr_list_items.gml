@@ -60,7 +60,7 @@ if (listSize > 0) {
 			count[j] = data[3]
 			weight[j] = data[5];
 			if (global.hudState == "shopSell") {
-				price[j++] = (data[6]*global.sellRate);
+				price[j++] = round(data[6]*global.sellRate);
 			} else {
 				price[j++] = data[6];
 			}

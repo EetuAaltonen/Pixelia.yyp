@@ -8,7 +8,8 @@
         "4537fb73-e056-47e6-9e12-203ac32d7819",
         "fcd6451c-e9cf-440b-81de-8e8060dffa9c",
         "131077a6-f054-40cb-92ac-b53a1178e0fe",
-        "2246f667-4dc3-4e1f-9ef4-4decd516cf32"
+        "2246f667-4dc3-4e1f-9ef4-4decd516cf32",
+        "fed53eb0-cf49-4a59-b9a0-27b5a6b8a587"
     ],
     "filterType": "GMScript",
     "folderName": "Crafting",

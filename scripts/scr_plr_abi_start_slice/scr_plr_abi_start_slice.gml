@@ -1,6 +1,6 @@
 var alarms = obj_plr_combat_alarms;
 if (global.stamina >= sliceCost) {
-	if (global.hudState == "null" && actionState != "idle" && !sliceCooldown) {
+	if (global.hudState == "null" && scr_plr_neutral_action_states() && !sliceCooldown) {
 		sliceCooldown = true;
 					
 		//Slice Streak

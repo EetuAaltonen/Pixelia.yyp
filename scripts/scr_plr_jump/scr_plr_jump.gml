@@ -1,5 +1,7 @@
+var up = ord("W");
+
 if (!place_free(x, y+1)) {
-	if (keyboard_check_pressed(vk_up)) {
+	if (keyboard_check(up)) {
 		switch(actionState) {
 			case "carryGoods": {
 				vspeed = -2.5;
@@ -9,12 +11,14 @@ if (!place_free(x, y+1)) {
 			}break;
 			default: {
 				vspeed = -3;
-				actionState = "jump";
+				if (scr_plr_neutral_action_states()) {
+					actionState = "jump";
+				}
 			}break;
 		}
 	} else if (actionState == "jump" || actionState == "falling") {
 		actionState = "null";
-	}
-} else if (place_free(x, y+1) && vspeed > 0 && actionState == "jump") {
+	}	
+} else if (place_free(x, y+1) && vspeed > 0 && scr_plr_neutral_action_states()) {
 		actionState = "falling";
 }

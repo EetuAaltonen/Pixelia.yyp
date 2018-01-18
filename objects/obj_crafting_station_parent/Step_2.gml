@@ -7,20 +7,8 @@ if (distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, -1)
         with (obj_use) instance_destroy();
     }
     if (global.hudState != hudState) {
-		var tempDepth = obj_inventory_controller.depth-1;
         //Create Slots
-        instance_create(viewX+300, viewY+120, obj_crafting_slot);
-		(instance_nearest(viewX+300, viewY+120, obj_crafting_slot)).index = 0;
-		(instance_nearest(viewX+300, viewY+120, obj_crafting_slot)).depth = tempDepth;
-        instance_create(viewX+300, viewY+150, obj_crafting_slot);
-		(instance_nearest(viewX+300, viewY+150, obj_crafting_slot)).index = 1;
-		(instance_nearest(viewX+300, viewY+150, obj_crafting_slot)).depth = tempDepth;
-        instance_create(viewX+300, viewY+180, obj_crafting_slot);
-		(instance_nearest(viewX+300, viewY+180, obj_crafting_slot)).index = 2;
-		(instance_nearest(viewX+300, viewY+180, obj_crafting_slot)).depth = tempDepth;
-        //Created Product Slot
-        instance_create(viewX+350, viewY+150, obj_crafting_product);
-		(instance_nearest(viewX+350, viewY+150, obj_crafting_product)).depth = tempDepth;
+		scr_crafting_create_slots(hudState);
 		//Close Button
         instance_create(viewX+400, viewY+54, obj_crafting_close_button);
         //Recipe Book

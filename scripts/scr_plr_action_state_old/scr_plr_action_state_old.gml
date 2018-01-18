@@ -36,7 +36,7 @@ else if (action_state == "ladder") {
 }
 //Bow
 else if (action_state == "bow") {
-    scr_plr_bow();
+    scr_plr_abi_bow();
     //Gravity
     scr_custom_gravity();
 }

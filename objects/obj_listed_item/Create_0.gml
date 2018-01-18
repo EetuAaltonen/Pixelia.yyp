@@ -4,6 +4,7 @@ data = "null";
 itemCount = 0;
 sprite_index_ = "";
 spriteName = "";
+mask_index = spr_inv_item_bg;
 
 //Info text
 infoText = "";

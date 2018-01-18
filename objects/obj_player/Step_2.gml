@@ -20,8 +20,22 @@ if (spawning) {
 		}
 	}
 }
-
 //Slice
-if (keyboard_check(ord("Q"))) {
+if (mouse_check_button(mb_left)/*keyboard_check(ord("Q"))*/) {
 	scr_plr_abi_start_slice();
+}
+
+//Shield
+if (mouse_check_button(mb_right)/*keyboard_check(ord("W"))*/) {
+	scr_plr_abi_shield();
+}
+
+//Roll
+if (keyboard_check_pressed(ord("F"))) { //A
+	scr_plr_abi_roll();
+}
+
+//Bow
+if (keyboard_check_pressed(ord("B"))) { //
+	scr_plr_abi_bow_start();
 }

@@ -18,6 +18,9 @@ switch (actionState) {
 	case "slice": {
 		scr_plr_abi_slice();
 	}break;
+	case "bow": {
+		scr_plr_abi_bow();
+	}break;
 	case "ladder": {
 		scr_plr_ladder();
 	}break;
