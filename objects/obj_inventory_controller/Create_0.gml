@@ -39,15 +39,6 @@ image_scale_coin = 0.70;
 //Potion
 image_scale_potion = 0.70;
 
-//Toaster
-draw_toast = false;
-t = 1;
-toaster = ds_list_create();
-toast = "";
-toast_y_pos = 0;
-toast_alpha = 0;
-toasterSpeed = 2;
-
 //SKilltree
 skill_name = "";
 skill_bonus = "";

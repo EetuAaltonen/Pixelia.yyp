@@ -24,7 +24,9 @@
         "528a51e1-60bb-4529-959f-a238e6ebf568",
         "814eff67-eed8-4656-9e37-124fe9b449a9",
         "0591ab55-a770-4e46-9b94-f5e88557d33a",
-        "c212ec02-bdb4-4c8b-9b60-45fb4880beac"
+        "c212ec02-bdb4-4c8b-9b60-45fb4880beac",
+        "9e8c47ca-16bd-4172-8cd9-f6f8a5d3d711",
+        "55e90f84-9cce-4efe-8438-bc1fa868b999"
     ],
     "filterType": "GMScript",
     "folderName": "Inventory",

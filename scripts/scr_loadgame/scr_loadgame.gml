@@ -8,13 +8,30 @@ if (file_exists("Inventory.ini")) {
 	if (data != "") {
 		ds_list_read(global.inventory, data);
 	}
+	//Equipments
+	data = ini_read_string(global.save_file, "Equipments", "");
+	if (data != "") {
+		var equipments = ds_list_create();
+		ds_list_read(equipments, data);
+		var listSize = ds_list_size(equipments);
+		var item;
+		var i;
+		if (listSize == array_length_1d(global.equipments)) {
+			for (i = 0; i < listSize; i++) {
+				item = ds_list_find_value(equipments, i);
+				if (item != "") {
+					global.equipments[i] = item;
+				}
+			}
+		}
+	}
 	//Stash
 	data = ini_read_string(global.save_file, "Stash", "");
 	if (data != "") {
 		ds_list_read(global.stash, data);
 	}
-	
 	ini_close();
+	scr_loadgame_check_items_data();
 }
 
 if (file_exists(global.save_file)) {

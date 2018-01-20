@@ -1,4 +1,5 @@
 //Create Attributes
+//Data
 data = "null";
 
 itemCount = 0;
@@ -21,8 +22,8 @@ droppedCount = 0;
 selected = false;
 checkSelected = true;
 
-checkEquipped = false;
-type = "";
-equipped = false;
+//Equipped
+equipmentIndex = "";
 
+//Looting
 moveToPlayer = false;

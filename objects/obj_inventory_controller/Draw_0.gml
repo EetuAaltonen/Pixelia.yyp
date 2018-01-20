@@ -3,15 +3,6 @@ var viewY = camera_get_view_y(view_camera[0]);
 var viewWidth = camera_get_view_width(view_camera[0]);
 var viewHeight = camera_get_view_height(view_camera[0]);
 
-//Font
-draw_set_font(fnt_toaster);
-draw_set_color(c_white);
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
-///Draw toast
-scr_draw_toast();
-
 ///Inventory
 //Font
 draw_set_font(fnt_inventory_text);
@@ -38,7 +29,9 @@ if (string_pos("shop", string(global.hudState))) {
 	}
 }
 
-if (global.hudState == "inventoryBackpack") {
+if (global.hudState == "inventoryBackpack" ||
+	global.hudState == "inventoryEquipments" ||
+	scr_hud_state_some_of_crafting()) {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);
 	
@@ -50,18 +43,6 @@ if (global.hudState == "inventoryBackpack") {
 	}
 	
 	scr_inventory_list_backpack();
-} else if (global.hudState == "inventoryEquipments") {
-	//Background
-	draw_sprite(spr_inventory_background, 0, viewX, viewY);
-	
-	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
-		filter = "";
-		pageIndex = 1;
-	}
-	
-    scr_list_items(global.inventory);
 } else if (global.hudState == "inventorySkills") {
     //Background
     draw_sprite(spr_inventory_background, 0, viewX, viewY);
@@ -156,17 +137,6 @@ if (global.hudState == "inventoryBackpack") {
 	
 	draw_text(viewX+30, viewY+120, "Coming Soon!");
 	//scr_inventory_list_backpack();
-} else if (scr_hud_state_some_of_crafting()) {
-    //Background
-	draw_sprite(spr_inventory_background, 0, viewX, viewY);
-	
-	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
-		filter = "";
-		pageIndex = 1;
-	}
-	scr_inventory_list_backpack();
 } else if (global.hudState == "stashWithdraw") {
 	//Background
 	draw_sprite(spr_inventory_background, 0, viewX, viewY);

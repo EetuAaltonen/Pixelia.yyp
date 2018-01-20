@@ -33,10 +33,14 @@ if (name == "" && data != "null") {
 			}
 		}
 	}
+	//Check If Equipped
+	if (string_pos("equipment", data[2]) != 0) {
+		scr_listed_item_check_equipped();
+	}
 }
 
 //Check if equipped
-if (checkEquipped) {
+/*if (checkEquipped) {
 	sprite_index_ = sprite_index;
 	spriteName = sprite_get_name(sprite_index_);
 	name = scr_inventory_item_name(spriteName);
@@ -67,7 +71,7 @@ if (checkEquipped) {
 		}
 	}
 	checkEquipped = false;
-}
+}*/
 
 if (checkSelected) {
 	checkSelected = false;

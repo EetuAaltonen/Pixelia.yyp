@@ -12,8 +12,10 @@ ds_list_add(Objects, obj_quest_controller);
 ds_list_add(Objects, obj_world_map_controller);
 //Dialogs
 ds_list_add(Objects, obj_dialog_controller);
+//Minigames
+ds_list_add(Objects, obj_minigame_controller);
 //Toaster
-//ds_list_add(Objects, obj_toaster_controller);
+ds_list_add(Objects, obj_toaster_controller);
 //Stats
 ds_list_add(Objects, obj_stats_meter);
 //Collectable objects target
@@ -21,11 +23,5 @@ ds_list_add(Objects, obj_money_target);
 ds_list_add(Objects, obj_potion_target);
 //Particles
 ds_list_add(Objects, obj_part_controller_elemental);
-//Skill hotbar icons
-/*Object[15] = obj_skill_A;
-Object[16] = obj_skill_Q;
-Object[17] = obj_skill_W;*/
-//Home village
-//Object[18] = obj_home_village_controller;
 
 return Objects;

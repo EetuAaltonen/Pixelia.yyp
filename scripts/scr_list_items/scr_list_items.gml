@@ -60,10 +60,14 @@ if (listSize > 0) {
 			count[j] = data[3]
 			weight[j] = data[5];
 			if (global.hudState == "shopSell") {
-				price[j++] = round(data[6]*global.sellRate);
+				price[j] = round(data[6]*global.sellRate);
+				if (price[j] < 1) {
+					price[j] = 1;	
+				}
 			} else {
-				price[j++] = data[6];
+				price[j] = data[6];
 			}
+			j++;
 		}
 	} else {
 		yPos = 120;

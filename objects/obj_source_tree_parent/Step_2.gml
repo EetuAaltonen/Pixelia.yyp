@@ -25,6 +25,7 @@ if (instance_exists(obj_player)) {
 		player.actionState = actionState;
 		canHit = true;
 		cuttingWood = true;
+		scr_minigame_start("woodcutting");
 	} else if (cuttingWood && player.actionState == actionState) {
 		//Stop
 		if (scr_keys_to_close()) {
@@ -36,6 +37,11 @@ if (instance_exists(obj_player)) {
 				alarm[1] = scr_to_sec(respawnTime);
 			}
 		} else if (player.image_index > (player.image_number - 1) && canHit) {
+			//Stop Player Animation
+			player.sprite_index = spr_player;
+			player.image_index = 0;
+			player.image_speed = 0;
+			
 			if (sprite_index != spriteHit) {
 				sprite_index = spriteHit;
 			}
@@ -47,7 +53,7 @@ if (instance_exists(obj_player)) {
 				cuttingWood = false;
 				sprite_index = spriteEmpty;
 				scr_highlight_remove();
-				scr_plr_set_action_state_null();
+				scr_close_global_hudstate();
 				alarm[1] = scr_to_sec(respawnTime);
 			}
 			

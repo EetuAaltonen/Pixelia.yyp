@@ -120,8 +120,19 @@ global.maxInventoryCapacity = 100;
 global.totalInventoryCapacity = 0;
 global.carryingCapacityPlus = 0;
 
-//Global variables - Equipments list
-global.equipments = ds_list_create();
+//Global variables - Equipments
+/*equipments {
+	helmet, 0
+	amulet, 1
+	armor, 2
+	gloves, 3
+	primary weapon, 4
+	secondary weapon, 5
+	ring, 6
+	belt, 7
+	boots 8
+}*/
+global.equipments = ["", "", "", "", "", "", "", "", ""]//ds_list_create();
 
 //Global variables - Stash
 global.stash = ds_list_create();

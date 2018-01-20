@@ -2,9 +2,9 @@
 if (global.hudState == "null") {
 	if (actionState != "bow") {
 		if (scr_plr_neutral_action_states()) {
-			var bowCount = scr_inventory_search_item("Bow");
-			var arrowCount = scr_inventory_search_item("Arrow");
-	
+			var bowCount = scr_inventory_search_equipment("Bow", "priweapon");
+			var arrowCount = scr_inventory_search_equipment("Arrow", "secweapon");
+			
 			if (bowCount > 0 && arrowCount > 0) {
 				actionState = "bow";
 	            //instance_create(x, y, obj_plr_aim);
