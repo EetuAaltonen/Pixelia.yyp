@@ -1,5 +1,4 @@
-if (i == string_length(text_))
-{
+if (i == string_length(text_)) {
    i = 0; 
 }
 letter = string_char_at(text_, i + 1);

@@ -25,3 +25,9 @@ if (!pause && !unfocus) {
     draw_text(viewX + (viewWidth/2), viewY + (viewHeight/2), string_hash_to_newline("Pause"));
 }
 
+if (room == Menu) {
+	//Logo
+	draw_sprite(spr_menu_logo, 1, __view_get( e__VW.XView, 0 ) + (__view_get( e__VW.WView, 0 )/2), __view_get( e__VW.YView, 0 ) + 48);
+	//Signature
+	draw_sprite(spr_menu_signature, 1, __view_get( e__VW.XView, 0 ) + 2, (__view_get( e__VW.YView, 0 ) + __view_get( e__VW.HView, 0 ) - 10));	
+}

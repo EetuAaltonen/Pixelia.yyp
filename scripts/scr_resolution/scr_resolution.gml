@@ -1,16 +1,19 @@
-//Set the size of the game window
-window_set_size(reso_width, reso_height);
+var displayWidth = argument0;
+var displayHeight = argument1;
+view_set_wport(0, displayWidth);
+view_set_hport(0, displayHeight);
+display_set_gui_size(displayWidth, displayHeight);
+window_set_size(displayWidth, displayHeight);
 
-//Set the resolution we've programmed the game for
-var base_width = 1024;
-var base_height = 768;
+var baseWidth = 1280;
+var baseHeight = 720;
+var aspect = baseWidth/baseHeight;
+var width = displayWidth;
+var height = displayHeight;
 
-var aspect = reso_width/reso_height;
-
-if (reso_width >= reso_height) {
-    reso_height = min(base_width, reso_height);
-    reso_width = reso_height * aspect;
+if (displayWidth >= displayHeight) {
+	height = min(baseHeight, displayHeight);
+	width = height * aspect;
 }
 
-//Resize the application surface to our adjusted values
-surface_resize(application_surface, reso_width, reso_height);
+surface_resize(application_surface, width, height);

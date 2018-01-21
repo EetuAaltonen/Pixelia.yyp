@@ -1,12 +1,12 @@
 depth = -1000;
 //Resolution
-reso_width = 1024;
-reso_height = 768;
-display_reset(0, true);
+reso_width = 1920;
+reso_height = 1080;
+//display_reset(0, true);
 surface = 5; //1px = 5x5px
-scr_resolution();
+scr_resolution(1280, 720);
 //Menu
-menu_state = "main_menu";
+menu_state = "mainMenu";
 create_buttons = true;
 //Saves
 searchSaves = false;
@@ -29,3 +29,6 @@ transitionWaitTime = 0.5;
 darknessEffect = false;
 darknessAlpha = 0;
 darknessMax = 0.7;
+
+//View Port
+//view_

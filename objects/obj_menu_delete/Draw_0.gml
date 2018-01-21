@@ -10,4 +10,3 @@ draw_text(x, y, string_hash_to_newline("Delete"));
 
 ///Check text length
 scr_check_save_name();
-

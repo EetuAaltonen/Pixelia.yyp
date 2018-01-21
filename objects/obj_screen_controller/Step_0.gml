@@ -1,3 +1,5 @@
+var viewX = camera_get_view_x(view_camera[0]);
+var viewY = camera_get_view_y(view_camera[0]);
 var viewWidth = camera_get_view_width(view_camera[0]);
 var viewHeight = camera_get_view_height(view_camera[0]);
 
@@ -22,19 +24,25 @@ if (room != Menu && room != First_loading) {
 ///Create menu buttons and change view
 if (room == Menu) {   
     if (create_buttons == true) {
-        if (menu_state == "main_menu") {
-            instance_create(view_xview + 250, view_yview + 112, obj_menu_play);
-            instance_create(view_xview + 250, view_yview + 160, obj_menu_achievements);
-            instance_create(view_xview + 250, view_yview + 208, obj_menu_options);
-            instance_create(view_xview + 250, view_yview + 256, obj_menu_quit);
-        } else if (menu_state == "load_game") {
-            instance_create(view_xview + 100, view_yview + 112, obj_menu_text_box);
-            instance_create(view_xview + 100, view_yview + 160, obj_menu_load_game);
-            instance_create(view_xview + 100, view_yview + 208, obj_menu_delete);
-            instance_create(view_xview + 100, view_yview + 256, obj_menu_back);
-            searchSaves = true; 
+		create_buttons = false;
+		if (instance_exists(obj_menu_button)) {
+			with (obj_menu_button) instance_destroy();
+		}
+		if (instance_exists(obj_menu_orb_of_euphoria)) {
+			with (obj_menu_orb_of_euphoria) instance_destroy();
+		}
+		if (instance_exists(obj_menu_orb_of_dysforia)) {
+			with (obj_menu_orb_of_dysforia) instance_destroy();
+		}
+        if (menu_state == "mainMenu") {
+			scr_menu_create_main_buttons();
+        } else if (menu_state == "loadGame") {
+			scr_menu_create_load_buttons();
+        } else if (menu_state == "achievements") {
+			scr_menu_create_achievements_buttons();
+        } else if (menu_state == "settings") {
+			scr_menu_create_resolution_buttons();
         }
-        create_buttons = false;
     }
 }
 
