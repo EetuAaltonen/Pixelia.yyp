@@ -23,8 +23,8 @@ if (room != Menu && room != First_loading) {
 
 ///Create menu buttons and change view
 if (room == Menu) {   
-    if (create_buttons == true) {
-		create_buttons = false;
+    if (createButtons == true) {
+		createButtons = false;
 		if (instance_exists(obj_menu_button)) {
 			with (obj_menu_button) instance_destroy();
 		}
@@ -40,13 +40,13 @@ if (room == Menu) {
 		if (instance_exists(obj_menu_saved_game)) {
 			with (obj_menu_saved_game) instance_destroy();	
 		}
-        if (menu_state == "mainMenu") {
+        if (menuState == "mainMenu") {
 			scr_menu_create_main_buttons();
-        } else if (menu_state == "loadGame") {
+        } else if (menuState == "loadGame") {
 			scr_menu_create_load_buttons();
-        } else if (menu_state == "achievements") {
+        } else if (menuState == "achievements") {
 			scr_menu_create_achievements_buttons();
-        } else if (menu_state == "settings") {
+        } else if (menuState == "settings") {
 			scr_menu_create_resolution_buttons();
         }
     }
@@ -74,7 +74,7 @@ if (searchSaves) {
     if (file_exists(file) && string(file) != "Inventory.sav" && string(file) != "SkillTree.sav") {
         var margin_bottom = 22;
         var x_pos = 350;
-        var y_pos = 96;
+        var y_pos = 105;
         instance_create(view_xview+x_pos, view_yview+y_pos,obj_menu_saved_game);
         (instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).load_file = string_replace(file, ".sav", "");
         if (file_exists(file)) {

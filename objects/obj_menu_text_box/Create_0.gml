@@ -10,7 +10,4 @@ if (room != Menu) {
     place_holder = "Filter by item name...";
 }
 enabled_keys = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890";
-//Menu state
-menu_state = "load_game";
-
 

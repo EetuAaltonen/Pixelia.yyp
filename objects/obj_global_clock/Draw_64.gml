@@ -1,8 +1,3 @@
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-var viewWidth = camera_get_view_width(view_camera[0]);
-var viewHeight = camera_get_view_height(view_camera[0]);
-
 //Time Played
 var tempHours = string(hours);
 var tempMinutes = string(minutes);
@@ -33,8 +28,10 @@ if (gSeconds < 10) {
 }
 
 if (global.hudState == "null" || global.hudState == "minigame") {
+	
+	
 	//Font
-	draw_set_font(fnt_inventory_text);
+	draw_set_font(fnt_draw_gui_statics);
 	if (obj_screen_controller.darknessAlpha > 0.5) {
 		draw_set_color(c_white);
 	} else {
@@ -43,15 +40,17 @@ if (global.hudState == "null" || global.hudState == "minigame") {
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
 	
-	//Statics
-	draw_text(viewX+5, viewY+45, "FPS: " + string(fps));
-	//Time Played
-	draw_text(viewX+5, viewY+65, "Time Played:");
-	draw_text(viewX+5, viewY+75, "Days " + string(days));
-	draw_text(viewX+5, viewY+85, "Hours "+ tempHours + ":" + tempMinutes + ":" + tempSeconds);
-	//Global Clock
-	draw_text(viewX+5, viewY+105, "Global Date " + string(gDays) + "." + string(gMonths) + "." + string(gYears));
-	draw_text(viewX+5, viewY+115, "Global Clock " + tempGHours + ":" + tempGMinutes + ":" + tempGSeconds);
+	if (room != First_loading) {
+		//Statics
+		draw_text(scr_gui(5,"x"), scr_gui(45,"y"), "FPS: " + string(fps));
+		//Time Played
+		draw_text(scr_gui(5,"x"), scr_gui(65,"y"), "Time Played:");
+		draw_text(scr_gui(5,"x"), scr_gui(75,"y"), "Days " + string(days));
+		draw_text(scr_gui(5,"x"), scr_gui(85,"y"), "Hours "+ tempHours + ":" + tempMinutes + ":" + tempSeconds);
+		//Global Clock
+		draw_text(scr_gui(5,"x"), scr_gui(105,"y"), "Global Date " + string(gDays) + "." + string(gMonths) + "." + string(gYears));
+		draw_text(scr_gui(5,"x"), scr_gui(115,"y"), "Global Clock " + tempGHours + ":" + tempGMinutes + ":" + tempGSeconds);
+	}
 	
 }
 

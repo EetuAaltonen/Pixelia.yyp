@@ -1,3 +1,2 @@
-global.save_file = (obj_menu_load_game.file + ".sav");
-global.player_spawner = 1;
+global.save_file = (obj_menu_text_box.txt + ".sav");
 room_goto(First_loading);

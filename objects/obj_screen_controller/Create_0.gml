@@ -6,8 +6,8 @@ reso_height = 1080;
 surface = 5; //1px = 5x5px
 scr_resolution(1280, 720);
 //Menu
-menu_state = "mainMenu";
-create_buttons = true;
+menuState = "mainMenu";
+createButtons = true;
 //Saves
 searchSaves = false;
 Saves[0] = "no_saves";
@@ -29,6 +29,3 @@ transitionWaitTime = 0.5;
 darknessEffect = false;
 darknessAlpha = 0;
 darknessMax = 0.7;
-
-//View Port
-//view_

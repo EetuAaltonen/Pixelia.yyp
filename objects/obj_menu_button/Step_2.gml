@@ -15,7 +15,15 @@ if (distance_to_point(mouse_x, mouse_y) == 0) {
 		}
 	}
 }
-if (action == "load" || action == "delete") {	
-	///Check text length
-	scr_check_save_name();
+if (action != "null") {
+	if (action == "load") {	
+		///Check text length
+		scr_check_save_name();
+	} else if (checkSaveName) {
+		checkSaveName = false;
+		if (action == "delete") {
+			///Check text length
+			scr_check_exists_saves();
+		}
+	}
 }

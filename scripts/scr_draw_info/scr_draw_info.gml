@@ -1,26 +1,23 @@
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-
 //Page Index background
-draw_sprite(spr_inv_item_description_bg, 0,viewX+87, viewY+95);
+draw_sprite(spr_inv_item_description_bg, 0, scr_gui(87,"x"), scr_gui(95,"y"));
 //Draw Page Index
-draw_text(viewX+22,viewY+95, string("PAGE:    " + string(pageIndex) + "  /  " + string(maxPageIndex)));
+draw_text(scr_gui(22,"x"), scr_gui(95,"y"), string("PAGE:    " + string(pageIndex) + "  /  " + string(maxPageIndex)));
 
 if (string_pos("shop", global.hudState)) {
 	//Your Gold Background
-	draw_sprite(spr_inv_item_description_bg, 0,viewX+255, viewY+95);
+	draw_sprite(spr_inv_item_description_bg, 0, scr_gui(255,"x"), scr_gui(95,"y"));
 	//Your Gold
-	draw_text(viewX+190,viewY+95, "Your gold:  " + string(global.coins) + "  G");
+	draw_text(scr_gui(190,"x"), scr_gui(95,"y"), "Your gold:  " + string(global.coins) + "  G");
 } else {
 	//Total And Weight Background
-	draw_sprite(spr_inv_item_description_bg, 0,viewX+255, viewY+95);
+	draw_sprite(spr_inv_item_description_bg, 0, scr_gui(255,"x"), scr_gui(95,"y"));
 	if (global.hudState == "stashWithdraw") {
 		//Total And Weight
-		draw_text(viewX+190,viewY+95, "Capacity:  " + string_format(abs(global.totalStashCapacity), 0, 2) + "  /  " +
+		draw_text(scr_gui(190,"x"), scr_gui(95,"y"), "Capacity:  " + string_format(abs(global.totalStashCapacity), 0, 2) + "  /  " +
 					string(global.maxStashCapacity + global.stashCapacityPlus) + "  Pw");
 	} else {
 		//Total And Weight
-		draw_text(viewX+190,viewY+95, "Capacity:  " + string_format(abs(global.totalInventoryCapacity), 0, 2) + "  /  " +
+		draw_text(scr_gui(190,"x"), scr_gui(95,"y"), "Capacity:  " + string_format(abs(global.totalInventoryCapacity), 0, 2) + "  /  " +
 					string(global.maxInventoryCapacity + global.carryingCapacityPlus) + "  Pw");
 	}
 }
@@ -32,7 +29,7 @@ if (scr_hud_state_crafting()) {
 	draw_set_font(fnt_inventory_item_info_text);
 
 	//Item info background
-	draw_sprite(spr_inv_item_info_bg, 0,viewX+334, viewY+85);
+	draw_sprite(spr_inv_item_info_bg, 0, scr_gui(334,"x"), scr_gui(85,"y"));
 	//Item info text
-	draw_text(viewX+344, viewY+90, itemInfoText);
+	draw_text(scr_gui(344,"x"), scr_gui(90,"y"), itemInfoText);
 }

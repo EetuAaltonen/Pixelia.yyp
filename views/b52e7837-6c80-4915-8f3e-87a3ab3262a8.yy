@@ -5,7 +5,7 @@
     "name": "b52e7837-6c80-4915-8f3e-87a3ab3262a8",
     "children": [
         "dbb32086-cd45-48c1-b420-0055330aec75",
-        "343ef6fc-2a8d-4e28-987f-2791754a2204"
+        "a33e6585-d59f-4ac4-aaea-3a55c611c2e8"
     ],
     "filterType": "GMScript",
     "folderName": "Menu",

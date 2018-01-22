@@ -29,9 +29,9 @@ if (action != "null") {
 		}break;
 		default: {
 			var controller = obj_screen_controller;
-			if (controller.menu_state != action) {
-				controller.menu_state = action;
-				controller.create_buttons = true;
+			if (controller.menuState != action) {
+				controller.menuState = action;
+				controller.createButtons = true;
 			}
 		}break;
 	}

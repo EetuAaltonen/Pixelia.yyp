@@ -54,8 +54,8 @@ if (listSize > 0) {
 		for (i = startIndex; i < lastItem; i++) {
 			data = ds_list_find_value(listOfItems, i);
 			tempMargin = (j*margin);
-			instance_create(viewX+30, viewY+yPos+tempMargin, obj_listed_item);
-			(instance_nearest(viewX+30, viewY+yPos+tempMargin, obj_listed_item)).data = data;
+			instance_create(scr_gui(30,"x"), scr_gui(yPos+tempMargin,"y"), obj_listed_item);
+			(instance_nearest(scr_gui(30,"x"), scr_gui(yPos+tempMargin,"y"), obj_listed_item)).data = data;
 			names[j] = data[1];
 			count[j] = data[3]
 			weight[j] = data[5];
@@ -75,25 +75,25 @@ if (listSize > 0) {
 		for (i = startIndex; i < lastItem; i++) {
 			tempMargin = (j*margin);
 			//Item Icon Background
-	        draw_sprite(spr_inv_item_bg, 0,viewX+30, viewY+yPos+tempMargin);        
+	        draw_sprite(spr_inv_item_bg, 0, scr_gui(30,"x"), scr_gui(yPos+tempMargin,"y"));        
 	        //Item Description Background
-	        draw_sprite(spr_inv_item_description_bg, 0,viewX+120, viewY+yPos+tempMargin);
+	        draw_sprite(spr_inv_item_description_bg, 0, scr_gui(120,"x"), scr_gui(yPos+tempMargin,"y"));
 	        //Item Description
-			draw_text(viewX+56,viewY+yPos+tempMargin, names[j]);
+			draw_text(scr_gui(56,"x"),scr_gui(yPos+tempMargin,"y"), names[j]);
 			//Item Count Background
-	        draw_sprite(spr_inv_item_count_bg, 0,viewX+228, viewY+yPos+tempMargin);
+	        draw_sprite(spr_inv_item_count_bg, 0, scr_gui(228,"x"), scr_gui(yPos+tempMargin,"y"));
 			//Item Count
-			draw_text(viewX+207,viewY+yPos+tempMargin, string(count[j]) + "  x");
+			draw_text(scr_gui(207,"x"), scr_gui(yPos+tempMargin,"y"), string(count[j]) + "  x");
 			if (string_pos("inventory", global.hudState)) {
 				//Item Weight Background
-	            draw_sprite(spr_inv_item_count_bg, 0,viewX+295, viewY+yPos+tempMargin);
+	            draw_sprite(spr_inv_item_count_bg, 0, scr_gui(295,"x"), scr_gui(yPos+tempMargin,"y"));
 				//Item Weight
-				draw_text(viewX+274,viewY+yPos+tempMargin, string(weight[j]) + "  Pw");
+				draw_text(scr_gui(274,"x"), scr_gui(yPos+tempMargin,"y"), string(weight[j]) + "  Pw");
 			} else if (string_pos("shop", global.hudState)) {
 				//Item Price Background
-	            draw_sprite(spr_inv_item_count_bg, 0,viewX+295, viewY+yPos+tempMargin);
+	            draw_sprite(spr_inv_item_count_bg, 0, scr_gui(295,"x"), scr_gui(yPos+tempMargin,"y"));
 				//Item Price
-				draw_text(viewX+274,viewY+yPos+tempMargin, string(price[j]) + "  G");
+				draw_text(scr_gui(274,"x"), scr_gui(yPos+tempMargin,"y"), string(price[j]) + "  G");
 			}
 			j++;
 		}
@@ -113,9 +113,9 @@ if (listSize > 0) {
 	}
 	//If empty
 	if (global.hudState == "stashWithdraw") {
-		draw_text(viewX+30, viewY+120, "Stash is empty...");
+		draw_text(scr_gui(30,"x"), scr_gui(120,"y"), "Stash is empty...");
 	} else {
-		draw_text(viewX+30, viewY+120, "Inventory is empty...");
+		draw_text(scr_gui(30,"x"), scr_gui(120,"y"), "Inventory is empty...");
 	}
 }
 

@@ -1,5 +1,5 @@
 //Clear Hud State
-global.hudState = "null";
+scr_close_global_hudstate();
 
 //Save Game
 scr_savegame();
@@ -32,8 +32,8 @@ with(obj_first_loading) {
 }
 
 //Set Menu Properties
-obj_screen_controller.menu_state = "main_menu";
-obj_screen_controller.create_buttons = true;
+obj_screen_controller.menuState = "mainMenu";
+obj_screen_controller.createButtons = true;
 
 //Go To Menu
 room_goto(Menu);
