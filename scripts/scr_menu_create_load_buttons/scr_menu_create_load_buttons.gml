@@ -11,15 +11,15 @@ var buttons = [
 var count = array_length_1d(buttons);
 var button;
 var i;
-var margin = 26;
+var margin = 40;
 //Create Buttons
 for (i = 0; i < count; i++) {
 	var button = buttons[i];
-	instance_create(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button);
-	(instance_nearest(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button)).action = button[0];
-	(instance_nearest(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button)).infoText = button[1];
+	instance_create(viewX+110, viewY+150+(margin*i), obj_menu_button);
+	(instance_nearest(viewX+110, viewY+150+(margin*i), obj_menu_button)).action = button[0];
+	(instance_nearest(viewX+110, viewY+150+(margin*i), obj_menu_button)).infoText = button[1];
 }
 //Text Box
-instance_create(viewX+100, viewY+112, obj_menu_text_box);
+instance_create(viewX+110, viewY+110, obj_menu_text_box);
 //SearchSaves
 searchSaves = true; 

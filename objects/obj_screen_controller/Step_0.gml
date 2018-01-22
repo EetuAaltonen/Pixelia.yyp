@@ -34,6 +34,12 @@ if (room == Menu) {
 		if (instance_exists(obj_menu_orb_of_dysforia)) {
 			with (obj_menu_orb_of_dysforia) instance_destroy();
 		}
+		if (instance_exists(obj_menu_text_box)) {
+			with (obj_menu_text_box) instance_destroy();	
+		}
+		if (instance_exists(obj_menu_saved_game)) {
+			with (obj_menu_saved_game) instance_destroy();	
+		}
         if (menu_state == "mainMenu") {
 			scr_menu_create_main_buttons();
         } else if (menu_state == "loadGame") {
@@ -67,7 +73,7 @@ if (searchSaves) {
     
     if (file_exists(file) && string(file) != "Inventory.sav" && string(file) != "SkillTree.sav") {
         var margin_bottom = 22;
-        var x_pos = 250;
+        var x_pos = 350;
         var y_pos = 96;
         instance_create(view_xview+x_pos, view_yview+y_pos,obj_menu_saved_game);
         (instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).load_file = string_replace(file, ".sav", "");

@@ -2591,6 +2591,14 @@
             }
         },
         {
+            "Key": "46868ddf-fba7-43b3-aca4-1927f5de51fb",
+            "Value": {
+                "id": "bb08b955-26b8-4832-81da-e54fde11c56d",
+                "resourcePath": "fonts\\fnt_draw_gui_menu_saves\\fnt_draw_gui_menu_saves.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "46ad0b3d-6f87-4763-af95-970fa05c757c",
             "Value": {
                 "id": "a97cad8e-69e5-4ff3-b9c3-7ec9bca8b720",
