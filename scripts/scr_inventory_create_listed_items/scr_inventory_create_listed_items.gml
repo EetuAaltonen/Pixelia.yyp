@@ -9,21 +9,18 @@
 	effect; 7 
 	effectAmount; 8
 }*/
+if (updateValues) {
+	var viewX = camera_get_view_x(view_camera[0]);
+	var viewY = camera_get_view_y(view_camera[0]);
 
-var listOfItems = argument0;
+	var yPos;
+	var margin = 19, tempMargin;
+	var i, j;
+	var data;
+	var listSize = ds_list_size(listOfItems);
 
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-
-var yPos;
-var margin = 19, tempMargin;
-var i, j;
-var data;
-var listSize = ds_list_size(listOfItems);
-
-if (listSize > 0) {
-	if (updateValues) {
-		updateValues = false;
+	updateValues = false;
+	if (listSize > 0) {
 		yPos = 120;
 		//Destroy listed items
 		if (instance_exists(obj_listed_item)) {
@@ -54,8 +51,8 @@ if (listSize > 0) {
 		for (i = startIndex; i < lastItem; i++) {
 			data = ds_list_find_value(listOfItems, i);
 			tempMargin = (j*margin);
-			instance_create(scr_gui(30,"x"), scr_gui(yPos+tempMargin,"y"), obj_listed_item);
-			(instance_nearest(scr_gui(30,"x"), scr_gui(yPos+tempMargin,"y"), obj_listed_item)).data = data;
+			instance_create(viewX+30, viewY+yPos+tempMargin, obj_listed_item);
+			(instance_nearest(viewX+30, viewY+yPos+tempMargin, obj_listed_item)).data = data;
 			names[j] = data[1];
 			count[j] = data[3]
 			weight[j] = data[5];
@@ -85,8 +82,8 @@ if (listSize > 0) {
 	}
 	//If empty
 	if (global.hudState == "stashWithdraw") {
-		draw_text(scr_gui(30,"x"), scr_gui(120,"y"), "Stash is empty...");
+		draw_text(viewX+30, viewY+120, "Stash is empty...");
 	} else {
-		draw_text(scr_gui(30,"x"), scr_gui(120,"y"), "Inventory is empty...");
+		draw_text(viewX+30, viewY+120, "Inventory is empty...");
 	}
 }

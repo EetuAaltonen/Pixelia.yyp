@@ -82,3 +82,6 @@ if (global.hudState != "map") {
 	//Potions
 	draw_text(viewX+212,viewY+279, string(global.potions));
 }
+
+//Background
+scr_inventory_draw_background();

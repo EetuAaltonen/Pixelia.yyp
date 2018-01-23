@@ -16,7 +16,7 @@ var buttons = [
 	["close", "Close", "small"],
 ];
 var button;
-var margin = 20;
+var margin = 5;
 var xPos = 0;
 var width;
 var spriteIndex;
@@ -31,9 +31,10 @@ for (i = 0; i < arrayLength; i++) {
 		spriteIndex = spr_inv_button_small;
 		width = 40;
 	}
-	instance_create(viewX+4+xPos+margin, viewY+40, obj_inv_button);
-	(instance_nearest(viewX+4+xPos+margin, viewY+40, obj_inv_button)).hudState = button[0];
-	(instance_nearest(viewX+4+xPos+margin, viewY+40, obj_inv_button)).infoText = button[1];
-	(instance_nearest(viewX+4+xPos+margin, viewY+40, obj_inv_button)).sprite_index = spriteIndex;
-	xPos += width;
+	instance_create(viewX+4+xPos, viewY+40, obj_inv_button);
+	(instance_nearest(viewX+4+xPos, viewY+40, obj_inv_button)).hudState = button[0];
+	(instance_nearest(viewX+4+xPos, viewY+40, obj_inv_button)).infoText = button[1];
+	(instance_nearest(viewX+4+xPos, viewY+40, obj_inv_button)).sprite_index = spriteIndex;
+	(instance_nearest(viewX+4+xPos, viewY+40, obj_inv_button)).depth = obj_inventory_controller.depth-1;
+	xPos += (width+margin);
 }

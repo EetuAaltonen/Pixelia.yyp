@@ -4,6 +4,8 @@ reso_width = 1920;
 reso_height = 1080;
 //display_reset(0, true);
 surface = 5; //1px = 5x5px
+global.resWAspect = 1;
+global.resHAspect = 1;
 scr_resolution(1280, 720);
 //Menu
 menuState = "mainMenu";

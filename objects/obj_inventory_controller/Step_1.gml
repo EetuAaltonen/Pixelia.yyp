@@ -26,6 +26,8 @@ if (updateValues) {
 		
 }
 
-///Page change
+//Page change
 scr_page_change();
 
+//Create Listed Items
+scr_inventory_create_listed_items();

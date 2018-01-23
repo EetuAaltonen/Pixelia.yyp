@@ -1,3 +1,6 @@
+var viewWidth = camera_get_view_width(view_camera[0]);
+var viewHeight = camera_get_view_height(view_camera[0]);
+
 var displayWidth = argument0;
 var displayHeight = argument1;
 view_set_wport(0, displayWidth);
@@ -17,3 +20,6 @@ if (displayWidth >= displayHeight) {
 }
 
 surface_resize(application_surface, width, height);
+
+global.resWAspect = (displayWidth/viewWidth);
+global.resHAspect = (displayHeight/viewHeight);
