@@ -22,6 +22,10 @@ if (keyboard_check_pressed(vk_tab) && global.hudState == "null") {
 	scr_inventory_close();
 }
 
+if (updateValues) {
+		
+}
+
 ///Page change
 scr_page_change();
 

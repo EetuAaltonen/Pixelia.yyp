@@ -1,0 +1,2 @@
+hudState = "null";
+infoText = "";

@@ -1,9 +1,10 @@
 obj_menu_text_box.selected = false;
 obj_menu_text_box.blink_icon = "";
-var file = obj_menu_delete.file;
+var file = (obj_menu_text_box.txt + ".sav");
 file_delete(file);
 obj_menu_text_box.txt = "";
 keyboard_string = obj_menu_text_box.txt;
+scr_menu_active_delete_button_check();
 if (instance_exists(obj_menu_saved_game)) {
     with (obj_menu_saved_game) instance_destroy();
 }

@@ -5,18 +5,35 @@ scr_set_global_hudstate("inventoryBackpack");
 updateValues = true;
 pageIndex = 1;
 filter = "null";
+
 //Create Buttons
 var buttons = [
-	obj_inv_backpack_button,
-	obj_inv_equipments_button,
-	obj_inv_skill_tree_button,
-	obj_inv_stats_button,
-	obj_inv_save_exit_button,
-	obj_inv_close_button
+	["inventoryBackpack", "Backpack", "medium"],
+	["inventoryEquipments", "Equipments", "medium"],
+	["skillTree", "Skill Tree", "medium"],
+	["Stats", "Stats", "small"],
+	["save&exit", "Save And Exit", "medium"],
+	["close", "Close", "small"],
 ];
-var margin = 5;
+var button;
+var margin = 20;
+var xPos = 0;
+var width;
+var spriteIndex;
+var i;
 var arrayLength = array_length_1d(buttons);
-for (var i = 0; i < arrayLength; i++) {
-	instance_create(viewX+4+(i*(85+margin)), viewY+40, buttons[i]);
-	buttons[i].depth = (depth-1);
+for (i = 0; i < arrayLength; i++) {
+	button = buttons[i];
+	if (button[2] == "medium") {
+		spriteIndex = spr_inv_button_medium;
+		width = 84;
+	} else {
+		spriteIndex = spr_inv_button_small;
+		width = 40;
+	}
+	instance_create(viewX+4+xPos+margin, viewY+40, obj_inv_button);
+	(instance_nearest(viewX+4+xPos+margin, viewY+40, obj_inv_button)).hudState = button[0];
+	(instance_nearest(viewX+4+xPos+margin, viewY+40, obj_inv_button)).infoText = button[1];
+	(instance_nearest(viewX+4+xPos+margin, viewY+40, obj_inv_button)).sprite_index = spriteIndex;
+	xPos += width;
 }
