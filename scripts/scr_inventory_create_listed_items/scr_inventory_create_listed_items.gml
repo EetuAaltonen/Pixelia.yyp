@@ -19,13 +19,25 @@ var data;
 var listSize = ds_list_size(listOfItems);
 	
 if (listSize > 0) {
-	yPos = 120;
-	//Destroy listed items
-	if (instance_exists(obj_listed_item)) {
-		with (obj_listed_item) instance_destroy();
+	/*//Clear item info
+	itemInfoText = defaultInfoText;
+		
+	//Max Page Index
+	maxPageIndex = ceil(listSize / itemsPerPage);
+	if (pageIndex > maxPageIndex) {
+		pageIndex = maxPageIndex;
 	}
 		
-	//Clear item info
+	//Last item
+	if (listSize == pageIndex*itemsPerPage) {
+		lastItem = listSize;
+	} else if (listSize > pageIndex*itemsPerPage) {
+		lastItem = pageIndex*itemsPerPage;
+	} else {
+		lastItem = listSize;
+	}
+	startIndex = (pageIndex-1)*itemsPerPage;*/
+	/*//Clear item info
 	itemInfoText = defaultInfoText;
 		
 	//Max Page Index
@@ -43,14 +55,10 @@ if (listSize > 0) {
 		lastItem = listSize;
 	}
 	startIndex = (pageIndex-1)*itemsPerPage;
-		
-	//Create items
+	
 	j = 0;
 	for (i = startIndex; i < lastItem; i++) {
 		data = ds_list_find_value(listOfItems, i);
-		tempMargin = (j*margin);
-		instance_create(viewX+30, viewY+yPos+tempMargin, obj_listed_item);
-		(instance_nearest(viewX+30, viewY+yPos+tempMargin, obj_listed_item)).data = data;
 		names[j] = data[1];
 		count[j] = data[3]
 		weight[j] = data[5];
@@ -63,16 +71,46 @@ if (listSize > 0) {
 			price[j] = data[6];
 		}
 		j++;
-	}
+	}*/
+	
+	//Destroy listed items
+	/*if (instance_exists(obj_listed_item)) {
+		yPos = 120;
+		
+		//Create items
+		for (i = startIndex; i < lastItem; i++) {
+			data = ds_list_find_value(listOfItems, i);
+			tempMargin = (j*margin);
+			instance_create(scr_gui(30, "x"), scr_gui(yPos+tempMargin, "y"), obj_listed_item);
+			(instance_nearest(scr_gui(30, "x"), scr_gui(yPos+tempMargin, "y"), obj_listed_item)).index = i;
+			(instance_nearest(scr_gui(30, "x"), scr_gui(yPos+tempMargin, "y"), obj_listed_item)).data = data;
+			(instance_nearest(scr_gui(30, "x"), scr_gui(yPos+tempMargin, "y"), obj_listed_item)).depth = depth-1;
+		}
+	} else {
+		var itemCount = instance_number(obj_listed_item);
+		var item;
+		//Create items
+		for (i = startIndex; i < lastItem; i++) {
+			data = ds_list_find_value(listOfItems, i);
+			for (j = 0; j < itemCount; j++) {
+				item = instance_find(obj_listed_item, j);
+				if (item.index == j) {
+					item.name = "";
+					item.data = data;
+					break;	
+				}
+			}
+		}
+	}*/
 } else {
 	if (updateValues) {
-		maxPageIndex = 1;
+		/*maxPageIndex = 1;
 		itemInfoText = defaultInfoText;
 		
 		//Destroy listed items
 		if (instance_exists(obj_listed_item)) {
 			with (obj_listed_item) instance_destroy();
-		}
+		}*/
 	}
 	/*if (updateValues) {
 		updateValues = false;
@@ -86,10 +124,5 @@ if (listSize > 0) {
 			with (obj_listed_item) instance_destroy();
 		}
 	}*/
-	//If empty
-	if (global.hudState == "stashWithdraw") {
-		draw_text(viewX+30, viewY+120, "Stash is empty...");
-	} else {
-		draw_text(viewX+30, viewY+120, "Inventory is empty...");
-	}
+	
 }

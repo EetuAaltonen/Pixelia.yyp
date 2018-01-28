@@ -25,6 +25,8 @@ switch (category) {
 			["Oak Log", "Steel Ingot", "", "Saw", 1],
 			["Oak Log", "Knife", "", "Bow Model", 1],
 			["Bow Model", "String", "", "Bow", 1],
+			["Iron Ingot", "Wooden Stick", "Feather", "Arrow", 10],
+			["Oak Log", "Saw", "Knife", "Wooden Stick", 10],
 		];
 	}break;
 	case "anvil": {

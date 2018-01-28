@@ -5,6 +5,9 @@ if (global.hudState == "minigame") {
 				case "woodcutting": {
 					scr_minigame_woodcutting_draw();
 				}break;
+				case "mining": {
+					scr_minigame_woodcutting_draw();
+				}break;
 			}
 		} else {
 			minigame = "null";

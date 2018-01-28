@@ -4,12 +4,12 @@ key = "";
 typeId = "";
 
 //Inventory
-updateValues = true;
+updateValues = false;
 listOfItems = ds_list_create();
 
 pageIndex = 1;
 maxPageIndex = 1;
-itemsPerPage = 8;
+itemsPerPage = 10;
 startIndex = 0;
 lastItem = 0;
 
@@ -20,7 +20,7 @@ weight = [];
 price = [];
 
 //Shop
-listOfshop = "null";
+listOfShop = "null";
 merchant = "null";
 
 pageUpdate = true;

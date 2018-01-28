@@ -12,4 +12,3 @@ if (instance_exists(obj_player)) {
         global.enchantingXp = 0;
     } 
 }
-

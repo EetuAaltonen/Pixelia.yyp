@@ -5,7 +5,7 @@
     "name": "spr_source_iron_ore",
     "For3D": false,
     "HTile": false,
-    "VTile": false,
+    "VTile": true,
     "bbox_bottom": 15,
     "bbox_left": 0,
     "bbox_right": 31,

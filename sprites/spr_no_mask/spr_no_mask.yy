@@ -14,7 +14,30 @@
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
-    "frames": null,
+    "frames": [
+        {
+            "id": "af65279b-87cc-498c-a529-4c5643e46036",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "c909be64-1c82-4fc9-85d2-49725dc27807",
+            "compositeImage": {
+                "id": "168d9ebf-f073-4c43-b867-c1510b8f758f",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "af65279b-87cc-498c-a529-4c5643e46036",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "d9034720-a0b4-4ab4-ac06-b53bb14d52f1",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "af65279b-87cc-498c-a529-4c5643e46036",
+                    "LayerId": "3e2d822f-7351-4f15-aa98-3d6fb432aaa0"
+                }
+            ]
+        }
+    ],
     "gridX": 0,
     "gridY": 0,
     "height": 32,

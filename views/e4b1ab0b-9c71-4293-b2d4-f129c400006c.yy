@@ -14,9 +14,8 @@
         "3eef7227-36ca-4f90-9f52-81a3223382f5",
         "306d8346-e8de-4308-9e47-7ed7834997a8",
         "9ed65030-3b1c-49cb-b52e-b863dbfc7415",
-        "98255e3d-04cd-4f90-8813-317ff33c615c",
         "eb1e7777-b1be-4cc4-b5b3-8d8599e7c310",
-        "78a492a7-5504-4ffb-b53f-146f567b23fe"
+        "98255e3d-04cd-4f90-8813-317ff33c615c"
     ],
     "filterType": "GMSprite",
     "folderName": "Ores",

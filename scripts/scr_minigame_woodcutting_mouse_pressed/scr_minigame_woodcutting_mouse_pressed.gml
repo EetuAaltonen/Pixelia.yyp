@@ -1,12 +1,7 @@
-if (woodcuttingDirect != "stop") {
-	var direct = woodcuttingDirect;
-	var forceScale = woodcuttingForceScale;
-	var targetScale = woodcuttingTargetHeight;
-	var targetY = woodcuttingTargetY;
-				
-	woodcuttingTempDirect = woodcuttingDirect;
-	woodcuttingDirect = "stop";
-	if (forceScale >= targetY && forceScale <= (targetY+targetScale)) {
+if (forceDirect != "stop") {
+	tempDirect = forceDirect;
+	forceDirect = "stop";
+	if (forceScale >= targetY && forceScale <= (targetY+targetHeight)) {
 		scr_add_new_toast("Hit!");
 		if (instance_exists(obj_player)) {
 			var player = obj_player;
@@ -17,5 +12,5 @@ if (woodcuttingDirect != "stop") {
 		scr_add_new_toast("Miss!");
 	}
 				
-	alarm[1] = scr_to_sec(woodcuttingWaitTime);
+	alarm[1] = scr_to_sec(waitTime);
 }

@@ -7,3 +7,7 @@ enchantingXpReward = 20;
 invulnerable = false;
 maxHealth = 200;
 healthPoints = maxHealth;
+
+//Loot
+name = "Training Dummy";
+loot = "null";

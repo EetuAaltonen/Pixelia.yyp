@@ -10,11 +10,22 @@
 	effectAmount; 8
 }*/
 
-var items = [
+return [
 //  [sprite, name, type/shop, count, durability, weight, price, effect, effectAmount]
 	/*[Collectable]*/
 		//Ores
-		[spr_iron_ore,"Iron Ore","[forge,workbench,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_iron_ore,"Iron Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_gold_ore,"Gold Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_silver_ore,"Silver Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_ebony_ore,"Ebony Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_crimson_ore,"Crimson Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_adamite_ore,"Adamite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_fluellite_ore,"Fluellite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_pinalite_ore,"Pinalite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_troilite_ore,"Troilite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_pyrrhotite_ore,"Pyrrhotite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_cavansite_ore,"Canvasite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_zincite_ore,"Zincite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
 		//Logs
 		[spr_oak_log,"Oak Log","[forge,workbench,blacksmith]",1,"null",1,5,"null","null"],
 		[spr_spruce_log,"Spruce Log","[forge,workbench,blacksmith]",1,"null",1,5,"null","null"],
@@ -41,6 +52,8 @@ var items = [
 		[spr_bow_model,"Bow Model","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 		//String
 		[spr_string,"String","[workbench,blacksmith]",1,"null",0.01,5,"null","null"],
+		//String
+		[spr_wooden_stick,"Wooden Stick","[workbench,blacksmith]",1,"null",0.01,5,"null","null"],
 	/*[Equipments]*/
 		//Helmets
 		[spr_broken_helmet,"Broken Helmet","[equipment,helmet,blacksmith]",1,"null",0.3,5,"null","null"],
@@ -61,6 +74,6 @@ var items = [
 	[spr_tool_saw,"Saw","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 	[spr_tool_knife,"Knife","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 	/*[Animals]*/
-	[spr_wool,"Wool","[workbench,spinningWheel,blacksmith]",1,"null",0.1,5,"null","null"]
-]
-return items;
+	[spr_wool,"Wool","[workbench,spinningWheel,blacksmith]",1,"null",0.1,5,"null","null"],
+	[spr_feather,"Feather","[workbench,blacksmith]",1,"null",0.1,5,"null","null"]
+];

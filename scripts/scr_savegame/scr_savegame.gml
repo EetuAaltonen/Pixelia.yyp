@@ -37,6 +37,8 @@ if (string_length(string(current_second)) < 2) {
 }
 Datetime += (":" + minutes + ":" + seconds);
 
+ini_write_string(global.save_file,"game_version", global.gameVersion);
+
 ini_write_string(global.save_file,"last_played", Datetime);
             
 ini_write_real(global.save_file,"room",global.currentRoom);

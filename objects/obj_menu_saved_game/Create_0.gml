@@ -4,4 +4,5 @@ load_file = "";
 menuState = "load_game";
 //Datetime
 Datetime = "";
-
+//Outdated
+outDated = false;

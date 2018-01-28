@@ -25,24 +25,11 @@ switch (actionState) {
 		scr_plr_ladder();
 	}break;
 	case "woodcutting": {
-		/*if (sprite_index != spr_plr_woodcutting) {
-			sprite_index = spr_plr_woodcutting;
-			image_speed = 0.1;
-		}*/
-		
 		//Gravity
 		scr_custom_gravity();
 		hspeed = 0;
 	}break;
 	case "mining": {
-		if (sprite_index != spr_plr_mining) {
-			sprite_index = spr_plr_mining;
-			image_speed = 0.1;
-		}
-		/*if (keyboard_check_pressed(ord("E"))) {
-			scr_plr_set_action_state_null();
-		}*/
-		
 		//Gravity
 		scr_custom_gravity();
 		hspeed = 0;

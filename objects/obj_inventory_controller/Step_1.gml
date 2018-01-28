@@ -24,3 +24,6 @@ if (keyboard_check_pressed(vk_tab) && global.hudState == "null") {
 
 //Page change
 scr_page_change();
+
+//Update Values Of Listed Items
+scr_inventory_update_values();

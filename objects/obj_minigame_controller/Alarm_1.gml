@@ -1,32 +1,26 @@
 ///@description Woodcutting
-var forceScale = woodcuttingForceScale;
-var amount = woodcuttingForceAmount;
-var maxScale = woodcuttingMaxScale;
-var direct = woodcuttingDirect;
-var timerSpeed = woodcuttingSpeed;
-
 if (global.hudState == "minigame") {
 	if (minigame != "null" && minigameInitialized) {
-		switch (direct) {
+		switch (forceDirect) {
 			case "up": {
-				if (forceScale >= (maxScale-amount)) {
-					woodcuttingDirect = "down";
+				if (forceScale >= (maxScale-forceAmount)) {
+					forceDirect = "down";
 				} else {
-					woodcuttingForceScale += amount;
+					forceScale += forceAmount;
 				}
-				alarm[1] = scr_to_sec(timerSpeed);
+				alarm[1] = scr_to_sec(forceSpeed);
 			}break;
 			case "down": {
 				if (forceScale <= 0) {
-					woodcuttingDirect = "up";
+					forceDirect = "up";
 				} else {
-					woodcuttingForceScale -= amount;
+					forceScale -= forceAmount;
 				}
-				alarm[1] = scr_to_sec(timerSpeed);
+				alarm[1] = scr_to_sec(forceSpeed);
 			}break;
 			case "stop": {
-				woodcuttingDirect = woodcuttingTempDirect;
-				woodcuttingTargetY = "null";
+				forceDirect = tempDirect;
+				targetY = "null";
 				/*if (some thing to stop this) {
 					minigame = "null";
 					minigameInitialized = false;

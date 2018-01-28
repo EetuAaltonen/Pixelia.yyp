@@ -6,6 +6,9 @@ if (global.hudState == "minigame") {
 				case "woodcutting": {
 					scr_minigame_woodcutting_initialize();
 				}break;
+				case "mining": {
+					scr_minigame_woodcutting_initialize();
+				}break;
 			}
 			minigameInitialized = true;
 		} else {
@@ -19,6 +22,9 @@ if (global.hudState == "minigame") {
 		switch(minigame) {
 			case "woodcutting": {
 				scr_minigame_woodcutting_mouse_pressed();
+			}break;
+			case "mining": {
+				scr_minigame_mining_mouse_pressed();
 			}break;
 		}
 	}

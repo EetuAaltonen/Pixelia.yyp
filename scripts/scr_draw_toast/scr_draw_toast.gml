@@ -1,14 +1,14 @@
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-var viewWidth = camera_get_view_width(view_camera[0]);
-var viewHeight = camera_get_view_height(view_camera[0]);
+//Font
+draw_set_font(fnt_draw_gui_inventory);
+draw_set_color(c_white);
+draw_set_halign(fa_right);
+draw_set_valign(fa_middle);
 
 if (drawToast) {
-    var margin = ((string_width(toastMessage)/2)*(-1));
-    var bgWidth = (string_width(toastMessage) + 10);
-    draw_sprite_ext(spr_toaster_bg,0,viewX+480+margin-(bgWidth/2),
-                    viewY+260+toastYPos,
-                    bgWidth,1,image_angle,c_black,toastAlpha);
-    draw_text_colour(viewX+480+margin, viewY+260+toastYPos, string(toastMessage),
+	var margin = (5*2)*global.resWAspect;
+    var bgWidth = ((string_width(toastMessage)+margin)*(-1));
+    draw_sprite_ext(spr_toaster_bg,0,scr_gui(490,"x"), scr_gui(260+toastYPos,"y"),
+                    bgWidth,1*global.resWAspect,image_angle,c_black,toastAlpha);
+    draw_text_colour(scr_gui(485,"x"), scr_gui(260+toastYPos,"y"), string(toastMessage),
                     c_white, c_white, c_white, c_white, toastAlpha);
 }

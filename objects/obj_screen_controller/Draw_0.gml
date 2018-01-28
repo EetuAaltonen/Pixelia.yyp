@@ -17,8 +17,10 @@ if (!pause && !unfocus) {
 	
 	//Darkness Effect
 	if (instance_exists(obj_area_darkness)) {
-		if (darknessAlpha > 0 && global.hudState == "null") {
-			draw_sprite_ext(spr_darkness, 0, viewX, viewY, viewWidth, viewHeight, 0, c_white, darknessAlpha);
+		if (darknessAlpha > 0) {
+			if (global.hudState == "null" || global.hudState == "minigame") {
+				draw_sprite_ext(spr_darkness, 0, viewX, viewY, viewWidth, viewHeight, 0, c_white, darknessAlpha);
+			}
 		}
 	}
 } else {

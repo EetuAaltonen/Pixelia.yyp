@@ -56,6 +56,7 @@ if (room == Menu) {
 if (searchSaves) {
 	var a;
 	var i;
+	var version;
     searchSaves = false;
     //Clear temp saves
     for (a = 0; a < 8; a++) {
@@ -63,7 +64,7 @@ if (searchSaves) {
     }
     file = file_find_first("*.sav", 0);
     if (file_exists(file)) {
-        if (string(file) == "Inventory.sav" || string(file) == "SkillTree.sav") {
+        if (string(file) == "Inventory.ini" || string(file) == "SkillTree.ini") {
             file = file_find_next();
         }
         if (file_exists(file)) {
@@ -71,7 +72,7 @@ if (searchSaves) {
         }
     }
     
-    if (file_exists(file) && string(file) != "Inventory.sav" && string(file) != "SkillTree.sav") {
+    if (file_exists(file) && string(file) != "Inventory.ini" && string(file) != "SkillTree.ini") {
         var margin_bottom = 22;
         var x_pos = 350;
         var y_pos = 105;
@@ -80,9 +81,13 @@ if (searchSaves) {
         if (file_exists(file)) {
             ini_open(file);
             (instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).Datetime = ini_read_string(file,"last_played","");
-            ini_close();
+            version = ini_read_string(file,"game_version","null");
+			if (version != global.gameVersion) {
+				(instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).outDated = true;	
+			}
+			ini_close();
         }
-        for (i = 1; i <= 7; i++) {
+		for (i = 1; i <= 7; i++) {
             file = file_find_next();
             if (string(file) == "Inventory.sav" || string(file) == "SkillTree.sav") {
                 file = file_find_next();
@@ -94,6 +99,10 @@ if (searchSaves) {
                 if (file_exists(file)) {
                     ini_open(file);
                     (instance_nearest(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game)).Datetime = ini_read_string(file,"last_played","");
+					version = ini_read_string(file,"game_version","null");
+					if (version != global.gameVersion) {
+						(instance_nearest(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game)).outDated = true;	
+					}
                     ini_close();
                 }
             } else {

@@ -1,7 +1,7 @@
 draw_self();
 scr_highlight_self();
 
-//Show Text
+/*//Show Text
 if (global.hudState == "null" && image_blend != make_colour_hsv(0, 0, -1)) {
 	//Font
 	draw_set_font(fnt_sign_text);

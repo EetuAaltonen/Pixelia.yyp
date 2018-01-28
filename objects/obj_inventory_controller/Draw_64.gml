@@ -16,13 +16,6 @@ if (global.hudState == "inventoryBackpack" ||
 	global.hudState == "inventoryEquipments" ||
 	scr_hud_state_some_of_crafting()) {
 	
-	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
-		filter = "";
-		pageIndex = 1;
-	}
-	
 	scr_inventory_list_backpack();
 } else if (global.hudState == "inventorySkills") {
     draw_text(viewX+30, viewY+120, "Coming Soon!");
@@ -117,6 +110,5 @@ if (global.hudState == "inventoryBackpack" ||
 		filter = "";
 		pageIndex = 1;
 	}
-	
 	scr_inventory_list_backpack();
 }

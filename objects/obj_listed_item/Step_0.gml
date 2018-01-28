@@ -16,14 +16,15 @@ if (mask_index != spr_inv_item_bg) {
 
 if (name == "" && data != "null") {
 	sprite_index = data[0];
+	mask_index = spr_inv_item_bg;
 	name = data[1];
 	count = data[3];
-	
 	var description;
 	var info = scr_item_info_struct();
 	var mark = scr_item_mark_struct();
 	var i;
 	var arraySize = array_length_1d(data);
+	infoText = "";
 	for (i = 0; i < arraySize; i++) {
 		if (data[i] != "null") {
 			if (i == 1 || i == 3 || i == 4 || i == 5 ||
@@ -33,6 +34,7 @@ if (name == "" && data != "null") {
 			}
 		}
 	}
+	equipmentIndex = "";
 	//Check If Equipped
 	if (string_pos("equipment", data[2]) != 0) {
 		scr_listed_item_check_equipped();
@@ -75,18 +77,20 @@ if (name == "" && data != "null") {
 
 if (checkSelected) {
 	checkSelected = false;
-	if (scr_hud_state_some_of_crafting()) {
-		selected = false;
-		if (instance_exists(obj_crafting_slot)) {
-			var slot;
-			var slotCount = instance_number(obj_crafting_slot);
-			var i;
-			for (i = 0; i < slotCount; i++) {
-				slot = instance_find(obj_crafting_slot, i);
-				if (slot.item != "null") {
-					if (scr_item_compare_items(slot.item, data)) {
-						selected = true;
-						break;
+	if (data != "null") {
+		if (scr_hud_state_some_of_crafting()) {
+			selected = false;
+			if (instance_exists(obj_crafting_slot)) {
+				var slot;
+				var slotCount = instance_number(obj_crafting_slot);
+				var i;
+				for (i = 0; i < slotCount; i++) {
+					slot = instance_find(obj_crafting_slot, i);
+					if (slot.item != "null") {
+						if (scr_item_compare_items(slot.item, data)) {
+							selected = true;
+							break;
+						}
 					}
 				}
 			}

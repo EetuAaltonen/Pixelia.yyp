@@ -9,7 +9,7 @@ if (instance_exists(obj_player)) {
 	} else {
 		show_message(string("Error: " + x_random + " was wrong value!"));
 	}
-	y_random = -5//irandom_range(-5, -10);
+	y_random = -5;//irandom_range(-5, -10);
 
 	instance_create(obj_player.x + x_random, obj_player.y + y_random, obj_dropped_item);
 	(instance_nearest(obj_player.x + x_random, obj_player.y + y_random, obj_dropped_item)).data = data;

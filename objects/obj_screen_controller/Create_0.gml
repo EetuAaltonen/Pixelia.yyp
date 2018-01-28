@@ -1,3 +1,6 @@
+//GAME VERSION
+global.gameVersion = "0.0.0.1";
+
 depth = -1000;
 //Resolution
 reso_width = 1920;

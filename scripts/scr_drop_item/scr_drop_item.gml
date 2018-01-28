@@ -1,8 +1,7 @@
 ///scr_drop_item(argument0)
 var spriteName = sprite_get_name(argument0);
 var randomX, randomY, i;
-for (i = 1; i <= droppedCount; i++)
-{
+for (i = 1; i <= droppedCount; i++) {
     randomX = random_range(-10, 10);
     randomY = random_range(-5, -10);
     instance_create(obj_player.x + randomX, obj_player.y + randomY, obj_dropped_item);

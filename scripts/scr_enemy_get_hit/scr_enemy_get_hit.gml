@@ -14,8 +14,13 @@ if (critical <= global.criticalChance) {
 critical = false;*/
 
 if (armor > 0) {
-	damageToHealth = round(damage*(1-(armor/maxArmor)));
-	damageToArmor = damage;
+	if (damage > armor) {
+		damageToHealth = abs(round(armor-damage));
+		damageToArmor = armor;
+	} else {
+		damageToHealth = round(damage*(1-(armor/maxArmor)));
+		damageToArmor = damage;
+	}
 	armor -= damageToArmor;
 	if (armor < 0) {
 		armor = 0;

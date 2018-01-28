@@ -9,6 +9,7 @@ if (healthPoints == 0) {
     global.kill_counter += 1;
 	healthPoints = maxHealth;
 	armor = maxArmor;
+	scr_enemy_drop_loot(loot);
 }
 /*if (def <= 0)
 {

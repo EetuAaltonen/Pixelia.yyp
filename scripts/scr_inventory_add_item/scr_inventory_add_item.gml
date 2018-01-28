@@ -12,7 +12,6 @@
 
 var item = argument0;
 var count = argument1;
-var controller = obj_inventory_controller;
 var listSize = ds_list_size(global.inventory);
 var alreadyExists = false;
 var data;
@@ -42,7 +41,5 @@ if (count != 0) {
 			item[3] = count;
 			ds_list_add(global.inventory, item);
 		}
-	
-		controller.updateValues = true;
 	}
 }
