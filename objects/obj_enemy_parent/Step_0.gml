@@ -1,3 +1,3 @@
-if (loot == "null") {
-	loot = scr_enemy_initialize_loot(name);
+if (loots == "null") {
+	loots = scr_enemy_initialize_loot(name);
 }

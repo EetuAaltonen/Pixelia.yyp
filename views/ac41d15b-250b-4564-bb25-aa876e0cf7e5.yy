@@ -14,7 +14,8 @@
         "8c747a0d-41aa-439e-adf1-709caef96539",
         "f9ed3150-1da2-47b8-94bb-3256620a0d38",
         "da03f53c-c317-4ae0-939a-5a89ed57c68b",
-        "27c50b36-fe34-4cfc-a57b-2941199a4078"
+        "27c50b36-fe34-4cfc-a57b-2941199a4078",
+        "57298121-8b79-49ce-b053-81cce38ffabb"
     ],
     "filterType": "GMScript",
     "folderName": "Collectable",

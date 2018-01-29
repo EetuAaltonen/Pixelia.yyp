@@ -10,4 +10,4 @@ healthPoints = maxHealth;
 
 //Loot
 name = "Training Dummy";
-loot = "null";
+loots = "null";

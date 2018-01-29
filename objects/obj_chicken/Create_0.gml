@@ -10,4 +10,4 @@ healthPoints = maxHealth;
 
 //Loot
 name = "Chicken";
-loot = "null";
+loots = "null";

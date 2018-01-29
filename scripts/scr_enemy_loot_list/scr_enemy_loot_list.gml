@@ -1,19 +1,19 @@
+/*Data {
+	enemy; 0
+	loots; 1
+}*/
+
 /*Loot {
-	enemies; 0
-	loot; 1
-	count; 2
-	rarity; 3
+	name; 0
+	count; 1
+	rarity; 2
 }*/
 return [
-	/*[Training Dummy]*/
-	["[Training Dummy]", "null", 0, 100],
 	/*[Animals]*/
-		//Meat
-		["[Cow,Sheep,Chicken]", "Raw Meat", 1, 1],
-		//Leather
-		["[Cow]", "Leather", 1, 1],
-		//Feather
-		["[Chicken]", "Feather", 3, 1],
-		//Wool
-		["[Sheep]", "Wool", 1, 1]
+		//Cow
+		["Cow", [ ["Leather", 1, 1], ["Raw Meat", 1, 1] ]],
+		//Chicken
+		["Chicken", [ ["Feather", 3, 1], ["Raw Meat", 1, 1] ]],
+		//Sheep
+		["Sheep", [ ["Wool", 1, 1], ["Raw Meat", 1, 1] ]]
 ];

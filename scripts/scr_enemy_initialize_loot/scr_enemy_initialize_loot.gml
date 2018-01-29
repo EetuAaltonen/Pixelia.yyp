@@ -1,8 +1,12 @@
+/*Data {
+	enemy; 0
+	loots; 1
+}*/
+
 /*Loot {
-	enemies; 0
-	loot; 1
-	count; 2
-	rarity; 3
+	name; 0
+	count; 1
+	rarity; 2
 }*/
 
 /*Item {
@@ -18,21 +22,31 @@
 }*/
 
 var name = argument0;
-var loots = scr_enemy_loot_list();
-var count = array_length_1d(loots);
-var i;
-var loot;
-for (i = 0; i < count; i++) {
-	loot = loots[i];
-	if (string_pos(name, loot[0]) != 0) {
-		if (loot[1] != "null") {
-			var itemCount = loot[2];
-			var data = scr_item_search_data(loot[1], "name");
-			data[3] = itemCount;
-			loot[1] = data;
-			return loot;
+var listOfLoots = scr_enemy_loot_list();
+var arraySize = array_length_1d(listOfLoots);
+var lootCount;
+var loots;
+var i, j;
+
+for (i = 0; i < arraySize; i++) {
+	loots = listOfLoots[i];
+	if (string_pos(name, loots[0]) != 0) {
+		loots = loots[1];
+		var lootCount = array_length_1d(loots);
+		var loot;
+		var count;
+		var data;
+		for (j = 0; j < lootCount; j++) {
+			loot = loots[j];
+			var data = scr_item_search_data(loot[0], "name");
+			//Change Count To Data
+			data[3] = loot[1];
+			//Replace Loot Name By Data
+			loot[0] = data;
+			//Replace New Values To Loots
+			loots[j] = loot;
 		}
+		return loots;
 	}
 }
-//show_message("Loot for " + name + " not found!");
-return "";
+return ["", []];

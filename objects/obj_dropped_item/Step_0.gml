@@ -12,6 +12,9 @@
 
 //Initialize Data
 if (sprite_index == spr_no_mask && data != "null") {
+	if (scr_dropped_item_search_to_stack(data)) {
+		instance_destroy();	
+	}
 	sprite_index = data[0];
 	name = data[1];
 	weight = data[5];
