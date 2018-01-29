@@ -1,8 +1,7 @@
-//scr_listed_item_right_mouse_pressed();
 if (!obj_inventory_controller.updateValues) {
 	switch (global.hudState) {
 		case "inventoryBackpack": {
-			scr_inventory_drop_item();
+			scr_inventory_drop_item(data, -1);
 		}break;
 		case "shopBuy": {
 			scr_shop_buy_item();

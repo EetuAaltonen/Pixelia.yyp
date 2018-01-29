@@ -74,6 +74,8 @@ return [
 	[spr_tool_saw,"Saw","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 	[spr_tool_knife,"Knife","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 	/*[Animals]*/
+	[spr_raw_meat,"Raw Meat","[blacksmith]",1,"null",0.3,5,"null","null"],
+	[spr_leather,"Leather","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 	[spr_wool,"Wool","[workbench,spinningWheel,blacksmith]",1,"null",0.1,5,"null","null"],
 	[spr_feather,"Feather","[workbench,blacksmith]",1,"null",0.1,5,"null","null"]
 ];

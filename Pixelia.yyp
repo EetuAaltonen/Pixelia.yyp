@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "04b29406-9298-43e1-abfb-6f945976d5c9",
+            "Value": {
+                "id": "67328f4c-8cb5-4a9d-a981-162addf5d607",
+                "resourcePath": "sprites\\spr_raw_meat\\spr_raw_meat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04e09a81-da4b-474e-b452-fb8c34f7faa1",
             "Value": {
                 "id": "9d91bf76-e3f6-4e1e-b6d7-9ae87aae7762",
@@ -2404,6 +2412,14 @@
                 "id": "f00f867d-109b-4fb9-b642-4f219f4bd945",
                 "resourcePath": "scripts\\scr_highlight_self\\scr_highlight_self.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3f30177b-9db7-48e6-b114-caf6c224055e",
+            "Value": {
+                "id": "66394315-5be8-4d17-8f4f-9ad7fcbf378c",
+                "resourcePath": "views\\3f30177b-9db7-48e6-b114-caf6c224055e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5807,6 +5823,14 @@
             }
         },
         {
+            "Key": "9c9d4316-cf11-4fe1-ae82-a80eb805533b",
+            "Value": {
+                "id": "4ffd7ad5-875f-464e-abe6-5e291703add6",
+                "resourcePath": "fonts\\fnt_draw_gui_dropped_item\\fnt_draw_gui_dropped_item.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "9d54f6fe-208d-412d-9046-1682451bfda0",
             "Value": {
                 "id": "743a7859-1449-412d-8c60-f408dad06660",
@@ -6427,6 +6451,14 @@
             "Value": {
                 "id": "b5f32896-b099-4cb6-9d71-c6bffe1ca881",
                 "resourcePath": "sprites\\spr_butterfly_sit\\spr_butterfly_sit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b00ef202-b825-4d5c-a75a-11c4faf58b2d",
+            "Value": {
+                "id": "30039983-af1e-45f2-ba12-fda4ddb33f89",
+                "resourcePath": "sprites\\spr_cow_large\\spr_cow_large.yy",
                 "resourceType": "GMSprite"
             }
         },

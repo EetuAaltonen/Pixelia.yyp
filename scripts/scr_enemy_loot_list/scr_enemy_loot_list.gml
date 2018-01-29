@@ -1,4 +1,4 @@
-/*loot = {
+/*Loot {
 	enemies; 0
 	loot; 1
 	count; 2
@@ -8,8 +8,12 @@ return [
 	/*[Training Dummy]*/
 	["[Training Dummy]", "null", 0, 100],
 	/*[Animals]*/
-		//Chicken
+		//Meat
+		["[Cow,Sheep,Chicken]", "Raw Meat", 1, 1],
+		//Leather
+		["[Cow]", "Leather", 1, 1],
+		//Feather
 		["[Chicken]", "Feather", 3, 1],
-		//Sheep
+		//Wool
 		["[Sheep]", "Wool", 1, 1]
 ];
