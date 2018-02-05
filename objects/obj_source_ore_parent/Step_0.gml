@@ -10,17 +10,12 @@ if (source == maxMaterials) {
 
 if (instance_exists(obj_player)) {
 	var player = obj_player;
-	//Cutting Wood
-	if (!mining && distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, -1)) {
-	    if (instance_exists(obj_use)) {
-	        with (obj_use) instance_destroy();
-	    }
-		
+	//Mining
+	if (scr_interact_with_player() && !mining) {
 		player.image_xscale = 1;
 		if (x < player.x) {
 			player.image_xscale = -1;
 		}
-		
 		player.actionState = actionState;
 		canHit = true;
 		mining = true;

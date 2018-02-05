@@ -11,7 +11,8 @@
         "1e4c516f-0d97-4b8e-a340-0f06c5f47c2d",
         "5f36d771-bb02-4bf8-b373-93fbc60ae0d1",
         "cc117883-11f8-42ef-bfe9-c2889a633af1",
-        "2cfef88e-04d6-40f2-9df8-9a78ff0e68fd"
+        "2cfef88e-04d6-40f2-9df8-9a78ff0e68fd",
+        "92845541-85ce-4796-b9cc-f4f1fed18b71"
     ],
     "filterType": "GMSprite",
     "folderName": "Crafting",

@@ -2,7 +2,7 @@
 {
     "name": "Forest_1",
     "id": "16644bef-e983-4eb1-8af3-e34e8d19d887",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

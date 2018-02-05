@@ -3,24 +3,6 @@ var viewY = camera_get_view_y(view_camera[0]);
 var viewWidth = camera_get_view_width(view_camera[0]);
 var viewHeight = camera_get_view_height(view_camera[0]);
 
-if (room != Menu && room != First_loading) {
-	if (instance_exists(obj_player)) {
-		if (targetRoom != currenRoom && alarm[1] <= 0) {
-			obj_player.actionState = "idle";
-			global.hudState = "roomChange";
-			
-			drawViewAlpha = true;
-			alarm[1] = scr_to_sec(transitionSpeed);
-		} else if (targetRoom == currenRoom && alarm[1] <= 0 && viewAlpha == 1) {
-			obj_player.actionState = "idle";
-			global.hudState = "roomChange";
-	
-			drawViewAlpha = true;
-			alarm[1] = scr_to_sec(transitionWaitTime);
-		}
-	}
-}
-
 ///Create menu buttons and change view
 if (room == Menu) {   
     if (createButtons == true) {

@@ -10,25 +10,6 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-if (string_pos("shop", string(global.hudState))) {
-	if (!instance_exists(obj_shop_buy_button)) {
-		//Create Buttons
-		var buttons = [
-			obj_shop_buy_button,
-			obj_shop_sell_button,
-			obj_shop_repair_button,
-			obj_shop_buy_back_button,
-			obj_inv_close_button
-		];
-		var margin = 5;
-		var arrayLength = array_length_1d(buttons);
-		for (var i = 0; i < arrayLength; i++) {
-			instance_create(viewX+4+(i*(85+margin)), viewY+40, buttons[i]);
-			buttons[i].depth = (depth-1);
-		}
-	}
-}
-
 if (global.hudState != "map") {
 	//Font
 	draw_set_font(fnt_inventory_text);

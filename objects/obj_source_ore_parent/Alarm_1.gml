@@ -1,2 +1,4 @@
 ///Reset source
-source = maxMaterials;
+if (!mining) {
+	source = maxMaterials;
+}

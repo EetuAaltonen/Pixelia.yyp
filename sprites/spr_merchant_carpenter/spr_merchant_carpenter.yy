@@ -2,7 +2,7 @@
     "id": "8792ef74-051b-4642-9bf1-47e8807f9485",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_NPC_merchant",
+    "name": "spr_merchant_carpenter",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 4,
     "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,

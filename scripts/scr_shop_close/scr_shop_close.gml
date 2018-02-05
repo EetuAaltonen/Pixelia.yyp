@@ -1,8 +1,8 @@
 scr_close_global_hudstate();
 
 //Destroy Buttons
-if (instance_exists(obj_inv_button_parent)) {
-	with (obj_inv_button_parent) instance_destroy();
+if (instance_exists(obj_inv_button)) {
+	with (obj_inv_button) instance_destroy();
 }
 //Destroy Listed Items
 if (instance_exists(obj_listed_item)) {

@@ -22,7 +22,7 @@ if (string_pos("shop", global.hudState)) {
 	}
 }
 
-if (scr_hud_state_crafting()) {
+if (scr_hud_state_not_crafting()) {
 	draw_set_valign(fa_top);
 	//Item info text
 	draw_text(scr_gui(344,"x"), scr_gui(75,"y"), string_hash_to_newline(itemInfoText));

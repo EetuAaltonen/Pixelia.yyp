@@ -1,11 +1,8 @@
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 ///Open crafting
-if (distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, -1)) {
+if (scr_interact_with_player()) {
 	canOpenClose = false;
-	if (instance_exists(obj_use)) {
-        with (obj_use) instance_destroy();
-    }
     if (global.hudState != hudState) {
         //Create Slots
 		scr_crafting_create_slots(hudState);

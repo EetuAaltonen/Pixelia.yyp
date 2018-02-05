@@ -51,6 +51,9 @@ roll = 0;
 //Cooldown ?
 cooldown = 1;
 
+//Ladder
+canExitLadder = false;
+
 scr_current_room();
 
 if (instance_exists(obj_screen_controller)) {

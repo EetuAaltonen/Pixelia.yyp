@@ -2,7 +2,7 @@
 {
     "name": "Cave_1",
     "id": "5ff1f29b-e9bc-4285-8f8c-6364307285b2",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

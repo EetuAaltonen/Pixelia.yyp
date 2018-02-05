@@ -10,8 +10,12 @@ if (scr_page_change_allowed() && !updateValues) {
 					pageIndex = maxPageIndex;
 				}
 				updateValues = true;
-		    } else if (keyboard_check_pressed(ord("D")) && pageIndex < maxPageIndex) {
-		        pageIndex += 1;
+		    } else if (keyboard_check_pressed(ord("D"))) {
+		        if (pageIndex < maxPageIndex) {
+					pageIndex += 1;
+				} else {
+					pageIndex = 1;	
+				}
 		        updateValues = true; 
 		    }
 		}

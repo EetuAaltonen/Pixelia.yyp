@@ -1,8 +1,8 @@
 {
-    "id": "2865882c-8c4b-4c20-a21c-4f912801eac0",
+    "id": "defd3b50-f50d-4a36-9c4f-18858305815f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_hud_state_crafting",
+    "name": "scr_inventory_create_buttons",
     "IsCompatibility": false,
     "IsDnD": false
 }

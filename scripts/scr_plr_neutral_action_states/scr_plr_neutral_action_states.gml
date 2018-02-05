@@ -6,6 +6,7 @@ if (instance_exists(obj_player)) {
 	
 	if (player.actionState == "null" ||
 		player.actionState == "jump" ||
+		player.actionState == "falling" ||
 		player.actionState == "crouch") {
 		return true;
 	}

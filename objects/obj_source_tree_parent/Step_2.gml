@@ -12,11 +12,7 @@ if (source == maxMaterials) {
 if (instance_exists(obj_player)) {
 	var player = obj_player;
 	//Cutting Wood
-	if (!cuttingWood && distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, -1)) {
-	    if (instance_exists(obj_use)) {
-	        with (obj_use) instance_destroy();
-	    }
-		
+	if (scr_interact_with_player() && !cuttingWood) {
 		player.image_xscale = 1;
 		if (x < player.x) {
 			player.image_xscale = -1;

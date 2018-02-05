@@ -36,6 +36,6 @@ if (keyboard_check_pressed(ord("F"))) { //A
 }
 
 //Bow
-if (keyboard_check_pressed(ord("B"))) { //
+if (keyboard_check_pressed(ord("B"))) { //S
 	scr_plr_abi_bow_start();
 }

@@ -27,8 +27,10 @@ if (string_pos("inventory", global.hudState) != 0 ||
 				draw_sprite(spr_inv_item_description_bg, 0, viewX+35, viewY+yPos+tempMargin);
 				//Item Count Background
 				draw_sprite(spr_inv_item_count_bg, 0, viewX+180, viewY+yPos+tempMargin);
-				//Item Weight/Price Background
-				draw_sprite(spr_inv_item_count_bg, 0, viewX+245, viewY+yPos+tempMargin);
+				if (!scr_hud_state_some_of_crafting()) {
+					//Item Weight/Price Background
+					draw_sprite(spr_inv_item_count_bg, 0, viewX+245, viewY+yPos+tempMargin);
+				}
 				j++;
 			}
 		}  else {
@@ -45,7 +47,7 @@ if (string_pos("inventory", global.hudState) != 0 ||
 	//Your Gold/Total And Weight Background
 	draw_sprite(spr_inv_item_description_bg, 0, viewX+180, viewY+65);
 	
-	if (scr_hud_state_crafting()) {
+	if (scr_hud_state_not_crafting()) {
 		//Item info background
 		draw_sprite(spr_inv_item_info_bg, 0, viewX+334, viewY+65);
 	}

@@ -32,9 +32,12 @@ if (global.hudState == "null" && image_blend != make_colour_hsv(0, 0, -1)) {
 	}*/
 	
 	var lineCount = string_count("#", infoText);
+	var textWidth = string_width(string_hash_to_newline(infoText));
+	var textHeight = string_height(string_hash_to_newline(infoText));
+	var margin = 5;
     //draw_sprite(spr_sign_bg, lineCount, x, y-20);
-	draw_sprite_ext(spr_sign_bg, 0, scr_gui(posX, "x"), scr_gui(posY-20, "y"), 1*global.resHAspect, (lineCount+1)*global.resHAspect, 0, c_white, 1);
-	draw_text(scr_gui(posX, "x"), scr_gui(posY-20, "y"), string_hash_to_newline(infoText));
+	draw_sprite_ext(spr_sign_bg, 0, scr_gui(posX, "x"), scr_gui(posY-20, "y"), textWidth/3, (textHeight+(margin*4)/*(20*(lineCount+1))*/)*(-1), 0, c_white, 1);
+	draw_text(scr_gui(posX, "x"), scr_gui(posY-20-margin, "y"), string_hash_to_newline(infoText));
 } else {
 	tempDepth = depth;
 }

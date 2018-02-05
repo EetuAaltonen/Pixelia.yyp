@@ -27,9 +27,9 @@ return [
 		[spr_cavansite_ore,"Canvasite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
 		[spr_zincite_ore,"Zincite Ore","[forge,blacksmith]",1,"null",1,5,"null","null"],
 		//Logs
-		[spr_oak_log,"Oak Log","[forge,workbench,blacksmith]",1,"null",1,5,"null","null"],
-		[spr_spruce_log,"Spruce Log","[forge,workbench,blacksmith]",1,"null",1,5,"null","null"],
-		[spr_birch_log,"Birch Log","[forge,workbench,blacksmith]",1,"null",1,5,"null","null"],
+		[spr_oak_log,"Oak Log","[forge,workbench,carpenter]",1,"null",1,5,"null","null"],
+		[spr_spruce_log,"Spruce Log","[forge,workbench,carpenter]",1,"null",1,5,"null","null"],
+		[spr_birch_log,"Birch Log","[forge,workbench,carpenter]",1,"null",1,5,"null","null"],
 	/*[Crafting]*/
 		//Coal
 		[spr_coal,"Coal","[forge,workbench,blacksmith]",1,"null",0.5,5,"null","null"],
@@ -49,34 +49,34 @@ return [
 		[spr_zincite_ingot,"Zincite Ingot","[forge,workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 		[spr_cavansite_ingot,"Cavansite Ingot","[forge,workbench,blacksmith]",1,"null",0.3,5,"null","null"],
 		//Bow Model
-		[spr_bow_model,"Bow Model","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
+		[spr_bow_model,"Bow Model","[workbench,general]",1,"null",0.3,5,"null","null"],
 		//String
-		[spr_string,"String","[workbench,blacksmith]",1,"null",0.01,5,"null","null"],
+		[spr_string,"String","[workbench,general]",1,"null",0.01,5,"null","null"],
 		//String
-		[spr_wooden_stick,"Wooden Stick","[workbench,blacksmith]",1,"null",0.01,5,"null","null"],
+		[spr_wooden_stick,"Wooden Stick","[workbench,general]",1,"null",0.01,5,"null","null"],
 	/*[Equipments]*/
 		//Helmets
-		[spr_broken_helmet,"Broken Helmet","[equipment,helmet,blacksmith]",1,"null",0.3,5,"null","null"],
-		[spr_knight_helmet,"Knight Helmet","[equipment,helmet,blacksmith]",1,"null",0.3,5,"null","null"],
+		[spr_broken_helmet,"Broken Helmet","[equipment,helmet,armorer]",1,"null",0.3,5,"null","null"],
+		[spr_knight_helmet,"Knight Helmet","[equipment,helmet,armorer]",1,"null",0.3,5,"null","null"],
 		//Shields
-		[spr_wooden_shield,"Wooden Shield","[equipment,secweapon,blacksmith]",1,"null",0.5,5,"null","null"],
-		[spr_knight_shield,"Knight Shield","[equipment,secweapon,blacksmith]",1,"null",0.5,5,"null","null"],
+		[spr_wooden_shield,"Wooden Shield","[equipment,secweapon,armorer]",1,"null",0.5,5,"null","null"],
+		[spr_knight_shield,"Knight Shield","[equipment,secweapon,armorer]",1,"null",0.5,5,"null","null"],
 		//Boots
-		[spr_leather_boots,"Leather Boots","[equipment,boots,blacksmith]",1,"null",0.3,5,"null","null"],
+		[spr_leather_boots,"Leather Boots","[equipment,boots,armorer]",1,"null",0.3,5,"null","null"],
 		//Rings
-		[spr_silver_ring,"Silver Ring","[equipment,ring,blacksmith]",1,"null",0.01,5,"null","null"],
+		[spr_silver_ring,"Silver Ring","[equipment,ring,armorer]",1,"null",0.01,5,"null","null"],
 	/*[Weapons]*/
 		/*[Bow]*/
-		[spr_bow,"Bow","[equipment,priweapon,blacksmith]",1,"null",0.3,5,"null","null"],
+		[spr_bow,"Bow","[equipment,priweapon,armorer]",1,"null",0.3,5,"null","null"],
 		/*[Arrow]*/
-		[spr_arrow_pouch,"Arrow","[equipment,secweapon,blacksmith]",1,"null",0.01,5,"null","null"],
+		[spr_arrow_pouch,"Arrow","[equipment,secweapon,armorer]",1,"null",0.01,5,"null","null"],
 	/*[Tools]*/
-	[spr_tool_saw,"Saw","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
-	[spr_tool_knife,"Knife","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
+	[spr_tool_saw,"Saw","[workbench,general]",1,"null",0.3,5,"null","null"],
+	[spr_tool_knife,"Knife","[workbench,general]",1,"null",0.3,5,"null","null"],
 	/*[Animals]*/
-	[spr_raw_meat,"Raw Meat","[blacksmith]",1,"null",0.3,5,"null","null"],
-	[spr_cooked_meat,"Cooked Meat","[blacksmith]",1,"null",0.3,5,"null","null"],
-	[spr_leather,"Leather","[workbench,blacksmith]",1,"null",0.3,5,"null","null"],
-	[spr_wool,"Wool","[workbench,spinningWheel,blacksmith]",1,"null",0.1,5,"null","null"],
-	[spr_feather,"Feather","[workbench,blacksmith]",1,"null",0.1,5,"null","null"]
+	[spr_raw_meat,"Raw Meat","[general]",1,"null",0.3,5,"null","null"],
+	[spr_cooked_meat,"Cooked Meat","[general]",1,"null",0.3,5,"null","null"],
+	[spr_leather,"Leather","[workbench,general]",1,"null",0.3,5,"null","null"],
+	[spr_wool,"Wool","[workbench,spinningWheel,general]",1,"null",0.1,5,"null","null"],
+	[spr_feather,"Feather","[workbench,general]",1,"null",0.1,5,"null","null"]
 ];
