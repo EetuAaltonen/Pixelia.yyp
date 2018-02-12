@@ -4415,6 +4415,14 @@
             }
         },
         {
+            "Key": "74f31f6e-aba3-4e4d-aa9a-0791edb1ff0e",
+            "Value": {
+                "id": "037c40fd-bcff-4475-8727-5dd55cbf3417",
+                "resourcePath": "views\\74f31f6e-aba3-4e4d-aa9a-0791edb1ff0e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "753950d2-baea-4135-b4d4-b397eb5b8dc6",
             "Value": {
                 "id": "e00d9469-bfa3-45f3-bbb6-af9b004ca408",
@@ -5107,6 +5115,14 @@
             "Value": {
                 "id": "2768ba1e-6085-4c25-9926-48caf22bbe1c",
                 "resourcePath": "sprites\\spr_cannon_left\\spr_cannon_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "877e7928-d43e-45ec-97e9-8985426e35ea",
+            "Value": {
+                "id": "26be2044-f298-48b9-ad75-15243b79ffac",
+                "resourcePath": "sprites\\spr_crafting_recipe_bg\\spr_crafting_recipe_bg.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7644,6 +7660,14 @@
                 "id": "56ea2a1b-30e8-41c6-b8c4-cea45fd6bdba",
                 "resourcePath": "sprites\\spr_rat_1\\spr_rat_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d0a80a7a-228c-44a3-969e-f164e21ea4b1",
+            "Value": {
+                "id": "ac31432e-9e7c-4eda-bd2a-8f1f358489c2",
+                "resourcePath": "fonts\\fnt_draw_gui_recipe_text\\fnt_draw_gui_recipe_text.yy",
+                "resourceType": "GMFont"
             }
         },
         {

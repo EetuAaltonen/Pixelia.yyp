@@ -1,4 +1,4 @@
-///Coins and auto healing??
+ ///Coins and auto healing??
 if (global.coins < 0) {
     global.coins = 0;
 }

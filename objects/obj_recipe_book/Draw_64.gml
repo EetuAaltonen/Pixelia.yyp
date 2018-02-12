@@ -1,21 +1,20 @@
-draw_self();
-
 if (showRecipeBook) {
 	var viewX = camera_get_view_x(view_camera[0]);
 	var viewY = camera_get_view_y(view_camera[0]);
 	var viewWidth = camera_get_view_width(view_camera[0]);
 	var viewHeight = camera_get_view_height(view_camera[0]);
 	
-	///Inventory
-	//Font
-	draw_set_font(fnt_inventory_text);
-	draw_set_color(c_black);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
+	var portWidth = view_get_wport(0);
+	var portHeight = view_get_wport(0);
+	var posX = scr_draw_position_on_screen(x, "x");
+	var posY = scr_draw_position_on_screen(y, "y");
+
+	//Draw Self
+	draw_sprite_ext(spr_book_bg, 0, scr_gui(viewWidth/2,"x"), scr_gui(viewHeight/2,"y"), global.resWAspect, global.resHAspect, image_angle, c_white, 1);
 	
-	draw_sprite(spr_book_bg, 0, viewX+(viewWidth/2), viewY+(viewHeight/2));
+	//draw_text(viewX+((viewWidth/2)-90), viewY+((viewHeight/2)+78), string(currentPage+1));
 	
-	if (scr_hud_state_some_of_crafting()) {
+	/*if (scr_hud_state_some_of_crafting()) {
 		var recipes = scr_crafting_recipes(global.hudState);
 		var recipe, recipeText;
 		var count = array_length_1d(recipes);
@@ -36,9 +35,7 @@ if (showRecipeBook) {
 			recipeText += " --> " + recipe[3];
 			draw_text(viewX+85,viewY+((viewHeight/2)-70+(i*margin)), recipeText);
 		}
-	}
-	
-	draw_text(viewX+((viewWidth/2)-90), viewY+((viewHeight/2)+78), string(currentPage+1));
+	}*/
 	
 	/*if ((currentPage+2) <= maxPage) {
 		draw_text(viewX+((viewWidth/2)+90), viewY+((viewHeight/2)+78), string(currentPage+2));
@@ -88,6 +85,6 @@ if (showRecipeBook) {
 		draw_text(viewX+95,viewY+((viewHeight/2)-73), "Recipe book is empty...");
 	}*/
 }
-draw_set_halign(fa_center);
+/*draw_set_halign(fa_center);
 draw_set_font(fnt_small_text);
-draw_text(x+(sprite_width/2), y+(sprite_height)+8, "Recipes")
+draw_text(x+(sprite_width/2), y+(sprite_height)+8, "Recipes");*/

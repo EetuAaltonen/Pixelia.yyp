@@ -1,1 +1,1 @@
-textColor = tempColor;
+textColor = defaultColor;

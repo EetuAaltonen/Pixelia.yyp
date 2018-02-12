@@ -5,6 +5,21 @@ var viewHeight = camera_get_view_height(view_camera[0]);
 
 if (!showRecipeBook) {
 	showRecipeBook = true;
+	var recipes = scr_crafting_recipes(global.hudState);
+	var recipeCount = array_length_1d(recipes);
+	var i;
+	var margin = 20;
+	var yPos = 100;
+	var recipesPerPage = 6;
+	var recipe;
+	for (i = 0; i < recipesPerPage; i++) {
+		instance_create(viewX+85, viewY+(viewHeight/2)-80+(i*margin), obj_clickable_text);
+	}
+	for (i = 0; i < recipeCount; i++) {
+		recipe = recipes[i];
+		(instance_nearest(viewX+85, viewY+(viewHeight/2)-80+(i*margin), obj_clickable_text)).recipe = recipe;
+		(instance_nearest(viewX+85, viewY+(viewHeight/2)-80+(i*margin), obj_clickable_text)).depth = depth-1;
+	}
 	/*instance_create(viewX+100, viewY+(viewHeight-75), obj_pointing_arrow);
 	(instance_nearest(viewX+100, viewY+(viewHeight-75), obj_pointing_arrow)).pointing = "left";
 	
