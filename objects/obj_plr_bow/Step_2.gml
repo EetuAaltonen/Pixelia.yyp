@@ -9,7 +9,7 @@ if (arrowCount > 0) {
 		    //added_amount = -1;
 		    //scr_save_to_inventory();
 		    //arrowCount -= 1;
-			alarm[1] = scr_to_sec(0.5);
+			alarm[1] = scr_time_sec_to_alarm(0.5);
 		}	
 	}
 } else {

@@ -27,7 +27,7 @@ unfocus = false;
 
 //Room change
 targetRoom = "null";
-currenRoom = "null";
+currentRoom = "null";
 viewAlpha = 1;
 drawViewAlpha = false;
 transitionAmount = 0.1;

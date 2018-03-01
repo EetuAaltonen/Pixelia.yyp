@@ -7,6 +7,7 @@ load = false;
 	global.delta = 60/1000000*delta_time;
 /*[Clock]*/
 	global.hours = -1;
+	global.clockTimeSpeed = 48; //Game hour == 1.25min real time (24h == 30min)
 /*[Darkness]*/
 	global.darkness = 0;
 /*[Layers / Depths]*/

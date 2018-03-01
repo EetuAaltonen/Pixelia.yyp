@@ -1,7 +1,9 @@
 if (room != Menu) {
     if (!pause) {
-        pause = true;
-		instance_deactivate_all(true);
+		if (scr_pause_is_allowed()) {
+	        pause = true;
+			instance_deactivate_all(true);
+		}
     } else {
         pause = false;
 		instance_activate_all();

@@ -18,16 +18,17 @@ if (resolutionLastRoom != room_get_name(room)) {
 //Room Change
 if (room != First_loading) {
 	if (instance_exists(obj_player)) {
-		if (targetRoom != currenRoom && alarm[1] <= 0) {
+		if (targetRoom != currentRoom && alarm[1] <= 0) {
 			obj_player.actionState = "idle";
 			global.hudState = "roomChange";
 			drawViewAlpha = true;
-			alarm[1] = scr_to_sec(transitionSpeed);
-		} else if (targetRoom == currenRoom && alarm[1] <= 0 && viewAlpha == 1) {
+			alarm[1] = scr_time_sec_to_alarm(transitionSpeed);
+		} else if (targetRoom == currentRoom && alarm[1] <= 0 && viewAlpha == 1) {
 			obj_player.actionState = "idle";
 			global.hudState = "roomChange";
 			drawViewAlpha = true;
-			alarm[1] = scr_to_sec(transitionWaitTime);
+			scr_source_check_respawn_times();
+			alarm[1] = scr_time_sec_to_alarm(transitionWaitTime);
 		}
 	}
 }

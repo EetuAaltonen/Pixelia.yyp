@@ -19,7 +19,9 @@ if (keyboard_check_pressed(vk_tab) && global.hudState == "null") {
 	    }
 	}
 } else if (string_pos("inventory", string(global.hudState)) && scr_keys_to_close()) {
-	scr_inventory_close();
+	if (scr_inventory_can_close()) {
+		scr_inventory_close();
+	}
 }
 
 //Page change

@@ -1,19 +1,22 @@
 if (!pause && !unfocus) {	
-	if (targetRoom != currenRoom) {	
+	if (targetRoom != currentRoom) {	
 		if (viewAlpha < 1) {
 			viewAlpha += transitionAmount;
-			alarm[1] = scr_to_sec(transitionSpeed);
+			alarm[1] = scr_time_sec_to_alarm(transitionSpeed);
 		} else {
-			currenRoom = targetRoom;
+			currentRoom = targetRoom;
 			viewAlpha = 1;
 			drawViewAlpha = false;
 			global.hudState = "null";
+			
+			scr_source_save_respawn_times();
+			
 			room_goto(targetRoom);
 		}
 	} else {
 		if (viewAlpha > 0) {
 			viewAlpha -= transitionAmount;
-			alarm[1] = scr_to_sec(transitionSpeed);
+			alarm[1] = scr_time_sec_to_alarm(transitionSpeed);
 		} else {
 			viewAlpha = 0;
 			drawViewAlpha = false;
@@ -22,5 +25,5 @@ if (!pause && !unfocus) {
 		}
 	}
 } else {
-	alarm[1] = scr_to_sec(transitionSpeed);
+	alarm[1] = scr_time_sec_to_alarm(transitionSpeed);
 }

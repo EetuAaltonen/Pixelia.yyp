@@ -1,4 +1,4 @@
-gMilliseconds += (delta_time*0.000002)*room_speed;
+gMilliseconds += (delta_time*(0.000001*global.clockTimeSpeed))*room_speed;
 if (gMilliseconds >= 60) {
 	gMilliseconds -= 60;
 	gSeconds += 1;

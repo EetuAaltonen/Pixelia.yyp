@@ -6,7 +6,8 @@ bgColor = "null";
 maxMaterials = 5;
 source = maxMaterials;
 
-respawnTime = 10;
+respawnTime = 24;//0.016666666666667/global.clockTimeSpeed; //In-Game hours
+respawnDateTime = ""; //In-Game time
 mining = false;
 
 xpReward = 2;

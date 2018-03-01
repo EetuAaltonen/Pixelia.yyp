@@ -73,6 +73,15 @@ if (file_exists(global.save_file)) {
 	clock.days = ini_read_real(global.save_file, "clockDays", 1);
 	clock.months = ini_read_real(global.save_file, "clockMonths", 1);
 	clock.years = ini_read_real(global.save_file, "clockYears", 1);
+	
+	var inGameTime = ini_read_string(global.save_file, "inGameTime", "0001-01-01-08-00-00");
+	inGameTime = scr_time_from_string(inGameTime);
+	clock.gYears = inGameTime[0];
+	clock.gMonths = inGameTime[1];
+	clock.gDays = inGameTime[2];
+	clock.gHours = inGameTime[3];
+	clock.gMinutes = inGameTime[4];
+	clock.gSeconds = inGameTime[5];
     
     //= real(base64_decode(LoadedRoom));
     //= real(base64_decode(LoadedCoins));

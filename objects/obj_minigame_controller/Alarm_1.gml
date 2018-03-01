@@ -8,7 +8,7 @@ if (global.hudState == "minigame") {
 				} else {
 					forceScale += forceAmount;
 				}
-				alarm[1] = scr_to_sec(forceSpeed);
+				alarm[1] = scr_time_sec_to_alarm(forceSpeed);
 			}break;
 			case "down": {
 				if (forceScale <= 0) {
@@ -16,7 +16,7 @@ if (global.hudState == "minigame") {
 				} else {
 					forceScale -= forceAmount;
 				}
-				alarm[1] = scr_to_sec(forceSpeed);
+				alarm[1] = scr_time_sec_to_alarm(forceSpeed);
 			}break;
 			case "stop": {
 				forceDirect = tempDirect;

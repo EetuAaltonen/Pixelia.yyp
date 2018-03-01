@@ -1,3 +1,6 @@
+//Source Respawn Times
+scr_source_save_respawn_times();
+
 ini_open("Inventory.ini");
 
 //Inventory
@@ -77,5 +80,8 @@ ini_write_real(global.save_file, "clockHours", clock.hours);
 ini_write_real(global.save_file, "clockDays", clock.days);
 ini_write_real(global.save_file, "clockMonths", clock.months);
 ini_write_real(global.save_file, "clockYears", clock.years);
+
+var inGameTime = scr_time_to_string(clock.gYears,clock.gMonths,clock.gDays,clock.gHours,clock.gMinutes,clock.gSeconds);
+ini_write_string(global.save_file, "inGameTime", inGameTime);
 
 ini_close();

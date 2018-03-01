@@ -30,7 +30,7 @@ if (instance_exists(obj_player)) {
 				cuttingWood = false;
 				scr_highlight_remove();
 				scr_plr_set_action_state_null();
-				alarm[1] = scr_to_sec(respawnTime);
+				alarm[1] = scr_time_sec_to_alarm(respawnTime);
 			}
 		} else if (player.image_index > (player.image_number - 1) && canHit) {
 			//Stop Player Animation
@@ -50,7 +50,7 @@ if (instance_exists(obj_player)) {
 				sprite_index = spriteEmpty;
 				scr_highlight_remove();
 				scr_close_global_hudstate();
-				alarm[1] = scr_to_sec(respawnTime);
+				alarm[1] = scr_time_sec_to_alarm(respawnTime);
 			}
 			
 		} else if (player.image_index < (player.image_number - 1) && !canHit) {
@@ -60,13 +60,13 @@ if (instance_exists(obj_player)) {
 		cuttingWood = false;
 		scr_highlight_remove();
 		if (source < maxMaterials) {
-			alarm[1] = scr_to_sec(respawnTime);
+			alarm[1] = scr_time_sec_to_alarm(respawnTime);
 		}
 	}
 } else {
 	if (cuttingWood) {
 		cuttingWood = false;
 		scr_highlight_remove();
-		alarm[1] = scr_to_sec(respawnTime);
+		alarm[1] = scr_time_sec_to_alarm(respawnTime);
 	}
 }
