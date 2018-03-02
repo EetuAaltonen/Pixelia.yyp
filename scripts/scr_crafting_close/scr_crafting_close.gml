@@ -28,8 +28,8 @@ if (instance_exists(obj_recipe_book)) {
 }
 
 //Detroy Recipe Book Close Button
-if (instance_exists(obj_cross)) {
-	with (obj_cross) instance_destroy();
+if (instance_exists(obj_recipe_book_cross)) {
+	with (obj_recipe_book_cross) instance_destroy();
 }
 
 //Detroy Listed Recipes

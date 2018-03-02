@@ -26,7 +26,7 @@ if (!showRecipeBook) {
 	instance_create(viewX+(viewWidth-100), viewY+(viewHeight-75), obj_pointing_arrow);
 	(instance_nearest(viewX+(viewWidth-100), viewY+(viewHeight-75), obj_pointing_arrow)).pointing = "right";*/
 	
-	instance_create(viewX+(viewWidth-90), viewY+75, obj_cross);
+	instance_create(viewX+(viewWidth-90), viewY+75, obj_recipe_book_cross);
 	
 	/*recipeCount = 0;
 	var recipeList;

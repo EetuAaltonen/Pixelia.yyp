@@ -2,7 +2,7 @@
     "id": "06a69d04-cbba-4a6c-b91d-e0e139b7c449",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_cross",
+    "name": "obj_recipe_book_cross",
     "eventList": [
         {
             "id": "69fb7499-ceb8-421b-bea6-1addda80acf5",

@@ -1,0 +1,1 @@
+scr_crafting_recipe_book_close();

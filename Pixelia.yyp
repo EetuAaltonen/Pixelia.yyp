@@ -314,7 +314,7 @@
             "Key": "06a69d04-cbba-4a6c-b91d-e0e139b7c449",
             "Value": {
                 "id": "ba2974e5-e8cf-45a4-8fdf-599eb4841652",
-                "resourcePath": "objects\\obj_cross\\obj_cross.yy",
+                "resourcePath": "objects\\obj_recipe_book_cross\\obj_recipe_book_cross.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3244,6 +3244,14 @@
                 "id": "630562b6-a3f5-4291-bffc-a3364ca27491",
                 "resourcePath": "sprites\\spr_crafting_center\\spr_crafting_center.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5677d34c-aab7-4094-9385-b76b9420bb12",
+            "Value": {
+                "id": "a49485f2-93fc-40d3-a847-5727cc5b4c30",
+                "resourcePath": "scripts\\scr_crafting_recipe_book_close\\scr_crafting_recipe_book_close.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -9692,6 +9700,7 @@
         "131077a6-f054-40cb-92ac-b53a1178e0fe",
         "2246f667-4dc3-4e1f-9ef4-4decd516cf32",
         "fed53eb0-cf49-4a59-b9a0-27b5a6b8a587",
+        "5677d34c-aab7-4094-9385-b76b9420bb12",
         "650f69f4-1ec7-4bec-8dc6-2badcba8fc07",
         "50c98b33-61ba-42d6-939b-4b76a3c7236f",
         "2ed51917-ac6b-4953-a2cf-7ada19ad9f93",

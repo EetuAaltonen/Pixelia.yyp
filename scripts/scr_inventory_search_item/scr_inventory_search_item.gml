@@ -18,7 +18,7 @@ var i;
 for (i = 0; i < listSize; i++) {
 	data = ds_list_find_value(inventory, i);
 	if (data[1] == itemName) {
-		return data[3];	
+		return data;
 	}
 }
-return false;
+return "";
