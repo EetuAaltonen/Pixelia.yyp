@@ -1,5 +1,5 @@
 /// @description Key Pressed
-if (!spawning) {	
+if (!spawning) {
 	//Action states
 	scr_plr_action_state();
 }

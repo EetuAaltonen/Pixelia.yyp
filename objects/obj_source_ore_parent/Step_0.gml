@@ -38,6 +38,7 @@ if (instance_exists(obj_player)) {
 			scr_source_hit();
 			source -= 1;
 			canHit = false;
+			mined = true;
 				
 			if (source == 0) {
 				stopMining = true;
@@ -57,8 +58,9 @@ if (instance_exists(obj_player)) {
 if (stopMining) {
 	mining = false;
 	scr_highlight_remove();
-	if (source < maxMaterials) {
+	if (source < maxMaterials && mined) {
 		alarm[1] = scr_time_sec_to_alarm(scr_time_convert(respawnTime/global.clockTimeSpeed,"hh","ss"));
 		respawnDateTime = scr_time_increase(respawnTime, "hh");
 	}
+	mined = false;
 }

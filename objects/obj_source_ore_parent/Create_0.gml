@@ -9,6 +9,7 @@ source = maxMaterials;
 respawnTime = 24;//0.016666666666667/global.clockTimeSpeed; //In-Game hours
 respawnDateTime = ""; //In-Game time
 mining = false;
+mined = false;
 
 xpReward = 2;
 

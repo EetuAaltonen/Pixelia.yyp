@@ -1,7 +1,5 @@
 //Roll
-
-if (sprite_index = spr_plr_roll)
-{
+if (sprite_index = spr_plr_roll) {
     global.stamina -= 3;
 }
 hspeed = 0;

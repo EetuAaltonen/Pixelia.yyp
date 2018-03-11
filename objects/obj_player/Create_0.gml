@@ -10,6 +10,8 @@ spawning = true;
 
 //Movement
 acceleration = 0.2;
+//Jump
+canJump = true;
 
 //Hitbox
 instance_create(x, y, obj_plr_hitbox);

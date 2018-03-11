@@ -69,11 +69,11 @@ global.currentRoom = Village_1; //Prototype & Testing
     global.manaRegenSpeed = 10;//100;
     //Movement
 		//Walking
-		global.maxWalkingSpeed = 1.2;//1.5;
+		global.maxWalkingSpeed = 1.0;//1.5;
 		global.maxWalkingSpeedPlus = 0;
 		global.slowingWalkingSpeed = 0; //Carrying - slow your walking
 		//Running
-		global.maxRunningSpeed = 3.2;//2.8;//2.5;
+		global.maxRunningSpeed = 2;//2.5;//2.8;//3.2;
 		global.maxRunningSpeedPlus = 0;
 		global.slowingRunningSpeed = 0;	//Carrying - slow your running
     //Level
