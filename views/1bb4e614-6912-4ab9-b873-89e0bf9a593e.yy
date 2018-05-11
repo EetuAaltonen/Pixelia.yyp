@@ -9,8 +9,7 @@
         "176627a3-5092-428d-91e0-b3c2e534a3d1",
         "fbcccbc4-efa7-4ef2-b575-a8dc39199803",
         "26fe8927-863a-4033-9660-bd55a54a6b00",
-        "9b129662-6bae-4847-b3b6-83a50a67f7fc",
-        "ba830d11-c236-454e-92d0-05eab7a0bf81"
+        "f8c52657-4be3-4627-9a31-e86c55ef21ae"
     ],
     "filterType": "GMSprite",
     "folderName": "Equipments",

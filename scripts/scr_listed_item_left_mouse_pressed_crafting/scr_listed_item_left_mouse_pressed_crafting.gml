@@ -11,7 +11,7 @@ if (instance_exists(obj_recipe_book)) {
 }
 if (!recipeBookOpen) {
 	if (instance_exists(obj_crafting_slot)) {
-		if (!selected) {	
+		//if (!selected) {	
 			count = instance_number(obj_crafting_slot);
 			for (i = 0; i < count; i++) {
 				slot = instance_find(obj_crafting_slot, i);
@@ -19,13 +19,12 @@ if (!recipeBookOpen) {
 					//data[1] == name
 					slot.item = data;
 					slot.spriteIndex = data[0];
-					selected = true;
+					//selected = true;
 					obj_crafting_product.checkRecipe = true;
-					obj_crafting_product.items[slot.index] = data[1];
 					break;
 				}
 			}
-		} else {
+		/*} else {
 			count = instance_number(obj_crafting_slot);
 			for (i = 0; i < count; i++) {
 				slot = instance_find(obj_crafting_slot, i);
@@ -34,14 +33,13 @@ if (!recipeBookOpen) {
 						//data[1] == name
 						slot.item = "null";
 						slot.spriteIndex = "null";
-						selected = false;
+						//selected = false;
 						obj_crafting_product.checkRecipe = true;
-						obj_crafting_product.items[slot.index] = "";
 						break;
 					}
 				}
 			}
-		}
+		}*/
 	}
 }
 

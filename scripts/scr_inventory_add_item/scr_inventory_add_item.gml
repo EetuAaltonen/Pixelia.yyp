@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 
 var item = argument0;
@@ -18,7 +19,7 @@ var data;
 var i;
 
 if (count != 0) {
-	if (scr_inventory_check_capacity(item[5]*count) || count < 0) {
+	if (scr_inventory_check_capacity(item[5]*count,true) || count < 0) {
 
 		//Add To Capacity
 		global.totalInventoryCapacity += (count*item[5]);

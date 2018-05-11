@@ -10,9 +10,11 @@ filter = "null";
 var buttons = [
 	["inventoryBackpack", "Backpack", "medium"],
 	["inventoryEquipments", "Equipments", "medium"],
-	["skillTree", "Skill Tree", "medium"],
-	["Stats", "Stats", "small"],
+	["abilities", "Abilities", "small"],
+	["skills", "Skills", "small"],
+	["stats", "Stats", "small"],
+	["quests", "Quests", "small"],
 	["save&exit", "Save And Exit", "medium"],
-	["close", "Close", "small"],
+	["close", "Close", "small"]
 ];
 scr_inventory_create_buttons(buttons, 4, 40);

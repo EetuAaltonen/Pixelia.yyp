@@ -6,8 +6,9 @@
 	durability; 4
 	weight; 5
 	price; 6
-	effect; 7
+	effect; 7 
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 
 //Initialize Data

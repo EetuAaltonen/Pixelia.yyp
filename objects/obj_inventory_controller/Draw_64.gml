@@ -23,8 +23,9 @@ if (global.hudState == "inventoryBackpack" ||
 	draw_sprite(spr_st_primary_attributes_bg, 0, viewX+4, viewY+90);
     scr_st_draw_info();
     scr_st_create_skills();*/
-} else if(global.hudState == "inventoryStats") {
-	draw_text(viewX+30, viewY+120, "Coming Soon!");
+} else if(global.hudState == "skills") {
+	scr_skills_list_skills();
+} else if(global.hudState == "stats") {
     /*//Background
     draw_sprite(spr_inventory_background, 0, viewX, viewY);
     //Icon
@@ -58,8 +59,8 @@ if (global.hudState == "inventoryBackpack" ||
     draw_text(viewX+250,viewY+205, string(global.home_thirst));*/
 } else if (global.hudState == "shopBuy") {
 	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+	if (!instance_exists(obj_search_box)) {
+		instance_create(viewX+412, viewY+230, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -67,8 +68,8 @@ if (global.hudState == "inventoryBackpack" ||
 	scr_shop_list_goods();
 } else if (global.hudState == "shopSell") {
 	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+	if (!instance_exists(obj_search_box)) {
+		instance_create(viewX+412, viewY+230, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -76,8 +77,8 @@ if (global.hudState == "inventoryBackpack" ||
 	scr_inventory_list_backpack();
 } else if (global.hudState == "shopRepair") {
 	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+	if (!instance_exists(obj_search_box)) {
+		instance_create(viewX+412, viewY+230, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -86,8 +87,8 @@ if (global.hudState == "inventoryBackpack" ||
 	//scr_inventory_list_backpack();
 } else if (global.hudState == "shopBuyBack") {
 	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+	if (!instance_exists(obj_search_box)) {
+		instance_create(viewX+412, viewY+230, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -96,8 +97,8 @@ if (global.hudState == "inventoryBackpack" ||
 	//scr_inventory_list_backpack();
 } else if (global.hudState == "stashWithdraw") {
 	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+	if (!instance_exists(obj_search_box)) {
+		instance_create(viewX+412, viewY+230, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -105,8 +106,8 @@ if (global.hudState == "inventoryBackpack" ||
 	scr_stash_list_items();
 } else if (global.hudState == "stashDeposit") {
 	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+	if (!instance_exists(obj_search_box)) {
+		instance_create(viewX+412, viewY+230, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}

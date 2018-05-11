@@ -25,5 +25,15 @@ if (string_pos("shop", global.hudState)) {
 if (scr_hud_state_not_crafting()) {
 	draw_set_valign(fa_top);
 	//Item info text
-	draw_text(scr_gui(344,"x"), scr_gui(75,"y"), string_hash_to_newline(itemInfoText));
+	if (is_array(itemInfoText)) {
+		var lineCount = array_length_1d(itemInfoText)
+		var i;
+		var txtHeight;
+		for (i = 0; i < lineCount; i++) {
+			txtHeight = string_height(itemInfoText[i]);
+			draw_text(scr_gui(344,"x"), scr_gui(75+((txtHeight/global.resHAspect)*i),"y"), itemInfoText[i]);
+		}
+	} else {
+		draw_text(scr_gui(344,"x"), scr_gui(75,"y"), string_hash_to_newline(itemInfoText));
+	}
 }

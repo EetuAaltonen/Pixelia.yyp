@@ -7,3 +7,6 @@ knownRecipes = false;
 recipeCount = 0;
 
 createOnce = false;
+
+//Recipe Info
+recipeInfo = ["null", "null", "null"];

@@ -2,8 +2,7 @@
 //ADD CHECK IF INVENTORY FULL!!!
 //ADD CHECK IF THERE IS EMPTY FLASK IN INVENTORY!!!
 var itemWeight = scr_inventory_item_weight("spr_water_flask");
-var freeSpace = scr_inventory_check_capacity(itemWeight);
-if (freeSpace) {
+if (scr_inventory_check_capacity(itemWeight,false)) {
 	var flaskFound = scr_inventory_check_item_index("spr_empty_flask");
 	if (flaskFound != "null") {
 		scr_save_to_inventory("spr_empty_flask", -1);

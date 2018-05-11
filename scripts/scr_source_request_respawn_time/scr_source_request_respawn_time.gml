@@ -1,0 +1,1 @@
+ds_list_add(obj_source_controller.sources,self);

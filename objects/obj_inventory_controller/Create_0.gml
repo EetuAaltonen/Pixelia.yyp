@@ -18,6 +18,7 @@ names = [];
 count = [];
 weight = [];
 price = [];
+regLvl = [];
 
 //Shop
 listOfShop = "null";

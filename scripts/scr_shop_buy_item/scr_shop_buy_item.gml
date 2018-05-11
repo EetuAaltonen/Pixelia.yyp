@@ -1,6 +1,6 @@
 if (global.coins >= data[6]) {
 	//Check Weight
-	if (scr_inventory_check_capacity(data[5])) {
+	if (scr_inventory_check_capacity(data[5],true)) {
         //Add To Inventory
 		scr_inventory_add_item(data, 1);
 		//Toast

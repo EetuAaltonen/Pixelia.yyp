@@ -27,7 +27,9 @@ if (room != First_loading) {
 			obj_player.actionState = "idle";
 			global.hudState = "roomChange";
 			drawViewAlpha = true;
-			scr_source_check_respawn_times();
+			if (instance_exists(obj_source_controller)) {
+				obj_source_controller.checkRespawnTimes = true;	
+			}
 			alarm[1] = scr_time_sec_to_alarm(transitionWaitTime);
 		}
 	}

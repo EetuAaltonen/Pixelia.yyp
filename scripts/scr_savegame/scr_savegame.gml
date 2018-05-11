@@ -22,6 +22,7 @@ ini_write_string(global.save_file, "Stash", data);
 ini_close();
 
 
+
 ini_open(global.save_file);
 
 //Datetime
@@ -54,6 +55,17 @@ ini_write_real(global.save_file,"enchantigXp",global.xp);
 ini_write_real(global.save_file,"enchantigXpLimit",global.xpLimit);
 
 ini_write_real(global.save_file,"skillPoints",global.skillPoints);
+
+//Skills
+var skills = ds_list_create();
+var listSize = array_length_1d(global.skills);
+var i;
+for (i = 0; i < listSize; i++) {
+	ds_list_add(skills, global.skills[i]);
+}
+data = ds_list_write(skills);
+ini_write_string(global.save_file, "Skills", data);
+
 ini_write_real(global.save_file,"deaths",global.death_counter);
 ini_write_real(global.save_file,"kills",global.kill_counter);
 

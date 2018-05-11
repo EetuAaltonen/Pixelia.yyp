@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7 
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);

@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 
 var value = argument0;
@@ -25,5 +26,5 @@ for (i = 0; i < arraySize; i++) {
 		case "name": { if (data[1] == value) {item = data; return item;} }break;
 	}
 }
-show_message("Item: " + string(argument) + " : " + type + " not found!");
+show_message("Item: " + string(value) + " : " + type + " not found!");
 return;

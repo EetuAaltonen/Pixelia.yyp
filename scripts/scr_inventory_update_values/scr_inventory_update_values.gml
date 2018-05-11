@@ -7,8 +7,8 @@ if (updateValues) {
 	lastItem = 0;
 	
 	//Create Search Box
-	if (!instance_exists(obj_menu_text_box)) {
-		instance_create(viewX+412, viewY+230, obj_menu_text_box);
+	if (!instance_exists(obj_search_box)) {
+		instance_create(viewX+412, viewY+250, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -73,22 +73,24 @@ if (updateValues) {
 					item.name = "";
 					item.data = data;
 					if (data != "null") {
-						names[j] = data[1];
-						count[j] = data[3];
-						weight[j] = data[5];
+						names[j] = scr_item("name", data);
+						count[j] = scr_item("count", data);
+						weight[j] = scr_item("weight", data);
 						if (global.hudState == "shopSell") {
-							price[j] = round(data[6]*global.sellRate);
+							price[j] = round(scr_item("price", data)*global.sellRate);
 							if (price[j] < 1) {
-								price[j] = 1;	
+								price[j] = 1;
 							}
 						} else {
-							price[j] = data[6];
+							price[j] = scr_item("price", data);
 						}
+						regLvl[j] = scr_item("reqLevel", data);
 					} else {
 						names[j] = "";
 						count[j] = "";
 						weight[j] = "";
 						price[j] = "";
+						regLvl[j] = 0;
 					}
 					break;
 				}

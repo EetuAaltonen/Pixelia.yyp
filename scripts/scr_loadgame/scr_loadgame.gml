@@ -47,6 +47,28 @@ if (file_exists(global.save_file)) {
     global.enchantingXpLimit = ini_read_real(global.save_file,"enchantigXpLimit",global.enchantingXpLimit);
     
     global.skillPoints = ini_read_real(global.save_file,"skillPoints",0);
+	//Skills
+	data = ini_read_string(global.save_file, "Skills", "");
+	if (data != "") {
+		var skills = ds_list_create();
+		ds_list_read(skills, data);
+		var listSize = ds_list_size(skills);
+		var skillCount = array_length_1d(global.skills);
+		var skill, tempSkill;
+		var i, j;
+		for (i = 0; i < listSize; i++) {
+			skill = ds_list_find_value(skills, i);
+			if (skill != "") {
+				for (j = 0; j < skillCount; j++) {
+					tempSkill = global.skills[j];
+					if (skill[0] == tempSkill[0]) {
+						global.skills[j] = skill;
+						break;
+					}
+				}
+			}
+		}
+	}
     global.death_counter = ini_read_real(global.save_file,"deaths",0);
     global.kill_counter = ini_read_real(global.save_file,"kills",0);
 

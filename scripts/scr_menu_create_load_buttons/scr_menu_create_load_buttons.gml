@@ -20,6 +20,6 @@ for (i = 0; i < count; i++) {
 	(instance_nearest(viewX+110, viewY+150+(margin*i), obj_menu_button)).infoText = button[1];
 }
 //Text Box
-instance_create(viewX+110, viewY+110, obj_menu_text_box);
+instance_create(viewX+110, viewY+110, obj_search_box);
 //SearchSaves
 searchSaves = true; 

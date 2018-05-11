@@ -10,7 +10,7 @@ controller.merchant = self;
 if (controller.listOfShop == "null") {
 	controller.listOfShop = ds_list_create();
 }
-scr_copy_ds_list(controller.listOfShop, shop, false);
+scr_ds_list_copy(controller.listOfShop, shop, false);
 
 //Create Buttons
 var buttons = [

@@ -7,20 +7,23 @@
 	source; 5
 }*/
 
-var sources = scr_source_find_exists();
-var count = array_length_1d(sources);
+var sources = obj_source_controller.sources;
+if (self == obj_source_controller) {
+	sources = self.sources;
+}
+var count = ds_list_size(sources);
 var data = ds_list_create();
 var source;
 var i;
 
 for (i = 0; i < count; i++) {
-	source = sources[i];
+	source = ds_list_find_value(sources,i);
 	if (source.respawnDateTime != "" || source.source == source.maxMaterials) {
 		ds_list_add(data, [object_get_name(source.object_index), source.x, source.y, source.respawnDateTime, source.respawnTime, source.source]);
 	}
 }
 
-ini_open("Sources.ini");
+ini_open("RespawnTimes.ini");
 if (ds_list_size(data) > 0) {
 	ini_write_string(global.save_file, room_get_name(room), ds_list_write(data));
 } else {
@@ -31,3 +34,6 @@ if (ds_list_size(data) > 0) {
 ini_close();
 
 ds_list_destroy(data);
+
+//Reset Source List After Saving
+ds_list_clear(obj_source_controller.sources);

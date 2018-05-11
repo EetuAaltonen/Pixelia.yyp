@@ -21,6 +21,8 @@ ds_list_add(Objects, obj_stats_meter);
 //Collectable objects target
 ds_list_add(Objects, obj_money_target);
 ds_list_add(Objects, obj_potion_target);
+//Sources
+ds_list_add(Objects, obj_source_controller);
 //Particles
 ds_list_add(Objects, obj_part_controller_elemental);
 

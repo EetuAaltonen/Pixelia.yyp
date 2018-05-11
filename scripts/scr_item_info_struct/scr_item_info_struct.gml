@@ -7,5 +7,6 @@ return [
 	"Weight: ",
 	"Price: ",
 	"Effect: ",
-	"Effect Amount: "
+	"Effect Amount: ",
+	"Required Level: "
 ]

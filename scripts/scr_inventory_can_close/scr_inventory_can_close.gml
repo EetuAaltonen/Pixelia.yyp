@@ -1,5 +1,5 @@
-if (instance_exists(obj_menu_text_box)) {
-	if (obj_menu_text_box.selected) {
+if (instance_exists(obj_search_box)) {
+	if (obj_search_box.selected) {
 		return false;
 	}
 }

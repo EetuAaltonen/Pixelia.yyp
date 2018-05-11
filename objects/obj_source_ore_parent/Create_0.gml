@@ -15,3 +15,6 @@ xpReward = 2;
 
 //Particles
 scr_woodcutting_dust();
+
+//Respawn
+scr_source_request_respawn_time();

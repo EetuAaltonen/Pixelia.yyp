@@ -1,5 +1,23 @@
 if (hudState != "null") {
 	switch (hudState) {
+		case "abilities": {
+			if (global.hudState != hudState) {
+				global.hudState = hudState;
+				scr_hud_remove_search_box();
+			}
+		}break;
+		case "skills": {
+			if (global.hudState != hudState) {
+				global.hudState = hudState;
+				scr_hud_remove_search_box();
+			}
+		}break;
+		case "stats": {
+			if (global.hudState != hudState) {
+				global.hudState = hudState;
+				scr_hud_remove_search_box();
+			}
+		}break;
 		case "save&exit": {
 			scr_save_and_exit();
 		}break;
@@ -16,9 +34,9 @@ if (hudState != "null") {
 				global.hudState = hudState;
 		
 				//Destroy Search Box
-				if (instance_exists(obj_menu_text_box)) {
-					with (obj_menu_text_box) instance_destroy();
-				}
+				/*if (instance_exists(obj_search_box)) {
+					with (obj_search_box) instance_destroy();
+				}*/
 		
 				//Destroy Listed Items
 				if (instance_exists(obj_listed_item)) {

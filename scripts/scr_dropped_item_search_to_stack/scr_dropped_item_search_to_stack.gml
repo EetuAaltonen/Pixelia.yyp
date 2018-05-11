@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 var data = argument0;
 if (instance_exists(obj_dropped_item)) {

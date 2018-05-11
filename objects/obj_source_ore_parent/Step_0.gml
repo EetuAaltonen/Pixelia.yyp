@@ -59,8 +59,11 @@ if (stopMining) {
 	mining = false;
 	scr_highlight_remove();
 	if (source < maxMaterials && mined) {
-		alarm[1] = scr_time_sec_to_alarm(scr_time_convert(respawnTime/global.clockTimeSpeed,"hh","ss"));
-		respawnDateTime = scr_time_increase(respawnTime, "hh");
+		//Only First Hit Triggers The Respawn Time
+		if (alarm[1] <= 0) {
+			alarm[1] = scr_time_sec_to_alarm(scr_time_convert(respawnTime/global.clockTimeSpeed,"hh","ss"));
+			respawnDateTime = scr_time_increase(respawnTime, "hh");
+		}
 	}
 	mined = false;
 }

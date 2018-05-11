@@ -11,4 +11,4 @@ if (global.hudState == "inventoryBackpack" ||
 } else if (global.hudState == "stashWithdraw") {
 	sourceList = global.stash;	
 }
-scr_copy_ds_list(listOfItems, scr_list_item_name_filter(scr_list_category_filter(sourceList), filter), false);
+scr_ds_list_copy(listOfItems, scr_list_item_name_filter(scr_list_category_filter(sourceList), filter), false);

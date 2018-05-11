@@ -2,15 +2,16 @@ sprite_index_ = sprite_index;
 spriteName = sprite_get_name(sprite_index);
 data = scr_item_search_data(sprite_index, "sprite");
 /*Item {
-	sprite;
-	name;
-	type/shop;
-	count;
-	durability;
-	weight;
-	price;
-	effect;
-	effectAmount;
+	sprite; 0
+	name; 1
+	type/shop; 2
+	count; 3
+	durability; 4
+	weight; 5
+	price; 6
+	effect; 7 
+	effectAmount; 8
+	requiredLevel; 9
 }*/
 name = data[1];
 type = data[2];

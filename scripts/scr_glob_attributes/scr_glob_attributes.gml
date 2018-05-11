@@ -1,4 +1,8 @@
-var attributes = [
+enum attribute {
+	name,
+	value
+}
+var attribute attributes = [
 	["Strenght", 1],
 	["Endurance", 1],
 	["Willpower", 1],

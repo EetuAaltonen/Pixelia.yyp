@@ -1,5 +1,5 @@
 //Import recipe to crafting
-var slot;
+/*var slot;
 var data;
 if (material[0] != "" && material[1] != "" && material[2] != "") {
 	var i;
@@ -13,13 +13,11 @@ if (material[0] != "" && material[1] != "" && material[2] != "") {
 			data = material[i];
 			slot[i].item = data;
 			slot[i].spriteIndex = data[0];
-			obj_crafting_product.items[slot[i].index] = data[1];
 		}  else {
 			if (i < count) {
 				//data[1] == name
 				slot[i].item = "null";
 				slot[i].spriteIndex = "null";
-				obj_crafting_product.items[slot[i].index] = "";
 			}
 		}
 	}

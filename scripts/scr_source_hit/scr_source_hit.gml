@@ -4,5 +4,5 @@ if (part_system_exists(wood_dust_particles)) {
     //Create items
     scr_source_create_item(material);
     //XP
-    scr_add_xp(xpReward);
+	scr_skills_add_xp("Mining", xpReward);
 }

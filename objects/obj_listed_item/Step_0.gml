@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7 
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 
 if (mask_index != spr_inv_item_bg) {
@@ -22,15 +23,15 @@ if (name == "" && data != "null") {
 	var description;
 	var info = scr_item_info_struct();
 	var mark = scr_item_mark_struct();
-	var i;
+	var i, j = 0;
 	var arraySize = array_length_1d(data);
 	infoText = "";
 	for (i = 0; i < arraySize; i++) {
 		if (data[i] != "null") {
 			if (i == 1 || i == 3 || i == 4 || i == 5 ||
-				i == 6 || i == 7 || i == 8) {
+				i == 6 || i == 7 || i == 8 || i == 9) {
 				description = info[i] + string(data[i]) + mark[i];
-				infoText += description + "\n";
+				infoText[j++] = description;
 			}
 		}
 	}

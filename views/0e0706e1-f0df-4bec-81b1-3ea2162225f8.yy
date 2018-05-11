@@ -9,7 +9,8 @@
         "7349cec9-eb83-4a4c-b4e9-818fc278f376",
         "fdae6426-e7d5-4048-85cd-abad49214c43",
         "6e9f20f7-4796-48d6-b0b9-209350d304d5",
-        "1eae7bea-eee9-4f88-bd65-d6df7a61f036"
+        "1eae7bea-eee9-4f88-bd65-d6df7a61f036",
+        "6a169c6a-b7f0-4fc8-a40d-b05b42600bc2"
     ],
     "filterType": "GMScript",
     "folderName": "Veins\/Sources",

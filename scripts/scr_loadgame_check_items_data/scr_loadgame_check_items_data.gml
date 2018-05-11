@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 
 var lists = [
@@ -42,7 +43,7 @@ for (i = 0; i < listsCount; i++) {
 			}
 		}
 	}
-	scr_copy_ds_list(lists[i], list, true);
+	scr_ds_list_copy(lists[i], list, true);
 }
 
 var itemExists;

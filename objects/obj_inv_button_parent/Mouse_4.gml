@@ -10,8 +10,8 @@ if (hudState == "null") {
 	    global.hudState = hudState;
 		
 		//Destroy Search Box
-		if (instance_exists(obj_menu_text_box)) {
-			with (obj_menu_text_box) instance_destroy();
+		if (instance_exists(obj_search_box)) {
+			with (obj_search_box) instance_destroy();
 		}
 		
 		//Destroy Listed Items

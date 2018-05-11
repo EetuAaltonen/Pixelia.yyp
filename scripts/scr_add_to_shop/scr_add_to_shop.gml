@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 
 var item = argument0;
@@ -44,5 +45,5 @@ if (alreadyExists) {
 } else {
 	ds_list_add(controller.listOfShop, item);
 }
-scr_copy_ds_list(controller.merchant.shop, controller.listOfShop, false);
+scr_ds_list_copy(controller.merchant.shop, controller.listOfShop, false);
 controller.updateValues = true;

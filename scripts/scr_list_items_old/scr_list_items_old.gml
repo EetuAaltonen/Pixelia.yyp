@@ -13,7 +13,7 @@ if (pageUpdate == true) {
     item_info_text = "Item info...";
     //Create search text box in inventory
     if (global.hudState == "inventoryBackpack" || global.hudState == "inventoryEquipments") {
-        instance_create(viewX+412, viewY+230, obj_menu_text_box);
+        instance_create(viewX+412, viewY+230, obj_search_box);
     }
     if (instance_exists(obj_listed_item)) {
 		with (obj_listed_item) instance_destroy();

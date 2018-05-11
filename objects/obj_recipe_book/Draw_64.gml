@@ -3,88 +3,56 @@ if (showRecipeBook) {
 	var viewY = camera_get_view_y(view_camera[0]);
 	var viewWidth = camera_get_view_width(view_camera[0]);
 	var viewHeight = camera_get_view_height(view_camera[0]);
-	
-	var portWidth = view_get_wport(0);
-	var portHeight = view_get_wport(0);
-	var posX = scr_draw_position_on_screen(x, "x");
-	var posY = scr_draw_position_on_screen(y, "y");
 
-	//Draw Self
+	//Font
+	draw_set_color(c_black);
+	draw_set_valign(fa_top);
+	
+	//Recipe Book Bg
 	draw_sprite_ext(spr_book_bg, 0, scr_gui(viewWidth/2,"x"), scr_gui(viewHeight/2,"y"), global.resWAspect, global.resHAspect, image_angle, c_white, 1);
 	
-	//draw_text(viewX+((viewWidth/2)-90), viewY+((viewHeight/2)+78), string(currentPage+1));
+	//Recipe Info Bg
+	var outlineWidth = 2;
+	var xPos1 = 260;
+	var xPos2 = 415;
+	var yPos1 = 120;
+	var yPos2 = 215;
 	
-	/*if (scr_hud_state_some_of_crafting()) {
-		var recipes = scr_crafting_recipes(global.hudState);
-		var recipe, recipeText;
-		var count = array_length_1d(recipes);
-		var i;
-		var margin = 15;
-		for (i = 0; i < count; i++) {
-			recipeText = "";
-			recipe = recipes[i];
-			if (recipe[0] != "") {
-				recipeText += recipe[0];	
-			}
-			if (recipe[1] != "") {
-				recipeText += " + " + recipe[1];	
-			}
-			if (recipe[2] != "") {
-				recipeText += " + " + recipe[2];	
-			}
-			recipeText += " --> " + recipe[3];
-			draw_text(viewX+85,viewY+((viewHeight/2)-70+(i*margin)), recipeText);
-		}
-	}*/
+	var imgY = 92;
+	var xPosCenter = xPos2-((xPos2-xPos1)/2);
+	var sprSize = 15;
+	//Recipe Image Bg
+	draw_roundrect_color(scr_gui(xPosCenter-(sprSize/2)-10-outlineWidth,"x"),
+						 scr_gui(imgY-(sprSize/2)-10-outlineWidth,"y"),
+						 scr_gui(xPosCenter+(sprSize/2)+10+outlineWidth,"x"),
+						 scr_gui(imgY+(sprSize/2)+10+outlineWidth,"y"),
+						 c_black, c_black, false);
+	draw_roundrect_color(scr_gui(xPosCenter-(sprSize/2)-10,"x"), scr_gui(imgY-(sprSize/2)-10,"y"),
+						 scr_gui(xPosCenter+(sprSize/2)+10,"x"), scr_gui(imgY+(sprSize/2)+10,"y"),
+						 c_gray, c_gray, false);
+	//Recipe Image
+	if (recipeInfo[0] != "null") {
+		draw_sprite_ext(recipeInfo[0], 0, scr_gui(xPosCenter,"x"), scr_gui(imgY,"y"),
+						1.5*global.resWAspect, 1.5*global.resWAspect, image_angle, image_blend, image_alpha);
+	}
 	
-	/*if ((currentPage+2) <= maxPage) {
-		draw_text(viewX+((viewWidth/2)+90), viewY+((viewHeight/2)+78), string(currentPage+2));
-	}*/
-	/*
-	if (recipeCount > 0) {
-		var drawCount;
-		if (recipeCount > recipesPerPage) {
-		    if ((recipeCount - ((currentPage+1)*recipesPerPage)) > 0 and currentPage == 0) {
-		        drawCount = recipesPerPage;
-        
-		    } else if ((recipeCount - ((currentPage+1)*recipesPerPage)) > 0 and
-		            currentPage > 0) {
-		        drawCount = ((currentPage*recipesPerPage)*2);
-		    } else {
-		        drawCount = recipeCount;
-		    }
-		} else {
-		    drawCount = recipeCount;
-		}
-
-		draw_set_halign(fa_left);
-		var margin = 0;
-		for (var i=(currentPage*recipesPerPage); i < drawCount; i++) {
-			var recipe = knownRecipes[i];
-			var ingredients = recipe[1];
-			recipe = recipe[0];
-			if (createOnce) {
-				instance_create(viewX+95,viewY+((viewHeight/2)-73+(20*margin)),obj_clickable_text);
-				var clickableText = instance_nearest(viewX+95,viewY+((viewHeight/2)-73+(20*margin)),obj_clickable_text);
-				(clickableText).text = recipe;
-				(clickableText).textFont = fnt_medium_text;
-				(clickableText).textHighlightColor = c_yellow;
-				(clickableText).textColor = c_black;
-				(clickableText).tempColor = c_black;
-				(clickableText).depth = depth-1;
-			}
-			draw_set_font(fnt_small_text);
-			draw_text(viewX+100,viewY+((viewHeight/2)-73+10+(20*margin)),
-					  ingredients[0] + ", " + ingredients[1] + ", " + ingredients[2]);
-			margin++;
-		}
-		createOnce = false;
-	} else {
-		draw_set_font(fnt_medium_text);
-		draw_set_halign(fa_left);
-		draw_text(viewX+95,viewY+((viewHeight/2)-73), "Recipe book is empty...");
-	}*/
+	//Recipe Info Bg
+	draw_roundrect_color(scr_gui(xPos1-outlineWidth,"x"), scr_gui(yPos1-outlineWidth,"y"),
+						 scr_gui(xPos2+outlineWidth,"x"), scr_gui(yPos2+outlineWidth,"x"),
+						 c_black, c_black, false);
+	draw_roundrect_color(scr_gui(xPos1,"x"), scr_gui(yPos1,"y"),
+						 scr_gui(xPos2,"x"), scr_gui(yPos2,"x"),
+						 c_gray, c_gray, false);
+	//Recipe Title
+	draw_set_halign(fa_middle);
+	draw_set_font(fnt_draw_gui_recipe_title);
+	if (recipeInfo[1] != "null") {
+		draw_text(scr_gui(xPosCenter,"x"), scr_gui(125,"y"), string_hash_to_newline(recipeInfo[1]));
+	}
+	//Recipe Info
+	draw_set_halign(fa_left);
+	draw_set_font(fnt_draw_gui_recipe_text);
+	if (recipeInfo[2] != "null") {
+		draw_text(scr_gui(270,"x"), scr_gui(150,"y"), string_hash_to_newline(recipeInfo[2]));
+	}
 }
-/*draw_set_halign(fa_center);
-draw_set_font(fnt_small_text);
-draw_text(x+(sprite_width/2), y+(sprite_height)+8, "Recipes");*/

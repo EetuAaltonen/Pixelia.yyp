@@ -8,7 +8,8 @@
         "59bf8008-4400-43c0-9492-65fc0e3b16f4",
         "0d600368-d560-4121-a702-4f7cf90798c7",
         "c0f2f0fb-3c1d-4f94-b970-37de57486389",
-        "eb9f7046-287d-4c32-962e-b3043a2bb133"
+        "eb9f7046-287d-4c32-962e-b3043a2bb133",
+        "d6a4f02b-c9ee-4829-a6c1-555528f71b1b"
     ],
     "filterType": "GMScript",
     "folderName": "Draw & GUI",

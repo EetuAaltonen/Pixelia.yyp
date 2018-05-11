@@ -8,6 +8,7 @@
 	price; 6
 	effect; 7 
 	effectAmount; 8
+	requiredLevel; 9
 }*/
 
 var listOfItems = argument0;
@@ -29,15 +30,29 @@ if (listSize > 0) {
 			if (names[j] != "") {
 				tempMargin = (j*margin);       
 		        //Item Description
+				draw_set_color(c_black);
+				if (regLvl[j] > global.level) {
+					draw_set_color(c_red);
+				}
 				draw_text(scr_gui(42,"x"), scr_gui(yPos+tempMargin,"y"), names[j]);
+				draw_set_color(c_black);
 				//Item Count
 				draw_text(scr_gui(185,"x"), scr_gui(yPos+tempMargin,"y"), string(count[j]) + "  x");
 				if (string_pos("inventory", global.hudState)) {
 					//Item Weight
+					draw_set_color(c_black);
+					if (scr_inventory_check_capacity(weight[j],false)) {
+						draw_set_color(c_red);
+					}
 					draw_text(scr_gui(250,"x"), scr_gui(yPos+tempMargin,"y"), string(weight[j]) + "  Pw");
 				} else if (string_pos("shop", global.hudState)) {
 					//Item Price
+					draw_set_color(c_black);
+					if (price[j] > global.coins) {
+						draw_set_color(c_red);
+					}
 					draw_text(scr_gui(250,"x"), scr_gui(yPos+tempMargin,"y"), string(price[j]) + "  G");
+					draw_set_color(c_black);
 				}
 				j++;
 			} else {

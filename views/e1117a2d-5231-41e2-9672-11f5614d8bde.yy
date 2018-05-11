@@ -31,7 +31,8 @@
         "a8db8537-27c0-4026-b244-a98bccea40d8",
         "41e60183-6ea4-4ec6-8d55-7dcebe5ec73f",
         "38320f63-150f-4436-b227-91d5d3043461",
-        "d929d3ed-38cc-438c-9387-dd34dbf419b2"
+        "d929d3ed-38cc-438c-9387-dd34dbf419b2",
+        "1540e557-81ab-4284-9d57-ada993c81c31"
     ],
     "filterType": "GMObject",
     "folderName": "HUD",

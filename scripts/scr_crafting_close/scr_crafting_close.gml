@@ -9,8 +9,8 @@ if (instance_exists(obj_listed_item)) {
 	with (obj_listed_item) instance_destroy();
 }
 //Destroy Search Box
-if (instance_exists(obj_menu_text_box)) {
-	with (obj_menu_text_box) instance_destroy();
+if (instance_exists(obj_search_box)) {
+	with (obj_search_box) instance_destroy();
 }
 
 //Destroy Crafting Slots
@@ -33,8 +33,8 @@ if (instance_exists(obj_recipe_book_cross)) {
 }
 
 //Detroy Listed Recipes
-if (instance_exists(obj_clickable_text)) {
-	with (obj_clickable_text) instance_destroy();
+if (instance_exists(obj_clickable_recipe)) {
+	with (obj_clickable_recipe) instance_destroy();
 }
 
 //Destroy Close Button

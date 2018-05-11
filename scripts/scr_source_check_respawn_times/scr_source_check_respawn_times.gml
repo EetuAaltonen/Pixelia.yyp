@@ -6,17 +6,16 @@
 	respawnTime; 4
 	source; 5
 }*/
-if (file_exists("Sources.ini")) {
-	ini_open("Sources.ini");
+if (file_exists("RespawnTimes.ini")) {
+	ini_open("RespawnTimes.ini");
 	if (ini_section_exists(global.save_file)) {
-		var sources = scr_source_find_exists();
-		var count = array_length_1d(sources);
+		var count = ds_list_size(sources);
 		//Inventory
-		var foundSources = ds_list_create();
+		var sourceData = ds_list_create();
 		var data = ini_read_string(global.save_file, room_get_name(room), "");
 		if (data != "") {
-			ds_list_read(foundSources, data);
-			var listSize = ds_list_size(foundSources);
+			ds_list_read(sourceData, data);
+			var listSize = ds_list_size(sourceData);
 			if (listSize > 0) {
 				var i, j, k;
 				var source;
@@ -25,8 +24,8 @@ if (file_exists("Sources.ini")) {
 				var timeDifference = 0;
 				for (i = 0; i < count; i++) {
 					for (j = 0; j < listSize; j++) {
-						data = ds_list_find_value(foundSources, j);
-						source = sources[i];
+						data = ds_list_find_value(sourceData, j);
+						source = ds_list_find_value(sources,i);
 						if (point_distance(data[1], data[2], source.x, source.y) == 0) {
 							if (scr_time_compare(dateTime,data[3],"<")) {
 								//Do Respawn Calculation
@@ -40,7 +39,7 @@ if (file_exists("Sources.ini")) {
 				}
 			}
 		}
-		ds_list_destroy(foundSources);
+		ds_list_destroy(sourceData);
 	}
 	ini_close();
 }

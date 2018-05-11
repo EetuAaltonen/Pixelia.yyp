@@ -18,8 +18,8 @@ if (global.hudState != hudState && hudState != "") {
 				with (obj_listed_item) instance_destroy();
 			}
 			//Destroy Search Box
-			if (instance_exists(obj_menu_text_box)) {
-				with (obj_menu_text_box) instance_destroy();
+			if (instance_exists(obj_search_box)) {
+				with (obj_search_box) instance_destroy();
 			}
 
 			scr_savegame();
@@ -29,8 +29,8 @@ if (global.hudState != hudState && hudState != "") {
 		scr_set_global_hudstate(hudState);
 		
 		//Destroy Search Box
-		if (instance_exists(obj_menu_text_box)) {
-			with (obj_menu_text_box) instance_destroy();
+		if (instance_exists(obj_search_box)) {
+			with (obj_search_box) instance_destroy();
 		}
 		
 		//Destroy Listed Items

@@ -14,6 +14,8 @@ baseHResolution = 720;
 global.wResolution = baseWResolution;
 global.hResolution = baseHResolution;
 scr_resolution(global.wResolution, global.hResolution);
+//Check Resolution
+resolutionLastRoom = "null";
 //Menu
 menuState = "mainMenu";
 createButtons = true;
@@ -33,8 +35,6 @@ drawViewAlpha = false;
 transitionAmount = 0.1;
 transitionSpeed = 0.06;
 transitionWaitTime = 0.5;
-//Check Resolution
-resolutionLastRoom = "null";
 
 //Darkness Effect
 darknessEffect = false;
@@ -43,3 +43,5 @@ darknessMax = 0.6;
 
 //Can Close Hud State
 global.hudCanClose = true;
+
+sources = ds_list_create();
