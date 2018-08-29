@@ -1,43 +1,23 @@
 {
-    "id": "4effcc84-e2b7-49ba-a8e3-fcb6a2264811",
+    "id": "acb4bfa6-fd95-417f-982b-ff56abbf8752",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_well",
     "eventList": [
         {
-            "id": "8e52d25e-8eeb-4de2-9d20-6b8cd3062849",
+            "id": "838fb3e1-aa1c-4188-ae16-20a2a377afd2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "4effcc84-e2b7-49ba-a8e3-fcb6a2264811"
-        },
-        {
-            "id": "f09b95eb-3b83-45bd-8390-c79224a8dcaf",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "4effcc84-e2b7-49ba-a8e3-fcb6a2264811"
-        },
-        {
-            "id": "b09bae11-57f4-4842-8f62-188a0d37102a",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "4effcc84-e2b7-49ba-a8e3-fcb6a2264811"
+            "m_owner": "acb4bfa6-fd95-417f-982b-ff56abbf8752"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "86141c22-f18c-45c7-82b1-9d8aa2114452",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -48,8 +28,10 @@
     "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
-    "physicsShape": 1,
-    "physicsShapePoints": null,
+    "physicsShape": 0,
+    "physicsShapePoints": [
+        
+    ],
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,

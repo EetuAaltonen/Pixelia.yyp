@@ -32,7 +32,9 @@ switch (category) {
 			["Oak Log", "Knife", "Bow Model", 1, "", ""],
 			["Bow Model", "String", "Bow", 1, "", ""],
 			["Iron Ingot", "Wooden Stick", "Feather", "Arrow", 10, "", ""],
-			["Oak Log", "Saw", "Knife", "Wooden Stick", 10, "", ""]
+			["Oak Log", "Saw", "Knife", "Wooden Stick", 10, "", ""],
+			["String", "String", "String", "String", "Rope", 1, "", ""],
+			["String", "String", "String", "String", "String", "String", "Fabric", 1, "", ""]
 		];
 	}break;
 	case "anvil": {
@@ -61,6 +63,11 @@ switch (category) {
 	case "spinningWheel": {
 		recipes = [
 			["Wool", "String", 2, "", ""]
+		];
+	}break;
+	case "waterWell": {
+		recipes = [
+			["Empty Flask", "Flask Of Water", 1, "", ""]
 		];
 	}break;
 }

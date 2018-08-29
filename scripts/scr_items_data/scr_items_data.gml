@@ -53,13 +53,20 @@ return [
 		[spr_bow_model,"Bow Model","[workbench,general]",1,"null",0.3,5,"null","null",0],
 		//String
 		[spr_string,"String","[workbench,general]",1,"null",0.01,5,"null","null",0],
-		//String
+		//Rope
+		[spr_rope,"Rope","[workbench,general]",1,"null",0.1,5,"null","null",0],
+		//Fabric
+		[spr_fabric,"Fabric","[workbench,general]",1,"null",0.1,5,"null","null",0],
+		//Stick
 		[spr_wooden_stick,"Wooden Stick","[workbench,general]",1,"null",0.01,5,"null","null",0],
 		//Jewellery
 		[spr_amulet_mould,"Amulet Mould","[furnace,general]",1,"null",0.01,5,"null","null",0],
 		[spr_ring_mould,"Ring Mould","[furnace,general]",1,"null",0.01,5,"null","null",0],
 		[spr_gold_ring,"Gold Ring","[general]",1,"null",0.01,5,"null","null",0],
 		[spr_gold_amulet,"Gold Amulet","[general]",1,"null",0.01,5,"null","null",0],
+	/*[Alchemy]*/
+		[spr_empty_flask,"Empty Flask","[waterWell,general]",1,"null",0.05,5,"null","null",0],
+		[spr_water_flask,"Flask Of Water","[alchemy,general]",1,"null",0.1,5,"null","null",0],
 	/*[Equipments]*/
 		//Helmets
 		[spr_broken_helmet,"Broken Helmet","[equipment,helmet,armorer]",1,"null",0.3,5,"null","null",0],

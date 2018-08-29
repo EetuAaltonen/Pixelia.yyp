@@ -4,4 +4,5 @@ return (global.hudState == "forge" ||
 		global.hudState == "workbench" ||
 		global.hudState == "anvil" ||
 		global.hudState == "cooking" ||
-		global.hudState == "spinningWheel")
+		global.hudState == "spinningWheel" ||
+		global.hudState == "waterWell")
