@@ -30,6 +30,8 @@ global.currentRoom = Village_1; //Prototype & Testing
 //Global variables - Player
 
 //REMEMBER TO ADD BUFFS (like global.armorRegenPlus) to scr_inventory_get_list_of_buffs!!
+/*[Creatures]*/
+	global.statusEffectTimer = 1;
 /*[Player]*/
     //Can get damage
     global.damage = 1;

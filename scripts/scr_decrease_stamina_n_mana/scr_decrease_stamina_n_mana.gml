@@ -9,7 +9,7 @@ switch (type) {
 			meter.drainStamina = true;
 			global.stamina -= amount;
 			//Drain Speed
-			meter.alarm[4] = global.drainCooldown
+			meter.alarm[4] = global.drainCooldown;
 			//Regeneration Cooldown
 			meter.alarm[2] = global.regenCooldown;
 		}

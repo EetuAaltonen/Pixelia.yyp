@@ -1,4 +1,4 @@
-/// @description Stamina regen
+/// @description Mana regen
 if (!drainMana) {
 	if (global.mana < (global.maxMana + global.manaPlus)) {
 		global.mana += global.manaRegenAmount + global.manaRegenPlus;
