@@ -46,5 +46,6 @@ if (count != 0) {
 		//Remove From Inventory
 		scr_inventory_add_item(item, count*(-1));
 		//Contains: "obj_inventory_controller.updateValues = true;" already.
+		obj_inventory_controller.updateValues = true;
 	}
 }

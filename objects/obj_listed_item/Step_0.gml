@@ -21,7 +21,7 @@ if (!obj_inventory_controller.updateValues) {
 		mask_index = spr_inv_item_bg;
 		name = data[1];
 		count = data[3];
-		//data[6] = round(data[6]*global.sellRate); Add sell rate to price
+		//data[6] = round(data[6]*(1 + global.sellRate));
 		var description;
 		var info = scr_item_info_struct();
 		var mark = scr_item_mark_struct();

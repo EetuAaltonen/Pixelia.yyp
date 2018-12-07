@@ -8,7 +8,7 @@ if (instance_exists(obj_search_box)) {
 			save = instance_find(obj_menu_saved_game, i);
 			///Check text length
 			if (save.load_file == obj_search_box.txt) {
-			    image_blend = make_colour_hsv(0, 0, -1);
+			    image_blend = make_colour_hsv(0, 0, 255);
 			}
 		}
 	}

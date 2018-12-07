@@ -6,5 +6,5 @@ if (product != "null") {
 	var spriteHeight = sprite_height;
 	draw_sprite(product[0], 0, x+(spriteWidth/2), y+(spriteHeight/2));
 } else {
-    image_blend = make_colour_hsv(0, 0, -1);
+    image_blend = make_colour_hsv(0, 0, 255);
 }

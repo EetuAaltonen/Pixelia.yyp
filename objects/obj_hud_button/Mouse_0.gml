@@ -13,14 +13,11 @@ if (global.hudState != hudState && hudState != "") {
 			if (instance_exists(obj_hud_button)) {
 				with (obj_hud_button) instance_destroy();
 			}
-			//Destroy Listed Items
-			if (instance_exists(obj_listed_item)) {
-				with (obj_listed_item) instance_destroy();
-			}
-			//Destroy Search Box
-			if (instance_exists(obj_search_box)) {
-				with (obj_search_box) instance_destroy();
-			}
+			//Remove Listed Items
+			scr_listed_item_remove();
+			
+			//Remove Search Box
+			scr_hud_search_box_remove();
 
 			scr_savegame();
 		}
@@ -28,23 +25,12 @@ if (global.hudState != hudState && hudState != "") {
 		//global.hudState = hudState;
 		scr_set_global_hudstate(hudState);
 		
-		//Destroy Search Box
-		if (instance_exists(obj_search_box)) {
-			with (obj_search_box) instance_destroy();
-		}
+		//Remove Search Box
+		scr_hud_search_box_remove();
 		
-		//Destroy Listed Items
-		if (instance_exists(obj_listed_item)) {
-			with (obj_listed_item) instance_destroy();
-		}
+		//Remove Listed Items
+		scr_listed_item_remove();
 		
 		obj_inventory_controller.updateValues = true;
-		
-		/*var controller = obj_inventory_controller;
-		controller.updateValues = true;
-		controller.pageIndex = 1;
-		controller.filter = "null";
-		
-		scr_set_global_hudstate(hudState);*/
 	}
 }

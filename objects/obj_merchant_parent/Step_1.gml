@@ -1,32 +1,13 @@
 //Start dialog / Open Shop
 if (scr_interact_with_player()) {
-	scr_shop_open();
-} else if (scr_keys_to_close()) {
-	//Close Shop
-	if (string_pos("shop", string(global.hudState))) {
-		scr_shop_close();
-	}
-}
-/*if (distance_to_object(obj_use) == 0 && 
-    image_blend != make_colour_hsv(0, 0, -1)) {
+	scr_set_global_hudstate("shopBuy");
+	scr_shop_create_buttons();
 	
-	if (instance_exists(obj_use)) {
-        with (obj_use) instance_destroy();
-    }
-	if (instance_exists(obj_player)) {
-		if (global.hudState == "null") {
-		    if (instance_exists(obj_player)) {
-		        if (scr_plr_neutral_action_states()) {
-					scr_shop_open();
-		        }
-		    }
-		}
-		//var spriteIndex = sprite_get_name(sprite_index);
-        //var dialogs = scr_dialog_get_options(spriteIndex, false, false);
-		//if (is_array(dialogs)) {
-		//	scr_dialog(dialogs);
-		//} else {
-		//	scr_add_new_toast("Nothing");
-		//}
-    }
-}*/
+	scr_shop_open();
+	obj_inventory_controller.merchant = self;
+	scr_ds_list_copy(obj_inventory_controller.listOfShop, shop, false);
+	
+} else if (string_pos("shop", string(global.hudState)) &&
+			scr_keys_to_close()) {
+	scr_shop_close();
+}

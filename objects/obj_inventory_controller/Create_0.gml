@@ -13,13 +13,6 @@ itemsPerPage = 10;
 startIndex = 0;
 lastItem = 0;
 
-//List Item Info
-names = [];
-count = [];
-weight = [];
-price = [];
-regLvl = [];
-
 //Shop
 listOfShop = "null";
 merchant = "null";

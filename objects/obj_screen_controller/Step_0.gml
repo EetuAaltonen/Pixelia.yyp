@@ -16,9 +16,10 @@ if (room == Menu) {
 		if (instance_exists(obj_menu_orb_of_dysforia)) {
 			with (obj_menu_orb_of_dysforia) instance_destroy();
 		}
-		if (instance_exists(obj_search_box)) {
-			with (obj_search_box) instance_destroy();	
-		}
+		
+		//Remove Search Box
+		scr_hud_search_box_remove();
+		
 		if (instance_exists(obj_menu_saved_game)) {
 			with (obj_menu_saved_game) instance_destroy();	
 		}

@@ -1,8 +1,8 @@
 {
-    "id": "bf1396b1-b48f-4b49-ac4b-d0822ea89750",
+    "id": "89ce8e84-4085-4282-beea-4624e39c004a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_hud_remove_search_box",
+    "name": "scr_shop_create_buttons",
     "IsCompatibility": false,
     "IsDnD": false
 }

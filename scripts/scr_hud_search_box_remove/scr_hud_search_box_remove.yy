@@ -1,8 +1,8 @@
 {
-    "id": "b8927ef7-e13b-4238-87af-923723778ed5",
+    "id": "bf1396b1-b48f-4b49-ac4b-d0822ea89750",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_inventory_can_close",
+    "name": "scr_hud_search_box_remove",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -75,8 +75,6 @@ if (updateValues) {
 			}
 		}
 	} else {
-		if (instance_exists(obj_listed_item)) {
-			with (obj_listed_item) instance_destroy();	
-		}
+		scr_listed_item_remove();
 	}
 }

@@ -32,8 +32,6 @@ if (listSize > 0) {
 	}
 }
 
-
-
 if (alreadyExists) {
 	count += data[3];
 	if (count > 0) {
@@ -43,6 +41,7 @@ if (alreadyExists) {
 		ds_list_delete(controller.listOfShop, i);
 	}
 } else {
+	item[3] = count;
 	ds_list_add(controller.listOfShop, item);
 }
 scr_ds_list_copy(controller.merchant.shop, controller.listOfShop, false);

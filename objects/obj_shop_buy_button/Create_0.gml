@@ -1,2 +1,0 @@
-text = "Buy"
-hudState = "shopBuy";

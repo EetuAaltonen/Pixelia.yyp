@@ -1,10 +1,7 @@
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-
 scr_set_global_hudstate("inventoryBackpack");
 updateValues = true;
 pageIndex = 1;
-filter = "null";
+filter = "";
 
 //Create Buttons
 var buttons = [

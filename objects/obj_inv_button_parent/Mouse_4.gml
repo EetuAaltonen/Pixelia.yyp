@@ -9,15 +9,11 @@ if (hudState == "null") {
 	if (global.hudState != hudState) {
 	    global.hudState = hudState;
 		
-		//Destroy Search Box
-		if (instance_exists(obj_search_box)) {
-			with (obj_search_box) instance_destroy();
-		}
+		//Remove Search Box
+		scr_hud_search_box_remove();
 		
-		//Destroy Listed Items
-		if (instance_exists(obj_listed_item)) {
-			with (obj_listed_item) instance_destroy();
-		}
+		//Remove Listed Items
+		scr_listed_item_remove();
 		
 		obj_inventory_controller.updateValues = true;
 	}

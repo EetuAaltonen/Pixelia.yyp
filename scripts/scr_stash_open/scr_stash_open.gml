@@ -7,7 +7,7 @@ scr_set_global_hudstate("stashWithdraw");
 
 controller.updateValues = true;
 controller.pageIndex = 1;
-controller.filter = "null";
+controller.filter = "";
 
 //Create Buttons
 var buttons = [

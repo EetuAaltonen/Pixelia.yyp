@@ -4,14 +4,12 @@ scr_close_global_hudstate();
 if (instance_exists(obj_inv_button_parent)) {
 	with (obj_inv_button_parent) instance_destroy();
 }
-//Destroy Listed Items
-if (instance_exists(obj_listed_item)) {
-	with (obj_listed_item) instance_destroy();
-}
-//Destroy Search Box
-if (instance_exists(obj_search_box)) {
-	with (obj_search_box) instance_destroy();
-}
+
+//Remove Listed Items
+scr_listed_item_remove();
+
+//Remove Search Box
+scr_hud_search_box_remove();
 
 //Destroy Crafting Slots
 if (instance_exists(obj_crafting_slot)) {
