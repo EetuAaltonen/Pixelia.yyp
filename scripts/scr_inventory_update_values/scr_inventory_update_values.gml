@@ -43,13 +43,11 @@ if (updateValues) {
 		}
 		startIndex = (pageIndex-1)*itemsPerPage;
 		
-		if (!instance_exists(obj_listed_item)) {
-			//Listed Items
-			//scr_inventory_create_listed_items();
-			
+		//Listed Items
+		if (!instance_exists(obj_listed_item)) {	
 			xPost = 17;
 			yPos = 99;
-			//Create items
+			//Create listed items
 			for (i = 0; i < itemsPerPage; i++) {
 				data = ds_list_find_value(listOfItems, i);
 				tempMargin = (i*margin);
@@ -72,26 +70,6 @@ if (updateValues) {
 				if (item.index == j) {
 					item.name = "";
 					item.data = data;
-					if (data != "null") {
-						names[j] = scr_item("name", data);
-						count[j] = scr_item("count", data);
-						weight[j] = scr_item("weight", data);
-						if (global.hudState == "shopSell") {
-							price[j] = round(scr_item("price", data)*global.sellRate);
-							if (price[j] < 1) {
-								price[j] = 1;
-							}
-						} else {
-							price[j] = scr_item("price", data);
-						}
-						regLvl[j] = scr_item("reqLevel", data);
-					} else {
-						names[j] = "";
-						count[j] = "";
-						weight[j] = "";
-						price[j] = "";
-						regLvl[j] = 0;
-					}
 					break;
 				}
 			}

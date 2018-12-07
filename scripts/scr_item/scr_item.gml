@@ -16,7 +16,7 @@ var indexName = argument0;
 var item = argument1;
 if (item != "null") {
 	if (is_array(item)) {
-		var infoIndices = [
+		var infoIndexes = [
 			"sprite",
 			"name",
 			"type",
@@ -28,10 +28,10 @@ if (item != "null") {
 			"effectAmount",
 			"reqLevel"
 		]
-		var indexCount = array_length_1d(infoIndices);
+		var indexCount = array_length_1d(infoIndexes);
 		var i;
 		for (i = 0; i < indexCount; i++) {
-			if (indexName == infoIndices[i]) {
+			if (indexName == infoIndexes[i]) {
 				return item[i];
 			}
 		}

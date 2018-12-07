@@ -15,30 +15,33 @@ if (mask_index != spr_inv_item_bg) {
 	mask_index = spr_inv_item_bg;	
 }
 
-if (name == "" && data != "null") {
-	sprite_index = data[0];
-	mask_index = spr_inv_item_bg;
-	name = data[1];
-	count = data[3];
-	var description;
-	var info = scr_item_info_struct();
-	var mark = scr_item_mark_struct();
-	var i, j = 0;
-	var arraySize = array_length_1d(data);
-	infoText = "";
-	for (i = 0; i < arraySize; i++) {
-		if (data[i] != "null") {
-			if (i == 1 || i == 3 || i == 4 || i == 5 ||
-				i == 6 || i == 7 || i == 8 || i == 9) {
-				description = info[i] + string(data[i]) + mark[i];
-				infoText[j++] = description;
+if (!obj_inventory_controller.updateValues) {
+	if (name == "" && data != "null") {
+		sprite_index = data[0];
+		mask_index = spr_inv_item_bg;
+		name = data[1];
+		count = data[3];
+		//data[6] = round(data[6]*global.sellRate); Add sell rate to price
+		var description;
+		var info = scr_item_info_struct();
+		var mark = scr_item_mark_struct();
+		var i, j = 0;
+		var arraySize = array_length_1d(data);
+		infoText = "";
+		for (i = 0; i < arraySize; i++) {
+			if (data[i] != "null") {
+				if (i == 1 || i == 3 || i == 4 || i == 5 ||
+					i == 6 || i == 7 || i == 8 || i == 9) {
+					description = info[i] + string(data[i]) + mark[i];
+					infoText[j++] = description;
+				}
 			}
 		}
-	}
-	equipmentIndex = "";
-	//Check If Equipped
-	if (string_pos("equipment", data[2]) != 0) {
-		scr_listed_item_check_equipped();
+		equipmentIndex = "";
+		//Check If Equipped
+		if (string_pos("equipment", data[2]) != 0) {
+			scr_listed_item_check_equipped();
+		}
 	}
 }
 
@@ -98,29 +101,6 @@ if (checkSelected) {
 		}
 	}
 }
-
-///Destroy function
-/*if (global.hudState == "inventoryBackpack" || global.hudState == "inventoryEquipments") {
-	instance_destroy();
-} else if (global.hudState == "forge" ||
-         global.hudState == "alchemy" ||
-         global.hudState == "workbench")
-{
-    if (obj_crafting_controller.pageUpdate == true) {
-        instance_destroy();
-    }
-} else if (global.hudState == "shop") {
-    if (obj_inventory_controller.pageUpdate == true)
-    {
-        instance_destroy();
-    }
-} else {
-    if (global.hudState != "looting") {
-		instance_destroy();	
-	}
-}*/
-//scr_check_if_instance_destroy();
-//scr_check_if_selected_true();
 
 ///Drop items
 if (droppingItem == true) {

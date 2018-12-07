@@ -8,4 +8,5 @@ if (updateValues) {
 	}
 }
 
-scr_list_items(listOfItems);
+//Draw Info
+scr_draw_info();

@@ -2047,14 +2047,6 @@
             }
         },
         {
-            "Key": "3085e919-513b-48f0-ac96-57e7e43b6858",
-            "Value": {
-                "id": "6c65eb39-e05f-480c-b992-eb8ccec60d1e",
-                "resourcePath": "scripts\\scr_inventory_create_listed_items\\scr_inventory_create_listed_items.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "309cb82e-0b06-4a52-8ec6-12176dff8c9f",
             "Value": {
                 "id": "fb6158ac-e165-412f-b700-3c53cc1a76ce",
@@ -3167,14 +3159,6 @@
             }
         },
         {
-            "Key": "528a51e1-60bb-4529-959f-a238e6ebf568",
-            "Value": {
-                "id": "1ff4c2f8-0b51-4799-9e93-9e96eafc0c13",
-                "resourcePath": "scripts\\scr_inventory_list_backpack\\scr_inventory_list_backpack.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "52bfba00-872a-4f84-a4fa-3f4420a08ee8",
             "Value": {
                 "id": "34ba94cf-a936-4bbb-a843-3f43ae3cfd9d",
@@ -3836,14 +3820,6 @@
                 "id": "6339561e-e516-421d-9b4d-96008338b071",
                 "resourcePath": "sprites\\spr_fishing_mini_game_area_2\\spr_fishing_mini_game_area_2.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "5fc085b0-020d-4644-a3df-58b384294fcd",
-            "Value": {
-                "id": "0f91219c-750d-4805-9320-0586ad248946",
-                "resourcePath": "scripts\\scr_list_items\\scr_list_items.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -10189,14 +10165,12 @@
         "af67c406-a169-4c47-9b34-5581e20aa1b7",
         "5d87b4d9-b6d1-4ea5-90a9-3579886267ed",
         "3e050ecf-5db9-49f2-ab02-6c1724e0f286",
-        "5fc085b0-020d-4644-a3df-58b384294fcd",
         "9d6edd24-cbc6-4c30-aeda-54056672e90c",
         "4ec33665-103d-4bb9-84c7-d8084b537270",
         "a0e8dd48-0831-4996-b8b9-51bb832c84bd",
         "cc4f1fb4-1b13-47b2-a843-6b83969f0da2",
         "b79ff6d2-b471-40a0-9025-34752824cbbd",
         "7ff39a7a-4ebf-4ace-b65b-17f9e3847192",
-        "3085e919-513b-48f0-ac96-57e7e43b6858",
         "da5a1f21-aa3b-42b7-a7d8-ca12a339a76e",
         "8dbfbbfd-a266-4997-9ccd-1f017a587e89",
         "e4500de0-7608-4c60-9c97-f9bd3eb09dda",
@@ -10220,7 +10194,6 @@
         "d59efc45-9d1a-404e-8c96-6fe88d100085",
         "3ca66e6f-aa8a-4274-bc8a-1640f0e40c08",
         "73f8e6f4-b276-4602-9b04-0d721cfa60ca",
-        "528a51e1-60bb-4529-959f-a238e6ebf568",
         "fae4d079-cb32-4df4-8afd-8a8b58826abf",
         "d6bde921-188d-4e49-ae6c-d932a0309d31",
         "dd860ec7-14b5-4516-9e8a-df1bf1bcc057",
