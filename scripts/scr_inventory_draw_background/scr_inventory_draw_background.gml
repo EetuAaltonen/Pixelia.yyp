@@ -17,7 +17,7 @@ if (scr_hud_state_some_of_inventory() ||
 			var listSize = ds_list_size(listOfItems);
 		
 			if (listSize > 0) {
-				yPos = 90;
+				yPos = 80;
 				j = 0;
 				for (i = startIndex; i < lastItem; i++) {
 					tempMargin = (j*margin);
@@ -43,13 +43,13 @@ if (scr_hud_state_some_of_inventory() ||
 			}
 		}
 		//Page Index background
-		draw_sprite(spr_inv_item_count_bg, 0, viewX+4, viewY+65);
+		draw_sprite(spr_inv_button_small, 0, viewX+4, viewY+60);
 		//Your Gold/Total And Weight Background
-		draw_sprite(spr_inv_item_description_bg, 0, viewX+180, viewY+65);
+		draw_sprite(spr_inv_item_long_bg, 0, viewX+180, viewY+60);
 	
 		if (scr_hud_state_not_crafting()) {
 			//Item info background
-			draw_sprite(spr_inv_item_info_bg, 0, viewX+334, viewY+65);
+			draw_sprite(spr_inv_item_info_bg, 0, viewX+334, viewY+60);
 		}
 	}
 }

@@ -1,4 +1,4 @@
-if (room != Menu) {
+/*if (room != Menu) {
 	if (room == First_loading || global.hudState == "roomChange") {
 		//When Not Showing
 	} else {

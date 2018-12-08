@@ -7,7 +7,7 @@ filter = "";
 var buttons = [
 	["inventoryBackpack", "Backpack", "medium"],
 	["inventoryEquipments", "Equipments", "medium"],
-	["abilities", "Abilities", "small"],
+	["abilities", "Abilities", "medium"],
 	["skills", "Skills", "small"],
 	["stats", "Stats", "small"],
 	["quests", "Quests", "small"],

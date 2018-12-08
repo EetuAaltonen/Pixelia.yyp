@@ -8,7 +8,7 @@ if (updateValues) {
 	
 	//Create Search Box
 	if (!instance_exists(obj_search_box)) {
-		instance_create(viewX+412, viewY+250, obj_search_box);
+		instance_create(viewX+36, viewY+60, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -28,7 +28,7 @@ if (updateValues) {
 	}
 	
 	if (listSize > 0) {
-		var yPos;
+		var yPos, xPost;
 		var margin = 19, tempMargin;
 		var i, j;
 		var data;
@@ -44,9 +44,9 @@ if (updateValues) {
 		startIndex = (pageIndex-1)*itemsPerPage;
 		
 		//Listed Items
-		if (!instance_exists(obj_listed_item)) {	
+		if (!instance_exists(obj_listed_item)) {
 			xPost = 17;
-			yPos = 99;
+			yPos = 89;
 			//Create listed items
 			for (i = 0; i < itemsPerPage; i++) {
 				data = ds_list_find_value(listOfItems, i);

@@ -18,8 +18,11 @@ for (i = 0; i < count; i++) {
 	instance_create(viewX+110, viewY+150+(margin*i), obj_menu_button);
 	(instance_nearest(viewX+110, viewY+150+(margin*i), obj_menu_button)).action = button[0];
 	(instance_nearest(viewX+110, viewY+150+(margin*i), obj_menu_button)).infoText = button[1];
+	if (button[0] == "load") {
+		(instance_nearest(viewX+110, viewY+150+(margin*i), obj_menu_button)).tempInfoText = button[1];
+	}
 }
 //Text Box
-instance_create(viewX+110, viewY+110, obj_search_box);
+instance_create(viewX+39, viewY+110, obj_search_box);
 //SearchSaves
 searchSaves = true; 

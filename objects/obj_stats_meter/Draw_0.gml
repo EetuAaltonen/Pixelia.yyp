@@ -25,10 +25,10 @@ if (global.hudState != "map") {
 		draw_sprite_ext(spr_stamina_n_mana, 0, viewX+4, viewY+4, 126*(global.healthPoints/global.maxHealth), 1, 0, c_white, 1);
 		draw_text(viewX+65, viewY+9, string(global.healthPoints) + " / " + string(global.maxHealth));
 		//Draw stamina && background
-		draw_sprite_ext(spr_stamina_n_mana, 1, viewX+30, viewY+14, 100*(global.stamina/global.maxStamina), 1, 0, c_white, 1);
-		draw_text(viewX+80, viewY+19, string(global.stamina) + " / " + string(global.maxStamina));
+		draw_sprite_ext(spr_stamina_n_mana, 1, viewX+30, viewY+15, 100*(global.stamina/global.maxStamina), 1, 0, c_white, 1);
+		draw_text(viewX+80, viewY+20, string(global.stamina) + " / " + string(global.maxStamina));
 		//Draw mana && background
-		draw_sprite_ext(spr_stamina_n_mana, 2, viewX+30, viewY+24, 100*(global.mana/global.maxMana), 1, 0, c_white, 1);
-		draw_text(viewX+80, viewY+29, string(global.mana) + " / " + string(global.maxMana));
+		draw_sprite_ext(spr_stamina_n_mana, 2, viewX+30, viewY+27, 100*(global.mana/global.maxMana), 1, 0, c_white, 1);
+		draw_text(viewX+80, viewY+32, string(global.mana) + " / " + string(global.maxMana));
 	}
 }

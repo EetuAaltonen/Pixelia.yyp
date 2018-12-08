@@ -1,5 +1,5 @@
 //Font
-draw_set_font(fnt_draw_gui_inventory);
+draw_set_font(fnt_draw_gui_inv_medium);
 draw_set_color(c_white);
 draw_set_halign(fa_right);
 draw_set_valign(fa_middle);

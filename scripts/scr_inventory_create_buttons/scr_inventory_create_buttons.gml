@@ -19,10 +19,10 @@ for (i = 0; i < arrayLength; i++) {
 	button = buttons[i];
 	if (button[2] == "medium") {
 		spriteIndex = spr_inv_button_medium;
-		width = 84;
+		width = 63;
 	} else {
 		spriteIndex = spr_inv_button_small;
-		width = 40;
+		width = 30;
 	}
 	instance_create(viewX+startX+xPos, viewY+startY, obj_inv_button);
 	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).hudState = button[0];

@@ -41,6 +41,7 @@ if (hudState != "null") {
 				obj_inventory_controller.updateValues = true;
 				obj_inventory_controller.pageIndex = 1;
 				obj_inventory_controller.filter = "";
+				scr_inventory_clear_search_box();
 			}break;
 		}
 	}

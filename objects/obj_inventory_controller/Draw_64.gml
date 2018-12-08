@@ -7,7 +7,7 @@ var wAspect = global.resWAspect;
 var hAspect = global.resHAspect;
 
 //Font
-draw_set_font(fnt_draw_gui_inventory);
+draw_set_font(fnt_draw_gui_inv_medium);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
@@ -18,13 +18,6 @@ if (global.hudState == "inventoryBackpack" ||
 	global.hudState == "shopBuy" ||
 	global.hudState == "stashDeposit" ||
 	scr_hud_state_some_of_crafting()) {
-		
-	//Create Search Box
-	if (!instance_exists(obj_search_box)) {
-		instance_create(viewX+412, viewY+230, obj_search_box);
-		filter = "";
-		pageIndex = 1;
-	}
 	
 	//Draw Info
 	scr_draw_info();
@@ -69,32 +62,14 @@ if (global.hudState == "inventoryBackpack" ||
     //Thirst
     draw_text(viewX+250,viewY+205, string(global.home_thirst));*/
 } else if (global.hudState == "shopRepair") {
-	//Create Search Box
-	if (!instance_exists(obj_search_box)) {
-		instance_create(viewX+412, viewY+230, obj_search_box);
-		filter = "";
-		pageIndex = 1;
-	}
 	
 	draw_text(viewX+30, viewY+120, "Coming Soon!");
 	//scr_inventory_list_backpack();
 } else if (global.hudState == "shopBuyBack") {
-	//Create Search Box
-	if (!instance_exists(obj_search_box)) {
-		instance_create(viewX+412, viewY+230, obj_search_box);
-		filter = "";
-		pageIndex = 1;
-	}
 	
 	draw_text(viewX+30, viewY+120, "Coming Soon!");
 	//scr_inventory_list_backpack();
 } else if (global.hudState == "stashWithdraw") {
-	//Create Search Box
-	if (!instance_exists(obj_search_box)) {
-		instance_create(viewX+412, viewY+230, obj_search_box);
-		filter = "";
-		pageIndex = 1;
-	}
 	
 	scr_stash_list_items();
 }

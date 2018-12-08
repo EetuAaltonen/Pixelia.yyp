@@ -19,7 +19,13 @@ if (selected == true) {
                 keyboard_string = txt;
             }
         } else {
+			
+			blink_icon = "";
+			alarm[1] = blink_speed;
+			
             txt = keyboard_string;
+			erase_delay = erase_orig_delay;
+			alarm[2] = erase_delay;
         }
     } else {
 		if (room != Menu) {
@@ -36,8 +42,10 @@ if (selected == true) {
 				obj_inventory_controller.pageIndex = 1;
 				obj_inventory_controller.updateValues = true;
 			}
-	        //obj_inventory_controller.pageUpdate = true;
-	        //obj_inventory_controller.createOnce = true;
+		} else {
+			keyboard_string = "";
+			blink_icon = "";
+			selected = false;
 		}
     }
 }
