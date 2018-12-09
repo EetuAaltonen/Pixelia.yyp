@@ -27,7 +27,7 @@ if (count != 0) {
 		//Check If Already Exists
 		for (i = 0; i < listSize; i++) {
 			data = ds_list_find_value(global.stash, i);
-			if (scr_item_compare_items(item, data)) {
+			if (scr_item_compare_items(item, data, "full")) {
 				if (count + data[3] > 0) {
 					data[3] += count;
 					ds_list_replace(global.stash, i, data);

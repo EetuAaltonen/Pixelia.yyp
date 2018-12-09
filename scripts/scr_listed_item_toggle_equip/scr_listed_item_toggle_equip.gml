@@ -12,7 +12,7 @@ if (equipmentIndex != "") {
 		if (index > -1) {
 			if (global.equipments[index] == "") {
 				scr_listed_item_equip(index);
-			} else if (!scr_item_compare_items(global.equipments[index], data)) {
+			} else if (!scr_item_compare_items(global.equipments[index], data, "full")) {
 				scr_listed_item_equip(index);
 			}
 		}

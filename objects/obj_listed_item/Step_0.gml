@@ -91,7 +91,7 @@ if (checkSelected) {
 				for (i = 0; i < slotCount; i++) {
 					slot = instance_find(obj_crafting_slot, i);
 					if (slot.item != "null") {
-						if (scr_item_compare_items(slot.item, data)) {
+						if (scr_item_compare_items(slot.item, data, "full")) {
 							selected = true;
 							break;
 						}
