@@ -9,18 +9,7 @@
 	rarity; 2
 }*/
 
-/*Item {
-	sprite; 0
-	name; 1
-	type/shop; 2
-	count; 3
-	durability; 4
-	weight; 5
-	price; 6
-	effect; 7
-	effectAmount; 8
-	requiredLevel; 9
-}*/
+//scr_item_info_struct()
 
 var name = argument0;
 var listOfLoots = scr_enemy_loot_list();

@@ -31,7 +31,7 @@ if (global.hudState == "null" || global.hudState == "minigame") {
 	
 	
 	//Font
-	draw_set_font(fnt_draw_gui_statics);
+	draw_set_font(fnt_draw_gui_inv_small);
 	if (obj_screen_controller.darknessAlpha > 0.5) {
 		draw_set_color(c_white);
 	} else {
@@ -42,14 +42,14 @@ if (global.hudState == "null" || global.hudState == "minigame") {
 	
 	if (room != First_loading) {
 		//Statics
-		draw_text(scr_gui(5,"x"), scr_gui(45,"y"), "FPS: " + string(fps));
+		draw_text(scr_gui(5,"x"), scr_gui(64,"y"), "FPS: " + string(fps));
 		//Time Played
-		draw_text(scr_gui(5,"x"), scr_gui(65,"y"), "Time Played:");
-		draw_text(scr_gui(5,"x"), scr_gui(75,"y"), "Days " + string(days));
-		draw_text(scr_gui(5,"x"), scr_gui(85,"y"), "Hours "+ tempHours + ":" + tempMinutes + ":" + tempSeconds);
+		draw_text(scr_gui(5,"x"), scr_gui(85,"y"), "Time Played:");
+		draw_text(scr_gui(5,"x"), scr_gui(95,"y"), "Days " + string(days));
+		draw_text(scr_gui(5,"x"), scr_gui(105,"y"), "Hours "+ tempHours + ":" + tempMinutes + ":" + tempSeconds);
 		//Global Clock
-		draw_text(scr_gui(5,"x"), scr_gui(105,"y"), "Global Date " + string(gDays) + "." + string(gMonths) + "." + string(gYears));
-		draw_text(scr_gui(5,"x"), scr_gui(115,"y"), "Global Clock " + tempGHours + ":" + tempGMinutes + ":" + tempGSeconds);
+		draw_text(scr_gui(5,"x"), scr_gui(115,"y"), "Global Date " + string(gDays) + "." + string(gMonths) + "." + string(gYears));
+		draw_text(scr_gui(5,"x"), scr_gui(125,"y"), "Global Clock " + tempGHours + ":" + tempGMinutes + ":" + tempGSeconds);
 	}
 	
 }

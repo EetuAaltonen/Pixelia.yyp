@@ -49,14 +49,14 @@ if (global.hudState != "map") {
 	}
 
 	//Coin logo
-	draw_sprite_ext(spr_money_icon, image_index, viewX+106, 
+	draw_sprite_ext(spr_money_icon, 0, viewX+106, 
 	                viewY+280, image_scale_coin, image_scale_coin, 
-	                image_angle, c_white, image_alpha);  
+	                image_angle, c_white, image_alpha);
 	//Coins
-	draw_text(viewX+116,viewY+279, string(global.coins));
+	draw_text(viewX+116,viewY+279, scr_coins_format(global.coins));
 
 	//Potion logo
-	draw_sprite_ext(spr_potion_icon, image_index, viewX+202, 
+	draw_sprite_ext(spr_potion_icon, 0, viewX+202, 
 	                viewY+280, image_scale_potion, image_scale_potion, 
 	                image_angle, c_white, image_alpha);      
 	          

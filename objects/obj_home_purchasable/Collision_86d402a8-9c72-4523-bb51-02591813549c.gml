@@ -1,6 +1,6 @@
 if (obj_player.action_state == "null")
 {    
-    if (global.coins > price || global.coins == price)
+    if (global.coins >= price)
     {
         obj_player.action_state = "confirm";
         i = 1;

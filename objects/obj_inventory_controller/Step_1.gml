@@ -1,12 +1,7 @@
- ///Coins and auto healing??
-if (global.coins < 0) {
-    global.coins = 0;
-}
-
 //Auto-healing
 if (global.auto_healing == 1
-    and global.potions > 0
-    and global.healthPoints < 5) {
+    && global.potions > 0
+    && global.healthPoints < 5) {
     global.potions -= 1;
     global.healthPoints += 10;
 }

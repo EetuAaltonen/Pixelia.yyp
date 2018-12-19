@@ -6,22 +6,26 @@ draw_set_valign(fa_middle);
 
 //Draw Page Index
 draw_set_halign(fa_center);
-draw_text(scr_gui(19,"x"), scr_gui(68,"y"), string(string(pageIndex) + " / " + string(maxPageIndex)));
+draw_text(scr_gui(17,"x"), scr_gui(80,"y"), string(string(pageIndex) + " / " + string(maxPageIndex)));
+
+draw_set_halign(fa_right);
+//Your Gold
+draw_text(scr_gui(490,"x"), scr_gui(60,"y"), scr_coins_format(global.coins));
+//Merchant's Gold
+if (string_pos("shop", global.hudState) && merchant != "null") {
+	draw_text(scr_gui(490,"x"), scr_gui(80,"y"), scr_coins_format(merchant.money));
+}
+
 draw_set_halign(fa_left);
 
-if (string_pos("shop", global.hudState)) {
-	//Your Gold
-	draw_text(scr_gui(183,"x"), scr_gui(68,"y"), "Your gold:  " + string(global.coins) + "  G");
+if (global.hudState == "stashWithdraw") {
+	//Total And Weight
+	draw_text(scr_gui(183,"x"), scr_gui(80,"y"), "Capacity:  " + string_format(abs(global.totalStashCapacity), 0, 2) + "  /  " +
+				string(global.maxStashCapacity + global.stashCapacityPlus) + "  Pw");
 } else {
-	if (global.hudState == "stashWithdraw") {
-		//Total And Weight
-		draw_text(scr_gui(183,"x"), scr_gui(68,"y"), "Capacity:  " + string_format(abs(global.totalStashCapacity), 0, 2) + "  /  " +
-					string(global.maxStashCapacity + global.stashCapacityPlus) + "  Pw");
-	} else {
-		//Total And Weight
-		draw_text(scr_gui(183,"x"), scr_gui(68,"y"), "Capacity:  " + string_format(abs(global.totalInventoryCapacity), 0, 2) + "  /  " +
-					string(global.maxInventoryCapacity + global.carryingCapacityPlus) + "  Pw");
-	}
+	//Total And Weight
+	draw_text(scr_gui(183,"x"), scr_gui(80,"y"), "Capacity:  " + string_format(abs(global.totalInventoryCapacity), 0, 2) + "  /  " +
+				string(global.maxInventoryCapacity + global.carryingCapacityPlus) + "  Pw");
 }
 
 if (scr_hud_state_not_crafting()) {
@@ -33,9 +37,9 @@ if (scr_hud_state_not_crafting()) {
 		var txtHeight;
 		for (i = 0; i < lineCount; i++) {
 			txtHeight = string_height(itemInfoText[i]);
-			draw_text(scr_gui(344,"x"), scr_gui(70+((txtHeight/global.resHAspect)*i),"y"), itemInfoText[i]);
+			draw_text(scr_gui(330,"x"), scr_gui(100+((txtHeight/global.resHAspect)*i),"y"), itemInfoText[i]);
 		}
 	} else {
-		draw_text(scr_gui(344,"x"), scr_gui(70,"y"), string_hash_to_newline(itemInfoText));
+		draw_text(scr_gui(330,"x"), scr_gui(100,"y"), string_hash_to_newline(itemInfoText));
 	}
 }

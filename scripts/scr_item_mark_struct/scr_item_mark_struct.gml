@@ -8,5 +8,6 @@ return [
 	" G", //Price
 	"", //Effect
 	"", //Effect Amount
+	" s", //Effect Duration
 	"" //Required Level
 ]

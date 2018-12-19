@@ -1,15 +1,5 @@
-/*Item {
-	sprite; 0
-	name; 1
-	type/shop; 2
-	count; 3
-	durability; 4
-	weight; 5
-	price; 6
-	effect; 7
-	effectAmount; 8
-	requiredLevel; 9
-}*/
+//scr_item_info_struct()
+
 if (product != "null") {
 	if ((global.totalInventoryCapacity + (product[5]*product[3])) > (global.maxInventoryCapacity + global.carryingCapacityPlus)) {
 		scr_add_new_toast("Inventory is full!");

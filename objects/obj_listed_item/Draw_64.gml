@@ -1,15 +1,4 @@
-/*Item {
-	sprite; 0
-	name; 1
-	type/shop; 2
-	count; 3
-	durability; 4
-	weight; 5
-	price; 6
-	effect; 7 
-	effectAmount; 8
-	requiredLevel; 9
-}*/
+//scr_item_info_struct()
 //Draw item info
 if (sprite_index && data != "null") {
 	
@@ -41,7 +30,7 @@ if (sprite_index && data != "null") {
 				draw_set_color(c_red);
 			}
 		}
-		draw_text(scr_gui(250,"x"), scr_gui(yPos,"y"), string(data[6]) + "  G");
+		draw_text(scr_gui(250,"x"), scr_gui(yPos,"y"), scr_coins_format(data[6]));
 		draw_set_color(c_black);
 	}	
 }

@@ -2,8 +2,8 @@ var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 
 var buttons = argument0;
-var startX = argument1; 
-var startY = argument2;
+var startX = 4;//argument1; 
+var startY = 52;//argument2;
 var button;
 var margin = 5;
 var xPos = 0;
@@ -19,10 +19,10 @@ for (i = 0; i < arrayLength; i++) {
 	button = buttons[i];
 	if (button[2] == "medium") {
 		spriteIndex = spr_inv_button_medium;
-		width = 63;
+		width = 60;
 	} else {
 		spriteIndex = spr_inv_button_small;
-		width = 30;
+		width = 28;
 	}
 	instance_create(viewX+startX+xPos, viewY+startY, obj_inv_button);
 	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).hudState = button[0];

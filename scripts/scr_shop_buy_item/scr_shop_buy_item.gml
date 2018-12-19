@@ -1,16 +1,21 @@
+//scr_item_info_struct()
+
 if (global.coins >= data[6]) {
 	//Check Weight
 	if (scr_inventory_check_capacity(data[5],true)) {
+		var controller = obj_inventory_controller;
+		var merchant = controller.merchant;
         //Add To Inventory
 		scr_inventory_add_item(data, 1);
-		//Toast
-        scr_add_new_toast(data[1] + " purchased");
 		//Remove From Shop
-		scr_add_to_shop(data, -1);
+		scr_ds_list_add_item(data, -1, controller.listOfShop);
+		scr_ds_list_copy(merchant.shop, controller.listOfShop, false);
+		controller.updateValues = true;
 		//Pay
 		global.coins -= data[6];
-    } else {
-		scr_add_new_toast("Inventory is full!");
+		merchant.money += data[6];
+		//Toast
+        scr_add_new_toast(data[1] + " purchased");
     }
 } else {
 	scr_add_new_toast("Not enough money!");

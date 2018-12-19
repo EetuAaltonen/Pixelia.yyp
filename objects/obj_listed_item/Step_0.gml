@@ -1,15 +1,4 @@
-/*Item {
-	sprite; 0
-	name; 1
-	type/shop; 2
-	count; 3
-	durability; 4
-	weight; 5
-	price; 6
-	effect; 7 
-	effectAmount; 8
-	requiredLevel; 9
-}*/
+//scr_item_info_struct()
 
 if (mask_index != spr_inv_item_bg) {
 	mask_index = spr_inv_item_bg;	
@@ -31,8 +20,22 @@ if (!obj_inventory_controller.updateValues) {
 		for (i = 0; i < arraySize; i++) {
 			if (data[i] != "null") {
 				if (i == 1 || i == 3 || i == 4 || i == 5 ||
-					i == 6 || i == 7 || i == 8 || i == 9) {
+					i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
 					description = info[i] + string(data[i]) + mark[i];
+					if (data[i] == -1) {
+						description = info[i] + "---" + mark[i];
+					}
+					if (i == 7 && data[i] != "null") {
+						//Replace Effect Code With Name
+						description = info[i] + scr_item_search_effect(data[i], "key") + mark[i];
+					}
+					else if (i == 5 && data[3] > 1) {
+						//Calculate Stack Weight
+						description += " (" + string(data[i] * data[3]) + ")";
+					} else if (i == 6 && data[3] > 1) {
+						//Calculate Stack Price
+						description += " (" + string(data[i] * data[3]) + ")";
+					}
 					infoText[j++] = description;
 				}
 			}
@@ -41,6 +44,12 @@ if (!obj_inventory_controller.updateValues) {
 		//Check If Equipped
 		if (string_pos("equipment", data[2]) != 0) {
 			scr_listed_item_check_equipped();
+		}
+		
+		//Check If Mouse Over
+		if (distance_to_point(mouse_x, mouse_y) == 0) {
+			///Set inventory info text
+			obj_inventory_controller.itemInfoText = infoText;	
 		}
 	}
 }

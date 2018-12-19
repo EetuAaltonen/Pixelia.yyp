@@ -1,16 +1,5 @@
-/*Item {
-	sprite; 0
-	name; 1
-	type/shop; 2
-	count; 3
-	durability; 4
-	weight; 5
-	price; 6
-	effect; 7
-	effectAmount; 8
-	requiredLevel; 9
-}*/
-
+//scr_item_info_struct()
+/*
 var lists = [
 	global.inventory,
 	global.stash
@@ -35,8 +24,7 @@ for (i = 0; i < listsCount; i++) {
 					data[2] = item[2];
 					data[5] = item[5];
 					data[6] = item[6];
-					data[7] = item[7];
-					data[8] = item[8];
+					data[10] = item[10];
 					ds_list_add(list, data);
 					break;
 				}
@@ -60,8 +48,7 @@ for (i = 0; i < listSize; i++) {
 					data[2] = item[2];
 					data[5] = item[5];
 					data[6] = item[6];
-					data[7] = item[7];
-					data[8] = item[8];
+					data[10] = item[10];
 					//All Correct
 					itemExists = true;
 					break;
