@@ -14,4 +14,4 @@ var buttons = [
 	["save&exit", "Save And Exit", "medium"],
 	["close", "Close", "small"]
 ];
-scr_inventory_create_buttons(buttons/*, 4, 40*/);
+scr_inventory_create_buttons(buttons);

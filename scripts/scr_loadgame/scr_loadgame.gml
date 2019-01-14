@@ -77,6 +77,12 @@ if (file_exists(global.save_file)) {
     global.coins = ini_read_real(global.save_file,"coins",0);
     global.potions = ini_read_real(global.save_file,"potions",0);
 	
+	//Buffs
+	var data = ini_read_string(global.save_file, "buffs", "");
+	if (data != "") {
+		ds_list_read(global.buffs, data);
+	}
+	
 	//Inventory Capacity
 	global.maxInventoryCapacity = ini_read_real(global.save_file,"maxInventoryCapacity",global.maxInventoryCapacity);
 	global.totalInventoryCapacity = ini_read_real(global.save_file,"totalInventoryCapacity",global.totalInventoryCapacity);

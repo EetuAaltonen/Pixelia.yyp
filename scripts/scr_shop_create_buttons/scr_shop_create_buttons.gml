@@ -6,4 +6,4 @@ var buttons = [
 	["shopBuyBack", "Buy Back", "medium"],
 	["close", "Close", "small"],
 ];
-scr_inventory_create_buttons(buttons/*, 4, 40*/);
+scr_inventory_create_buttons(buttons);

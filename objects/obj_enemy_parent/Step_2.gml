@@ -2,7 +2,7 @@ if (distance_to_object(obj_plr_attack_parent) == 0) {
 	///Hit by player
 	if (invulnerable == false) {
 	    if (instance_exists(obj_plr_attack_parent)) {
-	        with (obj_plr_attack_parent) instance_destroy();
+	        with (instance_nearest(x, y, obj_plr_attack_parent)) instance_destroy();
 	    }
 		scr_enemy_get_hit();
 	    scr_enemy_die();

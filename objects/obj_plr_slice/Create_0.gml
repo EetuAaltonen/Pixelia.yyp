@@ -9,4 +9,5 @@ if (instance_exists(obj_player)) {
 } else {
     instance_destroy();
 }
-moveDistance = 30;
+range = 30;
+elementalEffect = [];

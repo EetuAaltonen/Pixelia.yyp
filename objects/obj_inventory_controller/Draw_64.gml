@@ -72,4 +72,27 @@ if (global.hudState == "inventoryBackpack" ||
 } else if (global.hudState == "stashWithdraw") {
 	
 	scr_stash_list_items();
+} else if (global.hudState != "map") {
+	//Font
+	draw_set_font(fnt_draw_gui_inv_small);
+	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_middle);
+
+	//Level
+	draw_text(scr_gui(10, "x"), scr_gui(279, "y"), "Level  " + string(global.level));
+	
+	draw_set_halign(fa_right);
+	//Skill XP
+	draw_text(scr_gui(490, "x"), scr_gui(279, "y"), "XP  " + string(global.xp) + " / " + string(global.xpLimit));
+	
+	draw_set_halign(fa_left);
+	//Enchanting XP
+	draw_text(scr_gui(298, "x"), scr_gui(279, "y"), "Ench. XP  " + string(global.enchantingXp) + " / " + string(global.enchantingXpLimit));
+	
+	//Coins
+	draw_text(scr_gui(116, "x"), scr_gui(279, "y"), scr_coins_format(global.coins));
+	
+	//Potions
+	draw_text(scr_gui(212, "x"), scr_gui(279, "y"), string(global.potions) + " x");
 }

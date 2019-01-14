@@ -1,6 +1,9 @@
 //Global variables
 load = false;
 
+/*[GameTicks]*/
+global.alarmTicks = scr_time_sec_to_alarm(1); //1 second
+
 /*[Camera]*/
 	view_camera[0] = camera_create();
 /*[Delta timer]*/
@@ -52,23 +55,20 @@ global.currentRoom = Village_1; //Prototype & Testing
     global.maxArmor = 129;
     global.armorPlus = 0;
     global.armor = 0;
-    global.armorRegenAmount = 1;
-	global.armorRegenPlus = 0; //skill NEEDED???
-    global.armorRegenSpeed = 50;
+    global.armorRegenAmount = 1; //1 points per second
+	global.armorRegenPlus = 0; //+0%
     //Stamina
-    global.maxStamina = 120;//10;
+    global.maxStamina = 100;
 	global.staminaPlus = 0;
-    global.stamina = global.maxStamina;
-    global.staminaRegenAmount = 1;
-	global.staminaRegenPlus = 0; //skill NEEDED???
-    global.staminaRegenSpeed = 10;//50;
+    global.stamina = 1;//global.maxStamina;
+    global.staminaRegenAmount = 5; //5 points per second
+	global.staminaRegenPlus = 0; //+0%
     //Mana
-    global.maxMana = 100;//10;
+    global.maxMana = 100;
 	global.manaPlus = 0;
-    global.mana = global.maxMana;
-    global.manaRegenAmount = 1;
-	global.manaRegenPlus = 0; //skill NEEDED???
-    global.manaRegenSpeed = 10;//100;
+    global.mana = 1; //global.maxMana;
+    global.manaRegenAmount = 5; //5 points per second
+	global.manaRegenPlus = 1; //+100%
     //Movement
 		//Walking
 		global.maxWalkingSpeed = 1.0;//1.5;
@@ -99,6 +99,8 @@ global.currentRoom = Village_1; //Prototype & Testing
     //Potion & Coins
     global.potions = 0;
     global.coins = 0;
+	//Buffs
+	global.buffs = ds_list_create();
     //NEEDED???
     global.auto_healing = 1;
 

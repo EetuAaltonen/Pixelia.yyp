@@ -26,27 +26,3 @@ switch (type) {
 		}
 	}break;
 }
-/*switch (type) {
-	case "stamina": {
-		//Decrease stamina
-		if (meter.staminaUsage) {
-			global.stamina -= amount;
-			meter.staminaUsage = false;
-			//Reset stamina usage
-			meter.alarm[4] = global.regenCooldown;
-			//Reset stamina regen timer
-			meter.alarm[2] = global.staminaRegenSpeed;
-		}
-	}break;
-	case "mana": {
-		//Decrease mana
-		if (meter.manaUsage) {
-			global.mana -= amount;
-			meter.manaUsage = false;
-			//Reset mana usage
-			meter.alarm[5] = global.regenCooldown;
-			//Reset mana regen timer
-			meter.alarm[3] = global.manaRegenSpeed;
-		}
-	}break;
-}

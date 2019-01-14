@@ -8,7 +8,7 @@ if (updateValues) {
 	
 	//Create Search Box
 	if (!instance_exists(obj_search_box)) {
-		instance_create(viewX+35, viewY+72, obj_search_box);
+		instance_create(viewX+35, viewY+76, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -46,7 +46,7 @@ if (updateValues) {
 		//Listed Items
 		if (!instance_exists(obj_listed_item)) {
 			xPost = 17;
-			yPos = 101;
+			yPos = 105;
 			//Create listed items
 			for (i = 0; i < itemsPerPage; i++) {
 				data = ds_list_find_value(listOfItems, i);

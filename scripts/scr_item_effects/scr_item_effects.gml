@@ -10,7 +10,6 @@ return [
 	["antibleed", "Antibleedind"],
 	["poison", "Poison"],
 	["antipoison", "Antipoison"],
-	["antipoison", "Antipoison"],
 	["fire", "Fire"],
 	["antifire", "Antifire"],
 	["cursed", "Cursed"],
@@ -32,5 +31,5 @@ return [
 	["staminaregen", "Stamina Regeneration"],
 	["mana", "Mana++"],
 	["manaregen", "Mana Regeneration"],
-	["overloaded", "Overloaded"],
+	["overloaded", "Overloaded"]
 ]

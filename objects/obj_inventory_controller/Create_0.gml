@@ -19,7 +19,6 @@ merchant = "null";
 
 pageUpdate = true;
 createOnce = true; //Create objects once on the list
-buffsUpdate = true;
 listOfBuffs = false;
 
 defaultInfoText = "Item info..."; 

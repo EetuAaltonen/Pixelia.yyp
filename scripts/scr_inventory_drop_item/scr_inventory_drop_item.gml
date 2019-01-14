@@ -3,14 +3,14 @@
 var data = argument0;
 var count = argument1;
 
-if (instance_exists(obj_player)) {
+if (instance_exists(obj_player)) {	
 	//Remove From Inventory
 	scr_inventory_add_item(data, count);
-				
-	//Remove From Equipments
-	if (equipmentIndex > -1) {
-		global.equipments[equipmentIndex] = "";
-		equipmentIndex = -1;
+	
+	//Check if count <= 0
+	if ((data[3] + count) <= 0) {
+		//Unequip if equipped
+		scr_listed_item_unequip();	
 	}
 	
 	//Add Toast

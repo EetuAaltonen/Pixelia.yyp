@@ -21,22 +21,6 @@ if (global.hudState != "map") {
 	draw_sprite_ext(spr_hotbar_bg, image_index, viewX+0, viewY+270,
 	                image_xscale, image_yscale, image_angle, c_white, image_alpha);
 
-	///Level, Coins, Potions
-	//Font
-	draw_set_font(fnt_hotbar_text);
-	draw_set_color(c_black);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
-
-	//Level
-	draw_text(viewX+10,viewY+279, "Level  " + string(global.level));
-	draw_set_halign(fa_right);
-	//Skill XP
-	draw_text(viewX+490,viewY+279, "XP  " + string(global.xp) + " / " + string(global.xpLimit));
-	draw_set_halign(fa_left);
-	//Enchanting XP
-	draw_text(viewX+298,viewY+279, "Ench. XP  " + string(global.enchantingXp) + " / " + string(global.enchantingXpLimit));
-
 	var barScale = global.xp / global.xpLimit;
 	draw_sprite_ext(spr_xp_bg, 0, viewX+10, viewY+285, (48*10)*barScale, 1, 0, -1, 1);
 	for (var i = 0; i < 10; i++) {
@@ -52,16 +36,10 @@ if (global.hudState != "map") {
 	draw_sprite_ext(spr_money_icon, 0, viewX+106, 
 	                viewY+280, image_scale_coin, image_scale_coin, 
 	                image_angle, c_white, image_alpha);
-	//Coins
-	draw_text(viewX+116,viewY+279, scr_coins_format(global.coins));
-
 	//Potion logo
 	draw_sprite_ext(spr_potion_icon, 0, viewX+202, 
 	                viewY+280, image_scale_potion, image_scale_potion, 
-	                image_angle, c_white, image_alpha);      
-	          
-	//Potions
-	draw_text(viewX+212,viewY+279, string(global.potions));
+	                image_angle, c_white, image_alpha);
 }
 
 //Background

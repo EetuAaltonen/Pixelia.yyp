@@ -2,7 +2,7 @@
     "id": "40241bcd-bf2b-47e3-9e76-08b24ab03839",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_mouse_left_click1",
+    "name": "spr_controls_exit_keys",
     "For3D": false,
     "HTile": false,
     "VTile": false,

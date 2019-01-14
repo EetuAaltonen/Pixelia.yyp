@@ -3,8 +3,6 @@
 	name; 1
 }*/
 
-//scr_item_info_struct()
-
 var value = argument0;
 var type = argument1;
 var effects = scr_item_effects();

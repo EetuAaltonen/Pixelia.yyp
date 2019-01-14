@@ -3,6 +3,11 @@ if (merchant.money >= data[6]) {
 	var controller = obj_inventory_controller;
 	var merchant = controller.merchant;
 	
+	//Check if count <= 0
+	if ((data[3]-1) <= 0) {
+		//Unequip if equipped
+		scr_listed_item_unequip();	
+	}
 	//Remove From Inventory
 	scr_inventory_add_item(data, -1);
 	//Pay

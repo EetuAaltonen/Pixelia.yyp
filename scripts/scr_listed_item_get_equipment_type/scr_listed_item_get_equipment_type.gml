@@ -24,10 +24,25 @@ var equipmentTypes = [
 
 var item = argument0;
 var slotCount = array_length_1d(equipmentTypes);
-var i;
-for (i = 0; i < slotCount; i++) {
-	if (string_pos(equipmentTypes[i], item[2]) != 0) {
-		return i;
+var typeList = ds_list_create();
+var i, j, char;
+var category = "";
+
+//Item type to array
+for (i = 2; i > 0; i++ ) {
+	char = string_char_at(item[2], i);
+	if (char == "]") {
+		break;	
+	}
+	if (char == ",") {
+		for (j = 0; j < slotCount; j++) {
+			if (category == equipmentTypes[j]) {
+				return j;
+			}
+		}
+		category = "";
+	} else {
+		category += char;
 	}
 }
 show_message(item[1] + " have no equipment type!");	

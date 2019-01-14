@@ -74,6 +74,10 @@ ini_write_string(global.save_file,"quest",global.quest);
 ini_write_real(global.save_file,"coins",global.coins);
 ini_write_real(global.save_file,"potions",global.potions);
 
+//Buffs
+var data = ds_list_write(global.buffs);
+ini_write_string(global.save_file, "buffs", data);
+
 //Inventory Capacity
 ini_write_real(global.save_file,"maxInventoryCapacity",global.maxInventoryCapacity);
 ini_write_real(global.save_file,"totalInventoryCapacity",global.totalInventoryCapacity);

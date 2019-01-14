@@ -2,7 +2,7 @@
     "id": "6c9fe468-8dc1-4875-8ac1-54d354f33ac4",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_mouse_left_click",
+    "name": "spr_controls_mouse",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -98,7 +98,7 @@
             "visible": true
         }
     ],
-    "origin": 4,
+    "origin": 0,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -109,6 +109,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 7,
-    "xorig": 3,
-    "yorig": 6
+    "xorig": 0,
+    "yorig": 0
 }

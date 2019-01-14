@@ -10,7 +10,7 @@ if (filter != "") {
 	
 	for	(i = 0; i < listSize; i++) {
 		data = ds_list_find_value(list, i);
-		if (string_pos(filter, string_lower(data[1])) != 0) {
+		if (string_pos(filter, string_lower(data[1]))) {
 			ds_list_add(tempList, data);
 		}
 	}

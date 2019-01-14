@@ -6,25 +6,25 @@ draw_set_valign(fa_middle);
 
 //Draw Page Index
 draw_set_halign(fa_center);
-draw_text(scr_gui(17,"x"), scr_gui(80,"y"), string(string(pageIndex) + " / " + string(maxPageIndex)));
+draw_text(scr_gui(17,"x"), scr_gui(84,"y"), string(string(pageIndex) + " / " + string(maxPageIndex)));
 
 draw_set_halign(fa_right);
 //Your Gold
-draw_text(scr_gui(490,"x"), scr_gui(60,"y"), scr_coins_format(global.coins));
+draw_text(scr_gui(490,"x"), scr_gui(64,"y"), scr_coins_format(global.coins));
 //Merchant's Gold
 if (string_pos("shop", global.hudState) && merchant != "null") {
-	draw_text(scr_gui(490,"x"), scr_gui(80,"y"), scr_coins_format(merchant.money));
+	draw_text(scr_gui(490,"x"), scr_gui(84,"y"), scr_coins_format(merchant.money));
 }
 
 draw_set_halign(fa_left);
 
 if (global.hudState == "stashWithdraw") {
 	//Total And Weight
-	draw_text(scr_gui(183,"x"), scr_gui(80,"y"), "Capacity:  " + string_format(abs(global.totalStashCapacity), 0, 2) + "  /  " +
+	draw_text(scr_gui(183,"x"), scr_gui(84,"y"), "Capacity:  " + string_format(abs(global.totalStashCapacity), 0, 2) + "  /  " +
 				string(global.maxStashCapacity + global.stashCapacityPlus) + "  Pw");
 } else {
 	//Total And Weight
-	draw_text(scr_gui(183,"x"), scr_gui(80,"y"), "Capacity:  " + string_format(abs(global.totalInventoryCapacity), 0, 2) + "  /  " +
+	draw_text(scr_gui(183,"x"), scr_gui(84,"y"), "Capacity:  " + string_format(abs(global.totalInventoryCapacity), 0, 2) + "  /  " +
 				string(global.maxInventoryCapacity + global.carryingCapacityPlus) + "  Pw");
 }
 
@@ -37,9 +37,18 @@ if (scr_hud_state_not_crafting()) {
 		var txtHeight;
 		for (i = 0; i < lineCount; i++) {
 			txtHeight = string_height(itemInfoText[i]);
-			draw_text(scr_gui(330,"x"), scr_gui(100+((txtHeight/global.resHAspect)*i),"y"), itemInfoText[i]);
+			draw_text(scr_gui(318,"x"), scr_gui(102+((txtHeight/global.resHAspect)*i),"y"), itemInfoText[i]);
 		}
 	} else {
-		draw_text(scr_gui(330,"x"), scr_gui(100,"y"), string_hash_to_newline(itemInfoText));
+		draw_text(scr_gui(318,"x"), scr_gui(102,"y"), string_hash_to_newline(itemInfoText));
 	}
+	//Menu Controls
+	scr_controls_get_text();
+}
+
+//No items
+if (!ds_list_size(listOfItems)) {
+	//Font
+	draw_set_font(fnt_draw_gui_inv_medium);
+	draw_text(scr_gui(35,"x"), scr_gui(100,"y"), "No items found...");
 }

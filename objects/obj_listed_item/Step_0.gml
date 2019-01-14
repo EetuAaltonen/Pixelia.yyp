@@ -42,7 +42,7 @@ if (!obj_inventory_controller.updateValues) {
 		}
 		equipmentIndex = "";
 		//Check If Equipped
-		if (string_pos("equipment", data[2]) != 0) {
+		if (string_pos("equipment", data[2])) {
 			scr_listed_item_check_equipped();
 		}
 		

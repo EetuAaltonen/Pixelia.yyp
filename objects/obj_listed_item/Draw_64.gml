@@ -12,7 +12,7 @@ if (sprite_index && data != "null") {
 	
 	//Item Description
 	draw_set_color(c_black);
-	if (data[9] > global.level) {
+	if (data[10] > global.level) {
 		draw_set_color(c_red);
 	}
 	draw_text(scr_gui(42,"x"), scr_gui(yPos,"y"), data[1]);

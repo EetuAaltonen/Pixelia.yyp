@@ -2,8 +2,8 @@ var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 
 var buttons = argument0;
-var startX = 4;//argument1; 
-var startY = 52;//argument2;
+var startX = 4;
+var startY = 56;
 var button;
 var margin = 5;
 var xPos = 0;

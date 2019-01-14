@@ -64,10 +64,9 @@ return [
 		[spr_wooden_shield,"Wooden Shield","[equipment,secweapon,armorer]",1,100,0.5,5,"null","null","null",0],
 		[spr_knight_shield,"Knight Shield","[equipment,secweapon,armorer]",1,100,0.5,5,"null","null","null",5],
 		//Boots
-		[spr_leather_boots,"Leather Boots","[equipment,boots,armorer]",1,100,0.3,5,"antifreeze",-1,4,1],
-		[spr_leather_boots,"Leather Boots","[equipment,boots,armorer]",1,90,0.3,5,"antifreeze",-1,4,1],
+		[spr_leather_boots,"Leather Boots","[equipment,boots,armorer]",1,100,0.3,5,"speed",4,-1,1],
 		//Rings
-		[spr_silver_ring,"Silver Ring","[equipment,ring,armorer]",1,"null",0.01,5,"null","null","null",0],
+		[spr_silver_ring,"Silver Ring","[equipment,ring,armorer]",1,"null",0.01,5,"slow","null",-1,0],
 	/*[Weapons]*/
 		/*[Bow]*/
 		[spr_bow,"Bow","[equipment,priweapon,armorer]",1,100,0.3,5,"null","null","null",0],
@@ -90,5 +89,8 @@ return [
 	[spr_milk,"Milk","[cooking,general]",1,"null",0.3,5,"null","null","null",0],
 	[spr_egg,"Egg","[cooking,general]",1,"null",0.1,5,"null","null","null",0],
 	/*[Food]*/
-	[spr_cake,"Cake","[cooking,general]",1,"null",0.1,5,"null","null","null",0]
+	[spr_cake,"Cake","[cooking,general]",1,"null",0.1,5,"null","null","null",0],
+	/*[Potions]*/
+	[spr_water_flask,"Poison","[potion,alchemy,general]",1,"null",0.1,5,"poison",5,30,0],
+	[spr_water_flask,"Antipoison","[potion,alchemy,general]",1,"null",0.1,5,"antipoison","null",10,0]
 ];
