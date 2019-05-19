@@ -29,19 +29,28 @@ if (global.hudState == "stashWithdraw") {
 }
 
 if (scr_hud_state_not_crafting()) {
+	draw_set_font(fnt_draw_gui_inv_small);
 	draw_set_valign(fa_top);
 	//Item info text
 	if (is_array(itemInfoText)) {
 		var lineCount = array_length_1d(itemInfoText)
 		var i;
 		var txtHeight;
-		for (i = 0; i < lineCount; i++) {
+		var margin = 1;
+		//Item name
+		draw_text(scr_gui(291,"x"), scr_gui(102,"y"), itemInfoText[0]);
+		
+		draw_set_font(fnt_draw_gui_inv_tiny);
+		//Item info
+		for (i = 1; i < lineCount; i++) {
 			txtHeight = string_height(itemInfoText[i]);
-			draw_text(scr_gui(318,"x"), scr_gui(102+((txtHeight/global.resHAspect)*i),"y"), itemInfoText[i]);
+			draw_text(scr_gui(291,"x"), scr_gui(105+((txtHeight/global.resHAspect)*i)+(i*margin),"y"), itemInfoText[i]);
 		}
 	} else {
-		draw_text(scr_gui(318,"x"), scr_gui(102,"y"), string_hash_to_newline(itemInfoText));
+		draw_text(scr_gui(291,"x"), scr_gui(102,"y"), string_hash_to_newline(itemInfoText));
 	}
+	
+	draw_set_font(fnt_draw_gui_inv_small);
 	//Menu Controls
 	scr_controls_get_text();
 }

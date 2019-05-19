@@ -44,7 +44,7 @@ for (var i = 0; i < itemAmount; i++) {
 	margin = (YposPlus*i);
 	draw_sprite(spr_inv_item_bg, 0, viewX + 250 - 84, viewY + 100 + margin);
 	draw_sprite(spr_inv_item_description_bg, 0, viewX + 250, viewY + 100 + margin);
-	draw_sprite(spr_inv_item_count_bg, 0, viewX + 250 + 101, viewY + 100 + margin);
+	draw_sprite(spr_inv_item_price_bg, 0, viewX + 250 + 101, viewY + 100 + margin);
 	//draw_sprite(asset_get_index(items[i]), 0, viewX + 250 - 84, viewY + 100 + margin);
 	draw_text(viewX + 250 - 64, viewY + 100 + margin, Name[i]);
 	draw_text(viewX + 250 + 76, viewY + 100 + margin, string(Weight[i]) + " Pw");

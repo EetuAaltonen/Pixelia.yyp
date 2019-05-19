@@ -1,6 +1,6 @@
 var yPos = 274;
-var xPos1 = 325;
-var xPos2 = 389;
+var xPos1 = 299;
+var xPos2 = 363;
 switch (global.hudState) {
 	case "inventoryBackpack": {
 		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Use/Equip");

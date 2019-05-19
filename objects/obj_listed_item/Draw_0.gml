@@ -1,5 +1,4 @@
-if (sprite_index && data != "null") {
-	mask_index = defaultMask;
+if (data != "null") {
 	draw_self();
 	
 	///Draw equipped mark
@@ -11,6 +10,4 @@ if (sprite_index && data != "null") {
 		}
 	}
 	
-} else {
-	mask_index = noMask;
 }

@@ -1,22 +1,13 @@
-//Create Attributes
+mask_index = spr_listed_item_mask;
+
 //Data
 data = "null";
 //Index
 index = "null";
-
-itemCount = 0;
-sprite_index_ = "";
-spriteName = "";
-defaultMask = spr_listed_item_mask;
-noMask = spr_no_mask;
-mask_index = defaultMask;
-
+//Update item
+updateValues = false;
 //Info text
 infoText = "";
-name = "";
-weight = 0;
-armor = 0;
-buffs = false;
 
 droppingItem = false;
 createOnce = true;

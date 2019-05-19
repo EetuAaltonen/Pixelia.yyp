@@ -2,9 +2,9 @@
 	helmet, 0
 	amulet, 1
 	armor, 2
-	gloves, 3
-	primary weapon, 4
-	secondary weapon, 5
+	primary weapon, 3
+	secondary weapon, 4
+	gloves, 5
 	ring, 6
 	belt, 7
 	boots 8
@@ -14,9 +14,9 @@ var equipmentTypes = [
 	"helmet",
 	"amulet",
 	"armor",
-	"gloves",
 	"priweapon",
 	"secweapon",
+	"gloves",
 	"ring",
 	"belt",
 	"boots"

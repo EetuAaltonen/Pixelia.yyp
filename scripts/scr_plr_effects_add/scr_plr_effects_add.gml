@@ -35,6 +35,8 @@ if (!scr_plr_effects_exists(effect)) {
 				} 
 			}
 		}
+	} else {
+		addEffect = false;
 	}
 	
 	if (addEffect) {

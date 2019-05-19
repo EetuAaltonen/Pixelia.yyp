@@ -1,7 +1,7 @@
 //scr_item_info_struct()
 
 if (product != "null") {
-	if ((global.totalInventoryCapacity + (product[5]*product[3])) > (global.maxInventoryCapacity + global.carryingCapacityPlus)) {
+	if ((global.totalInventoryCapacity + (product[11]*product[3])) > (global.maxInventoryCapacity + global.carryingCapacityPlus)) {
 		scr_add_new_toast("Inventory is full!");
 	} else {
 		var controller = obj_inventory_controller;

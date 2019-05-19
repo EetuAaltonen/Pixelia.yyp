@@ -3,11 +3,14 @@ return [
 	"", //Name
 	"", //Type
 	" x", //Count
+	"", //Damage
+	" / s", //Speed
+	"", //Armor
 	" / 100", //Durability
-	" Pw", //Weight
-	" G", //Price
 	"", //Effect
 	"", //Effect Amount
 	" s", //Effect Duration
+	" Pw", //Weight
+	" G", //Price
 	"" //Required Level
 ]

@@ -6,7 +6,7 @@ var count = argument1;
 if (count != 0) {
 	if (string_pos("potion", item[2])) {
 		//Add buff
-		scr_plr_effects_add(item[7], item[8], item[9]);
+		scr_plr_effects_add(item[8], item[9], item[10]);
 	} else {
 		return;
 	}

@@ -12,8 +12,8 @@ var indx;
 //Search All Items Of The Same Type With Merchant
 for (i = 0; i < arraySize; i++) {
 	item = itemsData[i];
-	if (string_pos(type, item[2]) != 0 && (global.level+levelMargin) >= item[10]) {
-		scr_ds_list_add_item(item, irandom_range(1, 10), finalList);
+	if (string_pos(type, item[2]) != 0 && (global.level+levelMargin) >= item[13]) {
+		scr_ds_list_add_item(item, 9999/*irandom_range(1, 10)*/, finalList);
 	}
 }
 

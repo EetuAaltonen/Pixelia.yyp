@@ -28,7 +28,7 @@ if (updateValues) {
 	}
 	
 	if (listSize > 0) {
-		var yPos, xPost;
+		var yPos, xPos;
 		var margin = 19, tempMargin;
 		var i, j;
 		var data;
@@ -43,37 +43,59 @@ if (updateValues) {
 		}
 		startIndex = (pageIndex-1)*itemsPerPage;
 		
-		//Listed Items
-		if (!instance_exists(obj_listed_item)) {
-			xPost = 17;
-			yPos = 105;
-			//Create listed items
-			for (i = 0; i < itemsPerPage; i++) {
-				data = ds_list_find_value(listOfItems, i);
-				tempMargin = (i*margin);
-				instance_create(viewX+xPost, viewY+yPos+tempMargin, obj_listed_item);
-				(instance_nearest(viewX+xPost, viewY+yPos+tempMargin, obj_listed_item)).index = i;
-				(instance_nearest(viewX+xPost, viewY+yPos+tempMargin, obj_listed_item)).depth = depth-1;
-			}
-		}
-		var itemCount = instance_number(obj_listed_item);
-		var item;
+		//Create / update listed items
+		var listedItemsExist = instance_exists(obj_listed_item);
+		xPos = 17;
+		yPos = 105;
 		var tempIndex = startIndex;
-		//Create items
-		for (i = 0; i < itemCount; i++) {
+		for (i = 0; i < itemsPerPage; i++) {
 			data = "null";
 			if (tempIndex < lastItem) {
 				data = ds_list_find_value(listOfItems, tempIndex++);
 			}
-			for (j = i; j < itemCount; j++) {
-				item = instance_find(obj_listed_item, j);
-				if (item.index == j) {
-					item.name = "";
-					item.data = data;
-					break;
+			tempMargin = (i*margin);
+			if (!listedItemsExist) {
+				instance_create(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item);
+			}
+			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).index = i;
+			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).depth = depth-1;
+			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).data = data;
+			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).updateValues = true;
+		}
+		
+		//Create / update listed equipments
+		if (global.hudState == "inventoryEquipments") {
+			//scr_listed_item_get_equipment_type()
+			var equipmentsExist = instance_exists(obj_listed_equipment);
+			var i;
+			var margin = 25;
+			var verMargin = 25;
+			var xyPosList = [
+				[45, 0],
+				[45-verMargin, -1],
+				[45, -1],
+				[45-verMargin, -2],
+				[45+verMargin, -3],
+				[45-verMargin, -3],
+				[45+verMargin, -4],
+				[45, -5],
+				[45, -5]
+			];
+			var xyPos;
+			var listSize = array_length_1d(xyPosList);
+			
+			for (i = 0; i < listSize; i++) {
+				xyPos = xyPosList[i];
+				if (!equipmentsExist) {	
+					instance_create(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment);
 				}
+				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).index = i;
+				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).equipmentIndex = i;
+				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).updateValues = true;
+				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).depth = depth-1;
 			}
 		}
+		
 	} else {
 		scr_listed_item_remove();
 	}

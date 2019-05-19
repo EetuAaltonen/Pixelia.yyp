@@ -4,10 +4,10 @@ var item = argument0;
 var count = argument1;
 
 if (count != 0) {
-	if (scr_stash_check_capacity(item[5]*count) && scr_inventory_check_capacity(item[5]*(count*-1),true)) {
+	if (scr_stash_check_capacity(item[11]*count) && scr_inventory_check_capacity(item[11]*(count*-1),true)) {
 				
 		//Add To Capacity
-		global.totalStashCapacity += (count*item[5]);
+		global.totalStashCapacity += (count*item[11]);
 	
 		if (global.hudState == "stashDeposit") {	
 			//Check if count <= 0

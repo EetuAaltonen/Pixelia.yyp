@@ -7,7 +7,7 @@ if (sprite_index == spr_no_mask && data != "null") {
 	}
 	sprite_index = data[0];
 	name = data[1];
-	weight = data[5];
+	weight = data[11];
 	count = data[3];
 	mask_index = sprite_index;
 }

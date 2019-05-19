@@ -1,2 +1,4 @@
 ///Set inventory info text
-obj_inventory_controller.itemInfoText = infoText;
+if (data != "null") {
+	obj_inventory_controller.itemInfoText = infoText;
+}
