@@ -14,12 +14,12 @@ if (picked == false)
             with (obj_use) instance_destroy();
         }
         //Check if player can pickup the crate
-        if (obj_player.action_state = "null" ||
-            obj_player.action_state = "jump")
+        if (obj_player.actionState = "null" ||
+            obj_player.actionState = "jump")
         {
             if (instance_exists(obj_player))
             {
-                obj_player.action_state = "carry_goods";
+                obj_player.actionState = "carry_goods";
                 //Pickup
                 picked = true;
             }

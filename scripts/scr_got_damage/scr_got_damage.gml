@@ -4,7 +4,7 @@ global.damage = 0;
 global.hudState = "null";
 if (instance_exists(obj_player))
 {
-    obj_player.action_state = "null";
+    obj_player.actionState = "null";
 }
 //Armor regeneration
 if (instance_exists(obj_stats_meter))

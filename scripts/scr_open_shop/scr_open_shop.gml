@@ -1,3 +1,3 @@
 global.hudState = "null";
-obj_player.action_state = "null";
+obj_player.actionState = "null";
 scr_dialog_leave();

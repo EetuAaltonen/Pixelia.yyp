@@ -36,7 +36,7 @@ if (toPlayer == true) {
 }
 
 ///Instance destroy
-if (obj_player.action_state != "fishing") {
+if (obj_player.actionState != "fishing") {
     instance_destroy();
 }
 

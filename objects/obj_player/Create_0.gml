@@ -41,7 +41,6 @@ sliceRam = false;
 cooldown_shield = 1;
 
 //Action state
-action_state = "null";
 actionState = "null";
 
 //Jump

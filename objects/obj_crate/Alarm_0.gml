@@ -1,4 +1,4 @@
 //This removes instantly pickup
-obj_player.action_state = "null";
+obj_player.actionState = "null";
 waiting_releasing = false;
 

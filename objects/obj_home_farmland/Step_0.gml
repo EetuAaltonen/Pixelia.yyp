@@ -56,7 +56,7 @@ if (selecting_seed == true)
     else if (keyboard_check_pressed(ord("E")))
     {
         selecting_seed = false;
-        obj_player.action_state = "null";
+        obj_player.actionState = "null";
         obj_player.sprite_index = spr_player;
         growth = 1;
         alarm[1] = 20;
@@ -65,7 +65,7 @@ if (selecting_seed == true)
     {
         selected_seed = 1;
         selecting_seed = false;
-        obj_player.action_state = "null";
+        obj_player.actionState = "null";
         obj_player.sprite_index = spr_player;
     }
 }

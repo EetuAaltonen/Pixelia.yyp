@@ -1,9 +1,9 @@
-var Ypos;
+//var Ypos;
 var YposPlus = 19;
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
-var viewXCenter = camera_get_view_width(view_camera[0])/2;
-var viewYCenter = camera_get_view_height(view_camera[0])/2;
+//var viewXCenter = camera_get_view_width(view_camera[0])/2;
+//var viewYCenter = camera_get_view_height(view_camera[0])/2;
 
 //Font
 draw_set_font(fnt_loot_text);
@@ -18,7 +18,7 @@ if (getLoot) {
 	if (itemAmount == 0 && opened) {
 		ds_list_clear(items);
 		ds_list_clear(global.tempLoot);
-		var items_ = scr_loot_chest_get_items();
+		var items_ = [];//scr_loot_chest_get_items();
 		itemAmount = array_length_1d(items_);
 		for (var i = 0; i < itemAmount; i++) {
 			ds_list_add(items, items_[i]);

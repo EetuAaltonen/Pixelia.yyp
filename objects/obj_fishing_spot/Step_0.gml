@@ -7,7 +7,7 @@ if (distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, 255
         {
             with (obj_use) instance_destroy();
         }
-        obj_player.action_state = "fishing";
+        obj_player.actionState = "fishing";
         instance_create(obj_player.x, obj_player.y, obj_fishing_bobber);
     }
 }
@@ -27,7 +27,7 @@ if (instance_exists(obj_fishing_vein))
 
 if (instance_exists(obj_player))
 {    
-    if (obj_player.action_state == "fishing")
+    if (obj_player.actionState == "fishing")
     {
         visible = false;
     }

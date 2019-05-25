@@ -1,9 +1,9 @@
 if (image_alpha == 1)
 {
     if (growth == 0 and harvesting == false and
-        selecting_seed == false and obj_player.action_state = "null")
+        selecting_seed == false and obj_player.actionState = "null")
     {
-        obj_player.action_state = "planting";
+        obj_player.actionState = "planting";
         selecting_seed = true;   
     }
     else if (growth == 100)

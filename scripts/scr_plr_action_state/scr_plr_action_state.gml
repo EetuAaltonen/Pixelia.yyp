@@ -34,6 +34,11 @@ switch (actionState) {
 		scr_custom_gravity();
 		hspeed = 0;
 	}break;
+	case "looting": {
+		//Gravity
+		scr_custom_gravity();
+		hspeed = 0;
+	}break;
 	default: {
 		scr_plr_default_movement();
 	}break;

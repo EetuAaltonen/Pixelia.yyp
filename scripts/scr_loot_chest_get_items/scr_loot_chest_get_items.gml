@@ -1,32 +1,37 @@
-var items = "null";
-if (global.level < 10) {
-	items = [
-		"spr_iron_ingot", "spr_knight_helmet", "spr_wooden_shield"
-	]
+/*
+* @param lootType string
+*
+* @return items array
+*/
+
+//scr_item_info_struct()
+
+var lootType = argument0;
+
+var loot = [];
+var lootTable = scr_get_loot_table(lootType);
+var lootCount = array_length_1d(lootTable);
+var tempLoot;
+
+array_copy(loot, 0, lootTable, 0, lootCount);
+
+var itemData = scr_items_data();
+var dataCount = array_length_1d(itemData);
+var tempItem;
+var i, j;
+
+for (i = 0; i < lootCount; i++) {
+	tempLoot = lootTable[i];
+	/*type*/
+	for (j = 0; j < dataCount; j++) {
+		tempItem = itemData[j];
+		if (tempLoot[0] == tempItem[0]) {
+			tempItem[3] = tempLoot[1]; //Set new count
+			loot[i] = tempItem;
+			break;
+		}
+	}
+	if (loot[i] == lootTable[i]) { show_message(lootTable[i] + " not found!"); } 
 }
-else if (global.level < 20) {
-	items = [
-		"spr_iron_ingot", "spr_knight_helmet", "spr_wooden_shield"
-	]
-}
-else if (global.level < 30) {
-	items = [
-		"spr_iron_ingot", "spr_knight_helmet", "spr_wooden_shield"
-	]
-}
-else if (global.level < 40) {
-	items = [
-		"spr_iron_ingot", "spr_knight_helmet", "spr_wooden_shield"
-	]
-}
-else if (global.level < 50) {
-	items = [
-		"spr_iron_ingot", "spr_knight_helmet", "spr_wooden_shield"
-	]
-}
-else if (global.level < 60) {
-	items = [
-		"spr_iron_ingot", "spr_knight_helmet", "spr_wooden_shield"
-	]
-}
-return items;
+
+return loot;

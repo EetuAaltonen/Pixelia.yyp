@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "07f81abd-0a93-420f-a82e-4c892a6e0664",
+            "Value": {
+                "id": "bb27b9b6-7077-440c-b578-8ec3f471c55c",
+                "resourcePath": "sprites\\sprite450\\sprite450.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0821d9d6-fb61-4c8f-89d4-1caf4975a0db",
             "Value": {
                 "id": "5cf5f464-4810-4838-8f23-1107041747b9",
@@ -1060,6 +1068,14 @@
                 "id": "1c1eb788-ec9a-4d67-811d-7ff906f856a5",
                 "resourcePath": "sprites\\spr_lever_signal\\spr_lever_signal.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "189fbc21-12fd-4c15-a894-007f49b897b4",
+            "Value": {
+                "id": "c6a1aadc-32e1-4ec2-bb84-42b0f5b9eac3",
+                "resourcePath": "views\\189fbc21-12fd-4c15-a894-007f49b897b4.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2135,6 +2151,14 @@
             }
         },
         {
+            "Key": "309a7a16-ee28-4f10-9cc6-fd2e9940c71b",
+            "Value": {
+                "id": "8be8297e-97b7-4332-9ef2-02e832d63e7c",
+                "resourcePath": "objects\\obj_loot_chest_items\\obj_loot_chest_items.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "309cb82e-0b06-4a52-8ec6-12176dff8c9f",
             "Value": {
                 "id": "fb6158ac-e165-412f-b700-3c53cc1a76ce",
@@ -2199,6 +2223,14 @@
             }
         },
         {
+            "Key": "334f160d-f26f-4196-89c7-65c9a7892fb0",
+            "Value": {
+                "id": "23920734-811c-4058-a06c-effaa8a8e116",
+                "resourcePath": "sprites\\spr_loot_chest_coins\\spr_loot_chest_coins.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "33880963-262f-445b-a9e0-d710ea7f9d77",
             "Value": {
                 "id": "6afef2f9-37f1-420d-a956-e07d97e910ab",
@@ -2228,6 +2260,14 @@
                 "id": "42c0070e-7371-4367-9e84-68c1d0fd8019",
                 "resourcePath": "sprites\\spr_st_scavenger_1\\spr_st_scavenger_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "33cd1248-0bc8-49cd-ba44-853b847676ad",
+            "Value": {
+                "id": "9b8f5fb8-300b-4b40-a020-0cfc58b94bb5",
+                "resourcePath": "objects\\obj_loot_chest_coins\\obj_loot_chest_coins.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3075,6 +3115,14 @@
             "Value": {
                 "id": "66342a05-a496-4bec-9768-7da0a5ccae09",
                 "resourcePath": "scripts\\scr_fill_empty_flasks\\scr_fill_empty_flasks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4bd1d5d7-9846-430e-882c-ae76a9bc9203",
+            "Value": {
+                "id": "b9a86280-2571-4f87-ad60-3db5fb0d6a22",
+                "resourcePath": "scripts\\scr_get_loot_table\\scr_get_loot_table.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4439,6 +4487,14 @@
             }
         },
         {
+            "Key": "69ce8cde-f577-479f-a6d9-1071a7c3c8c1",
+            "Value": {
+                "id": "2cc450df-fc9a-405d-9660-fdc114bcf11d",
+                "resourcePath": "views\\69ce8cde-f577-479f-a6d9-1071a7c3c8c1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "69d98558-4ab3-4215-9fa0-cf4347604821",
             "Value": {
                 "id": "11f0d581-323c-416c-8332-3ab6e9e18a55",
@@ -5087,14 +5143,6 @@
             }
         },
         {
-            "Key": "78a492a7-5504-4ffb-b53f-146f567b23fe",
-            "Value": {
-                "id": "371d1a75-878b-4d51-b6ae-ed7553b56c60",
-                "resourcePath": "sprites\\spr_iron_bar\\spr_iron_bar.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "78bee444-d561-4e65-a98b-3fe71aed6309",
             "Value": {
                 "id": "8bb12f48-6ed2-48b5-932d-deeac45869d1",
@@ -5727,6 +5775,14 @@
             }
         },
         {
+            "Key": "87b8e085-04f9-4fcd-a10a-a2a91caa218f",
+            "Value": {
+                "id": "da923361-0cdf-484e-a842-025885b61c3c",
+                "resourcePath": "scripts\\scr_stop_interact_with_player\\scr_stop_interact_with_player.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "87c634ef-b25c-431b-b328-385629210ac0",
             "Value": {
                 "id": "5c130e03-1f6d-4d38-b37a-5c945a830744",
@@ -6183,6 +6239,14 @@
             }
         },
         {
+            "Key": "94191c51-9014-421a-8cec-f7e949b91575",
+            "Value": {
+                "id": "bb8771c7-337b-4286-887e-d5816bc7f35e",
+                "resourcePath": "sprites\\spr_loot_chest_equipment\\spr_loot_chest_equipment.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "942ad5a4-71c9-4655-b2ba-3e48d288e2ae",
             "Value": {
                 "id": "8335f645-97cf-4798-adca-9329ebcaaa20",
@@ -6226,7 +6290,7 @@
             "Key": "95405888-d000-48b6-b185-28acdb040b6a",
             "Value": {
                 "id": "cc85e99b-f003-4d13-8894-18e56cb39ec2",
-                "resourcePath": "sprites\\spr_gold_chest\\spr_gold_chest.yy",
+                "resourcePath": "sprites\\spr_gold_chest_old\\spr_gold_chest_old.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6900,6 +6964,14 @@
                 "id": "347e59a2-fb03-433b-9474-03aeb44a1679",
                 "resourcePath": "objects\\obj_workbench_recipe\\obj_workbench_recipe.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a6cb4376-7e39-4d1b-ad57-e5ef67818d67",
+            "Value": {
+                "id": "bb7c9095-8a7b-44f7-bdc6-30fcf39350a9",
+                "resourcePath": "sprites\\spr_particle_loot\\spr_particle_loot.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -7607,6 +7679,14 @@
             }
         },
         {
+            "Key": "b87ca3a0-bb6d-4488-9620-a19bc48f3ab5",
+            "Value": {
+                "id": "67ef6910-229b-4b5c-8bc9-bc45bd95bea6",
+                "resourcePath": "sprites\\spr_loot_chest_items\\spr_loot_chest_items.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b8927ef7-e13b-4238-87af-923723778ed5",
             "Value": {
                 "id": "d7a1b0de-9b56-4595-94d2-f2bebde182af",
@@ -8211,6 +8291,14 @@
             "Value": {
                 "id": "b579dcb4-b384-436c-97ed-fb0defe298f2",
                 "resourcePath": "sprites\\spr_no_mask\\spr_no_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c915251f-4bf8-46b1-acc2-7f0ae9ed2a8c",
+            "Value": {
+                "id": "81096c3e-0d2f-422f-9af3-c6e92a11179b",
+                "resourcePath": "sprites\\spr_coin1\\spr_coin1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -10584,6 +10672,7 @@
         "6e9f20f7-4796-48d6-b0b9-209350d304d5",
         "1eae7bea-eee9-4f88-bd65-d6df7a61f036",
         "6a169c6a-b7f0-4fc8-a40d-b05b42600bc2",
+        "4bd1d5d7-9846-430e-882c-ae76a9bc9203",
         "693f6618-4a00-4e97-970a-a595ae828296",
         "5a0b9ed9-8f97-4a8b-8e28-772c7002b506",
         "0556facf-f6f4-4dc7-800c-a81bf10a42ae",
@@ -10772,6 +10861,7 @@
         "f5cb5126-74f2-498a-b717-a1db90c32f1e",
         "1e23b450-2e4c-4a4b-a03c-4accd6eacfb2",
         "ec60b676-b137-416f-838d-3f6ca59eb004",
+        "87b8e085-04f9-4fcd-a10a-a2a91caa218f",
         "fe2293e3-08b2-4036-9e5b-f7774bab7661",
         "4e62923c-19f9-4f23-92de-376fb6fb24c2",
         "953c93f5-c88a-4a83-a479-6d621bc1035a",
