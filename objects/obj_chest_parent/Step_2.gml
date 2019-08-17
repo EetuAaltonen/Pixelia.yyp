@@ -4,8 +4,8 @@ scr_custom_gravity();
 if (!opened && scr_interact_with_player()) {
 	//Open
 	if (instance_exists(obj_player)) {
-		obj_player.actionState= "looting";
-		global.hudState = "looting";
+		obj_player.actionState = Actions.Loot;
+		global.hudState = HudStates.Loot;
 		image_index = 1;
 		getLoot = true;
 	    opened = true;
@@ -15,7 +15,7 @@ if (!opened && scr_interact_with_player()) {
 	opened = false;
 	image_index = 0;
 	ds_list_clear(global.tempLoot);
-	global.hudState = "null";
+	global.hudState = HudStates.Null;
 	scr_plr_set_action_state_null();
 }
 
@@ -34,7 +34,7 @@ if (tempAmount != itemAmount && opened && getLoot == false) {
 	} else {
 		ds_list_clear(global.tempLoot);
 		scr_plr_set_action_state_null();
-		global.hudState = "null";
+		global.hudState = HudStates.Null;
 		instance_destroy();
 	}
 }

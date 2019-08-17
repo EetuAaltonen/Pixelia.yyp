@@ -1,4 +1,6 @@
 //Create skills
+/// TODO: Create skills
+/*
 if (pageUpdate == true) {
 	var player = obj_player;
 	globalPrimaryAttributesValues = global.attributes;
@@ -22,30 +24,30 @@ if (pageUpdate == true) {
 				(instance_nearest(viewX+x_pos+(margin_right*(i-1)),viewY+y_pos+(margin_bottom*a), obj_skill_tree_skill)).get_attributes = true;
             }
         }*/
-		var arrayLength = array_length_1d(globalPrimaryAttributesValues);
+		/*var arrayLength = array_length_1d(globalPrimaryAttributesValues);
 		var index = 0;
 		for (var i = 0; i < arrayLength; i++) {
 			instance_create(viewX+90,viewY+119+(hMargin*i),obj_button_count);
 			(instance_nearest(viewX+90,viewY+119+(hMargin*i),obj_button_count)).action = "decrease";
-			(instance_nearest(viewX+90,viewY+119+(hMargin*i),obj_button_count)).setHudState = "inventorySkills";
+			(instance_nearest(viewX+90,viewY+119+(hMargin*i),obj_button_count)).setHudState = HudStates.Skills;
 			(instance_nearest(viewX+90,viewY+119+(hMargin*i),obj_button_count)).index = index;
 			(instance_nearest(viewX+90,viewY+119+(hMargin*i),obj_button_count)).depth = depth-1;
 			
 			instance_create(viewX+102,viewY+119+(hMargin*i),obj_button_count);
 			(instance_nearest(viewX+102,viewY+119+(hMargin*i),obj_button_count)).action = "increase";
-			(instance_nearest(viewX+102,viewY+119+(hMargin*i),obj_button_count)).setHudState = "inventorySkills";
+			(instance_nearest(viewX+102,viewY+119+(hMargin*i),obj_button_count)).setHudState = HudStates.Skills;
 			(instance_nearest(viewX+102,viewY+119+(hMargin*i),obj_button_count)).index = index;
 			(instance_nearest(viewX+102,viewY+119+(hMargin*i),obj_button_count)).depth = depth-1;
 			index++;
 		}
 		instance_create(viewX+54,viewY+118+(hMargin*(arrayLength)), obj_button_confirm);
 		(instance_nearest(viewX+54,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).action = "cancel";
-		(instance_nearest(viewX+54,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).setHudState = "inventorySkills";
+		(instance_nearest(viewX+54,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).setHudState = HudStates.Skills;
 		(instance_nearest(viewX+54,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).depth = depth-1;
 		
 		instance_create(viewX+84,viewY+118+(hMargin*(arrayLength)), obj_button_confirm);
 		(instance_nearest(viewX+84,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).action = "confirm";
-		(instance_nearest(viewX+84,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).setHudState = "inventorySkills";
+		(instance_nearest(viewX+84,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).setHudState = HudStates.Skills;
 		(instance_nearest(viewX+84,viewY+118+(hMargin*(arrayLength)), obj_button_confirm)).depth = depth-1;
         createOnce = false;
     }

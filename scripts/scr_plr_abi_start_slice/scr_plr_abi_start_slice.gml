@@ -1,6 +1,6 @@
 var alarms = obj_plr_combat_alarms;
 if (global.stamina >= sliceCost) {
-	if (global.hudState == "null" && scr_plr_neutral_action_states() && !sliceCooldown) {
+	if (global.hudState == HudStates.Null && scr_plr_neutral_action_states() && !sliceCooldown) {
 		sliceCooldown = true;
 					
 		//Slice Streak
@@ -33,7 +33,7 @@ if (global.stamina >= sliceCost) {
 			}
 		}*/
 					
-		actionState = "slice";
+		actionState = Actions.Slice;
 		sprite_index = spr_plr_sword_swing;
 		image_speed = 0.2;
 				

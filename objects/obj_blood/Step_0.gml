@@ -1,5 +1,5 @@
 //Pause
-if(global.pause=1)
+if (global.pause=1)
 {
     exit;
 }

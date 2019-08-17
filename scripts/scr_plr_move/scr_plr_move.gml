@@ -9,7 +9,7 @@ if (keyboard_check(vk_shift) &&
 	!keyboard_check(down) &&
 	global.stamina > 0) {
     //Run
-	switch(xScale) {
+	switch (xScale) {
 		case 1: {
 			if (hspeed < (global.maxRunningSpeed + global.maxRunningSpeedPlus)) {
 				if (!place_free(x,y+1) || hspeed <= (global.maxWalkingSpeed + global.maxWalkingSpeedPlus)) {
@@ -37,7 +37,7 @@ if (keyboard_check(vk_shift) &&
 	
 } else {
     //Walk
-    switch(xScale) {
+    switch (xScale) {
 		case 1: {
 			if (hspeed < (global.maxWalkingSpeed + global.maxWalkingSpeedPlus)) {
 		        hspeed += acceleration*global.delta;

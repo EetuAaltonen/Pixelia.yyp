@@ -24,6 +24,6 @@ if (text[0] == "" && recipe != "null") {
 	
 	text[3] = " ---> " + string(recipe[4]) + "x " + recipe[3];
 }
-/*if (global.hudState == "null") {
+/*if (global.hudState == HudStates.Null) {
 	instance_destroy();
 }*/

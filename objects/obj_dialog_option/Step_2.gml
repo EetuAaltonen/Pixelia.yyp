@@ -1,5 +1,5 @@
 ///Instance destroy
-if (global.hudState != "dialog" ||
+if (global.hudState != HudStates.Dialog ||
     obj_dialog_controller.dialogs == false)
 {
     instance_destroy();

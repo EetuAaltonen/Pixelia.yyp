@@ -8,7 +8,7 @@ if (global.auto_healing == 1
 
 ///Open Inventory
 if (keyboard_check_pressed(vk_tab) &&
-	global.hudState == "null") {
+	global.hudState == HudStates.Null) {
 	if (instance_exists(obj_player)) {
 	    if (scr_plr_neutral_action_states()) {
 			scr_inventory_open();

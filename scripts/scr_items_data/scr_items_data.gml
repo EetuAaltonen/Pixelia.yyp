@@ -57,7 +57,7 @@ return [
 	/*[Alchemy]*/
 		[spr_empty_flask,"Empty Flask","[waterWell,general]",1,"null","null","null","null","null","null","null",0.1,5,0],
 		[spr_water_flask,"Flask Of Water","[alchemy,general]",1,"null","null","null","null","null","null","null",0.1,5,0],
-	/*[Equipments]*/
+	/*[Equipment]*/
 		//Helmets
 		[spr_broken_helmet,"Broken Helmet","[equipment,helmet,armorer]",1,"null","null",10,100,"null","null","null",0.1,5,0],
 		[spr_knight_helmet,"Knight Helmet","[equipment,helmet,armorer]",1,"null","null",30,100,"null","null","null",0.1,5,0],

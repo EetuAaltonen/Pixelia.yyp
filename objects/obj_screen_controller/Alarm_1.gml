@@ -7,7 +7,7 @@ if (!pause && !unfocus) {
 			currentRoom = targetRoom;
 			viewAlpha = 1;
 			drawViewAlpha = false;
-			global.hudState = "null";
+			global.hudState = HudStates.Null;
 			
 			scr_source_save_respawn_times();
 			
@@ -20,7 +20,7 @@ if (!pause && !unfocus) {
 		} else {
 			viewAlpha = 0;
 			drawViewAlpha = false;
-			global.hudState = "null";
+			global.hudState = HudStates.Null;
 			scr_plr_set_action_state_null();
 		}
 	}

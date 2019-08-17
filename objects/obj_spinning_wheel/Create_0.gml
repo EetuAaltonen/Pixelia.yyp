@@ -1,3 +1,3 @@
 ///Create variables
-hudState = "spinningWheel";
+hudAction = HudActions.SpinningWheel;
 scr_crating_create_variables();

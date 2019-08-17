@@ -2,7 +2,7 @@
 var datetime = argument0;
 var section = argument1;
 var value = 0;
-switch(section) {
+switch (section) {
 	case "yyyy": { return string_char_at(datetime,1) +
 						  string_char_at(datetime,2) +
 						  string_char_at(datetime,3) +

@@ -19,13 +19,13 @@ if (resolutionLastRoom != room_get_name(room)) {
 if (room != First_loading) {
 	if (instance_exists(obj_player)) {
 		if (targetRoom != currentRoom && alarm[1] <= 0) {
-			obj_player.actionState = "idle";
-			global.hudState = "roomChange";
+			obj_player.actionState = Actions.Idle;
+			global.hudState = HudStates.RoomChange;
 			drawViewAlpha = true;
 			alarm[1] = scr_time_sec_to_alarm(transitionSpeed);
 		} else if (targetRoom == currentRoom && alarm[1] <= 0 && viewAlpha == 1) {
-			obj_player.actionState = "idle";
-			global.hudState = "roomChange";
+			obj_player.actionState = Actions.Idle;
+			global.hudState = HudStates.RoomChange;
 			drawViewAlpha = true;
 			if (instance_exists(obj_source_controller)) {
 				obj_source_controller.checkRespawnTimes = true;	

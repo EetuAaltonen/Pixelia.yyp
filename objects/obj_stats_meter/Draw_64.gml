@@ -1,4 +1,4 @@
-if (global.hudState != "map") {
+if (global.hudState != HudStates.Map) {
 	if (instance_exists(obj_player)) {
 		//Font
 		draw_set_font(fnt_draw_gui_inv_medium);

@@ -3,11 +3,11 @@
 if (updateValues) {
 	updateValues = false;
 	if (data != "null") {
-		sprite_index = data[0];
+		sprite_index = data[ItemData.Sprite];
 		
 		infoText = scr_listed_item_get_infoText(data);
 		
-		equipmentIndex = "";
+		equipmentIndex = undefined;
 		//Check If Equipped
 		if (string_pos("equipment", data[2])) {
 			scr_listed_item_check_equipped();
@@ -24,7 +24,7 @@ if (updateValues) {
 if (checkSelected) {
 	checkSelected = false;
 	if (data != "null") {
-		if (scr_hud_state_some_of_crafting()) {
+		if (global.hudState == HudStates.Crafting) {
 			selected = false;
 			if (instance_exists(obj_crafting_slot)) {
 				var slot;

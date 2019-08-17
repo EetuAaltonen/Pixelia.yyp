@@ -5,7 +5,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-if (global.hudState == "dialog") {
+if (global.hudState == HudStates.Dialog) {
 	var Ypos = 265;
 	var YposPlus = 18;
 	var viewX = camera_get_view_x(view_camera[0]);
@@ -37,7 +37,7 @@ if (global.hudState == "dialog") {
 
 /*scr_dialog_blacksmith();
 
-if (global.hudState == "dialog")
+if (global.hudState == HudStates.Dialog)
 {
     if (dialogOptions == "null")
     {

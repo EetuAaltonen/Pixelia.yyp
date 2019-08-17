@@ -1,2 +1,2 @@
-hudState = "null";
-infoText = "";
+hudAction = undefined;
+infoText = undefined;

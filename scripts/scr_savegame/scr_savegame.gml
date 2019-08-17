@@ -6,7 +6,7 @@ ini_open("Inventory.ini");
 //Inventory
 var data = ds_list_write(global.inventory);
 ini_write_string(global.save_file, "Inventory", data);
-//Equipments
+//Equipment
 var equipments = ds_list_create();
 var listSize = array_length_1d(global.equipments);
 var i;
@@ -14,7 +14,7 @@ for (i = 0; i < listSize; i++) {
 	ds_list_add(equipments, global.equipments[i]);
 }
 data = ds_list_write(equipments);
-ini_write_string(global.save_file, "Equipments", data);
+ini_write_string(global.save_file, "Equipment", data);
 //Stash
 data = ds_list_write(global.stash);
 ini_write_string(global.save_file, "Stash", data);

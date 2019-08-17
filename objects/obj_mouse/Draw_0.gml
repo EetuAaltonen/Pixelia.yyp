@@ -1,8 +1,8 @@
 /*if (room != Menu) {
-	if (room == First_loading || global.hudState == "roomChange") {
+	if (room == First_loading || global.hudState == HudStates.RoomChange) {
 		//When Not Showing
 	} else {
-	    if (global.hudState != "null"){
+	    if (global.hudState != HudStates.Null){
 			//Font
 			draw_set_font(fnt_small_text);
 			draw_set_halign(fa_left);

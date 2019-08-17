@@ -1,3 +1,0 @@
-text = "Stats"
-hudState = "inventoryStats";
-

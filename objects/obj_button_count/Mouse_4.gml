@@ -1,7 +1,8 @@
-var invController = obj_inventory_controller;
+/// TODO: Count button
+/*var invController = obj_inventory_controller;
 var attribute;
 if (visible == true) {
-	if (global.hudState == "inventorySkills") {
+	if (global.hudState == HudStates.Skills) {
 		attribute = invController.globalPrimaryAttributesValues[index];
 		if (action == "increase") {
 			attribute[1] += 1;
@@ -24,4 +25,4 @@ if (visible == true) {
 		obj_button_confirm.value -= 1;
 		alarm[1] = 40;
 	}*/
-}
+/*}

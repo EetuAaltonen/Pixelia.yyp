@@ -3,11 +3,11 @@ scr_custom_gravity();
 
 //Crouch
 if (keyboard_check_pressed(vk_control) && !place_free(x, y+1)) {
-	if (actionState == "null") {
-		actionState = "crouch"
+	if (actionState == Actions.Null) {
+		actionState = Actions.Crouch
 		sprite_index = spr_plr_crouch;
-	} else if (actionState == "crouch") {
-		actionState = "null";
+	} else if (actionState == Actions.Crouch) {
+		actionState = Actions.Null;
 		sprite_index = spr_player;
 	}
 }

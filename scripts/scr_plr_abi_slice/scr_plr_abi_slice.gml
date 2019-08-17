@@ -49,7 +49,7 @@ if (sliceRam) {
 }
 	
 if (alarms.alarm[2] <= 0 && !sliceRam) {
-	if (actionState == "slice") {
+	if (actionState == Actions.Slice) {
 		if (sliceStreak >= 3) {
 			//hspeed = tempHSpeed;
 			sliceStreak = 0;
@@ -60,6 +60,6 @@ if (alarms.alarm[2] <= 0 && !sliceRam) {
 		image_speed = 0.2;
 		//alarms.alarm[1] = 1;
 		sliceCooldown = false;
-		actionState = "null";
+		actionState = Actions.Null;
 	}
 }

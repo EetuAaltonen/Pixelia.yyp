@@ -1,1 +1,1 @@
-text = "Close";
+text = HudActions.Close;

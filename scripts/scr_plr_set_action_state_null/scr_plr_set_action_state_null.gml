@@ -8,5 +8,5 @@ if (instance_exists(obj_player)) {
     player.solid = true;
     player.mask_index = spr_player;
 	player.highlight = false;
-    player.actionState = "null";
+    player.actionState = Actions.Null;
 }

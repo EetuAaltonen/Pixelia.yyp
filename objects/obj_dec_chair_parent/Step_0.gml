@@ -4,7 +4,7 @@ scr_custom_gravity();
 ///Sit
 if (instance_exists(obj_player)) {
 	if (distance_to_object(obj_use) == 0 && image_blend != make_colour_hsv(0, 0, 255) &&
-	    obj_player.actionState == "null")
+	    obj_player.actionState == Actions.Null)
 	{
 	    if (instance_exists(obj_use))
 	    {
@@ -41,7 +41,7 @@ if (instance_exists(obj_player)) {
 	}
 
 	///Reset values
-	if (obj_player.actionState == "null")
+	if (obj_player.actionState == Actions.Null)
 	{
 	    sitting_direction = "null";
 	    reserved = false;

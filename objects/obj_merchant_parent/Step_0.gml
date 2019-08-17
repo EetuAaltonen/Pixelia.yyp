@@ -1,4 +1,4 @@
 //Initialize shop
-if (shop == "null") {
+if (shop == undefined) {
 	scr_merchant_initialize_shop();
 }

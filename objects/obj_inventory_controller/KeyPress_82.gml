@@ -1,5 +1,5 @@
 ///Use healing potion
-if (global.hudState == "null")
+if (global.hudState == HudStates.Null)
 {
     if (global.potions > 0 and global.healthPoints < 20)
     {

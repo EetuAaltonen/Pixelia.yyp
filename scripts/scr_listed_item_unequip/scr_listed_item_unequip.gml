@@ -1,4 +1,4 @@
-if (equipmentIndex != "") {
+if (equipmentIndex != undefined) {
 	//Unequip
 	if (equipmentIndex > -1) {
 		global.equipments[equipmentIndex] = "";

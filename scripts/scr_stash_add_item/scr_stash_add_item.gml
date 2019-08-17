@@ -9,7 +9,7 @@ if (count != 0) {
 		//Add To Capacity
 		global.totalStashCapacity += (count*item[11]);
 	
-		if (global.hudState == "stashDeposit") {	
+		if (global.hudAction == HudActions.Deposit) {	
 			//Check if count <= 0
 			if ((item[3] - count) <= 0) {
 				//Unequip if equipped

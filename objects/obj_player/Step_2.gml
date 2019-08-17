@@ -13,7 +13,7 @@ if (spawning) {
 } else {
 	//Use
 	if (keyboard_check_pressed(ord("E"))) {
-		if (global.hudState == "null") {
+		if (global.hudState == HudStates.Null) {
 		    if (scr_plr_neutral_action_states()) {
 		        instance_create(x, y, obj_use);
 		    }

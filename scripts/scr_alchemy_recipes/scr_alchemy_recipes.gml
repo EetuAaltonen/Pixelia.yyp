@@ -5,7 +5,7 @@ var recipes = [
 
 return recipes;
 
-/*switch(itemName) {
+/*switch (itemName) {
     //Materials
     case "spr_oak_log,0,0": {sprite = spr_coal;break;}
     case "spr_spruce_log,0,0": {sprite = spr_coal;break;}
@@ -18,7 +18,7 @@ return recipes;
 
 /*var sprite = false;
 var spriteIndex = argument0;
-switch(spriteIndex) {
+switch (spriteIndex) {
     //Materials
     case "spr_oak_log,0,0": {sprite = spr_coal;break;}
     case "spr_spruce_log,0,0": {sprite = spr_coal;break;}

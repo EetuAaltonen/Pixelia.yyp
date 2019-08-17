@@ -1,4 +1,4 @@
 ///Create variables
-hudState = "workbench";
+hudAction = HudActions.Workbench;
 scr_crating_create_variables();
 

@@ -1,5 +1,5 @@
-if (global.hudState == "dialog") {	
-	global.hudState = "null";
+if (global.hudState == HudStates.Dialog) {	
+	global.hudState = HudStates.Null;
 }
 //global.dialogId = 0;
 obj_dialog_controller.dialogOptions = "null";

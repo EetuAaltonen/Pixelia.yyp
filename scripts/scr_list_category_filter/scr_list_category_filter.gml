@@ -2,16 +2,12 @@
 
 var list = argument0;
 var category = "";
-if (scr_hud_state_some_of_crafting()) {
+if (global.hudState == HudStates.Crafting) {
 	category = global.hudState;	
 } else {
-	switch (global.hudState) {
-		case "inventoryEquipments": {
-			category = "equipment";
-		}break;
-		case "shopRepair": {
-			category = "equipment";
-		}break;
+	if (global.hudAction == HudActions.Equipment ||
+		global.hudAction == HudActions.Repair) {
+		category = "equipment";
 	}
 }
 if (category != "") {

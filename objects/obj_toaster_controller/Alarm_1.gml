@@ -1,5 +1,5 @@
 ///Draw Toast
-if (global.hudState != "roomChange") {
+if (global.hudState != HudStates.RoomChange) {
 	if (drawToast) {
 	    toasterSize = ds_list_size(toasters);
 	    toasterSpeed = 2;

@@ -1,5 +1,5 @@
 ///@description Woodcutting
-if (global.hudState == "minigame") {
+if (global.hudState == HudStates.Minigame) {
 	if (minigame != "null" && minigameInitialized) {
 		switch (forceDirect) {
 			case "up": {
@@ -24,7 +24,7 @@ if (global.hudState == "minigame") {
 				/*if (some thing to stop this) {
 					minigame = "null";
 					minigameInitialized = false;
-					scr_close_global_hudstate();
+					scr_close_global_hud_state();
 				} else {*/
 					alarm[1] = 1;
 					

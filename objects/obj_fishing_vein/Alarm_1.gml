@@ -13,7 +13,7 @@ switch (itemId)
 scr_save_to_inventory();
 
 //Stop fishing
-obj_player.actionState = "null";
+obj_player.actionState = Actions.Null;
 obj_player.sprite_index = spr_player;
 catch_once = true;
 

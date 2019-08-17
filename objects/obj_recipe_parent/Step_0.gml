@@ -6,7 +6,7 @@ if (distance_to_object(obj_use) == 0 &&
     {
         with (obj_use) instance_destroy();
     }
-	switch(recipeType) {
+	switch (recipeType) {
 		case "forge": {
 			ds_list_add(global.knownForgeRecipes, [recipeName, ingredients]);
 		};break;

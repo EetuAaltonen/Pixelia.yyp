@@ -1,10 +1,10 @@
 global.pause = 0;
 global.pause_draw = 0;
 global.damage = 0;
-global.hudState = "null";
+global.hudState = HudStates.Null;
 if (instance_exists(obj_player))
 {
-    obj_player.actionState = "null";
+    obj_player.actionState = Actions.Null;
 }
 //Armor regeneration
 if (instance_exists(obj_stats_meter))

@@ -1,8 +1,7 @@
-if (global.hudState == "inventoryBackpack" ||
-	global.hudState == "inventoryEquipments" ||
-	string_pos("shop", string(global.hudState)) ||
-	string_pos("stash", string(global.hudState)) ||
-	scr_hud_state_some_of_crafting()) {
+if ((global.hudState == HudStates.Inventory && (global.hudAction == HudActions.Backpack || global.hudAction == HudActions.Equipment)) ||
+	global.hudState == HudStates.Stash ||
+	global.hudState == HudStates.Shop ||
+	global.hudState == HudStates.Crafting) {
 	
 	if (instance_exists(obj_search_box)) {
 		if (obj_search_box.selected) {

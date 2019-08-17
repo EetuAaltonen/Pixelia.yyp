@@ -10,7 +10,7 @@ var i = 0;
 
 for (i = 0; i < string_length(text); i++)
 {
-    switch(string_char_at(text, i+1))
+    switch (string_char_at(text, i+1))
     {
         case "a": sprite_id = 0;break;case "o": sprite_id = 14;break;
         case "b": sprite_id = 1;break;case "p": sprite_id = 15;break;

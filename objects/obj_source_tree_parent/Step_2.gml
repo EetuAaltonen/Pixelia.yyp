@@ -49,7 +49,7 @@ if (instance_exists(obj_player)) {
 				cuttingWood = false;
 				sprite_index = spriteEmpty;
 				scr_highlight_remove();
-				scr_close_global_hudstate();
+				scr_close_global_hud_state();
 				alarm[1] = scr_time_sec_to_alarm(respawnTime);
 			}
 			

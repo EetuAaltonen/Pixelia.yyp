@@ -1,2 +1,0 @@
-text = "Equipments";
-hudState = "inventoryEquipments";

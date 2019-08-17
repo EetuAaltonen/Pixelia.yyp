@@ -1,7 +1,7 @@
 ///scr_inventory_item_stats(argument0);
 var spriteIndex = string(argument0);
 var buffs = ds_list_create();
-switch(spriteIndex) {
+switch (spriteIndex) {
 	/*
 		buffs = {
 			name: x,
@@ -11,7 +11,7 @@ switch(spriteIndex) {
 			amount: x,
 		}
 	*/
-    //Equipments
+    //Equipment
 		//Helmets
 		case "spr_broken_helmet": {ds_list_add(buffs,"Movement speed");ds_list_add(buffs,10);break;}
 		/*case "spr_knight_helmet": {ds_list_add(buffs,"Critical chance");ds_list_add(buffs,25);

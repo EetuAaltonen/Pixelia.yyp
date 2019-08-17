@@ -1,7 +1,7 @@
 ///scr_forge_recipes(argument0);
 var sprite = false;
 var spriteIndex = argument0;
-switch(spriteIndex) {
+switch (spriteIndex) {
     //Materials
     case "spr_oak_log,0,0": {sprite = spr_coal;break;}
     case "spr_spruce_log,0,0": {sprite = spr_coal;break;}

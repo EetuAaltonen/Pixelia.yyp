@@ -1,0 +1,1 @@
+global.hudAction = argument0;

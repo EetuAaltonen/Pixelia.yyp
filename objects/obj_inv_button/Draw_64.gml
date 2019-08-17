@@ -1,4 +1,4 @@
-if (infoText != "") {
+if (infoText != undefined) {
 	var viewX = view_get_xport(0);
 	var viewY = view_get_yport(0);
 	

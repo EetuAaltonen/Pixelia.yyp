@@ -3,7 +3,7 @@
 global.enemy_stats1 = 0;
 global.enemy_stats2 = 0;
 global.enemy_stats3 = 0;
-global.hudState = "null";
+global.hudState = HudStates.Null;
 instance_destroy();
 obj_screen_controller.viewAlpha = 1;
 room_restart();

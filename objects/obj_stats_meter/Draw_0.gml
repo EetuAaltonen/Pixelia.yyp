@@ -1,7 +1,7 @@
 ///Draw stats
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
-if (global.hudState != "map") {
+if (global.hudState != HudStates.Map) {
 	if (instance_exists(obj_player)) {
 		//Draw armor background
 	    draw_sprite(spr_armor, image_index, viewX+4, viewY+14);

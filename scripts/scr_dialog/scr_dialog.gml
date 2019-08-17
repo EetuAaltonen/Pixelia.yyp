@@ -1,8 +1,8 @@
 ///scr_dialog(argument0);
 var dialogs = argument0;
-if (global.hudState == "null") {
-    global.hudState = "dialog";
-	obj_player.actionState = "dialog";
+if (global.hudState == HudStates.Null) {
+    global.hudState = HudStates.Dialog;
+	obj_player.actionState = HudStates.Dialog;
 }
 
 if (obj_dialog_controller) {

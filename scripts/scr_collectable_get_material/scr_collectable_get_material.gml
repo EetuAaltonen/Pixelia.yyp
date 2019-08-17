@@ -1,4 +1,4 @@
-switch(material) {
+switch (material) {
 	case "Iron Ore": {
 		bgColor = make_colour_hsv(15, 255, 200);
 	}break;

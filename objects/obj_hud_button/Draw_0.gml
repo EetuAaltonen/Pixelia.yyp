@@ -1,6 +1,6 @@
 if (sprite_index != spr_no_mask) {
 	draw_self();
-	if (infoText != "") {
+	if (infoText != undefined) {
 		///Draw text
 		//Font
 		draw_set_font(fnt_inventory_text);
@@ -11,7 +11,7 @@ if (sprite_index != spr_no_mask) {
 		draw_text(x + (sprite_width/2), y + (sprite_height/2), string_hash_to_newline(infoText));
 
 		///Selected
-		if (global.hudState == hudState) {
+		if (global.hudAction == hudAction) {
 		    var imageBlend = 100;
 		    image_blend = make_colour_hsv(0, 0, imageBlend);
 		} else {

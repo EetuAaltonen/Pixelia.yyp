@@ -1,7 +1,7 @@
 if (closed == true)
 {
     if (distance_to_object(obj_use) == 0 && 
-        obj_player.actionState = "null")
+        obj_player.actionState = Actions.Null)
     {
         if (instance_exists(obj_use))
         {

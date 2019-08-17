@@ -8,8 +8,8 @@ if (file_exists("Inventory.ini")) {
 	if (data != "") {
 		ds_list_read(global.inventory, data);
 	}
-	//Equipments
-	data = ini_read_string(global.save_file, "Equipments", "");
+	//Equipment
+	data = ini_read_string(global.save_file, "Equipment", "");
 	if (data != "") {
 		var equipments = ds_list_create();
 		ds_list_read(equipments, data);

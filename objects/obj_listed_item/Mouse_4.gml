@@ -1,36 +1,35 @@
 ///Left mouse pressed
 if (!updateValues) {
-	if (scr_hud_state_some_of_crafting()) {
+	if (global.hudState == HudStates.Crafting) {
 		scr_listed_item_left_mouse_pressed_crafting();
+	} else if (global.hudState == HudStates.Loot) {
+		scr_listed_item_looting();
 	} else {
-		switch (global.hudState) {
-			case "inventoryBackpack": {
+		switch (global.hudActions) {
+			case HudActions.Backpack: {
 				scr_listed_item_toggle_equip();
 				scr_inventory_use_item(data, 1);
 			}break;
-			case "inventoryEquipments": {
+			case HudActions.Equipment: {
 				scr_listed_item_toggle_equip();
 			}break;
-			case "shopBuy": {
+			case HudActions.Buy: {
 				scr_shop_buy_item();
 			}break;
-			case "shopSell": {
+			case HudActions.Sell: {
 				scr_shop_sell_item();
 			}break;
-			case "shopRepair": {
+			case HudActions.Repair: {
 				//scr_shop_repair_item();
 			}break;
-			case "shopBuyBack": {
+			case HudActions.BuyBack: {
 				//scr_shop_buy_back_item();
 			}break;
-			case "stashWithdraw": {
+			case HudActions.Withdraw: {
 				scr_stash_add_item(data, -1);
 			}break;
-			case "stashDeposit": {
+			case HudActions.Deposit: {
 				scr_stash_add_item(data, 1);
-			}break;
-			case "looting": {
-				scr_listed_item_looting();
 			}break;
 		}
 	}

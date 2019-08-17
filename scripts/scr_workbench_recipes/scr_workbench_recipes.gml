@@ -1,7 +1,7 @@
 ///scr_workbench_recipes(argument0);
 var sprite = false;
 var spriteIndex = argument0;
-switch(spriteIndex) {
+switch (spriteIndex) {
     //Materials
     case "spr_tool_knife,spr_oak_log,0": {sprite = spr_wood_billet;break;}
     case "spr_tool_knife,spr_spruce_log,0": {sprite = spr_wood_billet;break;}

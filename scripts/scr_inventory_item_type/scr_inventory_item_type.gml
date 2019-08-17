@@ -1,7 +1,7 @@
 ///scr_inventory_item_weight(argument0);
 var type = "";
 var spriteIndex = string(argument0);
-switch(spriteIndex) {
+switch (spriteIndex) {
     //Materials
     case "spr_oak_log": {type = "[inventory1,shop,forge,workbench]";break;}
 		//Ores
@@ -30,21 +30,21 @@ switch(spriteIndex) {
     //Tools
     case "spr_tool_saw": {type = "[inventory1,shop,tool,workbench]";break;}
     case "spr_tool_knife": {type = "[inventory1,shop,tool,workbench]";break;}
-    //Equipments
+    //Equipment
 		//Helmets
-		case "spr_broken_helmet": {type = "[inventory1,inventoryEquipments,shop]";break;}
-		case "spr_knight_helmet": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_broken_helmet": {type = "[inventory1,inventoryEquipment,shop]";break;}
+		case "spr_knight_helmet": {type = "[inventory1,inventoryEquipment,shop]";break;}
 		//Shields
-		case "spr_wooden_shield": {type = "[inventory1,inventoryEquipments,shop]";break;}
-		case "spr_knight_shield": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_wooden_shield": {type = "[inventory1,inventoryEquipment,shop]";break;}
+		case "spr_knight_shield": {type = "[inventory1,inventoryEquipment,shop]";break;}
 		//Boots
-		case "spr_leather_boots": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_leather_boots": {type = "[inventory1,inventoryEquipment,shop]";break;}
 		//Rings
-		case "spr_silver_ring": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_silver_ring": {type = "[inventory1,inventoryEquipment,shop]";break;}
 	//Weapons
 		//Bow
-		case "spr_bow": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_bow": {type = "[inventory1,inventoryEquipment,shop]";break;}
 		//Arrow
-		case "spr_arrow_pouch": {type = "[inventory1,inventoryEquipments,shop]";break;}
+		case "spr_arrow_pouch": {type = "[inventory1,inventoryEquipment,shop]";break;}
 };
 return type;

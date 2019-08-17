@@ -2,30 +2,17 @@ var yPos = 274;
 var xPos1 = 299;
 var xPos2 = 363;
 switch (global.hudState) {
-	case "inventoryBackpack": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Use/Equip");
-		draw_text(scr_gui(xPos2,"x"), scr_gui(yPos,"y"), "Drop");
+	case HudStates.Inventory: {
+		if (global.hudAction == HudActions.Backpack) {
+			draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), HudActions.UseEquip);
+			draw_text(scr_gui(xPos2,"x"), scr_gui(yPos,"y"), HudActions.Drop);
+		}
+		if (global.hudAction == HudActions.Equipment) {
+			draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), HudActions.Equip);
+			draw_text(scr_gui(xPos2,"x"), scr_gui(yPos,"y"), HudActions.Drop);
+		}
 	}break;
-	case "inventoryEquipments": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Equip");
-		draw_text(scr_gui(xPos2,"x"), scr_gui(yPos,"y"), "Drop");
-	}break;
-	case "shopBuy": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Buy");
-	}break;
-	case "shopSell": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Sell");
-	}break;
-	case "shopRepair": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Repair");
-	}break;
-	case "shopBuyBack": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Buy Back");
-	}break;
-	case "stashWithdraw": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Withdraw");
-	}break;
-	case "stashDeposit": {
-		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), "Deposit");
-	}break;
+	default: {
+		draw_text(scr_gui(xPos1,"x"), scr_gui(yPos,"y"), global.hudAction);
+	}
 }

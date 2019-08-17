@@ -1,5 +1,5 @@
 ///Bow
-if (global.hudState == "null") {
+if (global.hudState == HudStates.Null) {
 	if (actionState != "bow") {
 		if (scr_plr_neutral_action_states()) {
 			var bowCount = scr_inventory_search_equipment("Bow", "priweapon");
@@ -32,7 +32,7 @@ if (global.hudState == "null") {
 		scr_plr_set_action_state_null();	
 	}
 }
-/*if (global.hudState == "null") {
+/*if (global.hudState == HudStates.Null) {
     if (action_state != "bow") {
         var bowFound = false;
 		var arrowFound = false;

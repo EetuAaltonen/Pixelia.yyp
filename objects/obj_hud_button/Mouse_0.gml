@@ -1,5 +1,5 @@
-if (global.hudState != hudState && hudState != "") {
-	if (hudState == "null") {
+if (global.hudAction != hudAction && hudAction != undefined) {
+	if (hudAction == HudActions.Null) {
 		var recipeBookOpen = false;
 		if (instance_exists(obj_recipe_book)) {
 			if (obj_recipe_book.showRecipeBook) {
@@ -7,7 +7,7 @@ if (global.hudState != hudState && hudState != "") {
 			}
 		}
 		if (!recipeBookOpen) {
-			scr_close_global_hudstate();
+			scr_close_global_hud_state();
 
 			//Destroy Buttons
 			if (instance_exists(obj_hud_button)) {
@@ -22,8 +22,8 @@ if (global.hudState != hudState && hudState != "") {
 			scr_savegame();
 		}
 	} else {
-		//global.hudState = hudState;
-		scr_set_global_hudstate(hudState);
+		//global.hudAction = hudAction;
+		scr_set_global_hud_action(hudAction);
 		
 		//Remove Search Box
 		scr_hud_search_box_remove();

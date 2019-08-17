@@ -12,13 +12,14 @@ draw_set_halign(fa_right);
 //Your Gold
 draw_text(scr_gui(490,"x"), scr_gui(64,"y"), scr_coins_format(global.coins));
 //Merchant's Gold
-if (string_pos("shop", global.hudState) && merchant != "null") {
+if (global.hudState == HudStates.Shop && merchant != "null") {
 	draw_text(scr_gui(490,"x"), scr_gui(84,"y"), scr_coins_format(merchant.money));
 }
 
 draw_set_halign(fa_left);
 
-if (global.hudState == "stashWithdraw") {
+if (global.hudState == HudStates.Stash &&
+	global.hudAction == HudActions.Withdraw) {
 	//Total And Weight
 	draw_text(scr_gui(183,"x"), scr_gui(84,"y"), "Capacity:  " + string_format(abs(global.totalStashCapacity), 0, 2) + "  /  " +
 				string(global.maxStashCapacity + global.stashCapacityPlus) + "  Pw");
@@ -28,7 +29,7 @@ if (global.hudState == "stashWithdraw") {
 				string(global.maxInventoryCapacity + global.carryingCapacityPlus) + "  Pw");
 }
 
-if (scr_hud_state_not_crafting()) {
+if (global.hudState != HudStates.Crafting) {
 	draw_set_font(fnt_draw_gui_inv_small);
 	draw_set_valign(fa_top);
 	//Item info text

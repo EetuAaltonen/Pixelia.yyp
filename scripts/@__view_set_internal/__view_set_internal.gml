@@ -2,7 +2,7 @@ var __prop = argument0;
 var __index = argument1;
 var __val = argument2;
 
-switch(__prop)
+switch (__prop)
 {
 case e__VW.XView: var __cam = view_get_camera(__index); camera_set_view_pos(__cam, __val, camera_get_view_y(__cam)); break;
 case e__VW.YView: var __cam = view_get_camera(__index); camera_set_view_pos(__cam, camera_get_view_x(__cam), __val); break;

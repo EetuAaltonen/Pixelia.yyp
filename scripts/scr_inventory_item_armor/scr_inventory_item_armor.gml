@@ -1,8 +1,8 @@
 ///scr_inventory_item_armor(argument0);
 var spriteIndex = string(argument0);
 var armor = 0;
-switch(spriteIndex) {
-    //Equipments
+switch (spriteIndex) {
+    //Equipment
 		//Helmets
 		case "spr_broken_helmet": {armor = 5;break;}
 		case "spr_knight_helmet": {armor = 20;break;}

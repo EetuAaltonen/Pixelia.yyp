@@ -11,4 +11,4 @@ if (instance_exists(obj_map_grid)) {
 if (instance_exists(obj_map_cargo_cart)) {
 	with (obj_map_cargo_cart) instance_destroy();
 }
-scr_close_global_hudstate();
+scr_close_global_hud_state();

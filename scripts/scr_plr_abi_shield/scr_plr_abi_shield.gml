@@ -1,5 +1,5 @@
 ///Shield
-if (global.hudState == "null") {
+if (global.hudState == HudStates.Null) {
 	if (scr_plr_neutral_action_states()) {
 		if (global.mana >= 5) {
 		    if (cooldown_shield == 1) {

@@ -1,3 +1,3 @@
 ///Create variables
-hudState = "waterWell";
+hudAction = HudActions.WaterWell;
 scr_crating_create_variables();

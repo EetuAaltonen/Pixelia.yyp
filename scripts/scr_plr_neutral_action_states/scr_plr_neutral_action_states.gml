@@ -4,10 +4,10 @@ if (instance_exists(obj_player)) {
 		player = self;
 	}
 	
-	if (player.actionState == "null" ||
-		player.actionState == "jump" ||
-		player.actionState == "falling" ||
-		player.actionState == "crouch") {
+	if (player.actionState == Actions.Null ||
+		player.actionState == Actions.Jump ||
+		player.actionState == Actions.Fall ||
+		player.actionState == Actions.Crouch) {
 		return true;
 	}
 }

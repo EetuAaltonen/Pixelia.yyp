@@ -1,7 +1,7 @@
 if (image_alpha == 1)
 {
     if (growth == 0 and harvesting == false and
-        selecting_seed == false and obj_player.actionState = "null")
+        selecting_seed == false and obj_player.actionState = Actions.Null)
     {
         obj_player.actionState = "planting";
         selecting_seed = true;   

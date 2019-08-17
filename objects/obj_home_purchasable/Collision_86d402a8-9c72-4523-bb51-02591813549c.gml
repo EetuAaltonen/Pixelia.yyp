@@ -1,4 +1,4 @@
-if (obj_player.actionState == "null")
+if (obj_player.actionState == Actions.Null)
 {    
     if (global.coins >= price)
     {

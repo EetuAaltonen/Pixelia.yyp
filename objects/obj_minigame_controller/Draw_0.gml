@@ -1,7 +1,7 @@
-if (global.hudState == "minigame") {
+if (global.hudState == HudStates.Minigame) {
 	if (minigame != "null" && minigameInitialized) {
 		if (instance_exists(obj_player)) {
-			switch(minigame) {
+			switch (minigame) {
 				case "woodcutting": {
 					scr_minigame_woodcutting_draw();
 				}break;

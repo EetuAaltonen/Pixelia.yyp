@@ -13,7 +13,7 @@ if (instance_exists(obj_player)) {
 		if ((instance_nearest(x,y,obj_player)).elementalEffect == "null") {
 			var plrX = obj_player.x;
 			var plrY = obj_player.y;
-			switch(effect) {
+			switch (effect) {
 				case "fire": {burst=5}break;
 				case "frost": {burst=1}break;
 			}
@@ -36,7 +36,7 @@ if (instance_exists(obj_chicken)) {
 		if ((instance_nearest(x,y,obj_chicken)).elementalEffect == "null") {
 			var plrX = obj_chicken.x;
 			var plrY = obj_chicken.y;
-			switch(effect) {
+			switch (effect) {
 				case "fire": {burst=5}break;
 				case "frost": {burst=1}break;
 			}

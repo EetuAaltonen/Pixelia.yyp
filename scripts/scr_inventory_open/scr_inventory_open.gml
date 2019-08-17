@@ -1,17 +1,19 @@
-scr_set_global_hudstate("inventoryBackpack");
+scr_set_global_hud_state(HudStates.Inventory);
+scr_set_global_hud_action(HudActions.Backpack);
+
 updateValues = true;
 pageIndex = 1;
 filter = "";
 
 //Create Buttons
-var buttons = [
-	["inventoryBackpack", "Backpack", "medium"],
-	["inventoryEquipments", "Equipments", "medium"],
-	["abilities", "Abilities", "medium"],
-	["skills", "Skills", "small"],
-	["stats", "Stats", "small"],
-	["quests", "Quests", "small"],
-	["save&exit", "Save And Exit", "medium"],
-	["close", "Close", "small"]
+var buttonDataList = [
+	[HudActions.Backpack, ButtonSize.Medium],
+	[HudActions.Equipment, ButtonSize.Medium],
+	[HudActions.Abilities, ButtonSize.Medium],
+	[HudActions.Skills, ButtonSize.Small],
+	[HudActions.Stats, ButtonSize.Small],
+	[HudActions.Quests, ButtonSize.Small],
+	[HudActions.SaveExit, ButtonSize.Medium],
+	[HudActions.Close, ButtonSize.Small]
 ];
-scr_inventory_create_buttons(buttons);
+scr_inventory_create_buttons(buttonDataList);

@@ -1,5 +1,5 @@
 var key = string(id_x) + "," + string(id_y);
-switch(key)
+switch (key)
 {
     //Health
     case "5,1":

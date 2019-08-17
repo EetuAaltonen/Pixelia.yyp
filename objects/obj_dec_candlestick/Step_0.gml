@@ -1,4 +1,4 @@
-if (global.hudState == "null" && obj_screen_controller.darknessEffect) {
+if (global.hudState == HudStates.Null && obj_screen_controller.darknessEffect) {
 	if (depth != (obj_screen_controller.depth - 1)) {
 		depth = (obj_screen_controller.depth - 1);
 	}

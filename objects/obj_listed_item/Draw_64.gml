@@ -19,18 +19,19 @@ if (sprite_index && data != "null") {
 	draw_set_color(c_black);
 	//Item Count
 	draw_text(scr_gui(185,"x"), scr_gui(yPos,"y"), string(data[3]) + "  x");
-	if (string_pos("inventory", global.hudState)) {
+	
+	if (global.hudState == HudStates.Inventory) {
 		//Item Weight
-		draw_text(scr_gui(224,"x"), scr_gui(yPos,"y"), string(data[11]) + "  Pw");
-	} else if (string_pos("shop", global.hudState)) {
+		draw_text(scr_gui(224,"x"), scr_gui(yPos,"y"), string(data[11]) + "  Pw");	
+	} else if (global.hudState == HudStates.Shop) {
 		//Item Price
 		draw_set_color(c_black);
-		if (string_pos("shopBuy", global.hudState)) {
+		if (global.hudAction == HudActions.Buy) {
 			if (data[12] > global.coins) {
 				draw_set_color(c_red);
 			}
 		}
 		draw_text(scr_gui(224,"x"), scr_gui(yPos,"y"), scr_coins_format(data[12]));
 		draw_set_color(c_black);
-	}	
+	}
 }

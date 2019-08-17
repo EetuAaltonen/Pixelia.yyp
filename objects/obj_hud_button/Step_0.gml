@@ -1,4 +1,4 @@
-if (infoText != "" && sprite_index == spr_no_mask) {
+if (infoText != undefined && sprite_index == spr_no_mask) {
 	//Font
 	draw_set_font(fnt_inventory_text);
 	draw_set_color(c_black);

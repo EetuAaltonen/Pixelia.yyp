@@ -1,5 +1,5 @@
 if (alarm[1] > 0) {	
-	if (global.hudState == "null") {
+	if (global.hudState == HudStates.Null) {
 		//Font
 		draw_set_font(fnt_draw_gui_sign);
 		draw_set_color(c_orange);

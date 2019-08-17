@@ -8,7 +8,7 @@ var ingredients = argument2;
 var result = false;
 
 recipes = scr_inventory_item_info();
-/*switch(recipes) {
+/*switch (recipes) {
 	//case "forge": recipes = scr_forge_recipes();
 	case "alchemy": recipes = scr_alchemy_recipes();
 	//case "workbench": recipes = scr_workbench_recipes();

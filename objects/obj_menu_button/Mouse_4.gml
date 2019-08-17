@@ -1,5 +1,5 @@
 if (action != "null") {
-	switch(action) {
+	switch (action) {
 		case "load": {
 			///Click
 			if (instance_exists(obj_search_box)) {

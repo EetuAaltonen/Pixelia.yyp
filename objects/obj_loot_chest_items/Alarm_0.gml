@@ -3,5 +3,5 @@ if (partEffIndx++ <= partEffCount) {
 	
 	alarm[0] = partEffDelay;
 } else {
-	global.hudState = "looting";	
+	global.hudState = HudStates.Loot;	
 }

@@ -27,7 +27,7 @@ if (gSeconds < 10) {
 	tempGSeconds = "0" + string(gSeconds);
 }
 
-if (global.hudState == "null" || global.hudState == "minigame") {
+if (global.hudState == HudStates.Null || global.hudState == HudStates.Minigame) {
 	
 	
 	//Font

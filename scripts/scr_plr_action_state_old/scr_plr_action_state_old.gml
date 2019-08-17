@@ -4,7 +4,7 @@ if (action_state == "confirm") {
     vspeed = 0;
 }
 //Slice
-else if (action_state == "slice") {
+else if (action_state == Actions.Slice) {
     //Gravity
     scr_custom_gravity();
     image_speed = 0.2;
@@ -59,11 +59,11 @@ else if (action_state == "planting") {
 }
 
 //Default movements
-else if (global.hudState == "null" ||
+else if (global.hudState == HudStates.Null ||
 	action_state == "null" ||
-    action_state == "jump" ||
-    action_state == "crouch" ||
-    action_state == "carry_goods") {
+    action_state == Actions.Jump ||
+    action_state == Actions.Crouch ||
+    action_state == Actions.Lift) {
     //Gravity
     if (action_state != "ladder") {
         scr_custom_gravity();
@@ -90,7 +90,7 @@ else if (global.hudState == "null" ||
 		//Movement
 		scr_plr_movement();
 	}
-    /*else if (action_state == "jump" && vspeed < 0)
+    /*else if (action_state == Actions.Jump && vspeed < 0)
     {
         sprite_index = spr_plr_jump;
         image_speed = 0;
@@ -105,16 +105,16 @@ else if (global.hudState == "null" ||
     }*/
     //Jump
     if (keyboard_check_pressed(vk_up) && !place_free(x, y+1)) {
-        if (action_state == "null" || action_state == "carry_goods") {
-            if (action_state == "carry_goods") {
+        if (action_state == "null" || action_state == Actions.Lift) {
+            if (action_state == Actions.Lift) {
                 vspeed = -2.5;
             } else {
                 vspeed = -3;
-                action_state = "jump";
+                action_state = Actions.Jump;
             }
         }       
     }
-    else if (action_state == "jump" && !place_free(x, y+1)) {
+    else if (action_state == Actions.Jump && !place_free(x, y+1)) {
         action_state = "null";
     }
     
@@ -142,7 +142,7 @@ else if (global.hudState == "null" ||
     
     //Crouch
     if (keyboard_check(vk_control)) {
-        action_state = "crouch";
+        action_state = Actions.Crouch;
         if (hspeed == 0) {
             action_state = "";
             image_speed = 0;

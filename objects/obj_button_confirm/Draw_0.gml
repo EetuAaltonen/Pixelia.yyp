@@ -1,7 +1,7 @@
 draw_self();
 
 //Visibility
-/*if (global.hudState == "inventorySkills") {
+/*if (global.hudState == HudStates.Skills) {
 	if (obj_inventory_controller.globalPrimaryAttributesValues == global.skillPrimaryAttributesValues) {
 		visible = false;
 	} else {

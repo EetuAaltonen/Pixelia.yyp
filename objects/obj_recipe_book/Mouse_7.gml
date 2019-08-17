@@ -31,7 +31,7 @@ if (!showRecipeBook) {
 	
 	/*recipeCount = 0;
 	var recipeList;
-	switch(global.hudState) {
+	switch (global.hudState) {
 		case "forge": {
 			recipeList = global.knownForgeRecipes;
 		}break;

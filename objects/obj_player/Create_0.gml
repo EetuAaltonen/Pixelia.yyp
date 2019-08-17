@@ -41,7 +41,7 @@ sliceRam = false;
 cooldown_shield = 1;
 
 //Action state
-actionState = "null";
+actionState = Actions.Null;
 
 //Jump
 can_jump = 1;

@@ -16,13 +16,13 @@ if (floor(image_index) == (image_number-2) && opened) {
 			items = scr_loot_chest_get_items(lootType);
 		}
 		
-		obj_player.actionState = "looting";
+		obj_player.actionState = Actions.Loot;
 	}
 }  else if (opened && scr_stop_interact_with_player()) {
 	//Close
 	opened = false;
 	
 	scr_listed_item_remove();
-	global.hudState = "null";
+	global.hudState = HudStates.Null;
 	scr_plr_set_action_state_null();
 }

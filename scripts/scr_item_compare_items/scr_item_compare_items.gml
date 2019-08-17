@@ -5,7 +5,7 @@ var item2 = argument1;
 var compare = argument2;
 var size1, size2;
 
-switch(compare) {
+switch (compare) {
 	case "full": {
 		return (item[0] == item2[0] && //Sprite
 				item[1] == item2[1] && //Name

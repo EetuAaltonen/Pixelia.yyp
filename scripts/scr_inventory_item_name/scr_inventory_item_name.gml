@@ -1,7 +1,7 @@
 ///scr_inventory_item_name(argument0);
 var spriteName = string(argument0);
 var name = "";
-switch(spriteName) {
+switch (spriteName) {
     //Materials
     case "spr_oak_log": {name = "Oak log";break;}
     case "spr_coal": {name = "Coal";break;}
@@ -30,7 +30,7 @@ switch(spriteName) {
     //Tools
     case "spr_tool_saw": {name = "Saw";break;}
     case "spr_tool_knife": {name = "Knife";break;}
-    //Equipments
+    //Equipment
 		//Helmets
 		case "spr_broken_helmet": {name = "Broken helmet";break;}
 		case "spr_knight_helmet": {name = "Knight helmet";break;}

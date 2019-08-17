@@ -1,5 +1,5 @@
 if (action != "null") {	
-	switch(action) {
+	switch (action) {
 		case "load": {
 			if (!global.popUp) {
 				if (image_blend != make_colour_hsv(0, 0, 150)) {

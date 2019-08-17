@@ -1,3 +1,3 @@
 ///Create variables
-hudState = "furnace";
+hudAction = HudActions.Furnace;
 scr_crating_create_variables();

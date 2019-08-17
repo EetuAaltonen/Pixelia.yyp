@@ -1,8 +1,8 @@
 //If some menu is open
-/*if (global.hudState != "null") {
-	actionState = "idle";
-} else if (global.hudState == "null" && actionState == "idle") {
-	actionState = "null";	
+/*if (global.hudState != HudStates.Null) {
+	actionState = Actions.Idle;
+} else if (global.hudState == HudStates.Null && actionState == Actions.Idle) {
+	actionState = Actions.Null;	
 }*/
 
 switch (actionState) {

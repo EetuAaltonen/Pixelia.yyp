@@ -1,5 +1,5 @@
 ///Instance destroy
-if (global.hudState == "null") {
+if (global.hudState == HudStates.Null) {
     instance_destroy();
 }
 

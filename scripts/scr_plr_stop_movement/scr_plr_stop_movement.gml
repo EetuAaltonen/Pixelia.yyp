@@ -1,4 +1,4 @@
-if (actionState == "null") {
+if (actionState == Actions.Null) {
 	image_index = 0;
 }
 if (hspeed > acceleration) {

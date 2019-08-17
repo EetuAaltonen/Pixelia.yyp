@@ -30,7 +30,7 @@ if (updateValues) {
 	if (listSize > 0) {
 		var yPos, xPos;
 		var margin = 19, tempMargin;
-		var i, j;
+		var i;
 		var data;
 		
 		//Last item
@@ -64,7 +64,7 @@ if (updateValues) {
 		}
 		
 		//Create / update listed equipments
-		if (global.hudState == "inventoryEquipments") {
+		if (global.hudAction == HudActions.Equipment) {
 			//scr_listed_item_get_equipment_type()
 			var equipmentsExist = instance_exists(obj_listed_equipment);
 			var i;

@@ -17,7 +17,9 @@ global.alarmTicks = scr_time_sec_to_alarm(1); //1 second
 	//layer_create(-100, "Collectable");
 	
 /*[Hud state & Room change]*/
-    global.hudState = "null";
+    global.hudState = HudStates.Null;
+	global.hudAction = HudActions.Null;
+
     global.room_change = 0;
 	global.previousRoom = "null";
 	global.playerHeading = 1;
@@ -124,7 +126,7 @@ global.maxInventoryCapacity = 100;
 global.totalInventoryCapacity = 0;
 global.carryingCapacityPlus = 0;
 
-//Global variables - Equipments
+//Global variables - Equipment
 /*equipments {
 	helmet, 0
 	amulet, 1
