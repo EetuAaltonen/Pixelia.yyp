@@ -17,7 +17,7 @@ if (scr_interact_with_player()) {
 		
 		scr_set_global_hud_action(hudAction);
     }
-} else if (global.hudState == hudAction && scr_keys_to_close()) {
+} else if (global.hudAction == hudAction && scr_keys_to_close()) {
 	//Close crafting
 	scr_crafting_close();
 }

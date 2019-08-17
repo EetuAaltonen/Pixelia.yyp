@@ -14,8 +14,8 @@ if (picked == false)
             with (obj_use) instance_destroy();
         }
         //Check if player can pickup the crate
-        if (obj_player.actionState = Actions.Null ||
-            obj_player.actionState = Actions.Jump)
+        if (obj_player.actionState == Actions.Null ||
+            obj_player.actionState == Actions.Jump)
         {
             if (instance_exists(obj_player))
             {

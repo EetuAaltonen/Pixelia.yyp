@@ -26,7 +26,7 @@ for (i = 0; i < arrayLength; i++) {
 	}
 	var c instance_create(viewX+startX+xPos, viewY+startY, obj_inv_button);
 	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).hudAction = buttonData[0];
-	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).infoText = buttonData[0];
+	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).infoText = HudActionText[buttonData[0]];
 	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).sprite_index = spriteIndex;
 	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).depth = controller.depth-1;
 	xPos += (width+margin);

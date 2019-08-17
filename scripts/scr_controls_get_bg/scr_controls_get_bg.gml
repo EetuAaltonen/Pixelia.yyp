@@ -6,7 +6,7 @@ if (global.hudState == HudStates.Inventory)	{
 	draw_sprite(spr_controls_mouse, 0, viewX+288, viewY+271);
 
 	if (global.hudAction == HudActions.Backpack ||
-		global.hudState == HudActions.Equipment) {
+		global.hudAction == HudActions.Equipment) {
 		draw_sprite(spr_inv_item_price_bg, 0, viewX+348, viewY+267);
 		draw_sprite(spr_controls_mouse, 1, viewX+352, viewY+271);
 	}

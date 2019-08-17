@@ -14,7 +14,7 @@ if (keyboard_check_pressed(vk_tab) &&
 			scr_inventory_open();
 	    }
 	}
-} else if (string_pos("inventory", string(global.hudState)) &&
+} else if (global.hudState == HudStates.Inventory &&
 			scr_keys_to_close()) {
 	scr_inventory_close();
 }

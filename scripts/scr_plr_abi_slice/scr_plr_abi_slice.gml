@@ -24,6 +24,7 @@ if (sliceRam) {
 					if (image_index > (image_number - 1)) {
 						sprite_index = spr_player;
 						sliceCooldown = false;
+						actionState = Actions.Null;
 					}
 				}
 				alarms.alarm[2] = 20*global.delta;

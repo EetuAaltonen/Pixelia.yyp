@@ -26,7 +26,7 @@ else if (action_state == "sitting") {
     sprite_index = spr_plr_sit;
 }
 //Ladder
-else if (action_state == "ladder") {
+else if (action_state == Actions.Climb) {
     if (distance_to_object(obj_ladder) == 0) {
         scr_plr_ladder();
     } else {
@@ -35,17 +35,17 @@ else if (action_state == "ladder") {
     }
 }
 //Bow
-else if (action_state == "bow") {
+else if (action_state == Actions.Bow) {
     scr_plr_abi_bow();
     //Gravity
     scr_custom_gravity();
 }
 //Mining
-else if (action_state == "mining") {
+else if (action_state == Actions.Mining) {
     scr_plr_mining();
 }
 //Woodcutting
-else if (action_state == "woodcutting") {
+else if (action_state == Actions.Woodcutting) {
     scr_plr_woodcutting();
 }
 //Fishing
@@ -65,7 +65,7 @@ else if (global.hudState == HudStates.Null ||
     action_state == Actions.Crouch ||
     action_state == Actions.Lift) {
     //Gravity
-    if (action_state != "ladder") {
+    if (action_state != Actions.Climb) {
         scr_custom_gravity();
     }
     

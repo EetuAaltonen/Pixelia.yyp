@@ -45,7 +45,7 @@ if (global.hudState == HudStates.Inventory ||
 		                image_angle, c_white, image_alpha);
 						
 			//Merchant's Money
-			if (string_pos("shop", global.hudState)) {
+			if (global.hudState == HudStates.Shop) {
 				draw_sprite(spr_inv_button_medium, 0, viewX+436, viewY+76);
 				draw_sprite_ext(spr_money_icon_m, image_index, viewX+425, 
 			                viewY+85, 1, 1, 

@@ -5,6 +5,7 @@ if (sprite_index = spr_plr_roll) {
 hspeed = 0;
 global.damage = 1;
 roll = 0;
+actionState = Actions.Null;
 image_speed = 0;
 image_alpha = 1;
 sprite_index = spr_plr_crouch;

@@ -65,10 +65,10 @@ if (global.hudState == HudStates.Crafting) {
 	} else if (global.hudAction == HudActions.Repair) {
 		draw_text(viewX+30, viewY+120, "Coming Soon!");
 		//scr_inventory_list_backpack();
-	} else if (global.hudState == HudActions.BuyBack) {
+	} else if (global.hudAction == HudActions.BuyBack) {
 		draw_text(viewX+30, viewY+120, "Coming Soon!");
 		//scr_inventory_list_backpack();
-	} else if (global.hudState == HudActions.Withdraw) {
+	} else if (global.hudAction == HudActions.Withdraw) {
 		scr_stash_list_items();
 	}	
 } else if (global.hudState == HudStates.Map) {

@@ -1,6 +1,6 @@
 if (instance_exists(obj_player))
 {  
-    if (obj_player.cooldown_slice == 1 and global.stamina >= 2)
+    if (obj_player.sliceCooldown and global.stamina >= 2)
     {
         image_index = 0;
     }

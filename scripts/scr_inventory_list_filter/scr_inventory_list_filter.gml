@@ -1,4 +1,4 @@
-var sourceList;
+var sourceList = ds_list_create();
 ds_list_clear(listOfItems);
 if ((global.hudState == HudStates.Inventory && (global.hudAction == HudActions.Backpack || global.hudAction == HudActions.Equipment)) ||
 	(global.hudState == HudStates.Shop && global.hudAction == HudActions.Sell) ||

@@ -1,12 +1,12 @@
 //If some menu is open
 /*if (global.hudState != HudStates.Null) {
-	actionState = Actions.Idle;
-} else if (global.hudState == HudStates.Null && actionState == Actions.Idle) {
+	actionState = Actions.Null;
+} else if (global.hudState == HudStates.Null && actionState == Actions.Null) {
 	actionState = Actions.Null;	
 }*/
 
 switch (actionState) {
-	case "idle": {
+	case Actions.Idle: {
 		if (sprite_index != spr_plr_idle) {
 			sprite_index = spr_plr_idle;
 			image_speed = 0.2;
@@ -15,26 +15,26 @@ switch (actionState) {
 		scr_custom_gravity();
 		hspeed = 0;
 	}break;
-	case "slice": {
+	case Actions.Slice: {
 		scr_plr_abi_slice();
 	}break;
-	case "bow": {
+	case Actions.Bow: {
 		scr_plr_abi_bow();
 	}break;
-	case "ladder": {
+	case Actions.Climb: {
 		scr_plr_ladder();
 	}break;
-	case "woodcutting": {
+	case Actions.Woodcutting: {
 		//Gravity
 		scr_custom_gravity();
 		hspeed = 0;
 	}break;
-	case "mining": {
+	case Actions.Mining: {
 		//Gravity
 		scr_custom_gravity();
 		hspeed = 0;
 	}break;
-	case "looting": {
+	case Actions.Loot: {
 		//Gravity
 		scr_custom_gravity();
 		hspeed = 0;

@@ -1,12 +1,12 @@
 ///Bow
 if (global.hudState == HudStates.Null) {
-	if (actionState != "bow") {
+	if (actionState != Actions.Bow) {
 		if (scr_plr_neutral_action_states()) {
 			var bowCount = scr_inventory_search_equipment("Bow", "priweapon");
 			var arrowCount = scr_inventory_search_equipment("Arrow", "secweapon");
 			
 			if (bowCount > 0 && arrowCount > 0) {
-				actionState = "bow";
+				actionState = Actions.Bow;
 	            //instance_create(x, y, obj_plr_aim);
 	            instance_create(x, y, obj_plr_bow);
 	            obj_plr_bow.arrowCount = arrowCount;//arrowCount;
@@ -33,7 +33,7 @@ if (global.hudState == HudStates.Null) {
 	}
 }
 /*if (global.hudState == HudStates.Null) {
-    if (action_state != "bow") {
+    if (action_state != Actions.Bow) {
         var bowFound = false;
 		var arrowFound = false;
 		var listSize = ds_list_size(global.equipments);
@@ -50,7 +50,7 @@ if (global.hudState == HudStates.Null) {
 			}
 		}
 		if (bowFound && arrowFound) {
-			action_state = "bow";
+			action_state = Actions.Bow;
             instance_create(x, y, obj_plr_aim);
             instance_create(x, y, obj_plr_bow);
             obj_plr_bow.arrowCount = 10;//arrowCount;
@@ -64,7 +64,7 @@ if (global.hudState == HudStates.Null) {
                 scr_add_new_toast("Arrows not equipped!");
 			}
 		}
-    } else if (action_state == "bow") {
+    } else if (action_state == Actions.Bow) {
         action_state = "null";
         sprite_index = spr_player;
     }

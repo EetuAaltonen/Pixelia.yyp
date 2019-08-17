@@ -9399,6 +9399,14 @@
             }
         },
         {
+            "Key": "e5d1a39c-b18d-4b7e-8e22-ae29a4d73c4b",
+            "Value": {
+                "id": "dd80f278-44ff-4221-85d5-d93baaf72ae1",
+                "resourcePath": "scripts\\scr_global_hud_action_texts\\scr_global_hud_action_texts.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e5e7c53d-93a6-4537-8883-e4363d442595",
             "Value": {
                 "id": "56dd4c16-4b17-40c9-9afb-4e2e4f9b8e6e",
@@ -10614,6 +10622,7 @@
         "1a84e652-869b-4c76-90b7-8eccc810a9ba",
         "cf829fb5-d291-4dfb-9491-7e1f13092563",
         "263ef26d-3a58-4703-a474-293863ea2676",
+        "e5d1a39c-b18d-4b7e-8e22-ae29a4d73c4b",
         "2facfb8b-c633-449c-b5c4-b070bd69bce3",
         "3f0f145f-2698-4362-b252-ff92f5fa0708",
         "617c29e9-7e85-4b22-bb00-90f71a890f0b",

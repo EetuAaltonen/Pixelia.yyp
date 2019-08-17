@@ -3,8 +3,13 @@ enum Actions {
    Idle,
    Jump,
    Fall,
+   Climb,
    Crouch,
+   Roll,
    Slice,
+   Bow,
+   Woodcutting,
+   Mining,
    Loot,
    Lift
 }

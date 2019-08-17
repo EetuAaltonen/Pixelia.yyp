@@ -1,1 +1,1 @@
-cooldown_slice = 1;
+sliceCooldown = 1;

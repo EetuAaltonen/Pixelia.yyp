@@ -1,8 +1,8 @@
 ///Change hudState
 if (hudState == "null") {
-	if (string_pos("inventory", string(global.hudState))) {
+	if (global.hudState == HudStates.Inventory) {
 		scr_inventory_close();
-	} else if (string_pos("shop", string(global.hudState))) {
+	} else if (global.hudState == HudStates.Shop) {
 		scr_shop_close();
 	}
 } else {

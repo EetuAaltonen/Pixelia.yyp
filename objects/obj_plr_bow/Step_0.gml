@@ -1,5 +1,5 @@
 ///Instance destroy
-if (obj_player.actionState != "bow") {
+if (obj_player.actionState != Actions.Bow) {
     instance_destroy();
 }
 
