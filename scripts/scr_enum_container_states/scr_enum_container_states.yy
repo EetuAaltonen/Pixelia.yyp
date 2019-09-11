@@ -1,8 +1,8 @@
 {
-    "id": "13644bff-7375-4fed-a3a5-2a202fb10aa6",
+    "id": "7d6916e6-8d8c-4056-b0f3-aa5834a657b9",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_loot_chest_open",
+    "name": "scr_enum_container_states",
     "IsCompatibility": false,
     "IsDnD": false
 }

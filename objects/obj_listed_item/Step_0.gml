@@ -1,29 +1,6 @@
-//scr_item_info_struct()
-
-if (updateValues) {
-	updateValues = false;
-	if (data != "null") {
-		sprite_index = data[ItemData.Sprite];
-		
-		infoText = scr_listed_item_get_infoText(data);
-		
-		equipmentIndex = undefined;
-		//Check If Equipped
-		if (string_pos("equipment", data[2])) {
-			scr_listed_item_check_equipped();
-		}
-		
-		//Check If Mouse Over
-		if (distance_to_point(mouse_x, mouse_y) == 0) {
-			///Set inventory info text
-			obj_inventory_controller.itemInfoText = infoText;	
-		}
-	}
-}
-
 if (checkSelected) {
 	checkSelected = false;
-	if (data != "null") {
+	if (data != undefined) {
 		if (global.hudState == HudStates.Crafting) {
 			selected = false;
 			if (instance_exists(obj_crafting_slot)) {

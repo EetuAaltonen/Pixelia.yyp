@@ -19,6 +19,3 @@ checkSelected = true;
 
 //Equipped
 equipmentIndex = undefined;
-
-//Looting
-moveToPlayer = false;

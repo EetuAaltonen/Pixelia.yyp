@@ -1,8 +1,8 @@
 {
-    "id": "13644bff-7375-4fed-a3a5-2a202fb10aa6",
+    "id": "f9ed3150-1da2-47b8-94bb-3256620a0d38",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_loot_chest_open",
+    "name": "scr_gold_chest_open_old",
     "IsCompatibility": false,
     "IsDnD": false
 }

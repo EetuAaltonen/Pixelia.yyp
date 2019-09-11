@@ -8,7 +8,7 @@
         "f9ed3150-1da2-47b8-94bb-3256620a0d38"
     ],
     "filterType": "GMScript",
-    "folderName": "Chests",
+    "folderName": "Chests Old",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

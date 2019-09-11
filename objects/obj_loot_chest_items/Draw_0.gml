@@ -1,6 +1,9 @@
 draw_self();
-if (image_index == 0 && !opened) {
+depth = 0;
+if (state == Container.Uninit || state == Container.Closed) {
 	scr_highlight_self();
-} else if (opened && image_index == (image_number-1)) {
-	
+} else if (state == Container.Opened) {
+	depth = -6000;
+	//Background
+	scr_loot_chest_draw_background();
 }

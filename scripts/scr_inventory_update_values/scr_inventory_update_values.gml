@@ -59,6 +59,9 @@ if (updateValues) {
 			}
 			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).index = i;
 			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).depth = depth-1;
+			if (is_array(data)) {
+				(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).sprite_index = data[ItemData.Sprite];
+			}
 			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).data = data;
 			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).updateValues = true;
 		}

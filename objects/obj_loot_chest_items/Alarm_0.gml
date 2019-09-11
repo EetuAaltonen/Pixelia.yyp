@@ -3,5 +3,5 @@ if (partEffIndx++ <= partEffCount) {
 	
 	alarm[0] = partEffDelay;
 } else {
-	global.hudState = HudStates.Loot;	
+	state = Container.Opened;
 }

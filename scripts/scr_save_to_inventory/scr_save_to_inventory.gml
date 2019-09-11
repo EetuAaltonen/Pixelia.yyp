@@ -1,7 +1,7 @@
 ///scr_save_to_inventory(argument0, argument1);
 var spriteName = argument0;
 var addedAmount = argument1;
-//Save inventory
+/*//Save inventory
 var itemInfo = ds_list_create();
 var inInventory = false;
 var listSize = ds_list_size(global.inventory);
@@ -28,15 +28,6 @@ for (i = 0; i < listSize; i++) {
 }
 if (!inInventory) {
     if (addedAmount > 0) {
-        /*
-            itemInfo = {
-                spriteName: argument0;
-                itemName: scr_inventory_item_name(spriteName);
-                addedAmount: argument1;
-                itemWeight: scr_inventory_item_weight(spriteName);
-                itemType: scr_inventory_item_type(spriteName);
-            }
-        */
         //Write
         ds_list_clear(itemInfo);
         ds_list_add(itemInfo, spriteName);
