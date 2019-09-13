@@ -28,11 +28,6 @@ if (updateValues) {
 	}
 	
 	if (listSize > 0) {
-		var yPos, xPos;
-		var margin = 19, tempMargin;
-		var i;
-		var data;
-		
 		//Last item
 		if (listSize == pageIndex*itemsPerPage) {
 			lastItem = listSize;
@@ -44,10 +39,25 @@ if (updateValues) {
 		startIndex = (pageIndex-1)*itemsPerPage;
 		
 		//Create / update listed items
-		var listedItemsExist = instance_exists(obj_listed_item);
-		xPos = 17;
-		yPos = 105;
-		var tempIndex = startIndex;
+		var xPos = 17;
+		var yPos = 105;
+		var yMargin = 19;
+		var itemList;
+		
+		if (!instance_exists(obj_listed_item)) {
+			itemList = scr_ds_list_range(listOfItems, startIndex, lastItem);
+			var renderData = [
+				[ItemData.Name, 41],
+				[ItemData.Count, 185],
+				[ItemData.Weight, 224]
+			];
+			scr_inventory_create_list(itemList, itemsPerPage, renderData, xPos, yPos, yMargin);
+		} else {
+			itemList = scr_ds_list_range(listOfItems, startIndex, lastItem);
+			scr_inventory_update_list(itemList);
+		}
+		
+		/*var tempIndex = startIndex;
 		for (i = 0; i < itemsPerPage; i++) {
 			data = "null";
 			if (tempIndex < lastItem) {
@@ -64,7 +74,7 @@ if (updateValues) {
 			}
 			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).data = data;
 			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).updateValues = true;
-		}
+		}*/
 		
 		//Create / update listed equipments
 		if (global.hudAction == HudActions.Equipment) {

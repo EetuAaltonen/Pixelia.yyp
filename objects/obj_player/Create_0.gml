@@ -1,5 +1,5 @@
-//Depth
-depth = -200;
+depth = Depth.Player;
+
 cooldown = 1;
 
 sprite_index = spr_player;

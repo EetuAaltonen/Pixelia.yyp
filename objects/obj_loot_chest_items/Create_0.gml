@@ -1,3 +1,4 @@
+depth = Depth.Container;
 image_speed = 0;
 
 LootEffectPS = part_system_create();
@@ -19,4 +20,5 @@ partEffIndx = 0;
 //Loot
 items = ds_list_create();
 state = Container.Uninit;
-lootType = "items";
+lootType = Loot.Material;
+updateValues = false;

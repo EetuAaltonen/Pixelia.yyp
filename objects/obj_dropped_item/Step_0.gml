@@ -5,10 +5,10 @@ if (sprite_index == spr_no_mask && data != "null") {
 	if (scr_dropped_item_search_to_stack(data)) {
 		instance_destroy();	
 	}
-	sprite_index = data[0];
-	name = data[1];
-	weight = data[11];
-	count = data[3];
+	sprite_index = data[ItemData.Sprite];
+	name = data[ItemData.Name];
+	weight = data[ItemData.Weight];
+	count = data[ItemData.Count];
 	mask_index = sprite_index;
 }
 
@@ -18,7 +18,7 @@ if (distance_to_object(obj_use) == 0 &&
     if (instance_exists(obj_use)) {
         with (obj_use) instance_destroy();
     }
-    scr_check_weight(data[ItemData.Weight]);
+    scr_check_weight();
 }
 
 ///Item moves to player

@@ -12,7 +12,6 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 		image_index = (image_number-1);
 		state = Container.Opened;
 	}
-	scr_highlight_remove();
 } else if (state == Container.Opening && floor(image_index) == (image_number-1)) {
 	// Trigger particle effects
 	state = Container.Particles;
@@ -24,16 +23,19 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 	
 	obj_player.actionState = Actions.Loot;
 	global.hudState = HudStates.Loot;
+} else if (state == Container.Opened && updateValues) {
+	updateValues = false;
+	scr_inventory_update_list(items);
 }  else if (state == Container.Opened && scr_stop_interact_with_player()) {
 	//Close
 	state = Container.Closed;
 	image_index = 0;
+	depth = Depth.Container;
 	
 	if (ds_list_size(items) <= 0) {
 		state = Container.Empty;
 		image_index = (image_number-1);
 	}
-	
 	scr_highlight_remove();
 	scr_listed_item_remove();
 	global.hudState = HudStates.Null;

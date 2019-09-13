@@ -1,3 +1,4 @@
+depth = Depth.Enemy;
 image_speed = 0;
 image_index = 0;
 

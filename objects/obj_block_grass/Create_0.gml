@@ -1,3 +1,4 @@
+depth = Depth.Block;
 image_speed = 0;
 image_index = scr_auto_tile()
 /*if (image_index == 46 ||

@@ -5,7 +5,7 @@ if (!updateValues) {
 	} else if (global.hudState == HudStates.Loot) {
 		scr_listed_item_looting();
 	} else {
-		switch (global.hudActions) {
+		switch (global.hudAction) {
 			case HudActions.Backpack: {
 				scr_listed_item_toggle_equip();
 				scr_inventory_use_item(data, 1);

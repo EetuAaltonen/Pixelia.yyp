@@ -17,12 +17,12 @@ var lootType = argument0;
 var lootTable = [];
 
 switch (lootType) {
-	case "items": {
+	case Loot.Material: {
 		lootTable = [
-			[spr_iron_ore, 5], [spr_iron_ingot, 5]
+			[spr_iron_ore, 5], [spr_iron_ingot, 2]
 		]
 	}break;
-	case "equipment": {
+	case Loot.Equipment: {
 		lootTable = [
 			[spr_broken_helmet, 1], [spr_knight_helmet, 1]
 		]

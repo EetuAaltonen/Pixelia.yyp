@@ -1,13 +1,13 @@
+depth = Depth.ListItem;
 mask_index = spr_listed_item_mask;
 
 //Data
 data = "null";
-//Index
+renderData = "null";
 index = "null";
-//Update item
-updateValues = false;
-//Info text
 infoText = "";
+controller = undefined;
+updateValues = true;
 
 droppingItem = false;
 createOnce = true;

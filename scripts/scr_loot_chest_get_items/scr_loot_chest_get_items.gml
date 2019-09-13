@@ -21,11 +21,11 @@ var i, j;
 for (i = 0; i < lootCount; i++) {
 	tempLoot = lootTable[i];
 	for (j = 0; j < dataCount; j++) {
-		tempData = itemData[i];
+		tempData = itemData[j];
 		if (tempLoot[ItemData.Sprite] == tempData[ItemData.Sprite]) {
 			tempData[ItemData.Count] = tempLoot[1]; //Set new count
 			ds_list_add(loot, tempData);
-			break;
+			j = dataCount-1;
 		}
 	}
 }

@@ -1,4 +1,5 @@
-///Initialize variables
+depth = Depth.HudBg;
+
 //Read saved ini
 key = "";
 typeId = "";

@@ -1,6 +1,7 @@
 enum ItemData {
 	Sprite,
 	Name,
+	Description,
 	Type,
 	Count,
 	Damage,

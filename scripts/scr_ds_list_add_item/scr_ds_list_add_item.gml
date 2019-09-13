@@ -15,8 +15,8 @@ if (count != 0) {
 		k = floor((i + j)/2);
 		data = ds_list_find_value(list, k);
 		if (scr_item_compare_items(item, data, "full")) {
-			if (count + data[3] > 0) {
-				data[3] += count;
+			if (count + data[ItemData.Count] > 0) {
+				data[ItemData.Count] += count;
 				ds_list_replace(list, k, data);
 			} else {
 				ds_list_delete(list, k);
@@ -25,9 +25,9 @@ if (count != 0) {
 			break;
 		}
 		//Compare names
-		if (item[1] < data[1]) {
+		if (item[ItemData.Name] < data[ItemData.Name]) {
 			j = (k - 1);
-		} else if (item[1] == data[1]) {
+		} else if (item[ItemData.Name] == data[ItemData.Name]) {
 			if (scr_item_compare_items(item, data, "small")) {	
 				j = (k - 1);
 			} else {
@@ -38,7 +38,7 @@ if (count != 0) {
 		}
 	}
 	if (!alreadyExists) {
-		item[3] = count;
+		item[ItemData.Count] = count;
 		if (i > j) {
 			k = i;	
 		}

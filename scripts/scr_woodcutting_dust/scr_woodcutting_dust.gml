@@ -1,6 +1,6 @@
 //Create particle system
 wood_dust_particles = part_system_create();
-part_system_depth(wood_dust_particles, -200);
+part_system_depth(wood_dust_particles, Depth.Particle);
 
 //Particle types
 wood_dust = part_type_create();

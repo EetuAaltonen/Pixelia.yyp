@@ -1,3 +1,4 @@
+depth = Depth.DialogBg;
 /*global.dialog = false;
 global.dialog_text = 0;
 global.dialog_min = 0; //first text

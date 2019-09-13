@@ -1,0 +1,4 @@
+enum RenderData {
+	Index,
+	MarginLeft
+}

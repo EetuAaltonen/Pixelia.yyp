@@ -6,9 +6,9 @@ if (moveToPlayer == true) {
     move_towards_point(obj_player.x, obj_player.y, obj_player.speed + 1);
     if (distance_to_object(obj_player) <= 1) {
         //Add to inventory
-        scr_inventory_add_item(data, data[3]);
+        scr_inventory_add_item(data, data[ItemData.Count]);
 		//Toast
-        scr_add_new_toast(string(data[3]) + "x " + name);
+        scr_add_new_toast(string(data[ItemData.Count]) + "x " + name);
         obj_player.highlight = false;
         instance_destroy();  
     } 

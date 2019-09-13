@@ -7,26 +7,39 @@ var mark = scr_item_mark_struct();
 var i, j = 0;
 var arraySize = array_length_1d(data);
 for (i = 0; i < arraySize; i++) {
+	description = undefined;
 	if (data[i] != "null") {
-		if (i == 1 || i == 3 || i == 7 || i == 8 ||
-			i == 9 || i == 10 || i == 11 || i == 12 || i == 13) {
-			description = info[i] + string(data[i]) + mark[i];
-			if (data[i] == -1) {
-				description = info[i] + "---" + mark[i];
-			}
-			if (i == 8 && data[i] != "null") {
-				//Replace Effect Code With Name
+		switch (i) {
+			case ItemData.Effect: {
+				// Replace Effect Code With Name
 				description = info[i] + scr_item_search_effect(data[i], "key") + mark[i];
 			}
-			else if (i == 11 && data[3] > 1) {
-				//Calculate Stack Weight
-				description += " (" + string(data[i] * data[3]) + ")";
-			} else if (i == 12 && data[3] > 1) {
-				//Calculate Stack Price
-				description += " (" + string(data[i] * data[3]) + ")";
+			case ItemData.Weight: {
+				description = info[i] + string(data[i]) + mark[i];
+				if (data[ItemData.Count] > 1) {
+					// Calculate Stack Weight
+					description += " (" + string(data[i] * data[ItemData.Count]) + ")";
+				}
 			}
-			infoText[j++] = description;
+			case ItemData.Price: {
+				description = info[i] + string(data[i]) + mark[i];
+				if (data[ItemData.Count] > 1) {
+					// Calculate Stack Price
+					description += " (" + string(data[i] * data[ItemData.Count]) + ")";
+				}
+			}
+			default: {
+				if (i == ItemData.Name || i == ItemData.Count || i == ItemData.Durability ||
+					i == ItemData.Effect || i == ItemData.EffectAmount || i == ItemData.EffectDuration ||
+					i == ItemData.RequiredLevel) {
+					description = info[i] + string(data[i]) + mark[i];
+					if (data[i] == -1) {
+						description = info[i] + "---" + mark[i];
+					}
+				}
+			}
 		}
+		if (description != undefined) { infoText[j++] = description; }
 	}
 }
 return infoText;

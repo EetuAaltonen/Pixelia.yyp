@@ -1,4 +1,4 @@
-///Create attributes
+depth = Depth.Loot;
 data = "null";
 sprite_index = spr_no_mask;
 moveToPlayer = false;

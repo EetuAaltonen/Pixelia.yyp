@@ -6,7 +6,7 @@ if (updateValues) {
 		
 		equipmentIndex = undefined;
 		//Check If Equipped
-		if (string_pos("equipment", data[2])) {
+		if (string_pos("equipment", data[ItemData.Type])) {
 			scr_listed_item_check_equipped();
 		}
 		

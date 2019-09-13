@@ -1,6 +1,6 @@
 //Particles
 partElementalSys = part_system_create();
-part_system_depth(partElementalSys, -201);
+part_system_depth(partElementalSys, Depth.Particle);
 
 partElementalFire = part_type_create();
 part_type_shape(partElementalFire,pt_shape_pixel);

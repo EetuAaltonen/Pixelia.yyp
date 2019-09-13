@@ -1,4 +1,4 @@
-depth = (obj_inventory_controller.depth)-100;
+depth = Depth.Button;
 showRecipeBook = false;
 
 currentPage = 0;

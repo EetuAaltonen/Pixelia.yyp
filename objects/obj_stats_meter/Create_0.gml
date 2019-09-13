@@ -1,5 +1,5 @@
+depth = Depth.Hud;
 image_speed = 0;
-depth = -6000;
 
 //Regen & Buff timer
 alarm[0] = global.alarmTicks;

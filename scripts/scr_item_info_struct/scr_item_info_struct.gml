@@ -1,18 +1,19 @@
 /*New Item {
 	sprite; 0
 	name; 1
-	type/shop; 2
-	count; 3
-	damage; 4
-	speed; 5
-	armor; 6
-	durability; 7
-	effect; 8
-	effectAmount; 9
-	effectDuration; 10
-	weight; 11
-	price; 12
-	requiredLevel; 13
+	description; 2
+	type/shop; 3
+	count; 4
+	damage; 5
+	speed; 6
+	armor; 7
+	durability; 8
+	effect; 9
+	effectAmount; 10
+	effectDuration; 11
+	weight; 12
+	price; 13
+	requiredLevel; 14
 }*/
 
 /*Item {
@@ -32,6 +33,7 @@
 return [
 	"Sprite: ",
 	"", //"Name: ",
+	"", //"Description: ",
 	"Type: ",
 	"Count: ",
 	"Damage: ",

@@ -1,3 +1,4 @@
+depth = Depth.DialogButton;
 optionText = "";
 optionAction = false;
 image_xscale = 1;

@@ -1,9 +1,6 @@
 //Draw Count On Item
 if (count > 0) {
 	if (global.hudState == HudStates.Null || global.hudState == HudStates.Minigame) {
-		var viewX = view_get_xport(0);
-		var viewY = view_get_yport(0);
-
 		var posX = scr_draw_position_on_screen(x, "x");
 		var posY = scr_draw_position_on_screen(y, "y");
 

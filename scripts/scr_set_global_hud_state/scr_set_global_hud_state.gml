@@ -1,8 +1,4 @@
 global.hudState = argument0;
+scr_plr_set_action_state_null();
 
 global.hudCanClose = false;
-if (instance_exists(obj_player)) {
-	if (global.hudState != HudStates.Minigame) {
-		obj_player.actionState = Actions.Null;
-	}
-}

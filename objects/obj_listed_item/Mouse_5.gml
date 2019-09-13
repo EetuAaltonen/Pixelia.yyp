@@ -1,4 +1,4 @@
-if (!obj_inventory_controller.updateValues) {
+if (!controller.updateValues) {
 	switch (global.hudAction) {
 		case HudActions.Backpack: {
 			scr_inventory_drop_item(data, -1);

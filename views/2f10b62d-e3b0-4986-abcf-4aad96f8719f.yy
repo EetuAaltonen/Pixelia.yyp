@@ -15,7 +15,9 @@
         "a1e1ebbc-a0fb-4853-ae10-19eb92807a10",
         "20adc814-9ed8-4145-94d0-92ada70fbc12",
         "48414037-e498-402f-a004-d253f9a6970c",
-        "4b2bad30-8ee6-4d1d-9d96-5ee361e83979"
+        "4b2bad30-8ee6-4d1d-9d96-5ee361e83979",
+        "09e7bb1e-07a6-481b-9c40-34f6a3c5c8ac",
+        "301d32fa-c5ae-466f-86bb-71cd05c1bca3"
     ],
     "filterType": "GMScript",
     "folderName": "Listed items",
