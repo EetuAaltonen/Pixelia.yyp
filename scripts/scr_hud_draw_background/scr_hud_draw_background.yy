@@ -1,8 +1,8 @@
 {
-    "id": "955e7692-d1bc-4b0b-91a5-93a7d18502d4",
+    "id": "0998f4ba-d9d7-4080-826e-0cf81193bf2a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_loot_chest_draw_background",
+    "name": "scr_hud_draw_background",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -15,7 +15,7 @@ if (sprite_index && data != "null" && renderData != "null") {
 	
 	for (i = 0; i < renderDataCount; i++) {
 		render = renderData[i];
-		xPos = scr_draw_position_on_screen(x+render[RenderData.MarginLeft], "x");
+		xPos = scr_draw_position_on_screen(x+render[RenderData.TextMargin]+render[RenderData.bgXPadding], "x");
 		draw_set_color(c_black);
 		switch (render[RenderData.Index])	{
 			case ItemData.Name: {

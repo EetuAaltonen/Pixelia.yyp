@@ -6,4 +6,4 @@ var buttons = [
 	[HudActions.BuyBack, ButtonSize.Medium],
 	[HudActions.Close, ButtonSize.Small],
 ];
-scr_inventory_create_buttons(buttons);
+scr_hud_create_buttons(buttons);

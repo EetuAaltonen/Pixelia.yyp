@@ -1,13 +1,14 @@
 if (scr_interact_with_player() && (state == Container.Uninit || state == Container.Closed)) {
 	// Start opening
+	scr_highlight_remove();
 	if (state == Container.Uninit) {
+		state = Container.Opening;
+		items = scr_loot_chest_get_items(lootType);
 		image_index = 0;
 		image_speed = 0.8;
-		items = scr_loot_chest_get_items(lootType);
+		
 		partEffCount = 10;
 		partEffIndx = 0;
-		
-		state = Container.Opening;
 	} else {
 		image_index = (image_number-1);
 		state = Container.Opened;

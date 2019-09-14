@@ -1,4 +1,4 @@
-//Auto-healing
+// Auto-healing
 if (global.auto_healing == 1
     && global.potions > 0
     && global.healthPoints < 5) {
@@ -6,7 +6,7 @@ if (global.auto_healing == 1
     global.healthPoints += 10;
 }
 
-///Open Inventory
+// Open Inventory
 if (keyboard_check_pressed(vk_tab) &&
 	global.hudState == HudStates.Null) {
 	if (instance_exists(obj_player)) {
@@ -19,8 +19,8 @@ if (keyboard_check_pressed(vk_tab) &&
 	scr_inventory_close();
 }
 
-//Page change
+// Page change
 scr_page_change();
 
-//Update Values Of Listed Items
+// Update values of listed items
 scr_inventory_update_values();

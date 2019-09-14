@@ -4,12 +4,12 @@ var viewY = camera_get_view_y(view_camera[0]);
 var buttonDataList = argument0;
 var startX = 4;
 var startY = 56;
-var button;
 var margin = 5;
 var xPos = 0;
 var width;
 var spriteIndex;
 var i;
+var instance;
 var controller = obj_inventory_controller;
 if (controller == self) {
 	controller = self;	
@@ -24,9 +24,9 @@ for (i = 0; i < arrayLength; i++) {
 		spriteIndex = spr_inv_button_small;
 		width = 28;
 	}
-	var c instance_create(viewX+startX+xPos, viewY+startY, obj_inv_button);
-	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).hudAction = buttonData[0];
-	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).infoText = HudActionText[buttonData[0]];
-	(instance_nearest(viewX+startX+xPos, viewY+startY, obj_inv_button)).sprite_index = spriteIndex;
+	instance = instance_create(viewX+startX+xPos, viewY+startY, obj_inv_button);
+	instance.hudAction = buttonData[0];
+	instance.infoText = HudActionText[buttonData[0]];
+	instance.sprite_index = spriteIndex;
 	xPos += (width+margin);
 }

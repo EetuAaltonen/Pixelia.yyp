@@ -42,5 +42,16 @@ if (global.hudState != HudStates.Map) {
 	                image_angle, c_white, image_alpha);
 }
 
-//Background
-scr_inventory_draw_background();
+if (global.hudState == HudStates.Inventory ||
+	global.hudState == HudStates.Crafting) {
+	// Background
+	scr_hud_draw_background(
+		0, 0,
+		viewWidth, viewHeight,
+		make_color_rgb(102, 86, 61),
+		1, false
+	);
+
+	// Grid background
+	scr_inventory_draw_background();
+}

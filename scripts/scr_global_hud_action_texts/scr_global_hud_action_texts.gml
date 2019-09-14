@@ -12,7 +12,7 @@ return [
 	"Close",
 	//Inventory
 	"Use",
-	"UseEquip",
+	"Use/Equip",
 	"Drop",
 	"Equip",
 	//Shop

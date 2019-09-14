@@ -18,21 +18,21 @@ var yPos = argument4;
 var yMargin = argument5;
 var i, data;
 var itemCount = ds_list_size(items);
-var tempInstance;
+var instance;
 
-if (itemsPerPage == undefined) { itemsPerPage = itemCount; }
+if (is_undefined(itemsPerPage)) { itemsPerPage = itemCount; }
 
 for (i = 0; i < itemsPerPage; i++) {
 	data = "null";
 	if (i < itemCount) {
 		data = ds_list_find_value(items, i);
 	}
-	tempInstance = instance_create(viewX+xPos, viewY+yPos+(i*yMargin), obj_listed_item);
-	tempInstance.index = i;
+	instance = instance_create(viewX+xPos, viewY+yPos+(i*yMargin), obj_listed_item);
+	instance.index = i;
 	if (data != "null") {
-		tempInstance.sprite_index = data[ItemData.Sprite];
+		instance.sprite_index = data[ItemData.Sprite];
 	}
-	tempInstance.data = data;
-	tempInstance.renderData = renderData;
-	tempInstance.controller = self;
+	instance.data = data;
+	instance.renderData = renderData;
+	instance.controller = self;
 }

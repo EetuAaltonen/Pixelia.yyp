@@ -20,6 +20,7 @@ var i, j;
 
 for (i = 0; i < lootCount; i++) {
 	tempLoot = lootTable[i];
+	if (tempLoot[1] <= 0) { continue; }
 	for (j = 0; j < dataCount; j++) {
 		tempData = itemData[j];
 		if (tempLoot[ItemData.Sprite] == tempData[ItemData.Sprite]) {
@@ -29,4 +30,5 @@ for (i = 0; i < lootCount; i++) {
 		}
 	}
 }
+
 return loot;

@@ -4,6 +4,7 @@ if (spawning) {
 	if (instance_exists(obj_spawner)) {
 		spawning = false;
 		scr_player_spawn();
+		scr_custom_gravity();
 	}
 } else {
 	if (global.hudState == HudStates.Null) {

@@ -21,14 +21,14 @@ if (updateValues) {
 	
 	var listSize = ds_list_size(listOfItems);
 	
-	//Max Page Index
+	// Max Page Index
 	maxPageIndex = ceil(listSize / itemsPerPage);
 	if (pageIndex > maxPageIndex) {
 		pageIndex = maxPageIndex;
 	}
 	
 	if (listSize > 0) {
-		//Last item
+		// Last item
 		if (listSize == pageIndex*itemsPerPage) {
 			lastItem = listSize;
 		} else if (listSize > pageIndex*itemsPerPage) {
@@ -38,18 +38,26 @@ if (updateValues) {
 		}
 		startIndex = (pageIndex-1)*itemsPerPage;
 		
-		//Create / update listed items
-		var xPos = 17;
-		var yPos = 105;
-		var yMargin = 19;
+		var xPos = 18;
+		var yPos = 104;
+		var yMargin = 20;
 		var itemList;
-		
+		// Create listed items
 		if (!instance_exists(obj_listed_item)) {
+			var color = make_color_rgb(71, 64, 55);
+			var borderColor = make_color_rgb(48, 46, 44);
+			var bgHeight = 18;
+			var bgXPadding = 8;
+			var borderPadding = 1;
+			var bgAlpha = 1;
+			var borderAlpha = 1;
+			
 			itemList = scr_ds_list_range(listOfItems, startIndex, lastItem);
+			
 			var renderData = [
-				[ItemData.Name, 41],
-				[ItemData.Count, 185],
-				[ItemData.Weight, 224]
+				[ItemData.Sprite, 0, 26, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+				[ItemData.Name, 15, 198, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+				[ItemData.Count, 215, 46, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
 			];
 			scr_inventory_create_list(itemList, itemsPerPage, renderData, xPos, yPos, yMargin);
 		} else {
@@ -57,28 +65,9 @@ if (updateValues) {
 			scr_inventory_update_list(itemList);
 		}
 		
-		/*var tempIndex = startIndex;
-		for (i = 0; i < itemsPerPage; i++) {
-			data = "null";
-			if (tempIndex < lastItem) {
-				data = ds_list_find_value(listOfItems, tempIndex++);
-			}
-			tempMargin = (i*margin);
-			if (!listedItemsExist) {
-				instance_create(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item);
-			}
-			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).index = i;
-			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).depth = depth-1;
-			if (is_array(data)) {
-				(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).sprite_index = data[ItemData.Sprite];
-			}
-			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).data = data;
-			(instance_nearest(viewX+xPos, viewY+yPos+tempMargin, obj_listed_item)).updateValues = true;
-		}*/
-		
-		//Create / update listed equipments
+		// Create listed equipments
 		if (global.hudAction == HudActions.Equipment) {
-			//scr_listed_item_get_equipment_type()
+			// scr_listed_item_get_equipment_type()
 			var equipmentsExist = instance_exists(obj_listed_equipment);
 			var i;
 			var margin = 25;
@@ -96,16 +85,18 @@ if (updateValues) {
 			];
 			var xyPos;
 			var listSize = array_length_1d(xyPosList);
+			var instance;
 			
 			for (i = 0; i < listSize; i++) {
 				xyPos = xyPosList[i];
 				if (!equipmentsExist) {	
 					instance_create(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment);
 				}
-				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).index = i;
-				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).equipmentIndex = i;
-				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).updateValues = true;
-				(instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment)).depth = depth-1;
+				instance = (instance_nearest(viewX+(406+xyPos[0]), viewY+(113+((i+xyPos[1])*margin)-3), obj_listed_equipment));
+				instance.index = i;
+				instance.equipmentIndex = i;
+				instance.updateValues = true;
+				instance.depth = Depth.ListItem;
 			}
 		}
 		

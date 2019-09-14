@@ -16,4 +16,4 @@ var buttonDataList = [
 	[HudActions.SaveExit, ButtonSize.Medium],
 	[HudActions.Close, ButtonSize.Small]
 ];
-scr_inventory_create_buttons(buttonDataList);
+scr_hud_create_buttons(buttonDataList);

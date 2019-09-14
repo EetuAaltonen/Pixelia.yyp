@@ -22,3 +22,4 @@ items = ds_list_create();
 state = Container.Uninit;
 lootType = Loot.Material;
 updateValues = false;
+bgHeight = undefined;
