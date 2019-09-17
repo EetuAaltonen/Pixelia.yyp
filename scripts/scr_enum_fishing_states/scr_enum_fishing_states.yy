@@ -1,8 +1,8 @@
 {
-    "id": "e5023d2d-4d3c-4e20-9fec-2c20d0a2d399",
+    "id": "15ffdf83-c6fd-4f26-bf97-1dfdeab0f119",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_crete_droped_item",
+    "name": "scr_enum_fishing_states",
     "IsCompatibility": false,
     "IsDnD": false
 }

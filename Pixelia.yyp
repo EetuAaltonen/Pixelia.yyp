@@ -746,7 +746,7 @@
             "Key": "112d9e9d-f1ef-408f-b41d-9c43fa9793a9",
             "Value": {
                 "id": "139f6d44-105d-4d60-8030-e5af96c669b6",
-                "resourcePath": "sprites\\spr_fishing_vein\\spr_fishing_vein.yy",
+                "resourcePath": "sprites\\spr_fish_swarm\\spr_fish_swarm.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -956,6 +956,14 @@
                 "id": "9dd64ba9-1031-48fd-802e-cfa1dd317659",
                 "resourcePath": "objects\\obj_grave\\obj_grave.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "15ffdf83-c6fd-4f26-bf97-1dfdeab0f119",
+            "Value": {
+                "id": "c8280b74-91e2-4d7e-94ab-3c11d8af230e",
+                "resourcePath": "scripts\\scr_enum_fishing_states\\scr_enum_fishing_states.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3898,7 +3906,7 @@
             "Key": "5fa4e58c-60e9-4b41-9de0-0ccff67f3559",
             "Value": {
                 "id": "6339561e-e516-421d-9b4d-96008338b071",
-                "resourcePath": "sprites\\spr_fishing_mini_game_area_2\\spr_fishing_mini_game_area_2.yy",
+                "resourcePath": "sprites\\spr_fishing_minigame_area_2\\spr_fishing_minigame_area_2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7983,14 +7991,6 @@
             }
         },
         {
-            "Key": "c8caa37e-7d08-4e52-80d5-3c4e644e840c",
-            "Value": {
-                "id": "42f81002-0221-4ede-b033-8c844acd406f",
-                "resourcePath": "scripts\\scr_check_weight\\scr_check_weight.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "c8de03c3-78fe-4c1b-a95a-15352bdaf538",
             "Value": {
                 "id": "56a4a059-dd76-465e-b7c5-7095dec1a5c8",
@@ -8618,7 +8618,7 @@
             "Key": "d992aa7a-542a-48f0-b1ec-318777149a8c",
             "Value": {
                 "id": "c4a830f3-15cd-4508-8932-58030f9a28f9",
-                "resourcePath": "objects\\obj_fishing_vein\\obj_fishing_vein.yy",
+                "resourcePath": "objects\\obj_fish_swarm\\obj_fish_swarm.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -8882,7 +8882,7 @@
             "Key": "df69d820-8169-4893-af07-a3bbcafc3451",
             "Value": {
                 "id": "d679dbd4-cb34-48d2-9ec5-cfab292bc695",
-                "resourcePath": "sprites\\spr_fishing_mini_game_area_1\\spr_fishing_mini_game_area_1.yy",
+                "resourcePath": "sprites\\spr_fishing_minigame_area_1\\spr_fishing_minigame_area_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9138,7 +9138,7 @@
             "Key": "e5023d2d-4d3c-4e20-9fec-2c20d0a2d399",
             "Value": {
                 "id": "5b9947d7-d692-4bc5-8ed3-dfce98db533f",
-                "resourcePath": "scripts\\scr_crete_droped_item\\scr_crete_droped_item.yy",
+                "resourcePath": "scripts\\scr_create_dropped_item\\scr_create_dropped_item.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -9194,7 +9194,7 @@
             "Key": "e6bb2ee8-36c5-4fca-8ca2-2d226de40259",
             "Value": {
                 "id": "8f82d5ef-d8ee-4959-b562-ef34e03d2d98",
-                "resourcePath": "sprites\\spr_fishing_mini_game_bg\\spr_fishing_mini_game_bg.yy",
+                "resourcePath": "sprites\\spr_fishing_minigame_bg\\spr_fishing_minigame_bg.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -10305,7 +10305,6 @@
         "2b7cbaa5-d2f7-416d-abfc-e086c28f177d",
         "ea4acd5d-7f92-41cf-8f16-56db428e1dc4",
         "f2416432-d190-480a-b43d-8008dd002a7e",
-        "c8caa37e-7d08-4e52-80d5-3c4e644e840c",
         "311fecec-1e6a-497d-a02d-4907faa948e7",
         "4baa86b4-4fcb-42af-8c69-bfee04853d6d",
         "13644bff-7375-4fed-a3a5-2a202fb10aa6",
@@ -10530,7 +10529,8 @@
         "76498827-3d63-418a-ae9a-077000d330c6",
         "7d6916e6-8d8c-4056-b0f3-aa5834a657b9",
         "b363c182-c362-483e-a70b-6650980ec3a9",
-        "d94737b0-d41f-4721-b6a5-920cec42a85c"
+        "d94737b0-d41f-4721-b6a5-920cec42a85c",
+        "15ffdf83-c6fd-4f26-bf97-1dfdeab0f119"
     ],
     "tutorial": ""
 }

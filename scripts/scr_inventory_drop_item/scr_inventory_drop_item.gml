@@ -13,7 +13,7 @@ if (instance_exists(obj_player)) {
 		scr_listed_item_unequip();	
 	}
 	
-	scr_crete_droped_item(data, abs(count));
+	scr_create_dropped_item(data, abs(count));
 	
 	//Add Toast
 	scr_add_new_toast(data[1] + " dropped");

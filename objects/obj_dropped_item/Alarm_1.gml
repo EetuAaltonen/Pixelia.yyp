@@ -1,2 +1,2 @@
-//Collecting
+/// @description Collecting
 collecting = false;

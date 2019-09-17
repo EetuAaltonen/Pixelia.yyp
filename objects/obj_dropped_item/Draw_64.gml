@@ -1,5 +1,5 @@
-//Draw Count On Item
-if (count > 0) {
+// Draw Count Above Item
+if (data[ItemData.Count] > 0) {
 	if (global.hudState == HudStates.Null || global.hudState == HudStates.Minigame) {
 		var posX = scr_draw_position_on_screen(x, "x");
 		var posY = scr_draw_position_on_screen(y, "y");
@@ -11,6 +11,6 @@ if (count > 0) {
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 
-		draw_text(scr_gui(posX, "x"), scr_gui(posY-10, "y"), string(count) + "x");	
+		draw_text(scr_gui(posX, "x"), scr_gui(posY-10, "y"), string(data[ItemData.Count]) + "x");	
 	}
 }

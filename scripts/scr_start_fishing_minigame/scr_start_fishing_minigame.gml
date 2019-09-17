@@ -1,5 +1,10 @@
-if (instance_exists(obj_fishing_bobber)) {
-	obj_fishing_bobber.catchFish = true;
-	obj_fishing_bobber.alarm[4] = obj_fishing_bobber.bobberSpeed;
-	obj_fishing_bobber.alarm[6] = obj_fishing_bobber.bobberRotateSpeed;
-}
+var controller = obj_minigame_controller;
+controller.fishingState = Fishing.Minigame;
+controller.bobberX = 20;
+controller.bobberSpeed = 1;
+controller.bobberDirection = 1;
+controller.bobberRotateDirection = 1;
+controller.bobberRotateSpeed = 2;
+controller.imageAngle = controller.bobberTempImageAngle;
+controller.alarm[3] = controller.bobberSpeed;
+controller.alarm[4] = controller.bobberRotateSpeed;

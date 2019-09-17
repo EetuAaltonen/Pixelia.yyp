@@ -3,7 +3,7 @@
 var randomX, randomY, i;
 var instance;
 for (i = 1; i <= droppedCount; i++) {
-	scr_crete_droped_item();
+	scr_create_dropped_item();
 }
 //Save to inventory
 scr_save_to_inventory(spriteName, (droppedCount*(-1)));

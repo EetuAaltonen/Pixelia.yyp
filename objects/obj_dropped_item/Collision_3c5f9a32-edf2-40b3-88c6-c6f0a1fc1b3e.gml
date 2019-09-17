@@ -1,2 +1,1 @@
-///Solidify
 scr_solidify();

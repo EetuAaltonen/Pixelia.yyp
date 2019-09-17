@@ -1,6 +1,6 @@
 if (global.popUp) {
 	if (acceptKey != undefined) {
-		if (keyboard_check_pressed(acceptKey)) {
+		if (keyboard_check_released(acceptKey)) {
 			acceptKey = undefined;
 			drawAcceptKey = undefined;
 			cancelKey = undefined;
@@ -11,7 +11,7 @@ if (global.popUp) {
 		}
 	}
 	if (cancelKey != undefined) {
-		if (keyboard_check_pressed(cancelKey)) {
+		if (keyboard_check_released(cancelKey)) {
 			acceptKey = undefined;
 			drawAcceptKey = undefined;
 			cancelKey = undefined;

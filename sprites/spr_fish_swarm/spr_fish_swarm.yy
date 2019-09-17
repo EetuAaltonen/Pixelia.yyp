@@ -2,7 +2,7 @@
     "id": "112d9e9d-f1ef-408f-b41d-9c43fa9793a9",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_fishing_vein",
+    "name": "spr_fish_swarm",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -1,5 +1,4 @@
 //scr_item_info_struct()
-
 var item = argument0;
 var count = argument1;
 

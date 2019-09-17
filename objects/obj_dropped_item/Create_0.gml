@@ -1,7 +1,4 @@
 depth = Depth.Loot;
-data = "null";
 sprite_index = spr_no_mask;
+data = undefined;
 moveToPlayer = false;
-name = "";
-weight = 0;
-count = 0;

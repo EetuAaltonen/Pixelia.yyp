@@ -1,6 +1,7 @@
 if (scr_interact_with_player()) {
 	global.hudState = HudStates.Minigame;
     obj_player.actionState = Actions.Fishing;
+	obj_minigame_controller.fishingState = Fishing.ThrowBobber;
     instance_create(obj_player.x, obj_player.y, obj_fishing_bobber);
 }
 
