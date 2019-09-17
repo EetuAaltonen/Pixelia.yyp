@@ -142,6 +142,7 @@ global.equipments = ["", "", "", "", "", "", "", "", ""]//ds_list_create();
 
 //Global variables - Stash
 global.stash = ds_list_create();
+
 //Max & Total Stash Capacity
 global.maxStashCapacity = 100;
 global.totalStashCapacity = 0;
@@ -153,3 +154,6 @@ global.tempLoot = ds_list_create();
 //HudActions as text
 globalvar HudActionText;
 HudActionText = scr_global_hud_action_texts();
+
+// Global variables - Highlighting
+global.highlightedObject = undefined;

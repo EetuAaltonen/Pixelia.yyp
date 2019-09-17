@@ -10,6 +10,7 @@ enum Actions {
    Bow,
    Woodcutting,
    Mining,
+   Fishing,
    Loot,
    Lift
 }

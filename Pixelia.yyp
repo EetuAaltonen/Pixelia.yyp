@@ -9135,6 +9135,14 @@
             }
         },
         {
+            "Key": "e5023d2d-4d3c-4e20-9fec-2c20d0a2d399",
+            "Value": {
+                "id": "5b9947d7-d692-4bc5-8ed3-dfce98db533f",
+                "resourcePath": "scripts\\scr_crete_droped_item\\scr_crete_droped_item.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e57de568-a21a-4260-8024-75eda0afa3d6",
             "Value": {
                 "id": "ede83c78-6181-4c51-9e90-8e69b74c448b",
@@ -9543,6 +9551,14 @@
             }
         },
         {
+            "Key": "eee9edba-1a34-4a77-b54b-a92246259066",
+            "Value": {
+                "id": "c88bb4c5-402a-4f4d-bc65-4f09040349ee",
+                "resourcePath": "views\\eee9edba-1a34-4a77-b54b-a92246259066.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ef14ad2c-c477-4714-9fca-a624003b651f",
             "Value": {
                 "id": "fc39d1c6-f7ed-4351-9550-f53404412a7f",
@@ -9570,7 +9586,7 @@
             "Key": "ef93dd2a-3282-4bc1-9fbb-2f692e0bef61",
             "Value": {
                 "id": "bb39091e-abf5-42ed-ad5b-a59167f2ed07",
-                "resourcePath": "scripts\\scr_loot_chest_get_items\\scr_loot_chest_get_items.yy",
+                "resourcePath": "scripts\\scr_get_loot_by_type\\scr_get_loot_by_type.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -10292,7 +10308,6 @@
         "c8caa37e-7d08-4e52-80d5-3c4e644e840c",
         "311fecec-1e6a-497d-a02d-4907faa948e7",
         "4baa86b4-4fcb-42af-8c69-bfee04853d6d",
-        "ef93dd2a-3282-4bc1-9fbb-2f692e0bef61",
         "13644bff-7375-4fed-a3a5-2a202fb10aa6",
         "8c747a0d-41aa-439e-adf1-709caef96539",
         "f9ed3150-1da2-47b8-94bb-3256620a0d38",
@@ -10305,7 +10320,9 @@
         "6e9f20f7-4796-48d6-b0b9-209350d304d5",
         "1eae7bea-eee9-4f88-bd65-d6df7a61f036",
         "6a169c6a-b7f0-4fc8-a40d-b05b42600bc2",
+        "ef93dd2a-3282-4bc1-9fbb-2f692e0bef61",
         "4bd1d5d7-9846-430e-882c-ae76a9bc9203",
+        "e5023d2d-4d3c-4e20-9fec-2c20d0a2d399",
         "693f6618-4a00-4e97-970a-a595ae828296",
         "5a0b9ed9-8f97-4a8b-8e28-772c7002b506",
         "0556facf-f6f4-4dc7-800c-a81bf10a42ae",

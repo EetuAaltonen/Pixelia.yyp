@@ -29,6 +29,11 @@ switch (lootType) {
 			[spr_broken_helmet, 1], [spr_knight_helmet, 1]
 		]
 	}break;
+	case Loot.Fish: {
+		lootTable = [
+			[spr_raw_meat, 1], [spr_cooked_meat, 1]
+		]
+	}break;
 }
 
 return lootTable;

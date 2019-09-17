@@ -1,3 +1,4 @@
+depth = Depth.Resource;
 image_speed = 0.2;
-catch_once = true;
+catchOnce = true;
 

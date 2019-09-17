@@ -9,7 +9,7 @@ if (moveToPlayer == true) {
         scr_inventory_add_item(data, data[ItemData.Count]);
 		//Toast
         scr_add_new_toast(string(data[ItemData.Count]) + "x " + name);
-        obj_player.highlight = false;
+		scr_highlight_remove();
         instance_destroy();  
     } 
 }

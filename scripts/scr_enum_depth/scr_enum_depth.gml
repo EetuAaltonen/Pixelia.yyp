@@ -11,11 +11,16 @@ enum Depth {
 	HudBg,
 	// Front Misc
 	MiscFront,
+	// Water
+	WaterBlock,
 	// Effects
 	Particle,
+	// Actions
+	PlayerAction,
+	EnemyAction,
+	// Highlight
+	Highlight,
 	// Creatures
-	PlyerAttack,
-	EnemyAttck,
 	Player,
 	Enemy,
 	// Collectable
@@ -25,6 +30,8 @@ enum Depth {
 	Animal,
 	// Containers
 	Container,
+	// Resource
+	Resource,
 	// Plants
 	Plant,
 	// Backgroud Misc

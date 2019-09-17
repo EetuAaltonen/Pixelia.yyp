@@ -1,12 +1,9 @@
-///scr_drop_item(argument0)
-var spriteName = sprite_get_name(argument0);
+// TODO: Drop more than 1 item from inventory
+/*var spriteName = sprite_get_name(argument0);
 var randomX, randomY, i;
+var instance;
 for (i = 1; i <= droppedCount; i++) {
-    randomX = random_range(-10, 10);
-    randomY = random_range(-5, -10);
-    instance_create(obj_player.x + randomX, obj_player.y + randomY, obj_dropped_item);
-    (instance_nearest(obj_player.x + randomX, obj_player.y + randomY, obj_dropped_item)).sprite_index = sprite_index;
-    (instance_nearest(obj_player.x + randomX, obj_player.y + randomY, obj_dropped_item)).get_attributes = true;
+	scr_crete_droped_item();
 }
 //Save to inventory
 scr_save_to_inventory(spriteName, (droppedCount*(-1)));

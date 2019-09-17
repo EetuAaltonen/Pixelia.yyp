@@ -1,7 +1,7 @@
-depth = -5000;
+depth = Depth.HudBg;
 global.popUp = false;
-acceptKey = "null";
-drawAcceptKey = "null";
-cancelKey = "null";
-drawCancelKey = "null";
-message = "";
+acceptKey = undefined;
+drawAcceptKey = undefined;
+cancelKey = undefined;
+drawCancelKey = undefined;
+message = undefined;

@@ -1,3 +1,4 @@
+show_message("Alarm1");
 /*//Save to inventory info
 itemId = round(random_range(1,2)); //Id
 search_id = "food"; //Type
@@ -15,7 +16,4 @@ scr_save_to_inventory();
 //Stop fishing
 obj_player.actionState = Actions.Null;
 obj_player.sprite_index = spr_player;
-catch_once = true;
-
-/* */
-/*  */
+catchOnce = true;

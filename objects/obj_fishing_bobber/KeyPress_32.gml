@@ -1,3 +1,10 @@
+var viewX = camera_get_view_x(view_camera[0]);
+var viewY = camera_get_view_y(view_camera[0]);
+var viewWidth = camera_get_view_width(view_camera[0]);
+var viewHeight = camera_get_view_height(view_camera[0]);
+var viewXCenter = (viewX + viewWidth) / 2;
+var viewYCenter = (viewY + viewHeight) / 2;
+
 if (instance_exists(obj_player)) {
 	if (/*global.popUp != "fishingBeReady" &&*/catchFish) {
 		///Stop bobber

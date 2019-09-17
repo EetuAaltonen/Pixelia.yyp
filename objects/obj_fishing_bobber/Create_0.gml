@@ -1,4 +1,6 @@
-///Create attributes
+depth = Depth.PlayerAction;
+depth_ = depth;
+
 inWater = false;
 catchFish = false;
 toPlayer = false;
@@ -11,20 +13,15 @@ bobberRotateSpeed = 2;
 bobberTempImageAngle = image_angle;
 imageAngle = bobberTempImageAngle;
 
-//Success text
+// Success text
 successText = "";
 
-viewXCenter = __view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 )/2;
-viewYCenter = __view_get( e__VW.YView, 0 ) + __view_get( e__VW.HView, 0 )/2;
-
-//
+// ???
 area1Xscale = 10;
 catchChange = 0;
 
-//Inventory info
-typeId = 4;
-itemId = random_range(1,3);
+// Loot / fishes
+lootType = Loot.Material;
+items = scr_get_loot_by_type(lootType);
 
-depth_ = depth;
 alarm[3] = random_range(100, 200);
-

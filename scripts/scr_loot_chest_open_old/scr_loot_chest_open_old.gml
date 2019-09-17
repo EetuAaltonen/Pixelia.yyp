@@ -18,7 +18,7 @@ if (getLoot) {
 	if (itemAmount == 0 && opened) {
 		ds_list_clear(items);
 		ds_list_clear(global.tempLoot);
-		var items_ = [];//scr_loot_chest_get_items();
+		var items_ = [];//scr_get_loot_by_type();
 		itemAmount = array_length_1d(items_);
 		for (var i = 0; i < itemAmount; i++) {
 			ds_list_add(items, items_[i]);

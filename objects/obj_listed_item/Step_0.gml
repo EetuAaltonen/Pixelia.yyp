@@ -21,8 +21,9 @@ if (checkSelected) {
 	}
 }
 
-///Drop items
-if (droppingItem == true) {
+// Drop items
+// TODO: Drop count dialog
+if (droppingItem) {
     if (instance_exists(obj_button_confirm)) {
         if (obj_button_confirm.confirmed == true) {
             droppingItem = false;
