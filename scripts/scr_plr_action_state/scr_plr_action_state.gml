@@ -24,21 +24,6 @@ switch (actionState) {
 	case Actions.Climb: {
 		scr_plr_ladder();
 	}break;
-	case Actions.Woodcutting: {
-		//Gravity
-		scr_custom_gravity();
-		hspeed = 0;
-	}break;
-	case Actions.Mining: {
-		//Gravity
-		scr_custom_gravity();
-		hspeed = 0;
-	}break;
-	case Actions.Loot: {
-		//Gravity
-		scr_custom_gravity();
-		hspeed = 0;
-	}break;
 	default: {
 		scr_plr_default_movement();
 	}break;

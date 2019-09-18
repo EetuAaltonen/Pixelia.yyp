@@ -8,11 +8,10 @@ if (global.highlightedObject == undefined ||
 	                if ((x > obj_player.x && obj_player.image_xscale == 1) ||
 	                    (x < obj_player.x && obj_player.image_xscale == -1)) {
 	                    if (!obj_player.highlight) {
-	                        image_blend = make_colour_hsv(0, 0, 150);
+	                        image_blend = scr_highlight_value();
 	                        //depth = Depth.Highlight;
 	                        obj_player.highlight = true;
-	                    } else if (obj_player.highlight &&
-							image_blend = make_colour_hsv(0, 0, 150)) {
+	                    } else if (obj_player.highlight && scr_highlighted()) {
 	                        draw_sprite(spr_E,1,obj_player.x,obj_player.y-20);
 	                    }
 						global.highlightedObject = self.id;

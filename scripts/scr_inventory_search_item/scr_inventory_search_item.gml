@@ -16,16 +16,16 @@ while(i <= j) {
 		if (scr_item_compare_items(item, data, "full")) {
 			return data;
 		}
-		if (item[1] < data[1]) {
+		if (item[ItemData.Name] < data[ItemData.Name]) {
 			j = (k - 1);
 		} else {
 			i = (k + 1);
 		}
 	} else {
-		if (item == data[1]) {
+		if (item == data[ItemData.Name]) {
 			return data;
 		}
-		if (item < data[1]) {
+		if (item < data[ItemData.Name]) {
 			j = (k - 1);
 		} else {
 			i = (k + 1);

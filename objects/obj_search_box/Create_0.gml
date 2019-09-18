@@ -1,3 +1,4 @@
+depth = Depth.Button;
 //Text box
 max_width = 40;
 selected = false;

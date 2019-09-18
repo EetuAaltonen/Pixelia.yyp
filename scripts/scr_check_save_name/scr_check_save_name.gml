@@ -2,7 +2,7 @@
 if (instance_exists(obj_search_box)) {
     if (string_length(obj_search_box.txt) >= 4 &&
         obj_search_box.txt != obj_search_box.place_holder) {
-        image_blend = make_colour_hsv(0, 0, 255);
+        image_blend= scr_highlight_default_value();
 		
 		var count = instance_number(obj_menu_saved_game);
 		var save;
@@ -17,6 +17,6 @@ if (instance_exists(obj_search_box)) {
 		}
 		
     } else {
-        image_blend = make_colour_hsv(0, 0, 150);
+        image_blend = scr_highlight_value();
     }
 }

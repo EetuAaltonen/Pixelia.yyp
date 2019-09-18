@@ -1,3 +1,4 @@
+depth = Depth.Interaction;
 image_speed = 0;
 depth_ = depth;
 if (place_meeting(x,y-sprite_height,object_index) && place_meeting(x,y+sprite_height,object_index)) {

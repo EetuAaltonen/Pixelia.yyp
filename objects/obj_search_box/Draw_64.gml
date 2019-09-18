@@ -1,6 +1,3 @@
-var viewX = view_get_xport(0);
-var viewY = view_get_yport(0);
-
 var positionX = scr_draw_position_on_screen(x+(sprite_width/2), "x");
 var positionY = scr_draw_position_on_screen(y+(sprite_height/2), "y");
 var textPosX = scr_draw_camera_position_to_gui(positionX, "x");

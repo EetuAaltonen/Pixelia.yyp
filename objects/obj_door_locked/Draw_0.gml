@@ -1,8 +1,8 @@
 draw_self();
-//Image_index
-switch (locked)
-{
-    case true: image_blend = make_colour_hsv(0, 0, 255); mask_index = spr_door; break;
-    case false: image_blend = make_colour_hsv(0, 0, 150); mask_index = spr_no_mask; break;
+if (locked) {
+	image_blend = scr_highlight_default_value();
+	mask_index = spr_door;
+} else {
+	image_blend = scr_highlight_value;
+	mask_index = spr_no_mask;
 }
-

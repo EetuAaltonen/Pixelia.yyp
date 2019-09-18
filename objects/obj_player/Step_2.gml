@@ -35,5 +35,16 @@ if (spawning) {
 		else if (keyboard_check_pressed(ord("B"))) { //S
 			scr_plr_abi_bow_start();
 		}
+	} else {
+		switch (actionState) {
+			case Actions.Fishing: {
+				scr_plr_fishing();
+			}break;
+			default: {
+				hspeed = 0;
+				//Gravity
+				scr_custom_gravity();	
+			}
+		}
 	}
 }

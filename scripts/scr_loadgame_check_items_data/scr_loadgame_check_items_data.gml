@@ -1,4 +1,5 @@
 //scr_item_info_struct()
+// TODO: Item data check between different game versions
 /*
 var lists = [
 	global.inventory,

@@ -1,4 +1,4 @@
-depth = Depth.Container;
+depth = Depth.Interaction;
 image_speed = 0;
 /*show_message(instance_id);
 show_message(string(layer_get_id(Collectable)));

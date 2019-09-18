@@ -18,8 +18,8 @@
 }
 
 if (solid) {
-    image_blend = make_colour_hsv(0, 0, 255);
+    image_blend= scr_highlight_default_value();
 } else {
-    image_blend = make_colour_hsv(0, 0, 150);
+    image_blend= scr_highlight_value();
 }
 

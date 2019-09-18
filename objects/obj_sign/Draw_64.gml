@@ -20,7 +20,7 @@ switch (action) {
 	}break;
 }*/
 //Show Text
-if (global.hudState == HudStates.Null && image_blend != make_colour_hsv(0, 0, 255)) {
+if (global.hudState == HudStates.Null && scr_highlighted()) {
 	//Font
 	draw_set_font(fnt_draw_gui_sign);
 	draw_set_color(c_black);

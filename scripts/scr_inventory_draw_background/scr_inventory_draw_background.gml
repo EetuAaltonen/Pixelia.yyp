@@ -2,7 +2,9 @@ var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 	
 //Draw Info Background
-if (global.hudState == HudStates.Crafting || global.hudState == HudStates.Inventory) {
+if (global.hudState == HudStates.Crafting ||
+	global.hudState == HudStates.Inventory ||
+	global.hudState == HudStates.Shop) {
 	//Page Index background
 	draw_sprite(spr_inv_button_small, 0, viewX+4, viewY+76);
 	//Total And Weight Background

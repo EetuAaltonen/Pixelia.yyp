@@ -31,7 +31,7 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 	//Close
 	state = Container.Closed;
 	image_index = 0;
-	depth = Depth.Container;
+	depth = Depth.Interaction;
 	
 	if (ds_list_size(items) <= 0) {
 		state = Container.Empty;

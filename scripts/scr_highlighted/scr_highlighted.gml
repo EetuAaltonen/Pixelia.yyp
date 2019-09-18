@@ -1,0 +1,1 @@
+return image_blend == scr_highlight_value();

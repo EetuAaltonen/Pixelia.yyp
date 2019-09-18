@@ -28,10 +28,8 @@ enum Depth {
 	// Backgroud Creatures
 	NPC,
 	Animal,
-	// Containers
-	Container,
-	// Resource
-	Resource,
+	// Interaction
+	Interaction,
 	// Plants
 	Plant,
 	// Backgroud Misc

@@ -1,8 +1,8 @@
 var i;
 var a;
 var arraySize;
-var spawner = "null";
-var defaultSpawner = "null";
+var spawner = undefined;
+var defaultSpawner = undefined;
 var objSpawner;
 
 //Search A Spawner To Spawn
@@ -12,22 +12,21 @@ for (i = 0; i < count; i++) {
 	arraySize = array_length_1d(objSpawner.spawnPoints);
 	
 	for (a = 0; a < arraySize; a++) {
-		//show_message(string(objSpawner.spawnPoints[a]) + " == " + string(global.previousRoom));
 		if (string(objSpawner.spawnPoints[a]) == string(global.previousRoom)) {
 			spawner = objSpawner;
 			break;
 		}
 	}
 	
-	if (spawner != "null") {
+	if (spawner != undefined) {
 		break;	
 	}	
 }
 	
-if (spawner != "null") {
+if (spawner != undefined) {
 	x = spawner.x;
 	y = spawner.y;
-} else if (defaultSpawner != "null") {
+} else if (defaultSpawner != undefined) {
 	x = defaultSpawner.x;
 	y = defaultSpawner.y;
 } else {

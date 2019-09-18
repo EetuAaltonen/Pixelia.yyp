@@ -2,7 +2,7 @@ draw_self();
 scr_highlight_self();
 
 /*//Show Text
-if (global.hudState == HudStates.Null && image_blend != make_colour_hsv(0, 0, 255)) {
+if (global.hudState == HudStates.Null && scr_highlighted()) {
 	//Font
 	draw_set_font(fnt_sign_text);
 	draw_set_color(c_black);

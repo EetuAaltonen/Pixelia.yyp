@@ -43,7 +43,8 @@ if (global.hudState != HudStates.Map) {
 }
 
 if (global.hudState == HudStates.Inventory ||
-	global.hudState == HudStates.Crafting) {
+	global.hudState == HudStates.Crafting ||
+	global.hudState == HudStates.Shop) {
 	// Background
 	scr_hud_draw_background(
 		0, 0,

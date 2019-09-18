@@ -1,3 +1,4 @@
+depth = Depth.Interaction;
 depth_ = depth;
 image_speed = 0;
 image_index = 0;

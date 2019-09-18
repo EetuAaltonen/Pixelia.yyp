@@ -22,8 +22,6 @@ if (controller.fishingState = Fishing.Pull) {
 			scr_add_new_toast(fishData[ItemData.Name] + " cautch!")
 		} else {
 			scr_create_dropped_item(fishData, fishData[ItemData.Count]);
-            var instance = instance_create(x, y, obj_dropped_item);
-            instance.data = fishData[ItemData.Sprite];
 		}
 		controller.fishingState = undefined;
 		global.hudState = HudStates.Null;

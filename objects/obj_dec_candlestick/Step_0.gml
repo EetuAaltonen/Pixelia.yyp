@@ -9,8 +9,8 @@ if (global.hudState == HudStates.Null && obj_screen_controller.darknessEffect) {
 	if (depth != tempDepth) {
 		depth = tempDepth
 	}	
-	if (image_blend != make_colour_hsv(0, 0, 255)) {
-		image_blend = make_colour_hsv(0, 0, 255);	
+	if (scr_highlighted()) {
+		image_blend= scr_highlight_default_value();	
 	}
 }
 /*surface_set_target(light);

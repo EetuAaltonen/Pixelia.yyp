@@ -1,4 +1,4 @@
-depth = Depth.Container;
+depth = Depth.Interaction;
 image_speed = 0;
 
 LootEffectPS = part_system_create();
