@@ -6,18 +6,8 @@ var items = argument0;
 var itemCount = array_length_1d(items);
 
 //Create listed items
-var color = make_color_rgb(71, 64, 55);
-var borderColor = make_color_rgb(48, 46, 44);
-var bgHeight = 20;
 var bgXPadding = 4;
-var borderPadding = 1;
-var bgAlpha = 1;
-var borderAlpha = 1;
-var renderData = [
-	[ItemData.Sprite, 0, 26, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-	[ItemData.Name, 15, 120, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-	[ItemData.Count, 137, 40, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
-];
+var renderData = scr_inventory_get_render_data(global.hudState);
 var renderDataCount = array_length_1d(renderData);
 var lastRenderData = renderData[renderDataCount-1];
 var maxWidth = (lastRenderData[RenderData.TextMargin] + lastRenderData[RenderData.BgWidth])

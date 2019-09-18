@@ -5,16 +5,6 @@
     "name": "obj_merchant_parent",
     "eventList": [
         {
-            "id": "dae8801d-6852-42f9-b668-0176d84837c0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c77cd63f-5c06-4388-94f0-86ef9fb6be8b"
-        },
-        {
             "id": "9aa6fa11-63a5-41d9-8662-757296d9e6d6",
             "modelName": "GMEvent",
             "mvc": "1.0",

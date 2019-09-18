@@ -44,21 +44,9 @@ if (updateValues) {
 		var itemList;
 		// Create listed items
 		if (!instance_exists(obj_listed_item)) {
-			var color = make_color_rgb(71, 64, 55);
-			var borderColor = make_color_rgb(48, 46, 44);
-			var bgHeight = 18;
-			var bgXPadding = 8;
-			var borderPadding = 1;
-			var bgAlpha = 1;
-			var borderAlpha = 1;
-			
 			itemList = scr_ds_list_range(listOfItems, startIndex, lastItem);
 			
-			var renderData = [
-				[ItemData.Sprite, 0, 26, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-				[ItemData.Name, 15, 198, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-				[ItemData.Count, 215, 46, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
-			];
+			var renderData = scr_inventory_get_render_data(global.hudState);
 			scr_inventory_create_list(itemList, itemsPerPage, renderData, xPos, yPos, yMargin);
 		} else {
 			itemList = scr_ds_list_range(listOfItems, startIndex, lastItem);
