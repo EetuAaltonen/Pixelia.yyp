@@ -9,13 +9,13 @@ if (state == Container.Uninit || state == Container.Closed) {
 	if (is_undefined(bgHeight)) {
 		var yMargin = 22;
 		var padding = 40;
-		bgHeight = ((itemCount / 2) * yMargin) + yMargin + padding;
+		bgHeight = (itemCount * yMargin) + padding;
 	}
 	
 	scr_hud_draw_background(
 		viewWidth / 2, viewHeight / 2,
 		200, bgHeight,
 		make_color_rgb(87, 56, 23),
-		0.9, true
+		0.95, true
 	);
 }

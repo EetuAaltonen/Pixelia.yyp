@@ -20,6 +20,6 @@ partEffIndx = 0;
 //Loot
 items = ds_list_create();
 state = Container.Uninit;
-lootType = Loot.Material;
+lootType = LootTable.CommonMaterials;
 updateValues = false;
 bgHeight = undefined;

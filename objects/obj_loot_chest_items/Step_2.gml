@@ -3,7 +3,7 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 	scr_highlight_remove();
 	if (state == Container.Uninit) {
 		state = Container.Opening;
-		items = scr_get_loot_by_type(lootType);
+		items = scr_calc_drop_odds(lootType, undefined);
 		image_index = 0;
 		image_speed = 0.8;
 		
@@ -20,14 +20,16 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 	alarm[0] = partEffDelay;
 } else if (state == Container.Opened && global.hudState != HudStates.Loot) {
 	// Open
-	scr_loot_chest_open(items);
+	scr_loot_chest_open(items, HudStates.Loot);
 	
 	obj_player.actionState = Actions.Loot;
 	global.hudState = HudStates.Loot;
 } else if (state == Container.Opened && updateValues) {
 	updateValues = false;
 	scr_inventory_update_list(items);
-}  else if (state == Container.Opened && scr_stop_interact_with_player()) {
+}  else if (global.hudState == HudStates.Loot &&
+			state == Container.Opened &&
+			scr_keys_to_close()) {
 	//Close
 	state = Container.Closed;
 	image_index = 0;

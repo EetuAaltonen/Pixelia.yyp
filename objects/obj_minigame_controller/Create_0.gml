@@ -18,16 +18,15 @@ successText = "";
 // ???
 area1Xscale = 10;
 
-// Loot / fishes
-lootType = Loot.Fish;
-items = scr_get_loot_by_type(lootType);
+// Loot
+items = ds_list_create();
 
-//Type
+// Type
 minigame = "null";
-//Initialize
+// Initialize
 minigameInitialized = false;
 
-//Woodcutting
+// Woodcutting
 forceScale = 0;
 forceAlpha = 0.9;
 forceAmount = 2;

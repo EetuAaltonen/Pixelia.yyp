@@ -85,6 +85,9 @@ return [
 	[spr_leather,"Leather","tempDescription","[workbench,general]",1,"null","null","null","null","null","null","null",0.1,5,0],
 	[spr_wool,"Wool","tempDescription","[cooking,workbench,spinningWheel,general]",1,"null","null","null","null","null","null","null",0.1,5,0],
 	[spr_feather,"Feather","tempDescription","[cooking,workbench,general]",1,"null","null","null","null","null","null","null",0.1,5,0],
+	/*[Fishes]*/
+	[spr_raw_salmon,"Raw Salmon","tempDescription","[cooking,general]",1,"null","null","null","null","null","null","null",0.6,5,0],
+	[spr_raw_tuna,"Raw Tuna","tempDescription","[cooking,general]",1,"null","null","null","null","null","null","null",0.4,5,0],
 	/*[Cooking]*/
 	[spr_flour,"Flour","tempDescription","[cooking,general]",1,"null","null","null","null","null","null","null",0.1,5,0],
 	[spr_milk,"Milk","tempDescription","[cooking,general]",1,"null","null","null","null","null","null","null",0.1,5,0],
