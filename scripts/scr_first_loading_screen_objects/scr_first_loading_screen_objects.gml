@@ -1,29 +1,31 @@
-//First loading screen objects
+// First loading screen objects
 var Objects = ds_list_create();
-//Clock
+// Camera
+ds_list_add(Objects, obj_camera_controller);
+// Clock
 ds_list_add(Objects, obj_global_clock);
-//Player Combat Alarms
+// Player Combat Alarms
 ds_list_add(Objects, obj_plr_combat_alarms);
-//Inventory
+// Inventory
 ds_list_add(Objects, obj_inventory_controller);
-//Quest
+// Quest
 ds_list_add(Objects, obj_quest_controller);
-//Map
+// Map
 ds_list_add(Objects, obj_world_map_controller);
-//Dialogs
+// Dialogs
 ds_list_add(Objects, obj_dialog_controller);
-//Minigames
+// Minigames
 ds_list_add(Objects, obj_minigame_controller);
-//Toaster
+// Toaster
 ds_list_add(Objects, obj_toaster_controller);
-//Stats
+// Stats
 ds_list_add(Objects, obj_stats_meter);
-//Collectable objects target
+// Collectable objects target
 ds_list_add(Objects, obj_money_target);
 ds_list_add(Objects, obj_potion_target);
-//Sources
+// Sources
 ds_list_add(Objects, obj_source_controller);
-//Particles
+// Particles
 ds_list_add(Objects, obj_part_controller_elemental);
 
 return Objects;

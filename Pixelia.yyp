@@ -3927,6 +3927,14 @@
             }
         },
         {
+            "Key": "60472ef1-1740-428e-9f98-973f4bf0daca",
+            "Value": {
+                "id": "af130c75-e3e2-4b8a-a883-fb0848b3c6bf",
+                "resourcePath": "objects\\obj_camera_controller\\obj_camera_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "60ac50a6-fc7b-4c41-a755-d8a1bb4fbafd",
             "Value": {
                 "id": "fa6e6cbd-c840-49c6-b478-27be7c7317d6",
@@ -4084,14 +4092,6 @@
                 "id": "be21bf37-7b61-49ce-989c-838aa07ed039",
                 "resourcePath": "scripts\\scr_dialog\\scr_dialog.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "65332436-249f-4724-aa76-ba506adff41a",
-            "Value": {
-                "id": "602da8cb-b663-47e9-bad2-1b43c5f9ebd6",
-                "resourcePath": "objects\\obj_inv_button_parent\\obj_inv_button_parent.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -5908,14 +5908,6 @@
                 "id": "5b5499e1-daa6-4833-a807-9408fff3ae52",
                 "resourcePath": "scripts\\scr_menu_create_main_buttons\\scr_menu_create_main_buttons.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "90ef0e9e-7fbf-4f67-88f1-3e0248caf234",
-            "Value": {
-                "id": "06ae0af4-0ce2-4cfb-97c3-18db6ebc3748",
-                "resourcePath": "sprites\\spr_hotbar_bg\\spr_hotbar_bg.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

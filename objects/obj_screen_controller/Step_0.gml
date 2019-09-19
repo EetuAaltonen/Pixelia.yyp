@@ -1,8 +1,3 @@
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-var viewWidth = camera_get_view_width(view_camera[0]);
-var viewHeight = camera_get_view_height(view_camera[0]);
-
 ///Create menu buttons and change view
 if (room == Menu) {   
     if (createButtons == true) {
@@ -59,14 +54,14 @@ if (searchSaves) {
         var margin_bottom = 22;
         var x_pos = 350;
         var y_pos = 105;
-        instance_create(view_xview+x_pos, view_yview+y_pos,obj_menu_saved_game);
-        (instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).load_file = string_replace(file, ".sav", "");
+        var instance = instance_create(view_xview+x_pos, view_yview+y_pos,obj_menu_saved_game);
+        instance.load_file = string_replace(file, ".sav", "");
         if (file_exists(file)) {
             ini_open(file);
-            (instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).Datetime = ini_read_string(file,"last_played","");
+            instance.Datetime = ini_read_string(file,"last_played","");
             version = ini_read_string(file,"game_version","null");
 			if (version != global.gameVersion) {
-				(instance_nearest(view_xview + x_pos, view_yview + y_pos,obj_menu_saved_game)).outDated = true;	
+				instance.outDated = true;	
 			}
 			ini_close();
         }
@@ -76,15 +71,15 @@ if (searchSaves) {
                 file = file_find_next();
             }
             if (file_exists(file) && string(file) != "Inventory.sav") {
-                instance_create(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game);
-                (instance_nearest(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game)).load_file = string_replace(file, ".sav", "");
+                var instance = instance_create(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game);
+                instance.load_file = string_replace(file, ".sav", "");
                 Saves[i] = string_replace(file, ".sav", "");
                 if (file_exists(file)) {
                     ini_open(file);
-                    (instance_nearest(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game)).Datetime = ini_read_string(file,"last_played","");
+                    instance.Datetime = ini_read_string(file,"last_played","");
 					version = ini_read_string(file,"game_version","null");
 					if (version != global.gameVersion) {
-						(instance_nearest(view_xview+x_pos, view_yview+y_pos+(margin_bottom*i),obj_menu_saved_game)).outDated = true;	
+						instance.outDated = true;
 					}
                     ini_close();
                 }

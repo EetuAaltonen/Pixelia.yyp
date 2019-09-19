@@ -1,6 +1,16 @@
 //Global variables
 load = false;
 
+// GUI
+globalvar guiWidth;
+guiWidth = 1080;
+globalvar guiHeight;
+guiHeight = 720;
+globalvar guiWRatio;
+guiWRatio = 2;
+globalvar guiHRatio;
+guiHRatio = 2;
+
 /*[GameTicks]*/
 global.alarmTicks = scr_time_sec_to_alarm(1); //1 second
 

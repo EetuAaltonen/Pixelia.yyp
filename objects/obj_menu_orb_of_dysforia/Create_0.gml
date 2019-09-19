@@ -1,3 +1,4 @@
+depth = Depth.Hud;
 //Create function
 scr_menu_orb_create();
 //Bloom color

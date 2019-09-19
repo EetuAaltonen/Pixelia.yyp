@@ -1,4 +1,4 @@
-depth = Depth.HudBg;
+depth = Depth.Dialog;
 global.popUp = false;
 acceptKey = undefined;
 drawAcceptKey = undefined;

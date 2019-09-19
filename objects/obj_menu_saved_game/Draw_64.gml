@@ -1,5 +1,5 @@
-var viewX = view_get_xport(0);
-var viewY = view_get_yport(0);
+var viewX = camera_get_view_x(view_camera[0]);
+var viewY = camera_get_view_y(view_camera[0]);
 
 var positionX = scr_draw_position_on_screen(x, "x");
 var positionY = scr_draw_position_on_screen(y, "y");

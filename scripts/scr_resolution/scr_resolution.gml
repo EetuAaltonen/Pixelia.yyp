@@ -8,8 +8,8 @@ view_set_hport(0, displayHeight);
 	
 global.wResolution = displayWidth;
 global.hResolution = displayHeight;
-global.resWAspect = (displayWidth/viewWidth);
-global.resHAspect = (displayHeight/viewHeight);
+//global.resWAspect = (displayWidth/viewWidth);
+//global.resHAspect = (displayHeight/viewHeight);
 
 display_set_gui_size(displayWidth, displayHeight);
 window_set_size(displayWidth, displayHeight);

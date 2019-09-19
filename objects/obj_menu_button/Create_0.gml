@@ -1,3 +1,4 @@
+depth = Depth.Button;
 image_speed = 0;
 resolution = "null";
 action = "null";

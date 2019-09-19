@@ -7,9 +7,6 @@
 /// @param alpha
 /// @param centered
 /// @return void
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-
 var xPos = argument0;
 var yPos = argument1;
 var width = argument2;
@@ -25,6 +22,6 @@ if (centered) {
 
 draw_set_colour(color);
 draw_set_alpha(alpha);
-draw_rectangle(viewX+xPos, viewY+yPos, viewX+xPos+width, viewY+yPos+height, false);
+draw_rectangle(xPos, yPos, xPos+width, yPos+height, false);
 // Default alpha
 draw_set_alpha(1);

@@ -42,8 +42,4 @@ if (global.popUp && message != undefined) {
 	draw_sprite_ext(spr_popup_bg,1,viewX+((viewWidth/2)-((stringWidth/2)+10)),
 					viewY+((viewHeight/2)-((stringHeight/2)+10)),
 					1*(stringWidth+20),1*(stringHeight+50),0,c_white,1);
-						
-	draw_text(viewX+(viewWidth/2),viewY+(viewHeight/2),message);
-		
-	draw_text(viewX+(viewWidth/2),viewY+((viewHeight/2)+stringHeight+10),keyInfo);
 }

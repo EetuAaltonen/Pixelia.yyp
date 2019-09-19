@@ -3,6 +3,8 @@ var viewY = camera_get_view_y(view_camera[0]);
 var viewWidth = camera_get_view_width(view_camera[0]);
 var viewHeight = camera_get_view_height(view_camera[0]);
 
+display_set_gui_size(viewWidth, viewHeight);
+
 ///Inventory
 //Font
 draw_set_font(fnt_inventory_text);
@@ -10,7 +12,7 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-if (global.hudState != HudStates.Map) {
+/*if (global.hudState != HudStates.Map) {
 	//Font
 	draw_set_font(fnt_inventory_text);
 	draw_set_color(c_black);
