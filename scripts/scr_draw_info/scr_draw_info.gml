@@ -1,5 +1,5 @@
 //Font
-draw_set_font(fnt_draw_gui_inv_small);
+draw_set_font(fnt_draw_gui_small);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
@@ -30,7 +30,7 @@ if (global.hudState == HudStates.Stash &&
 }
 
 if (global.hudState != HudStates.Crafting) {
-	draw_set_font(fnt_draw_gui_inv_small);
+	draw_set_font(fnt_draw_gui_small);
 	draw_set_valign(fa_top);
 	//Item info text
 	if (is_array(itemInfoText)) {
@@ -41,7 +41,7 @@ if (global.hudState != HudStates.Crafting) {
 		//Item name
 		draw_text(scr_gui(291,"x"), scr_gui(102,"y"), itemInfoText[0]);
 		
-		draw_set_font(fnt_draw_gui_inv_tiny);
+		draw_set_font(fnt_draw_gui_small);
 		//Item info
 		for (i = 1; i < lineCount; i++) {
 			txtHeight = string_height(itemInfoText[i]);
@@ -51,7 +51,7 @@ if (global.hudState != HudStates.Crafting) {
 		draw_text(scr_gui(291,"x"), scr_gui(102,"y"), string_hash_to_newline(itemInfoText));
 	}
 	
-	draw_set_font(fnt_draw_gui_inv_small);
+	draw_set_font(fnt_draw_gui_small);
 	//Menu Controls
 	scr_controls_get_text();
 }
@@ -59,6 +59,6 @@ if (global.hudState != HudStates.Crafting) {
 //No items
 if (!ds_list_size(listOfItems)) {
 	//Font
-	draw_set_font(fnt_draw_gui_inv_medium);
+	draw_set_font(fnt_draw_gui_medium);
 	draw_text(scr_gui(35,"x"), scr_gui(100,"y"), "No items found...");
 }

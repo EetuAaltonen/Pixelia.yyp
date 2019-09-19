@@ -15,65 +15,9 @@ if (global.hudState == HudStates.Inventory ||
 	scr_inventory_draw_background();
 }
 
-if (global.hudState != HudStates.Map) {
-	//Font
-	draw_set_font(fnt_inventory_text);
-	draw_set_color(c_black);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
-
-	///Hotbar background
-	scr_hud_draw_background(
-		0, 600,
-		guiWidth, guiHeight,
-		make_color_rgb(102, 86, 61),
-		1, false
-	);
-
-	/*var barScale = global.xp / global.xpLimit;
-	draw_sprite_ext(spr_xp_bg, 0, 10, 285, (48*10)*barScale, 1, 0, -1, 1);
-	for (var i = 0; i < 10; i++) {
-		draw_sprite_ext(spr_xp_bar, 0, 10+(i*48), 285, 1, 1, 0, -1, 1);
-	}
-	barScale = global.enchantingXp / global.enchantingXpLimit;
-	draw_sprite_ext(spr_xp_bg, 1, 10, 292, (48*10)*barScale, 1, 0, -1, 1);
-	for (var i = 0; i < 10; i++) {
-		draw_sprite_ext(spr_xp_bar, 0, 10+(i*48), 292, 1, 1, 0, -1, 1);
-	}*/
-	
-	//Font
-	draw_set_font(fnt_draw_gui_inv_small);
-	draw_set_color(c_black);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
-
-	//Level
-	draw_text(20, 630, "Level  " + string(global.level));
-	
-	draw_set_halign(fa_right);
-	//Skill XP
-	draw_text(1060, 630, "XP  " + string(global.xp) + " / " + string(global.xpLimit));
-	
-	draw_set_halign(fa_left);
-	//Enchanting XP
-	draw_text(800, 630, "Ench. XP  " + string(global.enchantingXp) + " / " + string(global.enchantingXpLimit));
-	
-	//Coins
-	draw_sprite_ext(spr_money_icon, 0, 100,
-	                630, guiWRatio, guiHRatio,
-	                image_angle, c_white, image_alpha);
-	draw_text(150, 630, scr_coins_format(global.coins));
-	
-	//Potion
-	draw_sprite_ext(spr_potion_icon, 0, 300,
-	                630, guiWRatio, guiHRatio,
-	                image_angle, c_white, image_alpha);
-	draw_text(350, 630, string(global.potions) + " x");
-}
-
 /*
 //Font
-draw_set_font(fnt_draw_gui_inv_medium);
+draw_set_font(fnt_draw_gui_medium);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
@@ -146,7 +90,7 @@ if (global.hudState == HudStates.Crafting) {
 	}	
 } else if (global.hudState == HudStates.Map) {
 	//Font
-	draw_set_font(fnt_draw_gui_inv_small);
+	draw_set_font(fnt_draw_gui_small);
 	draw_set_color(c_black);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);

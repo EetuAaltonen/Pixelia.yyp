@@ -1,7 +1,7 @@
 ///scr_decrease_stamina_n_mana(argument0, argument1)
 var type = argument0;
 var amount = argument1;
-var meter = obj_stats_meter;
+var meter = obj_statistics_controller;
 switch (type) {
 	case "stamina": {
 		//Decrease Stamina

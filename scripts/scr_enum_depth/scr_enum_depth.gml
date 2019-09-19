@@ -1,4 +1,6 @@
 enum Depth {
+	// Room transition
+	RoomTransition,
 	// HUD
 	Cursor,
 	Toaster,

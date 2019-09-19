@@ -1,3 +1,4 @@
+depth = Depth.Button;
 //Saved game
 load_file = "";
 //Menu state

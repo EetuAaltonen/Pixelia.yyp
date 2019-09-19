@@ -23,5 +23,6 @@ if (centered) {
 draw_set_colour(color);
 draw_set_alpha(alpha);
 draw_rectangle(xPos, yPos, xPos+width, yPos+height, false);
-// Default alpha
+// Default values
+draw_set_colour(c_black);
 draw_set_alpha(1);

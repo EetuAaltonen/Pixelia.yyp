@@ -19,7 +19,7 @@ ds_list_add(Objects, obj_minigame_controller);
 // Toaster
 ds_list_add(Objects, obj_toaster_controller);
 // Stats
-ds_list_add(Objects, obj_stats_meter);
+ds_list_add(Objects, obj_statistics_controller);
 // Collectable objects target
 ds_list_add(Objects, obj_money_target);
 ds_list_add(Objects, obj_potion_target);

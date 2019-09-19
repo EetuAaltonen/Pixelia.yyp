@@ -7,9 +7,9 @@ if (instance_exists(obj_player))
     obj_player.actionState = Actions.Null;
 }
 //Armor regeneration
-if (instance_exists(obj_stats_meter))
+if (instance_exists(obj_statistics_controller))
 {
-    obj_stats_meter.alarm[1] = scr_time_sec_to_alarm(1/(global.armorRegenAmount+global.armorRegenAmount*global.armorRegenPlus));
+    obj_statistics_controller.alarm[1] = scr_time_sec_to_alarm(1/(global.armorRegenAmount+global.armorRegenAmount*global.armorRegenPlus));
 }
 obj_plr_hitbox.alarm[1] = 60;
 

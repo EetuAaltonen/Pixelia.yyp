@@ -1,7 +1,7 @@
 //GAME VERSION
 global.gameVersion = "0.0.0.1";
 
-depth = -1000;
+depth = Depth.RoomTransition;
 //Resolution
 reso_width = 1920;
 reso_height = 1080;

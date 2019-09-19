@@ -41,7 +41,7 @@ if (!scr_plr_effects_exists(effect)) {
 	
 	if (addEffect) {
 		if (!ds_list_size(global.buffs)) {
-			obj_stats_meter.alarm[0] = global.alarmTicks;	
+			obj_statistics_controller.alarm[0] = global.alarmTicks;	
 		}
 		ds_list_add(global.buffs, [effect, amount, duration]);
 	}

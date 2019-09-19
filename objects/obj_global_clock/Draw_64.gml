@@ -31,7 +31,7 @@ if (global.hudState == HudStates.Null || global.hudState == HudStates.Minigame) 
 	
 	
 	//Font
-	draw_set_font(fnt_draw_gui_inv_small);
+	draw_set_font(fnt_draw_gui_small);
 	if (obj_screen_controller.darknessAlpha > 0.5) {
 		draw_set_color(c_white);
 	} else {

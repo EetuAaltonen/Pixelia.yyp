@@ -1230,7 +1230,7 @@
     },
     "roomSettings":     {
         "id": "86013a18-2ef4-4946-88b4-2656418104ec",
-        "Height": 512,
+        "Height": 540,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
@@ -1239,7 +1239,7 @@
     },
     "mvc": "1.0",
     "views": [
-{"id": "02c4d8e3-4056-4169-a310-09512758ab54","hborder": 200,"hport": 720,"hspeed": -1,"hview": 360,"inherit": false,"modelName": "GMRView","objId": "3733ebd5-5069-4e8e-9aea-c1cd6d3b7927","mvc": "1.0","vborder": 100,"visible": true,"vspeed": -1,"wport": 1080,"wview": 540,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
+{"id": "02c4d8e3-4056-4169-a310-09512758ab54","hborder": 220,"hport": 720,"hspeed": -1,"hview": 360,"inherit": false,"modelName": "GMRView","objId": "3733ebd5-5069-4e8e-9aea-c1cd6d3b7927","mvc": "1.0","vborder": 180,"visible": true,"vspeed": -1,"wport": 1080,"wview": 540,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "e19f3310-c4be-417d-8ba1-18ef1943d373","hborder": 32,"hport": 768,"hspeed": -1,"hview": 300,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 500,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "369df464-13b1-4bb6-a108-ca234e5c2561","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "43d4468e-c57d-46e3-a507-1157820a4981","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
