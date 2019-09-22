@@ -1,15 +1,10 @@
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-
-var positionX = scr_draw_position_on_screen(x, "x");
-var positionY = scr_draw_position_on_screen(y, "y");
-var textPosX = scr_draw_camera_position_to_gui(positionX, "x");
-var textPosY = scr_draw_camera_position_to_gui(positionY, "y");
+var xPos = scr_position_to_gui(x, "x");
+var yPos = scr_position_to_gui(y, "y");
 
 //Font
-draw_set_font(fnt_draw_gui_menu_saves);
+draw_set_font(fnt_draw_gui_small);
 draw_set_color(c_black);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text(textPosX, textPosY, string(load_file) + " " + string(Datetime));
+draw_text(xPos, yPos, string(load_file) + " " + string(Datetime));

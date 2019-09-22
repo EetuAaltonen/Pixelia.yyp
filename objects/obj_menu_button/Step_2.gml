@@ -1,4 +1,4 @@
-//Move orbs when meeting mouse
+// Move orbs when meeting mouse
 if (distance_to_point(mouse_x, mouse_y) == 0) {
 	if (instance_exists(obj_menu_orb_of_euphoria)) {
 		if (obj_menu_orb_of_euphoria.target_y != y) {
@@ -16,13 +16,17 @@ if (distance_to_point(mouse_x, mouse_y) == 0) {
 	}
 }
 if (action != "null") {
-	 if (checkSaveName) {
+	if (action == MenuActions.Load && keyboard_check_released(vk_enter)) {
+		if (!global.popUp && !scr_highlighted()) {
+			scr_menu_load_create_save();
+		}
+	} else if (checkSaveName) {
 		checkSaveName = false;
-		if (action == "delete") {
-			///Check text length
+		if (action == MenuActions.Delete) {
+			// Check text length
 			scr_check_exists_saves();
-		} else if (action == "load") {
-			///Check text length
+		} else if (action == MenuActions.Load) {
+			// Check text length
 			scr_check_save_name();
 		}
 	}

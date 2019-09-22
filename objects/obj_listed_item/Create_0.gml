@@ -3,7 +3,7 @@ mask_index = spr_listed_item_mask;
 
 //Data
 data = "null";
-renderData = "null";
+renderData = undefined;
 index = "null";
 infoText = "";
 controller = undefined;

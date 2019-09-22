@@ -1,7 +1,6 @@
 //scr_item_info_struct()
 //Draw item info
-if (sprite_index && data != "null" && renderData != "null") {
-	
+if (sprite_index && data != "null" && !is_undefined(renderData)) {
 	//Font
 	draw_set_font(fnt_draw_gui_medium);
 	draw_set_color(c_black);
@@ -9,13 +8,13 @@ if (sprite_index && data != "null" && renderData != "null") {
 	draw_set_valign(fa_middle);
 	
 	var xPos;
-	var yPos = scr_draw_position_on_screen(y+1, "y");
+	var yPos = scr_position_to_gui(y+1, "y");
 	var renderDataCount = array_length_1d(renderData);
 	var render, i;
 	
 	for (i = 0; i < renderDataCount; i++) {
 		render = renderData[i];
-		xPos = scr_draw_position_on_screen(x+render[RenderData.TextMargin]+render[RenderData.bgXPadding], "x");
+		xPos = scr_position_to_gui(x+render[RenderData.TextMargin]+render[RenderData.bgXPadding], "x");
 		draw_set_color(c_black);
 		switch (render[RenderData.Index])	{
 			case ItemData.Name: {
@@ -23,15 +22,15 @@ if (sprite_index && data != "null" && renderData != "null") {
 				if (data[ItemData.RequiredLevel] > global.level) {
 					draw_set_color(c_red);
 				}
-				draw_text(scr_gui(xPos,"x"), scr_gui(yPos,"y"), data[render[RenderData.Index]]);
+				draw_text(xPos, yPos, data[render[RenderData.Index]]);
 			}break;
 			case ItemData.Count: {
 				//Item Count
-				draw_text(scr_gui(xPos,"x"), scr_gui(yPos,"y"), string(data[render[RenderData.Index]]) + "  x");
+				draw_text(xPos, yPos, string(data[render[RenderData.Index]]) + "  x");
 			}break;
 			case ItemData.Weight: {
 				//Item Weight
-				draw_text(scr_gui(xPos,"x"), scr_gui(yPos,"y"), string(data[render[RenderData.Index]]) + "  Pw");	
+				draw_text(xPos, yPos, string(data[render[RenderData.Index]]) + "  Pw");	
 			}break;
 			case ItemData.Price: {
 				//Item Price
@@ -40,7 +39,7 @@ if (sprite_index && data != "null" && renderData != "null") {
 						draw_set_color(c_red);
 					}
 				}
-				draw_text(scr_gui(xPos,"x"), scr_gui(yPos,"y"), scr_coins_format(data[render[RenderData.Index]]));
+				draw_text(xPos, yPos, scr_coins_format(data[render[RenderData.Index]]));
 			}break;
 		}
 	}

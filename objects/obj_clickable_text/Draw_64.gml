@@ -1,6 +1,6 @@
 if (text[0] != "") {	
-	var positionX = scr_draw_position_on_screen(x, "x");
-	var positionY = scr_draw_position_on_screen(y, "y");
+	var positionX = scr_position_to_gui(x, "x");
+	var positionY = scr_position_to_gui(y, "y");
 	var posX = scr_draw_camera_position_to_gui(positionX, "x");
 	var posY = scr_draw_camera_position_to_gui(positionY, "y");
 

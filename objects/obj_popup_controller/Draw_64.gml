@@ -1,28 +1,33 @@
-if (global.popUp && message != undefined) {
-	var viewWidth = camera_get_view_width(view_camera[0]);
-	var viewHeight = camera_get_view_height(view_camera[0]);
-	
-	var positionX = scr_draw_position_on_screen(x, "x");
-	var positionY = scr_draw_position_on_screen(y, "y");
-	var textPosX = scr_draw_camera_position_to_gui(positionX, "x");
-	var textPosY = scr_draw_camera_position_to_gui(positionY, "y");
-
+if (global.popUp && !is_undefined(message) && !is_undefined(keyInfo)) {
 	//Font
-	draw_set_font(fnt_draw_gui_menu_small);
+	draw_set_font(fnt_draw_gui_medium);
 	draw_set_color(c_black);
 	draw_set_halign(fa_center);
+	
+	var textHeight = string_height(message);
+	var textPadding = 20;
+	var dialogWidth = 600;
+	var dialogHeight = ((textHeight + textPadding) * 3);
+	
+	// Draw border
+	scr_hud_draw_background(
+		guiWidth / 2,
+		guiHeight / 2,
+		dialogWidth + 20, dialogHeight + 20,
+		make_color_rgb(73, 125, 153),
+		1, true
+	);
+	// Draw background
+	scr_hud_draw_background(
+		guiWidth / 2,
+		guiHeight / 2,
+		dialogWidth, dialogHeight,
+		make_color_rgb(65, 87, 99),
+		1, true
+	);
+	
 	draw_set_valign(fa_middle);
-	
-	var keyInfo;
-	if (cancelKey == undefined) {
-		keyInfo = "OK [ " + string(drawAcceptKey) + " ]";
-	} else {
-		keyInfo = "Accept [ " + string(drawAcceptKey) + " ]    " +
-					"Cancle [ " + string(drawCancelKey) + " ]"
-	}
-	
-	var stringHeight = string_height(message);
-
-	draw_text(scr_gui((viewWidth / 2), "x"), scr_gui((viewHeight / 2), "y"), message);
-	draw_text(scr_gui((viewWidth / 2), "x"), scr_gui(((viewHeight / 2) + stringHeight), "y"), keyInfo);
+	draw_text(guiWidth / 2, (guiHeight / 2) - textHeight, string_hash_to_newline(message));
+	draw_set_valign(fa_top);
+	draw_text(guiWidth / 2, (guiHeight / 2) + textHeight, keyInfo);
 }

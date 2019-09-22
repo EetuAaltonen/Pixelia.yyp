@@ -1,22 +1,19 @@
-var viewX = camera_get_view_x(view_camera[0]);
-var viewY = camera_get_view_y(view_camera[0]);
-var viewWidth = camera_get_view_width(view_camera[0]);
-var viewHeight = camera_get_view_height(view_camera[0]);
+var roomWidth = room_width;
 
 var buttons = [
-	["loadGame", "Play"],
-	["achievements", "Achievements"],
-	["settings", "Settings"],
-	["quit", "Quit"]
+	[MenuActions.Play, "Play"],
+	[MenuActions.Achievements, "Achievements"],
+	[MenuActions.Settings, "Settings"],
+	[MenuActions.Quit, "Quit"]
 ];
 var count = array_length_1d(buttons);
-var button;
+var buttonData, instance;
 var i;
 var margin = 40;
 //Create Buttons
 for (i = 0; i < count; i++) {
-	var button = buttons[i];
-	instance_create(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button);
-	(instance_nearest(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button)).action = button[0];
-	(instance_nearest(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button)).infoText = button[1];
+	var buttonData = buttons[i];
+	instance = instance_create((roomWidth / 2), 125 + (margin * i), obj_menu_button);
+	instance.action = buttonData[0];
+	instance.infoText = buttonData[1];
 }

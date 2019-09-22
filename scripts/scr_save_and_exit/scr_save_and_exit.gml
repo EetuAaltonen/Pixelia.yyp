@@ -32,7 +32,7 @@ with(obj_first_loading) {
 }
 
 //Set Menu Properties
-obj_screen_controller.menuState = "mainMenu";
+obj_screen_controller.menuState = MenuActions.MainMenu;
 obj_screen_controller.createButtons = true;
 
 //Go To Menu

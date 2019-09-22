@@ -1,20 +1,5 @@
 display_set_gui_size(guiWidth, guiHeight);
 
-if (global.hudState == HudStates.Inventory ||
-	global.hudState == HudStates.Crafting ||
-	global.hudState == HudStates.Shop) {
-	// Background
-	scr_hud_draw_background(
-		0, 0,
-		guiWidth, guiHeight,
-		make_color_rgb(102, 86, 61),
-		1, false
-	);
-
-	// Grid background
-	scr_inventory_draw_background();
-}
-
 /*
 //Font
 draw_set_font(fnt_draw_gui_medium);

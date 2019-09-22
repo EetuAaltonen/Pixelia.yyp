@@ -1,4 +1,4 @@
-if (data != "null") {
+if (sprite_index && data != "null" && !is_undefined(renderData)) {
 	// Background
 	var textMargin, xPadding, bgWidth, bgHeight, borderPadding;
 	var renderDataCount = array_length_1d(renderData);

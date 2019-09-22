@@ -1,8 +1,6 @@
 if (infoText != undefined) {
-	var xPos = scr_draw_position_on_screen(x + (sprite_width/2), "x");
-	var yPos = scr_draw_position_on_screen(y + (sprite_height/2), "y");
-	var textPosX = scr_draw_camera_position_to_gui(xPos, "x");
-	var textPosY = scr_draw_camera_position_to_gui(yPos, "y");
+	var xPos = scr_position_to_gui(x + (sprite_width/2), "x");
+	var yPos = scr_position_to_gui(y + (sprite_height/2), "y");
 
 	//Font
 	draw_set_font(fnt_draw_gui_small);
@@ -10,5 +8,5 @@ if (infoText != undefined) {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 
-	draw_text(textPosX, textPosY, infoText);
+	draw_text(xPos, yPos, infoText);
 }

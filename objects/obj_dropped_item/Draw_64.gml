@@ -2,8 +2,8 @@
 if (data != undefined) {
 	if (data[ItemData.Count] > 0) {
 		if (global.hudState == HudStates.Null || global.hudState == HudStates.Minigame) {
-			var posX = scr_draw_position_on_screen(x, "x");
-			var posY = scr_draw_position_on_screen(y, "y");
+			var posX = scr_position_to_gui(x, "x");
+			var posY = scr_position_to_gui(y, "y");
 
 			//Font
 			draw_set_font(fnt_draw_gui_dropped_item);
