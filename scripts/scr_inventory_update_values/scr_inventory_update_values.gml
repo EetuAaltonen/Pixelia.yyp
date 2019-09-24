@@ -38,9 +38,9 @@ if (updateValues) {
 		}
 		startIndex = (pageIndex-1)*itemsPerPage;
 		
-		var xPos = 18;
-		var yPos = 104;
-		var yMargin = 20;
+		var xPos = 20;
+		var yPos = 110;
+		var yMargin = 24;
 		var itemList;
 		// Create listed items
 		if (!instance_exists(obj_listed_item)) {

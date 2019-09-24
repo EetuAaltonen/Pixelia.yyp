@@ -10,25 +10,25 @@ if (!is_undefined(fishingState)) {
 			guiWidth / 2, guiHeight / 2,
 			bobberAreaWidth + (padding * 2),
 			bobberAreaHeight + (padding * 3),
-			make_color_rgb(77, 77, 77), 1, true
+			make_color_rgb(77, 77, 77), 1, true, true
 		);
 		// Area background
 		scr_hud_draw_background(
 			guiWidth / 2, guiHeight / 2,
 			bobberAreaWidth, bobberAreaHeight,
-			make_color_rgb(50, 111, 209), 1, true
+			make_color_rgb(50, 111, 209), 1, true, true
 		);
 		// Area
 		scr_hud_draw_background(
 			guiWidth / 2, guiHeight / 2,
 			(bobberAreaWidth * area1Xscale), bobberAreaHeight,
-			make_color_rgb(199, 166, 34), 1, true
+			make_color_rgb(199, 166, 34), 1, true, true
 		);
 		// Area
 		scr_hud_draw_background(
 			guiWidth / 2, guiHeight / 2,
 			(bobberAreaWidth * area2Xscale), bobberAreaHeight,
-			make_color_rgb(41, 209, 29), 1, true
+			make_color_rgb(41, 209, 29), 1, true, true
 		);
 		// Bobber
 		draw_sprite_ext(

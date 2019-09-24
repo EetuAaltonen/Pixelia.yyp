@@ -15,7 +15,7 @@ if (global.popUp && !is_undefined(message) && !is_undefined(keyInfo)) {
 		guiHeight / 2,
 		dialogWidth + 20, dialogHeight + 20,
 		make_color_rgb(73, 125, 153),
-		1, true
+		1, true, true
 	);
 	// Draw background
 	scr_hud_draw_background(
@@ -23,7 +23,7 @@ if (global.popUp && !is_undefined(message) && !is_undefined(keyInfo)) {
 		guiHeight / 2,
 		dialogWidth, dialogHeight,
 		make_color_rgb(65, 87, 99),
-		1, true
+		1, true, true
 	);
 	
 	draw_set_valign(fa_middle);

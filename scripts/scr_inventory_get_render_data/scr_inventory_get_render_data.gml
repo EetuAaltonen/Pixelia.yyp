@@ -5,18 +5,18 @@ var hudState = argument0;
 // Default values
 var color = make_color_rgb(71, 64, 55);
 var borderColor = make_color_rgb(48, 46, 44);
-var bgHeight = 18;
-var bgXPadding = 8;
-var borderPadding = 1;
+var bgHeight = 46;
+var bgXPadding = 15;
+var borderPadding = 4;
 var bgAlpha = 1;
 var borderAlpha = 1;
 
 switch (hudState) {
 	case HudStates.Inventory: {
 		return [
-			[ItemData.Sprite, 0, 26, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-			[ItemData.Name, 15, 198, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-			[ItemData.Count, 215, 46, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
+			[ItemData.Sprite, 0, 50, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Name, 26, 360, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Count, 391, 92, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
 		];
 	}break;
 	case HudStates.Shop: {

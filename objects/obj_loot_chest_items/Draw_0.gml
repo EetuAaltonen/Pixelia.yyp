@@ -16,6 +16,6 @@ if (state == Container.Uninit || state == Container.Closed) {
 		viewWidth / 2, viewHeight / 2,
 		200, bgHeight,
 		make_color_rgb(87, 56, 23),
-		0.95, true
+		0.95, true, true
 	);
 }

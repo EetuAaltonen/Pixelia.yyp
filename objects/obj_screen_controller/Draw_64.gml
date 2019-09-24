@@ -10,7 +10,7 @@ if (!pause && !unfocus) {
 		scr_hud_draw_background(
 			0, 0,
 			guiWidth, guiHeight,
-			c_black, viewAlpha, false
+			c_black, viewAlpha, false, false
 		);
 	}
 	
@@ -21,7 +21,7 @@ if (!pause && !unfocus) {
 				scr_hud_draw_background(
 					0, 0,
 					guiWidth, guiHeight,
-					c_black, darknessAlpha, false
+					c_black, darknessAlpha, false, false
 				);
 			}
 		}

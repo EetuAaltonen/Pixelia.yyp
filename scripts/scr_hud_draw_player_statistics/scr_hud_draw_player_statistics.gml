@@ -34,14 +34,14 @@ scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth, barHeight,
 	make_color_rgb(138, 51, 51),
-	1, false
+	1, false, false
 );
 var barScale = global.healthPoints / global.maxHealth;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth * barScale, barHeight,
 	make_color_rgb(191, 17, 17),
-	1, false
+	1, false, false
 );
 draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.healthPoints) + " / " + string(global.maxHealth));
 
@@ -51,14 +51,14 @@ scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth, barHeight,
 	make_color_rgb(117, 114, 60),
-	1, false
+	1, false, false
 );
 barScale = global.stamina/global.maxStamina;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth * barScale, barHeight,
 	make_color_rgb(237, 223, 21),
-	1, false
+	1, false, false
 );
 draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.stamina) + " / " + string(global.maxStamina));
 
@@ -68,14 +68,14 @@ scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth, barHeight,
 	make_color_rgb(25, 42, 117),
-	1, false
+	1, false, false
 );
 barScale = global.mana/global.maxMana;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth * barScale, barHeight,
 	make_color_rgb(12, 23, 235),
-	1, false
+	1, false, false
 );
 draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.mana) + " / " + string(global.maxMana));
 

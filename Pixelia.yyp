@@ -2663,6 +2663,14 @@
             }
         },
         {
+            "Key": "3ef15364-e63b-47f1-a45a-9f47ad00d043",
+            "Value": {
+                "id": "676dcbd1-9f73-41b9-aee2-79db7611a2eb",
+                "resourcePath": "scripts\\scr_listed_item_draw_data_bg\\scr_listed_item_draw_data_bg.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3f0f145f-2698-4362-b252-ff92f5fa0708",
             "Value": {
                 "id": "f00f867d-109b-4fb9-b642-4f219f4bd945",
@@ -9831,6 +9839,14 @@
             }
         },
         {
+            "Key": "f6e478eb-fb75-401f-aa81-b029a62bb421",
+            "Value": {
+                "id": "38ea5856-9949-4c78-94e7-b01b5a9867ad",
+                "resourcePath": "views\\f6e478eb-fb75-401f-aa81-b029a62bb421.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f6f5bb60-b7d3-487c-9782-35e671211baa",
             "Value": {
                 "id": "680e4d9b-68f3-45be-b1d8-3f1164df9819",
@@ -9844,6 +9860,14 @@
                 "id": "7ed7a089-9b46-40d0-bc4e-ff18bc2ea5cd",
                 "resourcePath": "sprites\\spr_enemies_health_bar\\spr_enemies_health_bar.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f7aad230-a7be-4e54-a82d-d7ac1a20edf5",
+            "Value": {
+                "id": "46dd8def-fea2-4756-a1ae-f791be837f33",
+                "resourcePath": "scripts\\scr_listed_item_draw_data\\scr_listed_item_draw_data.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -10336,6 +10360,8 @@
         "09e7bb1e-07a6-481b-9c40-34f6a3c5c8ac",
         "f93551fb-110b-4ad5-b037-c11376b44bfc",
         "301d32fa-c5ae-466f-86bb-71cd05c1bca3",
+        "3ef15364-e63b-47f1-a45a-9f47ad00d043",
+        "f7aad230-a7be-4e54-a82d-d7ac1a20edf5",
         "c0d9c16c-a037-4b7b-a3db-3f9865fc11f0",
         "21c264b5-2cab-44a1-8032-6245b3406173",
         "baa1a289-f2d9-490a-aac0-e94087201b69",

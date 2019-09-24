@@ -5,7 +5,8 @@
 /// @param height
 /// @param color
 /// @param alpha
-/// @param centered
+/// @param wCentered
+/// @param hCentered
 /// @return void
 
 var xPos = argument0;
@@ -14,10 +15,13 @@ var width = argument2;
 var height = argument3;
 var color = argument4;
 var alpha = argument5;
-var centered = argument6;
+var wCentered = argument6;
+var hCentered = argument7;
 
-if (centered) {
+if (wCentered) {
 	xPos -= width / 2;
+}
+if (hCentered) {
 	yPos -= height / 2;
 }
 

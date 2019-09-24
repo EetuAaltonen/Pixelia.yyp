@@ -6,7 +6,7 @@ if (global.hudState == HudStates.Inventory ||
 		0, 0,
 		guiWidth, guiHeight,
 		make_color_rgb(102, 86, 61),
-		1, false
+		1, false, false
 	);
 }
 
