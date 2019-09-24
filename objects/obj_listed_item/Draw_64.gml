@@ -17,6 +17,15 @@ if (sprite_index && data != "null" && !is_undefined(renderData)) {
 		xPos = scr_position_to_gui(x+render[RenderData.TextMargin]+render[RenderData.bgXPadding], "x");
 		draw_set_color(c_black);
 		switch (render[RenderData.Index])	{
+			case ItemData.Sprite: {
+				draw_sprite_ext(
+					data[ItemData.Sprite], 0,
+					scr_position_to_gui(x, "x"),
+					scr_position_to_gui(y, "y"),
+					guiWRatio, guiHRatio,
+					image_angle, c_white, 1
+				);
+			}break;
 			case ItemData.Name: {
 				draw_set_color(c_black);
 				if (data[ItemData.RequiredLevel] > global.level) {

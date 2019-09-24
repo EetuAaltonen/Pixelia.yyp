@@ -7,6 +7,7 @@
 /// @param alpha
 /// @param centered
 /// @return void
+
 var xPos = argument0;
 var yPos = argument1;
 var width = argument2;

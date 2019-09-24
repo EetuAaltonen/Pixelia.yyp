@@ -11,6 +11,8 @@ enum Depth {
 	ListItem,
 	Hud,
 	HudBg,
+	// Hotbar
+	Hotbar,
 	// Front Misc
 	MiscFront,
 	// Water

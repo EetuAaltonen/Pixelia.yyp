@@ -1,6 +1,6 @@
 var controller = obj_minigame_controller;
 controller.fishingState = Fishing.Minigame;
-controller.bobberX = 20;
+controller.bobberX = 0;
 controller.bobberSpeed = 1;
 controller.bobberDirection = 1;
 controller.bobberRotateDirection = 1;

@@ -1,4 +1,5 @@
-depth = Depth.Hud;
+//depth = Depth.Hud;
+depth = Depth.Hotbar;
 image_speed = 0;
 
 //Regen & Buff timer

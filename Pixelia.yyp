@@ -1655,6 +1655,14 @@
             }
         },
         {
+            "Key": "265c5123-3237-4627-a5a0-29fcf80618b2",
+            "Value": {
+                "id": "e199e687-de2b-40a0-a21c-725618c375e2",
+                "resourcePath": "scripts\\scr_minigame_fishing_get_results\\scr_minigame_fishing_get_results.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "268a4e81-28b6-4d97-807b-c92815d4a8d0",
             "Value": {
                 "id": "6f9c52da-b48f-41d8-a451-d853ec4e73d2",
@@ -6599,6 +6607,14 @@
             }
         },
         {
+            "Key": "a427ad4c-0950-49bc-9507-e203fa86efff",
+            "Value": {
+                "id": "22413156-3906-430a-9375-00c94d93b623",
+                "resourcePath": "scripts\\scr_minigame_fishing_bobber_angle\\scr_minigame_fishing_bobber_angle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a4315600-0fe4-4e6a-8749-ef90da0e6053",
             "Value": {
                 "id": "5ce602a8-d1eb-4b7f-9dd2-e71c8e80416d",
@@ -8351,11 +8367,27 @@
             }
         },
         {
+            "Key": "d4946139-9e05-4994-907c-0652ce7d472f",
+            "Value": {
+                "id": "8ab2f91b-6411-4d5e-9a26-6cff8f11513e",
+                "resourcePath": "views\\d4946139-9e05-4994-907c-0652ce7d472f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d4aa189d-172a-4ecb-b780-49ee18ed9a18",
             "Value": {
                 "id": "487ba08e-a0f9-42d6-a4b4-1de54949126a",
                 "resourcePath": "rooms\\Skilltree\\Skilltree.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d57bc97d-6846-4131-a062-68a9e803c9b4",
+            "Value": {
+                "id": "4b9cd488-3ccc-448d-9570-0c0d100e6776",
+                "resourcePath": "scripts\\scr_minigame_fishing_bobber_movement\\scr_minigame_fishing_bobber_movement.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -9275,6 +9307,14 @@
             "Value": {
                 "id": "db976b03-b7d3-4cd8-bff3-32e383d5a414",
                 "resourcePath": "scripts\\scr_common_attributes\\scr_common_attributes.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ea711239-a131-47f1-8736-87c8c31357b4",
+            "Value": {
+                "id": "2cc73152-1072-42ae-a899-a7abfa38a476",
+                "resourcePath": "scripts\\scr_minigame_fishing_draw_game\\scr_minigame_fishing_draw_game.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -10343,6 +10383,10 @@
         "f3d30449-f7f5-436d-8671-00604718402d",
         "7be9ff00-e639-4efc-a7eb-c9aa18f93615",
         "11057b3d-289e-46cf-8f22-aae80682be89",
+        "d57bc97d-6846-4131-a062-68a9e803c9b4",
+        "ea711239-a131-47f1-8736-87c8c31357b4",
+        "a427ad4c-0950-49bc-9507-e203fa86efff",
+        "265c5123-3237-4627-a5a0-29fcf80618b2",
         "52cda498-cfc7-49a3-924e-af5f4cd838de",
         "59bf8008-4400-43c0-9492-65fc0e3b16f4",
         "0d600368-d560-4121-a702-4f7cf90798c7",

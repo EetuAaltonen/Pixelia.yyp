@@ -1,12 +1,5 @@
 if (global.hudState == HudStates.Minigame) {
 	if (instance_exists(obj_player)) {
-		var viewX = camera_get_view_x(view_camera[0]);
-		var viewY = camera_get_view_y(view_camera[0]);
-		var viewWidth = camera_get_view_width(view_camera[0]);
-		var viewHeight = camera_get_view_height(view_camera[0]);
-		var viewXCenter = (viewX + viewWidth) / 2;
-		var viewYCenter = (viewY + viewHeight) / 2;
-
 		switch (obj_player.actionState) {
 			case Actions.Fishing: {
 				if (fishingState == Fishing.Minigame) {
@@ -15,40 +8,10 @@ if (global.hudState == HudStates.Minigame) {
 						bobberSpeed = 0;
 						imageAngle = 0;
 						// TODO: Calculate here fishing loot
-						if ((viewXCenter + bobberX) < viewXCenter + (area1Xscale/2) &&
-						    (viewXCenter + bobberX) > viewXCenter - (area1Xscale/2)) {
-						    successText = "Great!";
-						} else if ((viewXCenter + bobberX) < (viewXCenter + (area1Xscale/2*4)) &&
-						        (viewXCenter + bobberX) > (viewXCenter - (area1Xscale/2*4))) {
-						    successText = "Nice!";
-						} else {
-						    successText = "Fail!";
-						}
-						alarm[5] = scr_time_sec_to_alarm(2);
+						scr_minigame_fishing_get_results();
 					} else {
-						// Bobber movement
-						if ((viewXCenter + bobberX) > (viewXCenter + (210/2)) && bobberDirection == 1) {
-						    bobberDirection = -1;
-						    bobberX -= 2;
-						    alarm[3] = bobberSpeed;
-						} else if ((viewXCenter+ bobberX) < (viewXCenter - (210/2)) && bobberDirection == -1) {
-						    bobberDirection = 1;
-						    bobberX += 2;
-						    alarm[3] = bobberSpeed;
-						}
-
-						// Bobber image angle
-						if (imageAngle > 15 &&
-						    bobberRotateDirection == 1) {
-						    imageAngle -= 1;
-						    bobberRotateDirection = -1;
-						    alarm[4] = bobberRotateSpeed;
-						} else if (imageAngle < -15 &&
-						    bobberRotateDirection == -1) {
-						    imageAngle += 1;
-						    bobberRotateDirection = 1;
-						    alarm[4] = bobberRotateSpeed;
-						}
+						scr_minigame_fishing_bobber_movement();
+						scr_minigame_fishing_bobber_angle();
 					}
 				}
 			}break;

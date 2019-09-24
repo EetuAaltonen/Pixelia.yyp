@@ -1,3 +1,4 @@
+// TODO: Check this code
 var viewWidth = camera_get_view_width(view_camera[0]);
 var viewHeight = camera_get_view_height(view_camera[0]);
 

@@ -4,19 +4,32 @@ depth = Depth.Dialog;
 fishingState = undefined;
 minCatchTime = scr_time_sec_to_alarm(2);
 maxCatchTime = scr_time_sec_to_alarm(5);
+
+bobberAreaHeight = 30;
+bobberAreaWidth = 600;
+
 bobberX = 20;
-bobberSpeed = 1;
+bobberScale = 4;
+bobberMoveTimer = 0;
+bobberSpeed = 5; // [10...0] lower is faster
+bobberSteps = 4;
 bobberDirection = 1;
+
 bobberRotateDirection = 1;
-bobberRotateSpeed = 2;
+bobberRotateTimer = 0;
+bobberRotateSpeed = 10;
+bobberRotateSteps = 2;
+bobberMaxAngle = 35;
 bobberTempImageAngle = image_angle;
 imageAngle = bobberTempImageAngle;
 
-// Success text
-successText = "";
 
 // ???
-area1Xscale = 10;
+area1Xscale = 1 / 3;
+area2Xscale = 1 / 8;
+
+// Success text
+successText = "";
 
 // Loot
 items = ds_list_create();
