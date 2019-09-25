@@ -35,11 +35,11 @@ for (i = 0; i < renderDataCount; i++) {
 		}break;
 		case ItemData.Count: {
 			//Item Count
-			draw_text(textXPos, yPos, string(data[render[RenderData.Index]]) + "  x");
+			draw_text(textXPos, yPos, string(data[render[RenderData.Index]]) + "x");
 		}break;
 		case ItemData.Weight: {
 			//Item Weight
-			draw_text(textXPos, yPos, string(data[render[RenderData.Index]]) + "  Pw");	
+			draw_text(textXPos, yPos, string(data[render[RenderData.Index]]) + "Pw");	
 		}break;
 		case ItemData.Price: {
 			//Item Price
@@ -48,7 +48,7 @@ for (i = 0; i < renderDataCount; i++) {
 					draw_set_color(c_red);
 				}
 			}
-			draw_text(textXPos, yPos, scr_coins_format(data[render[RenderData.Index]]));
+			draw_text(textXPos, yPos, string(data[render[RenderData.Index]]) + "G");
 		}break;
 	}
 }

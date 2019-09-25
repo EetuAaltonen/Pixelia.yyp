@@ -30,13 +30,6 @@ for (i = 0; i < renderDataCount; i++) {
 						render[RenderData.BorderAlpha],
 						true, true
 					);
-					/*draw_rectangle(
-						x - ((bgWidth / 2)) - borderPadding,
-						y - ((bgHeight / 2)) - borderPadding,
-						x + ((bgWidth / 2)) + borderPadding,
-						y + ((bgHeight / 2)) + borderPadding,
-						false
-					);*/
 				}break;
 				default: {
 					scr_hud_draw_background(
@@ -46,14 +39,6 @@ for (i = 0; i < renderDataCount; i++) {
 						render[RenderData.BorderColor],
 						1, false, true
 					);
-					/*textMargin = render[RenderData.TextMargin];
-					draw_rectangle(
-						x + (textMargin - borderPadding),
-						y - (bgHeight / 2) - borderPadding,
-						x + (textMargin + bgWidth + borderPadding),
-						y + (bgHeight / 2) + borderPadding,
-						false
-					);*/
 				}
 			}
 		}
@@ -68,13 +53,6 @@ for (i = 0; i < renderDataCount; i++) {
 					render[RenderData.BgAlpha],
 					true, true
 				);
-				/*draw_rectangle(
-					x - ((bgWidth / 2)),
-					y - ((bgHeight / 2)),
-					x + ((bgWidth / 2)),
-					y + ((bgHeight / 2)),
-					false
-				);*/
 			}break;
 			default: {
 				scr_hud_draw_background(
@@ -84,14 +62,6 @@ for (i = 0; i < renderDataCount; i++) {
 					render[RenderData.BgAlpha],
 					false, true
 				);
-				/*textMargin = render[RenderData.TextMargin];
-				draw_rectangle(
-					x + (textMargin),
-					y - (bgHeight / 2),
-					x + (textMargin + bgWidth),
-					y + (bgHeight / 2),
-					false
-				);*/
 			}
 		}
 		draw_set_alpha(1);

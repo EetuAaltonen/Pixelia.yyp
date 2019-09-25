@@ -11,7 +11,9 @@
         "8dcf7b31-25e5-432d-88d7-5502ac2c725f",
         "3f30177b-9db7-48e6-b114-caf6c224055e",
         "74f31f6e-aba3-4e4d-aa9a-0791edb1ff0e",
-        "79d077dd-a820-44d6-bfc7-a5356e106a40"
+        "79d077dd-a820-44d6-bfc7-a5356e106a40",
+        "d6f6ddb5-e68a-4371-a8d3-3ccc50632284",
+        "ea144847-17ca-49a2-99d8-3340a4d6f883"
     ],
     "filterType": "GMFont",
     "folderName": "GUI",

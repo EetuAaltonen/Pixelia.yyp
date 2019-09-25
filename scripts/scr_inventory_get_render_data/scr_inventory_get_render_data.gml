@@ -21,10 +21,10 @@ switch (hudState) {
 	}break;
 	case HudStates.Shop: {
 		return [
-			[ItemData.Sprite, 0, 26, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-			[ItemData.Name, 15, 152, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-			[ItemData.Count, 169, 46, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-			[ItemData.Price, 217, 46, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
+			[ItemData.Sprite, 0, 50, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Name, 26, 360, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Count, 391, 92, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Price, 488, 92, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
 		];
 	}break;
 	case HudStates.Loot: {

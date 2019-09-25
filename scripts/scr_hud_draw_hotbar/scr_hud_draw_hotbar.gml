@@ -61,7 +61,7 @@ draw_set_halign(fa_right);
 draw_sprite_ext(spr_money_icon, 0, guiWidth - 28,
 		        yPos + 35, guiWRatio, guiHRatio,
 		        image_angle, c_white, image_alpha);
-draw_text(guiWidth - 58, yPos + 35, scr_coins_format(global.coins));
+draw_text(guiWidth - 58, yPos + 35, string(global.coins) + "G");
 	
 //Potion
 draw_sprite_ext(spr_potion_icon, 0, guiWidth - 170,

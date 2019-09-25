@@ -8,6 +8,8 @@ if (global.hudState == HudStates.Inventory ||
 		make_color_rgb(102, 86, 61),
 		1, false, false
 	);
+	// Item info
+	scr_inventory_draw_item_info();
 }
 
 /*

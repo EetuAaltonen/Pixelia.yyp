@@ -831,14 +831,6 @@
             }
         },
         {
-            "Key": "1395cc61-be99-49fb-938e-0dfe8242b1ea",
-            "Value": {
-                "id": "9d9f37d8-12ad-4ae1-9add-2d139402e5e4",
-                "resourcePath": "fonts\\fnt_draw_gui_medium\\fnt_draw_gui_medium.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "13c4c3ba-0b85-4b15-be43-3387bb937372",
             "Value": {
                 "id": "5777b74b-7a6e-490e-bb53-655b610263ff",
@@ -1687,6 +1679,14 @@
             }
         },
         {
+            "Key": "26ddced3-f6a5-433b-8acd-c42b2be25c06",
+            "Value": {
+                "id": "f3e4bd4d-9a33-4e32-8dfc-6106e847751f",
+                "resourcePath": "scripts\\scr_inventory_draw_item_info\\scr_inventory_draw_item_info.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "26fe8927-863a-4033-9660-bd55a54a6b00",
             "Value": {
                 "id": "87562c7b-cd80-487a-9008-ca6cf3f539a5",
@@ -1956,14 +1956,6 @@
                 "id": "5ad5bbb4-359c-4376-b713-a2f5cc7989c7",
                 "resourcePath": "objects\\obj_source_oak_tree\\obj_source_oak_tree.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "2e90ce84-1ddd-4e3d-8741-4c6f4b187d5b",
-            "Value": {
-                "id": "d3d815f0-7e30-4cf9-9576-041831bcdf82",
-                "resourcePath": "scripts\\scr_coins_format\\scr_coins_format.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -7591,6 +7583,14 @@
             }
         },
         {
+            "Key": "be023cd5-7037-4d32-b37c-d56c8e101c3c",
+            "Value": {
+                "id": "f1a405b9-9db6-427b-bb3f-467567359a4a",
+                "resourcePath": "views\\be023cd5-7037-4d32-b37c-d56c8e101c3c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "be298050-ba2e-4de8-8011-f6feaa6567dc",
             "Value": {
                 "id": "dfba9ad1-1c99-4a48-bcd7-e2da684973ae",
@@ -9295,6 +9295,14 @@
             }
         },
         {
+            "Key": "ea144847-17ca-49a2-99d8-3340a4d6f883",
+            "Value": {
+                "id": "706a7a4b-e7c2-4cd0-b526-15ec148020ee",
+                "resourcePath": "fonts\\fnt_draw_gui_medium\\fnt_draw_gui_medium.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "ea2e441f-476d-4dbb-a143-5eb02c741eca",
             "Value": {
                 "id": "00e8fbe8-6cd8-41bf-8fa4-9629b1aac44b",
@@ -10323,6 +10331,7 @@
         "60bcbc61-4078-4ceb-9409-7557a1ec2b28",
         "defd3b50-f50d-4a36-9c4f-18858305815f",
         "0998f4ba-d9d7-4080-826e-0cf81193bf2a",
+        "26ddced3-f6a5-433b-8acd-c42b2be25c06",
         "b8927ef7-e13b-4238-87af-923723778ed5",
         "84798a5d-7c3e-4909-9bcd-d9bae53e0412",
         "11c7c643-553f-4efa-9cd9-be7f13d496ff",
@@ -10433,7 +10442,6 @@
         "800b4566-f3ea-4f8b-b07c-985aa24cfeec",
         "928fb863-3f18-46f5-9a13-50db5150b5a2",
         "3e5a6074-5cdf-4b9c-901d-f7f600c6858a",
-        "2e90ce84-1ddd-4e3d-8741-4c6f4b187d5b",
         "b8d7b00a-3c32-410c-8b4e-ea0cc735ec08",
         "77e82d43-b6b2-4a47-81eb-6401d8a736d9",
         "e01d8529-6967-4d94-a84b-ef5a6c89a01d",

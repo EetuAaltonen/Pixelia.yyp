@@ -10,10 +10,10 @@ draw_text(scr_gui(17,"x"), scr_gui(84,"y"), string(string(pageIndex) + " / " + s
 
 draw_set_halign(fa_right);
 //Your Gold
-draw_text(scr_gui(490,"x"), scr_gui(64,"y"), scr_coins_format(global.coins));
+draw_text(scr_gui(490,"x"), scr_gui(64,"y"), string(global.coins) + "G");
 //Merchant's Gold
 if (global.hudState == HudStates.Shop && merchant != "null") {
-	draw_text(scr_gui(490,"x"), scr_gui(84,"y"), scr_coins_format(merchant.money));
+	draw_text(scr_gui(490,"x"), scr_gui(84,"y"), string(merchant.money) + "G");
 }
 
 draw_set_halign(fa_left);
