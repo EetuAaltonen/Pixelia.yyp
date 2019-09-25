@@ -1,9 +1,23 @@
+var posX = scr_position_to_gui(mouse_x, "x");
+var posY = scr_position_to_gui(mouse_y, "y");
+
 if (room == Menu || 
 	(global.hudState != HudStates.Null &&
 	global.hudState != HudStates.RoomChange
 	&& room != First_loading &&
 	global.hudState != HudStates.Minigame)) {
-	var posX = scr_position_to_gui(mouse_x, "x");
-	var posY = scr_position_to_gui(mouse_y, "y");
+	
 	draw_sprite_ext(spr_mouse, 0, posX, posY, global.resWAspect, global.resHAspect, image_angle, c_white, 1);
+	
+	// Mouse position on screen
+	draw_set_font(fnt_draw_gui_small);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_bottom);
+	draw_set_color(c_black);
+
+
+	var mouseX = window_mouse_get_x();
+	var mouseY = window_mouse_get_y();
+	var pos = string(mouseX) + " | " + string(mouseY); 
+	draw_text(posX, posY - 40, pos);
 }

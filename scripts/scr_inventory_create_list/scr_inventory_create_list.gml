@@ -26,7 +26,7 @@ for (i = 0; i < itemsPerPage; i++) {
 	if (i < itemCount) {
 		data = ds_list_find_value(items, i);
 	}
-	instance = instance_create(viewX+xPos, viewY+yPos+(i*yMargin), obj_listed_item);
+	instance = instance_create(viewX + xPos, viewY + yPos + (i * yMargin), obj_listed_item);
 	instance.index = i;
 	if (data != "null") {
 		instance.sprite_index = data[ItemData.Sprite];

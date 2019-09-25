@@ -5,14 +5,14 @@ if (updateValues) {
 		infoText = scr_listed_item_get_infoText(data);
 		
 		equipmentIndex = undefined;
-		//Check If Equipped
+		// Check If Equipped
 		if (string_pos("equipment", data[ItemData.Type])) {
 			scr_listed_item_check_equipped();
 		}
 		
-		//Check If Mouse Over
+		// Check If Mouse Over
 		if (distance_to_point(mouse_x, mouse_y) == 0) {
-			///Set inventory info text
+			// Set inventory info text
 			obj_inventory_controller.itemInfoText = infoText;	
 		}
 	}

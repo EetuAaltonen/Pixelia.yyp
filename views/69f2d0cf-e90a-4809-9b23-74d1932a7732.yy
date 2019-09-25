@@ -24,7 +24,8 @@
         "95ba7f7b-de85-4fae-8abf-9a9881032c9c",
         "bf1396b1-b48f-4b49-ac4b-d0822ea89750",
         "f4ec6299-58ba-4847-a101-2bb3f27cd1b2",
-        "939e8e7e-6bc9-4834-b544-8da7cdb2541f"
+        "939e8e7e-6bc9-4834-b544-8da7cdb2541f",
+        "5cd339b5-49b4-4137-b534-c5006194f9e0"
     ],
     "filterType": "GMScript",
     "folderName": "HUD",

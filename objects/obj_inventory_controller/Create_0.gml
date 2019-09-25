@@ -23,8 +23,7 @@ createOnce = true; //Create objects once on the list
 listOfBuffs = false;
 
 defaultInfoText = "Item info..."; 
-item_info_text = defaultInfoText;
-itemInfoText = defaultInfoText;
+itemInfoText = undefined;
 //Filter
 filter = "";
 

@@ -5,7 +5,7 @@ return [
 //	OLD [sprite, name, type/shop, count, durability, weight, price, effect, effectAmount, effectDuration, requiredLevel]	
 	/*[Collectable]*/
 		//Ores
-		[spr_iron_ore,"Iron Ore","tempDescription","[forge,blacksmith]",1,"null","null","null","null","null","null","null",1,5,0],
+		[spr_iron_ore,"Iron Ore","This is test description#to test if line breaks#are#OK","[forge,blacksmith]",1,"null","null","null","null","null","null","null",1,5,0],
 		[spr_gold_ore,"Gold Ore","tempDescription","[forge,furnace,blacksmith]",1,"null","null","null","null","null","null","null",1,5,0],
 		[spr_silver_ore,"Silver Ore","tempDescription","[forge,blacksmith]",1,"null","null","null","null","null","null","null",1,5,0],
 		[spr_ebony_ore,"Ebony Ore","tempDescription","[forge,blacksmith]",1,"null","null","null","null","null","null","null",1,5,0],
@@ -32,13 +32,13 @@ return [
 		[spr_bronze_ingot,"Bronze Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		[spr_ebony_ingot,"Ebony Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		[spr_crimson_ingot,"Crimson Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
-		[spr_adamite_ingot,"Adamite Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
+		[spr_adamite_ingot,"Adamite Ingot","This is test description#to test if line breaks#are#OK","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		[spr_fluellite_ingot,"Fluellite Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		[spr_pinalite_ingot,"Pinalite Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		[spr_troilite_ingot,"Troilite Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		[spr_pyrrhotite_ingot,"Pyrrhotite Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		[spr_zincite_ingot,"Zincite Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
-		[spr_cavansite_ingot,"Cavansite Ingot","tempDescription","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
+		[spr_cavansite_ingot,"Cavansite Ingot","This is test description#to test if line breaks#are#OK","[forge,workbench,blacksmith]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		//Bow Model
 		[spr_bow_model,"Bow Model","tempDescription","[workbench,general]",1,"null","null","null","null","null","null","null",0.3,5,0],
 		//String

@@ -17,7 +17,7 @@ if (updateValues) {
 	scr_inventory_list_filter();
 	
 	//Clear item info
-	itemInfoText = defaultInfoText;
+	itemInfoText = undefined;
 	
 	var listSize = ds_list_size(listOfItems);
 	

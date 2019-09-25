@@ -10,6 +10,8 @@ if (global.hudState == HudStates.Inventory ||
 	);
 	// Item info
 	scr_inventory_draw_item_info();
+	// Mouse/control info
+	scr_inventory_draw_mouse_info();
 }
 
 /*
@@ -85,27 +87,4 @@ if (global.hudState == HudStates.Crafting) {
 	} else if (global.hudAction == HudActions.Withdraw) {
 		scr_stash_list_items();
 	}	
-} else if (global.hudState == HudStates.Map) {
-	//Font
-	draw_set_font(fnt_draw_gui_small);
-	draw_set_color(c_black);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
-
-	//Level
-	draw_text(scr_gui(10, "x"), scr_gui(279, "y"), "Level  " + string(global.level));
-	
-	draw_set_halign(fa_right);
-	//Skill XP
-	draw_text(scr_gui(490, "x"), scr_gui(279, "y"), "XP  " + string(global.xp) + " / " + string(global.xpLimit));
-	
-	draw_set_halign(fa_left);
-	//Enchanting XP
-	draw_text(scr_gui(298, "x"), scr_gui(279, "y"), "Ench. XP  " + string(global.enchantingXp) + " / " + string(global.enchantingXpLimit));
-	
-	//Coins
-	draw_text(scr_gui(116, "x"), scr_gui(279, "y"), scr_coins_format(global.coins));
-	
-	//Potions
-	draw_text(scr_gui(212, "x"), scr_gui(279, "y"), string(global.potions) + " x");
 }
