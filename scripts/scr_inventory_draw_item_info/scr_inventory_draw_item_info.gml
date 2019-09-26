@@ -60,12 +60,4 @@ if (!is_undefined(itemInfoText)) {
 	
 	// Item details
 	draw_text(xPos, yPos, string_hash_to_newline(itemInfoText[ItemInfoText.Details]));
-} else {
-	scr_draw_set_font(
-		fnt_draw_gui_small,
-		fa_left, fa_top,
-		c_black, 1
-	);
-	
-	draw_text(xPos, yPos, defaultInfoText);
 }

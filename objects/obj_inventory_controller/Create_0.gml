@@ -14,6 +14,8 @@ itemsPerPage = 10;
 startIndex = 0;
 lastItem = 0;
 
+itemInfoText = undefined;
+
 //Shop
 listOfShop = "null";
 merchant = "null";
@@ -22,8 +24,6 @@ pageUpdate = true;
 createOnce = true; //Create objects once on the list
 listOfBuffs = false;
 
-defaultInfoText = "Item info..."; 
-itemInfoText = undefined;
 //Filter
 filter = "";
 
