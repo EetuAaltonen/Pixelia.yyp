@@ -136,7 +136,7 @@ global.carryingCapacityPlus = 0;
 	belt, 7
 	boots 8
 }*/
-global.equipments = ["", "", "", "", "", "", "", "", ""]//ds_list_create();
+global.equipment = ["", "", "", "", "", "", "", "", ""]//ds_list_create();
 
 //Global variables - Stash
 global.stash = ds_list_create();

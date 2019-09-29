@@ -13,11 +13,11 @@
 var equipmentTypes = [
 	"helmet",
 	"amulet",
+	"gloves",
+	"ring",
 	"armor",
 	"priweapon",
 	"secweapon",
-	"gloves",
-	"ring",
 	"belt",
 	"boots"
 ];

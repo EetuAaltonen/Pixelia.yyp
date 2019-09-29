@@ -16,11 +16,11 @@ if (file_exists("Inventory.ini")) {
 		var listSize = ds_list_size(equipments);
 		var item;
 		var i;
-		if (listSize == array_length_1d(global.equipments)) {
+		if (listSize == array_length_1d(global.equipment)) {
 			for (i = 0; i < listSize; i++) {
 				item = ds_list_find_value(equipments, i);
 				if (item != "") {
-					global.equipments[i] = item;
+					global.equipment[i] = item;
 				}
 			}
 		}

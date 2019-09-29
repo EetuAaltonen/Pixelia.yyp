@@ -8,10 +8,10 @@ var data = ds_list_write(global.inventory);
 ini_write_string(global.save_file, "Inventory", data);
 //Equipment
 var equipments = ds_list_create();
-var listSize = array_length_1d(global.equipments);
+var listSize = array_length_1d(global.equipment);
 var i;
 for (i = 0; i < listSize; i++) {
-	ds_list_add(equipments, global.equipments[i]);
+	ds_list_add(equipments, global.equipment[i]);
 }
 data = ds_list_write(equipments);
 ini_write_string(global.save_file, "Equipment", data);

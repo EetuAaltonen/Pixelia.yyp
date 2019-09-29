@@ -1,7 +1,7 @@
 //Unequip
 if (equipmentIndex > -1) {
-	var tempItem = global.equipments[equipmentIndex];
-	global.equipments[equipmentIndex] = "";
+	var tempItem = global.equipment[equipmentIndex];
+	global.equipment[equipmentIndex] = "";
 	
 	scr_listed_item_update_status(equipmentIndex);
 	

@@ -20,7 +20,7 @@ if (global.armor > ((global.maxArmor + global.armorPlus)*0.75)) {
 } else {
 	draw_set_color(c_red);
 }
-draw_text(xPadding + (spriteWidth / 2) + 1, yPadding + (spriteHeight / 2) - 1, string(global.armor));
+draw_text(xPadding + (spriteWidth / 2) + 1, yPadding + (spriteHeight / 2) - 3, string(global.armor));
 
 //Font
 draw_set_font(fnt_draw_gui_small);

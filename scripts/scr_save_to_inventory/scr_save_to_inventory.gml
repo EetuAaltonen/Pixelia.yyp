@@ -14,9 +14,9 @@ for (i = 0; i < listSize; i++) {
         count += addedAmount;
         if (count <= 0) {
             ds_list_delete(global.inventory, i);
-			var idx = ds_list_find_index(global.equipments, spriteName);
+			var idx = ds_list_find_index(global.equipment, spriteName);
 			if (idx != 1) {
-				ds_list_delete(global.equipments, idx);
+				ds_list_delete(global.equipment, idx);
 			}
         } else {
             ds_list_replace(value, 2, count);

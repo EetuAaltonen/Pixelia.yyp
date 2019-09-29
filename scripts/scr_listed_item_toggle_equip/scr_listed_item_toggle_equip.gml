@@ -4,7 +4,7 @@
 if (equipmentIndex != undefined) {
 	//Unequip
 	if (equipmentIndex > -1) {
-		global.equipments[equipmentIndex] = "";
+		global.equipment[equipmentIndex] = "";
 		
 		scr_listed_equipment_update_status(equipmentIndex);
 		
@@ -21,13 +21,13 @@ if (equipmentIndex != undefined) {
 	} else {
 		var index = scr_listed_item_get_equipment_type(data);
 		if (index > -1) {
-			if (global.equipments[index] == "") {
+			if (global.equipment[index] == "") {
 				if (data[ItemData.Effect] != "null") {
 					//Add buff
 					scr_plr_effects_add(data[ItemData.Effect], data[ItemData.EffectAmount], data[ItemData.EffectDuration]);
 				}
 				scr_listed_item_equip(index);
-			} else if (!scr_item_compare_items(global.equipments[index], data, "full")) {
+			} else if (!scr_item_compare_items(global.equipment[index], data, "full")) {
 				if (data[ItemData.Effect] != "null") {
 					//Add buff
 					scr_plr_effects_add(data[ItemData.Effect], data[ItemData.EffectAmount], data[ItemData.EffectDuration]);

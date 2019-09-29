@@ -1,6 +1,6 @@
 if (updateValues) {
 	updateValues = false;
-	var tempItem = global.equipments[equipmentIndex];
+	var tempItem = global.equipment[equipmentIndex];
 	if (tempItem != "") {
 		infoText = scr_listed_item_get_infoText(tempItem);
 		itemImage = tempItem[0];

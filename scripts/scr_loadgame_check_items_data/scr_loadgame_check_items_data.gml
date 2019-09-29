@@ -36,9 +36,9 @@ for (i = 0; i < listsCount; i++) {
 }
 
 var itemExists;
-listSize = array_length_1d(global.equipments);
+listSize = array_length_1d(global.equipment);
 for (i = 0; i < listSize; i++) {
-	data = global.equipments[i];
+	data = global.equipment[i];
 	if (data != "") {
 		itemExists = false;
 		for (j = 0; j < itemsCount; j++) {
@@ -59,7 +59,7 @@ for (i = 0; i < listSize; i++) {
 		//This Removes Equipped Item If It's Not Exists Anymore
 		//Or If Data Have Been Changed
 		if (!itemExists) {
-			global.equipments[i] = "";
+			global.equipment[i] = "";
 		}
 	}
 }

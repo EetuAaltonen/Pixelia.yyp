@@ -36,9 +36,9 @@ if (global.hudState == HudStates.Null) {
     if (action_state != Actions.Bow) {
         var bowFound = false;
 		var arrowFound = false;
-		var listSize = ds_list_size(global.equipments);
+		var listSize = ds_list_size(global.equipment);
 		for (var i = 0; i < listSize; i++) {
-			equippedItem = ds_list_find_value(global.equipments, i);
+			equippedItem = ds_list_find_value(global.equipment, i);
 			if	(string_pos("bow", equippedItem)) {
 				bowFound = true;
 			}

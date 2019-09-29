@@ -69,24 +69,24 @@ if (!is_undefined(itemInfoText)) {
 		// Helmet
 		[xPos + (bgWidth / 2), yPos + 30],
 		// Amulet
-		[xPos + (bgWidth / 2), yPos + 80],
-		// Ring
-		[xPos + (bgWidth * 0.75), yPos + 80],
+		[xPos + (bgWidth / 2), yPos + 84],
 		// Gloves
-		[xPos + (bgWidth / 4), yPos + 80],
+		[xPos + (bgWidth / 4), yPos + 84],
+		// Ring
+		[xPos + (bgWidth * 0.75), yPos + 84],
 		// Armor
-		[xPos + (bgWidth / 2), yPos + 130],
+		[xPos + (bgWidth / 2), yPos + 138],
 		// PriWeapon
-		[xPos + (bgWidth / 4), yPos + 130],
+		[xPos + (bgWidth / 4), yPos + 138],
 		// SecWeapon
-		[xPos + (bgWidth * 0.75), yPos + 130],
+		[xPos + (bgWidth * 0.75), yPos + 138],
 		// Belt
-		[xPos + (bgWidth / 2), yPos + 180],
+		[xPos + (bgWidth / 2), yPos + 192],
 		// Boots
-		[xPos + (bgWidth / 2), yPos + 230]
+		[xPos + (bgWidth / 2), yPos + 244]
 	];
 	
-	var i, slot;
+	var i, slot, equipment;
 	var slotCount = array_length_1d(equipmentSlots);
 	for (i = 0; i < slotCount; i++) {
 		slot = equipmentSlots[i];
@@ -96,5 +96,14 @@ if (!is_undefined(itemInfoText)) {
 			make_color_rgb(173, 166, 158),
 			1, true, false
 		);
+		if (global.equipment[i] != "") {
+			equipment = global.equipment[i];
+			draw_sprite_ext(
+				equipment[ItemData.Sprite], 0,
+				slot[0], slot[1] + (equipmentBgHeight / 2),
+				guiWRatio, guiHRatio,
+				image_angle, c_white, 1
+			);
+		}
 	}
 }

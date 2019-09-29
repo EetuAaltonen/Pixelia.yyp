@@ -1,4 +1,4 @@
-if (selected == true) {
+if (selected) {
     if (!keyboard_check_pressed(vk_enter)) {
         if (!keyboard_check_pressed(vk_backspace)) {
             if (string_length(keyboard_string) <= max_width) {
@@ -48,5 +48,14 @@ if (selected == true) {
 			selected = false;
 		}
     }
+} else if (keyboard_check_pressed(vk_enter)) {
+	if (!global.popUp && room != Menu) {
+		if (txt == place_holder) {
+		    keyboard_string = "";
+		} else {
+		    keyboard_string = txt;
+		}
+		selected = true;
+		alarm[1] = 1;
+	}
 }
-

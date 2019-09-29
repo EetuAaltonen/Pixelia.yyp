@@ -1,7 +1,7 @@
 if (equipmentIndex != undefined) {
 	//Unequip
 	if (equipmentIndex > -1) {
-		global.equipments[equipmentIndex] = "";
+		global.equipment[equipmentIndex] = "";
 		equipmentIndex = -1;
 		//Remove buff
 		scr_plr_effects_remove(data[7]);

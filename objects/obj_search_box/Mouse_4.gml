@@ -6,7 +6,7 @@ if (!global.popUp) {
 		}
 	}
 
-	if (selected == false && !recipeBookOpen) {
+	if (!selected && !recipeBookOpen) {
 		if (txt == place_holder) {
 		    keyboard_string = "";
 		} else {

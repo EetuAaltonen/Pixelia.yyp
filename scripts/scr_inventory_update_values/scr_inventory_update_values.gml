@@ -53,8 +53,9 @@ if (updateValues) {
 			scr_inventory_update_list(itemList);
 		}
 		
+		// TODO: Fix equipment mouse hover
 		// Create listed equipments
-		if (global.hudAction == HudActions.Equipment) {
+		/*if (global.hudAction == HudActions.Equipment) {
 			// scr_listed_item_get_equipment_type()
 			var equipmentsExist = instance_exists(obj_listed_equipment);
 			var i;
@@ -86,7 +87,7 @@ if (updateValues) {
 				instance.updateValues = true;
 				instance.depth = Depth.ListItem;
 			}
-		}
+		}*/
 		
 	} else {
 		scr_listed_item_remove();
