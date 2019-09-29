@@ -63,7 +63,7 @@ return [
 		[spr_knight_helmet,"Knight Helmet","tempDescription","[equipment,helmet,armorer]",1,"null","null",30,100,"null","null","null",0.1,5,0],
 		//Shields
 		[spr_wooden_shield,"Wooden Shield","tempDescription","[equipment,secweapon,armorer]",1,"null","null",10,100,"null","null","null",0.1,5,0],
-		[spr_knight_shield,"Knight Shield","tempDescription","[equipment,secweapon,armorer]",1,"null","null",30,100,"null","null","null",0.1,5,0],
+		[spr_knight_shield,"Knight Shield","tempDescription","[equipment,secweapon,armorer]",1,"null","null",30,100,"antibleed","null","null",0.1,5,0],
 		//Boots
 		[spr_leather_boots,"Leather Boots","tempDescription","[equipment,boots,armorer]",1,"null","null",10,100,"speed","null",-1,0.1,5,1],
 		//Rings

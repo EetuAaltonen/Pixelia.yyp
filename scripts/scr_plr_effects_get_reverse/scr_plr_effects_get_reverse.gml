@@ -1,6 +1,5 @@
 var effect = argument0;
 var i, data;
-var j = 0;
 var effectList = scr_effect_pairs();
 var effectsCount = array_length_1d(effectList);
 var effectPairs = ds_list_create();

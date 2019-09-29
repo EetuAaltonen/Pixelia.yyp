@@ -33,7 +33,7 @@ for (i = 0; i < arraySize; i++) {
 				details += lineBreak;
 			}break;
 			case ItemData.Price: {
-				details = info[i] + string(data[i]) + mark[i];
+				details += info[i] + string(data[i]) + mark[i];
 				if (data[ItemData.Count] > 1) {
 					// Calculate Stack Price
 					details += " (" + string(data[i] * data[ItemData.Count]) + ")";
@@ -41,12 +41,13 @@ for (i = 0; i < arraySize; i++) {
 				details += lineBreak;
 			}break;
 			default: {
-				if (i == ItemData.Description || i == ItemData.Count || i == ItemData.Durability ||
+				if (i == ItemData.Count || i == ItemData.Armor || i == ItemData.Durability ||
 					i == ItemData.Effect || i == ItemData.EffectAmount || i == ItemData.EffectDuration ||
 					i == ItemData.RequiredLevel) {
-					details += info[i] + string(data[i]) + mark[i];
 					if (data[i] == -1) {
 						details += info[i] + "---" + mark[i];
+					} else {
+						details += info[i] + string(data[i]) + mark[i];	
 					}
 					details += lineBreak;
 				}

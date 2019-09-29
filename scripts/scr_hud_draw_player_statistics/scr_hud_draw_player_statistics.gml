@@ -77,6 +77,24 @@ scr_hud_draw_background(
 	make_color_rgb(64, 20, 224),
 	1, false, false
 );
+
+// Buff icons
+var i, buff, sprite;
+var xPos = 12;
+var yPos = 78;
+var margin = 30;
+var buffCount = ds_list_size(global.buffs);
+for (i = 0; i < buffCount; i++) {
+	buff = ds_list_find_value(global.buffs, i);
+	sprite = asset_get_index("spr_buff_icon_" + buff[0]);
+	draw_sprite_ext(
+		sprite, 0,
+		xPos + (margin * i), yPos,
+		guiWRatio, guiHRatio,
+		image_angle, c_white, 1
+	);
+}
+
 //draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.mana) + " / " + string(global.maxMana));
 
 ///Draw stats
