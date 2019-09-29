@@ -1,7 +1,7 @@
 //scr_item_info_struct()
 if (updateValues) {
 	updateValues = false;
-	if (data != "null") {
+	if (!is_undefined(data)) {
 		infoText = scr_listed_item_get_infoText(data);
 		
 		equipmentIndex = undefined;
@@ -13,7 +13,7 @@ if (updateValues) {
 		// Check If Mouse Over
 		if (distance_to_point(mouse_x, mouse_y) == 0) {
 			// Set inventory info text
-			obj_inventory_controller.itemInfoText = infoText;	
+			obj_inventory_controller.itemInfoText = infoText;
 		}
 	}
 }

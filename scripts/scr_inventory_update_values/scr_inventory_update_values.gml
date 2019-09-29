@@ -8,7 +8,7 @@ if (updateValues) {
 	
 	//Create Search Box
 	if (!instance_exists(obj_search_box)) {
-		instance_create(viewX+35, viewY+76, obj_search_box);
+		instance_create(viewX + 50, viewY + 76, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
@@ -91,4 +91,6 @@ if (updateValues) {
 	} else {
 		scr_listed_item_remove();
 	}
+	
+	controlsInfo = scr_inventory_get_controls_info(global.hudState);
 }

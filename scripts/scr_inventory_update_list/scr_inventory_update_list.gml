@@ -7,11 +7,11 @@ if (instance_exists(obj_listed_item)) {
 	var i, tempInstance, data;
 	for (i = 0; i < instanceCount; i++) {
 		tempInstance = instance_find(obj_listed_item, i);
-		data = "null";
+		data = undefined;
 		if (i < itemCount) {
 			data = ds_list_find_value(items, i);	
 		}
-		if (data != "null") {
+		if (!is_undefined(data)) {
 			tempInstance.sprite_index = data[ItemData.Sprite];
 		}
 		tempInstance.data = data;

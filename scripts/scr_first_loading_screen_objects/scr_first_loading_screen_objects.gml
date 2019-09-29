@@ -16,11 +16,14 @@ ds_list_add(Objects, obj_dialog_controller);
 ds_list_add(Objects, obj_minigame_controller);
 // Toaster
 ds_list_add(Objects, obj_toaster_controller);
-// Stats
+// Statistics
 ds_list_add(Objects, obj_statistics_controller);
+// Hotbar
+ds_list_add(Objects, obj_hotbar_controller);
 // Collectable objects target
-ds_list_add(Objects, obj_money_target);
-ds_list_add(Objects, obj_potion_target);
+// TODO: Really need for collectable coins and potions?
+// ds_list_add(Objects, obj_money_target);
+// ds_list_add(Objects, obj_potion_target);
 // Sources
 ds_list_add(Objects, obj_source_controller);
 // Particles

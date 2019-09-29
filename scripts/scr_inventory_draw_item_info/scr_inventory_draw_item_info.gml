@@ -1,7 +1,7 @@
 var xPos = 645;
 var yPos = 194;
 var bgWidth = 418;
-var bgHeight = 486;
+var bgHeight = 438;
 var borderPadding = 4;
 
 // Box border
@@ -21,13 +21,13 @@ scr_hud_draw_background(
 	1, false, false
 );
 
-xPos = 680;
-yPos = 230;
-
 if (!is_undefined(itemInfoText)) {
 	var spriteXPos = 996;
-	var spriteYPos = 290;
+	var spriteYPos = 296;
 	var spriteScale = 4;
+	
+	xPos = 680;
+	yPos = 230;
 	
 	draw_sprite_ext(
 		itemInfoText[ItemInfoText.Sprite], 0,
@@ -60,4 +60,41 @@ if (!is_undefined(itemInfoText)) {
 	
 	// Item details
 	draw_text(xPos, yPos, string_hash_to_newline(itemInfoText[ItemInfoText.Details]));
+} else if (global.hudAction == HudActions.Equipment) {
+	xPos += borderPadding;
+	bgWidth -= (borderPadding * 2);
+	var equipmentBgWidth = 40;
+	var equipmentBgHeight = equipmentBgWidth;
+	var equipmentSlots = [
+		// Helmet
+		[xPos + (bgWidth / 2), yPos + 30],
+		// Amulet
+		[xPos + (bgWidth / 2), yPos + 80],
+		// Ring
+		[xPos + (bgWidth * 0.75), yPos + 80],
+		// Gloves
+		[xPos + (bgWidth / 4), yPos + 80],
+		// Armor
+		[xPos + (bgWidth / 2), yPos + 130],
+		// PriWeapon
+		[xPos + (bgWidth / 4), yPos + 130],
+		// SecWeapon
+		[xPos + (bgWidth * 0.75), yPos + 130],
+		// Belt
+		[xPos + (bgWidth / 2), yPos + 180],
+		// Boots
+		[xPos + (bgWidth / 2), yPos + 230]
+	];
+	
+	var i, slot;
+	var slotCount = array_length_1d(equipmentSlots);
+	for (i = 0; i < slotCount; i++) {
+		slot = equipmentSlots[i];
+		scr_hud_draw_background(
+			slot[0], slot[1],
+			equipmentBgWidth, equipmentBgHeight,
+			make_color_rgb(173, 166, 158),
+			1, true, false
+		);
+	}
 }

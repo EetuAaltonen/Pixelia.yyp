@@ -3,7 +3,7 @@ var viewY = camera_get_view_y(view_camera[0]);
 ///Open crafting
 if (scr_interact_with_player()) {
 	canOpenClose = false;
-    if (global.hudActon != hudAction) {
+    if (global.hudAction != hudAction) {
         //Create Slots
 		scr_crafting_create_slots(hudAction);
 		//Close Button

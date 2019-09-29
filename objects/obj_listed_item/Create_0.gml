@@ -2,10 +2,10 @@ depth = Depth.ListItem;
 mask_index = spr_listed_item_mask;
 
 //Data
-data = "null";
+data = undefined;
 renderData = undefined;
 index = "null";
-infoText = "";
+infoText = undefined;
 controller = undefined;
 updateValues = true;
 

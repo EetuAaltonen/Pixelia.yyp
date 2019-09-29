@@ -5,5 +5,5 @@ if (!controller.drawToast) {
     controller.drawToast = true;
 }
 if (controller.alarm[1] <= 0) {
-    controller.alarm[1] = controller.toasterSpeed;
+    controller.alarm[1] = controller.toastSpeed;
 }

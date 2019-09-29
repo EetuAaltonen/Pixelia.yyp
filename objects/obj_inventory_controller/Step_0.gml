@@ -1,4 +1,4 @@
-///Level up
+// Level up
 if (instance_exists(obj_player)) {
     if (global.xp >= global.xpLimit) {
         global.skillPoints += 1;

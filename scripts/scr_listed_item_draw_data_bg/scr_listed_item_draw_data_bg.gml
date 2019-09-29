@@ -67,14 +67,18 @@ for (i = 0; i < renderDataCount; i++) {
 		draw_set_alpha(1);
 	}
 }
-	
-//draw_self();
-	
+
 // Draw equipped mark
 if (equipmentIndex != undefined) {
 	if (equipmentIndex > -1) {
-		draw_sprite(spr_listed_item_equipped_mark, 1, x+10, y+6);
+		draw_sprite_ext(spr_listed_item_equipped_mark, 1,
+		xPos + 20, yPos + 12,
+		guiWRatio, guiHRatio,
+		image_angle, c_white, 1);
 	} else {
-		draw_sprite(spr_listed_item_equipped_mark, 0, x+10, y+6);
+		draw_sprite_ext(spr_listed_item_equipped_mark, 0,
+		xPos + 20, yPos + 12,
+		guiWRatio, guiHRatio,
+		image_angle, c_white, 1);
 	}
 }

@@ -17,7 +17,7 @@ if (category != "") {
 	var i;
 	for	(i = 0; i < listSize; i++) {
 		data = ds_list_find_value(list, i);
-		if (string_pos(category, data[2]) != 0) {
+		if (string_pos(category, data[ItemData.Type])) {
 			ds_list_add(tempList, data);
 		}
 	}

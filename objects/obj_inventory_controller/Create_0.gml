@@ -1,10 +1,10 @@
 depth = Depth.HudBg;
 
-//Read saved ini
+// Read saved ini
 key = "";
 typeId = "";
 
-//Inventory
+// Inventory
 updateValues = false;
 listOfItems = ds_list_create();
 
@@ -16,7 +16,7 @@ lastItem = 0;
 
 itemInfoText = undefined;
 
-//Shop
+// Shop
 listOfShop = "null";
 merchant = "null";
 
@@ -24,17 +24,20 @@ pageUpdate = true;
 createOnce = true; //Create objects once on the list
 listOfBuffs = false;
 
-//Filter
+// Filter
 filter = "";
 
-//Coins
+// Coins
 image_scale_coin = 0.70;
-//Potion
+// Potion
 image_scale_potion = 0.70;
 
-//SKilltree
+// SKilltree
 skill_name = "";
 skill_bonus = "";
 skill_price = "";
 globalSkillPoints = global.skillPoints;
 globalPrimaryAttributesValues = global.attributes;
+
+// Controls
+controlsInfo = [];

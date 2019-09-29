@@ -1,0 +1,1 @@
+depth = Depth.Hotbar;

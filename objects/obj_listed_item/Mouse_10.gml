@@ -1,4 +1,4 @@
 // Set inventory info text
-if (data != "null") {
+if (!is_undefined(infoText)) {
 	obj_inventory_controller.itemInfoText = infoText;
 }

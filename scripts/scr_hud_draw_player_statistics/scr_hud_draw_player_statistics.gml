@@ -1,11 +1,13 @@
 var xPadding = 10;
 var yPadding = 10;
+var spriteWidth = 30 * guiWRatio;
+var spriteHeight = spriteWidth;
 	
 //Font
 draw_set_font(fnt_draw_gui_medium);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);	
-		
+
 //Armor
 draw_sprite_ext(spr_armor, 0, xPadding, yPadding, guiWRatio, guiHRatio,
 		        image_angle, c_white, image_alpha);
@@ -18,66 +20,64 @@ if (global.armor > ((global.maxArmor + global.armorPlus)*0.75)) {
 } else {
 	draw_set_color(c_red);
 }
-draw_text(xPadding + 24, yPadding + 22, string(global.armor));
+draw_text(xPadding + (spriteWidth / 2) + 1, yPadding + (spriteHeight / 2) - 1, string(global.armor));
 
 //Font
 draw_set_font(fnt_draw_gui_small);
 draw_set_color(c_black);
 
-var barXPos = xPadding + 54;
+var barXPos = xPadding + 70;
 var barYPos = yPadding;
 var barWidth = 200;
-var barHeight = 20;
+var barHeight = 10;
+var bgColor = make_color_rgb(48, 46, 44);
 
 //Health bar
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth, barHeight,
-	make_color_rgb(138, 51, 51),
-	1, false, false
+	bgColor, 1, false, false
 );
 var barScale = global.healthPoints / global.maxHealth;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth * barScale, barHeight,
-	make_color_rgb(191, 17, 17),
+	make_color_rgb(224, 20, 20),
 	1, false, false
 );
-draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.healthPoints) + " / " + string(global.maxHealth));
+//draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.healthPoints) + " / " + string(global.maxHealth));
 
 // Stamina bar
 barYPos = yPadding + barHeight + 4;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth, barHeight,
-	make_color_rgb(117, 114, 60),
-	1, false, false
+	bgColor, 1, false, false
 );
 barScale = global.stamina/global.maxStamina;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth * barScale, barHeight,
-	make_color_rgb(237, 223, 21),
+	make_color_rgb(224, 210, 20),
 	1, false, false
 );
-draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.stamina) + " / " + string(global.maxStamina));
+//draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.stamina) + " / " + string(global.maxStamina));
 
 // Mana bar
 barYPos = yPadding + (barHeight + 4) * 2;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth, barHeight,
-	make_color_rgb(25, 42, 117),
-	1, false, false
+	bgColor, 1, false, false
 );
 barScale = global.mana/global.maxMana;
 scr_hud_draw_background(
 	barXPos, barYPos,
 	barWidth * barScale, barHeight,
-	make_color_rgb(12, 23, 235),
+	make_color_rgb(64, 20, 224),
 	1, false, false
 );
-draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.mana) + " / " + string(global.maxMana));
+//draw_text(barXPos + (barWidth / 2), barYPos + (barHeight / 2), string(global.mana) + " / " + string(global.maxMana));
 
 ///Draw stats
 /*var viewX = camera_get_view_x(view_camera[0]);

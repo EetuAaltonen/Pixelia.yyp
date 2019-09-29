@@ -4,6 +4,6 @@ var buffsCount = array_length_1d(global.equipments);
 for (i = 0; i < buffsCount; i++) {
 	data = global.equipments[i];
 	if (data != "") {
-		scr_plr_effects_add(data[7], data[8], data[9]);
+		scr_plr_effects_add(data[ItemData.Effect], data[ItemData.EffectAmount], data[ItemData.EffectDuration]);
 	}
 }

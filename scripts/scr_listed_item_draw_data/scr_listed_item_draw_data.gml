@@ -52,28 +52,3 @@ for (i = 0; i < renderDataCount; i++) {
 		}break;
 	}
 }
-/*
-//Item Description
-draw_set_color(c_black);
-if (data[ItemData.RequiredLevel] > global.level) {
-	draw_set_color(c_red);
-}
-draw_text(scr_gui(41,"x"), scr_gui(yPos,"y"), data[ItemData.Name]);
-draw_set_color(c_black);
-//Item Count
-draw_text(scr_gui(185,"x"), scr_gui(yPos,"y"), string(data[ItemData.Count]) + "  x");
-	
-if (global.hudState == HudStates.Inventory) {
-	//Item Weight
-	draw_text(scr_gui(224,"x"), scr_gui(yPos,"y"), string(data[ItemData.Weight]) + "  Pw");	
-} else if (global.hudState == HudStates.Shop) {
-	//Item Price
-	draw_set_color(c_black);
-	if (global.hudAction == HudActions.Buy) {
-		if (data[ItemData.Price] > global.coins) {
-			draw_set_color(c_red);
-		}
-	}
-	draw_text(scr_gui(224,"x"), scr_gui(yPos,"y"), scr_coins_format(data[ItemData.Price]));
-	draw_set_color(c_black);
-}*/

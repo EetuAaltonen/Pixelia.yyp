@@ -22,13 +22,13 @@ var instance;
 if (is_undefined(itemsPerPage)) { itemsPerPage = itemCount; }
 
 for (i = 0; i < itemsPerPage; i++) {
-	data = "null";
+	data = undefined;
 	if (i < itemCount) {
 		data = ds_list_find_value(items, i);
 	}
 	instance = instance_create(viewX + xPos, viewY + yPos + (i * yMargin), obj_listed_item);
 	instance.index = i;
-	if (data != "null") {
+	if (!is_undefined(data)) {
 		instance.sprite_index = data[ItemData.Sprite];
 	}
 	instance.data = data;

@@ -5,15 +5,32 @@ if (global.hudState == HudStates.Inventory ||
 	scr_hud_draw_background(
 		0, 0,
 		guiWidth, guiHeight,
-		make_color_rgb(102, 86, 61),
-		1, false, false
+		make_color_rgb(66, 46, 19),
+		0.9, false, false
 	);
 	// Item list details
 	scr_inventory_draw_item_list_details();
 	// Item info
 	scr_inventory_draw_item_info();
+	// Money
+	scr_inventory_draw_money();
+	// Capacity
+	scr_inventory_draw_capacity();
 	// Mouse/control info
-	scr_inventory_draw_mouse_info();
+	scr_inventory_draw_controls();
+	
+	scr_draw_set_font(
+		fnt_draw_gui_medium,
+		fa_left, fa_top,
+		c_black, 1
+	);
+
+	// No items
+	if (!ds_list_size(listOfItems)) {
+		var xPos = 20;
+		var yPos = 200;
+		draw_text(xPos, yPos, "Backpack is empty");
+	}
 }
 
 /*

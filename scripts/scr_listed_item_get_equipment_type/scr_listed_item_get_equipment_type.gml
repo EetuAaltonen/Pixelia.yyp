@@ -24,13 +24,12 @@ var equipmentTypes = [
 
 var item = argument0;
 var slotCount = array_length_1d(equipmentTypes);
-var typeList = ds_list_create();
 var i, j, char;
 var category = "";
 
 //Item type to array
 for (i = 2; i > 0; i++ ) {
-	char = string_char_at(item[2], i);
+	char = string_char_at(item[ItemData.Type], i);
 	if (char == "]") {
 		break;	
 	}

@@ -1,7 +1,10 @@
 depth = Depth.Toaster;
 toasters = ds_list_create();
 drawToast = false;
-toastMessage = "";
-toastYPos = 0;
+toastMessage = undefined;
+toastStartY = guiHeight - 50;
+toastYPos = toastStartY;
+toastAreaHeight = 200;
 toastAlpha = 0;
-toasterSpeed = 2;
+toastSpeed = 2;
+toastStep = 4;
