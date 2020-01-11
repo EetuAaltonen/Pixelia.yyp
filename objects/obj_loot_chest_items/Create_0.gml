@@ -20,6 +20,9 @@ partEffIndx = 0;
 //Loot
 items = ds_list_create();
 state = Container.Uninit;
-lootType = LootTable.CommonMaterials;
+lootTables = [
+	[LootTable.CommonMaterials, 5],
+	[LootTable.RareJewellery, 1],
+];
 updateValues = false;
 bgHeight = undefined;

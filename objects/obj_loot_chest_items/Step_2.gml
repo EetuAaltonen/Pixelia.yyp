@@ -3,7 +3,7 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 	scr_highlight_remove();
 	if (state == Container.Uninit) {
 		state = Container.Opening;
-		items = scr_calc_drop_odds(lootType, undefined);
+		items = scr_loot_table_get_items(lootTables);
 		image_index = 0;
 		image_speed = 0.8;
 		

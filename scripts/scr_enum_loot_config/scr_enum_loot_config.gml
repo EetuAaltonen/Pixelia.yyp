@@ -1,0 +1,4 @@
+enum LootConfig {
+	Category,
+	MaxLootCount
+}

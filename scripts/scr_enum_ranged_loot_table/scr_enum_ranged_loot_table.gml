@@ -1,0 +1,4 @@
+enum RangedLootTable {
+	LootTable,
+	TotalProbability
+}
