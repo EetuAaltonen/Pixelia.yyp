@@ -9,7 +9,11 @@ if (scr_inventory_check_capacity(data[ItemData.Weight], true)) {
 	}
 	//Toast 
 	scr_add_new_toast(data[ItemData.Name]);
-	scr_inventory_add_item(data, data[ItemData.Count]);
+	if (data[ItemData.Sprite] == spr_coin) {
+		global.coins += data[ItemData.Count];
+	} else {
+		scr_inventory_add_item(data, data[ItemData.Count]);	
+	}
 	
 	controller.updateValues = true;
 }

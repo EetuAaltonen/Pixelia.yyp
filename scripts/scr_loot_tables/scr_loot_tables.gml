@@ -4,13 +4,13 @@
 var category = argument0;
 switch (category) {
 	// All chances can scale up 1 to 10 000
-	case LootTable.CommonFishes: {
+	case LootTable.CommonFish: {
 		return [
 			[spr_raw_salmon, 20],
 			[spr_raw_tuna, 80]
 		];
 	}break;
-	case LootTable.CommonMaterials: {
+	case LootTable.CommonMaterial: {
 		return [
 			[spr_coal, 40], // 40% chance
 			[spr_oak_log, 30], // 30% chance
@@ -18,7 +18,7 @@ switch (category) {
 			[spr_iron_ingot, 10] // 10% chance
 		];
 	}break;
-	case LootTable.CommonWeapons: {
+	case LootTable.CommonWeapon: {
 		return [
 			[]
 		];
@@ -28,6 +28,13 @@ switch (category) {
 			[undefined, 88], // 88% chance to get nothing
 			[spr_gold_ring, 10], // 10% chance
 			[spr_gold_amulet, 2] // 2% chance
+		];
+	}break;
+	
+	// Coins
+	case LootTable.Coin: {
+		return [
+			[spr_coin, 100] // 100% chance
 		];
 	}break;
 }

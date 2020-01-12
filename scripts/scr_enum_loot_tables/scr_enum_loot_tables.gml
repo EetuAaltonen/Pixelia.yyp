@@ -1,7 +1,9 @@
 enum LootTable {
-	CommonFishes,
-	CommonMaterials,
-	CommonWeapons,
+	Coin,
+	
+	CommonFish,
+	CommonMaterial,
+	CommonWeapon,
 	
 	RareJewellery
 }
