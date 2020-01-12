@@ -1,4 +1,6 @@
 // Set inventory info text
-if (!is_undefined(infoText)) {
-	obj_inventory_controller.itemInfoText = infoText;
+if (!controller.updateValues && !updateValues) {
+	if (!is_undefined(infoText)) {
+		obj_inventory_controller.itemInfoText = infoText;
+	}
 }

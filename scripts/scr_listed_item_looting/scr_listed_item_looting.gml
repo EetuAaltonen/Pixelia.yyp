@@ -1,9 +1,9 @@
 if (scr_inventory_check_capacity(data[ItemData.Weight], true)) {
-	var lootCount = ds_list_size(global.tempLoot);
+	var lootCount = ds_list_size(controller.items);
 	for (var i = 0; i < lootCount; i++) {
-		var tempItem = ds_list_find_value(global.tempLoot, i);
+		var tempItem = ds_list_find_value(controller.items, i);
 		if (array_equals(data, tempItem)) {
-			ds_list_delete(global.tempLoot, i);
+			ds_list_delete(controller.items, i);
 			break;
 		}
 	}

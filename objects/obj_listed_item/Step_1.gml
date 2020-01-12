@@ -15,5 +15,7 @@ if (updateValues) {
 			// Set inventory info text
 			obj_inventory_controller.itemInfoText = infoText;
 		}
+	} else {
+		infoText = undefined;	
 	}
 }

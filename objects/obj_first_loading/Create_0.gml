@@ -146,9 +146,6 @@ global.maxStashCapacity = 100;
 global.totalStashCapacity = 0;
 global.stashCapacityPlus = 0;
 
-//Global variables - Temp loot
-global.tempLoot = ds_list_create();
-
 //HudActions as text
 globalvar HudActionText;
 HudActionText = scr_global_hud_action_texts();
