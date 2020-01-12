@@ -1,9 +1,9 @@
 enum RenderData {
 	Index,
-	TextMargin,
+	MarginLeft,
 	BgWidth,
 	BgHeight,
-	bgXPadding,
+	BgXPadding,
 	BgColor,
 	BgAlpha,
 	BorderColor,

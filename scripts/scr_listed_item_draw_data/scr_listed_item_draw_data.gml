@@ -14,7 +14,7 @@ var render, textXPos, i;
 	
 for (i = 0; i < renderDataCount; i++) {
 	render = renderData[i];
-	textXPos = xPos + render[RenderData.TextMargin] + render[RenderData.bgXPadding];
+	textXPos = xPos + render[RenderData.MarginLeft] + render[RenderData.BgXPadding];
 	draw_set_color(c_black);
 	switch (render[RenderData.Index])	{
 		case ItemData.Sprite: {
