@@ -1,14 +1,16 @@
 /// @desc Fetch item data and return dropped loot
-/// @param rangedLootTable - List of ranged loot table
+/// @param rangedLootTable - Array of ranged loot table
+/// @param lootDrops - List of previous loot drops
+
 /// @return ds_list - Loot drops
 
 var rangedLootTable = argument0;
+var lootDrops = argument1;
 
 var itemData = scr_items_data();
 var dataCount = array_length_1d(itemData);
 
-var lootTableSize = ds_list_size(rangedLootTable);
-var lootDrops = ds_list_create();
+var lootTableSize = array_length_1d(rangedLootTable);
 
 var i, j, tempLoot, tempRange, tempData;
 

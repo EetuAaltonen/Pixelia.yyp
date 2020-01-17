@@ -38,7 +38,13 @@ for (i = 0; i < lootTableCount; i++) {
 				 tempRange[LootRange.RangeMax] == -1) {
 				// Check if the loot drop is not an unlucky miss
 				if (!is_undefined(tempLoot[LootDrop.Sprite])) {
-					tempRange[LootRange.DropCount] += 1;
+					// Calculate coins with 100% chance
+					if (tempLootTable[LootConfig.Category] == LootTable.Coin) {
+						tempRange[LootRange.DropCount] = maxLootCount;
+						maxLootCount = 0;
+					} else {
+						tempRange[LootRange.DropCount] += 1;
+					}
 					tempLoot[LootDrop.Chance] = tempRange;
 					rangedLootTable[j] = tempLoot;
 				}
@@ -48,7 +54,7 @@ for (i = 0; i < lootTableCount; i++) {
 	}
 	
 	// Fetch item data
-	lootDrops = scr_loot_table_fetch_data(rangedLootTable);
+	lootDrops = scr_loot_table_fetch_data(rangedLootTable, lootDrops);
 }
 
 return lootDrops;
