@@ -2962,7 +2962,7 @@
             "Key": "47364efd-2c66-4edb-8ace-783c3412adb5",
             "Value": {
                 "id": "0be9b0e5-aa6b-41f0-87a4-7ca58526eee0",
-                "resourcePath": "scripts\\scr_loot_tables\\scr_loot_tables.yy",
+                "resourcePath": "scripts\\scr_loot_table_data\\scr_loot_table_data.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5274,7 +5274,7 @@
             "Key": "7f7affa3-3e4b-40a7-adad-c765e404bc13",
             "Value": {
                 "id": "f86c5f11-ab32-4b45-90e4-36ac82c64eb9",
-                "resourcePath": "scripts\\scr_loot_table_get_items\\scr_loot_table_get_items.yy",
+                "resourcePath": "scripts\\scr_loot_table_drop_loot\\scr_loot_table_drop_loot.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5410,7 +5410,7 @@
             "Key": "83b9de63-a76b-49d1-a88a-e9ee6f3275a3",
             "Value": {
                 "id": "847ce08b-4aac-482e-a32b-47d787885988",
-                "resourcePath": "scripts\\scr_loot_tables_init\\scr_loot_tables_init.yy",
+                "resourcePath": "scripts\\scr_loot_table_init\\scr_loot_table_init.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7180,6 +7180,14 @@
                 "id": "c5a053ab-2f7a-4bd2-8a0a-10a5dc88a981",
                 "resourcePath": "sprites\\spr_cannonball\\spr_cannonball.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b1950bd4-e1d3-4cd2-a0e9-1d7f066a5ef8",
+            "Value": {
+                "id": "f99f1681-e22c-4837-8902-3d58dd1e4eee",
+                "resourcePath": "scripts\\scr_loot_table_fetch_data\\scr_loot_table_fetch_data.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -9258,7 +9266,7 @@
             "Key": "e7510dbf-aeb7-4ff0-b17a-9623d250dc78",
             "Value": {
                 "id": "416fae4a-f22d-4583-8b43-3688dfa46a87",
-                "resourcePath": "scripts\\scr_enum_ranged_loot_table\\scr_enum_ranged_loot_table.yy",
+                "resourcePath": "scripts\\scr_enum_ranged_loot_config\\scr_enum_ranged_loot_config.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -10308,6 +10316,7 @@
         "7f7affa3-3e4b-40a7-adad-c765e404bc13",
         "83b9de63-a76b-49d1-a88a-e9ee6f3275a3",
         "4db98994-a217-49c8-8dbb-5b61a08f8e55",
+        "b1950bd4-e1d3-4cd2-a0e9-1d7f066a5ef8",
         "85cf367f-f6d3-46f2-9c33-b52d9a8ed573",
         "6898940c-4dbb-4404-bb4c-255a6a9e3492",
         "75a9b72b-6ccd-4c2c-ad96-1b923d2e9c02",

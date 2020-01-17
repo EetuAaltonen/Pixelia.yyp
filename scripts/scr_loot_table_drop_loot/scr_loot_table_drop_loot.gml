@@ -6,25 +6,25 @@ var lootConfigs = argument0;
 
 var lootDrops = ds_list_create();
 
-var lootTables = scr_loot_tables_init(lootConfigs);
+var lootTables = scr_loot_table_init(lootConfigs);
 var lootTableCount = ds_list_size(lootTables);
 
 var tempLootTable, lootTableSize;
-var rangedLootTableConfig, rangedLootTable;
+var rangedLootConfig, rangedLootTable;
 var maxLootCount, totalProbability
-var i, j, k;
+var i, j;
 
 for (i = 0; i < lootTableCount; i++) {
 	tempLootTable = ds_list_find_value(lootTables, i);
 	
-	rangedLootTableConfig = scr_loot_table_assing_range(tempLootTable[0]);
+	rangedLootConfig = scr_loot_table_assing_range(tempLootTable[0]);
 	maxLootCount = tempLootTable[LootConfig.MaxLootCount];
-	rangedLootTable = rangedLootTableConfig[RangedLootTable.LootTable];
-	totalProbability = rangedLootTableConfig[RangedLootTable.TotalProbability];
+	rangedLootTable = rangedLootConfig[RangedLootConfig.LootTable];
+	totalProbability = rangedLootConfig[RangedLootConfig.TotalProbability];
 	
 	lootTableSize = array_length_1d(rangedLootTable);
 	
-	var tempLoot, tempRange, tempData;
+	var tempLoot, tempRange;
 	var rng;
 	
 	// Calculate loot drop counts
@@ -47,25 +47,8 @@ for (i = 0; i < lootTableCount; i++) {
 		maxLootCount--;
 	}
 	
-	var itemData = scr_items_data();
-	var dataCount = array_length_1d(itemData);
-	
-	// Fetch item data and return dropped loot
-	for (j = 0; j < lootTableSize; j++) {
-		tempLoot = rangedLootTable[j];
-		tempRange = tempLoot[LootDrop.Chance];
-		if (tempRange[LootRange.DropCount] > 0) {
-			for (k = 0; k < dataCount; k++) {
-				tempData = itemData[k];
-				if (tempLoot[LootDrop.Sprite] == tempData[ItemData.Sprite]) {
-					//Set new count
-					tempData[ItemData.Count] = tempRange[LootRange.DropCount];
-					ds_list_add(lootDrops, tempData);
-					k = (dataCount - 1);
-				}
-			}
-		}
-	}
+	// Fetch item data
+	lootDrops = scr_loot_table_fetch_data(rangedLootTable);
 }
 
 return lootDrops;

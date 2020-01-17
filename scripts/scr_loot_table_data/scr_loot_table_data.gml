@@ -1,6 +1,3 @@
-// scr_enum_loot_tables()
-// scr_enum_loot_drop()
-// scr_items_data()
 var category = argument0;
 switch (category) {
 	// All chances can scale up 1 to 10 000
@@ -30,4 +27,7 @@ switch (category) {
 			[spr_gold_amulet, 2] // 2% chance
 		];
 	}break;
+	default: {
+		return [];
+	}
 }

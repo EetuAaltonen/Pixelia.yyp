@@ -1,4 +1,4 @@
-enum RangedLootTable {
+enum RangedLootConfig {
 	LootTable,
 	TotalProbability
 }

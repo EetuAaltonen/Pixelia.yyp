@@ -4,17 +4,17 @@
 
 var lootConfigs = argument0;
 
-var lootTables = ds_list_create();
+var lootTable = ds_list_create();
 var categoryCount = array_length_1d(lootConfigs);
 
 var tempLootConfig, i;
 for (i = 0; i < categoryCount; i++) {
 	tempLootConfig = lootConfigs[i];
 	
-	ds_list_add(lootTables, [
-		scr_loot_tables(tempLootConfig[LootConfig.Category]),
+	ds_list_add(lootTable, [
+		scr_loot_table_data(tempLootConfig[LootConfig.Category]),
 		tempLootConfig[LootConfig.MaxLootCount]
 	]);
 }
 
-return lootTables;
+return lootTable;

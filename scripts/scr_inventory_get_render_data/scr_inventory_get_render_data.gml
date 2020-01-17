@@ -34,5 +34,7 @@ switch (hudState) {
 			[ItemData.Count, 137, 40, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
 		];
 	}break;
+	default: {
+		return [];
+	}
 }
-return [];

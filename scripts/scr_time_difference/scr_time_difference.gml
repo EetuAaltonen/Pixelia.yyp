@@ -6,7 +6,6 @@ var difference = [0,0,0,0,0,0];
 var tArr1 = scr_time_from_string(dateTime1);
 var tArr2 = scr_time_from_string(dateTime2);
 
-var arraySize = array_length_1d(tArr1);
 var i;
 for (i = 5; i >= 0; i--) {
 	switch (i) {

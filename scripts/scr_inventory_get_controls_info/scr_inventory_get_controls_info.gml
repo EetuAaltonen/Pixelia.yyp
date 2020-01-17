@@ -1,5 +1,4 @@
 var hudState = argument0;
-// scr_enum_hud_control_info()
 // spr_controls_mouse
 
 var yPos = 638;

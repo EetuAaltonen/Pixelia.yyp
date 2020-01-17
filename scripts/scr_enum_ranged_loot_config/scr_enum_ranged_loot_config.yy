@@ -1,8 +1,8 @@
 {
-    "id": "47364efd-2c66-4edb-8ace-783c3412adb5",
+    "id": "e7510dbf-aeb7-4ff0-b17a-9623d250dc78",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_loot_tables",
+    "name": "scr_enum_ranged_loot_config",
     "IsCompatibility": false,
     "IsDnD": false
 }
