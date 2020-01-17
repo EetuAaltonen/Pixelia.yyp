@@ -21,7 +21,8 @@ partEffIndx = 0;
 items = ds_list_create();
 state = Container.Uninit;
 lootTables = [
-	[LootTable.CommonMaterials, 5],
+	[LootTable.Coin, irandom_range(5, 20)],
+	[LootTable.CommonMaterial, 5],
 	[LootTable.RareJewellery, 1],
 ];
 updateValues = false;

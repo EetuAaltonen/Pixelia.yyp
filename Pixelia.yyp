@@ -9783,6 +9783,14 @@
             }
         },
         {
+            "Key": "f2ebcf98-1d9a-44d6-b0ec-a0382f159572",
+            "Value": {
+                "id": "7dc1407d-c6c8-4ec5-bb6f-9acab118c00c",
+                "resourcePath": "scripts\\scr_loot_chest_close\\scr_loot_chest_close.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f32d7cd3-24f7-4a7f-8aaa-5886b56372bb",
             "Value": {
                 "id": "2ad93302-2e51-4278-80f5-aed3aa4a1860",
@@ -10376,6 +10384,7 @@
         "311fecec-1e6a-497d-a02d-4907faa948e7",
         "4baa86b4-4fcb-42af-8c69-bfee04853d6d",
         "13644bff-7375-4fed-a3a5-2a202fb10aa6",
+        "f2ebcf98-1d9a-44d6-b0ec-a0382f159572",
         "27c50b36-fe34-4cfc-a57b-2941199a4078",
         "019c0497-ffed-4e24-b80e-31d9e1a9980e",
         "2a2d9287-42b2-47fc-a8c6-def63309d044",

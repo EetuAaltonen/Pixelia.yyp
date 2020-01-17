@@ -23,9 +23,6 @@ ds_list_destroy(global.inventory);
 //Clear Global Stash
 ds_list_destroy(global.stash);
 
-//Clear Temp Loot
-ds_list_destroy(global.tempLoot);
-
 //Remove First Loading Object
 with(obj_first_loading) {
     instance_destroy();

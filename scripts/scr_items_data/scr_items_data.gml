@@ -3,6 +3,8 @@
 return [
 //  [sprite, name, description, type/shop, count, damage, speed, armor, durability, effect, effectAmount, effectDuration, weight, price, requiredLevel]
 //	OLD [sprite, name, type/shop, count, durability, weight, price, effect, effectAmount, effectDuration, requiredLevel]	
+	/*[Coin]*/
+		[spr_coin,"Coin","","[]",1,"null","null","null","null","null","null","null",0,1,0],
 	/*[Collectable]*/
 		//Ores
 		[spr_iron_ore,"Iron Ore","This is test description#to test if line breaks#are#OK","[forge,blacksmith]",1,"null","null","null","null","null","null","null",1,5,0],

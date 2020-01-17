@@ -16,7 +16,7 @@ if (controller.fishingState = Fishing.ThrowBobber) {
 if (controller.fishingState = Fishing.Pull) {
     move_towards_point(obj_player.x, obj_player.y - (distance_to_object(obj_player)/3), 3); 
     if (distance_to_object(obj_player) < 1) {
-		var lootList = scr_loot_table_drop_loot([LootTable.CommonFishes, 1]);
+		var lootList = scr_loot_table_drop_loot([LootTable.CommonFish, 1]);
 		var fishData = ds_list_find_value(lootList, 0);
 		if (scr_inventory_check_capacity(fishData[ItemData.Weight], true)) {
 			scr_inventory_add_item(fishData, fishData[ItemData.Count]);

@@ -29,9 +29,9 @@ switch (hudState) {
 	}break;
 	case HudStates.Loot: {
 		return [
-			[ItemData.Sprite, 0, 26, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-			[ItemData.Name, 15, 120, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
-			[ItemData.Count, 137, 40, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
+			[ItemData.Sprite, 0, 50, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Name, 26, 360, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Count, 391, 92, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
 		];
 	}break;
 	default: {

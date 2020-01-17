@@ -13,7 +13,7 @@ for (i = 0; i < renderDataCount; i++) {
 	render = renderData[i];
 		
 	if ((array_length_1d(render) - 1) >= RenderData.BgAlpha) {
-		xPadding = render[RenderData.bgXPadding];
+		xPadding = render[RenderData.BgXPadding];
 		bgWidth = render[RenderData.BgWidth];
 		bgHeight = render[RenderData.BgHeight];
 		borderPadding = render[RenderData.BorderPadding];
@@ -33,7 +33,7 @@ for (i = 0; i < renderDataCount; i++) {
 				}break;
 				default: {
 					scr_hud_draw_background(
-						xPos + render[RenderData.TextMargin], yPos,
+						xPos + render[RenderData.MarginLeft], yPos,
 						bgWidth + (borderPadding * 2),
 						bgHeight + (borderPadding * 2),
 						render[RenderData.BorderColor],
@@ -56,7 +56,7 @@ for (i = 0; i < renderDataCount; i++) {
 			}break;
 			default: {
 				scr_hud_draw_background(
-					xPos + borderPadding + render[RenderData.TextMargin], yPos,
+					xPos + borderPadding + render[RenderData.MarginLeft], yPos,
 					bgWidth, bgHeight,
 					render[RenderData.BgColor],
 					render[RenderData.BgAlpha],
