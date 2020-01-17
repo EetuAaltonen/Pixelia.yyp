@@ -19,7 +19,6 @@ switch (section) {
 }
 dateTime[section] += value;
 var i;
-var arraySize = array_length_1d(dateTime);
 for (i = section; i > 0; i--) {
 	switch (i) {
 		//Months

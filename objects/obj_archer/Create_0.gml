@@ -1,7 +1,8 @@
 //Can shoot
 shoot = true;
 //Damage
-get_damage = 1;
+// TODO: Check and clean instance logic
+// get_damage = 1;
 //Stats
 view_yview_stats = 0;
 show_name = "arch";

@@ -1,5 +1,5 @@
 global.home_happiness = 100;
-global.home_defence = 100;
+//global.home_defence = 100;
 global.home_hunger = 100;
 global.home_thirst = 100;
 
@@ -13,6 +13,3 @@ ini_close();*/
 alarm[1] = 10; //Happiness decreases if
 alarm[2] = 200; //Hunger decreases
 alarm[3] = 200; //Thirst decreases
-
-/* */
-/*  */

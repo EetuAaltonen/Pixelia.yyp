@@ -15,9 +15,6 @@ view_set_wport(0, guiWidth);
 view_set_hport(0, guiHeight);
 
 //Resolution
-reso_width = guiWidth;
-reso_height = guiHeight;
-//display_reset(0, true);
 surface = 5; //1px = 5x5px
 global.resWAspect = 2;
 global.resHAspect = 2;

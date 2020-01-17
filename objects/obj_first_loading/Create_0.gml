@@ -89,8 +89,6 @@ global.currentRoom = Village_1; //Prototype & Testing
 	global.enchantingPoints = 0;
 	global.attributes = scr_glob_attributes();
 	global.skills = scr_glob_skills();
-	//Sell Rate
-	global.sellRate = 0.1;
 	
     //Death counter
     global.death_counter = 0;

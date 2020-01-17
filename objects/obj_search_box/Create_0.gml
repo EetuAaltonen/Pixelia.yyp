@@ -3,7 +3,6 @@ depth = Depth.Button;
 max_width = 40;
 selected = false;
 txt = "";
-txt_temp = "";
 blink_icon = "";
 blink_speed = 30;
 place_holder = "Search by name...";

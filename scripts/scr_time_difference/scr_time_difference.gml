@@ -1,7 +1,7 @@
 //Datetime: yyyy-MM-dd-hh-mm-ss
 var dateTime1 = argument0;
 var dateTime2 = argument1;
-var returnFormat = argument2;
+var timeFormat = argument2;
 var difference = [0,0,0,0,0,0];
 var tArr1 = scr_time_from_string(dateTime1);
 var tArr2 = scr_time_from_string(dateTime2);
@@ -55,4 +55,4 @@ for (i = 5; i >= 0; i--) {
 	}
 }
 //show_message("Difference: " + string(difference[0]) + "-" + string(difference[1]) + "-" + string(difference[2]) + "-" + string(difference[3]) + "-" + string(difference[4]) + "-" + string(difference[5]));
-return scr_time_convert(difference, "yyyy-MM-dd-hh-mm-ss", "ss");
+return scr_time_convert(difference, "yyyy-MM-dd-hh-mm-ss", timeFormat);
