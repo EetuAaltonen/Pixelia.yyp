@@ -15,12 +15,7 @@ if (scr_interact_with_player()) {
         // Recipe Book
         instance_create(viewX+450, viewY+90, obj_recipe_book);
 		
-		var controller = obj_inventory_controller;
-		controller.updateValues = true;
-		controller.pageIndex = 1;
-		controller.filter = "";
-		scr_inventory_clear_search_box();
-	
+		scr_inventory_reset_values();
 		obj_player.actionState = Actions.Craft;
     }
 } else if (global.hudAction == hudAction && scr_keys_to_close()) {

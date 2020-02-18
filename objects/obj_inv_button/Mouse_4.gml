@@ -44,10 +44,7 @@ if (hudAction != HudActions.Null) {
 			}break;
 			default /*inventoryBackpack || inventoryBackpack*/: {	
 				scr_set_global_hud_action(hudAction);
-				obj_inventory_controller.updateValues = true;
-				obj_inventory_controller.pageIndex = 1;
-				obj_inventory_controller.filter = "";
-				scr_inventory_clear_search_box();
+				scr_inventory_reset_values();
 			}break;
 		}
 	}

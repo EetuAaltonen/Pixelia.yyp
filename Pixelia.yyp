@@ -2263,6 +2263,14 @@
             }
         },
         {
+            "Key": "34217220-9c02-4899-8233-1e282a80b4ea",
+            "Value": {
+                "id": "bb3ace1c-6814-41b3-bfe3-39fbf08cd066",
+                "resourcePath": "scripts\\scr_inventory_reset_values\\scr_inventory_reset_values.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3423711b-7a4c-4d07-b1db-fc8fc6a237a9",
             "Value": {
                 "id": "a5f81beb-76ae-4463-a117-010a63da3e8b",
@@ -10442,6 +10450,7 @@
         "da5a1f21-aa3b-42b7-a7d8-ca12a339a76e",
         "3f4951cc-7ff3-4b76-9747-aadd4662ecff",
         "8dbfbbfd-a266-4997-9ccd-1f017a587e89",
+        "34217220-9c02-4899-8233-1e282a80b4ea",
         "fae4d079-cb32-4df4-8afd-8a8b58826abf",
         "d6bde921-188d-4e49-ae6c-d932a0309d31",
         "dd860ec7-14b5-4516-9e8a-df1bf1bcc057",

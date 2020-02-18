@@ -1,15 +1,10 @@
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 
-var controller = obj_inventory_controller;
-
 scr_set_global_hud_state(HudStates.Stash);
 scr_set_global_hud_action(HudActions.Withdraw);
 
-
-controller.updateValues = true;
-controller.pageIndex = 1;
-controller.filter = "";
+scr_inventory_reset_values();
 
 //Create Buttons
 var buttonActions = [

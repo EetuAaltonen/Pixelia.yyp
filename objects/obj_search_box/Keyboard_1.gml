@@ -29,18 +29,19 @@ if (selected) {
         }
     } else {
 		if (room != Menu) {
+			var controller = obj_inventory_controller;
 	        keyboard_string = "";
 	        blink_icon = "";
 	        selected = false;
-			if (txt != obj_inventory_controller.filter) {
+			if (txt != controller.filter) {
 		        if (txt != "") {
-		            obj_inventory_controller.filter = txt;
+		            controller.filter = txt;
 		        } else {
 					txt = place_holder;
-		            obj_inventory_controller.filter = "";
+		            controller.filter = "";
 		        }
-				obj_inventory_controller.pageIndex = 1;
-				obj_inventory_controller.updateValues = true;
+				controller.pageIndex = 1;
+				controller.updateValues = true;
 			}
 		} else {
 			keyboard_string = "";
