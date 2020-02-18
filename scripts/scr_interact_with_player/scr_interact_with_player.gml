@@ -1,6 +1,5 @@
-/*
-* @return bool
-*/	
+/// @desc Player interaction check
+/// @return Bool - If able to interact
 
 if (scr_plr_neutral_action_states() &&
 	scr_highlighted() &&

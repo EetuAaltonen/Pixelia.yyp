@@ -1,4 +1,4 @@
-//Create Buttons
+// Create Buttons
 var buttons = [
 	[HudActions.Buy, ButtonSize.Small],
 	[HudActions.Sell, ButtonSize.Small],
