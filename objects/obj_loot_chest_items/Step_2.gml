@@ -23,7 +23,7 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 	scr_loot_chest_open(items, HudStates.Loot);
 	
 	obj_player.actionState = Actions.Loot;
-	global.hudState = HudStates.Loot;
+	scr_set_global_hud_state(HudStates.Loot);
 } else if (state == Container.Opened && updateValues) {
 	if (ds_list_size(items) <= 0) {
 		scr_loot_chest_close();	

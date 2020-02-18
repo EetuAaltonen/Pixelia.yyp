@@ -6,17 +6,17 @@ if (updateValues) {
 	startIndex = 0;
 	lastItem = 0;
 	
-	//Create Search Box
+	// Create Search Box
 	if (!instance_exists(obj_search_box)) {
 		instance_create(viewX + 50, viewY + 76, obj_search_box);
 		filter = "";
 		pageIndex = 1;
 	}
 	
-	//Filter
+	// Filter
 	scr_inventory_list_filter();
 	
-	//Clear item info
+	// Clear item info
 	itemInfoText = undefined;
 	
 	var listSize = ds_list_size(listOfItems);

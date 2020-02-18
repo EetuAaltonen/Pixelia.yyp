@@ -8,5 +8,4 @@ if (ds_list_size(items) <= 0) {
 }
 scr_highlight_remove();
 scr_listed_item_remove();
-global.hudState = HudStates.Null;
-scr_plr_set_action_state_null();
+scr_set_global_hud_state(HudStates.Null);

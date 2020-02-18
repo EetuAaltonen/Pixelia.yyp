@@ -4,6 +4,8 @@ if (instance_exists(obj_player)) {
 		player = self;
 	}
     player.hspeed = 0;
+	player.image_index = 0;
+	player.image_speed = 0;
     player.sprite_index = spr_player;
     player.solid = true;
     player.mask_index = spr_player;

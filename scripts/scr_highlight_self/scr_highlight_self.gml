@@ -1,4 +1,4 @@
-if (global.highlightedObject == undefined ||
+if (is_undefined(global.highlightedObject) ||
 	global.highlightedObject == self.id)	
 	if (instance_exists(obj_player)) {
 	    if (global.hudState == HudStates.Null) {

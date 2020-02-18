@@ -1,16 +1,26 @@
 //scr_item_info_struct()
 
 var list = argument0;
-var category = "";
+var category = undefined;
+
 if (global.hudState == HudStates.Crafting) {
-	category = global.hudState;	
+	switch(global.hudAction) {
+		case HudActions.Alchemy: { category = "alchemy"; }break;
+		case HudActions.Anvil: { category = "anvil"; }break;
+		case HudActions.Cooking: { category = "cooking"; }break;
+		case HudActions.Forge: { category = "forge"; }break;
+		case HudActions.Furnace: { category = "furnace"; }break;
+		case HudActions.SpinningWheel: { category = "spinningWheel"; }break;
+		case HudActions.WaterWell: { category = "waterWell"; }break;
+		case HudActions.Workbench: { category = "workbench"; }break;
+	}
 } else {
 	if (global.hudAction == HudActions.Equipment ||
 		global.hudAction == HudActions.Repair) {
 		category = "equipment";
 	}
 }
-if (category != "") {
+if (!is_undefined(category)) {
 	var tempList = ds_list_create();
 	var listSize = ds_list_size(list);
 	var data;

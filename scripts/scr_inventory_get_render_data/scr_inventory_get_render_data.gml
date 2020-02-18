@@ -34,6 +34,13 @@ switch (hudState) {
 			[ItemData.Count, 391, 92, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
 		];
 	}break;
+	case HudStates.Crafting: {
+		return [
+			[ItemData.Sprite, 0, 50, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Name, 26, 360, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha],
+			[ItemData.Count, 391, 92, bgHeight, bgXPadding, color, bgAlpha, borderColor, borderPadding, borderAlpha]
+		];
+	}break;
 	default: {
 		return [];
 	}

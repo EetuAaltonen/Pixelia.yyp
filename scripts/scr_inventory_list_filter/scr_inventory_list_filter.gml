@@ -8,6 +8,6 @@ if ((global.hudState == HudStates.Inventory && (global.hudAction == HudActions.B
 } else if (global.hudState == HudStates.Shop && global.hudAction == HudActions.Buy) {
 	sourceList = listOfShop;
 } else if (global.hudState == HudStates.Shop && global.hudAction == HudActions.Withdraw) {
-	sourceList = global.stash;	
+	sourceList = global.stash;
 }
 scr_ds_list_copy(listOfItems, scr_list_item_name_filter(scr_list_category_filter(sourceList), filter), false);
