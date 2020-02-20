@@ -1,8 +1,9 @@
-//scr_item_info_struct()
+/// @desc Filter items by category
+/// @param itemList - List of items
+/// @return List - Filtered list
 
-var list = argument0;
+var itemList = argument0;
 var category = undefined;
-
 if (global.hudState == HudStates.Crafting) {
 	switch(global.hudAction) {
 		case HudActions.Alchemy: { category = "alchemy"; }break;
@@ -20,17 +21,18 @@ if (global.hudState == HudStates.Crafting) {
 		category = "equipment";
 	}
 }
-if (!is_undefined(category)) {
-	var tempList = ds_list_create();
-	var listSize = ds_list_size(list);
-	var data;
-	var i;
+
+var filteredList = ds_list_create();
+if (is_undefined(category)) {
+	scr_ds_list_copy(filteredList, itemList, false);
+} else {
+	var listSize = ds_list_size(itemList);
+	var i, data;
 	for	(i = 0; i < listSize; i++) {
-		data = ds_list_find_value(list, i);
+		data = ds_list_find_value(itemList, i);
 		if (string_pos(category, data[ItemData.Type])) {
-			ds_list_add(tempList, data);
+			ds_list_add(filteredList, data);
 		}
 	}
-	return tempList;
 }
-return list;
+return filteredList;
