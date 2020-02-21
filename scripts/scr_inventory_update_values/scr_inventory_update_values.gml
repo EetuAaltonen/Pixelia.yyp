@@ -3,8 +3,8 @@ if (updateValues) {
 	var viewY = camera_get_view_y(view_camera[0]);
 	
 	updateValues = false;
-	startIndex = 0;
-	lastItem = 0;
+	var startIndex = 0;
+	var lastItem = 0;
 	itemInfoText = undefined;
 	
 	if (!instance_exists(obj_search_box)) {

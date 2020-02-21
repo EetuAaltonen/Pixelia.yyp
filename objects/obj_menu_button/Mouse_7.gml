@@ -4,7 +4,7 @@ if (!global.popUp) {
 			case MenuActions.Load: {
 				// Click
 				if (instance_exists(obj_search_box)) {
-					if (!scr_highlighted()) {
+					if (image_blend != scr_highlight_value()) {
 					    scr_menu_load_create_save();
 					}
 				}
@@ -12,7 +12,7 @@ if (!global.popUp) {
 			case MenuActions.Delete: {
 				// Delete Exists Save
 				if (instance_exists(obj_search_box)) {
-					if (!scr_highlighted()) {
+					if (image_blend != scr_highlight_value()) {
 					    file = (string(obj_search_box.txt) + ".sav");
 					    if (file_exists(file)) {
 					        scr_set_popup(vk_enter, vk_escape, "Delete " + file + "?", scr_delete_selected_game);

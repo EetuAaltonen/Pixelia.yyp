@@ -6,13 +6,10 @@ typeId = "";
 
 // Inventory
 updateValues = false;
-listOfItems = ds_list_create();
 
 pageIndex = 1;
 maxPageIndex = 1;
 itemsPerPage = 10;
-startIndex = 0;
-lastItem = 0;
 
 itemInfoText = undefined;
 

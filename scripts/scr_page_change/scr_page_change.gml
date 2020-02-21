@@ -1,23 +1,20 @@
 //Change page
 if (scr_page_change_allowed() && !updateValues) {
-	if (!instance_exists(obj_button_confirm)) {
-		var itemCount = ds_list_size(listOfItems);
-		if (itemCount > 0) {
-		    if (keyboard_check_pressed(ord("A"))) {
-				if (pageIndex > 1) {
-					pageIndex -= 1;
-				} else {
-					pageIndex = maxPageIndex;
-				}
-				updateValues = true;
-		    } else if (keyboard_check_pressed(ord("D"))) {
-		        if (pageIndex < maxPageIndex) {
-					pageIndex += 1;
-				} else {
-					pageIndex = 1;	
-				}
-		        updateValues = true; 
-		    }
+	if (maxPageIndex > 1) {
+		if (keyboard_check_released(ord("A"))) {
+			if (pageIndex > 1) {
+				pageIndex -= 1;
+			} else {
+				pageIndex = maxPageIndex;
+			}
+			updateValues = true;
+		} else if (keyboard_check_released(ord("D"))) {
+		    if (pageIndex < maxPageIndex) {
+				pageIndex += 1;
+			} else {
+				pageIndex = 1;	
+			}
+		    updateValues = true; 
 		}
 	}
 }

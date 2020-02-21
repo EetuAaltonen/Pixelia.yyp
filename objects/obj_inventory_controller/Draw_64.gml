@@ -26,7 +26,7 @@ if (global.hudState == HudStates.Inventory ||
 	);
 
 	// No items
-	if (!ds_list_size(listOfItems)) {
+	if (pageIndex <= 0) {
 		var xPos = 20;
 		var yPos = 200;
 		draw_text(xPos, yPos, "Backpack is empty");

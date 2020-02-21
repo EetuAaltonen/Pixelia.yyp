@@ -1,5 +1,6 @@
-///Use healing potion
-if (global.hudState == HudStates.Null)
+/// Use healing potion
+// TODO: Move healing logic somewhere else?
+/*if (global.hudState == HudStates.Null)
 {
     if (global.potions > 0 and global.healthPoints < 20)
     {
