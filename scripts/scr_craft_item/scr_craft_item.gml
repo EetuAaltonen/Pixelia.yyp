@@ -1,6 +1,6 @@
 //scr_item_info_struct()
-
-if (product != "null") {
+// TODO: fix crafting code
+/*if (product != "null") {
 	if ((global.totalInventoryCapacity + (product[11]*product[3])) > (global.maxInventoryCapacity + global.carryingCapacityPlus)) {
 		scr_add_new_toast("Inventory is full!");
 	} else {
@@ -12,14 +12,14 @@ if (product != "null") {
 			var i;
 			for (i = 0; i < slotCount; i++) {
 				slot = instance_find(obj_crafting_slot, i);
-				if (slot.item != "null") {
+				if (slot.data != "null") {
 					//Remove From Inventory
-					scr_inventory_add_item(slot.item, -1);
+					scr_inventory_add_item(slot.data, -1);
 					
-					if (slot.item[3] - 1 > 0) {
-						slot.item[3] -= 1;
+					if (slot.data[3] - 1 > 0) {
+						slot.data[3] -= 1;
 					} else {
-						slot.item = "null";
+						slot.data = "null";
 					}
 				}
 			}

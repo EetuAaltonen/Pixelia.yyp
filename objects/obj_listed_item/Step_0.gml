@@ -4,13 +4,12 @@ if (checkSelected) {
 		if (global.hudState == HudStates.Crafting) {
 			selected = false;
 			if (instance_exists(obj_crafting_slot)) {
-				var slot;
 				var slotCount = instance_number(obj_crafting_slot);
-				var i;
+				var i, slot;
 				for (i = 0; i < slotCount; i++) {
 					slot = instance_find(obj_crafting_slot, i);
-					if (slot.item != "null") {
-						if (scr_item_compare_items(slot.item, data, "full")) {
+					if (!is_undefined(slot.data)) {
+						if (scr_item_compare_items(slot.data, data, "full")) {
 							selected = true;
 							break;
 						}

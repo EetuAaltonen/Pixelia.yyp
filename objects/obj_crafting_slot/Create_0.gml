@@ -1,9 +1,5 @@
-///Create variables
+depth = Depth.Hud;
 image_speed = 0;
 index = 0;
-item = "null";
-
-//Info text
+data = undefined;
 infoText = "";
-
-spriteIndex = "null";

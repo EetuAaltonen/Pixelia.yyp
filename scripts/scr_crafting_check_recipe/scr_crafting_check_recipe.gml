@@ -1,6 +1,7 @@
 //scr_item_info_struct()
 
-var i, j, k;
+// TODO: fix crafting code
+/*var i, j, k;
 var item = "null";
 var correct = 0;
 var recipe, product;
@@ -27,8 +28,8 @@ for (i = 0; i < recipeCount; i++) {
 	for (j = 0; j < materialCount; j++) {
 		for (k = 0; k < slotCount; k++) {
 			slot = ds_list_find_value(tempSlots, k);
-			if (slot.item != "null") {
-				if (slot.item[1] == recipe[j]) {
+			if (slot.data != "null") {
+				if (slot.data[1] == recipe[j]) {
 					recipeCorrect += 1;
 					ds_list_delete(tempSlots, k);
 					slotCount = ds_list_size(tempSlots);
@@ -42,7 +43,7 @@ for (i = 0; i < recipeCount; i++) {
 	}
 	for (j = 0; j < slotCount; j++) {
 		slot = ds_list_find_value(tempSlots, j);
-		if (slot.item != "null") {
+		if (slot.data != "null") {
 			recipeCorrect = 0;
 			break;
 		}

@@ -1,4 +1,2 @@
-item = "null";
-spriteIndex = "null";
-
+data = undefined;
 obj_crafting_product.checkRecipe = true;

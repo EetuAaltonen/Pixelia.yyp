@@ -1,5 +1,6 @@
 //Import recipe to crafting
-var slot;
+// TODO: Fix crafting code
+/*var slot;
 var material;
 if (recipe != "null" && materials != "null") {
 	var materialCount = ds_list_size(materials);
@@ -11,12 +12,12 @@ if (recipe != "null" && materials != "null") {
 			material = ds_list_find_value(materials, j);
 			for (k = 0; k < material[3]; k++) {
 				slot = instance_find(obj_crafting_slot, i++);
-				slot.item = material;
+				slot.data = material;
 				slot.spriteIndex = material[0];
 			}
 		} else {
 			slot = instance_find(obj_crafting_slot, i++);
-			slot.item = "null";
+			slot.data = "null";
 			slot.spriteIndex = "null";
 		}
 	}
