@@ -3,7 +3,6 @@ var viewY = camera_get_view_y(view_camera[0]);
 
 // Open crafting
 if (scr_interact_with_player()) {
-	canOpenClose = false;
     if (global.hudAction != hudAction) {
 		scr_set_global_hud_state(HudStates.Crafting);
 		scr_set_global_hud_action(hudAction);
@@ -18,7 +17,8 @@ if (scr_interact_with_player()) {
 		scr_inventory_reset_values();
 		obj_player.actionState = Actions.Craft;
     }
-} else if (global.hudAction == hudAction && scr_keys_to_close()) {
+} else if (global.hudAction == hudAction &&
+			scr_keys_to_close(HudStates.Crafting)) {
 	// Close crafting
 	scr_crafting_close();
 }

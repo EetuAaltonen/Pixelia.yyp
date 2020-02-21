@@ -11,16 +11,17 @@ if (spawning) {
 		//Action states
 		scr_plr_action_state();
 	
-		//Use
-		if (keyboard_check_pressed(ord("E"))) {
+		// Use
+		// TODO: Remove old use logic
+		/*if (keyboard_check_pressed(ord("E"))) {
 			if (global.hudState == HudStates.Null) {
 			    if (scr_plr_neutral_action_states()) {
 			        instance_create(x, y, obj_use);
 			    }
 			}
-		}
+		}*/
 		//Slice
-		else if (mouse_check_button(mb_left)/*keyboard_check(ord("Q"))*/) {
+		if (mouse_check_button(mb_left)/*keyboard_check(ord("Q"))*/) {
 			scr_plr_abi_start_slice();
 		}
 		//Shield

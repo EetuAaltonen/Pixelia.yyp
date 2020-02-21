@@ -17,7 +17,7 @@ if (distance_to_point(mouse_x, mouse_y) == 0) {
 }
 if (action != "null") {
 	if (action == MenuActions.Load && keyboard_check_released(vk_enter)) {
-		if (!global.popUp && !scr_highlighted()) {
+		if (!global.popUp && image_blend != scr_highlight_value()) {
 			scr_menu_load_create_save();
 		}
 	} else if (checkSaveName) {

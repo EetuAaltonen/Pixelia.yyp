@@ -43,7 +43,7 @@ if (global.hudState == HudStates.Minigame) {
 		} else {
 			scr_minigame_close();
 		}
-	} else if (scr_keys_to_close() && minigame != "null") {
+	} else if (scr_keys_to_close(HudStates.Minigame) && minigame != "null") {
 		minigame = "null";
 		minigameInitialized = false;
 		scr_global_hud_state_reset();

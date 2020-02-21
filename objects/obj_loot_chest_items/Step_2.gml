@@ -31,8 +31,7 @@ if (scr_interact_with_player() && (state == Container.Uninit || state == Contain
 		updateValues = false;
 		scr_inventory_update_list(items);
 	}
-}  else if (global.hudState == HudStates.Loot &&
-			state == Container.Opened &&
-			scr_keys_to_close()) {	
+}  else if (state == Container.Opened &&
+			scr_keys_to_close(HudStates.Loot)) {	
 	scr_loot_chest_close();
 }

@@ -1,14 +1,12 @@
 /// @desc Player interaction check
 /// @return Bool - If able to interact
 
-if (scr_plr_neutral_action_states() &&
+if (keyboard_check_released(ord("E")) &&
 	scr_highlighted() &&
-	keyboard_check_pressed(ord("E")) &&
+	global.hudCanToggle &&
+	scr_plr_neutral_action_states() &&
 	global.hudState == HudStates.Null) {
-	// TODO: Old logic when using obj_use
-	if (instance_exists(obj_use)) {
-	    with (obj_use) instance_destroy();
-	}
+	global.hudCanToggle = false;
 	return true;
 }
 return false;

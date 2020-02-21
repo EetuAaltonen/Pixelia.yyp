@@ -7,15 +7,16 @@ if (global.auto_healing == 1
 }
 
 // Open Inventory
-if (keyboard_check_pressed(vk_tab) &&
+if (keyboard_check_released(vk_tab) &&
 	global.hudState == HudStates.Null &&
 	global.hudCanToggle) {
 	if (instance_exists(obj_player)) {
 	    if (scr_plr_neutral_action_states()) {
+			global.hudCanToggle = false;
 			scr_inventory_open();
 	    }
 	}
-} else if (global.hudState == HudStates.Inventory && scr_keys_to_close()) {
+} else if (scr_keys_to_close(HudStates.Inventory)) {
 	scr_inventory_close();
 }
 

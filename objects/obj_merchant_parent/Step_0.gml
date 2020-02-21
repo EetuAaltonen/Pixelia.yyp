@@ -8,6 +8,6 @@ if (scr_interact_with_player()) {
 	obj_inventory_controller.merchant = self;
 	scr_ds_list_copy(obj_inventory_controller.listOfShop, shop, false);
 	
-} else if (global.hudState == HudStates.Shop && scr_keys_to_close()) {
+} else if (scr_keys_to_close(HudStates.Shop)) {
 	scr_shop_close();
 }

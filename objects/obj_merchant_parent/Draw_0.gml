@@ -1,5 +1,5 @@
 draw_self();
-// Hightlight Self
+// Highlight Self
 scr_highlight_self();
 
 // Interact Icon

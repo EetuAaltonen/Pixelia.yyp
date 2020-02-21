@@ -22,7 +22,7 @@ if (instance_exists(obj_player)) {
 		scr_minigame_start("mining");
 	} else if (mining && player.actionState == actionState) {
 		//Stop
-		if (scr_keys_to_close()) {
+		if (scr_keys_to_close(HudStates.Minigame)) {
 			///Reset action state
 			if (!global.popUp) {
 				

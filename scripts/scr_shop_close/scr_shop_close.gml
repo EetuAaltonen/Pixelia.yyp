@@ -1,13 +1,13 @@
 scr_global_hud_state_reset();
 
-//Destroy Buttons
+// Destroy Buttons
 if (instance_exists(obj_inv_button)) {
 	with (obj_inv_button) instance_destroy();
 }
-//Remove Listed Items
+// Remove Listed Items
 scr_listed_item_remove();
 
-//Remove Search Box
+// Remove Search Box
 scr_hud_search_box_remove();
 
 scr_savegame();
