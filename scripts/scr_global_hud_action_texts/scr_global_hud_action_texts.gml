@@ -24,12 +24,12 @@ return [
 	"Withdraw",
 	"Deposit",
 	//Crafting
-	"Forge",
-	"Furnace",
 	"Alchemy",
-	"Workbench",
 	"Anvil",
 	"Cooking",
+	"Forge",
+	"Furnace",
 	"SpinningWheel",
-	"WaterWell"
+	"WaterWell",
+	"Workbench"
 ];

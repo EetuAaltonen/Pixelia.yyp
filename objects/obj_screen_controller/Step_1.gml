@@ -1,4 +1,4 @@
-///Create menu buttons and change view
+// Create menu buttons and change view
 if (room == Menu) {   
     if (createButtons && instance_exists(obj_camera_controller)) {
 		createButtons = false;
@@ -12,7 +12,7 @@ if (room == Menu) {
 			with (obj_menu_orb_of_dysforia) instance_destroy();
 		}
 		
-		//Remove Search Box
+		// Remove Search Box
 		scr_hud_search_box_remove();
 		
 		if (instance_exists(obj_menu_saved_game)) {
@@ -30,7 +30,7 @@ if (room == Menu) {
     }
 }
 
-//Focus
+// Focus
 if (room != Menu && !pause) {
 	if (unfocus == false && !window_has_focus()) {
 		unfocus = true;
@@ -41,13 +41,13 @@ if (room != Menu && !pause) {
 	}
 }
 
-//Check Resolution
+// Check Resolution
 if (resolutionLastRoom != room_get_name(room)) {
 	scr_resolution(global.wResolution, global.hResolution);	
 	resolutionLastRoom = room_get_name(room);
 }
 
-//Room Change
+// Room Change
 if (room != First_loading) {
 	if (instance_exists(obj_player)) {
 		if (targetRoom != currentRoom && alarm[1] <= 0) {
@@ -64,11 +64,5 @@ if (room != First_loading) {
 			}
 			alarm[1] = scr_time_sec_to_alarm(transitionWaitTime);
 		}
-	}
-}
-
-if (!global.hudCanClose) {
-	if (keyboard_check_released(vk_anykey)) {
-		global.hudCanClose = true;
 	}
 }

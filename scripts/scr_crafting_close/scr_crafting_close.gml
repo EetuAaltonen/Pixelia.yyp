@@ -1,4 +1,4 @@
-scr_close_global_hud_state();
+scr_global_hud_state_reset();
 
 //Remove Listed Items
 scr_listed_item_remove();

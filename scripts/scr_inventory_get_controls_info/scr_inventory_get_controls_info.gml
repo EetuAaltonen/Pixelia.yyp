@@ -17,6 +17,11 @@ switch (hudState) {
 			];
 		}
 	}break;
+	case HudStates.Crafting: {
+		return [
+			[645, yPos, spr_controls_mouse_left, HudActionText[global.hudAction]]
+		];
+	}break;
 	default: {
 		return [
 			[645, yPos, spr_controls_mouse_left, HudActionText[global.hudAction]]

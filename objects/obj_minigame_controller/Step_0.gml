@@ -46,7 +46,7 @@ if (global.hudState == HudStates.Minigame) {
 	} else if (scr_keys_to_close() && minigame != "null") {
 		minigame = "null";
 		minigameInitialized = false;
-		scr_close_global_hud_state();
+		scr_global_hud_state_reset();
 	} else if (mouse_check_button_pressed(mb_left)) {
 		switch (minigame) {
 			case "woodcutting": {

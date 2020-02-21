@@ -7,7 +7,7 @@ if (global.hudAction != hudAction && hudAction != undefined) {
 			}
 		}
 		if (!recipeBookOpen) {
-			scr_close_global_hud_state();
+			scr_global_hud_state_reset();
 
 			//Destroy Buttons
 			if (instance_exists(obj_hud_button)) {

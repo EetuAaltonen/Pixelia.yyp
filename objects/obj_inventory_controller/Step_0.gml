@@ -1,14 +1,26 @@
-// Level up
-if (instance_exists(obj_player)) {
-    if (global.xp >= global.xpLimit) {
-        global.skillPoints += 1;
-        global.level += 1
-        global.xpLimit += 100;
-        global.xp = 0;
-    }
-	if (global.enchantingXp >= global.enchantingXpLimit) {
-        global.enchantingPoints += 1;
-        global.enchantingXpLimit += 100;
-        global.enchantingXp = 0;
-    } 
+// Auto-healing
+if (global.auto_healing == 1
+    && global.potions > 0
+    && global.healthPoints < 5) {
+    global.potions -= 1;
+    global.healthPoints += 10;
 }
+
+// Open Inventory
+if (keyboard_check_pressed(vk_tab) &&
+	global.hudState == HudStates.Null &&
+	global.hudCanToggle) {
+	if (instance_exists(obj_player)) {
+	    if (scr_plr_neutral_action_states()) {
+			scr_inventory_open();
+	    }
+	}
+} else if (global.hudState == HudStates.Inventory && scr_keys_to_close()) {
+	scr_inventory_close();
+}
+
+// Page change
+scr_page_change();
+
+// Update values of listed items
+scr_inventory_update_values();

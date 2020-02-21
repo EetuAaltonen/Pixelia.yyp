@@ -24,7 +24,7 @@ if (global.hudState == HudStates.Minigame) {
 				/*if (some thing to stop this) {
 					minigame = "null";
 					minigameInitialized = false;
-					scr_close_global_hud_state();
+					scr_global_hud_state_reset();
 				} else {*/
 					alarm[1] = 1;
 					

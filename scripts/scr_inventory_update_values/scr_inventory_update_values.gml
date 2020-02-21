@@ -86,6 +86,5 @@ if (updateValues) {
 	} else {
 		scr_listed_item_remove();
 	}
-	
 	controlsInfo = scr_inventory_get_controls_info(global.hudState);
 }

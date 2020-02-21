@@ -722,7 +722,7 @@
             "Key": "101ecfc6-3e6c-485b-8328-ad9e9d2da5a8",
             "Value": {
                 "id": "cd405233-1174-4190-bc84-d7cddd30cbad",
-                "resourcePath": "scripts\\scr_close_global_hud_state\\scr_close_global_hud_state.yy",
+                "resourcePath": "scripts\\scr_global_hud_state_reset\\scr_global_hud_state_reset.yy",
                 "resourceType": "GMScript"
             }
         },

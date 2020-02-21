@@ -1,9 +1,6 @@
 scr_set_global_hud_state(HudStates.Inventory);
 scr_set_global_hud_action(HudActions.Backpack);
-
-updateValues = true;
-pageIndex = 1;
-filter = "";
+scr_inventory_reset_values();
 
 //Create Buttons
 var buttonDataList = [

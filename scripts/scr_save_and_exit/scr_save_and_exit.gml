@@ -1,5 +1,5 @@
 //Clear Hud State
-scr_close_global_hud_state();
+scr_global_hud_state_reset();
 
 //Save Game
 scr_savegame();

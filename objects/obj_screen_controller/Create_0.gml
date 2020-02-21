@@ -51,7 +51,7 @@ darknessEffect = false;
 darknessAlpha = 0;
 darknessMax = 0.6;
 
-//Can Close Hud State
-global.hudCanClose = true;
+// Can Toggle Hud State
+global.hudCanToggle = true;
 
 sources = ds_list_create();
