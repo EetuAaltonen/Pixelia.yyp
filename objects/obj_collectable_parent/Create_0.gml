@@ -1,7 +1,7 @@
 depth = Depth.Loot;
 sprite_index_ = sprite_index;
 spriteName = sprite_get_name(sprite_index);
-data = scr_item_search_data(sprite_index, "sprite");
+data = scr_item_search_data(sprite_index, ItemData.Name);
 
 //scr_item_info_struct()
 name = data[1];

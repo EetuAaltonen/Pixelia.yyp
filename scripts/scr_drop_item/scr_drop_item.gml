@@ -1,6 +1,6 @@
 // TODO: Drop more than 1 item from inventory
-/*var spriteName = sprite_get_name(argument0);
-var randomX, randomY, i;
+var spriteName = sprite_get_name(argument0);
+/*var randomX, randomY, i;
 var instance;
 for (i = 1; i <= droppedCount; i++) {
 	scr_create_dropped_item();

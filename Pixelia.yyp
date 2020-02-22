@@ -810,7 +810,7 @@
             "Key": "131077a6-f054-40cb-92ac-b53a1178e0fe",
             "Value": {
                 "id": "7964ff62-c129-44fd-b201-1b02e26e6d11",
-                "resourcePath": "scripts\\scr_craft_item\\scr_craft_item.yy",
+                "resourcePath": "scripts\\scr_crafting_start\\scr_crafting_start.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3255,6 +3255,14 @@
             }
         },
         {
+            "Key": "507e2d93-1dea-4a40-b7b3-6b88f1a4f419",
+            "Value": {
+                "id": "729650cd-82a7-43da-82fe-a881c30bf5b7",
+                "resourcePath": "views\\507e2d93-1dea-4a40-b7b3-6b88f1a4f419.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "509991ca-d00c-4db0-b10e-5f85829a92f2",
             "Value": {
                 "id": "24a1a240-4a1a-4eef-a2b1-f7bbe85b6eda",
@@ -3876,6 +3884,14 @@
                 "id": "5a36077e-2724-41d2-b59d-ee810ca6dd0b",
                 "resourcePath": "views\\5e615637-bcbc-4a3a-9664-ca599387362b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5e77bda2-b551-44bb-b58b-230930ec77ee",
+            "Value": {
+                "id": "329fc0cd-f23f-4bb0-a1dd-1f73a1110f84",
+                "resourcePath": "scripts\\scr_enum_material\\scr_enum_material.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -7167,14 +7183,6 @@
             }
         },
         {
-            "Key": "b1203ce5-e7d5-4428-9ff7-438a03e3e6b6",
-            "Value": {
-                "id": "ecedfefd-8f4c-41f1-9d00-02f25f5347d5",
-                "resourcePath": "objects\\obj_crafting_product\\obj_crafting_product.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "b168d17a-df56-4344-91cf-1f5d196d0c37",
             "Value": {
                 "id": "32f9088a-5e37-4d2e-ba98-befb5b8de397",
@@ -8108,6 +8116,14 @@
                 "id": "2f2f5e02-744a-4ae3-af11-9d9facc3ec3b",
                 "resourcePath": "sprites\\spr_wooden_sign\\spr_wooden_sign.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ca6ec896-14b7-44ac-836d-d535267ec695",
+            "Value": {
+                "id": "c9d7ee44-f947-4247-ad24-2157993195b8",
+                "resourcePath": "scripts\\scr_enum_crafting_recipe\\scr_enum_crafting_recipe.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -10634,7 +10650,9 @@
         "4fe80f06-c631-4209-99fe-828642c6f906",
         "e7510dbf-aeb7-4ff0-b17a-9623d250dc78",
         "07f8e0cc-62c0-4b93-9194-c80834bffcff",
-        "847f7ab4-edd5-46eb-98fa-3694192a9dd7"
+        "847f7ab4-edd5-46eb-98fa-3694192a9dd7",
+        "ca6ec896-14b7-44ac-836d-d535267ec695",
+        "5e77bda2-b551-44bb-b58b-230930ec77ee"
     ],
     "tutorial": ""
 }

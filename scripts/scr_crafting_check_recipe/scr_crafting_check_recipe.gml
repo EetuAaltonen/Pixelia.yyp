@@ -1,59 +1,78 @@
-//scr_item_info_struct()
+/// @description Check if any recipe fulfilled
+/// @param recipeMaterials - Set value into ds_list of required materials of fulfilled recipe
+/// @return ItemData - Craftable item
 
-// TODO: fix crafting code
-/*var i, j, k;
-var item = "null";
-var correct = 0;
-var recipe, product;
+var recipeMaterials = argument0;
+ds_list_clear(recipeMaterials);
 
+var recipes = scr_crafting_recipes(global.hudAction);
+var output = undefined;
+var slotMaterials = ds_list_create();
+
+// Collect slotted materials
 var slotCount = instance_number(obj_crafting_slot);
-var slot;
-var slots = ds_list_create();
+var i, j, k, slot, tempMaterial, slotMaterialCount, exists;
 for (i = 0; i < slotCount; i++) {
-	ds_list_add(slots, instance_find(obj_crafting_slot, i));
-}
-var tempSlots = ds_list_create();
-
-var recipeCorrect = 0;
-var recipes = scr_crafting_recipes(global.hudState);
-
-var recipeCount = array_length_1d(recipes);
-var materialCount;
-
-for (i = 0; i < recipeCount; i++) {
-	recipeCorrect = 0;
-	recipe = recipes[i];
-	materialCount = scr_recipe("lastMatIndex", recipe);
-	scr_ds_list_copy(tempSlots, slots, "false");
-	for (j = 0; j < materialCount; j++) {
-		for (k = 0; k < slotCount; k++) {
-			slot = ds_list_find_value(tempSlots, k);
-			if (slot.data != "null") {
-				if (slot.data[1] == recipe[j]) {
-					recipeCorrect += 1;
-					ds_list_delete(tempSlots, k);
-					slotCount = ds_list_size(tempSlots);
-					break;
+	slot = instance_find(obj_crafting_slot, i);
+	if (slot.index != -1) {
+		if (!is_undefined(slot.data)) {
+			exists = false;
+			slotMaterialCount = ds_list_size(slotMaterials);
+			for (j = 0; j < slotMaterialCount; j++) {
+				if (!exists) {
+					tempMaterial = ds_list_find_value(slotMaterials, j);
+					if (tempMaterial[ItemData.Sprite] == slot.data[ItemData.Sprite]) {
+						tempMaterial[ItemData.Count] += 1;
+						ds_list_set(slotMaterials, j, tempMaterial);
+						exists = true;
+					}
 				}
-			} else {
-				ds_list_delete(tempSlots, k--);
-				slotCount = ds_list_size(tempSlots);	
+			}
+			if (!exists) {
+				ds_list_add(slotMaterials, slot.data);
 			}
 		}
 	}
-	for (j = 0; j < slotCount; j++) {
-		slot = ds_list_find_value(tempSlots, j);
-		if (slot.data != "null") {
-			recipeCorrect = 0;
-			break;
-		}
-	}
-	if (recipeCorrect == materialCount) {
-		materialCount = array_length_1d(recipe);
-		product = scr_item_search_data(scr_recipe("product", recipe), "name");
-		product[3] = scr_recipe("count", recipe);
-		return product;	
-	}
 }
 
-return item;
+var slotMaterialCount = ds_list_size(slotMaterials);
+if (slotMaterialCount > 0) {
+	// Check if recipe is fulfilled
+	var recipes = scr_crafting_recipes(global.hudAction);
+	var recipeCount = array_length_1d(recipes);
+	var recipe, tempMaterials, material, materialCount, recipeFulfilled, reqMaterial;
+	for (i = 0; i < recipeCount; i++) {
+		recipeFulfilled = true;
+		recipe = recipes[i];
+		materialCount = array_length_1d(recipe[Recipe.Materials]);
+		// Check required materials found in slots
+		for (j = 0; j < materialCount; j++) {
+			if (recipeFulfilled) {
+				reqMaterial = false;
+				tempMaterials = recipe[Recipe.Materials];
+				material = tempMaterials[j];
+				for (k = 0; k < slotMaterialCount; k++) {
+					if (!reqMaterial) {
+						tempMaterial = ds_list_find_value(slotMaterials, k);
+						// Compare slot and recipe materials
+						if (material[Material.Sprite] == tempMaterial[ItemData.Sprite] &&
+							material[Material.Count] == tempMaterial[ItemData.Count]) {
+							reqMaterial = true;
+						}
+					}
+				}
+				if (!reqMaterial) {
+					recipeFulfilled = false;
+				}
+			}
+		}
+		// Recipe fulfilled
+		if (recipeFulfilled && (slotMaterialCount == array_length_1d(recipe[Recipe.Materials]))) {
+			output = scr_item_search_data(recipe[Recipe.Output], ItemData.Sprite);
+			output[ItemData.Count] = recipe[Recipe.Count];
+			// Materials to remove from intentory
+			scr_ds_list_copy(recipeMaterials, slotMaterials, false);
+		}
+	}
+}
+return output;

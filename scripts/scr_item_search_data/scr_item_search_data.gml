@@ -3,17 +3,26 @@
 var value = argument0;
 var type = argument1;
 var items = scr_items_data();
-var data;
 var arraySize = array_length_1d(items);
-var item = "null";
-var i;
+var item = undefined;
+var i, data;
 
 for (i = 0; i < arraySize; i++) {
 	data = items[i];
 	switch (type) {
-		case "sprite": { if (data[0] == value) {item = data; return item;} }break;
-		case "name": { if (data[1] == value) {item = data; return item;} }break;
+		case ItemData.Sprite: {
+			if (data[ItemData.Sprite] == value) {
+				item = data;
+			}
+		}break;
+		case ItemData.Name: {
+			if (data[ItemData.Name] == value) {
+				item = data;
+			}
+		}break;
 	}
 }
-show_message("Item: " + string(value) + " : " + type + " not found!");
-return;
+if (is_undefined(item)) {
+	show_message("Item: " + string(value) + " : " + type + " not found!");	
+}
+return item;

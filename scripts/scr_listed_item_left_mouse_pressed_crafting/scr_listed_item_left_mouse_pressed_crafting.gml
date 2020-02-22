@@ -11,11 +11,14 @@ if (!recipeBookOpen) {
 			var i, slot;
 			for (i = 0; i < slotCount; i++) {
 				slot = instance_find(obj_crafting_slot, i);
-				if (is_undefined(slot.data)) {
-					slot.data = data;
-					//selected = true;
-					obj_crafting_product.checkRecipe = true;
-					break;
+				if (is_undefined(slot.data) && slot.index != -1) {
+					if (!slot.outputSlot.checkRecipe && slot.outputSlot.craftingStep == -1) {
+						slot.data = data;
+						slot.data[ItemData.Count] = 1;
+						//selected = true;
+						slot.outputSlot.checkRecipe = true;
+						break;
+					}
 				}
 			}
 		/*} else {

@@ -1,12 +1,12 @@
 //scr_item_info_struct()
 
-//Binary search
+// Binary search
 var item = argument0;
-var isArray = is_array(item);
-var data;
-var inventory = global.inventory; //global.equippedItems
+var isArray = is_array(item); // Can be ItemData or Name
+var equalData = undefined;
+var inventory = global.inventory;
 var listSize = ds_list_size(inventory);
-var i, j, k;
+var i, j, k, data;
 
 i = 0; j = (listSize-1);
 while(i <= j) {
@@ -14,7 +14,7 @@ while(i <= j) {
 	data = ds_list_find_value(inventory, k);
 	if (isArray) {
 		if (scr_item_compare_items(item, data, "full")) {
-			return data;
+			equalData = data;
 		}
 		if (item[ItemData.Name] < data[ItemData.Name]) {
 			j = (k - 1);
@@ -23,7 +23,7 @@ while(i <= j) {
 		}
 	} else {
 		if (item == data[ItemData.Name]) {
-			return data;
+			equalData = data;
 		}
 		if (item < data[ItemData.Name]) {
 			j = (k - 1);
@@ -32,4 +32,4 @@ while(i <= j) {
 		}
 	}
 }
-return "";
+return equalData;

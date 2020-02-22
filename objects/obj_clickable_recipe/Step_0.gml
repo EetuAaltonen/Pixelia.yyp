@@ -18,7 +18,7 @@ if (recipe != "null" && materials = "null") {
 			}
 		}
 		if (!alreadyExists) {
-			material = scr_item_search_data(recipe[i], "name");
+			material = scr_item_search_data(recipe[i], ItemData.Name);
 			material[3] = 1;
 			ds_list_add(materials, material);
 		}

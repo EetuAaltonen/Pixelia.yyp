@@ -1,8 +1,8 @@
 {
-    "id": "131077a6-f054-40cb-92ac-b53a1178e0fe",
+    "id": "ca6ec896-14b7-44ac-836d-d535267ec695",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_craft_item",
+    "name": "scr_enum_crafting_recipe",
     "IsCompatibility": false,
     "IsDnD": false
 }

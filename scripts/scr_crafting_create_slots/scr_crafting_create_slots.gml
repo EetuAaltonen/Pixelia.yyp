@@ -1,37 +1,40 @@
 var viewX = camera_get_view_x(view_camera[0]);
 var viewY = camera_get_view_y(view_camera[0]);
 
-var hudState = argument0;
-var tempDepth = obj_inventory_controller.depth-1;
+var hudAction = argument0;
+var slots;
 
-var slot = obj_crafting_slot;
-var xPos;
-var yPos;
-
-switch (hudState) {
-	case "spinningWheel": {
-        xPos = [/*300, 340, 300,*/ 340/*, 300, 340*/];
-		yPos = [/*120, 120, 150,*/ 150/*, 180, 180*/];
-	}break;
-	case "waterWell": {
-        xPos = [/*300, 340, 300,*/ 340/*, 300, 340*/];
-		yPos = [/*120, 120, 150,*/ 150/*, 180, 180*/];
-	}break;
+switch (hudAction) {
+	//case HudActions.SpinningWheel: {
+    //    xPos = [/*300, 340, 300,*/ 340/*, 300, 340*/];
+	//	yPos = [/*120, 120, 150,*/ 150/*, 180, 180*/];
+	//}break;
+	//case HudActions.WaterWell: {
+    //    xPos = [/*300, 340, 300,*/ 340/*, 300, 340*/];
+	//	yPos = [/*120, 120, 150,*/ 150/*, 180, 180*/];
+	//}break;
 	default: {
-		xPos = [300, 340, 300, 340, 300, 340];
-		yPos = [120, 120, 150, 150, 180, 180];  
+		slots = [
+			[350, 120], [390, 120],
+			[350, 150], [390, 150],
+			[350, 180], [390, 180],
+			[480, 150]
+		];
 	}break;
 }
 
-var i;
-var slotCount = array_length_1d(xPos);
+var slotCount = array_length_1d(slots);
+// Output slot
+pos = slots[(slotCount - 1)];
+var outputSlot = instance_create(viewX + pos[0], viewY + pos[1], obj_crafting_slot);
+outputSlot.index = -1;
+outputSlot.outputSlot = outputSlot;
 
-for (i = 0; i < slotCount; i++) {
-	instance_create(viewX+xPos[i], viewY+yPos[i], slot);
-	(instance_nearest(viewX+xPos[i], viewY+yPos[i], slot)).index = i;
-	(instance_nearest(viewX+xPos[i], viewY+yPos[i], slot)).depth = tempDepth;	
+
+var i, pos, instance;
+for (i = 0; i < (slotCount - 1); i++) {
+	pos = slots[i];
+	instance = instance_create(viewX + pos[0], viewY + pos[1], obj_crafting_slot);
+	instance.index = i;
+	instance.outputSlot = outputSlot;
 }
-
-//Created Product Slot
-instance_create(viewX+420, viewY+150, obj_crafting_product);
-(instance_nearest(viewX+420, viewY+150, obj_crafting_product)).depth = tempDepth;

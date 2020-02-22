@@ -10,7 +10,7 @@ switch (material) {
 	}break;
 }
 if (bgColor != "null") {
-	material = scr_item_search_data(material, "name");	
+	material = scr_item_search_data(material, ItemData.Name);	
 } else {
 	show_message("Material for " + sprite_get_name(sprite_index) + " not found!");
 }

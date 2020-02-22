@@ -28,7 +28,7 @@ for (i = 0; i < arraySize; i++) {
 		var data;
 		for (j = 0; j < lootCount; j++) {
 			loot = loots[j];
-			var data = scr_item_search_data(loot[0], "name");
+			var data = scr_item_search_data(loot[0], ItemData.Name);
 			//Change Count To Data
 			data[3] = loot[1];
 			//Replace Loot Name By Data

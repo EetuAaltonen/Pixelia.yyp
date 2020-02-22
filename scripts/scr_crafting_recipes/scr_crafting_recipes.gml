@@ -1,22 +1,21 @@
-/*Recipe {
-	material(s); n
-	product; n+1
-	output count; n+2
-	required tool; n+3
-	required skill; n+4 ["skill name", level]
-}*/
-
-var category = argument0;
+var hudAction = argument0;
 var recipes = [];
-switch (category) {
-	case "forge": {
+switch (hudAction) {
+	case HudActions.Forge: {
 		recipes = [
-			["Oak Log", "Coal", 2, "", ""],
-			["Iron Ore", "Iron Ingot", 1, "", ""],
-			["Iron Ore", "Coal", "Steel Ingot", 1, "", ""]
+			[[
+				[spr_oak_log, 1]
+			], spr_coal, 2, undefined, undefined],
+			[[
+				[spr_iron_ore, 1]
+			], spr_iron_ingot, 1, undefined, undefined],
+			[[
+				[spr_iron_ore, 1],
+				[spr_coal, 1]
+			], spr_steel_ingot, 1, undefined, undefined]
 		];
 	}break;
-	case "furnace": {
+	/*case "furnace": {
 		recipes = [
 			["Ring Mould", "Gold Ore", "Gold Ring", 1, "Crucible With Handle", ""],
 			["Amulet Mould", "Gold Ore", "Gold Ore", "Gold Amulet", 1, "Crucible With Handle", ""]
@@ -69,6 +68,6 @@ switch (category) {
 		recipes = [
 			["Empty Flask", "Flask Of Water", 1, "", ""]
 		];
-	}break;
+	}break;*/
 }
 return recipes;

@@ -11,10 +11,6 @@ if (instance_exists(obj_crafting_slot)) {
 	with (obj_crafting_slot) instance_destroy();
 }
 
-//Destroy Crafted Item
-if (instance_exists(obj_crafting_product)) {
-	with (obj_crafting_product) instance_destroy();
-}
 //Destroy Recipe Book
 if (instance_exists(obj_recipe_book)) {
 	with (obj_recipe_book) instance_destroy();

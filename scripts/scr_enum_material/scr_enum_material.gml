@@ -1,0 +1,4 @@
+enum Material {
+	Sprite,
+	Count
+}
