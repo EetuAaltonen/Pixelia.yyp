@@ -6951,6 +6951,14 @@
             }
         },
         {
+            "Key": "ab4ce8df-7dea-41f7-99ce-bfc400e95aae",
+            "Value": {
+                "id": "1db1e394-7bd1-4677-9513-ff60a52b5e17",
+                "resourcePath": "scripts\\scr_crafting_selected_listed_items\\scr_crafting_selected_listed_items.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ab700056-b178-4021-9afb-c21c430fa6b5",
             "Value": {
                 "id": "e6626516-0d96-492b-872f-a2bed41541cb",
@@ -10431,6 +10439,7 @@
         "2246f667-4dc3-4e1f-9ef4-4decd516cf32",
         "fed53eb0-cf49-4a59-b9a0-27b5a6b8a587",
         "5677d34c-aab7-4094-9385-b76b9420bb12",
+        "ab4ce8df-7dea-41f7-99ce-bfc400e95aae",
         "650f69f4-1ec7-4bec-8dc6-2badcba8fc07",
         "50c98b33-61ba-42d6-939b-4b76a3c7236f",
         "2ed51917-ac6b-4953-a2cf-7ada19ad9f93",

@@ -11,7 +11,6 @@ var yPos = scr_position_to_gui(y, "y");
 	
 for (i = 0; i < renderDataCount; i++) {
 	render = renderData[i];
-		
 	if ((array_length_1d(render) - 1) >= RenderData.BgAlpha) {
 		xPadding = render[RenderData.BgXPadding];
 		bgWidth = render[RenderData.BgWidth];
@@ -69,8 +68,9 @@ for (i = 0; i < renderDataCount; i++) {
 }
 
 // Draw equipped mark
-if (equipmentIndex != undefined) {
-	if (equipmentIndex > -1) {
+if (equipmentIndex != undefined ||
+	(global.hudState == HudStates.Crafting)) {
+	if (equipmentIndex > -1 || selected) {
 		draw_sprite_ext(spr_listed_item_equipped_mark, 1,
 		xPos + 20, yPos + 12,
 		guiWRatio, guiHRatio,

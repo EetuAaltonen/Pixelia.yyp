@@ -70,9 +70,11 @@ if (slotMaterialCount > 0) {
 		if (recipeFulfilled && (slotMaterialCount == array_length_1d(recipe[Recipe.Materials]))) {
 			output = scr_item_search_data(recipe[Recipe.Output], ItemData.Sprite);
 			output[ItemData.Count] = recipe[Recipe.Count];
-			// Materials to remove from intentory
-			scr_ds_list_copy(recipeMaterials, slotMaterials, false);
+			break;
 		}
 	}
+	
+	// Copy slotted materials into recipeMaterials
+	scr_ds_list_copy(recipeMaterials, slotMaterials, false);
 }
 return output;

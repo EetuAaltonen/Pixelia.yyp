@@ -1,4 +1,8 @@
-//scr_item_info_struct()
+/// @description Adds item into inventory
+/// @param item - Item to be added
+/// @param count - Count of items
+/// @return Void
+
 var item = argument0;
 var count = argument1;
 

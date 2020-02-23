@@ -1,7 +1,7 @@
 depth = Depth.ListItem;
 mask_index = spr_listed_item_mask;
 
-//Data
+// Data
 data = undefined;
 renderData = undefined;
 index = "null";
@@ -13,9 +13,9 @@ droppingItem = false;
 createOnce = true;
 droppedCount = 0;
 
-//Crafting - Selected
+// Crafting
 selected = false;
 checkSelected = true;
 
-//Equipped
+// Equipped
 equipmentIndex = undefined;
