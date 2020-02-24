@@ -41,5 +41,5 @@ if (index == -1) {
 		spr_crafting_output_arrow, max(0, craftingStep),
 		scr_position_to_gui(x - 50,"x"), scr_position_to_gui(y,"y"),
 		global.resWAspect, global.resHAspect, 0, c_white, 1
-	);	
+	);
 }

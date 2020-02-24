@@ -13,7 +13,9 @@ if (global.hudState == HudStates.Inventory ||
 	// Item info
 	scr_inventory_draw_item_info();
 	// Money
-	scr_inventory_draw_money();
+	if (global.hudState != HudStates.Crafting) {
+		scr_inventory_draw_money();
+	}
 	// Capacity
 	scr_inventory_draw_capacity();
 	// Mouse/control info

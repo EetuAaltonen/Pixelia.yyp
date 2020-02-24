@@ -10,9 +10,10 @@ if (scr_interact_with_player()) {
         // Create Slots
 		scr_crafting_create_slots(hudAction);
 		// Close Button
-        instance_create(viewX + 400, viewY + 54, obj_crafting_close_button);
+        // TODO: Need for close button?
+		//instance_create(viewX + 400, viewY + 54, obj_crafting_close_button);
         // Recipe Book
-        instance_create(viewX + 450, viewY + 90, obj_recipe_book);
+        instance_create(viewX + 518, viewY + 80, obj_recipe_book);
 		
 		scr_inventory_reset_values();
 		obj_player.actionState = Actions.Craft;

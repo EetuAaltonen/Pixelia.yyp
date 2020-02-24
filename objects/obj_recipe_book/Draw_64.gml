@@ -1,4 +1,57 @@
+draw_sprite_ext(
+	spr_recipe_book, 0,
+	scr_position_to_gui(x,"x"), scr_position_to_gui(y,"y"),
+	global.resWAspect, global.resHAspect, 0, c_white, 1
+);
+
 if (showRecipeBook) {
+	var bgWidth = 800;
+	var bgHeight = 600;
+	var borderPadding = 2;
+	
+	// Page left
+	// Border
+	scr_hud_draw_background(
+		(guiWidth / 2) - (bgWidth / 4), (guiHeight / 2),
+		(bgWidth / 2) + (borderPadding * 2),
+		bgHeight + (borderPadding * 2),
+		c_black,
+		1,
+		true, true
+	);
+	
+	// Box
+	scr_hud_draw_background(
+		(guiWidth / 2) - (bgWidth / 4), (guiHeight / 2),
+		(bgWidth / 2), bgHeight,
+		c_gray,
+		1,
+		true, true
+	);
+	
+	// Page right
+	// Border
+	scr_hud_draw_background(
+		(guiWidth / 2) + (bgWidth / 4), (guiHeight / 2),
+		(bgWidth / 2) + (borderPadding * 2),
+		bgHeight + (borderPadding * 2),
+		c_black,
+		1,
+		true, true
+	);
+	
+	// Box
+	scr_hud_draw_background(
+		(guiWidth / 2) + (bgWidth / 4), (guiHeight / 2),
+		(bgWidth / 2), bgHeight,
+		c_gray,
+		1,
+		true, true
+	);
+}
+
+// TODO: Fix recipe book
+/*if (showRecipeBook) {
 	var viewX = camera_get_view_x(view_camera[0]);
 	var viewY = camera_get_view_y(view_camera[0]);
 	var viewWidth = camera_get_view_width(view_camera[0]);

@@ -1,4 +1,4 @@
-depth = Depth.Button;
+depth = Depth.Dialog;
 showRecipeBook = false;
 
 currentPage = 0;
