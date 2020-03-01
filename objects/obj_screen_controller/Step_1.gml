@@ -42,10 +42,10 @@ if (room != Menu && !pause) {
 }
 
 // Check Resolution
-if (resolutionLastRoom != room_get_name(room)) {
+/*if (resolutionLastRoom != room_get_name(room)) {
 	scr_resolution(global.wResolution, global.hResolution);	
 	resolutionLastRoom = room_get_name(room);
-}
+}*/
 
 // Room Change
 if (room != First_loading) {

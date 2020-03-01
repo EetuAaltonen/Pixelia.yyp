@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "065770e9-a156-426d-992c-9abd6b3b12e5",
+            "Value": {
+                "id": "bb59fac7-bd83-4335-b529-565848d73eac",
+                "resourcePath": "objects\\obj_display_controller\\obj_display_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "068030bc-a4f5-4b57-a010-6e641367ecb9",
             "Value": {
                 "id": "ad4c30d1-9a98-410c-b679-80ed8472173b",
@@ -1812,6 +1820,14 @@
                 "id": "7cda2430-bedb-4f80-9a64-1e38a4ff58be",
                 "resourcePath": "scripts\\scr_page_calculate\\scr_page_calculate.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2add3fd5-2786-4cd6-8d99-4ac686891fab",
+            "Value": {
+                "id": "20b155cc-7438-4325-8c37-bad3c014d4ed",
+                "resourcePath": "views\\2add3fd5-2786-4cd6-8d99-4ac686891fab.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5316,6 +5332,14 @@
                 "id": "278ab3d7-aa81-4316-86ae-6fe40ca5850d",
                 "resourcePath": "scripts\\scr_crafting_ini_recipe_info\\scr_crafting_ini_recipe_info.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "80428ada-56c7-4a4b-8c0b-4f106182b8a1",
+            "Value": {
+                "id": "e1d5bb49-f941-4b1e-b3f6-e9ce20e3de6a",
+                "resourcePath": "rooms\\Display_Init\\Display_Init.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

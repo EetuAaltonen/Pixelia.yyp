@@ -1,4 +1,4 @@
-if (is_undefined(followTarget)) {
+/*if (is_undefined(followTarget)) {
 	if (instance_exists(obj_player)) {
 		followTarget = obj_player;	
 	}

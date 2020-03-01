@@ -1,4 +1,4 @@
-if (!is_undefined(followTarget)) {
+/*if (!is_undefined(followTarget)) {
 	movingToX = followTarget.x;
 	x += (movingToX - x) / smoothing;
 	
