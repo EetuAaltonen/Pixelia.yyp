@@ -511,14 +511,6 @@
             }
         },
         {
-            "Key": "0a61d707-16fb-4b98-afa9-ead27724b05f",
-            "Value": {
-                "id": "9fa25771-e671-47bc-83bc-f6453b769eac",
-                "resourcePath": "rooms\\Menu_old\\Menu_old.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "0a723580-e0f2-4638-b0df-6bbb2255a851",
             "Value": {
                 "id": "c5e9f354-6dc6-42ed-97f9-5efe530f2e24",
@@ -3931,14 +3923,6 @@
             "Value": {
                 "id": "93be992d-4287-4864-9705-f55fd0522775",
                 "resourcePath": "scripts\\scr_set_global_hud_state\\scr_set_global_hud_state.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5f120601-0b38-40e3-8975-9c317a072207",
-            "Value": {
-                "id": "6cd45e88-c8a6-4bb8-a67d-06104f14f8fa",
-                "resourcePath": "scripts\\scr_resolution\\scr_resolution.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -10639,7 +10623,6 @@
         "737ebb7a-052c-4b54-a889-7a594841a98a",
         "4d9acd1d-4220-44c4-af2a-683613e45088",
         "3bb6b9d3-dfa3-4305-92d9-1e12731917db",
-        "5f120601-0b38-40e3-8975-9c317a072207",
         "1565baf6-008c-49bb-9c56-53b0ce824e95",
         "cea04ad0-2f73-4c1a-8e27-1d472ba3413c",
         "e3344eb1-b9c7-4df2-a15c-9583b713ece8",

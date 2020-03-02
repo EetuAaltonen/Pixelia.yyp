@@ -6,7 +6,7 @@ if (global.hudState != HudStates.RoomChange && drawToast && !is_undefined(toastM
 		c_white, 1
 	);
 	
-	var xPos = guiWidth - 12;
+	var xPos = GuiWidth - 12;
 	var textMargin = 6;
 	var bgWidth = (string_width(toastMessage) + (textMargin * 2));
 	var bgHeight = 40;

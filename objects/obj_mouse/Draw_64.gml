@@ -45,12 +45,12 @@ if (room == Menu ||
 		c_orange, 1
 	);
 	
-	if (mouseX > guiWidth / 2) {
+	if (mouseX > GuiWidth / 2) {
 		draw_set_halign(fa_right);	
 	}
 	
 	var yTextMargin = -40;
-	if (mouseY < guiHeight / 2) {
+	if (mouseY < GuiHeight / 2) {
 		yTextMargin = 80;
 	}
 

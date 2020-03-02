@@ -1,6 +1,6 @@
 var xPadding = 10;
 var yPadding = 10;
-var spriteWidth = 30 * guiWRatio;
+var spriteWidth = 30 * GuiWRatio;
 var spriteHeight = spriteWidth;
 	
 //Font
@@ -9,7 +9,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);	
 
 //Armor
-draw_sprite_ext(spr_armor, 0, xPadding, yPadding, guiWRatio, guiHRatio,
+draw_sprite_ext(spr_armor, 0, xPadding, yPadding, GuiWRatio, GuiHRatio,
 		        image_angle, c_white, image_alpha);
 if (global.armor > ((global.maxArmor + global.armorPlus)*0.75)) {
 	draw_set_color(c_white);
@@ -90,7 +90,7 @@ for (i = 0; i < buffCount; i++) {
 	draw_sprite_ext(
 		sprite, 0,
 		xPos + (margin * i), yPos,
-		guiWRatio, guiHRatio,
+		GuiWRatio, GuiHRatio,
 		image_angle, c_white, 1
 	);
 }

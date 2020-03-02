@@ -12,7 +12,7 @@ if (showRecipeBook) {
 	// Page left
 	// Border
 	scr_hud_draw_background(
-		(guiWidth / 2) - (bgWidth / 4), (guiHeight / 2),
+		(GuiWidth / 2) - (bgWidth / 4), (GuiHeight / 2),
 		(bgWidth / 2) + (borderPadding * 2),
 		bgHeight + (borderPadding * 2),
 		c_black,
@@ -22,7 +22,7 @@ if (showRecipeBook) {
 	
 	// Box
 	scr_hud_draw_background(
-		(guiWidth / 2) - (bgWidth / 4), (guiHeight / 2),
+		(GuiWidth / 2) - (bgWidth / 4), (GuiHeight / 2),
 		(bgWidth / 2), bgHeight,
 		c_gray,
 		1,
@@ -32,7 +32,7 @@ if (showRecipeBook) {
 	// Page right
 	// Border
 	scr_hud_draw_background(
-		(guiWidth / 2) + (bgWidth / 4), (guiHeight / 2),
+		(GuiWidth / 2) + (bgWidth / 4), (GuiHeight / 2),
 		(bgWidth / 2) + (borderPadding * 2),
 		bgHeight + (borderPadding * 2),
 		c_black,
@@ -42,7 +42,7 @@ if (showRecipeBook) {
 	
 	// Box
 	scr_hud_draw_background(
-		(guiWidth / 2) + (bgWidth / 4), (guiHeight / 2),
+		(GuiWidth / 2) + (bgWidth / 4), (GuiHeight / 2),
 		(bgWidth / 2), bgHeight,
 		c_gray,
 		1,

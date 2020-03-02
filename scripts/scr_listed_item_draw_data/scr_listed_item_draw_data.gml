@@ -22,7 +22,7 @@ for (i = 0; i < renderDataCount; i++) {
 				data[ItemData.Sprite], 0,
 				scr_position_to_gui(x, "x"),
 				scr_position_to_gui(y, "y"),
-				guiWRatio, guiHRatio,
+				GuiWRatio, GuiHRatio,
 				image_angle, c_white, 1
 			);
 		}break;

@@ -1,5 +1,10 @@
-if (instance_exists(obj_camera_controller)) {
-	var camera = obj_camera_controller;
-	camera.viewWidth = 0;
-	camera.viewHeight = 0;
+// Focus
+if (room != Menu && !pause) {
+	if (windowFocus && !window_has_focus()) {
+		windowFocus = false;
+		instance_deactivate_all(true);
+	} else if (!windowFocus && window_has_focus()) {
+		windowFocus = true;
+		instance_activate_all();
+	}
 }

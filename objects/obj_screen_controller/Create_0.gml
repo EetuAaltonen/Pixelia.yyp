@@ -2,28 +2,8 @@ depth = Depth.RoomTransition;
 //GAME VERSION
 global.gameVersion = "0.0.0.1";
 
-// GUI
-globalvar guiWidth;
-guiWidth = 1080;
-globalvar guiHeight;
-guiHeight = 720;
-globalvar guiWRatio;
-guiWRatio = 2;
-globalvar guiHRatio;
-guiHRatio = 2;
-view_set_wport(0, guiWidth);
-view_set_hport(0, guiHeight);
-
-//Resolution
 surface = 5; //1px = 5x5px
-global.resWAspect = 2;
-global.resHAspect = 2;
-baseWResolution = guiWidth;
-baseHResolution = guiHeight;
-global.wResolution = baseWResolution;
-global.hResolution = baseHResolution;
 // TODO: Move to custom camera object
-//scr_resolution(global.wResolution, global.hResolution);
 //Check Resolution
 resolutionLastRoom = "null";
 //Menu

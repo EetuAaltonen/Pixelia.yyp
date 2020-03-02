@@ -9,7 +9,7 @@ if (!pause && !unfocus) {
 	if (drawViewAlpha) {
 		scr_hud_draw_background(
 			0, 0,
-			guiWidth, guiHeight,
+			GuiWidth, GuiHeight,
 			c_black, viewAlpha, false, false
 		);
 	}
@@ -21,23 +21,23 @@ if (!pause && !unfocus) {
 			if (global.hudState == HudStates.Null || global.hudState == HudStates.Minigame) {
 				scr_hud_draw_background(
 					0, 0,
-					guiWidth, guiHeight,
+					GuiWidth, GuiHeight,
 					c_black, darknessAlpha, false, false
 				);
 			}
 		}
 	}*/
 } else {
-    draw_text(guiWidth / 2, guiHeight / 2, "Pause");
+    draw_text(GuiWidth / 2, GuiHeight / 2, "Pause");
 }
 
 if (room == Menu) {
 	// Logo
-	draw_sprite_ext(spr_menu_logo, 0, guiWidth / 2, 110,
-					guiWRatio, guiHRatio,
+	draw_sprite_ext(spr_menu_logo, 0, GuiWidth / 2, 110,
+					GuiWRatio, GuiHRatio,
 			        image_angle, c_white, image_alpha);
 	// Signature
-	draw_sprite_ext(spr_menu_signature, 0, 14, guiHeight - 30,
-					guiWRatio, guiHRatio,
+	draw_sprite_ext(spr_menu_signature, 0, 14, GuiHeight - 30,
+					GuiWRatio, GuiHRatio,
 			        image_angle, c_white, image_alpha);
 }

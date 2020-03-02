@@ -4,4 +4,4 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
-draw_text(guiWidth + 150, guiHeight + 130, "Loading...");
+draw_text(GuiWidth + 150, GuiHeight + 130, "Loading...");

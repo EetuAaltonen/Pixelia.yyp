@@ -101,7 +101,7 @@ if (!is_undefined(itemInfoText)) {
 			draw_sprite_ext(
 				equipment[ItemData.Sprite], 0,
 				slot[0], slot[1] + (equipmentBgHeight / 2),
-				guiWRatio, guiHRatio,
+				GuiWRatio, GuiHRatio,
 				image_angle, c_white, 1
 			);
 		}

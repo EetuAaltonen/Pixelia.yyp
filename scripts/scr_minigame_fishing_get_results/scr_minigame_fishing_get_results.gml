@@ -1,7 +1,7 @@
 /// @description ???
 /// @return void
 
-var viewWCenter = guiWidth / 2;
+var viewWCenter = GuiWidth / 2;
 
 if (viewWCenter + abs(bobberX) <= viewWCenter + ((bobberAreaWidth * area2Xscale) / 2)) {
 	successText = "Great!";	

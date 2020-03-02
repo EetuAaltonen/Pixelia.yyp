@@ -22,7 +22,7 @@ if (!global.popUp) {
 			}break;
 			case MenuActions.Resolution: {
 				if (resolution != "null") {
-					scr_resolution(resolution[0], resolution[1]);
+					// TODO: Resolution change unnecessary option?
 				}
 			}break;
 			case MenuActions.Quit: {

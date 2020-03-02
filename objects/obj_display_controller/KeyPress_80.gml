@@ -1,3 +1,4 @@
+/// @desc Pause
 if (room != Menu) {
     if (!pause) {
 		if (scr_pause_is_allowed()) {

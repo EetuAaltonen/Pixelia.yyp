@@ -4,7 +4,7 @@ if (global.hudState == HudStates.Inventory ||
 	// Background
 	scr_hud_draw_background(
 		0, 0,
-		guiWidth, guiHeight,
+		GuiWidth, GuiHeight,
 		make_color_rgb(66, 46, 19),
 		0.9, false, false
 	);

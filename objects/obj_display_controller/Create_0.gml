@@ -1,56 +1,76 @@
 // Display properties
-viewWidth = 1024;
-viewHeight = 768;
+globalvar DisplayWidth;
+DisplayWidth = display_get_width();
+globalvar DisplayHeight;
+DisplayHeight = display_get_height();
 
-surface_resize(application_surface, viewWidth, viewHeight);
-display_set_gui_size(viewWidth, viewHeight);
-window_set_size(viewWidth, viewHeight);
+// Native game resolution
+globalvar BaseWidth;
+BaseWidth = 512;
+globalvar BaseHeight;
+BaseHeight = 384;
+
+// GUI resolution
+globalvar GuiWidth;
+GuiWidth = 1024;
+globalvar GuiHeight;
+GuiHeight = 768;
+globalvar GuiWRatio;
+GuiWRatio = GuiWidth / BaseWidth;
+globalvar GuiHRatio;
+GuiHRatio = GuiHeight / BaseHeight;
+
+// TODO: Remove these useless variables
+global.resWAspect = 0;
+global.resHAspect = 0;
+global.wResolution = 0;
+global.hResolution = 0;
+
+var aspect = DisplayWidth / DisplayHeight;
+var viewWidth = 0;
+var viewHeight = 0;
+if (DisplayWidth < DisplayHeight) {
+	// Portait
+	viewWidth = min(BaseWidth, DisplayWidth);
+	viewHeight = viewWidth / aspect;
+} else {
+	// Landscape
+	viewHeight = min(BaseHeight, DisplayHeight);
+	viewWidth = viewHeight * aspect;
+}
+camera_set_view_size(view_camera[0], floor(viewWidth), floor(viewHeight));
+view_wport[0] = DisplayWidth;
+view_hport[0] = DisplayHeight;
+surface_resize(application_surface, view_wport[0], view_hport[0]);
+
+var lastRoom = false;
+var _room = room_next(room);
+var  tempRoom = _room;
+while (!lastRoom) {
+	camera_destroy(room_get_camera(_room, 0));
+	var camera = camera_create_view(
+		(BaseWidth - viewWidth) div 2,
+		(BaseHeight - viewHeight) div 2,
+		viewWidth, viewHeight
+	);
+	room_set_camera(_room, 0, camera);
+	room_set_viewport(_room, 0, true, 0, 0, viewWidth, viewHeight);
+	room_set_view_enabled(_room, true);
+	if (_room == room_last) {
+		lastRoom = true;
+    } else {
+		tempRoom = _room;
+		_room = room_next(tempRoom);
+    }
+}
+
+// Set window size and center
+window_set_size(DisplayWidth, DisplayHeight);
 alarm[0] = 1;
 
-room_goto(Menu);
+// Pause
+pause = false;
+windowFocus = true;
 
-// TODO: Fix display scaling
-/*ideal_width = 0;
-ideal_height = 256;
-
-var displayWidth = display_get_width();
-var displayHeight = display_get_height();
-
-aspect_ratio = displayWidth / displayHeight;
-
-ideal_width = round(ideal_height * aspect_ratio);
-//ideal_height = round(ideal_width / aspect_ratio);
-
-// Perfect Pixel Scaling
-if (displayWidth mod ideal_width != 0) {
-	var d = round(displayWidth / ideal_width);
-	ideal_width = displayWidth / d;
-}
-if (displayHeight mod ideal_height != 0) {
-	var d = round(displayHeight / ideal_height);
-	ideal_height = displayHeight / d;
-}
-
-// Check for odd numbers
-if (ideal_width & 1) {
-	ideal_width++;
-}
-if (ideal_height & 1) {
-	ideal_height++;
-}
-
-var i;
-for (i = 1; i < room_last; i++) {
-	if (room_exists(i)) {
-		//room_set_viewport(i, 0, true, 0, 0, ideal_width, ideal_height, 0, 0, 1, 1, 0, 0, 0, 0, -1);
-		//room_set_viewport(i, 0, true, 0, 0, ideal_width, ideal_height);
-		room_set_view_enabled(i, true);
-	}
-}
-surface_resize(application_surface, ideal_width, ideal_height);
-display_set_gui_size(ideal_width, ideal_height);
-window_set_size(ideal_width, ideal_height);
-// Center window after 1 Step
-alarm[0] = 1;
-
+// Init Menu
 room_goto(Menu);

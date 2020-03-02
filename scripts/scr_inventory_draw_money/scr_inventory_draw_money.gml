@@ -1,4 +1,4 @@
-var xPos = guiWidth - 17;
+var xPos = GuiWidth - 17;
 var yPos = 136;
 var boxWidth = 210;
 var boxHeight = 50;
@@ -27,7 +27,7 @@ draw_sprite_ext(
 	spr_money_icon, 0,
 	xPos - moneyIconHMargin,
 	yPos + (boxHeight / 2) + moneyIconVMargin,
-	guiWRatio, guiHRatio,
+	GuiWRatio, GuiHRatio,
 	image_angle, c_white, 1 
 );
 
@@ -61,7 +61,7 @@ if (global.hudState == HudStates.Shop) {
 		spr_money_icon, 0,
 		xPos - moneyIconHMargin,
 		yPos + (boxHeight / 2) + moneyIconVMargin,
-		guiWRatio, guiHRatio,
+		GuiWRatio, GuiHRatio,
 		image_angle, c_white, 1 
 	);
 	

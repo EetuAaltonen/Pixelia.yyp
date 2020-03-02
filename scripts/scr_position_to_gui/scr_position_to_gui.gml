@@ -3,8 +3,8 @@ var dimension = argument1;
 var cameraPos;
 if (dimension == "x") {
 	cameraPos = camera_get_view_x(view_camera[0]);
-	return (position-cameraPos) * guiWRatio;		
+	return (position-cameraPos) * GuiWRatio;		
 } else {
 	cameraPos = camera_get_view_y(view_camera[0]);
-	return (position-cameraPos) * guiHRatio;
+	return (position-cameraPos) * GuiHRatio;
 }

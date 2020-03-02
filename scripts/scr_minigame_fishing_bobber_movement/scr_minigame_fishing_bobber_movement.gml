@@ -2,7 +2,7 @@
 /// @param s - ???
 /// @return void -
 
-var viewWCenter = guiWidth / 2;
+var viewWCenter = GuiWidth / 2;
 
 bobberMoveTimer += (delta_time*0.000001)*room_speed;
 if (bobberMoveTimer >= bobberSpeed) {
