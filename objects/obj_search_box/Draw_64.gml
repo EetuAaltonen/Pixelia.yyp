@@ -7,7 +7,7 @@ var textPosY = scr_position_to_gui(y + (sprite_height / 2), "y");
 draw_sprite_ext(
 	sprite_index, 0,
 	xPos, yPos,
-	GuiWRatio, GuiHRatio,
+	GameGuiRatio, GameGuiRatio,
 	image_angle, c_white, 1
 );
 

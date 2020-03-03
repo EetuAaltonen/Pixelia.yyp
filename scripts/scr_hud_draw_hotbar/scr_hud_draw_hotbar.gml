@@ -59,12 +59,12 @@ draw_set_halign(fa_right);
 
 // Coins
 draw_sprite_ext(spr_money_icon, 0, GuiWidth - 28,
-		        yPos + 35, GuiWRatio, GuiHRatio,
+		        yPos + 35, GameGuiRatio, GameGuiRatio,
 		        image_angle, c_white, image_alpha);
 draw_text(GuiWidth - 58, yPos + 35, string(global.coins) + "G");
 	
 // Potion
 draw_sprite_ext(spr_potion_icon, 0, GuiWidth - 170,
-		        yPos + 35, GuiWRatio, GuiHRatio,
+		        yPos + 35, GameGuiRatio, GameGuiRatio,
 		        image_angle, c_white, image_alpha);
 draw_text(GuiWidth - 200, yPos + 35, string(global.potions) + " x");

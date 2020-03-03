@@ -39,7 +39,7 @@ for (i = 0; i < infoCount; i++) {
 	xPos += bgPadding;
 	yPos += (bgHeight / 2);
 	
-	draw_sprite_ext(icon, 0, xPos, yPos, GuiWRatio, GuiHRatio, image_angle, c_white, 1);
+	draw_sprite_ext(icon, 0, xPos, yPos, GameGuiRatio, GameGuiRatio, image_angle, c_white, 1);
 	
 	xPos += textMargin;
 	draw_text(xPos, yPos, desc);

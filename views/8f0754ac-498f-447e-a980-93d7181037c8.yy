@@ -19,7 +19,8 @@
         "15ffdf83-c6fd-4f26-bf97-1dfdeab0f119",
         "326b389d-caca-45fc-9bdf-d349bcffcbe3",
         "847f7ab4-edd5-46eb-98fa-3694192a9dd7",
-        "507e2d93-1dea-4a40-b7b3-6b88f1a4f419"
+        "507e2d93-1dea-4a40-b7b3-6b88f1a4f419",
+        "576bf3bf-813b-464b-8e8c-d27c75961b82"
     ],
     "filterType": "GMScript",
     "folderName": "Enums",

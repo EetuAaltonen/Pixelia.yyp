@@ -10,7 +10,7 @@ scr_draw_set_font(
 	fa_left, fa_bottom,
 	c_orange, 1
 );
-	
+
 if (posX > (display_get_gui_width() / 2)) {
 	draw_set_halign(fa_right);	
 }
@@ -22,6 +22,10 @@ if (posY < (display_get_gui_height() / 2)) {
 
 var posString = string(posX) + " | " + string(posY); 
 draw_text(posX, posY + yTextMargin, posString);
+
+draw_text(10, 10, posString);
+draw_text(display_get_gui_width(), 10, posString);
+draw_text(10, display_get_gui_height(), posString);
 
 
 

@@ -1,0 +1,4 @@
+enum Grid {
+	Row,
+	Col
+}

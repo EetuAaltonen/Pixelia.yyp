@@ -73,12 +73,12 @@ if (equipmentIndex != undefined ||
 	if (equipmentIndex > -1 || selected) {
 		draw_sprite_ext(spr_listed_item_equipped_mark, 1,
 		xPos + 20, yPos + 12,
-		GuiWRatio, GuiHRatio,
+		GameGuiRatio, GameGuiRatio,
 		image_angle, c_white, 1);
 	} else {
 		draw_sprite_ext(spr_listed_item_equipped_mark, 0,
 		xPos + 20, yPos + 12,
-		GuiWRatio, GuiHRatio,
+		GameGuiRatio, GameGuiRatio,
 		image_angle, c_white, 1);
 	}
 }

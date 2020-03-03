@@ -30,7 +30,7 @@ if (!is_undefined(data)) {
 		data[ItemData.Sprite], 0,
 		scr_position_to_gui(x, "x"),
 		scr_position_to_gui(y, "y"),
-		GuiWRatio, GuiHRatio,
+		GameGuiRatio, GameGuiRatio,
 		image_angle, c_white, 1
 	);
 }

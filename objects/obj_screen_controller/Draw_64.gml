@@ -34,10 +34,10 @@ if (!pause && !unfocus) {
 if (room == Menu) {
 	// Logo
 	draw_sprite_ext(spr_menu_logo, 0, GuiWidth / 2, 110,
-					GuiWRatio, GuiHRatio,
+					GameGuiRatio, GameGuiRatio,
 			        image_angle, c_white, image_alpha);
 	// Signature
 	draw_sprite_ext(spr_menu_signature, 0, 14, GuiHeight - 30,
-					GuiWRatio, GuiHRatio,
+					GameGuiRatio, GameGuiRatio,
 			        image_angle, c_white, image_alpha);
 }

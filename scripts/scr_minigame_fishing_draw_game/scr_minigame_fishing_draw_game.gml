@@ -34,7 +34,7 @@ if (!is_undefined(fishingState)) {
 		draw_sprite_ext(
 			spr_fishing_bobber, 0,
 			(GuiWidth / 2) + bobberX, GuiHeight / 2,
-			GuiWRatio * bobberScale, GuiHRatio * bobberScale, imageAngle, c_white, 1
+			GameGuiRatio * bobberScale, GameGuiRatio * bobberScale, imageAngle, c_white, 1
 		);
 	}
 	if (fishingState == Fishing.ResultMessage) {

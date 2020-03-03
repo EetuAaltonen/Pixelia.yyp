@@ -27,7 +27,7 @@ draw_sprite_ext(
 	spr_money_icon, 0,
 	xPos - moneyIconHMargin,
 	yPos + (boxHeight / 2) + moneyIconVMargin,
-	GuiWRatio, GuiHRatio,
+	GameGuiRatio, GameGuiRatio,
 	image_angle, c_white, 1 
 );
 
@@ -61,7 +61,7 @@ if (global.hudState == HudStates.Shop) {
 		spr_money_icon, 0,
 		xPos - moneyIconHMargin,
 		yPos + (boxHeight / 2) + moneyIconVMargin,
-		GuiWRatio, GuiHRatio,
+		GameGuiRatio, GameGuiRatio,
 		image_angle, c_white, 1 
 	);
 	
