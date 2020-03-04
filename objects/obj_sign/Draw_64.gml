@@ -1,5 +1,5 @@
-var posX = scr_position_to_gui(x, "x");
-var posY = scr_position_to_gui(y, "y");
+var posX = scr_pos_to_gui(x, Dim.X);
+var posY = scr_pos_to_gui(y, Dim.Y);
 
 //Show Text
 if (global.hudState == HudStates.Null && scr_highlighted()) {

@@ -1,8 +1,8 @@
-var xPos = scr_position_to_gui(x, "x");
-var yPos = scr_position_to_gui(y, "y");
+var xPos = scr_pos_to_gui(x, Dim.X);
+var yPos = scr_pos_to_gui(y, Dim.Y);
 
-var textPosX = scr_position_to_gui(x + (sprite_width / 2), "x");
-var textPosY = scr_position_to_gui(y + (sprite_height / 2), "y");
+var textPosX = scr_pos_to_gui(x + (sprite_width / 2), Dim.X);
+var textPosY = scr_pos_to_gui(y + (sprite_height / 2), Dim.Y);
 
 draw_sprite_ext(
 	sprite_index, 0,

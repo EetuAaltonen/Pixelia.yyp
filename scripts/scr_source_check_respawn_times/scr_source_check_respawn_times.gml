@@ -6,8 +6,8 @@
 	respawnTime; 4
 	source; 5
 }*/
-if (file_exists("RespawnTimes.ini")) {
-	ini_open("RespawnTimes.ini");
+if (file_exists(TimerFile)) {
+	ini_open(TimerFile);
 	if (ini_section_exists(global.save_file)) {
 		var count = ds_list_size(sources);
 		//Inventory

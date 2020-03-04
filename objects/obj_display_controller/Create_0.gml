@@ -15,11 +15,14 @@ BaseHeight = 384;
 globalvar GameGuiRatio;
 GameGuiRatio = 2;
 
-// GUI resolution
+// Native GUI resolution
+globalvar BaseGuiWidth;
+BaseGuiWidth = 1024;
+globalvar BaseGuiHeight;
+BaseGuiHeight = 768;
+
 globalvar GuiWidth;
-GuiWidth = 1024;
 globalvar GuiHeight;
-GuiHeight = 768;
 
 // TODO: Remove these useless variables
 global.resWAspect = 0;
@@ -33,12 +36,18 @@ if (AspectRatio > 1) {
 	// Landscape
 	viewHeight = min(BaseHeight, DisplayHeight);
 	viewWidth = viewHeight * AspectRatio;
-	display_set_gui_size(GuiHeight * AspectRatio, GuiHeight);
+	// GUI
+	GuiWidth = BaseGuiHeight * AspectRatio;
+	GuiHeight = BaseGuiHeight;
+	display_set_gui_size(GuiWidth, GuiHeight);
 } else {
 	// Portait
 	viewWidth = min(BaseWidth, DisplayWidth);
 	viewHeight = viewWidth / AspectRatio;
-	display_set_gui_size(GuiWidth, GuiWidth / AspectRatio);
+	// GUI
+	GuiWidth = BaseGuiWidth;
+	GuiHeight = BaseGuiWidth / AspectRatio;
+	display_set_gui_size(GuiWidth, GuiHeight);
 }
 camera_set_view_size(view_camera[0], floor(viewWidth), floor(viewHeight));
 view_wport[0] = DisplayWidth;

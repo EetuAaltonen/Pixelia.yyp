@@ -7,8 +7,8 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 	
-var xPos = scr_position_to_gui(x, "x");
-var yPos = scr_position_to_gui(y+1, "y");
+var xPos = scr_pos_to_gui(x, Dim.X);
+var yPos = scr_pos_to_gui(y+1, Dim.Y);
 var renderDataCount = array_length_1d(renderData);
 var render, textXPos, i;
 	
@@ -20,8 +20,8 @@ for (i = 0; i < renderDataCount; i++) {
 		case ItemData.Sprite: {
 			draw_sprite_ext(
 				data[ItemData.Sprite], 0,
-				scr_position_to_gui(x, "x"),
-				scr_position_to_gui(y, "y"),
+				scr_pos_to_gui(x, Dim.X),
+				scr_pos_to_gui(y, Dim.Y),
 				GameGuiRatio, GameGuiRatio,
 				image_angle, c_white, 1
 			);

@@ -1,0 +1,4 @@
+enum Dim {
+	X,
+	Y
+}

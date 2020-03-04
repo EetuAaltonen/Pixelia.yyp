@@ -1,6 +1,6 @@
 if (title != "null") {	
-	var positionX = scr_position_to_gui(x, "x");
-	var positionY = scr_position_to_gui(y, "y");
+	var positionX = scr_pos_to_gui(x, Dim.X);
+	var positionY = scr_pos_to_gui(y, Dim.Y);
 	var posX = scr_draw_camera_position_to_gui(positionX, "x");
 	var posY = scr_draw_camera_position_to_gui(positionY, "y");
 
@@ -27,8 +27,8 @@ if (title != "null") {
 
 	
 /*if (text != "null") {	
-	var positionX = scr_position_to_gui(x, "x");
-	var positionY = scr_position_to_gui(y, "y");
+	var positionX = scr_pos_to_gui(x, Dim.X);
+	var positionY = scr_pos_to_gui(y, Dim.Y);
 	var posX = scr_draw_camera_position_to_gui(positionX, "x");
 	var posY = scr_draw_camera_position_to_gui(positionY, "y");
 

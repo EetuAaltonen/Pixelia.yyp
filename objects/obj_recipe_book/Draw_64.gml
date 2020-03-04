@@ -1,6 +1,7 @@
 draw_sprite_ext(
 	spr_recipe_book, 0,
-	scr_position_to_gui(x,"x"), scr_position_to_gui(y,"y"),
+	scr_pos_to_gui(x, Dim.X),
+	scr_pos_to_gui(y, Dim.Y),
 	global.resWAspect, global.resHAspect, 0, c_white, 1
 );
 

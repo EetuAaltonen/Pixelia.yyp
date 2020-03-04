@@ -6,8 +6,8 @@ var xPadding, bgWidth, bgHeight, borderPadding;
 var renderDataCount = array_length_1d(renderData);
 var render, i;
 
-var xPos = scr_position_to_gui(x, "x");
-var yPos = scr_position_to_gui(y, "y");
+var xPos = scr_pos_to_gui(x, Dim.X);
+var yPos = scr_pos_to_gui(y, Dim.Y);
 	
 for (i = 0; i < renderDataCount; i++) {
 	render = renderData[i];

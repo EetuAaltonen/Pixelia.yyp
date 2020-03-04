@@ -1,6 +1,6 @@
 if (infoText != undefined) {
-	var xPos = scr_position_to_gui(x + (sprite_width/2), "x");
-	var yPos = scr_position_to_gui(y + (sprite_height/2), "y");
+	var xPos = scr_pos_to_gui(x + (sprite_width/2), Dim.X);
+	var yPos = scr_pos_to_gui(y + (sprite_height/2), Dim.Y);
 
 	//Font
 	draw_set_font(fnt_draw_gui_small);

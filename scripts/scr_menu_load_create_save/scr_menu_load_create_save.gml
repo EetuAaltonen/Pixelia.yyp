@@ -2,11 +2,12 @@ obj_search_box.selected = false;
 obj_search_box.blink_icon = "";
 string_replace(obj_search_box.txt, "|", "");
 var file = undefined;
-var arrayLength = array_length_1d(obj_screen_controller.Saves);
+var controller = obj_menu_controller;
+var arrayLength = array_length_1d(controller.Saves);
 var i;
 for (i = 0; i < arrayLength; i++) {
-    if (obj_search_box.txt == obj_screen_controller.Saves[i]) {
-        file = string(obj_screen_controller.Saves[i]);
+    if (obj_search_box.txt == controller.Saves[i]) {
+        file = string(controller.Saves[i]);
     }
 }
 

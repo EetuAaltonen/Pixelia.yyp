@@ -2,8 +2,8 @@ var bgWidth = 50;
 var bgHeight = 50;
 var borderPadding = 2;
 
-var xPos = scr_position_to_gui(x, "x");
-var yPos = scr_position_to_gui(y, "y");
+var xPos = scr_pos_to_gui(x, Dim.X);
+var yPos = scr_pos_to_gui(y, Dim.Y);
 	
 // Border
 scr_hud_draw_background(
@@ -28,8 +28,8 @@ if (!is_undefined(data)) {
 	// Item
 	draw_sprite_ext(
 		data[ItemData.Sprite], 0,
-		scr_position_to_gui(x, "x"),
-		scr_position_to_gui(y, "y"),
+		scr_pos_to_gui(x, Dim.X),
+		scr_pos_to_gui(y, Dim.Y),
 		GameGuiRatio, GameGuiRatio,
 		image_angle, c_white, 1
 	);
@@ -39,7 +39,8 @@ if (!is_undefined(data)) {
 if (index == -1) {
 	draw_sprite_ext(
 		spr_crafting_output_arrow, max(0, craftingStep),
-		scr_position_to_gui(x - 50,"x"), scr_position_to_gui(y,"y"),
+		scr_pos_to_gui(x - 50, Dim.X),
+		scr_pos_to_gui(y, Dim.Y),
 		global.resWAspect, global.resHAspect, 0, c_white, 1
 	);
 }

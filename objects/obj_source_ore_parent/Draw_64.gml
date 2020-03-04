@@ -6,8 +6,8 @@ if (alarm[1] > 0) {
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 
-		var posX = scr_position_to_gui(x, "x");
-		var posY = scr_position_to_gui(y, "y");
+		var posX = scr_pos_to_gui(x, Dim.X);
+		var posY = scr_pos_to_gui(y, Dim.Y);
 
 		//draw_text(scr_gui(posX, "x"), scr_gui(posY-40, "y"), "x: " + string(x) + "|y: " + string(y) + " source:" + string(source)); 
 		//draw_text(scr_gui(posX, "x"), scr_gui(posY-30, "y"), "Respawn " + respawnDateTime);

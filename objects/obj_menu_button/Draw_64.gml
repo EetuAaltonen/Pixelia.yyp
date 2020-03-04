@@ -1,6 +1,6 @@
 if (action != "null") {	
-	var posX = scr_position_to_gui(x, "x");
-	var posY = scr_position_to_gui(y, "y");
+	var posX = scr_pos_to_gui(x, Dim.X);
+	var posY = scr_pos_to_gui(y, Dim.Y);
 
 	//Font
 	draw_set_font(fnt_draw_gui_medium);

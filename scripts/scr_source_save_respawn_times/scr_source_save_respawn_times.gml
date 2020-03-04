@@ -23,7 +23,7 @@ for (i = 0; i < count; i++) {
 	}
 }
 
-ini_open("RespawnTimes.ini");
+ini_open(TimerFile);
 if (ds_list_size(data) > 0) {
 	ini_write_string(global.save_file, room_get_name(room), ds_list_write(data));
 } else {
