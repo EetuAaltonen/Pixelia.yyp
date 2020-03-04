@@ -1,8 +1,8 @@
 //Reset Transition Animation To Default
 obj_screen_controller.viewAlpha = 1;
 
-if (file_exists("Inventory.ini")) {
-	ini_open("Inventory.ini");
+if (file_exists(InventoryFile)) {
+	ini_open(InventoryFile);
 	//Inventory
 	var data = ini_read_string(global.save_file, "Inventory", "");
 	if (data != "") {

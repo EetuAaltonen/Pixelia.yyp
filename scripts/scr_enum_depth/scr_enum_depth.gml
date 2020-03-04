@@ -1,7 +1,7 @@
 enum Depth {
 	// Room transition
 	RoomTransition,
-	// HUD
+	// UI
 	Cursor,
 	Toaster,
 	DialogButton,
@@ -9,8 +9,8 @@ enum Depth {
 	DialogBg,
 	Button,
 	ListItem,
-	Hud,
-	HudBg,
+	UI,
+	UIBg,
 	// Hotbar
 	Hotbar,
 	// Front Misc

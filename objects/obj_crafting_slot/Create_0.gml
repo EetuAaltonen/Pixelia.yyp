@@ -1,4 +1,4 @@
-depth = Depth.Hud;
+depth = Depth.UI;
 image_speed = 0;
 index = 0;
 data = undefined;

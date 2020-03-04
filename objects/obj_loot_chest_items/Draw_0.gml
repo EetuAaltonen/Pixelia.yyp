@@ -4,7 +4,7 @@ draw_self();
 if (state == Container.Uninit || state == Container.Closed) {
 	scr_highlight_self();
 } else if (state == Container.Opened) {
-	//depth = Depth.HudBg;
+	//depth = Depth.UIBg;
 	var itemCount = ds_list_size(items);
 	if (is_undefined(bgHeight)) {
 		var yMargin = 22;

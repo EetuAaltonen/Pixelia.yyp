@@ -9,7 +9,7 @@ if (action != "null") {
 	draw_set_valign(fa_middle);
 
 	switch (action) {
-		case MenuActions.Resolution: {
+		case MenuAction.Resolution: {
 			if (resolution != "null") {
 				draw_text(posX, posY, string(resolution[0]) + "x" + string(resolution[1]));
 			}

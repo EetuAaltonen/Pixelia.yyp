@@ -1,4 +1,4 @@
-depth = Depth.Hud;
+depth = Depth.UI;
 image_speed = 0;
 
 //Regen & Buff timer

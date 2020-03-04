@@ -16,16 +16,16 @@ if (distance_to_point(mouse_x, mouse_y) == 0) {
 	}
 }
 if (action != "null") {
-	if (action == MenuActions.Load && keyboard_check_released(vk_enter)) {
+	if (action == MenuAction.Load && keyboard_check_released(vk_enter)) {
 		if (!global.popUp && image_blend != scr_highlight_value()) {
 			scr_menu_load_create_save();
 		}
 	} else if (checkSaveName) {
 		checkSaveName = false;
-		if (action == MenuActions.Delete) {
+		if (action == MenuAction.Delete) {
 			// Check text length
 			scr_check_exists_saves();
-		} else if (action == MenuActions.Load) {
+		} else if (action == MenuAction.Load) {
 			// Check text length
 			scr_check_save_name();
 		}

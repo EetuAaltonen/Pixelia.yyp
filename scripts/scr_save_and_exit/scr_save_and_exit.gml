@@ -29,8 +29,9 @@ with(obj_first_loading) {
 }
 
 //Set Menu Properties
-obj_screen_controller.menuState = MenuActions.MainMenu;
-obj_screen_controller.createButtons = true;
+var menuController = obj_menu_controller;
+menuController.menuState = MenuAction.MainMenu;
+menuController.createButtons = true;
 
 //Go To Menu
 room_goto(Menu);

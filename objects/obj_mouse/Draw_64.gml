@@ -23,12 +23,6 @@ if (posY < (display_get_gui_height() / 2)) {
 var posString = string(posX) + " | " + string(posY); 
 draw_text(posX, posY + yTextMargin, posString);
 
-draw_text(10, 10, posString);
-draw_text(display_get_gui_width(), 10, posString);
-draw_text(10, display_get_gui_height(), posString);
-
-
-
 /*var posX = scr_position_to_gui(mouse_x, "x");
 var posY = scr_position_to_gui(mouse_y, "y");
 

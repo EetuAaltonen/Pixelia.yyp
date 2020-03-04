@@ -4,7 +4,7 @@ if (instance_exists(obj_menu_button)) {
 	var i;
 	for (i = 0; i < count; i++) {
 		button = instance_find(obj_menu_button, i);
-		if (button.action == MenuActions.Load || button.action == MenuActions.Delete) {
+		if (button.action == MenuAction.Load || button.action == MenuAction.Delete) {
 			button.checkSaveName = true;
 		}
 	}

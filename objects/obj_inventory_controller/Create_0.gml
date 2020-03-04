@@ -1,4 +1,4 @@
-depth = Depth.HudBg;
+depth = Depth.UIBg;
 
 // Read saved ini
 key = "";

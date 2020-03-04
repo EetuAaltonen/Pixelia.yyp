@@ -10,10 +10,10 @@ var margin = 26;
 //Create Buttons
 for (i = 0; i < count; i++) {
 	instance = instance_create(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button);
-	instance.action = MenuActions.Resolution;
+	instance.action = MenuAction.Resolution;
 	instance.resolution = resolutions[i];
 }
 //Create Back Button
 instance = instance_create(viewX+(viewWidth/2), viewY+110+(margin*i), obj_menu_button);
-instance.action = MenuActions.MainMenu;
+instance.action = MenuAction.MainMenu;
 instance.infoText = "Back";

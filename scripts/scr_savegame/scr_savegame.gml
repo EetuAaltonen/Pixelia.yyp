@@ -1,7 +1,7 @@
 //Source Respawn Times
 scr_source_save_respawn_times();
 
-ini_open("Inventory.ini");
+ini_open(InventoryFile);
 
 //Inventory
 var data = ds_list_write(global.inventory);
@@ -41,7 +41,7 @@ if (string_length(string(current_second)) < 2) {
 }
 Datetime += (":" + minutes + ":" + seconds);
 
-ini_write_string(global.save_file,"game_version", global.gameVersion);
+ini_write_string(global.save_file,"game_version", GameVersion);
 
 ini_write_string(global.save_file,"last_played", Datetime);
             

@@ -1,17 +1,6 @@
 depth = Depth.RoomTransition;
-//GAME VERSION
-global.gameVersion = "0.0.0.1";
 
-surface = 5; //1px = 5x5px
 // TODO: Move to custom camera object
-//Check Resolution
-resolutionLastRoom = "null";
-//Menu
-menuState = MenuActions.MainMenu;
-createButtons = true;
-//Saves
-searchSaves = false;
-Saves[0] = "no_saves";
 //Pause
 background_temp = "";
 pause = false;

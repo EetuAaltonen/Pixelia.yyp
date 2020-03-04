@@ -1,7 +1,7 @@
 if (!global.popUp) {
 	if (action != "null") {
 		switch (action) {
-			case MenuActions.Load: {
+			case MenuAction.Load: {
 				// Click
 				if (instance_exists(obj_search_box)) {
 					if (image_blend != scr_highlight_value()) {
@@ -9,7 +9,7 @@ if (!global.popUp) {
 					}
 				}
 			}break;
-			case MenuActions.Delete: {
+			case MenuAction.Delete: {
 				// Delete Exists Save
 				if (instance_exists(obj_search_box)) {
 					if (image_blend != scr_highlight_value()) {
@@ -20,16 +20,16 @@ if (!global.popUp) {
 					}
 				}
 			}break;
-			case MenuActions.Resolution: {
+			case MenuAction.Resolution: {
 				if (resolution != "null") {
 					// TODO: Resolution change unnecessary option?
 				}
 			}break;
-			case MenuActions.Quit: {
+			case MenuAction.Quit: {
 				game_end();
 			}break;
 			default: {
-				var controller = obj_screen_controller;
+				var controller = obj_menu_controller;
 				if (controller.menuState != action) {
 					controller.menuState = action;
 					controller.createButtons = true;

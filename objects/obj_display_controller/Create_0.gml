@@ -33,12 +33,12 @@ if (AspectRatio > 1) {
 	// Landscape
 	viewHeight = min(BaseHeight, DisplayHeight);
 	viewWidth = viewHeight * AspectRatio;
-	display_set_gui_size(GuiWidth, GuiHeight / AspectRatio);
+	display_set_gui_size(GuiHeight * AspectRatio, GuiHeight);
 } else {
 	// Portait
 	viewWidth = min(BaseWidth, DisplayWidth);
 	viewHeight = viewWidth / AspectRatio;
-	display_set_gui_size(GuiWidth * AspectRatio, GuiHeight);
+	display_set_gui_size(GuiWidth, GuiWidth / AspectRatio);
 }
 camera_set_view_size(view_camera[0], floor(viewWidth), floor(viewHeight));
 view_wport[0] = DisplayWidth;
@@ -75,4 +75,7 @@ pause = false;
 windowFocus = true;
 
 // Init Menu
+// Room is scaled with screen dimensions
+room_set_width(Menu, viewWidth);
+room_set_height(Menu, viewHeight);
 room_goto(Menu);

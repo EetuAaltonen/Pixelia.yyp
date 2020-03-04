@@ -30,14 +30,3 @@ if (!pause && !unfocus) {
 } else {
     draw_text(GuiWidth / 2, GuiHeight / 2, "Pause");
 }
-
-if (room == Menu) {
-	// Logo
-	draw_sprite_ext(spr_menu_logo, 0, GuiWidth / 2, 110,
-					GameGuiRatio, GameGuiRatio,
-			        image_angle, c_white, image_alpha);
-	// Signature
-	draw_sprite_ext(spr_menu_signature, 0, 14, GuiHeight - 30,
-					GameGuiRatio, GameGuiRatio,
-			        image_angle, c_white, image_alpha);
-}
