@@ -6,6 +6,6 @@ draw_set_valign(fa_middle);
 
 var xPos = scr_pos_to_gui(x, Dim.X);
 var yPos = scr_pos_to_gui(y, Dim.Y);
-var padding = scr_gui_grid(2, Grid.Row, false);
+var padding = scr_gui_grid(2, Grid.Row);
 
 draw_text(xPos + padding, yPos, string(load_file) + " " + string(Datetime));

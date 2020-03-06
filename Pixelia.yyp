@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "116dfa2e-8ac6-409d-bb60-353a0f9818ee",
+            "Value": {
+                "id": "637aca67-ff52-40e7-9377-ec1e19c83b17",
+                "resourcePath": "views\\116dfa2e-8ac6-409d-bb60-353a0f9818ee.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "11c7c643-553f-4efa-9cd9-be7f13d496ff",
             "Value": {
                 "id": "0d38522a-2e87-4749-91be-30d1c77678c0",
@@ -3379,6 +3387,14 @@
             "Value": {
                 "id": "34ba94cf-a936-4bbb-a843-3f43ae3cfd9d",
                 "resourcePath": "scripts\\scr_listed_item_toggle_equip\\scr_listed_item_toggle_equip.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "52dd5e29-dcc1-4c7d-bc44-16fa2b313272",
+            "Value": {
+                "id": "b9063c40-2b5e-4b3f-8978-b2768cb5c160",
+                "resourcePath": "scripts\\scr_ui_armor_value_color\\scr_ui_armor_value_color.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6203,14 +6219,6 @@
             "Value": {
                 "id": "7665f839-8a7f-4627-a9a4-0c8c312d3fab",
                 "resourcePath": "objects\\obj_dialog_controller\\obj_dialog_controller.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "94af7e56-307b-4443-9bf3-2b7d365375a7",
-            "Value": {
-                "id": "cc95fda6-2379-44be-9b5b-0e0dc2cd16ae",
-                "resourcePath": "objects\\obj_hotbar_bg_controller\\obj_hotbar_bg_controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -10580,6 +10588,7 @@
         "d450ce57-2c55-46e9-a312-d89afa68ec42",
         "4536ac49-d1e2-40ed-aa50-37b1a2278aa5",
         "c35774c8-7ef7-44a1-8fb7-feb7f5b3ea88",
+        "52dd5e29-dcc1-4c7d-bc44-16fa2b313272",
         "b9798e73-b02b-471b-9ae7-1aa23f586f29",
         "6761b334-d734-42c7-bfe2-c2303122cf24",
         "36b8fc21-ce01-4c2d-8125-c4b6e60a8c51",
